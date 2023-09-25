@@ -1,0 +1,18 @@
+/* Add this to your CSS file */
+.custom-button {
+    width: 70%;
+    background-color: red;
+    border: none;
+    color: white;
+    transition: background-color 0.6s ease, box-shadow 0.3s ease; /* Add hover transitions */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow */
+    text-decoration: none; /* Remove underlines for NavLink */
+    display: inline-block; /* Display as a block element */
+  }
+  
+  .custom-button:hover {
+    background-color: darkred !important; 
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4) !important; 
+    color: white !important;
+  }
+  
