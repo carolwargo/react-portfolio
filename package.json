@@ -39,10 +39,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "nodemon server.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "dev": "concurrently \"npm start\" \"npm run server\"",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
