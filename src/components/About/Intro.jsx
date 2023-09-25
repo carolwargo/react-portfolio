@@ -88,7 +88,7 @@ export default function Intro() {
           ABOUT ME{" "}
         </h1>
 
-        <h5 className="mr-3 ml-2" style={{ fontFamily: "bellota text" }}>
+        <h5 className="mr-3 ml-2" style={{ fontFamily: "bellota text", paddingLeft: "2rem"}}>
           Get to know a little, or a lot You choose...-  <br></br>{" "}
           <strong>
             {" "}
@@ -107,7 +107,7 @@ export default function Intro() {
         </h5>
         <p
           className="text-secondary ml-2 "
-          style={{ fontFamily: "bellota text" }}
+          style={{ fontFamily: "bellota text",  paddingLeft: "2rem"   }}
         >
           {" "}
           "<strong>Click the links above</strong> to jump to the section you want to view...    

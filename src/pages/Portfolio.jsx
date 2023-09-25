@@ -17,7 +17,7 @@ export default function PortfolioPage() {
   return (
     <div className="portfolio" id="portfolio">
       <div style={{ fontFamily: "bellota text" }}>
-        <div className=" bg-light text-black pt-4 pl-4">
+        <div className=" bg-light text-black pt-4 pl-5">
           <h1
             style={{
               fontFamily: "bellota text",
@@ -28,8 +28,8 @@ export default function PortfolioPage() {
           >
             PORTFOLIO{" "}
           </h1>
-
-          <h5 className="mr-3 ml-3" style={{ fontFamily: "bellota text" }}>
+<div className="ml-5 pl-5">
+          <h5 className="ml-5 p-l" style={{ fontFamily: "bellota text", paddingLeft: "2rem"   }}>
             My Portfolio contains the following sections:{" "}
             <strong>
               {" "}
@@ -48,11 +48,12 @@ export default function PortfolioPage() {
             -{" "}
           </h5>
           <p
-            className="text-secondary ml-3"
+            className="text-secondary ml-5"
             style={{
               fontFamily: "bellota text",
               marginBottom: "2rem",
               paddingBottom: "2rem",
+              paddingLeft: "2rem"  
             }}
           >
             {" "}
@@ -66,6 +67,7 @@ export default function PortfolioPage() {
             </strong>{" "}
             at the bottom of each page to ensure nothing is missed! "
           </p>
+        </div>
         </div>
         <Row>
           <h2
@@ -202,32 +204,29 @@ export default function PortfolioPage() {
         </Row>
       </div>
       {/*flow-link <-previous-page & next-page->*/}
-      <div className="flow-links" style={flowLinks}>
-        <NavLink
-          href="/resume"
-          id="#resume"
-          className="ml-5 pb-5"
-          style={{ color: "red" }}
-        >
-          <strong>← Back (Resume)</strong>
-        </NavLink>
-        <NavLink
-          href="/"
-          id="#home"
-          className="ml-5 pb-3"
-          style={{ color: "white" }}
-        >
-          <strong>Home</strong>
-        </NavLink>
-        <NavLink
-          href="/contact"
-          id="#contact"
-          className="ml-5 pb-5 {}"
-          style={{ color: "blue" }}
-        >
-          <strong> (Contact) Next →</strong>
-        </NavLink>
-      </div>
+      <div className="flow-links bg-white pt-3" style={{ flowLinks }}>
+  <NavLink
+    href="/resume"
+    id="#resume"
+    style={{ color: "red", marginRight: "10px", paddingLeft: "3rem", paddingBottom:'2rem' }} // Add margin-right for spacing
+  >
+    <strong>← Back (Resume)</strong>
+  </NavLink>
+  <NavLink
+    href="/"
+    id="#home"
+    style={{ color: "black", margin: "0 10px" }} // Add margin for spacing on both sides
+  >
+    <strong>Home</strong>
+  </NavLink>
+  <NavLink
+    href="/contact"
+    id="#contact"
+    style={{ color: "blue", marginLeft: "10px" }} // Add margin-left for spacing
+  >
+    <strong>Next (Contact)→</strong>
+  </NavLink>
+</div>
     </div>
   );
 }

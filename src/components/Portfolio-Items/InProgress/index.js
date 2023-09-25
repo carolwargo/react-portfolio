@@ -35,7 +35,7 @@ export default function InProgress() {
               application that allows users to create a profile, post their van
               for sale,view their dashboard, or simply search for vans to rent.
               The application utilizes all the benefits of React Router6 "Nested
-              Routes", eliminating the need, time & space of a backend server.
+              Routes", eliminating the need of a backend server.
               <br></br>
               <strong>MOTIVATION:</strong> To gain intimate knowledge of Router
               6 navigation, routing & rendering- Specifically nested route

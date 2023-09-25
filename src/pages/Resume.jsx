@@ -26,6 +26,7 @@ import APIQ from "../assets/images/APIQ.png";
 const flowLinks = {
   display: "flex",
   justifyContent: "center",
+
 };
 
 export default function ResumePage() {
@@ -43,7 +44,7 @@ export default function ResumePage() {
           RESUME{" "}
         </h1>
 
-        <h5 className="mr-3 ml-3" style={{ fontFamily: "bellota text" }}>
+        <h5 className="mr-3 ml-3" style={{ fontFamily: "bellota text", paddingLeft: "2rem"   }}>
           Digital Resume contains{" "}
           <strong>
             {" "}
@@ -68,7 +69,7 @@ export default function ResumePage() {
         </h5>
         <p
           className="text-secondary ml-3"
-          style={{ fontFamily: "bellota text", marginBottom: "2rem" }}
+          style={{ fontFamily: "bellota text", marginBottom: "2rem",  paddingLeft: "2rem" }}
         >
           {" "}
           "<strong>Click the links above</strong> to jump to the section you
@@ -439,33 +440,30 @@ export default function ResumePage() {
           </Timeline>
         </div>
       </div>
-      {/*flow-link <-previous-page & next-page->*/}
       <div className="flow-links" style={{ flowLinks }}>
-        <NavLink
-          href="/about"
-          id="#about"
-          className="ml-5 pb-5"
-          style={{ color: "red" }}
-        >
-          <strong>← Back (About)</strong>
-        </NavLink>
-        <NavLink
-          href="/"
-          id="#home"
-          className="ml-5 pb-3"
-          style={{ color: "black" }}
-        >
-          <strong>Home</strong>
-        </NavLink>
-        <NavLink
-          href="/portfolio"
-          id="#portfolio"
-          className="ml-5 pb-5 "
-          style={{ color: "blue" }}
-        >
-          <strong>Next (Portfolio)→</strong>
-        </NavLink>
-      </div>
+  <NavLink
+    href="/about"
+    id="#about"
+    style={{ color: "red", marginRight: "10px", paddingLeft: "3rem", paddingBottom:'2rem' }} // Add margin-right for spacing
+  >
+    <strong>← Back (About)</strong>
+  </NavLink>
+  <NavLink
+    href="/"
+    id="#home"
+    style={{ color: "black", margin: "0 10px" }} // Add margin for spacing on both sides
+  >
+    <strong>Home</strong>
+  </NavLink>
+  <NavLink
+    href="/portfolio"
+    id="#portfolio"
+    style={{ color: "blue", marginLeft: "10px" }} // Add margin-left for spacing
+  >
+    <strong>Next (Portfolio)→</strong>
+  </NavLink>
+</div>
+
     </div>
   );
 }

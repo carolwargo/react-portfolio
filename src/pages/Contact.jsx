@@ -12,6 +12,7 @@ const flowLinks = {
 export default function Contact() {
   return (
     <div className="contact" id="contact">
+     <div>
       <h1
         style={{
           fontFamily: "bellota text",
@@ -75,27 +76,25 @@ export default function Contact() {
         <a href="https://www.github.com/carolwargo">GITHUB.COM/carolwargo</a>
       </div>
       <div className='bg-white'>
-      {/*flow-link <-previous-page & next-page->*/}
-      <div className="flow-links " style={flowLinks}>
-        <NavLink
-          href="/portfolio"
-          id="#portfolio"
-          className="ml-5 pb-3 pt-3"
-          style={{ color: "red" }}
-        >
-          <strong>← Back (Portfolio)</strong>
-        </NavLink>
-    
-        <NavLink
-          href="/"
-          id="#"
-          className="ml-5 pb-3 pt-3 {}"
-          style={{ color: "blue" }}
-        >
-          <strong>Back Home →</strong>
-        </NavLink>
+      <div className="flow-links bg-white pt-3" style={{ flowLinks }}>
+  <NavLink
+    href="/resume"
+    id="#resume"
+    style={{ color: "red", marginRight: "10px", paddingLeft: "3rem", paddingBottom:'2rem' }} // Add margin-right for spacing
+  >
+    <strong>← Back (Resume)</strong>
+  </NavLink>
+  <NavLink
+    href="/"
+    id="#home"
+    style={{ color: "black", margin: "0 10px" }} // Add margin for spacing on both sides
+  >
+    <strong>Home</strong>
+  </NavLink>
+
+</div>
       </div>
-      </div>
+    </div>
     </div>
   );
 }
