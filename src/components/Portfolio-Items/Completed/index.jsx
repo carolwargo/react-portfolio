@@ -26,7 +26,7 @@ const cardData = [
   {
     id: 2,
     title: "DESK-JOCKEY-DAYPLANNER",
-    text: "Desk-Jockey-Dayplanner is a calendar application that allows a Users to save events, each hour of the day...",
+    text: "Desk-Jockey-Dayplanner is a calendar application that allows a User to save events, for each hour of the work day...",
     githubLink: "https://carolwargo.github.io/Desk_Jockey-dayplanner/",
     link: "https://www.example.com",
     image: Desk,
@@ -62,7 +62,7 @@ const cardData = [
   {
     id: 6,
     title: "TEXT-EDITOR-IN-CHIEF",
-    text: "Text_Editor-In-Chief browser-based text editor that allows Users to create & edit text documents seamlessly...",
+    text: "Text_Editor-In-Chief is a browser-based text editor that allows Users to create and edit text documents seamlessly...",
     githubLink: "https://github.com/carolwargo/Text_Editor-in-Chief",
     link: "https://www.example.com",
     image: JATE,
@@ -76,7 +76,7 @@ export default function PortfolioItems() {
       <Row>
         <div>
           {/*COMPLETED CARDS START */}
-          <Row className="card-row " style={{ margin: "auto" }}>
+          <Row className="card-row " style={{ margin: "auto", padding:"1rem" }}>
             {cardData.map((card) => (
               <Col
                 className="card-col"
