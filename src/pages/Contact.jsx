@@ -1,6 +1,6 @@
 import React from "react";
 import { MDBIcon } from "mdb-react-ui-kit";
-import { NavLink } from "react-bootstrap";
+import { NavLink} from "react-bootstrap";
 
 import "../styles/links.css";
 

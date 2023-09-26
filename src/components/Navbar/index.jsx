@@ -1,16 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { MDBIcon } from "mdb-react-ui-kit";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
+import { faPhone,  faEnvelope} from "@fortawesome/free-solid-svg-icons";
+
 import "../Navbar/style.css";
 
 
-const icons = {
-  color: 'black',
-}
+
 
 export default function Navigation() {
   return (
@@ -49,22 +52,22 @@ export default function Navigation() {
                   href="https://www.linkedin.com/in/carol-wargo-35021baa"
                   className="me-4 text-reset"
                 >
-                  <MDBIcon className="icon" fab icon="linkedin" style={{color:"black"}}/>
+                    <FontAwesomeIcon icon={faLinkedin}  style={{color:'black'}}/>
                 </a>
                 <a
                   href="https://github.com/carolwargo/"
                   className="me-4 text-reset"
                 >
-                  <MDBIcon className="icon" fab icon="github" style={icons}/>
+                   <FontAwesomeIcon icon={faGithub} style={{color:'black'}}/>
                 </a>
                 <a
                   href="mailto:carolwargo@gmail.com"
                   className="me-4 text-reset"
                 >
-                  <MDBIcon className="icon" icon="envelope" style={icons} />
+                  <FontAwesomeIcon icon={faEnvelope} style={{color:'black'}}/>
                 </a>
                 <a href="tel:4437711726" className="me-4 text-reset">
-                  <MDBIcon className="icon" icon="phone" style={icons} />
+                <FontAwesomeIcon icon={faPhone} style={{color:'black'}}/>
                 </a>
               </div>
             </Form>

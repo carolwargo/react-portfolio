@@ -83,6 +83,7 @@ export default function Intro() {
             fontSize: "4rem",
             marginLeft: "1rem",
             textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
+            paddingLeft: "1rem",
           }}
         >
           ABOUT ME{" "}
