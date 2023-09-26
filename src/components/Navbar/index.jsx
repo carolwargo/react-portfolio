@@ -7,6 +7,11 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "../Navbar/style.css";
 
+
+const icons = {
+  color: 'black',
+}
+
 export default function Navigation() {
   return (
     <div>
@@ -44,22 +49,22 @@ export default function Navigation() {
                   href="https://www.linkedin.com/in/carol-wargo-35021baa"
                   className="me-4 text-reset"
                 >
-                  <MDBIcon className="icon" fab icon="linkedin" />
+                  <MDBIcon className="icon" fab icon="linkedin" style={{color:"black"}}/>
                 </a>
                 <a
                   href="https://github.com/carolwargo/"
                   className="me-4 text-reset"
                 >
-                  <MDBIcon className="icon" fab icon="github" />
+                  <MDBIcon className="icon" fab icon="github" style={icons}/>
                 </a>
                 <a
                   href="mailto:carolwargo@gmail.com"
                   className="me-4 text-reset"
                 >
-                  <MDBIcon className="icon" icon="envelope" />
+                  <MDBIcon className="icon" icon="envelope" style={icons} />
                 </a>
                 <a href="tel:4437711726" className="me-4 text-reset">
-                  <MDBIcon className="icon" icon="phone" />
+                  <MDBIcon className="icon" icon="phone" style={icons} />
                 </a>
               </div>
             </Form>
