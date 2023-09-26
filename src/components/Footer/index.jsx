@@ -33,6 +33,7 @@ export default function App() {
             >
               <MDBIcon className="black-icon" fab icon="linkedin" />
             </a>
+
             <a
               href="https://github.com/carolwargo/"
               className="me-4 text-reset"

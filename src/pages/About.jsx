@@ -42,22 +42,16 @@ export default function AboutPage() {
 
       {/*flow-link <-previous-page & next-page->*/}
       <div className="flow-links bg-white pt-3" style={{ flowLinks }}>
+  
   <NavLink
-    href="/about"
-    id="#about"
-    style={{ color: "red", marginRight: "10px", paddingLeft: "3rem", paddingBottom:'2rem' }} // Add margin-right for spacing
-  >
-    <strong>← Back (About)</strong>
-  </NavLink>
-  <NavLink
-    href="/"
+    href="/react-portfolio/"
     id="#home"
     style={{ color: "black", margin: "0 10px" }} // Add margin for spacing on both sides
   >
     <strong>Home</strong>
   </NavLink>
   <NavLink
-    href="/resume"
+    href="/react-portfolio/resume"
     id="#resume"
     style={{ color: "blue", marginLeft: "10px" }} // Add margin-left for spacing
   >
