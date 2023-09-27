@@ -11,6 +11,8 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faPhone,  faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 import "../Navbar/style.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
@@ -18,13 +20,13 @@ import "../Navbar/style.css";
 export default function Navigation() {
   return (
     <div>
-      <Navbar expand="lg" className="bg-body-tertiary border-bottom  ">
+            <Navbar expand="lg" className="bg-body-tertiary border-bottom d-flex justify-content-between">
         <Container fluid>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: "100px" }}
+             
               navbarScroll
             >
               <Nav.Link as={NavLink} to="/">
@@ -42,34 +44,24 @@ export default function Navigation() {
               <Nav.Link as={NavLink} to="/contact">
                 Contact
               </Nav.Link>
+            
             </Nav>
+            <Navbar.Brand style={{fontSize:'1rem'}}>Connect: </Navbar.Brand>
             <Form className="d-flex">
-              <div
-                className="d-flex align-items-center"
-                style={{ fontSize: "1rem" }}
-              >
-                <a
-                  href="https://www.linkedin.com/in/carol-wargo-35021baa"
-                  className="me-4 text-reset"
-                >
-                    <FontAwesomeIcon icon={faLinkedin}  style={{color:'black'}}/>
-                </a>
-                <a
-                  href="https://github.com/carolwargo/"
-                  className="me-4 text-reset"
-                >
-                   <FontAwesomeIcon icon={faGithub} style={{color:'black'}}/>
-                </a>
-                <a
-                  href="mailto:carolwargo@gmail.com"
-                  className="me-4 text-reset"
-                >
-                  <FontAwesomeIcon icon={faEnvelope} style={{color:'black'}}/>
-                </a>
-                <a href="tel:4437711726" className="me-4 text-reset">
-                <FontAwesomeIcon icon={faPhone} style={{color:'black'}}/>
-                </a>
-              </div>
+            <div className="d-flex align-items-center" style={{ fontSize: '1rem' }}>
+        <a href="https://www.linkedin.com/in/carol-wargo-35021baa" className="me-4 text-reset custom-hover">
+          <FontAwesomeIcon icon={faLinkedin} style={{ color: 'black' }} />
+        </a>
+        <a href="https://github.com/carolwargo/" className="me-4 text-reset custom-hover">
+          <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }} />
+        </a>
+        <a href="mailto:carolwargo@gmail.com" className="me-4 text-reset custom-hover">
+          <FontAwesomeIcon icon={faEnvelope} style={{ color: 'black' }} />
+        </a>
+        <a href="tel:4437711726" className="me-4 text-reset custom-hover">
+          <FontAwesomeIcon icon={faPhone} style={{ color: 'black' }} />
+        </a>
+      </div>
             </Form>
           </Navbar.Collapse>
         </Container>

@@ -1,3 +1,30 @@
+.custom-hover {
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.custom-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  opacity: 0;
+  color: red;
+  transition: opacity 0.3s;
+}
+
+.custom-hover:hover {
+  transform: scale(1.1);
+  shadow: 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.custom-hover:hover::before {
+  opacity: 1;
+
+}
 
   .icon {
     color: black;

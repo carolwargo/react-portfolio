@@ -1,5 +1,10 @@
 import React from "react";
-import { MDBFooter, MDBIcon } from "mdb-react-ui-kit";
+import { MDBFooter} from "mdb-react-ui-kit";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
+import { faPhone,  faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -17,36 +22,26 @@ export default function App() {
                 className="header-subtitle"
                 style={{ fontSize: "1rem", color: "black" }}
               >
-                Carol Wargo-{" "}
+                Connect:{" "}
               </span>
             
             </span>
           </div>
 
-          <div
-            className="d-flex align-items-center"
-            style={{ fontSize: "1rem" }}
-          >
-            <a
-              href="https://www.linkedin.com/in/carol-wargo-35021baa"
-              className="me-4 text-reset"
-            >
-              <MDBIcon className="black-icon" fab icon="linkedin" />
-            </a>
-
-            <a
-              href="https://github.com/carolwargo/"
-              className="me-4 text-reset"
-            >
-              <MDBIcon className="icon" fab icon="github" />
-            </a>
-            <a href="mailto:carolwargo@gmail.com" className="me-4 text-reset">
-              <MDBIcon className="icon" icon="envelope" />
-            </a>
-            <a href="tel:4437711726" className="me-4 text-reset">
-              <MDBIcon className="icon" icon="phone" />
-            </a>
-          </div>
+          <div className="d-flex align-items-center" style={{ fontSize: '1rem' }}>
+        <a href="https://www.linkedin.com/in/carol-wargo-35021baa" className="me-4 text-reset custom-hover">
+          <FontAwesomeIcon icon={faLinkedin} style={{ color: 'black' }} />
+        </a>
+        <a href="https://github.com/carolwargo/" className="me-4 text-reset custom-hover">
+          <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }} />
+        </a>
+        <a href="mailto:carolwargo@gmail.com" className="me-4 text-reset custom-hover">
+          <FontAwesomeIcon icon={faEnvelope} style={{ color: 'black' }} />
+        </a>
+        <a href="tel:4437711726" className="me-4 text-reset custom-hover">
+          <FontAwesomeIcon icon={faPhone} style={{ color: 'black' }} />
+        </a>
+      </div>
         </section>
       </MDBFooter>
     </div>
