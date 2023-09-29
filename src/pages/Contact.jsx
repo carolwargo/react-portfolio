@@ -119,7 +119,7 @@ export default function Contact() {
                 color: "red",
                 marginRight: "10px",
                 paddingLeft: "3rem",
-                paddingBottom: "2rem",
+                paddingBottom: "1rem",
               }} // Add margin-right for spacing
             >
               <strong>← Back (Resume)</strong>

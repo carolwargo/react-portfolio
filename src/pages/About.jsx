@@ -41,7 +41,7 @@ export default function AboutPage() {
       </div>
 
       {/*flow-link <-previous-page & next-page->*/}
-      <div className="flow-links bg-white pt-3" style={{ flowLinks }}>
+      <div className="flow-links bg-white pt-3 pb-3" style={{ flowLinks }}>
   
   <NavLink
     href="/react-portfolio/"

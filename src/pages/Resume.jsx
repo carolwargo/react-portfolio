@@ -22,7 +22,7 @@ import Core from "../assets/images/Core.png";
 import Package from "../assets/images/Package.png";
 import BuildTest from "../assets/images/BuildTest.png";
 import APIQ from "../assets/images/APIQ.png";
-import Workspace from "../assets/images/Workspace.png";
+import SmallWorkspace from "../assets/images/SmallWorkspace.png";
 
 const flowLinks = {
   display: "flex",
@@ -124,10 +124,28 @@ export default function ResumePage() {
               Designer, Marketing Manager, General Contractor, and even Laborer.
             </p>{" "}
           </MDBCol>
-          <MDBCol md="7" style={{ color: "black" }}>
+<MDBRow
+ style={{ 
+  borderRadius: "10px", 
+  padding: "1rem",
+  paddingTop: "1.5rem",
+  paddingBottom: "1.5rem",
+  backgroundColor: "white",
+  marginBottom: "2rem",
+  }}
+>
+          <MDBCol md="5" >
+            <img
+              src={SmallWorkspace}
+              alt="SmallWorkspace"
+              className="img-fluid"
+              style={{ width: "100%", borderRadius:'10px' }}
+            />
+          </MDBCol>
+       
+          <MDBCol md="7" style={{ color: "black", paddingTop:'1.5rem'}}>
             <ul
-              className="bg-black text-white p-5"
-              style={{ borderRadius: "10px" }}
+             
             >
               <li>
                 {" "}
@@ -161,13 +179,10 @@ export default function ResumePage() {
             </ul>
             
           </MDBCol>
-          <img
-                src={Workspace}
-                alt="Workspace"
-                className="img-fluid"
-                style={{ width: "80%", marginLeft: "2rem" }}
-              />
-          <p>
+          </MDBRow>
+         
+        
+          <p className="mb-2">
               {" "}
               "I bring a wealth of experience and commitment to excellence to
               the table. With a solid foundation in business, I have built a
@@ -182,9 +197,8 @@ export default function ResumePage() {
         </MDBRow>
       </div>
       <div
-        className="technical-skills-div d-flex flex-column"
+        className="technical-skills-div d-flex flex-column bg-dark"
         style={{
-          background: "black",
           fontFamily: "bellota text",
           color: "white",
         }}
