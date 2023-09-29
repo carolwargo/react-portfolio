@@ -71,7 +71,7 @@ export default function Intro() {
       DISCOVER MORE...
     </h5>
     <p className="" style={{ fontFamily: "bellota text" }}>
-    Discover more "ABOUT ME"- <br></br>what makes my heart beat, my mind ponder, and my spirit soar.
+    "ABOUT ME" personally- <br></br>What makes my heart beat, my mind ponder, and my spirit soar.
     </p>
   </Col>
 </Row>
@@ -90,7 +90,7 @@ export default function Intro() {
         </h1>
 
         <h5 className="mr-3 ml-2" style={{ fontFamily: "bellota text", paddingLeft: "2rem"}}>
-          Get to know a little, or a lot You choose...-  <br></br>{" "}
+          Get to know a little, or a lot. You choose...  <br></br>{" "}
           <strong>
             {" "}
             <a href="#philisophy-values">My FAMILY, PHILISOPHY & VALUES</a>

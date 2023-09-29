@@ -133,6 +133,16 @@ export default function PortfolioPage() {
             understanding, as well as plans for "future development" for each
             project.
           </p>
+          <h5
+          style={{
+            color: "white",
+            fontFamily: "bellota text",
+            marginLeft: "2rem",
+            marginRight: "6rem",
+            paddingRight: "4rem",
+          }}
+          >
+            NOTE: Not all of my "in process" projects have been added. Check back often to see new additions!</h5>
         </Row>
 
         <InProgress />
@@ -197,8 +207,12 @@ export default function PortfolioPage() {
               <li>
                 No templates are used, all designs are created from scratch.
               </li>
+              <li>
+              Not all of my "graphic design" projects have been added. Check back often to see new additions!
+              </li>
             </ul>
-          </Col>
+         
+      </Col>
           <Col md={7}>
             <GraphicDesigns />
           </Col>

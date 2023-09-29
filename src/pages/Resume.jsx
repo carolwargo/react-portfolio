@@ -22,6 +22,7 @@ import Core from "../assets/images/Core.png";
 import Package from "../assets/images/Package.png";
 import BuildTest from "../assets/images/BuildTest.png";
 import APIQ from "../assets/images/APIQ.png";
+import Workspace from "../assets/images/Workspace.png";
 
 const flowLinks = {
   display: "flex",
@@ -123,7 +124,7 @@ export default function ResumePage() {
               Designer, Marketing Manager, General Contractor, and even Laborer.
             </p>{" "}
           </MDBCol>
-          <MDBCol md="12" style={{ color: "black" }}>
+          <MDBCol md="7" style={{ color: "black" }}>
             <ul
               className="bg-black text-white p-5"
               style={{ borderRadius: "10px" }}
@@ -148,6 +149,7 @@ export default function ResumePage() {
                 believe in delivering high-quality work that meets client
                 requirements and exceeds expectations.
               </li>
+              
               <li>
                 <strong>Continuous learning</strong> is a fundamental aspect of
                 personal & professional growth. I constantly seek opportunities
@@ -157,7 +159,15 @@ export default function ResumePage() {
                 address the evolving needs of the industry.
               </li>
             </ul>
-            <p>
+            
+          </MDBCol>
+          <img
+                src={Workspace}
+                alt="Workspace"
+                className="img-fluid"
+                style={{ width: "80%", marginLeft: "2rem" }}
+              />
+          <p>
               {" "}
               "I bring a wealth of experience and commitment to excellence to
               the table. With a solid foundation in business, I have built a
@@ -169,7 +179,6 @@ export default function ResumePage() {
               harness my expertise to foster well-crafted and meaningful
               solutions."
             </p>
-          </MDBCol>
         </MDBRow>
       </div>
       <div
@@ -417,7 +426,7 @@ export default function ResumePage() {
               <h3 className="text-dark">CURRENT ENDEAVORS</h3>
 <h4 className="text-dark">Freelance Design & Development</h4>
 <p className="text-dark">
-  I have worked as a freelance professional for years, prior to completing my formal education. I currently have multiple projects in-progress...  <br></br>Click "Download" button below to download my resume or "Next (Portfolio)" to view some of my work!
+  I have worked as a freelance professional for years, prior to completing my formal education. I currently have multiple projects in-progress... I know the importance of working with others & feel I will benefit any work environment. <br></br>Click "Download" button below to download my resume or "Next (Portfolio)" to view some of my work!
 </p>
 
               </TimelineContent>
