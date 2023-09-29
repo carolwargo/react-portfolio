@@ -17,6 +17,7 @@ export default function Intro() {
     backgroundPosition: "center top",
     backgroundRepeat: "no-repeat",
     width: "100vw",
+    height: "100vh",
     paddingRight: "4rem",
   }}
 >
