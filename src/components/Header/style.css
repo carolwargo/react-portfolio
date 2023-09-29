@@ -1,7 +1,4 @@
-/* Default styles for larger screens */
-
-/*
-.nav-list {
+.custom-hover {
   list-style: none;
   display: flex;
   gap: 15px;
@@ -12,14 +9,14 @@
   font-Family: "belotta text";
 }
 
-.nav-list-items {
+.custom-hover-items {
   display: flex;
   align-items: center;
   gap: 10px;
 
 }
 
-.nav-list a {
+.custom-hover a {
   flex-direction: column;
   align-items: flex-start;
   text-decoration: none;
@@ -28,7 +25,7 @@
   border-radius: 5px;
 }
 
-.nav-list a:hover {
+.custom-hover a:hover {
   color: red;
 }
 
@@ -44,18 +41,17 @@
   font-size: 1rem;
 }
 
-.nav-list-a-active {
+.custom-hover-a-active {
   background-color: red !important;
   color: white !important;
   border-color: red !important;
 }
 
-.nav-list a:hover,
-.nav-list a.nav-list-a-active {
+.custom-hover a:hover,
+.custom-hover a.custom-hover-a-active {
   color: red !important;
 }
 
-*/
  Media query for smaller screens 
 @media (max-width: 768px) {
   .nav-header {
