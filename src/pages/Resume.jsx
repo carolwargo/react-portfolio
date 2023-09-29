@@ -22,7 +22,7 @@ import Core from "../assets/images/Core.png";
 import Package from "../assets/images/Package.png";
 import BuildTest from "../assets/images/BuildTest.png";
 import APIQ from "../assets/images/APIQ.png";
-import SmallWorkspace from "../assets/images/SmallWorkspace.png";
+import ResumeWorkspace from "../assets/images/ResumeWorkspace.png";
 
 const flowLinks = {
   display: "flex",
@@ -136,14 +136,14 @@ export default function ResumePage() {
 >
           <MDBCol md="5" >
             <img
-              src={SmallWorkspace}
-              alt="SmallWorkspace"
-              className="img-fluid"
+              src={ResumeWorkspace}
+              alt="ResumeWorkspace"
+              className="img-fluid pt-2"
               style={{ width: "100%", borderRadius:'10px' }}
             />
           </MDBCol>
        
-          <MDBCol md="7" style={{ color: "black", paddingTop:'1.5rem'}}>
+          <MDBCol md="7" style={{ color: "black", paddingTop:'.5rem'}}>
             <ul
              
             >
@@ -176,12 +176,7 @@ export default function ResumePage() {
                 curve, ensuring that I can provide innovative solutions that
                 address the evolving needs of the industry.
               </li>
-            </ul>
-            
-          </MDBCol>
-          </MDBRow>
-         
-        
+                
           <p className="mb-2">
               {" "}
               "I bring a wealth of experience and commitment to excellence to
@@ -194,6 +189,26 @@ export default function ResumePage() {
               harness my expertise to foster well-crafted and meaningful
               solutions."
             </p>
+            </ul>
+            
+            
+          </MDBCol>
+          <p className="mb-2">
+              {" "}
+              "I bring a wealth of experience and commitment to excellence to
+              the table. With a solid foundation in business, I have built a
+              track record of success through hard work and adaptability. As I
+              shift my focus to software development, I carry forward the
+              strategic thinking, negotiation skills, and dedication to
+              excellence that defined my real estate career. By drawing
+              parallels between these two domains, I am well-positioned to
+              harness my expertise to foster well-crafted and meaningful
+              solutions."
+            </p>
+          </MDBRow>
+         
+        
+     
         </MDBRow>
       </div>
       <div
