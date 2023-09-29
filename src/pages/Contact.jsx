@@ -73,10 +73,7 @@ export default function Contact() {
           </p>
           <br></br>
           <br></br>
-
-  
           <Container 
-          
           style={{backgroundColor:'white', color:'black',fontFamily: "sans-serif", padding:'2rem', borderRadius:'1rem'}}>
           <Row>
           <Col>
