@@ -235,7 +235,7 @@ export default function PortfolioPage() {
     <strong>Home</strong>
   </NavLink>
   <NavLink
-    href="/react-portfolio/contact"
+    href="/contact"
     id="#contact"
     style={{ color: "blue", marginLeft: "10px" }} // Add margin-left for spacing
   >

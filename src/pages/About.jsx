@@ -51,7 +51,7 @@ export default function AboutPage() {
     <strong>Home</strong>
   </NavLink>
   <NavLink
-    href="/react-portfolio/resume"
+    href="resume"
     id="#resume"
     style={{ color: "blue", marginLeft: "10px" }} // Add margin-left for spacing
   >
