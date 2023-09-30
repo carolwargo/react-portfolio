@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-bootstrap";
 import Core from "../components/About/Core.jsx";
 import Peak from "../components/About/Peak.jsx";
 import Volunteer from "../components/About/Volunteer.jsx";
@@ -41,23 +40,24 @@ export default function AboutPage() {
       </div>
 
       {/*flow-link <-previous-page & next-page->*/}
-      <div className="flow-links bg-white pt-3 pb-3" style={{ flowLinks }}>
-  
-  <NavLink
-    to="/"
-    id="#home"
-    style={{ color: "black", margin: "0 10px" }} // Add margin for spacing on both sides
+      <div className="flow-links p-5" style={{ flowLinks }}>
+  <a
+    href="/react-portfolio/about"
+    id="about"
+    style={{ color: "red", textDecoration: "none" }} 
   >
-    <strong>Home</strong>
-  </NavLink>
-  <NavLink
-    to="/resume"
-    id="#resume"
-    style={{ color: "blue", marginLeft: "10px" }} // Add margin-left for spacing
+    ← Back (Home)
+  </a>
+
+  <a
+    href="/react-portfolio/resume"
+    id="resume"
+    style={{ color: "blue", textDecoration: "none" }} 
   >
-    <strong>Next (Resume)→</strong>
-  </NavLink>
+    Next (Resume)→
+  </a>
 </div>
+
     </div>
   );
 }

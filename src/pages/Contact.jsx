@@ -1,6 +1,5 @@
 import React from "react";
 import { MDBIcon } from "mdb-react-ui-kit";
-import { NavLink } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -73,45 +72,55 @@ export default function Contact() {
           </p>
           <br></br>
           <br></br>
-          <Container 
-          style={{backgroundColor:'white', color:'black',fontFamily: "sans-serif", padding:'2rem', borderRadius:'1rem'}}>
-          <Row>
-          <Col>
-            <h4 className="mb-0">
-              CAROL WARGO
-            </h4>
-            <p>
-              Full Stack Software Developer<br></br> UX | UI Designer{" "}
-            </p>
-            <ContactInfo/>
-            </Col>
-            <Col style={{ marginBottom:'1rem', fontFamily:'sans-serif'}}>
-            <h4 style={{ marginBottom:'1rem', textDecoration:'underline' }}>CONTACT INFORMATION</h4>
-        
-            EMAIL:{" "}
-            <a href="mailto:carolwargo@gmail.com"> carolwargo@gmail.com</a>{" "}
-            <br></br>
-            PHONE: <a href="tel:443-771-1726">443-771-1726</a>
-            <br></br>
-            GITHUB:{" "}
-            <a href="https://www.github.com/carolwargo">
-              www.github.com/carolwargo
-            </a>
-            <br></br>
-            LINKEDIN:{" "}
-            <a href="https://www.linkedin.com/in/carol-wargo-35021baa">
-              www.linkedin.com/in/carol-wargo-35021baa
-            </a>
-            </Col>
+          <Container
+            style={{
+              backgroundColor: "white",
+              color: "black",
+              fontFamily: "sans-serif",
+              padding: "2rem",
+              borderRadius: "1rem",
+            }}
+          >
+            <Row>
+              <Col>
+                <h4 className="mb-0">CAROL WARGO</h4>
+                <p>
+                  Full Stack Software Developer<br></br> UX | UI Designer{" "}
+                </p>
+                <ContactInfo />
+              </Col>
+              <Col style={{ marginBottom: "1rem", fontFamily: "sans-serif" }}>
+                <h4
+                  style={{ marginBottom: "1rem", textDecoration: "underline" }}
+                >
+                  CONTACT INFORMATION
+                </h4>
+                EMAIL:{" "}
+                <a href="mailto:carolwargo@gmail.com"> carolwargo@gmail.com</a>{" "}
+                <br></br>
+                PHONE: <a href="tel:443-771-1726">443-771-1726</a>
+                <br></br>
+                GITHUB:{" "}
+                <a href="https://www.github.com/carolwargo">
+                  www.github.com/carolwargo
+                </a>
+                <br></br>
+                LINKEDIN:{" "}
+                <a href="https://www.linkedin.com/in/carol-wargo-35021baa">
+                  www.linkedin.com/in/carol-wargo-35021baa
+                </a>
+              </Col>
             </Row>
-            </Container>
+          </Container>
         </div>
 
         <div className="bg-white">
           <div className="flow-links bg-white pt-3" style={{ flowLinks }}>
-            <NavLink
-              to="/react-portfolio/resume"
-              id="#resume"
+       
+
+            <a
+              href="/react-portfolio/resume"
+              id="resume"
               style={{
                 color: "red",
                 marginRight: "10px",
@@ -119,15 +128,15 @@ export default function Contact() {
                 paddingBottom: "1rem",
               }} // Add margin-right for spacing
             >
-              <strong>← Back (Resume)</strong>
-            </NavLink>
-            <NavLink
-              to="/react-portfolio/"
-              id="#home"
-              style={{ color: "black", margin: "0 10px" }} // Add margin for spacing on both sides
+             ← Back (Resume)
+            </a>
+            <a
+              href="/react-portfolio/"
+              id="home"
+              style={{ color: "blue", margin: "0 10px" }} // Add margin for spacing on both sides
             >
-              <strong>Home</strong>
-            </NavLink>
+             Next (Home) →
+            </a>
           </div>
         </div>
       </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 
 import "../styles/links.css";
@@ -213,27 +212,27 @@ export default function PortfolioPage() {
       </div>
       {/*flow-link <-previous-page & next-page->*/}
       <div className="flow-links bg-white pt-3" style={{ flowLinks }}>
-  <NavLink
-    to="/resume"
+  <a
+    href="/react-portfolio/resume"
     id="resume"
     style={{ color: "red", marginRight: "10px", paddingLeft: "3rem", paddingBottom:'2rem' }} // Add margin-right for spacing
   >
-    <strong>← Back (Resume)</strong>
-  </NavLink>
-  <NavLink
-    to="/"
+    ← Back (Resume)
+  </a>
+  <a
+    href="/react-portfolio/"
     id="home"
     style={{ color: "black", margin: "0 10px" }} // Add margin for spacing on both sides
   >
-    <strong>Home</strong>
-  </NavLink>
-  <NavLink
-    to="/contact"
+    Home
+  </a>
+  <a
+    href="/react-portfolio/contact"
     id="contact"
     style={{ color: "blue", marginLeft: "10px" }} // Add margin-left for spacing
   >
-    <strong>Next (Contact)→</strong>
-  </NavLink>
+    Next (Contact)→
+  </a>
 </div>
     </div>
   );

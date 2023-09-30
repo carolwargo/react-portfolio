@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-bootstrap";
+
 import "../styles/links.css";
 
 import { MDBRow, MDBCol } from "mdb-react-ui-kit";
@@ -477,27 +477,27 @@ export default function ResumePage() {
         </div>
       </div>
       <div className="flow-links p-5" style={{ flowLinks }}>
-  <NavLink
-    to="/about"
-    id="about"
-    style={{ color: "red"}} 
-  >
-    <strong>← Back (About)</strong>
-  </NavLink>
-  <NavLink
-    to="/"
-    id="home"
-    style={{ color: "black", margin:'0 10px' }} // Add margin for spacing on both sides
-  >
-    <strong>Home</strong>
-  </NavLink>
-  <NavLink
-    to="/portfolio"
-    id="portfolio"
-    style={{ color: "blue"}} // Add margin-left for spacing
-  >
-    <strong>Next (Portfolio)→</strong>
-  </NavLink>
+        <a
+          href="/react-portfolio/about"
+          id="about"
+          style={{ color: "red", textDecoration: "none" }}
+        >
+          ← Back (About)
+        </a>
+        <a
+          href="/react-portfolio/"
+          id="home"
+          style={{ color: "black", margin: "0 10px", textDecoration: "none" }}
+        >
+          Home
+        </a>
+        <a
+          href="/react-portfolio/portfolio"
+          id="portfolio"
+          style={{ color: "blue", textDecoration: "none" }}
+        >
+          Next (Portfolio)→
+        </a>
 </div>
 
     </div>
