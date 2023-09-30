@@ -17,8 +17,8 @@ export default function Intro() {
     backgroundPosition: "center top",
     backgroundRepeat: "no-repeat",
     width: "100vw",
-    height: "100vh",
-    paddingRight: "4rem",
+    height: "auto",
+
   }}
 >
   <Col md={5}>
@@ -36,22 +36,19 @@ export default function Intro() {
 
   <Col
     md={6}
-    className="pl-4 pr-2 ml-2 mt-5"
+    className="pl-5 pr-4 m-2 mt-5"
     style={{
      
-      // Adjust the padding at the top
-      // Adjust the padding at the bottom
     }}
   >
     <h2
-      className="mt-0 mb-0"
       style={{
         fontSize: "2rem", // Adjust the font size
       }}
     >
       <strong>CAROL WARGO</strong>
     </h2>
-    <h5 className="mb-3 mt-0 ">FULL STACK DEVELOPER | UI/UX DESIGNER</h5>
+    <h5>FULL STACK DEVELOPER | UI/UX DESIGNER</h5>
     <p>
       "I enjoy working with the latest tools and frameworks to bring new
       ideas to life. From crafting interactive user interfaces to
@@ -77,7 +74,12 @@ export default function Intro() {
   </Col>
 </Row>
 
-      <div className=" bg-light text-black pl-5 pr-2 pt-2 pb-2">
+      <div className=" bg-light text-black pl-5 pr-2 "
+      style={{
+        paddingBottom: "4rem",
+        paddingTop: "4rem",
+      }}
+      >
         <h1
           style={{
             fontFamily: "bellota text",
@@ -109,7 +111,7 @@ export default function Intro() {
         </h5>
         <p
           className="text-secondary ml-2 "
-          style={{ fontFamily: "bellota text",  paddingLeft: "2rem"   }}
+          style={{ fontFamily: "bellota text",  paddingLeft: "2rem", paddingRight: "2rem"   }}
         >
           {" "}
           "<strong>Click the links above</strong> to jump to the section you want to view...    

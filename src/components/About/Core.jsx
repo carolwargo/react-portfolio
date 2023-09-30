@@ -7,25 +7,35 @@ import { faThinkPeaks } from "@fortawesome/free-brands-svg-icons";
 
 export default function Core() {
   return (
-    <div className=" pt-5 pb-5 bg-black"
+    <div className=" p-3 bg-black"
     style={{fontFamily:'bellota text'}}
     >
-      <Container className="bg-black text-white pt-2 mb-2 rounded">
-        <Row className="">
-        <h2 className="mt-1 pt-2 ml-3 pr-2 pl-3" id="#philisophy-values">
+      <Container className="bg-black text-white pt-5 pb-5 rounded">
+        <Row 
+           style={{
+            fontFamily: "bellota text",
+            textAlign: "center",
+          }}
+          >
+        <h2 className="philosophy-values" id="#philisophy-values"
+     
+        >
           <strong>1. FAMILY, PHILOSOPHY & VALUES~</strong>
         </h2>
-        </Row>
+        
         <div className="ml-md-5 mr-md-5">
-          <p className=" pr-3">
+          <p className=" pr-3 pl-3">
             What I hold dear, what I believe in, and what I constantly strive
             for- A window into the foundation of my identity and the driving
             forces that have shaped my path... 
           </p>
         </div>
+        </Row>
         <Container>        
-          <Container className=" m-2 p-2">
-          <Row className="d-flex justify-content-evenly mr-1">
+          <Container className=" p-2">
+          <Row className="d-flex justify-content-evenly mr-1"
+          
+          >
           <Row
               sm={12}
               className="bg-white text-black m-1 p-3"
