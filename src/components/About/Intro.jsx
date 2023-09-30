@@ -21,22 +21,24 @@ export default function Intro() {
 
   }}
 >
-  <Col md={5}>
-    <img
-      src={Me}
-      alt="Me"
-      className="me-card img-fluid"
-      style={{
-        height: "100%", // Adjust the height of the image
-        position: "relative",
-        paddingRight: "2rem",
-      }}
-    />
-  </Col>
+<Col md={5}>
+  <img
+    src={Me}
+    alt="Me"
+    className="me-card img-fluid with-shadow"
+    style={{
+      height: "100%", 
+      width: "auto",
+      position: "relative",
+      paddingRight: "2rem",
+      boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)" // Added box shadow directly
+    }}
+  />
+</Col>
 
   <Col
     md={6}
-    className="pl-5 pr-4 m-2 mt-5"
+    className="p-4 m-2 mt-5"
     style={{
      
     }}
@@ -74,7 +76,7 @@ export default function Intro() {
   </Col>
 </Row>
 
-      <div className=" bg-light text-black pl-5 pr-2 "
+      <div className=" bg-light text-black p-5 "
       style={{
         paddingBottom: "4rem",
         paddingTop: "4rem",
@@ -84,15 +86,15 @@ export default function Intro() {
           style={{
             fontFamily: "bellota text",
             fontSize: "4rem",
-            marginLeft: "1rem",
             textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
             paddingLeft: "1rem",
+            paddingRight: "1rem",
           }}
         >
           ABOUT ME{" "}
         </h1>
 
-        <h5 className="mr-3 ml-2" style={{ fontFamily: "bellota text", paddingLeft: "2rem"}}>
+        <h5 style={{ fontFamily: "bellota text", paddingLeft: "2rem"}}>
           Get to know a little, or a lot. You choose...  <br></br>{" "}
           <strong>
             {" "}

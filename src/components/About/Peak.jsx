@@ -11,11 +11,11 @@ export default function Peak() {
         >
           <Row
           >
-            <Container 
-            style={{ textAlign: "center" }}
+            <Container className="p-5"
+            style={{}}
             >
-              <h2 className="mt-4">
-                <strong>2. MY BLESSING & MY CURSE ~</strong>
+              <h2 className="mt-4 text-decoration-underline">
+                <strong>2. MY BLESSING & MY CURSE </strong>
               </h2>
               <p>
               <strong>PEAK PERFORMANCE BRAIN</strong> <br></br>(clinically
@@ -36,9 +36,9 @@ export default function Peak() {
 
           <Container className="bg-white text-black p-5 pl-3 pr-3 rounded">
             <div className="pr-3 pl-3">
-            <h2 className=" text-center text-decoration-underline">
+            <h5 className=" text-center text-decoration-underline">
               <strong>KEY FACTORS OF PEAK PERFORMERS:</strong>
-            </h2>
+            </h5>
             <ul>
               <li>
                 <strong>OPTIMAL COGNITIVE FUNCTION: </strong>
@@ -75,11 +75,11 @@ export default function Peak() {
             </div>
           </Container>
 
-          <Row className="d-flex justify-content-center justify-content-lg-evenly mt-4">
+          <Row className="d-flex p-5 justify-content-center justify-content-lg-evenly mt-4">
             <Container className="text-center rounded">
-              <h3 style={{ fontSize: "2rem", textDecoration: "underline" }}>
-                MY EXPERIENCE:
-              </h3>
+              <h5 style={{ textDecoration: "underline" }}>
+                WHAT I EXPERIENCE
+              </h5>
               <p>
                 IN MY WORDS-"A heightened awareness of intricate details that
                 often escape notice. I perceive nuances in sound & mood, detect

@@ -7,9 +7,13 @@ export default function Volunteer() {
       className="border-top p-5 bg-secondary text-white"
       id="#community-service"
     >
-      <Container className=" text-center rounded mx-auto bg-secondary">
-        <h2>
-          <strong> 3. GIVING BACK & GAINING MORE~</strong>
+      <Container className=" p-3 rounded mx-auto bg-secondary"
+      style={{
+        fontFamily: "bellota text",
+      }}
+      >
+        <h2 className="text-decoration-underline">
+          <strong>3. GIVING BACK & GAINING MORE</strong>
         </h2>
         <p>
           <strong>EVERYTHING NEW & EXCITING</strong> in my life has been a
