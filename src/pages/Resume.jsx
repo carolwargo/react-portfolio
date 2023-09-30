@@ -478,22 +478,22 @@ export default function ResumePage() {
       </div>
       <div className="flow-links p-5" style={{ flowLinks }}>
   <NavLink
-    href="/react-portfolio/about"
-    id="#about"
+    to="/about"
+    id="about"
     style={{ color: "red"}} 
   >
     <strong>← Back (About)</strong>
   </NavLink>
   <NavLink
-    href="/react-portfolio/"
-    id="#home"
+    to="/"
+    id="home"
     style={{ color: "black", margin:'0 10px' }} // Add margin for spacing on both sides
   >
     <strong>Home</strong>
   </NavLink>
   <NavLink
-    href="/react-portfolio/portfolio"
-    id="#portfolio"
+    to="/portfolio"
+    id="portfolio"
     style={{ color: "blue"}} // Add margin-left for spacing
   >
     <strong>Next (Portfolio)→</strong>

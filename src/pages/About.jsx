@@ -44,14 +44,14 @@ export default function AboutPage() {
       <div className="flow-links bg-white pt-3 pb-3" style={{ flowLinks }}>
   
   <NavLink
-    href="/react-portfolio/"
+    to="/"
     id="#home"
     style={{ color: "black", margin: "0 10px" }} // Add margin for spacing on both sides
   >
     <strong>Home</strong>
   </NavLink>
   <NavLink
-    href="resume"
+    to="/resume"
     id="#resume"
     style={{ color: "blue", marginLeft: "10px" }} // Add margin-left for spacing
   >

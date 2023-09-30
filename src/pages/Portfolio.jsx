@@ -174,12 +174,12 @@ export default function PortfolioPage() {
     
           >
             <h4
-            style={{fontFamily:'sans-serif'}}
+            style={{fontFamily:'sans-serif', marginTop:'2rem'}}
             >
               <strong>EXPLORE...</strong>
             </h4>
             <p
-              className="graphic-design"
+              className="graphic-design "
               style={{ color: "white", fontFamily: "bellota text" }}
             >
               Explore some of my 'original' Graphic Design pieces for a glimpse
@@ -188,7 +188,7 @@ export default function PortfolioPage() {
               craft. Take a moment to immerse yourself in the details and
               discover the stories behind each creation."
             </p>
-            <ul className="pt-4">
+            <ul className="pt-3">
               <li>
                 Renderings are all custom design items, that originate from a
                 blank canvas.
@@ -203,7 +203,8 @@ export default function PortfolioPage() {
             </ul>
          
       </Col>
-          <Col md={7}>
+          <Col md={7}
+          >
             <GraphicDesigns />
           </Col>
           
@@ -213,22 +214,22 @@ export default function PortfolioPage() {
       {/*flow-link <-previous-page & next-page->*/}
       <div className="flow-links bg-white pt-3" style={{ flowLinks }}>
   <NavLink
-    href="/resume"
-    id="#resume"
+    to="/resume"
+    id="resume"
     style={{ color: "red", marginRight: "10px", paddingLeft: "3rem", paddingBottom:'2rem' }} // Add margin-right for spacing
   >
     <strong>← Back (Resume)</strong>
   </NavLink>
   <NavLink
-    href="/react-portfolio/"
-    id="#home"
+    to="/"
+    id="home"
     style={{ color: "black", margin: "0 10px" }} // Add margin for spacing on both sides
   >
     <strong>Home</strong>
   </NavLink>
   <NavLink
-    href="/contact"
-    id="#contact"
+    to="/contact"
+    id="contact"
     style={{ color: "blue", marginLeft: "10px" }} // Add margin-left for spacing
   >
     <strong>Next (Contact)→</strong>

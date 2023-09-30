@@ -110,7 +110,7 @@ export default function Contact() {
         <div className="bg-white">
           <div className="flow-links bg-white pt-3" style={{ flowLinks }}>
             <NavLink
-              href="/react-portfolio/resume"
+              to="/react-portfolio/resume"
               id="#resume"
               style={{
                 color: "red",
@@ -122,7 +122,7 @@ export default function Contact() {
               <strong>← Back (Resume)</strong>
             </NavLink>
             <NavLink
-              href="/react-portfolio/"
+              to="/react-portfolio/"
               id="#home"
               style={{ color: "black", margin: "0 10px" }} // Add margin for spacing on both sides
             >

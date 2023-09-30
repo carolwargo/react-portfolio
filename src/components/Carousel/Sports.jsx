@@ -11,12 +11,17 @@ import { Col, Row } from "react-bootstrap";
 const customContainerStyle = {
   maxWidth: "600px", // Adjust the maximum width as needed
   margin: "0 auto", // Center the container
+  boxShadow: "0 0 30px rgba(255, 255, 255, 0.5)", 
+  paddingRight: "0", // Add this line to remove right padding
+  paddingLeft: "0", // Add this line to remove left padding
 };
 
 const customImgStyle = {
   width: "100%", // Make images fill the container width
   height: "auto",
-};
+ 
+  };
+  
 
 export default function CarouselFadeExample() {
   return (
