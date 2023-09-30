@@ -27,26 +27,23 @@ import ResumeWorkspace from "../assets/images/ResumeWorkspace.png";
 const flowLinks = {
   display: "flex",
   justifyContent: "center",
-
 };
 
 export default function ResumePage() {
   return (
     <div className="resume" id="resume">
-      <div className=" bg-light text-black pt-4 pl-4">
+      <div className=" bg-light text-black p-5">
         <h1
           style={{
             fontFamily: "bellota text",
             fontSize: "4rem",
-            marginLeft: "1rem",
             textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
-            paddingLeft: "1rem",
           }}
         >
           RESUME{" "}
         </h1>
 
-        <h5 className="mr-3 ml-3" style={{ fontFamily: "bellota text", paddingLeft: "2rem"   }}>
+        <h5 className="" style={{ fontFamily: "bellota text"}}>
           Digital Resume contains{" "}
           <strong>
             {" "}
@@ -70,8 +67,8 @@ export default function ResumePage() {
           -{" "}
         </h5>
         <p
-          className="text-secondary ml-3"
-          style={{ fontFamily: "bellota text", marginBottom: "2rem",  paddingLeft: "2rem" }}
+          className="text-secondary"
+          style={{ fontFamily: "bellota text"}}
         >
           {" "}
           "<strong>Click the links above</strong> to jump to the section you
@@ -93,29 +90,29 @@ export default function ResumePage() {
         <MDBRow
           className="pro-row pt-2 bg-secondary-subtle"
           style={{
-            paddingLeft: "3rem",
-            paddingRight: "3rem",
+
             paddingBottom: "2rem",
             borderRadius: "10px",
             backgroundColor: "white",
             color: "black",
           }}
         >
-          <MDBCol md="12">
-            <h1
+          <MDBCol md="12"
+          className= "p-5"
+          >
+            <h3
               className="text-black"
               style={{
                 textDecoration: "underline",
                 fontFamily: "bellota text",
-                textAlign: "center",
                 paddingTop: "2rem",
-                marginBottom: "2rem",
+                paddingBottom: "2rem",
                 textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
               }}
             >
               PROFESSIONAL BACKGROUND
-            </h1>
-            <p style={{ marginRight: "2rem" }}>
+            </h3>
+            <p >
               I have earned my living in Real Estate for the last 21 years in
               various capacities. Started as an Agent ("Salesperson"), recruited
               to work directly under the #1 Broker in my area, transitioned to
@@ -127,9 +124,7 @@ export default function ResumePage() {
 <MDBRow
  style={{ 
   borderRadius: "10px", 
-  padding: "1rem",
-  paddingTop: "1.5rem",
-  paddingBottom: "1.5rem",
+  padding: "3rem",
   backgroundColor: "white",
   marginBottom: "2rem",
   }}
@@ -216,10 +211,11 @@ export default function ResumePage() {
         style={{
           fontFamily: "bellota text",
           color: "white",
+          paddingTop:'2rem'
         }}
       >
         <h1
-          className="technical-skills text-light mt-2"
+          className="technical-skills text-light mt-2 p-2"
           id="technical-skills"
           style={{
             textDecoration: "underline",
@@ -383,9 +379,10 @@ export default function ResumePage() {
           </Timeline>
         </Timeline>
         <h4 style={{ textAlign: "center" }}>
-          <strong>MORE TO COME!</strong> <br></br>Exploring & Studying New
-          Technologies Daily!
+          <strong>MORE TO COME!</strong>
         </h4>
+        <p style={{ textAlign: "center" }}>Exploring & Studying New
+          Technologies Daily!</p>
 
         <br></br>
         <div className="professional-experience container-fluid mt-5 pb-4 d-flex flex-column justify-content-center bg-white text-black">
@@ -479,25 +476,25 @@ export default function ResumePage() {
           </Timeline>
         </div>
       </div>
-      <div className="flow-links" style={{ flowLinks }}>
+      <div className="flow-links p-5" style={{ flowLinks }}>
   <NavLink
     href="/react-portfolio/about"
     id="#about"
-    style={{ color: "red", marginRight: "10px", paddingLeft: "3rem", paddingBottom:'2rem' }} // Add margin-right for spacing
+    style={{ color: "red"}} 
   >
     <strong>← Back (About)</strong>
   </NavLink>
   <NavLink
     href="/react-portfolio/"
     id="#home"
-    style={{ color: "black", margin: "0 10px" }} // Add margin for spacing on both sides
+    style={{ color: "black", margin:'0 10px' }} // Add margin for spacing on both sides
   >
     <strong>Home</strong>
   </NavLink>
   <NavLink
     href="/react-portfolio/portfolio"
     id="#portfolio"
-    style={{ color: "blue", marginLeft: "10px" }} // Add margin-left for spacing
+    style={{ color: "blue"}} // Add margin-left for spacing
   >
     <strong>Next (Portfolio)→</strong>
   </NavLink>

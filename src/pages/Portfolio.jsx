@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
 
 import "../styles/links.css";
 
@@ -17,20 +18,20 @@ export default function PortfolioPage() {
   return (
     <div className="portfolio" id="portfolio">
       <div style={{ fontFamily: "bellota text" }}>
-        <div className=" bg-light text-black pt-4 pl-5">
+        <div className=" bg-light text-black p-5">
           <h1
             style={{
               fontFamily: "bellota text",
               fontSize: "4rem",
-              marginLeft: "1rem",
+         
               textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
-              paddingLeft: "1rem",
+       
             }}
           >
             PORTFOLIO{" "}
           </h1>
-<div className="ml-5 pl-5">
-          <h5 className="ml-5 p-l" style={{ fontFamily: "bellota text", paddingLeft: "2rem"   }}>
+<div >
+          <h5 style={{ fontFamily: "bellota text"}}>
             My Portfolio contains the following sections:{" "}
             <strong>
               {" "}
@@ -49,12 +50,9 @@ export default function PortfolioPage() {
             -{" "}
           </h5>
           <p
-            className="text-secondary ml-5"
+            className="text-secondary"
             style={{
               fontFamily: "bellota text",
-              marginBottom: "2rem",
-              paddingBottom: "2rem",
-              paddingLeft: "2rem"  
             }}
           >
             {" "}
@@ -70,33 +68,36 @@ export default function PortfolioPage() {
           </p>
         </div>
         </div>
+        <Container className="p-5">
         <Row>
+          
           <h2
             style={{
               color: "white",
               textDecoration: "underline",
               fontFamily: "sans-serif",
-              marginTop: "1rem",
-              marginLeft: "2rem",
             }}
-          >
-            COMPLETED WORK
+          >COMPLETED WORK
           </h2>
           <p
             style={{
               color: "white",
               fontFamily: "Bellota text",
-              marginLeft: "2rem",
-              marginRight: "4rem",
             }}
           >
             View some of my completed projects. Each item has <br></br>a button
             linked to the project repository and, a link to the "function"
             (video or deployment)."
           </p>
+          </Row>
+         
           <PortfolioItems />
-        </Row>
+          </Container>
+       
 
+
+        <div className="bg-white">
+<Container className="p-5">
         <Row 
         className="in-progress-header" id="projects-in-progress"
         style={{
@@ -105,22 +106,17 @@ export default function PortfolioPage() {
         >
           <h2
             style={{
-              color: "white",
+              color: "black",
               textDecoration: "underline",
               fontFamily: "sans-serif",
-              marginTop: "2rem",
-              marginLeft: "2rem",
             }}
           >
             WORK IN-PROGRESS
           </h2>
           <p
             style={{
-              color: "white",
+              color: "black",
               fontFamily: "bellota text",
-              marginLeft: "2rem",
-              marginRight: "6rem",
-              paddingRight: "4rem",
             }}
           >
             My "Work In-Progress" showcases a range of projects that are
@@ -133,29 +129,27 @@ export default function PortfolioPage() {
             understanding, as well as plans for "future development" for each
             project.
           </p>
-          <h5
+          <p
           style={{
-            color: "white",
+            color: "black",
             fontFamily: "bellota text",
-            marginLeft: "2rem",
-            marginRight: "6rem",
-            paddingRight: "4rem",
           }}
           >
-            NOTE: Not all of my "in process" projects have been added. Check back often to see new additions!</h5>
+            Not all of my "in process" projects have been added. Check back often to see new additions!</p>
+        
         </Row>
 
         <InProgress />
-
+</Container>
+</div>
+<Container className="p-5">
         {/* START of "GRAPHIC-DESIGN" ROW */}
         <h2
           style={{
             color: "white",
             textDecoration: "underline",
-            fontWeight: "bold",
-            marginTop: "2rem",
-            marginLeft: "2rem",
-            fontFamily: "bellota text",
+            fontFamily: "sans-serif",
+      
           }}
         >
           GRAPHIC DESIGN WORK
@@ -163,10 +157,8 @@ export default function PortfolioPage() {
         <p
           style={{
             color: "white",
-            fontFamily: "bellota text",
-            marginLeft: "2rem",
+            fontFamily: "sans-serif",
 
-            paddingRight: "1rem",
           }}
         >
           "Where it all started - I've been captivated by design for as long as
@@ -176,16 +168,14 @@ export default function PortfolioPage() {
           the problem-solving required to achieve the perfect outcome, every
           step feels like a meditative journey.
         </p>
-        <Row className="graphic-design-header " id="graphic-designs">
-          <Col
+        <Row className="graphic-design-header" id="graphic-designs">
+          <Col 
             md={5}
-            style={{
-              paddingTop: "3rem",
-              paddingLeft: "3rem",
-              paddingRight: "2rem",
-            }}
+    
           >
-            <h4>
+            <h4
+            style={{fontFamily:'sans-serif'}}
+            >
               <strong>EXPLORE...</strong>
             </h4>
             <p
@@ -216,12 +206,14 @@ export default function PortfolioPage() {
           <Col md={7}>
             <GraphicDesigns />
           </Col>
+          
         </Row>
+        </Container>
       </div>
       {/*flow-link <-previous-page & next-page->*/}
       <div className="flow-links bg-white pt-3" style={{ flowLinks }}>
   <NavLink
-    href="/react-portfolio/resume"
+    href="/resume"
     id="#resume"
     style={{ color: "red", marginRight: "10px", paddingLeft: "3rem", paddingBottom:'2rem' }} // Add margin-right for spacing
   >
