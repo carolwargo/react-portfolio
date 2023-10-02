@@ -8,7 +8,7 @@ export default function AddToContactsButton() {
             "title": "Full Stack Web Developer",
             "email": "carolwargo@gmail.com",
             "phone": "(443)771-1726",
-            "website": "carolwargo.github.io/react-portfolio"
+            "website": "carolwargo.github.io/react-portfolio/"
         };
 
         const contactString = "BEGIN:VCARD\n" +
@@ -31,9 +31,10 @@ export default function AddToContactsButton() {
     }
 
     return (
-        <div className='mt-3'
+        <div className='mt-4 p-2'
+            style={{fontFamily: 'serif'}}
         >
-            <h6>Click To Add Me To Your Contacts!</h6>
+            <h6>Click to add me to your contacts!</h6>
             <button
                 onClick={addToContacts}
                 style={{

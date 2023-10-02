@@ -109,6 +109,11 @@ export default function Contact() {
                 <a href="https://www.linkedin.com/in/carol-wargo-35021baa">
                   www.linkedin.com/in/carol-wargo-35021baa
                 </a>
+                <br></br>
+                WEBSITE:{" "}
+                <a href="https://carolwargo.github.io/react-portfolio/">
+                  www.carolwargo.github.io/react-portfolio/
+                </a>
               </Col>
             </Row>
           </Container>
