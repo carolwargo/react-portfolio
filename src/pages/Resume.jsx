@@ -24,6 +24,10 @@ import BuildTest from "../assets/images/BuildTest.png";
 import APIQ from "../assets/images/APIQ.png";
 import ResumeWorkspace from "../assets/images/ResumeWorkspace.png";
 
+import Star1 from "../components/OnClickEvents/Star1";
+import Star2 from "../components/OnClickEvents/Star2";
+import Star3 from "../components/OnClickEvents/Star3";
+
 const flowLinks = {
   display: "flex",
   justifyContent: "center",
@@ -91,7 +95,6 @@ export default function ResumePage() {
           className="pro-row pt-2 bg-secondary-subtle"
           style={{
 
-            paddingBottom: "2rem",
             borderRadius: "10px",
             backgroundColor: "white",
             color: "black",
@@ -100,18 +103,16 @@ export default function ResumePage() {
           <MDBCol md="12"
           className= "p-5"
           >
-            <h3
+            <h1
               className="text-black"
               style={{
                 textDecoration: "underline",
                 fontFamily: "bellota text",
-                paddingTop: "2rem",
-                paddingBottom: "2rem",
                 textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
               }}
             >
               PROFESSIONAL BACKGROUND
-            </h3>
+            </h1>
             <p >
               I have earned my living in Real Estate for the last 21 years in
               various capacities. Started as an Agent ("Salesperson"), recruited
@@ -120,15 +121,29 @@ export default function ResumePage() {
               personal Investments, taking on roles such as Owner, Landlord,
               Designer, Marketing Manager, General Contractor, and even Laborer.
             </p>{" "}
+            <br></br>
+            <p>
+                {" "}
+                <strong>The last 20 years in business</strong>, have presented
+                the opportunity for me to work in various roles. What sets me apart is my knack for translating intricate business requirements into precise technical solutions. I am adept at crafting detailed, phased plans for seamless integration in the future. My proactive approach in identifying potential issues allows me to preemptively address challenges, ensuring projects not only fulfill functional needs, but also align harmoniously with overarching business objectives.These
+                experiences have honed my communication skills, ability to
+                collaborate with cross-functional teams, and provided me with a
+                strong foundation in project management. I can effectively
+                translate business requirements into technical solutions, provide detailed plans in phazes for future integration, be pro-active in identifying potential issues, and problem solve with ease
+                ensuring projects not only meet the functional needs but also
+                align with the overall business objectives.
+              </p>
           </MDBCol>
+          
 <MDBRow
  style={{ 
-  borderRadius: "10px", 
+ 
   padding: "3rem",
   backgroundColor: "white",
-  marginBottom: "2rem",
+
   }}
 >
+              
           <MDBCol md="5" >
             <img
               src={ResumeWorkspace}
@@ -138,57 +153,73 @@ export default function ResumePage() {
             />
           </MDBCol>
        
-          <MDBCol md="7" style={{ color: "black", paddingTop:'.5rem'}}>
-            <ul
-             
-            >
+          <MDBCol md="7" style={{ color: "black"}}>
+          <h3
+             style={{
+              textDecoration: "underline",
+              fontFamily: "bellota text",
+              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
+              textAlign: "center",
+              padding: "2rem",
+            }}
+          >SEE HOW...</h3>
+   
+            <ul>
               <li>
-                {" "}
-                <strong>The last 20 years in business</strong>, have presented
-                the opportunity for me to work in various roles. These
-                experiences have honed my communication skills, ability to
-                collaborate with cross-functional teams, and provided me with a
-                strong foundation in project management. I can effectively
-                translate business requirements into technical solutions,
-                ensuring projects not only meet the functional needs but also
-                align with the overall business objectives.
-              </li>
-              <li>
-                {" "}
-                <strong>Collaboration and teamwork</strong> are at the core of
-                my approach. I enjoy working alongside talented individuals,
-                leveraging our collective skills to create impactful solutions.
-                Through effective communication and a collaborative mindset, I
-                believe in delivering high-quality work that meets client
-                requirements and exceeds expectations.
-              </li>
-              
-              <li>
-                <strong>Continuous learning</strong> is a fundamental aspect of
-                personal & professional growth. I constantly seek opportunities
-                to expand my knowledge and refine my skills. I am a forward
-                thinker, lifetime student that strives to stay ahead of the
-                curve, ensuring that I can provide innovative solutions that
-                address the evolving needs of the industry.
-              </li>
                 
-          <p className="mb-2">
-              {" "}
-              "I bring a wealth of experience and commitment to excellence to
-              the table. With a solid foundation in business, I have built a
-              track record of success through hard work and adaptability. As I
-              shift my focus to software development, I carry forward the
-              strategic thinking, negotiation skills, and dedication to
-              excellence that defined my real estate career. By drawing
-              parallels between these two domains, I am well-positioned to
-              harness my expertise to foster well-crafted and meaningful
-              solutions."
-            </p>
+              <Star1/>
+              </li>
+
+              <li>
+              <Star2/>
+</li>
+<li> <Star3/></li>
             </ul>
             
-            
           </MDBCol>
-          <p className="mb-2">
+    
+
+          </MDBRow>
+          <div className="p-5">
+          <h3
+             style={{
+              textDecoration: "underline",
+              fontFamily: "bellota text",
+              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
+              textAlign: "center",
+            }}
+          >IN ADDITION...</h3>
+          <ul>
+                   
+                   <li>
+                     {" "}
+                     <strong>Collaboration and teamwork</strong> are at the core of
+                     my approach. I enjoy working alongside talented individuals,
+                     leveraging our collective skills to create impactful solutions.
+                     Through effective communication and a collaborative mindset, I
+                     believe in delivering high-quality work that meets client
+                     requirements and exceeds expectations.
+                   </li>
+                   
+                   <li>
+                     <strong>Continuous learning</strong> is a fundamental aspect of
+                     personal & professional growth. I constantly seek opportunities
+                     to expand my knowledge and refine my skills. I am a forward
+                     thinker, lifetime student that strives to stay ahead of the
+                     curve, ensuring that I can provide innovative solutions that
+                     address the evolving needs of the industry.
+                   </li>
+                    
+                 </ul>
+          <h3
+             style={{
+              textDecoration: "underline",
+              fontFamily: "bellota text",
+              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
+              textAlign: "center",
+            }}
+          >IN SUMMARY...</h3>
+          <p>
               {" "}
               "I bring a wealth of experience and commitment to excellence to
               the table. With a solid foundation in business, I have built a
@@ -200,9 +231,7 @@ export default function ResumePage() {
               harness my expertise to foster well-crafted and meaningful
               solutions."
             </p>
-          </MDBRow>
-         
-        
+            </div>
      
         </MDBRow>
       </div>
@@ -385,7 +414,7 @@ export default function ResumePage() {
           Technologies Daily!</p>
 
         <br></br>
-        <div className="professional-experience container-fluid mt-5 pb-4 d-flex flex-column justify-content-center bg-white text-black">
+        <div className="professional-experience container-fluid pt-2 d-flex flex-column justify-content-center bg-white text-black">
           <h1
             className="text-black p-5"
             id="experience"
@@ -476,7 +505,7 @@ export default function ResumePage() {
           </Timeline>
         </div>
       </div>
-      <div className="flow-links p-5" style={{ flowLinks }}>
+      <div className="flow-links p-4" style={{ flowLinks }}>
         <a
           href="/react-portfolio/about"
           id="about"
