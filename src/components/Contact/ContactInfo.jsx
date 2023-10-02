@@ -7,7 +7,8 @@ export default function AddToContactsButton() {
             "name": "Carol Wargo",
             "title": "Full Stack Web Developer",
             "email": "carolwargo@gmail.com",
-            "phone": "(443)771-1726"
+            "phone": "(443)771-1726",
+            "website": "carolwargo.github.io/react-portfolio"
         };
 
         const contactString = "BEGIN:VCARD\n" +
@@ -15,6 +16,7 @@ export default function AddToContactsButton() {
             "FN:" + contactData.name + "\n" +
             "EMAIL:" + contactData.email + "\n" +
             "TEL:" + contactData.phone + "\n" +
+            "URL:" + contactData.website + "\n" + 
             "END:VCARD";
 
         const blob = new Blob([contactString], { type: "text/vcard" });

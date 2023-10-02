@@ -96,7 +96,7 @@ export default function Contact() {
                   CONTACT INFORMATION
                 </h4>
                 EMAIL:{" "}
-                <a href="mailto:carolwargo@gmail.com"> carolwargo@gmail.com</a>{" "}
+                <a href="mailto:carolwargo.dev@gmail.com"> carolwargo.dev@gmail.com</a>{" "}
                 <br></br>
                 PHONE: <a href="tel:443-771-1726">443-771-1726</a>
                 <br></br>

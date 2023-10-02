@@ -47,7 +47,7 @@ export default function ResumePage() {
           RESUME{" "}
         </h1>
 
-        <h5 className="" style={{ fontFamily: "bellota text"}}>
+        <h5 className="" style={{ fontFamily: "bellota text" }}>
           Digital Resume contains{" "}
           <strong>
             {" "}
@@ -70,10 +70,7 @@ export default function ResumePage() {
           </strong>{" "}
           -{" "}
         </h5>
-        <p
-          className="text-secondary"
-          style={{ fontFamily: "bellota text"}}
-        >
+        <p className="text-secondary" style={{ fontFamily: "bellota text" }}>
           {" "}
           "<strong>Click the links above</strong> to jump to the section you
           want to view... and
@@ -94,15 +91,12 @@ export default function ResumePage() {
         <MDBRow
           className="pro-row pt-2 bg-secondary-subtle"
           style={{
-
             borderRadius: "10px",
             backgroundColor: "white",
             color: "black",
           }}
         >
-          <MDBCol md="12"
-          className= "p-5"
-          >
+          <MDBCol md="12" className="p-5">
             <h1
               className="text-black"
               style={{
@@ -113,7 +107,7 @@ export default function ResumePage() {
             >
               PROFESSIONAL BACKGROUND
             </h1>
-            <p >
+            <p>
               I have earned my living in Real Estate for the last 21 years in
               various capacities. Started as an Agent ("Salesperson"), recruited
               to work directly under the #1 Broker in my area, transitioned to
@@ -123,103 +117,113 @@ export default function ResumePage() {
             </p>{" "}
             <br></br>
             <p>
-                {" "}
-                <strong>The last 20 years in business</strong>, have presented
-                the opportunity for me to work in various roles. What sets me apart is my knack for translating intricate business requirements into precise technical solutions. I am adept at crafting detailed, phased plans for seamless integration in the future. My proactive approach in identifying potential issues allows me to preemptively address challenges, ensuring projects not only fulfill functional needs, but also align harmoniously with overarching business objectives.These
-                experiences have honed my communication skills, ability to
-                collaborate with cross-functional teams, and provided me with a
-                strong foundation in project management. I can effectively
-                translate business requirements into technical solutions, provide detailed plans in phazes for future integration, be pro-active in identifying potential issues, and problem solve with ease
-                ensuring projects not only meet the functional needs but also
-                align with the overall business objectives.
-              </p>
+              {" "}
+              <strong>The last 20 years in business</strong>, have presented the
+              opportunity for me to work in various roles. What sets me apart is
+              my knack for translating intricate business requirements into
+              precise technical solutions. I am adept at crafting detailed,
+              phased plans for seamless integration in the future. My proactive
+              approach in identifying potential issues allows me to preemptively
+              address challenges, ensuring projects not only fulfill functional
+              needs, but also align harmoniously with overarching business
+              objectives.These experiences have honed my communication skills,
+              ability to collaborate with cross-functional teams, and provided
+              me with a strong foundation in project management. I can
+              effectively translate business requirements into technical
+              solutions, provide detailed plans in phazes for future
+              integration, be pro-active in identifying potential issues, and
+              problem solve with ease ensuring projects not only meet the
+              functional needs but also align with the overall business
+              objectives.
+            </p>
           </MDBCol>
-          
-<MDBRow
- style={{ 
- 
-  padding: "3rem",
-  backgroundColor: "white",
 
-  }}
->
-              
-          <MDBCol md="5" >
-            <img
-              src={ResumeWorkspace}
-              alt="ResumeWorkspace"
-              className="img-fluid pt-2"
-              style={{ width: "100%", borderRadius:'10px' }}
-            />
-          </MDBCol>
-       
-          <MDBCol md="7" style={{ color: "black"}}>
-          <h3
-             style={{
-              textDecoration: "underline",
-              fontFamily: "bellota text",
-              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
-              textAlign: "center",
-              padding: "2rem",
+          <MDBRow
+            style={{
+              padding: "3rem",
+              backgroundColor: "white",
             }}
-          >SEE HOW...</h3>
-   
+          >
+            <MDBCol md="5">
+              <img
+                src={ResumeWorkspace}
+                alt="ResumeWorkspace"
+                className="img-fluid pt-2"
+                style={{ width: "100%", borderRadius: "10px" }}
+              />
+            </MDBCol>
+
+            <MDBCol md="7" style={{ color: "black" }}>
+              <h3
+                style={{
+                  textDecoration: "underline",
+                  fontFamily: "bellota text",
+                  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
+                  textAlign: "center",
+                  padding: "2rem",
+                }}
+              >
+                SEE HOW...
+              </h3>
+
+              <ul>
+                <li style={{ paddingTop: "1rem" }}>
+                  <Star1 />
+                </li>
+
+                <li style={{ paddingTop: "1rem" }}>
+                  <Star2 />
+                </li>
+                <li style={{ paddingTop: "1rem" }}>
+                  {" "}
+                  <Star3 />
+                </li>
+              </ul>
+            </MDBCol>
+          </MDBRow>
+          <div className="p-5">
+            <h3
+              style={{
+                textDecoration: "underline",
+                fontFamily: "bellota text",
+                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
+                textAlign: "center",
+              }}
+            >
+              IN ADDITION...
+            </h3>
             <ul>
               <li>
-                
-              <Star1/>
+                {" "}
+                <strong>Collaboration and teamwork</strong> are at the core of
+                my approach. I enjoy working alongside talented individuals,
+                leveraging our collective skills to create impactful solutions.
+                Through effective communication and a collaborative mindset, I
+                believe in delivering high-quality work that meets client
+                requirements and exceeds expectations.
               </li>
 
               <li>
-              <Star2/>
-</li>
-<li> <Star3/></li>
+                <strong>Continuous learning</strong> is a fundamental aspect of
+                personal & professional growth. I constantly seek opportunities
+                to expand my knowledge and refine my skills. I am a forward
+                thinker, lifetime student that strives to stay ahead of the
+                curve, ensuring that I can provide innovative solutions that
+                address the evolving needs of the industry.
+              </li>
             </ul>
-            
-          </MDBCol>
-    
-
-          </MDBRow>
-          <div className="p-5">
-          <h3
-             style={{
-              textDecoration: "underline",
-              fontFamily: "bellota text",
-              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
-              textAlign: "center",
-            }}
-          >IN ADDITION...</h3>
-          <ul>
-                   
-                   <li>
-                     {" "}
-                     <strong>Collaboration and teamwork</strong> are at the core of
-                     my approach. I enjoy working alongside talented individuals,
-                     leveraging our collective skills to create impactful solutions.
-                     Through effective communication and a collaborative mindset, I
-                     believe in delivering high-quality work that meets client
-                     requirements and exceeds expectations.
-                   </li>
-                   
-                   <li>
-                     <strong>Continuous learning</strong> is a fundamental aspect of
-                     personal & professional growth. I constantly seek opportunities
-                     to expand my knowledge and refine my skills. I am a forward
-                     thinker, lifetime student that strives to stay ahead of the
-                     curve, ensuring that I can provide innovative solutions that
-                     address the evolving needs of the industry.
-                   </li>
-                    
-                 </ul>
-          <h3
-             style={{
-              textDecoration: "underline",
-              fontFamily: "bellota text",
-              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
-              textAlign: "center",
-            }}
-          >IN SUMMARY...</h3>
-          <p>
+            <div className="p-2">
+            <h3
+              style={{
+                textDecoration: "underline",
+                fontFamily: "bellota text",
+                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
+                textAlign: "center",
+              }}
+            >
+              IN SUMMARY...
+            </h3>
+            <p>
               {" "}
               "I bring a wealth of experience and commitment to excellence to
               the table. With a solid foundation in business, I have built a
@@ -231,8 +235,8 @@ export default function ResumePage() {
               harness my expertise to foster well-crafted and meaningful
               solutions."
             </p>
-            </div>
-     
+          </div>
+          </div>
         </MDBRow>
       </div>
       <div
@@ -240,7 +244,7 @@ export default function ResumePage() {
         style={{
           fontFamily: "bellota text",
           color: "white",
-          paddingTop:'2rem'
+          paddingTop: "2rem",
         }}
       >
         <h1
@@ -410,8 +414,9 @@ export default function ResumePage() {
         <h4 style={{ textAlign: "center" }}>
           <strong>MORE TO COME!</strong>
         </h4>
-        <p style={{ textAlign: "center" }}>Exploring & Studying New
-          Technologies Daily!</p>
+        <p style={{ textAlign: "center" }}>
+          Exploring & Studying New Technologies Daily!
+        </p>
 
         <br></br>
         <div className="professional-experience container-fluid pt-2 d-flex flex-column justify-content-center bg-white text-black">
@@ -439,17 +444,20 @@ export default function ResumePage() {
                 <p className="text-black ">
                   (July 2003 -Present ) License Status: "Current"<br></br>
                   Agent ("Salesperson"), Group Investments, Personal Investments
-                  <br></br><br></br><strong className="text-decoration-underline">TITLES & DUTIES</strong>
-                  </p>
-                  <ul>
-                    <li>Owner</li>
-                    <li>Landlord</li>
-                    <li>Marketing Manager</li>
-                    <li>Designer</li>
-                    <li>Sales</li>
-                    <li>General Contractor</li>
-                  </ul>
-                
+                  <br></br>
+                  <br></br>
+                  <strong className="text-decoration-underline">
+                    TITLES & DUTIES
+                  </strong>
+                </p>
+                <ul>
+                  <li>Owner</li>
+                  <li>Landlord</li>
+                  <li>Marketing Manager</li>
+                  <li>Designer</li>
+                  <li>Sales</li>
+                  <li>General Contractor</li>
+                </ul>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -478,12 +486,16 @@ export default function ResumePage() {
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent>
-              <h3 className="text-dark">CURRENT ENDEAVORS</h3>
-<h4 className="text-dark">Freelance Design & Development</h4>
-<p className="text-dark">
-  I have worked as a freelance professional for years, prior to completing my formal education. I currently have multiple projects in-progress... I know the importance of working with others & feel I will benefit any work environment. <br></br>Click "Download" button below to download my resume or "Next (Portfolio)" to view some of my work!
-</p>
-
+                <h3 className="text-dark">CURRENT ENDEAVORS</h3>
+                <h4 className="text-dark">Freelance Design & Development</h4>
+                <p className="text-dark">
+                  I have worked as a freelance professional for years, prior to
+                  completing my formal education. I currently have multiple
+                  projects in-progress... I know the importance of working with
+                  others & feel I will benefit any work environment. <br></br>
+                  Click "Download" button below to download my resume or "Next
+                  (Portfolio)" to view some of my work!
+                </p>
               </TimelineContent>
             </TimelineItem>
 
@@ -527,8 +539,7 @@ export default function ResumePage() {
         >
           Next (Portfolio)→
         </a>
-</div>
-
+      </div>
     </div>
   );
 }

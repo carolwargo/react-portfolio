@@ -9,7 +9,7 @@ export default function Star2() {
 
   return (
     <div className="p-2">
-        <h5>  Achievement 1: Develop & Launch Targeted Digital Marketing Campaigns"Achievement Statement". </h5>
+        <h5>  Achievement 2: Develop & Launch Targeted Digital Marketing Campaigns"Achievement Statement". </h5>
       <p className="text-secondary">Click 'Show Content' button to reveal "Achievement Statement".
       </p>
       <button 
