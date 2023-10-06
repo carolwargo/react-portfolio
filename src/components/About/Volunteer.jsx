@@ -97,7 +97,7 @@ export default function Volunteer() {
           fontFamily: "bellota text",
         }}
       >
-        <h5 className="pb-2 pt-2 text-center text-decoration-underline">
+        <h5 className="pb-2 pt-2 text-center">
           <strong>Click to show a litst of EVENTS & DESCRIPTIONS:</strong>
         </h5>
         <Events />
