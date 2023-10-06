@@ -119,7 +119,8 @@ export default function ResumePage() {
               Group Investment Properties, and subsequently ventured into my own
               personal Investments, taking on roles such as Owner, Landlord,
               Designer, IT Department, Marketing Manager, General Contractor, and even Laborer. 
-              I have also worked in freelance development & digital design for years prior to the completion of any formal education. 
+              In parallel
+              In parallel, I also established a presence in freelance development and digital design, prior to completion of any formal education."
             </p>{" "}
             <br></br>
             <p>
@@ -522,8 +523,8 @@ export default function ResumePage() {
                 <h3 className="text-dark">CURRENT ENDEAVORS</h3>
                 <h4 className="text-dark">Freelance Design & Development</h4>
                 <p className="text-dark">
-                 I currently have multiple projects in-progress BUT, also know the importance of working with and for
-                  others & feel I will be an asset to any work environment. <br></br>
+                 I currently have multiple projects in-progress BUT, also know the importance of working with & for
+                  others and feel I will be an asset to any work environment. <br></br>
                   Click "Download" button below to download my resume or "Next
                   (Portfolio)" to view some of my work!
                 </p>
