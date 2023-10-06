@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import Events from "../About/Events.jsx";
 
 export default function Volunteer() {
   return (
@@ -13,7 +14,7 @@ export default function Volunteer() {
       }}
       >
         <h2 className="text-decoration-underline">
-          <strong>3. GIVING BACK & GAINING MORE</strong>
+          <strong>GIVING BACK & GAINING MORE</strong>
         </h2>
         <p>
           <strong>EVERYTHING NEW & EXCITING</strong> in my life has been a
@@ -97,52 +98,14 @@ export default function Volunteer() {
         }}
       >
         <h5 className="pb-2 pt-2 text-center text-decoration-underline">
-          <strong>EVENTS & DESCRIPTIONS:</strong>
+          <strong>Click to show a litst of EVENTS & DESCRIPTIONS:</strong>
         </h5>
+        <Events />
+        </div>
+        </div>
         
-
-        <ul>
-          <li>
-            <strong>MIRACLE LEAGUE (favorite):</strong> Assist with organized
-            sports for children & young adults with disabilities.
-          </li>
-          <li>
-            <strong>ABUSED PERSONS PROGRAM (1st-experience):</strong> Provide a
-            range of services to support those affected by violence.
-          </li>
-          <li>
-            <strong>FOOD PANTRY:</strong> Distributes food & household goods to
-            those in need.
-          </li>
-          <li>
-            <strong>FARMING 4HUNGER:</strong> Grows and distributes locally
-            grown produce.
-          </li>
-          <li>
-            <strong>UNDER ARMOUR GIVE-BACK:</strong> Participation includes but,
-            is not limited to- rebuilding schools, distributing school supplies,
-            assisting with students & assemblies, and packing & shipping food
-            items to ship overseas.
-          </li>
-          <li>
-            <strong>NATURE CENTER VOLUNTEER:</strong> Provide care for the
-            animals, monitor health, collect data, and assist with educational
-            programs.
-          </li>
-          <li>
-            <strong>YOUTH CLUB SECRETARTY:</strong> Maintain website & database,
-            facilitate meetings, coordinate registration, plan events and
-            organize fundraising activities.
-          </li>
-          <li>
-            <strong>PUBLIC SCHOOLS VOLUNTEER:</strong> Assist with classroom
-            activities, work with & support kids in need, plan & facilitate
-            events.
-          </li>
-        </ul>
-        </div>
-        </div>
       </Container>
+      
     </div>
   );
 }

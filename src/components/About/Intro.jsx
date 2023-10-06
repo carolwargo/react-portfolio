@@ -8,7 +8,7 @@ import Me from "../../assets/images/Me.png";
 export default function Intro() {
   return (
     <div
-      className="intro"
+      className="intro" id="intro"
       style={{ fontFamily: "bellota text", color: "white" }}
     >
       <Row
@@ -95,7 +95,7 @@ export default function Intro() {
           ABOUT ME{" "}
         </h1>
 
-        <h5 style={{ fontFamily: "bellota text", paddingLeft: "2rem"}}>
+        <h5 style={{ fontFamily: "bellota text", paddingLeft: "1rem", paddingRight:'1rem'}}>
           Get to know a little, or a lot. You choose...  <br></br>{" "}
           <strong>
             {" "}
@@ -113,8 +113,8 @@ export default function Intro() {
           -{" "}
         </h5>
         <p
-          className="text-secondary ml-2 "
-          style={{ fontFamily: "bellota text",  paddingLeft: "2rem", paddingRight: "2rem"   }}
+          className="text-secondary  "
+          style={{ fontFamily: "bellota text",  paddingLeft: "1rem", paddingRight: "1rem"   }}
         >
           {" "}
           "<strong>Click the links above</strong> to jump to the section you want to view...    

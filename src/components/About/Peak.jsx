@@ -4,22 +4,21 @@ import { Container, Row } from "react-bootstrap";
 export default function Peak() {
   return (
     <div className="border-top bg-dark  p-3" id="#blessing-curse">
-      <div style={{ fontFamily: "bellota text" }}>
+      <div className='p-2' style={{ fontFamily: "bellota text" }}>
         <Container
           className="text-white p-4  rounded mx-auto" // Added mx-auto here
-       
         >
-          <Row
-          >
-            <Container className="p-5"
-            style={{}}
-            >
-              <h2 className="mt-4 text-decoration-underline">
-                <strong>2. MY BLESSING & MY CURSE </strong>
+          
+          <Row>
+            <Container className="p-3" style={{}}>
+             
+              <h2 className=" text-decoration-underline">
+                <strong> MY BLESSING & MY CURSE </strong>
               </h2>
               <p>
-              <strong>PEAK PERFORMANCE BRAIN</strong> <br></br>(clinically
-              diagnosed) -{" "}The "blessing" part - Something I possess naturally. The "curse" part- My Brain never shuts down.
+                <strong>PEAK PERFORMANCE BRAIN</strong> <br></br>(clinically
+                diagnosed) - The "blessing" part - Something I possess
+                naturally. The "curse" part- My Brain never shuts down.
               </p>
               <p className="pl-3 pr-3">
                 <strong>Peak performance</strong> refers to a state in which an
@@ -36,50 +35,49 @@ export default function Peak() {
 
           <Container className="bg-white text-black p-5 pl-3 pr-3 rounded">
             <div className="pr-3 pl-3">
-            <h5 className=" text-center text-decoration-underline">
-              <strong>KEY FACTORS OF PEAK PERFORMERS:</strong>
-            </h5>
-            <ul>
-              <li>
-                <strong>OPTIMAL COGNITIVE FUNCTION: </strong>
-                Clear thinkers, effective decision-makers, and efficient problem
-                solvers who thrive in even the most challenging circumstances.
-              </li>
-              <li>
-                <strong>GOAL ORIENTED: </strong>
-                Self-motivated individuals who consistently set clear and
-                challenging goals, demonstrating disciplined time-management
-                skills.
-              </li>
-              <li>
-                <strong>MENTALLY RESILIENT: </strong>
-                Perform well under pressure, maintain focus in challenging
-                conditions, and exhibit mental toughness to achieve exceptional
-                results.
-              </li>
-              <li>
-                <strong>PERPETUAL LEARNERS: </strong>
-                Lifelong learners who actively seek knowledge for improved
-                performance and understanding.
-              </li>
-              <li>
-                <strong>EMOTIONALLY INTELLIGENT: </strong>
-                Highly aware of their emotions, manage their emotions
-                effectively, while demonstrating empathy for others.
-              </li>
-              <li>
-                <strong>MINDSET: </strong> Relentless in pursuit, learn from
-                mistakes, embrace change, and possess a growth mindset.
-              </li>
-            </ul>
+              <h5 className=" text-center text-decoration-underline">
+                <strong>KEY FACTORS OF PEAK PERFORMERS:</strong>
+              </h5>
+              <ul>
+                <li>
+                  <strong>OPTIMAL COGNITIVE FUNCTION: </strong>
+                  Clear thinkers, effective decision-makers, and efficient
+                  problem solvers who thrive in even the most challenging
+                  circumstances.
+                </li>
+                <li>
+                  <strong>GOAL ORIENTED: </strong>
+                  Self-motivated individuals who consistently set clear and
+                  challenging goals, demonstrating disciplined time-management
+                  skills.
+                </li>
+                <li>
+                  <strong>MENTALLY RESILIENT: </strong>
+                  Perform well under pressure, maintain focus in challenging
+                  conditions, and exhibit mental toughness to achieve
+                  exceptional results.
+                </li>
+                <li>
+                  <strong>PERPETUAL LEARNERS: </strong>
+                  Lifelong learners who actively seek knowledge for improved
+                  performance and understanding.
+                </li>
+                <li>
+                  <strong>EMOTIONALLY INTELLIGENT: </strong>
+                  Highly aware of their emotions, manage their emotions
+                  effectively, while demonstrating empathy for others.
+                </li>
+                <li>
+                  <strong>MINDSET: </strong> Relentless in pursuit, learn from
+                  mistakes, embrace change, and possess a growth mindset.
+                </li>
+              </ul>
             </div>
           </Container>
 
-          <Row className="d-flex p-5 justify-content-center justify-content-lg-evenly mt-4">
-            <Container className="text-center rounded">
-              <h5 style={{ textDecoration: "underline" }}>
-                WHAT I EXPERIENCE
-              </h5>
+          <Row className="d-flex p-3  mt-4">
+            <Container className=" rounded">
+              <h5 style={{ textDecoration: "underline" }}>WHAT I EXPERIENCE</h5>
               <p>
                 IN MY WORDS-"A heightened awareness of intricate details that
                 often escape notice. I perceive nuances in sound & mood, detect

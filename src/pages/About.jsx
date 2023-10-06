@@ -48,7 +48,7 @@ export default function AboutPage() {
   >
     ← Back (Home)
   </a>
-
+  &nbsp;&nbsp;&nbsp;
   <a
     href="/react-portfolio/resume"
     id="resume"
