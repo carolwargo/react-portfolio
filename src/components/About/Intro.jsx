@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import Cover from "../../assets/images/Cover.png";
 import Me from "../../assets/images/Me.png";
 
+
 export default function Intro() {
   return (
     <div
@@ -122,7 +123,7 @@ export default function Intro() {
         </p>
       </div>
 
-      {/* PERSONALLY */}
+ 
     </div>
   );
 }
