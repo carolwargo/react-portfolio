@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faEnvelope, faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 export default function App() {
   return (
@@ -25,6 +25,12 @@ export default function App() {
         </a>
         <a href="tel:4437711726" className="me-4">
           <FontAwesomeIcon icon={faPhone} style={{ color: "black" }} />
+        </a>
+        <a
+          href="https://carolwargo.github.io/react-portfolio/"
+          className="me-4"
+        >
+          <FontAwesomeIcon icon={faGlobe} style={{ color: "black" }} />
         </a>
       </section>
     </div>

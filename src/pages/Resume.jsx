@@ -53,6 +53,11 @@ export default function ResumePage() {
             {" "}
             <a href="#professional-background"> PROFESSIONAL BACKGROUND</a>
           </strong>
+          ,{" "}
+          <strong>
+            {" "}
+            <a href="#professional-achievements"> PROFESSIONAL ACHIEVEMENTS</a>
+          </strong>
           ,<br></br>{" "}
           <strong>
             {" "}
@@ -108,12 +113,13 @@ export default function ResumePage() {
               PROFESSIONAL BACKGROUND
             </h1>
             <p>
-              I have earned my living in Real Estate for the last 21 years in
+              I have earned my main living in Real Estate for the last 21 years in
               various capacities. Started as an Agent ("Salesperson"), recruited
               to work directly under the #1 Broker in my area, transitioned to
               Group Investment Properties, and subsequently ventured into my own
               personal Investments, taking on roles such as Owner, Landlord,
-              Designer, Marketing Manager, General Contractor, and even Laborer.
+              Designer, IT Department, Marketing Manager, General Contractor, and even Laborer. 
+              I have also worked in freelance development & digital design for years prior to the completion of any formal education. 
             </p>{" "}
             <br></br>
             <p>
@@ -154,20 +160,26 @@ export default function ResumePage() {
             </MDBCol>
 
             <MDBCol md="7" style={{ color: "black" }}>
+              <div className="professional-achievements" id="professional-achievements"
+               style={{
+                fontFamily: "bellota text",
+                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
+                padding: "2rem",
+              }}
+              >
               <h3
                 style={{
                   textDecoration: "underline",
                   fontFamily: "bellota text",
                   textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
-                  textAlign: "center",
-                  padding: "2rem",
                 }}
               >
-                SEE HOW...
-              </h3>
+               PROFESSIONAL ACHIEVEMENTS</h3>
+<h5>Discover of my key accomplishments. Click on the respective buttons for more details.</h5>
 
+</div>
               <ul>
-                <li style={{ paddingTop: "1rem" }}>
+                <li>
                   <Star1 />
                 </li>
 
@@ -440,13 +452,13 @@ export default function ResumePage() {
               </TimelineSeparator>
               <TimelineContent>
                 <h3 className="text-black">WORK HISTORY</h3>
-                <h4 className="text-black">Real Estate Industry</h4>
+                <h4 className="text-black text-decoration-underline">Real Estate Industry</h4>
                 <p className="text-black ">
                   (July 2003 -Present ) License Status: "Current"<br></br>
                   Agent ("Salesperson"), Group Investments, Personal Investments
                   <br></br>
                   <br></br>
-                  <strong className="text-decoration-underline">
+                  <strong className="">
                     TITLES & DUTIES
                   </strong>
                 </p>
@@ -457,6 +469,27 @@ export default function ResumePage() {
                   <li>Designer</li>
                   <li>Sales</li>
                   <li>General Contractor</li>
+                </ul>
+                <br></br>
+                <h4 className="text-black pt-2 text-decoration-underline">Freelance Development & Design</h4>
+                <p className="text-black ">
+                  (July 2019 -Present ) <br></br>
+                 Website Development & Design, Graphic Design & Branding
+                  <br></br>
+                  
+                </p>
+                <p> <strong className="text-bold">
+                    TASKS & DUTIES
+                  </strong></p>
+                <ul>
+                  <li>Develop Branding Books</li>
+                  <li>Design Logos & Marketing Materials</li>
+                  <li>Design User-Friendly Website</li>
+                  <li>Develop Marketing Campaigns</li>
+                  <li>Consultations</li>
+                  <li>Search Engine Optimization</li>
+                  <li>Content Creation</li>
+                  <li>Website Maintenance</li>
                 </ul>
               </TimelineContent>
             </TimelineItem>
@@ -474,9 +507,9 @@ export default function ResumePage() {
                   George Washington University (July 2023)
                 </h6>
                 <h3 className="text-black">Additional Courses</h3>
-                <h5 className="text-black">- 13 hour React Router 6</h5>
+                <h5 className="text-black">- 19 hour React Router 6</h5>
                 <p className="text-black">Scrimba Pro</p>
-                <h5 className="text-black">- 5 hour React</h5>
+                <h5 className="text-black">- 10 hour React</h5>
                 <p className="text-black">Scrimba Pro</p>
               </TimelineContent>
             </TimelineItem>
@@ -489,10 +522,8 @@ export default function ResumePage() {
                 <h3 className="text-dark">CURRENT ENDEAVORS</h3>
                 <h4 className="text-dark">Freelance Design & Development</h4>
                 <p className="text-dark">
-                  I have worked as a freelance professional for years, prior to
-                  completing my formal education. I currently have multiple
-                  projects in-progress... I know the importance of working with
-                  others & feel I will benefit any work environment. <br></br>
+                 I currently have multiple projects in-progress BUT, also know the importance of working with and for
+                  others & feel I will be an asset to any work environment. <br></br>
                   Click "Download" button below to download my resume or "Next
                   (Portfolio)" to view some of my work!
                 </p>
