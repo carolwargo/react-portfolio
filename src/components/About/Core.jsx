@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFemale } from "@fortawesome/free-solid-svg-icons";
+
 
 import Love from "./Love";
 import Believe from "./Believe";
@@ -34,27 +33,17 @@ export default function Core() {
           <Container className=" p-2">
             <Row className="d-flex justify-content-evenly mr-1 ml-1">
               <Row
-                sm={12}
-                className="bg-white text-black m-1 p-3 "
+                sm={12} className="p-2" 
                 style={{ borderRadius: "5px" }}
               >
                <Col >
-                  <h2 style={{ fontSize: "2rem", textAlign:'center' }}>
-                    <span role="img" aria-label="I am">
-                      <FontAwesomeIcon icon={faFemale} />
-                    </span>{" "}
-                 
-                    <strong>I AM...</strong>
-                  </h2>
+              <h5 className="text-decoration-underline mt-5">MY FAMILY DYNAMIC</h5>
               
-                <div sm={8} className="bg-black text-white pl-4 pr-4"
-                style={{
-                  borderRadius: "5px",
-                }}
+                <div sm={8} className="pl-4 pr-4"
                 >
-                  <p className="p-3">
+                  <p>
                     {" "}
-                    A 44-year-old Mother of 2 men and 1 boy from Maryland. My 2
+                    I am a 45 year-old Mother of 2 men and 1 boy from Maryland. My 2
                     oldest sons are Collegiate Student-Athletes, and my youngest
                     just entered his Freshman year of high school. My oldest is
                     a Marketing Major that plays baseball, My middle is a
