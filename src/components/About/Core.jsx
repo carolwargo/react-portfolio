@@ -8,18 +8,21 @@ import Strive from "./Strive";
 
 export default function Core() {
   return (
-    <div className=" p-5 bg-black" style={{ fontFamily: "bellota text" }}>
-      <Container className="bg-black text-white rounded p-4">
-  
+    <div className=" p-5 bg-black text-white" style={{ fontFamily: "bellota text" }}>
+     
+      <div 
+      style={{
+        paddingLeft: "2rem", paddingRight: "2rem" 
+      }}>
           <h2
             className="philosophy-values "
             id="#philisophy-values"
-            style={{ textDecoration: "underline" }}
+            style={{ textDecoration: "underline"}}
           >
             <strong>FAMILY, PHILOSOPHY & VALUES</strong>
           </h2>
 
-          <div className="pl-5 pr-5">
+          
             <p>
               What I hold dear, what I believe in, and what I constantly strive
               for- 
@@ -37,7 +40,7 @@ export default function Core() {
                 style={{ borderRadius: "5px" }}
               >
                <Col >
-              <h5 className="text-decoration-underline mt-5">MY FAMILY DYNAMIC</h5>
+              <h5 className="text-decoration-underline mt-3">MY FAMILY DYNAMIC</h5>
               
                 <div sm={8} className="pl-4 pr-4"
                 >
@@ -79,7 +82,7 @@ export default function Core() {
             </Row>
           </Container>
         </Container>
-      </Container>
+     
     </div>
   );
 }

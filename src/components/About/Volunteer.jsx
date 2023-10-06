@@ -5,12 +5,14 @@ import Events from "../About/Events.jsx";
 export default function Volunteer() {
   return (
     <div
-      className="border-top p-5 bg-secondary text-white"
+      className="border-top p-5 bg-black text-white"
       id="#community-service"
     >
-      <Container className=" p-3 rounded mx-auto bg-secondary"
+      <Container 
       style={{
         fontFamily: "bellota text",
+        paddingRight: "2rem",
+        paddingLeft: "2rem",
       }}
       >
         <h2 className="text-decoration-underline">
@@ -23,14 +25,14 @@ export default function Volunteer() {
         </p>
       </Container>
 
-      <Container
-        className="bg-black text-white"
+      <Container className="p-5"
+        
         style={{
           borderRadius: "10px",
           fontFamily: "bellota text",
         }}
       >
-        <div className="p-5">
+        <div >
           <h5
             style={{
               textAlign: "start",
@@ -62,7 +64,7 @@ export default function Volunteer() {
 
           <p
             style={{
-              marginRight: "15px",
+
               fontFamily: "bellota text",
             }}
           >
@@ -91,13 +93,15 @@ export default function Volunteer() {
             development, and is directly attributed to leading me to discover my
             passion for the digital world.
           </p>
+          <br></br>
+          <br></br>
       <div className="p-2 bg-white text-black "
         style={{
           borderRadius: "10px",
           fontFamily: "bellota text",
         }}
       >
-        <h5 className="pb-2 pt-2 text-center">
+        <h5 className="text-center">
           <strong>Click to show a litst of EVENTS & DESCRIPTIONS:</strong>
         </h5>
         <Events />
