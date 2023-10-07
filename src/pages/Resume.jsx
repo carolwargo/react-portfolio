@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import "../styles/links.css";
 
@@ -550,27 +551,18 @@ export default function ResumePage() {
         </div>
       </div>
       <div className="flow-links p-4" style={{ flowLinks }}>
-        <a
-          href="https://carolwargo.github.io/react-portfolio/about"
-          id="about"
-          style={{ color: "red", textDecoration: "none" }}
+    <NavLink to ="/about"
+    style={{ color: "red", textDecoration: "none" }}
+    >
+             ← Back (About)
+          </NavLink>
+          &nbsp;&nbsp;&nbsp;
+        <NavLink to="/portfolio"
+        style={{ color: "blue", textDecoration: "none" }}
         >
-          ← Back (About)
-        </a>
-        <a
-          href="/react-portfolio/"
-          id="home"
-          style={{ color: "black", margin: "0 10px", textDecoration: "none" }}
-        >
-          Home
-        </a>
-        <a
-          href="https://carolwargo.github.io/react-portfolio/portfolio"
-          id="portfolio"
-          style={{ color: "blue", textDecoration: "none" }}
-        >
-          Next (Portfolio)→
-        </a>
+                 Next (Portfolio)→
+              </NavLink>
+        
       </div>
     </div>
   );

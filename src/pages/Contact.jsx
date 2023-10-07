@@ -3,6 +3,7 @@ import { MDBIcon } from "mdb-react-ui-kit";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { NavLink } from "react-router-dom";
 
 import BrickGradientWide from "../assets/images/BrickGradientWide.png";
 import ContactInfo from "../components/Contact/ContactInfo";
@@ -121,27 +122,17 @@ export default function Contact() {
 
         <div className="bg-white">
           <div className="flow-links bg-white pt-3" style={{ flowLinks }}>
-       
-
-            <a
-              href="/react-portfolio/resume"
-              id="resume"
-              style={{
-                color: "red",
-                marginRight: "10px",
-                paddingLeft: "3rem",
-                paddingBottom: "1rem",
-              }} // Add margin-right for spacing
-            >
-             ← Back (Resume)
-            </a>
-            <a
-              href="/react-portfolio/"
-              id="home"
-              style={{ color: "blue", margin: "0 10px" }} // Add margin for spacing on both sides
-            >
-             Next (Home) →
-            </a>
+          <NavLink to ="/about"
+    style={{ color: "red", textDecoration: "none" }}
+    >
+             ← Back (About Me)
+          </NavLink>
+          &nbsp;&nbsp;&nbsp;
+        <NavLink to="/portfolio"
+        style={{ color: "blue", textDecoration: "none" }}
+        >
+                 Go Home →
+              </NavLink>
           </div>
         </div>
       </div>

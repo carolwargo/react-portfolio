@@ -3,6 +3,7 @@ import Core from "../components/About/Core.jsx";
 import Peak from "../components/About/Peak.jsx";
 import Volunteer from "../components/About/Volunteer.jsx";
 import Intro from "../components/About/Intro.jsx";
+import { NavLink } from "react-router-dom";
 
 import "../styles/links.css";
 
@@ -41,21 +42,17 @@ export default function AboutPage() {
 
       {/*flow-link <-previous-page & next-page->*/}
       <div className="flow-links p-5" style={{ flowLinks }}>
-  <a
-    href="https://carolwargo.github.io/react-portfolio/about"
-    id="about"
-    style={{ color: "red", textDecoration: "none" }} 
-  >
-    ← Back (Home)
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  <a
-    href="https://carolwargo.github.io/react-portfolio/resume"
-    id="resume"
-    style={{ color: "blue", textDecoration: "none" }} 
-  >
-    Next (Resume)→
-  </a>
+      <NavLink to ="/"
+    style={{ color: "red", textDecoration: "none" }}
+    >
+             ← Back (Home)
+          </NavLink>
+          &nbsp;&nbsp;&nbsp;
+        <NavLink to="/resume"
+        style={{ color: "blue", textDecoration: "none" }}
+        >
+                 Next (Resume)→
+              </NavLink>
 </div>
 
     </div>
