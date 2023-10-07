@@ -28,8 +28,6 @@ export default function Intro() {
     alt="Me"
     className="me-card img-fluid with-shadow"
     style={{
-      height: "100%", 
-      width: "auto",
       position: "relative",
       paddingRight: "2rem",
       boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)" // Added box shadow directly

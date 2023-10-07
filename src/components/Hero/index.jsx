@@ -58,7 +58,7 @@ export default function Hero() {
             <span style={{ color: "red" }}> "LEARN MORE"</span> to start... "
           </p>
           <NavLink
-            to="/about"
+            to="/resume"
             className="btn mt-3 custom-button"
             style={{
               width: "100%",

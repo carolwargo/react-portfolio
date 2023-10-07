@@ -213,14 +213,14 @@ export default function PortfolioPage() {
       {/*flow-link <-previous-page & next-page->*/}
       <div className="flow-links bg-white pt-3" style={{ flowLinks }}>
   <a
-    href="/react-portfolio/resume"
+    href="https://carolwargo.github.io/react-portfolio/resume"
     id="resume"
     style={{ color: "red", marginRight: "10px", paddingLeft: "3rem", paddingBottom:'2rem' }} // Add margin-right for spacing
   >
     ← Back (Resume)
   </a>
   <a
-    href="/react-portfolio/"
+    href="https://carolwargo.github.io/react-portfolio/contact"
     id="home"
     style={{ color: "black", margin: "0 10px" }} // Add margin for spacing on both sides
   >

@@ -551,7 +551,7 @@ export default function ResumePage() {
       </div>
       <div className="flow-links p-4" style={{ flowLinks }}>
         <a
-          href="/react-portfolio/about"
+          href="https://carolwargo.github.io/react-portfolio/about"
           id="about"
           style={{ color: "red", textDecoration: "none" }}
         >
@@ -565,7 +565,7 @@ export default function ResumePage() {
           Home
         </a>
         <a
-          href="/react-portfolio/portfolio"
+          href="https://carolwargo.github.io/react-portfolio/portfolio"
           id="portfolio"
           style={{ color: "blue", textDecoration: "none" }}
         >
