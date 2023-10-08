@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+
 import "../styles/links.css";
 
 import { MDBRow, MDBCol } from "mdb-react-ui-kit";
@@ -13,7 +14,7 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 
-import ResumeDownload from "../assets/images/ResumeDownload.png";
+
 import Design from "../assets/images/Design.png";
 import VCIDE from "../assets/images/VCIDE.png";
 import Front from "../assets/images/Front.png";
@@ -24,6 +25,7 @@ import Package from "../assets/images/Package.png";
 import BuildTest from "../assets/images/BuildTest.png";
 import APIQ from "../assets/images/APIQ.png";
 import ResumeWorkspace from "../assets/images/ResumeWorkspace.png";
+import ResumeDownload from "../assets/images/ResumeDownload.png"
 
 import Star1 from "../components/OnClickEvents/Star1";
 import Star2 from "../components/OnClickEvents/Star2";
