@@ -128,7 +128,7 @@ export default function Contact() {
              ← Back (Portfolio)
           </NavLink>
           &nbsp;&nbsp;&nbsp;
-        <NavLink to="/home"
+        <NavLink to="/"
         style={{ color: "blue", textDecoration: "none" }}
         >
                  Go Home →
