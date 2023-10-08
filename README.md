@@ -17,6 +17,4 @@ Link [Link('https://carolwargo.github.io/react-portfolio')]
 
 Carol Wargo-
 
-"Mom of 2 men & 1 boy- Living the dream, with my glass half full."
-
 <https://github.com/carolwargo>
