@@ -12,6 +12,15 @@
   background-color: black;
 } 
 
+.about {
+  @media (max-width: 576px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  
+}
+
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,

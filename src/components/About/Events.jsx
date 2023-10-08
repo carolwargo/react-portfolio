@@ -9,17 +9,18 @@ export default function Star2() {
   }
 
   return (
-    <div className="p-3 text-black">
- <div className="text-center">
+    <div className="p-3 text-white d-flex justify-content-center ">
+ <div>
+ <h6>Click to show a litst of EVENTS & DESCRIPTIONS:</h6>
+ <div>
 
-      </div> 
+ </div>
       <button
-        className="btn custom-button"
+        className="btn custom-button d-flex justify-content-center "
         style={{
-          width: "100%",
-          backgroundColor: "black",
+          backgroundColor: "white",
           border: "none",
-          color: "white",
+          color: "black",
           boxShadow: "2px 2px 4px rgba(255, 255, 255, 0.3)",
           transition: "background-color 0.6s ease, box-shadow 0.3s ease",
         }}
@@ -27,13 +28,14 @@ export default function Star2() {
       >
         {showList ? "Hide Content" : "Show Content"}
       </button>
+      </div>
       {showList && (
         <div>
-         <h5 className="pb-2 pt-2 text-center text-decoration-underline">
+         <h5 className="pb-2 pt-2 text-decoration-underline">
           <strong>EVENTS & DESCRIPTIONS:</strong>
         </h5>
         
-
+<div></div>
         <ul>
           <li>
             <strong>MIRACLE LEAGUE (favorite):</strong> Assist with organized

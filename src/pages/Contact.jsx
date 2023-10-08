@@ -120,15 +120,15 @@ export default function Contact() {
           </Container>
         </div>
 
-        <div className="bg-white">
+        <div className="bg-white p-4">
           <div className="flow-links bg-white pt-3" style={{ flowLinks }}>
-          <NavLink to ="/about"
+          <NavLink to ="/portfolio"
     style={{ color: "red", textDecoration: "none" }}
     >
-             ← Back (About Me)
+             ← Back (Portfolio)
           </NavLink>
           &nbsp;&nbsp;&nbsp;
-        <NavLink to="/portfolio"
+        <NavLink to="/home"
         style={{ color: "blue", textDecoration: "none" }}
         >
                  Go Home →

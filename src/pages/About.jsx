@@ -41,7 +41,7 @@ export default function AboutPage() {
       </div>
 
       {/*flow-link <-previous-page & next-page->*/}
-      <div className="flow-links p-5" style={{ flowLinks }}>
+      <div className="flow-links p-4" style={{ flowLinks }}>
       <NavLink to ="/"
     style={{ color: "red", textDecoration: "none" }}
     >

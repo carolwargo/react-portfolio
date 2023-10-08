@@ -210,8 +210,9 @@ export default function PortfolioPage() {
         </Row>
         </Container>
       </div>
+      <div className="p-4 bg-white">
       {/*flow-link <-previous-page & next-page->*/}
-      <div className="flow-links bg-white pt-3" style={{ flowLinks }}>
+      <div className="flow-links bg-white" style={{ flowLinks }}>
       <NavLink to ="/resume"
     style={{ color: "red", textDecoration: "none" }}
     >
@@ -223,6 +224,7 @@ export default function PortfolioPage() {
         >
                  Next (Contact)→
               </NavLink>
+              </div>
 </div>
     </div>
   );

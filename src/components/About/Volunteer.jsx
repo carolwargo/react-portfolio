@@ -1,38 +1,35 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import Events from "../About/Events.jsx";
+//import Events from "../About/Events.jsx";
 
 export default function Volunteer() {
   return (
-    <div
-      className="border-top p-5 bg-black text-white"
-      id="#community-service"
-    >
-      <Container 
-      style={{
-        fontFamily: "bellota text",
-        paddingRight: "2rem",
-        paddingLeft: "2rem",
-      }}
+    <div className="border-top p-5 bg-black text-white" id="#community-service">
+      <Container
+        style={{
+          fontFamily: "bellota text",
+          paddingRight: "2rem",
+          paddingLeft: "2rem",
+        }}
       >
         <h2 className="text-decoration-underline">
           <strong>GIVING BACK & GAINING MORE</strong>
         </h2>
         <p>
           <strong>EVERYTHING NEW & EXCITING</strong> in my life has been a
-          direct result of the volunteer opportunities presented to
-          me... <br></br> <strong>INCLUDING MY CAREER PATH.</strong>."
+          direct result of the volunteer opportunities presented to me...{" "}
+          <br></br> <strong>INCLUDING MY CAREER PATH.</strong>."
         </p>
       </Container>
 
-      <Container className="p-5"
-        
+      <Container
+        className="p-5"
         style={{
           borderRadius: "10px",
           fontFamily: "bellota text",
         }}
       >
-        <div >
+        <div>
           <h5
             style={{
               textAlign: "start",
@@ -43,7 +40,7 @@ export default function Volunteer() {
             The Signifigance in My Life:
           </h5>
 
-          <p >
+          <p>
             "Volunteer work has and will consistently hold a central place in my
             household, serving as a facet of responsibility and an integral part
             of my identity. Beyond its apparent merits, I personally consider
@@ -54,7 +51,7 @@ export default function Volunteer() {
           </p>
           <h5
             style={{
-              textAlign: "start",
+         
               fontWeight: "bold",
             }}
           >
@@ -64,7 +61,6 @@ export default function Volunteer() {
 
           <p
             style={{
-
               fontFamily: "bellota text",
             }}
           >
@@ -77,7 +73,7 @@ export default function Volunteer() {
           </p>
           <h5
             style={{
-              textAlign: "start",
+          
               fontWeight: "bold",
             }}
           >
@@ -95,21 +91,11 @@ export default function Volunteer() {
           </p>
           <br></br>
           <br></br>
-      <div className="p-2 bg-white text-black "
-        style={{
-          borderRadius: "10px",
-          fontFamily: "bellota text",
-        }}
-      >
-        <h5 className="text-center">
-          <strong>Click to show a litst of EVENTS & DESCRIPTIONS:</strong>
-        </h5>
-        <Events />
-        </div>
-        </div>
+          <div>
         
+          </div>
+        </div>
       </Container>
-      
     </div>
   );
 }

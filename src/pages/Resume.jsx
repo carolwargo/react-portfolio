@@ -120,7 +120,7 @@ export default function ResumePage() {
               Group Investment Properties, and subsequently ventured into my own
               personal Investments, taking on roles such as Owner, Landlord,
               Designer, IT Department, Marketing Manager, General Contractor, and even Laborer. 
-              In parallel
+             
               In parallel, I also established a presence in freelance development and digital design, prior to completion of any formal education."
             </p>{" "}
             <br></br>
