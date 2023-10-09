@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Scroll from "../components/Scroll.jsx";
 
 import "../styles/links.css";
 
@@ -514,6 +515,7 @@ export default function ResumePage() {
             </div>
           </Timeline>
         </div>
+        <Scroll/>
       </div>
       <div className="flow-links p-4" style={{ flowLinks }}>
         <NavLink to="/about" style={{ color: "red", textDecoration: "none" }}>

@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import { NavLink } from "react-router-dom";
+import Scroll from "../components/Scroll";
 import "../styles/links.css";
 
 import { Row, Col } from "react-bootstrap";
@@ -209,8 +210,11 @@ export default function PortfolioPage() {
           
         </Row>
         </Container>
+        
       </div>
+     
       <div className="p-4 bg-white">
+      <Scroll/>
       {/*flow-link <-previous-page & next-page->*/}
       <div className="flow-links bg-white" style={{ flowLinks }}>
       <NavLink to ="/resume"
