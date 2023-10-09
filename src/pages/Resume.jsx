@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-
 import "../styles/links.css";
 
 import { MDBRow, MDBCol } from "mdb-react-ui-kit";
@@ -14,7 +13,6 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 
-
 import Design from "../assets/images/Design.png";
 import VCIDE from "../assets/images/VCIDE.png";
 import Front from "../assets/images/Front.png";
@@ -25,7 +23,7 @@ import Package from "../assets/images/Package.png";
 import BuildTest from "../assets/images/BuildTest.png";
 import APIQ from "../assets/images/APIQ.png";
 import ResumeWorkspace from "../assets/images/ResumeWorkspace.png";
-import ResumeDownload from "../assets/images/ResumeDownload.png"
+import ResumeDownload from "../assets/images/ResumeDownload.png";
 
 import Star1 from "../components/OnClickEvents/Star1";
 import Star2 from "../components/OnClickEvents/Star2";
@@ -115,37 +113,18 @@ export default function ResumePage() {
             >
               PROFESSIONAL BACKGROUND
             </h1>
-            <p>
-              I have earned my main living in Real Estate for the last 21 years in
-              various capacities. Started as an Agent ("Salesperson"), recruited
-              to work directly under the #1 Broker in my area, transitioned to
-              Group Investment Properties, and subsequently ventured into my own
-              personal Investments, taking on roles such as Owner, Landlord,
-              Designer, IT Department, Marketing Manager, General Contractor, and even Laborer. 
-             
-              In parallel, I also established a presence in freelance development and digital design, prior to completion of any formal education."
-            </p>{" "}
             <br></br>
             <p>
-              {" "}
-              <strong>The last 20 years in business</strong>, have presented the
-              opportunity for me to work in various roles. What sets me apart is
-              my knack for translating intricate business requirements into
-              precise technical solutions. I am adept at crafting detailed,
-              phased plans for seamless integration in the future. My proactive
-              approach in identifying potential issues allows me to preemptively
-              address challenges, ensuring projects not only fulfill functional
-              needs, but also align harmoniously with overarching business
-              objectives.These experiences have honed my communication skills,
-              ability to collaborate with cross-functional teams, and provided
-              me with a strong foundation in project management. I can
-              effectively translate business requirements into technical
-              solutions, provide detailed plans in phazes for future
-              integration, be pro-active in identifying potential issues, and
-              problem solve with ease ensuring projects not only meet the
-              functional needs but also align with the overall business
-              objectives.
-            </p>
+              I have earned my main living in Real Estate for the last 21 years
+              in various capacities. Started as an Agent ("Salesperson"),
+              recruited to work directly under the #1 Broker in my area,
+              transitioned to Group Investment Properties, and subsequently
+              ventured into my own personal Investments, taking on roles such as
+              Owner, Landlord, Designer, IT Department, Marketing Manager,
+              General Contractor, and even Laborer. In parallel, I also
+              established a presence in freelance development and digital
+              design, prior to completion of any formal education."
+            </p>{" "}
           </MDBCol>
 
           <MDBRow
@@ -164,24 +143,29 @@ export default function ResumePage() {
             </MDBCol>
 
             <MDBCol md="7" style={{ color: "black" }}>
-              <div className="professional-achievements" id="professional-achievements"
-               style={{
-                fontFamily: "bellota text",
-                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
-                padding: "2rem",
-              }}
-              >
-              <h3
+              <div
+                className="professional-achievements"
+                id="professional-achievements"
                 style={{
-                  textDecoration: "underline",
                   fontFamily: "bellota text",
                   textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
+                  padding: "2rem",
                 }}
               >
-               PROFESSIONAL ACHIEVEMENTS</h3>
-<h5>Discover of my key accomplishments. Click on the respective buttons for more details.</h5>
-
-</div>
+                <h3
+                  style={{
+                    textDecoration: "underline",
+                    fontFamily: "bellota text",
+                    textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
+                  }}
+                >
+                  PROFESSIONAL ACHIEVEMENTS
+                </h3>
+                <h5>
+                  Discover of my key accomplishments. Click on the respective
+                  buttons for more details.
+                </h5>
+              </div>
               <ul>
                 <li>
                   <Star1 />
@@ -198,60 +182,36 @@ export default function ResumePage() {
             </MDBCol>
           </MDBRow>
           <div className="p-5">
-            <h3
-              style={{
-                textDecoration: "underline",
-                fontFamily: "bellota text",
-                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
-                textAlign: "center",
-              }}
-            >
-              IN ADDITION...
-            </h3>
-            <ul>
-              <li>
-                {" "}
-                <strong>Collaboration and teamwork</strong> are at the core of
-                my approach. I enjoy working alongside talented individuals,
-                leveraging our collective skills to create impactful solutions.
-                Through effective communication and a collaborative mindset, I
-                believe in delivering high-quality work that meets client
-                requirements and exceeds expectations.
-              </li>
-
-              <li>
-                <strong>Continuous learning</strong> is a fundamental aspect of
-                personal & professional growth. I constantly seek opportunities
-                to expand my knowledge and refine my skills. I am a forward
-                thinker, lifetime student that strives to stay ahead of the
-                curve, ensuring that I can provide innovative solutions that
-                address the evolving needs of the industry.
-              </li>
-            </ul>
             <div className="p-2">
-            <h3
-              style={{
-                textDecoration: "underline",
-                fontFamily: "bellota text",
-                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
-                textAlign: "center",
-              }}
-            >
-              IN SUMMARY...
-            </h3>
-            <p>
-              {" "}
-              "I bring a wealth of experience and commitment to excellence to
-              the table. With a solid foundation in business, I have built a
-              track record of success through hard work and adaptability. As I
-              shift my focus to software development, I carry forward the
-              strategic thinking, negotiation skills, and dedication to
-              excellence that defined my real estate career. By drawing
-              parallels between these two domains, I am well-positioned to
-              harness my expertise to foster well-crafted and meaningful
-              solutions."
-            </p>
-          </div>
+              <h3
+                style={{
+                  textDecoration: "underline",
+                  fontFamily: "bellota text",
+                  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
+                  textAlign: "center",
+                }}
+              >
+                IN SUMMARY...
+              </h3>
+              <br></br>
+              <p>
+                {" "}
+                "I bring a wealth of experience and commitment to excellence to
+                the table. With a solid foundation in business, I have built a
+                track record of success through hard work and adaptability. I excel in translating complex business needs into precise
+                technical solutions. My expertise lies in crafting detailed
+                plans for seamless integration, proactively identifying and
+                addressing potential challenges. These experiences have honed my
+                communication, collaboration, and project management skills,
+                ensuring projects meet functional needs and align with business
+                objectives. As I
+                shift my focus to software development, I will carry forward the same
+                strategic thinking, negotiation skills, and dedication to
+                excellence meaningful
+                solutions."
+              </p>
+            
+            </div>
           </div>
         </MDBRow>
       </div>
@@ -456,15 +416,15 @@ export default function ResumePage() {
               </TimelineSeparator>
               <TimelineContent>
                 <h3 className="text-black">WORK HISTORY</h3>
-                <h4 className="text-black text-decoration-underline">Real Estate Industry</h4>
+                <h4 className="text-black text-decoration-underline">
+                  Real Estate Industry
+                </h4>
                 <p className="text-black ">
                   (July 2003 -Present ) License Status: "Current"<br></br>
                   Agent ("Salesperson"), Group Investments, Personal Investments
                   <br></br>
                   <br></br>
-                  <strong className="">
-                    TITLES & DUTIES
-                  </strong>
+                  <strong className="">TITLES & DUTIES</strong>
                 </p>
                 <ul>
                   <li>Owner</li>
@@ -475,16 +435,18 @@ export default function ResumePage() {
                   <li>General Contractor</li>
                 </ul>
                 <br></br>
-                <h4 className="text-black pt-2 text-decoration-underline">Freelance Development & Design</h4>
+                <h4 className="text-black pt-2 text-decoration-underline">
+                  Freelance Development & Design
+                </h4>
                 <p className="text-black ">
                   (July 2019 -Present ) <br></br>
-                 Website Development & Design, Graphic Design & Branding
+                  Website Development & Design, Graphic Design & Branding
                   <br></br>
-                  
                 </p>
-                <p> <strong className="text-bold">
-                    TASKS & DUTIES
-                  </strong></p>
+                <p>
+                  {" "}
+                  <strong className="text-bold">TASKS & DUTIES</strong>
+                </p>
                 <ul>
                   <li>Develop Branding Books</li>
                   <li>Design Logos & Marketing Materials</li>
@@ -526,8 +488,9 @@ export default function ResumePage() {
                 <h3 className="text-dark">CURRENT ENDEAVORS</h3>
                 <h4 className="text-dark">Freelance Design & Development</h4>
                 <p className="text-dark">
-                 I currently have multiple projects in-progress BUT, also know the importance of working with & for
-                  others and feel I will be an asset to any work environment. <br></br>
+                  I currently have multiple projects in-progress BUT, also know
+                  the importance of working with & for others and feel I will be
+                  an asset to any work environment. <br></br>
                   Click "Download" button below to download my resume or "Next
                   (Portfolio)" to view some of my work!
                 </p>
@@ -553,18 +516,16 @@ export default function ResumePage() {
         </div>
       </div>
       <div className="flow-links p-4" style={{ flowLinks }}>
-    <NavLink to ="/about"
-    style={{ color: "red", textDecoration: "none" }}
-    >
-             ← Back (About)
-          </NavLink>
-          &nbsp;&nbsp;&nbsp;
-        <NavLink to="/portfolio"
-        style={{ color: "blue", textDecoration: "none" }}
+        <NavLink to="/about" style={{ color: "red", textDecoration: "none" }}>
+          ← Back (About)
+        </NavLink>
+        &nbsp;&nbsp;&nbsp;
+        <NavLink
+          to="/portfolio"
+          style={{ color: "blue", textDecoration: "none" }}
         >
-                 Next (Portfolio)→
-              </NavLink>
-        
+          Next (Portfolio)→
+        </NavLink>
       </div>
     </div>
   );
