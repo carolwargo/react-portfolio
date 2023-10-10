@@ -218,15 +218,15 @@ export default function PortfolioPage() {
       {/*flow-link <-previous-page & next-page->*/}
       <div className="flow-links bg-white" style={{ flowLinks }}>
       <NavLink to ="/resume"
-    style={{ color: "red", textDecoration: "none" }}
+    style={{ color: "black", textDecoration: "none" }}
     >
-             ← Back (Resume)
+           (Resume) <strong>  ← Back</strong>
           </NavLink>
           &nbsp;&nbsp;&nbsp;
         <NavLink to="/contact"
-        style={{ color: "blue", textDecoration: "none" }}
+        style={{ color: "black", textDecoration: "none" }}
         >
-                 Next (Contact)→
+                <strong> Next→  </strong> (Contact)
               </NavLink>
               </div>
 </div>

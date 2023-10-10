@@ -518,15 +518,15 @@ export default function ResumePage() {
         <Scroll/>
       </div>
       <div className="flow-links p-4" style={{ flowLinks }}>
-        <NavLink to="/about" style={{ color: "red", textDecoration: "none" }}>
-          ← Back (About)
+        <NavLink to="/about" style={{ color: "black", textDecoration: "none" }}>
+        (About) <strong>  ← Back</strong> 
         </NavLink>
         &nbsp;&nbsp;&nbsp;
         <NavLink
           to="/portfolio"
-          style={{ color: "blue", textDecoration: "none" }}
+          style={{ color: "black", textDecoration: "none" }}
         >
-          Next (Portfolio)→
+           <strong> Next→  </strong> (Portfolio)→
         </NavLink>
       </div>
     </div>

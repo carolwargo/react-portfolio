@@ -27,8 +27,8 @@ const ScrollToTop = () => {
       style={{
         color: "black",
         textDecoration:"bold",
-        padding: "1rem",
-        backgroundColor: "red",
+        padding: ".5rem",
+        backgroundColor: "",
         borderRadius: ".5rem",
         boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
         transition: "background-color 0.6s ease, box-shadow 0.3s ease",
