@@ -52,10 +52,10 @@ export default function Hero() {
 
           <p style={{ font: "bellota text" }}>
             {" "}
-            Follow the <span style={{ color: "red" }}>"Back"</span> &{" "}
-            <span style={{ color: "blue" }}> "Next"</span> links at the bottom
+            Follow the <span style={{ color: "white" }}><strong>&nbsp; ← Back</strong></span> &nbsp;{" "}
+            <span style={{ color: "white" }}> <strong> Next → &nbsp;</strong></span> links at the bottom
             of each page to ensure nothing is missed! Click
-            <span style={{ color: "red" }}> "LEARN MORE"</span> to start... "
+            <span style={{ color: "white" }}> "LEARN MORE"</span> to start... "
           </p>
           <NavLink
             to="/about"
