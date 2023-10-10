@@ -63,7 +63,7 @@ export default function Intro() {
       className="mt-2"
       style={{
         fontSize: "1.5rem",
-        paddingTop: "1rem",
+     
         textShadow: "2px 2px 4px rgba(255, 255, 255, 1)",
       }}
     >

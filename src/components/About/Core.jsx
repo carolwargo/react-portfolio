@@ -65,7 +65,7 @@ export default function Core() {
             
               <Row
                 sm={12}
-                className="flex-direction-col"
+                className=""
                 style={{ borderRadius: "5px" }}
               >
                   <p style={{textAlign:'center'}}>Click "Show Content" to see what I LOVE, I BELIEVE & I STRIVE for...</p>
