@@ -26,6 +26,7 @@ export default function GraphicDesigns() {
      </div>
      </Col>
      </Row>
+    
     </div>
   );
 }

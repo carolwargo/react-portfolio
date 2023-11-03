@@ -8,6 +8,7 @@ import { Row, Col } from "react-bootstrap";
 import PortfolioItems from "../components/Portfolio-Items/Completed";
 import InProgress from "../components/Portfolio-Items/InProgress";
 import GraphicDesigns from "../components/Portfolio-Items/GraphicDesigns";
+import LogoBrand from "../components/Carousel/LogoBrand/LogoBrand";
 
 const flowLinks = {
   display: "flex",
@@ -205,10 +206,58 @@ export default function PortfolioPage() {
       </Col>
           <Col md={7}
           >
-            <GraphicDesigns />
+           <GraphicDesigns/>
           </Col>
           
         </Row>
+        <br></br>
+        <br></br>
+        <br></br>
+        <Row>
+        <Col md={7}
+          >
+           <LogoBrand/>
+          </Col>
+        <Col 
+            md={5}
+    
+          >
+            <h4
+            style={{fontFamily:'sans-serif', marginTop:'2rem'}}
+            >
+               <strong>BRANDING SAMPLE WORK</strong>
+            </h4>
+            <h6
+              className="graphic-design "
+              style={{ color: "white", fontFamily: "bellota text" }}
+            >
+            Re-Branding & New Apparel Collection  
+            </h6>
+            <br></br>
+        
+            <p
+              className="graphic-design "
+              style={{ color: "white", fontFamily: "bellota text" }}
+            >
+              <b><i>"Here is a bit of the design work I am currently working on for a client. KEEP IN MIND- Work is still in-process!"" </i></b>  <br></br>
+              </p>
+              <ul >
+              Long Term plan: 
+                <li>
+                Revamp the brand 
+                </li>
+                <li>
+                Create a Branding Book 
+                </li>
+                <li>
+                Create Apparel-"Collections" based on events held at the farm, venue & storefront, as well as time of year- The gold is the start of the Christmas Collection.
+                  </li>
+              </ul>
+
+
+      </Col>
+     
+          </Row>
         </Container>
         
       </div>
