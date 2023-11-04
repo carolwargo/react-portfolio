@@ -16,18 +16,6 @@ export default function AboutPage() {
   return (
     <div className="about" id="about">
       
-      <h1
-        style={{
-          fontFamily: "bellota text",
-          fontSize: "4rem",
-          marginLeft: "1rem",
-          paddingBottom: "2rem",
-          paddingTop: "2rem",
-          textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
-        }}
-      >
-        ABOUT{" "}
-      </h1>
 
       <Intro />
       <div id="philisophy-values">
@@ -48,7 +36,7 @@ export default function AboutPage() {
             (Home)  <strong>  ← Back</strong>
           </NavLink>
           &nbsp;&nbsp;&nbsp;
-        <NavLink to="/resume"
+        <NavLink to="/resume#resume"
         style={{ color: "black", textDecoration: "none" }}
         >
                <strong> Next→  </strong> (Resume)

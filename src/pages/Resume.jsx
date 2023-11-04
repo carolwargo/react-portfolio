@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Scroll from "../components/Scroll.jsx";
 
+
 import "../styles/links.css";
 
 import { MDBRow, MDBCol } from "mdb-react-ui-kit";
@@ -49,7 +50,7 @@ export default function ResumePage() {
           RESUME{" "}
         </h1>
 
-        <h5 className="" style={{ fontFamily: "bellota text" }}>
+        <h5 className="header" id="header" style={{ fontFamily: "bellota text" }}>
           Digital Resume contains{" "}
           <strong>
             {" "}
@@ -515,15 +516,19 @@ export default function ResumePage() {
             </div>
           </Timeline>
         </div>
-        <Scroll/>
+      <div className="bg-white">
+      <Scroll/>
+      </div>
+        
       </div>
       <div className="flow-links p-4" style={{ flowLinks }}>
-        <NavLink to="/about" style={{ color: "black", textDecoration: "none" }}>
+        
+        <NavLink to="/about#about" style={{ color: "black", textDecoration: "none" }}>
         (About) <strong>  ← Back</strong> 
         </NavLink>
         &nbsp;&nbsp;&nbsp;
         <NavLink
-          to="/portfolio"
+          to="/portfolio#portfolio"
           style={{ color: "black", textDecoration: "none" }}
         >
            <strong> Next→  </strong> (Portfolio)→
