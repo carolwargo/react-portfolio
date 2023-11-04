@@ -10,11 +10,12 @@ export default function Peak() {
         >
           
           <Row>
-            <Container className="p-3" style={{}}>
+            <Container style={{}}>
              
               <h2 className=" text-decoration-underline">
                 <strong> MY BLESSING & MY CURSE </strong>
               </h2>
+              <br></br>
               <p>
                 <strong>PEAK PERFORMANCE BRAIN</strong> <br></br>(clinically
                 diagnosed) - The "blessing" part - Something I possess
@@ -32,9 +33,10 @@ export default function Peak() {
               </p>
             </Container>
           </Row>
-
-          <Container className="bg-white text-black p-5 pl-3 pr-3 rounded">
-            <div className="pr-3 pl-3">
+          <br></br>
+          <Container className="bg-white text-black rounded">
+            <div>
+              <br></br>
               <h5 className=" text-center text-decoration-underline">
                 <strong>KEY FACTORS OF PEAK PERFORMERS:</strong>
               </h5>
@@ -72,10 +74,11 @@ export default function Peak() {
                   mistakes, embrace change, and possess a growth mindset.
                 </li>
               </ul>
+              <br></br>
             </div>
           </Container>
-
-          <Row className="d-flex p-3  mt-4">
+<br></br>
+          <Row className="d-flex p-3">
             <Container className=" rounded">
               <h5 style={{ textDecoration: "underline" }}>WHAT I EXPERIENCE</h5>
               <p>

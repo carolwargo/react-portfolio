@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container} from "react-bootstrap";
 //import Events from "../About/Events.jsx";
 
 export default function Volunteer() {
@@ -8,22 +8,22 @@ export default function Volunteer() {
       <Container
         style={{
           fontFamily: "bellota text",
-          paddingRight: "2rem",
-          paddingLeft: "2rem",
+      
         }}
       >
         <h2 className="text-decoration-underline">
           <strong>GIVING BACK & GAINING MORE</strong>
         </h2>
+      
         <p>
           <strong>EVERYTHING NEW & EXCITING</strong> in my life has been a
           direct result of the volunteer opportunities presented to me...{" "}
           <br></br> <strong>INCLUDING MY CAREER PATH.</strong>."
         </p>
       </Container>
-
+      <br></br>
       <Container
-        className="p-5"
+        
         style={{
           borderRadius: "10px",
           fontFamily: "bellota text",
@@ -49,6 +49,8 @@ export default function Volunteer() {
             opportunity to explore aspects of life that I may not have
             encountered otherwise. "
           </p>
+<br></br>
+          
           <h5
             style={{
          
@@ -71,6 +73,7 @@ export default function Volunteer() {
             Often given few resources to accomplish massive tasks; resilience,
             resourcefulness and creativity are key to success.{" "}
           </p>
+          <br></br>
           <h5
             style={{
           
@@ -89,8 +92,7 @@ export default function Volunteer() {
             development, and is directly attributed to leading me to discover my
             passion for the digital world.
           </p>
-          <br></br>
-          <br></br>
+     
           <div>
         
           </div>

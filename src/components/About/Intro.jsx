@@ -34,7 +34,9 @@ export default function Intro() {
           />
         </Col>
 
-        <Col md={6} className="p-4 m-2 mt-5" style={{}}>
+        <Col md={6} className="p-5 justify-content-center align-content-center" style={{}}>
+        <br></br>
+
           <h2
             style={{
               fontSize: "2rem", // Adjust the font size
@@ -56,9 +58,9 @@ export default function Intro() {
             style={{
               fontSize: "1.5rem",
               textShadow: "2px 2px 4px rgba(255, 255, 255, 1)",
-              marginTop: "4rem",
             }}
           >
+            <br></br>
             DISCOVER MORE...
           </h5>
           <p className="" style={{ fontFamily: "bellota text" }}>

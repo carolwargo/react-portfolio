@@ -36,19 +36,14 @@ export default function Star2() {
         {showList ? "Hide Content" : "Show Content"}
       </button>
       {showList && (
-        <div>
+        <div className="align-items-center justify-content-evenly">
           <ul>
             <li> To Leave Things Better Than I Found Them</li>
             <li>To Focus On The
                     Solution Not The Problem</li>
-            <li>Positivity is the Fountain of Youth</li>
-            <li>”It's NEVER
-                    Too Late…”</li>
             <li>To Do For Others Without
                     Expectation</li>
                     <li>To Manipulate The Web For The Good</li>
-                    <li>To Do For Others Without
-                    Expectation</li>
                     <li>and Of Course, World Peace!</li>
           </ul>
         </div>

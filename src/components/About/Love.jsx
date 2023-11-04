@@ -13,7 +13,7 @@ export default function Star2() {
     <div className="p-3 border border-dark rounded
 
     bg-white text-black">
- <div className="text-center">
+ <div className="text-center pb-2">
     <span>
   <h5>
     <FontAwesomeIcon icon={faHeart} />
@@ -22,6 +22,7 @@ export default function Star2() {
 </span>
 
       </div> 
+      
       <button
         className="btn custom-button"
         style={{
@@ -37,7 +38,7 @@ export default function Star2() {
         {showList ? "Hide Content" : "Show Content"}
       </button>
       {showList && (
-        <div>
+        <div className="justify-content-center align-items-center ">
           <ul>
             <li> Strays (of all sorts)</li>
             <li>The "Underdog"</li>
