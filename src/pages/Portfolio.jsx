@@ -61,8 +61,8 @@ export default function PortfolioPage() {
             <br></br>
             <strong>
               {" "}
-              Follow the <span style={{ color: "red" }}>"Back"</span> &{" "}
-              <span style={{ color: "blue" }}> "Next"</span> links
+              Follow the <span style={{ color: "black" }}>"Back"</span> &{" "}
+              <span style={{ color: "black" }}> "Next"</span> links
             </strong>{" "}
             at the bottom of each page to ensure nothing is missed! "
           </p>
