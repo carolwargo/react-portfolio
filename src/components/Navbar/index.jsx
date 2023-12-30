@@ -56,7 +56,7 @@ export default function Navigation() {
         <a href="https://github.com/carolwargo/" className="me-4 ">
           <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }} />
         </a>
-        <a href="mailto:carolwargo@gmail.com" className="me-4 ">
+        <a href="mailto:carolwargo.dev@gmail.com" className="me-4 ">
           <FontAwesomeIcon icon={faEnvelope} style={{ color: 'black' }} />
         </a>
         <a href="tel:4437711726" className="me-4 ">
