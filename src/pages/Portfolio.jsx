@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import { NavLink } from "react-router-dom";
 import Scroll from "../components/Scroll";
 import "../styles/links.css";
+import HomeHeader from "../components/Home/HomeHeader/HomeHeader";  
 
 import { Row} from "react-bootstrap";
 import PortfolioItems from "../components/Portfolio-Items/Completed";
@@ -17,21 +18,21 @@ const flowLinks = {
 export default function PortfolioPage() {
   return (
     <div className="portfolio" id="portfolio">
+      <HomeHeader />  
       <div style={{ fontFamily: "bellota text" }}>
         <div className=" bg-light text-black p-5">
           <h1
             style={{
               fontFamily: "bellota text",
               fontSize: "4rem",
-         
+
               textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
-       
             }}
           >
             PORTFOLIO{" "}
           </h1>
 <div >
-          <h5 style={{ fontFamily: "bellota text"}}>
+          <p style={{ fontFamily: "bellota text"}}>
             My Portfolio contains the following sections:{" "}
             <strong>
               {" "}
@@ -48,7 +49,7 @@ export default function PortfolioPage() {
               <a href="#graphic-designs">GRAPHIC DESIGN WORK</a>
             </strong>{" "}
             -{" "}
-          </h5>
+          </p>
           <p
             className="text-secondary"
             style={{

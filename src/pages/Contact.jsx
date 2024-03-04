@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 
 import BrickGradientWide from "../assets/images/BrickGradientWide.png";
 import ContactInfo from "../components/Contact/ContactInfo";
+import Business from "../assets/images/About/Business.png";
 
 import "../styles/links.css";
 import "../components/Contact/style.css";
@@ -19,6 +20,47 @@ const flowLinks = {
 export default function Contact() {
   return (
     <div className="contact" id="contact">
+      <header>
+      <div className='container p4' id='contact'>
+              <h3 className='text-center'>WHERE I WORK</h3>
+              <p className='text-center'> <em>I'd love your feedback!</em></p>
+              <div className='row p-2'>
+                <div className='col-md-4'>
+                <img src={Business} alt="Business" className="w3-image w3-round" style={{width:"100%"}} ></img>
+                </div>
+                <div className='col-md-8'>
+                <div className="w3-large w3-margin-bottom">
+                <i className="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Huntingown, MD<br/>
+        <i className="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +443-771-1726<br/>
+        <i className="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br/>
+                </div>
+                <p>Feel free to reach out to us anytime at <a href="mailto:info@example.com">info@example.com</a>, or connect with us on social media:</p>
+                <form action="/action_page.php" target="_blank">
+        <div className="w3-row-padding"  style= {{margin:"0 -16px 8px -16px"}}>
+          <div className="w3-half">
+            <span>
+            <input className="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              </input>
+            </span>
+            <span>
+            <input className="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </input>
+            </span>
+          </div>
+      
+        </div>
+        <div>
+        <input className="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        </input>
+        </div>
+        <button className="w3-button w3-black w3-right w3-section" type="submit">
+          <i className="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+                </div>
+              </div>
+            </div>
+      </header>
       <div className="bg-white">
         <h1
           style={{

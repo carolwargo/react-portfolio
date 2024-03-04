@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Scroll from "../components/Scroll.jsx";
-
+import Header from "../components/Header/index.jsx";
 
 import "../styles/links.css";
 
@@ -39,6 +39,7 @@ const flowLinks = {
 export default function ResumePage() {
   return (
     <div className="resume" id="resume">
+      <Header />
       <div className=" bg-light text-black p-5">
         <h1
           style={{
@@ -50,7 +51,7 @@ export default function ResumePage() {
           RESUME{" "}
         </h1>
 
-        <h5 className="header" id="header" style={{ fontFamily: "bellota text" }}>
+        <p className="header" id="header" style={{ fontFamily: "bellota text" }}>
           Digital Resume contains{" "}
           <strong>
             {" "}
@@ -77,7 +78,7 @@ export default function ResumePage() {
             <a href="#resume-download">RESUME DOWNLOAD</a>
           </strong>{" "}
           -{" "}
-        </h5>
+        </p>
         <p className="text-secondary" style={{ fontFamily: "bellota text" }}>
           {" "}
           "<strong>Click the links above</strong> to jump to the section you
@@ -149,22 +150,18 @@ export default function ResumePage() {
                 className="professional-achievements"
                 id="professional-achievements"
                 style={{
-                  fontFamily: "bellota text",
-                  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
                   padding: "2rem",
                 }}
               >
                 <h3
                   style={{
                     textDecoration: "underline",
-                    fontFamily: "bellota text",
-                    textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
                   }}
                 >
                   PROFESSIONAL ACHIEVEMENTS
                 </h3>
                 <h5>
-                  Discover of my key accomplishments. Click on the respective
+                  Discover some of my key accomplishments. Click on the respective
                   buttons for more details.
                 </h5>
               </div>
@@ -188,8 +185,6 @@ export default function ResumePage() {
               <h3
                 style={{
                   textDecoration: "underline",
-                  fontFamily: "bellota text",
-                  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
                   textAlign: "center",
                 }}
               >

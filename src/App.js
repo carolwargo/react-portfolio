@@ -6,16 +6,15 @@ import About from "./pages/About.jsx";
 import Portfolio  from "./pages/Portfolio.jsx";
 import Contact  from "./pages/Contact.jsx";
 import Resume  from "./pages/Resume.jsx";
-import Header from "./components/Header/index.jsx";
+import SampleComponents from "./pages/SampleComponents/SampleComponents.jsx";
 import Footer from "./components/Footer/index.jsx";
-
+//  <BrowserRouter basename="/react-portfolio" >
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/react-portfolio" >
-        <Header />
+      <BrowserRouter >
 
         <Routes>
           
@@ -24,6 +23,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/sample-components" element={<SampleComponents />} />
         </Routes>
 
         <Footer />
