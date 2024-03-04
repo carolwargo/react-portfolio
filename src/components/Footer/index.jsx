@@ -11,25 +11,21 @@ export default function App() {
     <div className="footer" id="footer">
       <section className="d-flex pt-3 justify-content-center border-top">
         <p className="me-4 ">Carol Wargo</p>
-        <a
-          href="https://www.linkedin.com/in/carol-wargo-35021baa"
-          className="me-4"
-        >
+        <a href="https://www.linkedin.com/in/carol-wargo-35021baa"
+          className="me-3">
           <FontAwesomeIcon icon={faLinkedin} style={{ color: "black" }} />
         </a>
-        <a href="https://github.com/carolwargo/" className="me-4">
+        <a href="https://github.com/carolwargo/" className="me-3">
           <FontAwesomeIcon icon={faGithub} style={{ color: "black" }} />
         </a>
-        <a href="mailto:carolwargo@gmail.com" className="me-4">
+        <a href="mailto:carolwargo@gmail.com" className="me-3">
           <FontAwesomeIcon icon={faEnvelope} style={{ color: "black" }} />
         </a>
-        <a href="tel:4437711726" className="me-4">
+        <a href="tel:4437711726" className="me-3">
           <FontAwesomeIcon icon={faPhone} style={{ color: "black" }} />
         </a>
-        <a
-          href="https://carolwargo.github.io/react-portfolio/"
-          className="me-4"
-        >
+        <a href="https://carolwargo.github.io/react-portfolio/"
+          className="me-3" >
           <FontAwesomeIcon icon={faGlobe} style={{ color: "black" }} />
         </a>
       </section>
