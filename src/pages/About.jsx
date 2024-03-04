@@ -1,17 +1,14 @@
 import React from "react";
 //import Volunteer from "../components/About/Volunteer.jsx";
-//import Intro from "../components/About/Intro.jsx";
 import AboutFinal from "../components/About/AboutFinal.jsx";
-import NavbarBlack from '../components/Navbar/NavbarBlack/NavbarBlack.jsx';
 import LocationView from '../assets/images/LocationView.png';
-//import Business from '../assets/images/About/Business.png';  
-import "../styles/links.css";
+
+import '../App.css'
 
 
 export default function AboutPage() {
   return (
     <div className="about" id="about">
-      <NavbarBlack />
       <AboutFinal />
       <div className='row p-2 d-flex align-items-center'>
       <div className='col-md-4 flex-column justify-content-end align-items-center'>

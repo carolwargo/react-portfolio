@@ -1,8 +1,7 @@
 import React from "react";
 import MeWhite from "../assets/images/MeWhite.png";
+import '../App.css'
 
-
-import "../styles/links.css";
 import "../components/Contact/style.css";
 
 
@@ -78,34 +77,11 @@ export default function Contact() {
         </div>
       </form>
       
-     {/** 
-                GITHUB:{" "}
-                <a href="https://www.github.com/carolwargo">
-                  www.github.com/carolwargo
-                </a>
-                <br></br>
-                LINKEDIN:{" "}
-                <a href="https://www.linkedin.com/in/carol-wargo-35021baa">
-                  www.linkedin.com/in/carol-wargo-35021baa
-                </a>
-                <br></br>
-                WEBSITE:{" "}
-                <a href="https://carolwargo.github.io/react-portfolio/">
-                  www.carolwargo.github.io/react-portfolio/
-                </a>
-                */}
                 </div>
               </div>
             </div>
       </header>
 
-      
-     
-
-      
-      
-       
-    
         </div>
   
 

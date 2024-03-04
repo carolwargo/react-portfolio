@@ -1,12 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Scroll from "../components/Scroll.jsx";
-import Header from "../components/Header/index.jsx";
-
-import "../styles/links.css";
-
-import { MDBRow, MDBCol } from "mdb-react-ui-kit";
-
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -25,25 +18,22 @@ import Package from "../assets/images/Package.png";
 import BuildTest from "../assets/images/BuildTest.png";
 import APIQ from "../assets/images/APIQ.png";
 import ResumeWorkspace from "../assets/images/ResumeWorkspace.png";
-import ResumeDownload from "../assets/images/ResumeDownload.png";
-
+import Resume from '../assets/Resume.pdf'
 import Star1 from "../components/OnClickEvents/Star1";
 import Star2 from "../components/OnClickEvents/Star2";
 import Star3 from "../components/OnClickEvents/Star3";
-
-const flowLinks = {
-  display: "flex",
-  justifyContent: "center",
-};
+import '../App.css'
 
 export default function ResumePage() {
   return (
-    <div className="resume" id="resume">
-      <Header />
+    <div className="resume" id="resume"
+    style={{
+      fontFamily: "Raleway",
+    }}>
+
       <div className=" bg-light text-black p-5">
         <h1
           style={{
-            fontFamily: "bellota text",
             fontSize: "4rem",
             textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
           }}
@@ -51,13 +41,8 @@ export default function ResumePage() {
           RESUME{" "}
         </h1>
 
-        <p className="header" id="header" style={{ fontFamily: "bellota text" }}>
+        <p className="header" id="header" style={{fontFamily:'Raleway'}}>
           Digital Resume contains{" "}
-          <strong>
-            {" "}
-            <a href="#professional-background"> PROFESSIONAL BACKGROUND</a>
-          </strong>
-          ,{" "}
           <strong>
             {" "}
             <a href="#professional-achievements"> PROFESSIONAL ACHIEVEMENTS</a>
@@ -79,86 +64,25 @@ export default function ResumePage() {
           </strong>{" "}
           -{" "}
         </p>
-        <p className="text-secondary" style={{ fontFamily: "bellota text" }}>
-          {" "}
-          "<strong>Click the links above</strong> to jump to the section you
-          want to view... and
-          <br></br>
-          <strong>
-            {" "}
-            Follow the <span style={{ color: "black" }}>"Back"</span> &{" "}
-            <span style={{ color: "black" }}> "Next"</span> links
-          </strong>{" "}
-          at the bottom of each page to ensure nothing is missed! "
-        </p>
+       
       </div>
 
-      <div
-        className="professional-background mt-3"
-        id="professional-background"
-      >
-        <MDBRow
-          className="pro-row pt-2 bg-secondary-subtle"
-          style={{
-            borderRadius: "10px",
-            backgroundColor: "white",
-            color: "black",
-          }}
-        >
-          <MDBCol md="12" className="p-5">
-            <h1
-              className="text-black"
-              style={{
-                textDecoration: "underline",
-                fontFamily: "bellota text",
-                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
-              }}
-            >
-              PROFESSIONAL BACKGROUND
-            </h1>
-            <br></br>
-            <p>
-              I have earned my main living in Real Estate for the last 21 years
-              in various capacities. Started as an Agent ("Salesperson"),
-              recruited to work directly under the #1 Broker in my area,
-              transitioned to Group Investment Properties, and subsequently
-              ventured into my own personal Investments, taking on roles such as
-              Owner, Landlord, Designer, IT Department, Marketing Manager,
-              General Contractor, and even Laborer. In parallel, I also
-              established a presence in freelance development and digital
-              design, prior to completion of any formal education."
-            </p>{" "}
-          </MDBCol>
-
-          <MDBRow
-            style={{
-              padding: "3rem",
-              backgroundColor: "white",
-            }}
-          >
-            <MDBCol md="5">
+      
+<div className="container justify-content-center align-items-center">
+          <div className="row w3-padding-large" >
+            <div className="col-sm-12 col-md-6 col-lg-6">
               <img
                 src={ResumeWorkspace}
                 alt="ResumeWorkspace"
                 className="img-fluid pt-2"
                 style={{ width: "100%", borderRadius: "10px" }}
               />
-            </MDBCol>
+            </div>
 
-            <MDBCol md="7" style={{ color: "black" }}>
-              <div
-                className="professional-achievements"
-                id="professional-achievements"
-                style={{
-                  padding: "2rem",
-                }}
-              >
-                <h3
-                  style={{
-                    textDecoration: "underline",
-                  }}
-                >
-                  PROFESSIONAL ACHIEVEMENTS
+            <div className="col-sm-12 col-md-6 col-lg-6" style={{ color: "black" }}>
+              <div className=" w3-padding-large" id="professional-achievements">
+                <h3>
+                  <u>PROFESSIONAL ACHIEVEMENTS</u>
                 </h3>
                 <h5>
                   Discover some of my key accomplishments. Click on the respective
@@ -178,61 +102,17 @@ export default function ResumePage() {
                   <Star3 />
                 </li>
               </ul>
-            </MDBCol>
-          </MDBRow>
-          <div className="p-5">
-            <div className="p-2">
-              <h3
-                style={{
-                  textDecoration: "underline",
-                  textAlign: "center",
-                }}
-              >
-                IN SUMMARY...
-              </h3>
-              <br></br>
-              <p>
-                {" "}
-                "I bring a wealth of experience and commitment to excellence to
-                the table. With a solid foundation in business, I have built a
-                track record of success through hard work and adaptability. I excel in translating complex business needs into precise
-                technical solutions. My expertise lies in crafting detailed
-                plans for seamless integration, proactively identifying and
-                addressing potential challenges. These experiences have honed my
-                communication, collaboration, and project management skills,
-                ensuring projects meet functional needs and align with business
-                objectives. As I
-                shift my focus to software development, I will carry forward the same
-                strategic thinking, negotiation skills, and dedication to
-                excellence meaningful
-                solutions."
-              </p>
-            
             </div>
-          </div>
-        </MDBRow>
-      </div>
-      <div
-        className="technical-skills-div d-flex flex-column bg-dark"
-        style={{
-          fontFamily: "bellota text",
-          color: "white",
-          paddingTop: "2rem",
-        }}
-      >
+        </div>
+        </div>
+    
+
+
+
+      <div className="technical-skills-div d-flex flex-column bg-dark text-white pt-2">
         <h1
-          className="technical-skills text-light mt-2 p-2"
-          id="technical-skills"
-          style={{
-            textDecoration: "underline",
-            color: "white",
-            fontFamily: "bellota text",
-            textAlign: "center",
-            paddingTop: "2rem",
-            marginBottom: "2rem",
-            textShadow: "1px 1px 3px rgba(255, 255, 255, 1)",
-          }}
-        >
+          className="technical-skills text-light mt-2 p-4 text-center"
+          id="technical-skills">
           TECHNICAL SKILLS
         </h1>
         <Timeline position="alternate">
@@ -371,6 +251,7 @@ export default function ResumePage() {
               <TimelineSeparator>
                 <TimelineDot />
                 <TimelineConnector />
+                <TimelineDot />
               </TimelineSeparator>
               <TimelineContent>
                 API & QUERY LANGUAGE
@@ -382,153 +263,74 @@ export default function ResumePage() {
                 />
               </TimelineContent>
             </TimelineItem>
-          </Timeline>
-        </Timeline>
-        <h4 style={{ textAlign: "center" }}>
-          <strong>MORE TO COME!</strong>
-        </h4>
-        <p style={{ textAlign: "center" }}>
-          Exploring & Studying New Technologies Daily!
-        </p>
-
-        <br></br>
-        <div className="professional-experience container-fluid pt-2 d-flex flex-column justify-content-center bg-white text-black">
-          <h1
-            className="text-black p-5"
-            id="experience"
-            style={{
-              textDecoration: "underline",
-              textAlign: "center",
-              fontFamily: "bellota text",
-              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
-            }}
-          >
-            EXPERIENCE & EDUCATION
-          </h1>
-          <Timeline position="alternate">
+    <br />
+    <br />
             <TimelineItem>
-              <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent>
-                <h3 className="text-black">WORK HISTORY</h3>
-                <h4 className="text-black text-decoration-underline">
-                  Real Estate Industry
-                </h4>
-                <p className="text-black ">
-                  (July 2003 -Present ) License Status: "Current"<br></br>
-                  Agent ("Salesperson"), Group Investments, Personal Investments
-                  <br></br>
-                  <br></br>
-                  <strong className="">TITLES & DUTIES</strong>
-                </p>
-                <ul>
-                  <li>Owner</li>
-                  <li>Landlord</li>
-                  <li>Marketing Manager</li>
-                  <li>Designer</li>
-                  <li>Sales</li>
-                  <li>General Contractor</li>
-                </ul>
-                <br></br>
-                <h4 className="text-black pt-2 text-decoration-underline">
-                  Freelance Development & Design
-                </h4>
-                <p className="text-black ">
-                  (July 2019 -Present ) <br></br>
-                  Website Development & Design, Graphic Design & Branding
-                  <br></br>
-                </p>
-                <p>
-                  {" "}
-                  <strong className="text-bold">TASKS & DUTIES</strong>
-                </p>
-                <ul>
-                  <li>Develop Branding Books</li>
-                  <li>Design Logos & Marketing Materials</li>
-                  <li>Design User-Friendly Website</li>
-                  <li>Develop Marketing Campaigns</li>
-                  <li>Consultations</li>
-                  <li>Search Engine Optimization</li>
-                  <li>Content Creation</li>
-                  <li>Website Maintenance</li>
-                </ul>
-              </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-              <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent>
-                <h3 className="text-black">EDUCATION</h3>
-                <h5 className="text-black">
+              <TimelineOppositeContent color="text.light">
+              <h5 className="text-white">
                   Certificate of Full Stack Web Development
                 </h5>
-                <h6 className="text-black">
+                <h6 className="text-white">
                   George Washington University (July 2023)
                 </h6>
-                <h3 className="text-black">Additional Courses</h3>
-                <h5 className="text-black">- 19 hour React Router 6</h5>
-                <p className="text-black">Scrimba Pro</p>
-                <h5 className="text-black">- 10 hour React</h5>
-                <p className="text-black">Scrimba Pro</p>
-              </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
+              </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot />
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent>
-                <h3 className="text-dark">CURRENT ENDEAVORS</h3>
-                <h4 className="text-dark">Freelance Design & Development</h4>
-                <p className="text-dark">
-                  I currently have multiple projects in-progress BUT, also know
-                  the importance of working with & for others and feel I will be
-                  an asset to any work environment. <br></br>
-                  Click "Download" button below to download my resume or "Next
-                  (Portfolio)" to view some of my work!
-                </p>
+              <h3>EDUCATION</h3>
               </TimelineContent>
+              
             </TimelineItem>
 
-            <br></br>
-            <div className="d-flex flex-row justify-content-center">
+
+
+
+
+
+
+
+          
+         
+            
+          </Timeline>
+        </Timeline>
+        <div className="d-flex flex-row justify-content-center">
               <div className="d-flex flex-column">
-                <p className="text-black">DOWNLOAD A COPY OF MY RESUME</p>
+                <p className="text-white">DOWNLOAD A COPY OF MY RESUME</p>
 
                 <a
-                  className="btn bg-black text-light"
+                  className="btn bg-light text-black"
                   id="resume-download"
                   download
-                  href={ResumeDownload}
+                  href={Resume}
                 >
                   Download
                 </a>
               </div>
             </div>
-          </Timeline>
-        </div>
-      <div className="bg-white">
-      <Scroll/>
+            <br></br>
       </div>
-        
-      </div>
-      <div className="flow-links p-4" style={{ flowLinks }}>
-        
-        <NavLink to="/about#about" style={{ color: "black", textDecoration: "none" }}>
-        (About) <strong>  ← Back</strong> 
-        </NavLink>
-        &nbsp;&nbsp;&nbsp;
+  
+      <footer className="w3-container w3-padding-48 text-center ">
         <NavLink
-          to="/portfolio#portfolio"
-          style={{ color: "black", textDecoration: "none" }}
+        to={"/portfolio#portfolio"}
         >
-           <strong> Next→  </strong> (Portfolio)→
-        </NavLink>
-      </div>
+          <button className="w3-button w3-black w3-disabled w3-padding-medium">
+            Previous
+          </button>
+          </NavLink>
+
+          <NavLink
+        to={"/portfolio#portfolio"}
+        >
+          <button className="w3-button w3-black w3-padding-medium">
+            Next »
+          </button>
+         </NavLink>
+        </footer>
+   
     </div>
   );
 }

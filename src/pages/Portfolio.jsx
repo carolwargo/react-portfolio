@@ -1,24 +1,16 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import { NavLink } from "react-router-dom";
-import Scroll from "../components/Scroll";
-import "../styles/links.css";
-import HomeHeader from "../components/Home/HomeHeader/HomeHeader";  
 
 import { Row} from "react-bootstrap";
 import PortfolioItems from "../components/Portfolio-Items/Completed";
-import InProgress from "../components/Portfolio-Items/InProgress";
 import GraphicDesigns from "../components/Portfolio-Items/GraphicDesigns";
-
-const flowLinks = {
-  display: "flex",
-  justifyContent: "center",
-};
+import '../App.css'
 
 export default function PortfolioPage() {
   return (
     <div className="portfolio" id="portfolio">
-      <HomeHeader />  
+  
       <div style={{ fontFamily: "bellota text" }}>
         <div className=" bg-light text-black p-5">
           <h1
@@ -50,23 +42,7 @@ export default function PortfolioPage() {
             </strong>{" "}
             -{" "}
           </p>
-          <p
-            className="text-secondary"
-            style={{
-              fontFamily: "bellota text",
-            }}
-          >
-            {" "}
-            "<strong>Click the links above</strong> to jump to the section you
-            want to view... and
-            <br></br>
-            <strong>
-              {" "}
-              Follow the <span style={{ color: "black" }}>"Back"</span> &{" "}
-              <span style={{ color: "black" }}> "Next"</span> links
-            </strong>{" "}
-            at the bottom of each page to ensure nothing is missed! "
-          </p>
+   
         </div>
         </div>
         <Container className="p-5">
@@ -97,52 +73,6 @@ export default function PortfolioPage() {
        
 
 
-        <div className="bg-white">
-<Container className="p-5">
-        <Row 
-        className="in-progress-header" id="projects-in-progress"
-        style={{
-          fontFamily:'bellota text'
-        }}
-        >
-          <h2
-            style={{
-              color: "black",
-              textDecoration: "underline",
-              fontFamily: "sans-serif",
-            }}
-          >
-            WORK IN-PROGRESS
-          </h2>
-          <p
-            style={{
-              color: "black",
-              fontFamily: "bellota text",
-            }}
-          >
-            My "Work In-Progress" showcases a range of projects that are
-            currently in development, and will be updated as they are
-            completed.- <br></br> Consisting of applications used as learning
-            platforms to expand my understanding, as well as a collection of
-            freelance jobs for third-party companies.
-            <br></br>
-            Links to README files and repositories are provided for better
-            understanding, as well as plans for "future development" for each
-            project.
-          </p>
-          <p
-          style={{
-            color: "black",
-            fontFamily: "bellota text",
-          }}
-          >
-            Not all of my "in process" projects have been added. Check back often to see new additions!</p>
-        
-        </Row>
-
-        <InProgress />
-</Container>
-</div>
 <Container className="p-5">
         {/* START of "GRAPHIC-DESIGN" ROW */}
         <h2
@@ -173,28 +103,28 @@ export default function PortfolioPage() {
          <GraphicDesigns />
           
         </Row>
-        
         </Container>
         
       </div>
      
-      <div className="p-4 bg-white">
-      <Scroll/>
-      {/*flow-link <-previous-page & next-page->*/}
-      <div className="flow-links bg-white" style={{ flowLinks }}>
-      <NavLink to ="/resume#resume"
-    style={{ color: "black", textDecoration: "none" }}
-    >
-           (Resume) <strong>  ← Back</strong>
-          </NavLink>
-          &nbsp;&nbsp;&nbsp;
-        <NavLink to="/contact#contact"
-        style={{ color: "black", textDecoration: "none" }}
+      <footer className="w3-container w3-padding-48 text-center bg-white">
+        <NavLink
+        to={"/portfolio#portfolio"}
         >
-                <strong> Next→  </strong> (Contact)
-              </NavLink>
-              </div>
-</div>
+          <button className="w3-button w3-black w3-disabled w3-padding-medium">
+            Previous
+          </button>
+          </NavLink>
+
+          <NavLink
+        to={"/portfolio#portfolio"}
+        >
+          <button className="w3-button w3-black w3-padding-medium">
+            Next »
+          </button>
+         </NavLink>
+        </footer>
+
     </div>
   );
 }

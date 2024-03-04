@@ -31,10 +31,10 @@ const HomeAbout = () => {
     <div className="container-fluid py-1 text-black">
     <div className="w3-content w3-container ">
     <div class="row d-flex justify-content-center align-items-center py-lg-5 ">
-  <div class="col-sm-12 col-md-6 col-lg-6 w3-padding-large justify-content-center align-items-center">
+  <div class="col-sm-12 col-md-6 col-lg-6 w3-padding-small justify-content-center align-items-center">
     <img src={MeWhite} className="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Me" width="500" height="333" style={{boxShadow: "0px 0px 12px gray",}}/>
  </div>
- <div class="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
+ <div class="col-sm-12 col-md-6 col-lg-6 w3-padding-small">
     <h5><strong>Technical Proficiencies</strong></h5>
 
 <p className="w3-wide text-black" style={{fontSize:'1rem'}}><GiGears className="justify-content-center"/> Core Technologies</p>

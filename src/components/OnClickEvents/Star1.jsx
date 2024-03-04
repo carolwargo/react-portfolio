@@ -8,9 +8,9 @@ export default function Star2() {
   }
 
   return (
-    <div className="p-2">
-        <h5> "Technological Transformation in Business"</h5>
-      <p className="text-secondary">Click 'Show Content' button to reveal "Achievement Statement".
+    <div className="p-2" style={{fontFamily:'Raleway'}}>
+        <h5><i>Technological Transformation in Business</i> </h5>
+        <p className="text-secondary">click <b>Show Content</b> to reveal achievement statement.
       </p>
       <button 
        className="btn custom-button"
