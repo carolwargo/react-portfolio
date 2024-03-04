@@ -3,6 +3,7 @@ import React from "react";
 //import Intro from "../components/About/Intro.jsx";
 import AboutFinal from "../components/About/AboutFinal.jsx";
 import NavbarBlack from '../components/Navbar/NavbarBlack/NavbarBlack.jsx';
+import LocationView from '../assets/images/LocationView.png';
 //import Business from '../assets/images/About/Business.png';  
 import "../styles/links.css";
 
@@ -12,7 +13,20 @@ export default function AboutPage() {
     <div className="about" id="about">
       <NavbarBlack />
       <AboutFinal />
-    
+      <div className='row p-2 d-flex align-items-center'>
+      <div className='col-md-4 flex-column justify-content-end align-items-center'>
+      <div className="d-flex align-items-center justify-content-center">
+    <h2 className=' justify-content-center align-items-center'>WHERE I'M LOCATED</h2>
+    </div>
+    <div className="d-flex align-items-center justify-content-center">
+    <p className=' justify-content-center align-items-center'> 
+    <em>Huntingtown, Maryland!</em></p>
+   </div>
+</div>
+        <div className='col-md-6 justify-content-center align-items-center'>
+        <img src={LocationView} alt="htown" className="w3-image w3-round" style={{width:"100%"}} ></img>
+        </div>
+        </div>
 
     </div>
   );

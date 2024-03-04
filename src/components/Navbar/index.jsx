@@ -26,7 +26,7 @@ export default function Navigation() {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
-              className="me-auto my-2 my-lg-0"
+              className="me-auto my-2 my-lg-0 "
              
               navbarScroll
             >
@@ -51,7 +51,7 @@ export default function Navigation() {
             <Form className="d-flex">
             <div className="d-flex align-items-center" style={{ fontSize: '1rem' }}>
         <a href="https://www.linkedin.com/in/carol-wargo-35021baa" className="me-4">
-          <FontAwesomeIcon icon={faLinkedin}  style={{ color: 'black' }} />
+          <FontAwesomeIcon icon={faLinkedin}  style={{ color: 'black', textShadow: '1px 1px 4px #00FFFF' }}  />
         </a>
         <a href="https://github.com/carolwargo/" className="me-4 ">
           <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }} />

@@ -8,8 +8,8 @@ import "../Hero/style.css";
 export default function Hero() {
   return (
     <div className="container-fluid">
-      <div className="row">
-        <div className="col-lg-7 col-md-12 bg-body-black text-white pt-5 pb-5">
+      <div className="row bg-black">
+        <div className="col-lg-7 col-md-12 text-white">
           <img
             src={MeCard}
             alt="MeCard"

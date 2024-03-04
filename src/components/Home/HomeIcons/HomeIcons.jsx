@@ -14,9 +14,9 @@ import '../../../App.css';
 const HomeIcons = () => {   
 
     return (
-        <div className='bg-danger-subtle' >
-<div className="container text-center">
-      <div className='row d-flex p-lg-5 justify-content-center '>
+        <div className='bg-danger-subtle p-sm-5 pb-4' >
+        <h2 className='text-center w3-padding-top'>What Next?</h2>
+      <div className='row d-flex justify-content-center w3-padding-bottom'>
       <div className='col-sm-12 col-md-3 col-lg-3 d-flex flex-column justify-content-center 
       align-items-center'>    
     {/* Use Link component with 'to' prop */}
@@ -72,7 +72,7 @@ const HomeIcons = () => {
 
     </div>
     </div>
-        </div>
+   
     );
     }
 
