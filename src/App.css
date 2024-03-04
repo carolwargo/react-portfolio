@@ -1,16 +1,106 @@
-
+* {
+  font-family: Raleway
+}
 
 .portfolio {
   background-color: black;
 } 
 
-.contact {
-  background-color: black;
-} 
 
-.home {
-  background-color: black;
-} 
+//about link
+#home-design-icon:link {
+  color: pink !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+
+#home-design-icon:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+#home-design-icon:hover {
+  color: #00FFFF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+#home-design-icon:active {
+  color: aqua;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+//portfolio
+#home-puzzle-icon:link {
+  color: pink !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+
+#home-puzzle-icon:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+#home-puzzle-icon:hover {
+  color: #00FFFF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+#home-puzzle-icon:active {
+  color: aqua;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+//resume
+#home-document-icon:link {
+  color: pink !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+
+#home-document-icon:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+#home-document-icon:hover {
+  color: #00FFFF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+#home-document-icon:active {
+  color: aqua;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+//contact link
+#home-person-icon:link {
+  color: pink !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+
+#home-person-icon:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+#home-person-icon:hover {
+  color: #00FFFF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+#home-person-icon:active {
+  color: aqua;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 
 .about {
   @media (max-width: 576px) {
