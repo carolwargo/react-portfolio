@@ -30,6 +30,7 @@ const Header = () => {
                   fontSize: "3.5rem",
                   fontFamily:'Raleway'
                 }}>CAROL <span style={{ fontSize: "3.5rem", }}>WARGO</span></h1>
+               <h5>DISCLAIMER: "SITE IS UNDER COSTRUCTION"</h5>
                <p
               className="mt-2 mb-2"
               style={{
