@@ -62,11 +62,7 @@ const HomeAbout = () => {
     <div className="w3-container w3-padding-small w3-black w3-center w3-margin-bottom" style= {{width:"75%"}}>75%</div>
   </div>
     </div> 
-   
-    <div className="container w3-margin-top pt-3 pb-0">
-    <p className="text-center w3-margin-top"><a href="/about">Click the link to Learn more about me and what I do <i className="fa fa-arrow-right mx-2"></i></a>
-  </p>
-  </div>
+  
  </div>
   </div> 
  </div>

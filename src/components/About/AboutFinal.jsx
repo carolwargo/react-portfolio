@@ -12,16 +12,16 @@ import '@fortawesome/fontawesome-free/css/all.css'; // Import Font Awesome CSS
 const AboutFinal = () => {
 
     return (
-        <div className="container-fluid py-4 bg-black text-white">
+        <div className="container-fluid py-4 bg-black text-white" id="about">
         <div className="w3-content w3-container w3-padding-32 " id="about">
         <div className="row">
-  <h3 className="w3-center">ABOUT ME</h3>
-  <h5 className="w3-center">"I'm Carol Wargo, and welcome to my corner of 
+  <h3 className="w3-center fw-light">ABOUT ME</h3>
+  <h5 className="w3-center fw-light">"I'm Carol Wargo, and welcome to my corner of 
   the internet! Join me as I share insights into who I am professionally 
   and the years of experience that shape what I do."</h5>
   <br />
   <br />
-  <p className="w3-center"><em>"My passion lies in utilizing creative design to drive 
+  <p className="w3-center fw-light"><em>"My passion lies in utilizing creative design to drive 
     innovative solutions through technology. With a distinctive blend of 
     skills and experience, I am a seasoned full-stack 
     software developer and UX designer deeply committed to collaboration, 

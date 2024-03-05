@@ -30,7 +30,7 @@ const Header = () => {
                   fontSize: "3.5rem",
                   fontFamily:'Raleway'
                 }}>CAROL <span style={{ fontSize: "3.5rem", }}>WARGO</span></h1>
-               <h5>DISCLAIMER: "SITE IS UNDER COSTRUCTION"</h5>
+              
                
                <p
               className="mt-2 mb-2"
@@ -68,7 +68,6 @@ const Header = () => {
               </p>
 
               <p> DIGITAL MARKETING-DATA ANALYSIS-PROJECT MANAGEMENT"</p>
-             
            
             <br></br>
             <div className="p-2">
@@ -82,12 +81,14 @@ const Header = () => {
                   <b style={{ textShadow: "2px 2px 4px #F63DB0",}}>Learn More</b>
                 </button>
               </Link>
-           
             </div>
+           
           </div>
           <div className="col-sm-12 col-md-3 col-lg-3"></div>
+          <p style={{fontSize:'12px', color:'white'}}>DISCLAIMER: "SITE IS UNDER COSTRUCTION- THANKS FOR YOUR PATIENCE!"</p>
+     
         </div>
-      </div>
+   </div>
     </header>
   );
 };
