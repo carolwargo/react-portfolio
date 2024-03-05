@@ -37,7 +37,7 @@ export default function ResumePage() {
         <h1
           style={{
             fontSize: "4rem",
-            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.75)",
+            textShadow: "0px 0px 14px #00ffff",
           }}
         >
           RESUME{" "}
@@ -70,14 +70,14 @@ export default function ResumePage() {
         <hr />
       </div>
 
-      <div className="container justify-content-center align-items-center w3-margin-bottom">
-        <div className="row w3-padding-large w3-margin-bottom">
+      <div className="container w3-margin-bottom">
+        <div className="row d-flex justify-content-center align-items-center  w3-padding-large w3-margin-bottom">
           <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
             <img
               src={ResumeWorkspace}
               alt="ResumeWorkspace"
               className="img-fluid shadow"
-              style={{ width: "90%", borderRadius: "10px" }}
+              style={{ width: "100%", borderRadius: "10px" }}
             />
           </div>
 
@@ -88,7 +88,9 @@ export default function ResumePage() {
             <div className=" w3-padding-large" id="professional-achievements">
               <div className="text-center">
                 <h3>
-                  <u>PROFESSIONAL ACHIEVEMENTS</u>
+                  <u
+                  style={{   textShadow: "0px 0px 14px #00ffff",}}
+                  >PROFESSIONAL ACHIEVEMENTS</u>
                 </h3>
                 <h5>
                   Discover some of my key accomplishments. Click on the
@@ -117,6 +119,7 @@ export default function ResumePage() {
         <h1
           className="technical-skills text-light mt-2 p-4 text-center"
           id="technical-skills"
+          style={{   textShadow: "0px 0px 14px black", fontFamily: "Raleway" }}
         >
           TECHNICAL SKILLS
         </h1>

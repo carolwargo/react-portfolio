@@ -24,7 +24,7 @@
     width: 0;
     height: 3px;
     margin-bottom: -2px;
-    background: linear-gradient(to right, #855555, #65d555);
+    background: linear-gradient(to right, #00ffff, pink);
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.4s ease;

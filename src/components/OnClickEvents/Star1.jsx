@@ -13,15 +13,14 @@ export default function Star1() {
         <p className="text-center text-secondary">click <b>Show Content</b> to reveal achievement statement.
       </p>
       <button 
-    className="btn custom-button w3-margin-bottom shadow"
+    className="btn custom-button w3-margin-bottom shadow bg-info-subtle"
     style={{
       width: "100%",
-      backgroundColor: "black",
       border: "none",
-      color: "white",
+      color: "black",
       borderRadius: "0px",
       boxShadow: "2px 2px 4px rgba(255, 255, 255, 0.3)",
-      transition: "background-color 0.6s ease, box-shadow 0.3s ease",
+      transition: "background-color 0.6s ease, box-shadow 0.6s ease",
     }}
       onClick={handleClick}>
         {showList ? 'Hide Content' : 'Show Content'}
