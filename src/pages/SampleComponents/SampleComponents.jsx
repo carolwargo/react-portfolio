@@ -8,17 +8,19 @@ const SampleComponents = () => {
 
     return (
         <div>
-        <SampleHeader />
     
-        <div className='w3-container w3-padding-large' id='blog'>
+        <div className='w3-light-grey w3-margin-bottom border-top' id='blog'>
+        <SampleHeader />
         <Blog />
+        </div>
+        <div className='w3-container w3-padding-large bg-white' id='spy-scroll'>
+        <SpyScroll />
         </div>
         <div className='' id=''></div>
         <div className='' id=''></div>
         <div className='' id=''></div>
         <div className='' id=''></div>
-        <div className='' id=''></div>
-        <SpyScroll />
+      
        
 
         </div>
