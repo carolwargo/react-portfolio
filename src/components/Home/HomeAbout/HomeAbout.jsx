@@ -15,7 +15,7 @@ const HomeAbout = () => {
         <div>
         <div className="container-fluid w3-margin-top py-3 text-black">
 <div className="w3-content w3-container w3-margin-top " id="about">
-<div class="row d-flex justify-content-center align-items-center">
+<div className="row d-flex justify-content-center align-items-center">
 <h2 className="w3-center py-2"> <i> "I'm Carol Wargo, and <br /> welcome to my corner of the internet!"</i></h2>
   <br />
     <p className="w3-center pt-3"><em>"My passion lies in utilizing creative design to drive 
@@ -30,11 +30,11 @@ const HomeAbout = () => {
 </div>
     <div className="container-fluid py-1 text-black">
     <div className="w3-content w3-container ">
-    <div class="row d-flex justify-content-center align-items-center py-lg-5 ">
-  <div class="col-sm-12 col-md-6 col-lg-6 w3-padding-small justify-content-center align-items-center">
+    <div className="row d-flex justify-content-center align-items-center py-lg-5 ">
+  <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-small justify-content-center align-items-center">
     <img src={MeWhite} className="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Me" width="500" height="333" style={{boxShadow: "0px 0px 12px gray",}}/>
  </div>
- <div class="col-sm-12 col-md-6 col-lg-6 w3-padding-small">
+ <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-small">
     <h5><strong>Technical Proficiencies</strong></h5>
 
 <p className="w3-wide text-black" style={{fontSize:'1rem'}}><GiGears className="justify-content-center"/> Core Technologies</p>

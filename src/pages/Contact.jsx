@@ -1,13 +1,14 @@
 import React from "react";
+import Header from "../components/Header/Header";
 import MeWhite from "../assets/images/MeWhite.png";
 import '../App.css'
-
 import "../components/Contact/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Contact() {
   return (
     <div className="contact" id="contact">
+      <Header />
       <header> 
       <div className='container py-4' id='contact'>
               <div className='row p-xl-5 justify-content-center align-items-center'>

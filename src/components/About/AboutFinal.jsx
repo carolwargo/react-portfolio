@@ -14,7 +14,7 @@ const AboutFinal = () => {
     return (
         <div className="container-fluid py-4 bg-black text-white">
         <div className="w3-content w3-container w3-padding-32 " id="about">
-        <div class="row">
+        <div className="row">
   <h3 className="w3-center">ABOUT ME</h3>
   <h5 className="w3-center">"I'm Carol Wargo, and welcome to my corner of 
   the internet! Join me as I share insights into who I am professionally 
@@ -33,15 +33,15 @@ const AboutFinal = () => {
     
   
 <div className="w3-content w3-container " id="about">
-<div class="row">
-  <div class="col-sm-12 col-md-6 col-lg-6 w3-padding-small py-3">
+<div className="row">
+  <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-small py-3">
     <img src={MeWhite} className="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Me" width="500" height="333" />
  
  </div>
 
     {/*}Hide this text on small devices*/}
    
-    <div class="col-sm-12 col-md-6 col-lg-6 w3-padding-small py-3">
+    <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-small py-3">
     <h3><b><i className=''></i>THINGS TO HIGHLIGHT:</b></h3>
 <p className="py-2"><b>LEADERSHIP: </b>I excel in leadership roles and 
     collaborative environments, leveraging my strong interpersonal skills 
@@ -66,9 +66,9 @@ const AboutFinal = () => {
 {/**start technical proficiencies */}
 <div className="container-fluid py-4 bg-white text-black">
 <div className="w3-content w3-container" id="about">
-<div class="row">
+<div className="row">
 <h3><strong>SKILLS & PROFICIENCIES</strong></h3>
-    <div class="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
+    <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
     <h5><strong>Technical Proficiencies</strong></h5>
 
 <p className="w3-wide text-black" style={{fontSize:'1rem'}}><GiGears className="justify-content-center"/> Core Technologies</p>
@@ -97,7 +97,7 @@ const AboutFinal = () => {
   </div>
  
     </div>    
-    <div class="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
+    <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
         <h5>Agile Practices</h5>
         <p>PROMOTE FLEXIBILITY, COLLABORATION, AND ABILITY TO RESPOND TO CHANGING REQUIREMENTS. </p>
     <h5><strong>Interpersonal Skills</strong></h5>

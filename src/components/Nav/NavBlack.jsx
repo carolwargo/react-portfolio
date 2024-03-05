@@ -47,13 +47,16 @@ function NavScrollExample() {  const [isNavbarFixed, setIsNavbarFixed] = useStat
             <Nav.Link href="/portfolio">Portfolio</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
 
-            <NavDropdown title="Examples" id="navbarScrollingDropdown" style={{
-                  textShadow: "1px 1px 2px "
+            <NavDropdown title="Sample Components" id="sample-components" style={{
+                  textShadow: "0px 0px 14px #00ffff"
                 }}>
-              <NavDropdown.Item href="#action3" style={{fontFamily:'serif'}}>Components</NavDropdown.Item>
-              <NavDropdown.Item href="#action4" style={{fontFamily:'serif'}}>Graphics</NavDropdown.Item>
+              <NavDropdown.Item href="/sample-components#blog">Blog</NavDropdown.Item>
+              <NavDropdown.Item href="#forms">Forms</NavDropdown.Item>
+              <NavDropdown.Item href="#pagnation">Pagenation</NavDropdown.Item>
+              <NavDropdown.Item href="#spy-scroll">Spy Scroll</NavDropdown.Item>
+              <NavDropdown.Item href="#tables">Tables</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5" style={{fontFamily:'serif'}}>Content</NavDropdown.Item>
+              <NavDropdown.Item href="#server-side">Backend Development</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <hr  className='text-white'/>

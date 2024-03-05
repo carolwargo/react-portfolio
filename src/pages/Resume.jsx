@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Header from "../components/Header/Header";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -7,7 +8,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import Design from "../assets/images/Design.png";
 import VCIDE from "../assets/images/VCIDE.png";
 import Front from "../assets/images/Front.png";
@@ -22,6 +23,8 @@ import Resume from "../assets/Resume.pdf";
 import Star1 from "../components/OnClickEvents/Star1";
 import Star2 from "../components/OnClickEvents/Star2";
 import Star3 from "../components/OnClickEvents/Star3";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 
 export default function ResumePage() {
@@ -33,6 +36,7 @@ export default function ResumePage() {
         fontFamily: "Raleway",
       }}
     >
+      <Header />
       <div className=" bg-light text-black p-5">
         <h1
           style={{
