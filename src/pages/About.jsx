@@ -2,7 +2,7 @@ import React from "react";
 //import Volunteer from "../components/About/Volunteer.jsx";
 import AboutFinal from "../components/About/AboutFinal.jsx";
 import LocationView from '../assets/images/LocationView.png';
-import Header from "../components/Header/Header.jsx";
+//import Header from "../components/Header/Header.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../App.css'
 
@@ -10,7 +10,7 @@ export default function AboutPage() {
   return (
     <div>
       <main>
-      <Header />
+     
       <AboutFinal />
       <div className='row p-2 d-flex align-items-center'>
       <div className='col-md-4 flex-column justify-content-end align-items-center'>

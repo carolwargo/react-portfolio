@@ -19,7 +19,7 @@ import '../../../App.css';
 const SampleIcons = () => {   
 
     return (
-        <div className='pb-4 ' >
+        <div className='pb-4 bg-black' >
     <div className='row d-flex justify-content-center w3-padding-bottom'>
     <div className='col-sm-12 col-md-2 col-lg-2 d-flex flex-column justify-content-center 
       align-items-center'>    

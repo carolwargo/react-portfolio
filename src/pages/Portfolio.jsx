@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import { NavLink } from "react-router-dom";
-import Header from "../components/Header/Header.jsx";
+//import Header from "../components/Header/Header.jsx";
 import { Row} from "react-bootstrap";
 import PortfolioItems from "../components/Portfolio-Items/Completed";
 import GraphicDesigns from "../components/Portfolio-Items/GraphicDesigns";
@@ -11,7 +11,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function PortfolioPage() {
   return (
     <div className="portfolio" id="portfolio">
-  <Header />
       <div style={{ fontFamily: "bellota text" }}>
         <div className=" bg-light text-black p-5">
           <h1

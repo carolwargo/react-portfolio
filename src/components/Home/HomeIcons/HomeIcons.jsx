@@ -68,12 +68,12 @@ const HomeIcons = () => {
 <div className='col-sm-12 col-md-2 col-lg-2 d-flex flex-column justify-content-center 
       align-items-center'>    
     {/* Use Link component with 'to' prop */}
-    <Link to='/about' id='home-person-icon' style={{ fontSize: '12rem', color:'black' }}>
+    <Link to='/sample-components#sample-components' id='home-person-icon' style={{ fontSize: '12rem', color:'black' }}>
         < FaPuzzlePiece  className='rounded p-5 ' id='home-person-icon' 
         style={{ boxShadow: '0 .5rem 1rem gray', transition: 'box-shadow 0.3s', backgroundColor:'pink' }} />
     </Link>  
     {/* No need for 'a' tag, use Link component instead */}
-    <Link to="/about" style={{ fontSize: '1.2rem', color: 'black', textDecoration: 'none' }}>
+    <Link to="/sample-components" style={{ fontSize: '1.2rem', color: 'black', textDecoration: 'none' }}>
         <b>Sample Components</b>
     </Link>
 </div>

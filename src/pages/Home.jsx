@@ -1,6 +1,6 @@
 import React from "react";
 import HomeIcons from "../components/Home/HomeIcons/HomeIcons.jsx";
-import Header from "../components/Header/Header.jsx";
+//import Header from "../components/Header/Header.jsx";
 import HomeAbout from "../components/Home/HomeAbout/HomeAbout.jsx";
 import '../App.css'
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -8,7 +8,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function HomePage() {
   return (
     <div className="home" id="home" >
-      <Header />
       <div>
      
        <HomeAbout/>

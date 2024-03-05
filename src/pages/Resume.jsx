@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Header from "../components/Header/Header";
+//import Header from "../components/Header/Header";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -29,14 +29,7 @@ import "../App.css";
 
 export default function ResumePage() {
   return (
-    <div
-      className="resume"
-      id="resume"
-      style={{
-        fontFamily: "Raleway",
-      }}
-    >
-      <Header />
+    <div className="resume" id="resume">
       <div className=" bg-light text-black p-5">
         <h1
           style={{
