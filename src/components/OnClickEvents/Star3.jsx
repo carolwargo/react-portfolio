@@ -8,31 +8,32 @@ export default function Star2() {
   }
 
   return (
-    <div className="p-2" style={{fontFamily:'Raleway'}}>
-    <h5 className="text-center"><i>'Leadership & Profit Surge Against All Odds.'</i> </h5>
-    <p className="text-center text-secondary">click <b>Show Content</b> to reveal achievement statement.
+    <div className="w3-content w3-light-gray w3-container w3-padding-large" style={{fontFamily:'Raleway'}}>
+    <h5 className="text-center"><i>'Leadership & Profit Surge Against the Odds.'</i> </h5>
+      <p className="text-center text-secondary">click <b>Show Content</b> to reveal achievement statement.
       </p>
       <button 
-       className="btn custom-button"
-       style={{
-         width: "100%",
-         backgroundColor: "black",
-         border: "none",
-         color: "white",
-         boxShadow: "2px 2px 4px rgba(255, 255, 255, 0.3)",
-         transition: "background-color 0.6s ease, box-shadow 0.3s ease",
-       }}
+     className="btn custom-button w3-margin-bottom shadow"
+     style={{
+       width: "100%",
+       backgroundColor: "black",
+       border: "none",
+       color: "white",
+       borderRadius: "0px",
+       boxShadow: "2px 2px 4px rgba(255, 255, 255, 0.3)",
+       transition: "background-color 0.6s ease, box-shadow 0.3s ease",
+     }}
       onClick={handleClick}>
         {showList ? 'Hide Content' : 'Show Content'}
       </button>
       {showList && (
-        <div>
+              <div className="container py-2 shadow ">
 
  <ul>
-            <li><strong>Situation:</strong> Transform neglected properties with substantial rent arrears.</li>
-            <li><strong>Task:</strong> Develop a cost-effective rehab plan to boost property appeal and recover lost rental income, surpassing original profit projections.</li>
-            <li><strong>Action:</strong> Led as General Contractor, conducting thorough property assessment, strategically prioritizing upgrades, and coordinating with sub-contractors. Managed legalities and navigated regulatory hurdles.</li>
-            <li><strong>Result:</strong> Slashed project time by 25%, achieved a 15% budget surplus, leading to a 20% profit boost.</li>
+             <li className="mx-2"><strong>Situation:</strong> Transform neglected properties with substantial rent arrears.</li>
+             <li className="mx-2"><strong>Task:</strong> Develop a cost-effective rehab plan to boost property appeal and recover lost rental income, surpassing original profit projections.</li>
+             <li className="mx-2"><strong>Action:</strong> Led as General Contractor, conducting thorough property assessment, strategically prioritizing upgrades, and coordinating with sub-contractors. Managed legalities and navigated regulatory hurdles.</li>
+            <li className="mx-2 w3-padding-bottom"><strong>Result:</strong> Slashed project time by 25%, achieved a 15% budget surplus, leading to a 20% profit boost.</li>
           </ul>
         </div>
       )}

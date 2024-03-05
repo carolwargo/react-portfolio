@@ -76,8 +76,8 @@ export default function ResumePage() {
             <img
               src={ResumeWorkspace}
               alt="ResumeWorkspace"
-              className="img-fluid "
-              style={{ width: "80%", borderRadius: "10px" }}
+              className="img-fluid shadow"
+              style={{ width: "90%", borderRadius: "10px" }}
             />
           </div>
 
