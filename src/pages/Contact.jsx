@@ -3,7 +3,7 @@ import MeWhite from "../assets/images/MeWhite.png";
 import '../App.css'
 
 import "../components/Contact/style.css";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Contact() {
   return (

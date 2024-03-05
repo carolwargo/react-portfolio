@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import { NavLink } from "react-router-dom";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Row} from "react-bootstrap";
 import PortfolioItems from "../components/Portfolio-Items/Completed";
 import GraphicDesigns from "../components/Portfolio-Items/GraphicDesigns";

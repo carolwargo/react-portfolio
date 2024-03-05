@@ -7,7 +7,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import Design from "../assets/images/Design.png";
 import VCIDE from "../assets/images/VCIDE.png";
 import Front from "../assets/images/Front.png";
@@ -18,19 +18,21 @@ import Package from "../assets/images/Package.png";
 import BuildTest from "../assets/images/BuildTest.png";
 import APIQ from "../assets/images/APIQ.png";
 import ResumeWorkspace from "../assets/images/ResumeWorkspace.png";
-import Resume from '../assets/Resume.pdf'
+import Resume from "../assets/Resume.pdf";
 import Star1 from "../components/OnClickEvents/Star1";
 import Star2 from "../components/OnClickEvents/Star2";
 import Star3 from "../components/OnClickEvents/Star3";
-import '../App.css'
+import "../App.css";
 
 export default function ResumePage() {
   return (
-    <div className="resume" id="resume"
-    style={{
-      fontFamily: "Raleway",
-    }}>
-
+    <div
+      className="resume"
+      id="resume"
+      style={{
+        fontFamily: "Raleway",
+      }}
+    >
       <div className=" bg-light text-black p-5">
         <h1
           style={{
@@ -41,7 +43,7 @@ export default function ResumePage() {
           RESUME{" "}
         </h1>
 
-        <p className="header" id="header" style={{fontFamily:'Raleway'}}>
+        <p className="header" id="header" style={{ fontFamily: "Raleway" }}>
           Digital Resume contains{" "}
           <strong>
             {" "}
@@ -64,55 +66,58 @@ export default function ResumePage() {
           </strong>{" "}
           -{" "}
         </p>
-       
+        <br />
+        <hr />
       </div>
 
-      
-<div className="container justify-content-center align-items-center">
-          <div className="row w3-padding-large" >
-            <div className="col-sm-12 col-md-6 col-lg-6">
-              <img
-                src={ResumeWorkspace}
-                alt="ResumeWorkspace"
-                className="img-fluid pt-2"
-                style={{ width: "100%", borderRadius: "10px" }}
-              />
-            </div>
+      <div className="container justify-content-center align-items-center w3-margin-bottom">
+        <div className="row w3-padding-large w3-margin-bottom">
+          <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
+            <img
+              src={ResumeWorkspace}
+              alt="ResumeWorkspace"
+              className="img-fluid "
+              style={{ width: "80%", borderRadius: "10px" }}
+            />
+          </div>
 
-            <div className="col-sm-12 col-md-6 col-lg-6" style={{ color: "black" }}>
-              <div className=" w3-padding-large" id="professional-achievements">
+          <div
+            className="col-sm-12 col-md-6 col-lg-6"
+            style={{ color: "black" }}
+          >
+            <div className=" w3-padding-large" id="professional-achievements">
+              <div className="text-center">
                 <h3>
                   <u>PROFESSIONAL ACHIEVEMENTS</u>
                 </h3>
                 <h5>
-                  Discover some of my key accomplishments. Click on the respective
-                  buttons for more details.
+                  Discover some of my key accomplishments. Click on the
+                  respective buttons for more details.
                 </h5>
               </div>
-              <ul>
-                <li>
-                  <Star1 />
-                </li>
-
-                <li style={{ paddingTop: "1rem" }}>
-                  <Star2 />
-                </li>
-                <li style={{ paddingTop: "1rem" }}>
-                  {" "}
-                  <Star3 />
-                </li>
-              </ul>
             </div>
+            <div className="w3-content w3-container">
+              <div style={{ paddingTop: "1rem" }}>
+                <Star1 />
+              </div>
+              <div style={{ paddingTop: "1rem" }}>
+                <Star2 />
+              </div>
+              <div style={{ paddingTop: "1rem" }}>
+                {" "}
+                <Star3 />
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-    
-
-
+        <br />
+      </div>
 
       <div className="technical-skills-div d-flex flex-column bg-dark text-white pt-2">
         <h1
           className="technical-skills text-light mt-2 p-4 text-center"
-          id="technical-skills">
+          id="technical-skills"
+        >
           TECHNICAL SKILLS
         </h1>
         <Timeline position="alternate">
@@ -263,11 +268,11 @@ export default function ResumePage() {
                 />
               </TimelineContent>
             </TimelineItem>
-    <br />
-    <br />
+            <br />
+            <br />
             <TimelineItem>
               <TimelineOppositeContent color="text.light">
-              <h5 className="text-white">
+                <h5 className="text-white">
                   Certificate of Full Stack Web Development
                 </h5>
                 <h6 className="text-white">
@@ -278,59 +283,43 @@ export default function ResumePage() {
                 <TimelineDot />
                 <TimelineConnector />
               </TimelineSeparator>
+
               <TimelineContent>
-              <h3>EDUCATION</h3>
+                <h3>EDUCATION</h3>
               </TimelineContent>
-              
             </TimelineItem>
-
-
-
-
-
-
-
-
-          
-         
-            
           </Timeline>
         </Timeline>
         <div className="d-flex flex-row justify-content-center">
-              <div className="d-flex flex-column">
-                <p className="text-white">DOWNLOAD A COPY OF MY RESUME</p>
+          <div className="d-flex flex-column">
+            <p className="text-white">DOWNLOAD A COPY OF MY RESUME</p>
 
-                <a
-                  className="btn bg-light text-black"
-                  id="resume-download"
-                  download
-                  href={Resume}
-                >
-                  Download
-                </a>
-              </div>
-            </div>
-            <br></br>
+            <a
+              className="btn bg-light text-black"
+              id="resume-download"
+              download
+              href={Resume}
+            >
+              Download
+            </a>
+          </div>
+        </div>
+        <br></br>
       </div>
-  
+
       <footer className="w3-container w3-padding-48 text-center ">
-        <NavLink
-        to={"/portfolio#portfolio"}
-        >
+        <NavLink to={"/portfolio#portfolio"}>
           <button className="w3-button w3-black w3-disabled w3-padding-medium">
             Previous
           </button>
-          </NavLink>
+        </NavLink>
 
-          <NavLink
-        to={"/portfolio#portfolio"}
-        >
+        <NavLink to={"/portfolio#portfolio"}>
           <button className="w3-button w3-black w3-padding-medium">
             Next »
           </button>
-         </NavLink>
-        </footer>
-   
+        </NavLink>
+      </footer>
     </div>
   );
 }

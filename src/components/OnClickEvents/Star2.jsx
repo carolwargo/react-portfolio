@@ -9,8 +9,8 @@ export default function Star2() {
 
   return (
     <div className="p-2" style={{fontFamily:'Raleway'}}>
-    <h5><i>'Develop & Launch Targeted Digital Marketing Campaigns In Competitive Market.'</i> </h5>
-      <p className="text-secondary">click <b>Show Content</b> to reveal achievement statement.
+    <h5 className="text-center"><i>'Develop & Launch Targeted Digital Marketing Campaigns.'</i> </h5>
+      <p className="text-center text-secondary">click <b>Show Content</b> to reveal achievement statement.
       </p>
       <button 
        className="btn custom-button"
@@ -26,7 +26,7 @@ export default function Star2() {
         {showList ? 'Hide Content' : 'Show Content'}
       </button>
       {showList && (
-        <div>
+        <div className="container">
           <ul>
             <li><strong>Situation:</strong> Faced with a competitive market, I was tasked with creating marketing campaigns to attract potential buyers.</li>
             <li><strong>Task:</strong> To develop and execute a comprehensive digital marketing strategy that would effectively showcase the property's unique selling points.</li>

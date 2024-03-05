@@ -7,7 +7,7 @@ import Portfolio  from "./pages/Portfolio.jsx";
 import Contact  from "./pages/Contact.jsx";
 import Resume  from "./pages/Resume.jsx";
 import SampleComponents from "./pages/SampleComponents/SampleComponents.jsx";
-
+import Header from "./components/Header/Header.jsx";  
 //  <BrowserRouter basename="/react-portfolio" >
 import "./App.css";
 
@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter >
-
+<Header />
         <Routes>
           
           <Route path="/" element={<Home/>} />

@@ -2,7 +2,7 @@ import React from "react";
 //import Volunteer from "../components/About/Volunteer.jsx";
 import AboutFinal from "../components/About/AboutFinal.jsx";
 import LocationView from '../assets/images/LocationView.png';
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import '../App.css'
 
 
