@@ -7,7 +7,7 @@
 } 
 
 
-//about link
+/*about link*/
 #home-design-icon:link {
   color: pink !important;
   background-color: transparent !important;
@@ -30,7 +30,7 @@
   text-decoration: underline;
 }
 
-//portfolio
+
 #home-puzzle-icon:link {
   color: pink !important;
   background-color: transparent !important;
@@ -55,7 +55,6 @@
 
 
 
-//resume
 #home-document-icon:link {
   color: pink !important;
   background-color: transparent !important;
@@ -78,7 +77,7 @@
   text-decoration: underline;
 }
 
-//contact link
+k
 #home-person-icon:link {
   color: pink !important;
   background-color: transparent !important;
@@ -122,8 +121,6 @@ $grid-breakpoints: (
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 
-
-/* Media query for smaller screens */
 @media (max-width: 768px) {
   .nav-header {
     flex-direction: column;
