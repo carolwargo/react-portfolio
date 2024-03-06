@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function HomePage() {
   return (
     <div className="home" id="home" >
-      <div>
+      <div className="pt-5 mt-lg-0">
      
        <HomeAbout/>
         <HomeIcons />

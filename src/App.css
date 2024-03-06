@@ -31,8 +31,8 @@
 }
 
 
-#home-puzzle-icon:link {
-  color: pink !important;
+#home-book-icon:link {
+  color: black!important;
   background-color: transparent !important;
   text-decoration: none !important;
 }
@@ -53,6 +53,29 @@
   text-decoration: underline;
 }
 
+
+
+#home-book-icon:link {
+  color: black!important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+
+#home-book-icon:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+#home-book-icon:hover {
+  color: #00FFFF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+#home-book-icon:active {
+  color: aqua;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
 
 #home-document-icon:link {

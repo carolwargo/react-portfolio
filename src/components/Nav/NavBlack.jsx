@@ -46,6 +46,7 @@ function NavScrollExample() {  const [isNavbarFixed, setIsNavbarFixed] = useStat
                 <Nav.Link href="/resume" >Resume</Nav.Link>
             <Nav.Link href="/portfolio">Portfolio</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link href="/test">Test</Nav.Link>
 
             <NavDropdown title="Sample Components" id="sample-components" style={{
                   textShadow: "0px 0px 14px #00ffff"

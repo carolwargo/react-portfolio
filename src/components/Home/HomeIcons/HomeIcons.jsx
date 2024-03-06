@@ -18,7 +18,7 @@ const HomeIcons = () => {
   
             <div className='w3-container w3-content'>
             <h1 className='bg-white py-3 rounded-1 text-center w3-padding-top'>WHAT'S NEXT?</h1>
-            <p class='text-center px-lg-5'>Discover more about me, explore my portfolio, delve into my professional background, browse through my collection of reusable components, or get in touch!</p>
+            <p class='text-center px-lg-5'>Discover more about me, explore my portfolio, delve into my professional background, browse through my collection of reusable components, or get in touch! Select your path below and click the button to follow it.</p>
 
             </div>
        
@@ -53,8 +53,8 @@ const HomeIcons = () => {
 <div className='col-sm-12 col-md-2 col-lg-2 d-flex flex-column justify-content-center 
       align-items-center'>    
     {/* Use Link component with 'to' prop */}
-    <Link to="/portfolio"  id='home-puzzle-icon' style={{ fontSize: '12rem', color:'black' }}>
-        <BiSolidBookContent    className='rounded p-5 ' id='home-puzzle-icon' 
+    <Link to="/portfolio"  id='home-book-icon' style={{ fontSize: '12rem', color:'black' }}>
+        <BiSolidBookContent    className='rounded p-5 ' id='home-book-icon' 
         style={{ boxShadow: '0 .5rem 1rem gray', transition: 'box-shadow 0.3s', backgroundColor:'pink' }} />
     </Link>  
     {/* No need for 'a' tag, use Link component instead */}
@@ -68,8 +68,8 @@ const HomeIcons = () => {
 <div className='col-sm-12 col-md-2 col-lg-2 d-flex flex-column justify-content-center 
       align-items-center'>    
     {/* Use Link component with 'to' prop */}
-    <Link to='/sample-components#sample-components' id='home-person-icon' style={{ fontSize: '12rem', color:'black' }}>
-        < FaPuzzlePiece  className='rounded p-5 ' id='home-person-icon' 
+    <Link to='/sample-components' id='home-puzzle-icon' style={{ fontSize: '12rem', color:'black' }}>
+        < FaPuzzlePiece  className='rounded p-5 ' id='home-puzzle-icon' 
         style={{ boxShadow: '0 .5rem 1rem gray', transition: 'box-shadow 0.3s', backgroundColor:'pink' }} />
     </Link>  
     {/* No need for 'a' tag, use Link component instead */}
@@ -77,6 +77,8 @@ const HomeIcons = () => {
         <b>Sample Components</b>
     </Link>
 </div>
+
+
 
 <div className='col-sm-12 col-md-2 col-lg-2 d-flex flex-column justify-content-center 
       align-items-center'>    
