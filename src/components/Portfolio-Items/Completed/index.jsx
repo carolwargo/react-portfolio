@@ -7,12 +7,12 @@ import { FaGithub } from "react-icons/fa";
 
 import "./style.css";
 
-import Notes from "../../../assets/images/Notes.png";
-import Desk from "../../../assets/images/Desk.png";
-import Horizen from "../../../assets/images/Horizen.png";
-import SVG from "../../../assets/images/SVG.png";
-import README from "../../../assets/images/README.png";
-import JATE from "../../../assets/images/JATE.png";
+import Notes from "../../../assets/images/Portfolio/Notes.png";
+import Desk from "../../../assets/images/Portfolio/Desk.png";
+import Horizen from "../../../assets/images/Portfolio/Horizen.png";
+import SVG from "../../../assets/images/Portfolio/SVG.png";
+import README from "../../../assets/images/Portfolio/README.png";
+import JATE from "../../../assets/images/Portfolio/JATE.png";
 
 const cardData = [
   {

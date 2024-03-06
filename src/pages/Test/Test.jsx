@@ -1,8 +1,8 @@
 import React from "react";
-import JATE from '../../assets/images/JATE.png'
-import Notes from '../../assets/images/Notes.png'
-import SVG from '../../assets/images/SVG.png'
-import Desk from '../../assets/images/Desk.png'
+import JATE from '../../assets/images/Portfolio/JATE.png'
+import Notes from '../../assets/images/Portfolio/Notes.png'
+import SVG from '../../assets/images/Portfolio/SVG.png'
+import Desk from '../../assets/images/Portfolio/Desk.png'
 const Test = () => {
 
     return (
