@@ -308,13 +308,13 @@ export default function ResumePage() {
       </div>
 
       <footer className="w3-container w3-padding-48 text-center ">
-        <NavLink to={"/portfolio#portfolio"}>
+        <NavLink to={"/about"}>
           <button className="w3-button w3-black w3-disabled w3-padding-medium">
             Previous
           </button>
         </NavLink>
 
-        <NavLink to={"/portfolio#portfolio"}>
+        <NavLink to={"/portfolio"}>
           <button className="w3-button w3-black w3-padding-medium">
             Next »
           </button>

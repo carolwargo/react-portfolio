@@ -2,6 +2,7 @@ import React from "react";
 //import Volunteer from "../components/About/Volunteer.jsx";
 import AboutFinal from "../components/About/AboutFinal.jsx";
 import LocationView from '../assets/images/LocationView.png';
+import { NavLink } from "react-router-dom";
 //import Header from "../components/Header/Header.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../App.css'
@@ -27,6 +28,23 @@ export default function AboutPage() {
         </div>
         </div>
         </main>
+        <footer className="w3-container w3-padding-48 text-center bg-white">
+        <NavLink
+        to={"/home"}
+        >
+          <button className="w3-button w3-black w3-disabled w3-padding-medium">
+            Previous
+          </button>
+          </NavLink>
+
+          <NavLink
+        to={"/resume"}
+        >
+          <button className="w3-button w3-black w3-padding-medium">
+            Next »
+          </button>
+         </NavLink>
+        </footer>
     </div>
   );
 }

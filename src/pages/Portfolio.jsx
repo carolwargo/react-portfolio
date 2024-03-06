@@ -11,7 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function PortfolioPage() {
   return (
     <div className="portfolio" id="portfolio">
-      <div style={{ fontFamily: "bellota text" }}>
+      <div>
         <div className=" bg-light text-black p-5">
           <h1
             style={{
