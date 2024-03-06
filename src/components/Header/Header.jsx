@@ -12,9 +12,9 @@ const Header = () => {
         className="p-4 bg-image position-relative"
         style={{
           backgroundImage: `url(${HomeBig})`,
-          backgroundSize: "cover", // Set the background size to cover the entire viewport
+          backgroundSize: "cover", 
           backgroundRepeat: "no-repeat",
-          backgroundAttachment: "fixed", // Optional: Keep the background fixed while scrolling
+          backgroundAttachment: "fixed",
         }}
       >
         {/* Overlay div for masking */}

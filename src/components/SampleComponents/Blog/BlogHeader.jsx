@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header>
       <div className="bg-black">
-       
+       <hr />
 
         <div className="row d-flex h-100 px-5 text-center position-relative pt-3">
        

@@ -114,11 +114,11 @@ const FullPosts = () => {
                     <div className="w3-row">
                       {/* start entries card content container COL BUT*/}
                       <div className="w3-col p-4 m12 s12">
-                        <p>
+                       
                           <button className="w3-button w3-padding-large w3-white w3-border">
                             <b>READ MORE »</b>
                           </button>
-                        </p>
+                       
                       </div>
                       {/* start entries card content container COL COMMENTS*/}
                     </div>

@@ -200,6 +200,7 @@ const Blog = () => {
                     <span className='px-3' style={{fontSize:'1.5rem'}}>
                    <b> DID YOU KNOW ?</b>
                     </span>
+                    </p>
                     <span className="w3-tag w3-white w3-margin-bottom"></span>{" "}
                     <br />
                     <span>
@@ -227,7 +228,7 @@ const Blog = () => {
                       Share Buttons should be prominently displayed near the
                       content and, mobile friendly,
                     </span>
-                  </p>
+                 
                 </div>{" "}
                 {/*container end for stats only*/}
               </div>

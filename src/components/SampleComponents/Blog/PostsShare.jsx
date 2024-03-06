@@ -77,55 +77,40 @@ const Posts = () => {
             </h6>
 
             <div className="mt-3">
-                <span className="">
-                    <TwitterShareButton
-                        url={window.location.href}
-                        title={post.title}
-                    >
-                        <button className="w3-button btn btn-xs text-white bg-white rounded">
-                            <FaTwitter style={{ color: "black" }} />
-                        </button>
-                    </TwitterShareButton>{" "}
-                    {/* end Twitter Share Button */}
-                </span>
-                <span className="mx-1">
-                    {/* start Facebook Share Button */}
-                    <FacebookShareButton
-                        url={window.location.href}
-                        quote={post.title}
-                    >
-                        <button className="w3-button btn btn-xs text-white bg-primary rounded">
-                            <FaFacebook />
-                        </button>
-                    </FacebookShareButton>{" "}
-                    {/*end Facebook Share Button */}
-                </span>
-                <span className="mx-1">
-                    {/* start Pinterest Share Button */}
-                    <PinterestShareButton
-                        url={window.location.href}
-                        media={post.imageUrl}
-                        description={post.title}
-                    >
-                        <button
-                            className="w3-button btn btn-xs text-white rounded"
-                            style={{ backgroundColor: "red" }}
-                        >
-                            <FaPinterest style={{ color: "white" }} />
-                        </button>
-                    </PinterestShareButton>{" "}
-                    {/* end Pinterest Share Button */}
-                </span>
-                <span className="mx-1">
-                    {/* start Github Button */}
-                    <button
-                        className="w3-button btn btn-xs text-white rounded"
-                        style={{ backgroundColor: "#800080" }}
-                    >
-                        <FaGithub style={{ color: "white" }} />
-                    </button>
-                </span>
+    <span className="">
+        <TwitterShareButton url={window.location.href} title={post.title}>
+            <div className="w3-button btn btn-xs text-white bg-white rounded">
+                <FaTwitter style={{ color: "black" }} />
             </div>
+        </TwitterShareButton>{" "}
+        {/* end Twitter Share Button */}
+    </span>
+    <span className="mx-1">
+        {/* start Facebook Share Button */}
+        <FacebookShareButton url={window.location.href} quote={post.title}>
+            <div className="w3-button btn btn-xs text-white bg-primary rounded">
+                <FaFacebook />
+            </div>
+        </FacebookShareButton>{" "}
+        {/*end Facebook Share Button */}
+    </span>
+    <span className="mx-1">
+        {/* start Pinterest Share Button */}
+        <PinterestShareButton url={window.location.href} media={post.imageUrl} description={post.title}>
+            <div className="w3-button btn btn-xs text-white rounded" style={{ backgroundColor: "red" }}>
+                <FaPinterest style={{ color: "white" }} />
+            </div>
+        </PinterestShareButton>{" "}
+        {/* end Pinterest Share Button */}
+    </span>
+    <span className="mx-1">
+        {/* start Github Button */}
+        <button className="w3-button btn btn-xs text-white rounded" style={{ backgroundColor: "#800080" }}>
+            <FaGithub style={{ color: "white" }} />
+        </button>
+    </span>
+</div>
+
     </div>
 </div>
           </div>
