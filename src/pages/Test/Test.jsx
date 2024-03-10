@@ -46,6 +46,10 @@ const Test = () => {
       <p><button href="https://github.com/carolwargo/Text_Editor-in-Chief"
       className="w3-button w3-light-grey w3-block"> Github</button></p></div>
     </div>
+
+
+
+    
     <div className="w3-col l3 m6 w3-margin-bottom">
     <img src={Desk} alt="John" style={{width:"100%"}}/>
     <div className="w3-container w3-content shadow w3-margin-bottom w3-margin-top">

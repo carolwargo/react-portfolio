@@ -27,14 +27,17 @@ function NavScrollExample() {  const [isNavbarFixed, setIsNavbarFixed] = useStat
   }, []);
 
   return (
-    <Navbar expand="lg" className={`bg-black ${isNavbarFixed ? 'fixed-navbar' : ''}`} style={{ fontFamily:'Raleway', boxShadow:'1px 1px 4px gray' }}>
+    <Navbar expand="lg" 
+    className={`bg-black ${isNavbarFixed ? 'fixed-navbar' : ''}`} 
+    style={{ fontFamily:'Raleway', boxShadow:'1px 1px 4px gray' }}>
     <Container fluid className='mx-2'>
       <Navbar.Brand href="/" style={{
         textShadow: "1px 1px 2px #FDC5E8",
         color:'white',
         fontSize:'1rem',
       }}>C.WARGO</Navbar.Brand>
-<Navbar.Toggle aria-controls="navbarScroll" id='navbarToggle' style={{ borderColor: 'white', backgroundColor:'white' }} />
+<Navbar.Toggle aria-controls="navbarScroll" id='navbarToggle' 
+style={{ borderColor: 'white', backgroundColor:'white' }} />
  <Navbar.Collapse id="navbarScroll" className='text-white'>
           <Nav
             className="me-auto my-2 my-lg-0 justify-content-center align-items-center "
