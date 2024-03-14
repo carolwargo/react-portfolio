@@ -2,15 +2,12 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home.jsx";
-//import About from "./pages/About.jsx";
-//import Portfolio  from "./pages/Portfolio.jsx";
-//import Contact  from "./pages/Contact.jsx";
-//import Resume  from "./pages/Resume.jsx";
-//import Test from "./pages/Test/Test.jsx";
-//import Home2 from "./pages/Test/Home2.jsx";
-//import SampleComponents from "./pages/SampleComponents/SampleComponents.jsx";
-//import Header from "./components/Header/Header.jsx";  
-
+import About from "./pages/About.jsx";
+import Portfolio  from "./pages/Portfolio.jsx";
+import Contact  from "./pages/Contact.jsx";
+import Resume  from "./pages/Resume.jsx";
+import Footer from "./components/Footer.jsx";
+import NavFixed from "./pages/NavFixed.jsx";
 import "./App.css";
 
 function App() {
@@ -19,10 +16,14 @@ function App() {
      <BrowserRouter basename="/react-portfolio" >
 
         <Routes>
-          
           <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/portfolio" element={<Portfolio/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/resume" element={<Resume/>} />
+          <Route path="/navfixed" element={<NavFixed/>} />
      </Routes>
-
+<Footer/>
       </BrowserRouter>
     </div>
   );
