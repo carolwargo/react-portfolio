@@ -8,13 +8,13 @@ import MidSeason from "../../../assets/images/Graphics/MidSeason.png";
 //import CheckOut from "../../../assets/images/Graphics/CheckOut.png";
 import Catching from "../../../assets/images/Graphics/Catching.png";
 import Canceled from "../../../assets/images/Graphics/Canceled.png";
-import CuttersFlyers from "../../../assets/images/
+import CuttersFlyers from "../../../assets/images/Graphics/CuttersFlyers.png";
 //import NorthernGolf from "../../../assets/images/Graphics/NorthernGolf.png";
 import YogaSet from "../../../assets/images/YogaStory/YogaSet.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-const BusinessEssentials = () => {
+const GraphicsPage = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -30,16 +30,7 @@ const BusinessEssentials = () => {
 
   return (
     <div className="w3-container w3-content mt-4">
-        <div className="w3-content w3-justify w3-text-black w3-padding-32">
-        <h4 className="w3-text-black" id="#server">
-              Graphic Elements.
-            </h4>
-            <hr className="w3-opacity" />
-            <p>
-            Graphics play a crucial role in communication, whether it's in advertising, branding, web design, or multimedia content. They serve as visual elements that enhance the presentation of information and ideas, making them more engaging, memorable, and effective. 
-            </p>
-            <br />
-          </div>
+    
       <div className="row graphics-container">
         {[
           { image: ProductCampaign, title: "Product Campaign" },
@@ -90,4 +81,4 @@ const BusinessEssentials = () => {
   );
 };
 
-export default BusinessEssentials;
+export default GraphicsPage;

@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import { FaGithub } from "react-icons/fa";
 
-import "./style.css";
+
 
 import Notes from "../../../assets/images/Portfolio/Notes.png";
 import Desk from "../../../assets/images/Portfolio/Desk.png";
