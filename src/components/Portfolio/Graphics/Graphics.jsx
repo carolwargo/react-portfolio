@@ -8,7 +8,7 @@ import MidSeason from "../../../assets/images/Graphics/MidSeason.png";
 //import CheckOut from "../../../assets/images/Graphics/CheckOut.png";
 import Catching from "../../../assets/images/Graphics/Catching.png";
 import Canceled from "../../../assets/images/Graphics/Canceled.png";
-import CuttersFlyers from "../../../assets/images/Graphics/CuttersFlyers.png";
+import CuttersFlyers from "../../../assets/images/
 //import NorthernGolf from "../../../assets/images/Graphics/NorthernGolf.png";
 import YogaSet from "../../../assets/images/YogaStory/YogaSet.png";
 import "bootstrap/dist/css/bootstrap.min.css";
