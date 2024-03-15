@@ -387,7 +387,9 @@ function Portfolio() {
               features and functionalities to effectively achieve its objectives
               and meet the needs of its target audience.
             </p>
-          </div>
+            <p className="text-center w3-xxlarge">    <a href="/page-samples">view page samples <br /><i className="fa fa-arrow-circle-right w3-xxlarge" ></i></a>
+       </p>
+        </div>
           {/*end graphics*/}
         </div>
       </div>

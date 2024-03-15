@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage.jsx";
 import PortfolioPage  from "./pages/PortfolioPage.jsx";
 import ContactPage  from "./pages/ContactPage.jsx";
 import ResumePage  from "./pages/ResumePage.jsx";
+import PageSamples from "./pages/PageSamples.jsx";
 import Footer from "./components/Footer.jsx";
 import NavFixed from "./components/NavFixed.jsx"; 
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/resume" element={<ResumePage />} />
+          <Route path='/page-samples' element={<PageSamples />} />  
         </Routes>
 
         <Footer />
