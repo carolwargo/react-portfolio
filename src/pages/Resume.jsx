@@ -1,6 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-//import Header from "../components/Header/Header";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -30,7 +28,10 @@ import "../App.css";
 export default function ResumePage() {
   return (
     <div className="resume" id="resume">
-      <div className=" bg-light text-black p-5">
+   <div className="w3-container w3-padding-64 w3-margin-top">
+   <div className="w3-content w3-padding-large w3-padding-48">
+        {/**start Portfolio section */}
+        
         <h1
           style={{
             fontSize: "4rem",
@@ -63,13 +64,11 @@ export default function ResumePage() {
           </strong>{" "}
           -{" "}
         </p>
-        <br />
+  
         <hr />
-      </div>
 
-      <div className="container w3-margin-bottom">
-        <div className="row d-flex justify-content-center align-items-center  w3-padding-large w3-margin-bottom">
-          <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
+        <div className="row d-flex justify-content-center align-items-center w3-margin-bottom">
+          <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-24">
             <img
               src={ResumeWorkspace}
               alt="ResumeWorkspace"
@@ -79,40 +78,37 @@ export default function ResumePage() {
           </div>
 
           <div
-            className="col-sm-12 col-md-6 col-lg-6"
+            className="col-sm-12 col-md-6 col-lg-6 w3-padding-24"
             style={{ color: "black" }}
           >
             <div className=" w3-padding-large" id="professional-achievements">
               <div className="text-center">
                 <h3>
                   <u
-                  style={{   textShadow: "0px 0px 14px #00ffff",}}
                   >PROFESSIONAL ACHIEVEMENTS</u>
                 </h3>
-                <h5>
+                <p>
                   Discover some of my key accomplishments. Click on the
                   respective buttons for more details.
-                </h5>
+                </p>
               </div>
             </div>
             <div className="w3-content w3-container">
-              <div style={{ paddingTop: "1rem" }}>
+          
                 <Star1 />
-              </div>
-              <div style={{ paddingTop: "1rem" }}>
+          
                 <Star2 />
-              </div>
-              <div style={{ paddingTop: "1rem" }}>
-                {" "}
+           
                 <Star3 />
-              </div>
+          
             </div>
           </div>
         </div>
+        </div>
         <br />
-      </div>
+  
 
-      <div className="technical-skills-div d-flex flex-column bg-dark text-white pt-2">
+      <div className="technical-skills-div d-flex flex-column bg-black text-white pt-2">
         <h1
           className="technical-skills text-light mt-2 p-4 text-center"
           id="technical-skills"
@@ -133,7 +129,7 @@ export default function ResumePage() {
                 src={Design}
                 alt="Design"
                 className="img-fluid"
-                style={{ width: "80%", marginLeft: "2rem" }}
+                style={{ width: "130%"}}
               />
             </TimelineContent>
           </TimelineItem>
@@ -149,7 +145,7 @@ export default function ResumePage() {
                 src={VCIDE}
                 alt="VCIDE"
                 className="img-fluid"
-                style={{ width: "80%", marginLeft: "2rem" }}
+                style={{ width: "130%"}}
               />
             </TimelineContent>
           </TimelineItem>
@@ -165,7 +161,7 @@ export default function ResumePage() {
                 src={Core}
                 alt="Core"
                 className="img-fluid"
-                style={{ width: "80%", marginBottom: "2rem" }}
+                style={{ width: "130%"}}
               />
             </TimelineContent>
           </TimelineItem>
@@ -181,7 +177,7 @@ export default function ResumePage() {
                 src={Front}
                 alt="Front"
                 className="img-fluid"
-                style={{ width: "80%", marginLeft: "2rem" }}
+                style={{ width: "130%"}}
               />
             </TimelineContent>
           </TimelineItem>
@@ -198,7 +194,7 @@ export default function ResumePage() {
                   src={Back}
                   alt="Back"
                   className="img-fluid"
-                  style={{ width: "80%", marginLeft: "2rem" }}
+                  style={{ width: "130%"}}
                 />
               </TimelineContent>
             </TimelineItem>
@@ -215,7 +211,7 @@ export default function ResumePage() {
                   src={DB}
                   alt="DB"
                   className="img-fluid"
-                  style={{ width: "80%", marginLeft: "2rem" }}
+                  style={{ width: "150%"}}
                 />
               </TimelineContent>
             </TimelineItem>
@@ -231,7 +227,7 @@ export default function ResumePage() {
                   src={Package}
                   alt="Package"
                   className="img-fluid"
-                  style={{ width: "80%", marginLeft: "2rem" }}
+                  style={{ width: "130%"}}
                 />
               </TimelineContent>
             </TimelineItem>
@@ -247,7 +243,7 @@ export default function ResumePage() {
                   src={BuildTest}
                   alt="BuildTest"
                   className="img-fluid"
-                  style={{ width: "80%", marginLeft: "2rem" }}
+                  style={{ width: "130%"}}
                 />
               </TimelineContent>
             </TimelineItem>
@@ -264,14 +260,14 @@ export default function ResumePage() {
                   src={APIQ}
                   alt="APIQ"
                   className="img-fluid"
-                  style={{ width: "80%", marginLeft: "2rem" }}
+                  style={{ width: "130%"}}
                 />
               </TimelineContent>
             </TimelineItem>
             <br />
             <br />
             <TimelineItem>
-              <TimelineOppositeContent color="text.light">
+              <TimelineOppositeContent color="text.light" id="education">
                 <h5 className="text-white">
                   Certificate of Full Stack Web Development
                 </h5>
@@ -288,38 +284,30 @@ export default function ResumePage() {
                 <h3>EDUCATION</h3>
               </TimelineContent>
             </TimelineItem>
-          </Timeline>
-        </Timeline>
-        <div className="d-flex flex-row justify-content-center">
+            <div className="d-flex flex-row justify-content-center">
           <div className="d-flex flex-column">
             <p className="text-white">DOWNLOAD A COPY OF MY RESUME</p>
-
-            <a
-              className="btn bg-light text-black"
+           
+            <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
+          <a
+              className="button text-black"
               id="resume-download"
               download
               href={Resume}
             >
-              Download
+            <i className="fa fa-download"></i> Download Resume
             </a>
+          </button>
           </div>
+          </div>
+          </Timeline>
+        </Timeline>
         </div>
         <br></br>
+        <br></br>
+        <br></br>
       </div>
-
-      <footer className="w3-container w3-padding-48 text-center ">
-        <NavLink to={"/about"}>
-          <button className="w3-button w3-black w3-disabled w3-padding-medium">
-            Previous
-          </button>
-        </NavLink>
-
-        <NavLink to={"/portfolio"}>
-          <button className="w3-button w3-black w3-padding-medium">
-            Next »
-          </button>
-        </NavLink>
-      </footer>
-    </div>
+  </div>
+   
   );
 }

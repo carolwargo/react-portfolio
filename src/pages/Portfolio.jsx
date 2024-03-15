@@ -15,13 +15,46 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 function Portfolio() {
   return (
     <div className="portfolio " id="portfolio">
-      <div className="w3-main w3-padding-large w3-padding-64 w3-margin-top">
+           <div className="w3-main w3-padding-large w3-padding-64 w3-margin-top">
         {/**start Portfolio section */}
         <div className="w3-content w3-container">
-          <h1 className="w3-text-black" id="tables">
-            <b>PORTFOLIO.</b>
-          </h1>
-          <hr className="w3-opacity" />
+        
+        <h1
+          style={{
+            fontSize: "4rem",
+            textShadow: "0px 0px 14px #00ffff",
+          }}
+        >
+          Portfolio.{" "}
+        </h1>
+
+        <p className="header" id="header" style={{ fontFamily: "Raleway" }}>
+          Digital Resume contains{" "}
+          <strong>
+            {" "}
+            <a href="#professional-achievements"> PROFESSIONAL ACHIEVEMENTS</a>
+          </strong>
+          ,<br></br>{" "}
+          <strong>
+            {" "}
+            <a href="#technical-skills">TECHNICAL SKILLS</a>
+          </strong>
+          ,
+          <strong>
+            {" "}
+            <a href="#experience">EXPERIENCE & EDUCATION</a>{" "}
+          </strong>{" "}
+          , and{" "}
+          <strong>
+            {" "}
+            <a href="#resume-download">RESUME DOWNLOAD</a>
+          </strong>{" "}
+          -{" "}
+        </p>
+  
+        <hr />
+   
+ 
           <br />
           <br />
 
@@ -321,6 +354,7 @@ function Portfolio() {
           </div>
           {/*start grid sample page*/}
           <div className="container ">
+       
             <h4 className="w3-text-black" id="#server">
               Graphic Elements.
             </h4>
@@ -333,7 +367,7 @@ function Portfolio() {
               information and ideas, making them more engaging, memorable, and
               effective.
             </p>
-            <br />
+<br />
             <Graphics />
 
             <br />

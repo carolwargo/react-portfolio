@@ -9,23 +9,21 @@ export default function Star2() {
 
   return (
     <div className="w3-content w3-light-gray w3-container w3-padding-large" style={{fontFamily:'Raleway'}}>
-    <h5 className="text-center"><i>'Leadership & Profit Surge Against the Odds.'</i> </h5>
-      <p className="text-center text-secondary">click <b>Show Content</b> to reveal achievement statement.
-      </p>
+    <h6 className="text-center"><i>'Leadership & Profit Surge Against the Odds.'</i> </h6>
+    
       <button 
-     className="btn custom-button w3-margin-bottom shadow bg-info-subtle"
-     style={{
-       width: "100%",
-       border: "none",
-       color: "black",
-       borderRadius: "0px",
-       boxShadow: "2px 2px 4px rgba(255, 255, 255, 0.3)",
-       transition: "background-color 0.6s ease, box-shadow 0.6s ease",
-     }}
-      onClick={handleClick}>
-        {showList ? 'Hide Content' : 'Show Content'}
-      </button>
-      {showList && (
+ className="w3-button w3-margin-bottom shadow bg-info-subtle w3-hover-opacity "
+ style={{
+   width: "100%",
+   border: "none",
+   color: "black",
+      borderRadius: "0px",
+      padding: "20px",  
+    }}
+    onClick={handleClick}>
+    {showList ? 'CLOSE ACHIEVEMENT' : 'SHOW ACHIEVEMENT'}
+  </button>
+  {showList && (
               <div className="container py-2 shadow ">
 
  <ul>
