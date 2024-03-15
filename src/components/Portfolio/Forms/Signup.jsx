@@ -1,61 +1,121 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
 function Signup() {
+    const [firstName, setFirstName] = useState('John');
+    const [lastName, setLastName] = useState('Doe');
+    const [email, setEmail] = useState('john.doe@example.com');
+    const [password, setPassword] = useState('password123');
+    const [newsletterChecked, setNewsletterChecked] = useState(true);
+
+    const [firstNameError, setFirstNameError] = useState('');
+    const [lastNameError, setLastNameError] = useState('');
+    const [emailError, setEmailError] = useState('');
+    const [passwordError, setPasswordError] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Form submitted');
+
+        // Reset previous error messages
+        setFirstNameError('');
+        setLastNameError('');
+        setEmailError('');
+        setPasswordError('');
+
+        // Validation logic
+        let isValid = true;
+
+        if (firstName.trim() === '') {
+            setFirstNameError('First Name is required');
+            isValid = false;
+        }
+
+        if (lastName.trim() === '') {
+            setLastNameError('Last Name is required');
+            isValid = false;
+        }
+
+        if (email.trim() === '') {
+            setEmailError('Email is required');
+            isValid = false;
+        }
+
+        if (password.trim() === '') {
+            setPasswordError('Password is required');
+            isValid = false;
+        }
+
+        // If form is valid, proceed with submission
+        if (isValid) {
+            console.log('Submitting form...');
+            // Implement form submission logic here
+        }
+    };
+
     return (
         <div className="container w3-padding-16">
             <div className="w3-container w3-content bg-white shadow">
                 <div className="w3-container w3-content w3-padding-16 px-4 border-dark">
                     <h4 className="fw-light w3-margin-top"><b>Signup Form</b></h4>
-                    <form autoComplete="on"> {/* Enable autocomplete */}
+                    <form onSubmit={handleSubmit} autoComplete="on">
                         <div className="row mb-4">
                             <div className="col">
-                                <div className="form-outline ">
+                                <div className="form-outline">
                                     <input 
                                         type="text" 
                                         id="firstName" 
-                                        className="form-control shadow-sm border border-1" 
-                                        placeholder="First Name" 
-                                        autoComplete="given-name" // Autocomplete for first name
+                                        className={`form-control shadow-sm border border-1 ${firstNameError ? 'is-invalid' : ''}`}
+                                        placeholder="First Name"
+                                        value={firstName}
+                                        onChange={(e) => setFirstName(e.target.value)}
+                                        autoComplete="given-name"
                                     />
-                                    <label className="form-label" htmlFor="firstName">First Name</label>
+                                    <div className="invalid-feedback">{firstNameError}</div>
                                 </div>
                             </div>
                             <div className="col">
-                                <div  className="form-outline">
+                                <div className="form-outline">
                                     <input 
                                         type="text" 
                                         id="lastName" 
-                                        className="form-control shadow-sm border border-1" 
-                                        placeholder="Last Name" 
-                                        autoComplete="family-name" // Autocomplete for last name
+                                        className={`form-control shadow-sm border border-1 ${lastNameError ? 'is-invalid' : ''}`}
+                                        placeholder="Last Name"
+                                        value={lastName}
+                                        onChange={(e) => setLastName(e.target.value)}
+                                        autoComplete="family-name"
                                     />
-                                    <label className="form-label" htmlFor="lastName">Last Name</label>
+                                    <div className="invalid-feedback">{lastNameError}</div>
                                 </div>
                             </div>
                         </div>
 
-                        <div  className="form-outline mb-4">
+                        <div className="form-outline mb-4">
                             <input 
                                 type="email" 
                                 id="email" 
-                                className="form-control shadow-sm border border-1" 
-                                placeholder="Email" 
-                                autoComplete="email" // Autocomplete for email
+                                className={`form-control shadow-sm border border-1 ${emailError ? 'is-invalid' : ''}`}
+                                placeholder="Email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                autoComplete="email"
                             />
-                            <label className="form-label" htmlFor="email">Email</label>
+                            <div className="invalid-feedback">{emailError}</div>
                         </div>
 
-                        <div  className="form-outline mb-4">
+                        <div className="form-outline mb-4">
                             <input 
                                 type="password" 
-                                className="form-control shadow-sm border border-1" 
-                                placeholder="Password" 
-                                autoComplete="new-password" // Autocomplete for new password
+                                id="password" 
+                                className={`form-control shadow-sm border border-1 ${passwordError ? 'is-invalid' : ''}`}
+                                placeholder="Password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                autoComplete="new-password"
                             />
-                            <label className="form-label" htmlFor="password">Password</label>
+                            <div className="invalid-feedback">{passwordError}</div>
                         </div>
 
                         <div className="form-check d-flex justify-content-center mb-4">
@@ -63,8 +123,8 @@ function Signup() {
                                 className="form-check-input me-2" 
                                 type="checkbox" 
                                 id="newsletterCheck"  
-                                defaultChecked 
-                                readOnly // Add readOnly attribute
+                                checked={newsletterChecked}
+                                onChange={(e) => setNewsletterChecked(e.target.checked)}
                             />
                             <label className="form-check-label" htmlFor="newsletterCheck">
                                 Subscribe to our newsletter
@@ -72,9 +132,8 @@ function Signup() {
                         </div>
 
                         <button 
-                            type="button" 
+                            type="submit" 
                             className="btn btn-primary btn-block mb-4 px-5 shadow"
-                            autoComplete="on" // Enable autocomplete
                         >
                             Sign up
                         </button>
@@ -82,36 +141,32 @@ function Signup() {
                         <div className="text-center w3-margin-bottom">
                             <p>or sign up with:</p>
                             <button 
-        type="button" 
-        className="btn btn-secondary btn-floating mx-1 shadow"
-        autoComplete="on" // Enable autocomplete
-    >
-        <i className="fab fa-facebook-f"></i>
-    </button>
+                                type="button" 
+                                className="btn btn-secondary btn-floating mx-1 shadow"
+                            >
+                                <i className="fab fa-facebook-f"></i>
+                            </button>
 
-    <button 
-        type="button" 
-        className="btn btn-secondary btn-floating mx-1 shadow"
-        autoComplete="on" // Enable autocomplete
-    >
-        <i className="fab fa-google"></i>
-    </button>
+                            <button 
+                                type="button" 
+                                className="btn btn-secondary btn-floating mx-1 shadow"
+                            >
+                                <i className="fab fa-google"></i>
+                            </button>
 
-    <button  
-        type="button" 
-        className="btn btn-secondary btn-floating mx-1 shadow"
-        autoComplete="on" // Enable autocomplete
-    >
-        <i className="fab fa-twitter"></i>
-    </button>
+                            <button  
+                                type="button" 
+                                className="btn btn-secondary btn-floating mx-1 shadow"
+                            >
+                                <i className="fab fa-twitter"></i>
+                            </button>
 
-    <button 
-        type="button" 
-        className="btn btn-secondary btn-floating mx-1 shadow"
-        autoComplete="on" // Enable autocomplete
-    >
-        <i className="fab fa-github"></i>
-    </button>
+                            <button 
+                                type="button" 
+                                className="btn btn-secondary btn-floating mx-1 shadow"
+                            >
+                                <i className="fab fa-github"></i>
+                            </button>
                         </div>
                     </form>
                 </div>

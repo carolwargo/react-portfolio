@@ -4,16 +4,35 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
 function Login() {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [username, setUsername] = useState('testuser');
+    const [password, setPassword] = useState('password123');
+    const [usernameError, setUsernameError] = useState('');
+    const [passwordError, setPasswordError] = useState('');
 
     const handleLogin = (e) => {
-        e.preventDefault(); // Prevent form submission
-        // For demo purposes, you can simply check if username and password are not empty
-        if (username.trim() !== '' && password.trim() !== '') {
-            // Set isLoggedIn to true to indicate successful login
-            setIsLoggedIn(true);
+        e.preventDefault();
+        console.log('Form login submitted');
+
+        // Reset previous error messages
+        setUsernameError('');
+        setPasswordError('');
+
+        // Validation logic
+        let isValid = true;
+        if (username.trim() === '') {
+            setUsernameError('Username is required');
+            isValid = false;
+        }
+
+        if (password.trim() === '') {
+            setPasswordError('Password is required');
+            isValid = false;
+        }
+
+        // If form is valid, proceed with submission
+        if (isValid) {
+            console.log('Submitting form...');
+            // Implement form submission logic here
         }
     };
 
@@ -24,28 +43,31 @@ function Login() {
                     <h4 className="fw-light w3-margin-top"><b>Login Form</b></h4>
                     <div className="w3-padding-24">
                         <form onSubmit={handleLogin}> {/* Wrap input fields with a form */}
+
                             <div className="form-outline mb-4">
                                 <input 
-                                    type="text"
-                                    id="username"
-                                    className="form-control shadow-sm border border-1"
+                                    type="text" 
+                                    id="username" 
+                                    className={`form-control shadow-sm border border-1 ${usernameError ? 'is-invalid' : ''}`}
                                     placeholder="Username"
                                     value={username}
                                     onChange={(e) => setUsername(e.target.value)}
                                     autoComplete="username"
                                 />
+                                <div className="invalid-feedback">{usernameError}</div>
                             </div>
 
                             <div className="form-outline mb-4">
                                 <input 
                                     type="password" 
                                     id="password" 
-                                    className="form-control shadow-sm border border-1" 
+                                    className={`form-control shadow-sm border border-1 ${passwordError ? 'is-invalid' : ''}`}
                                     placeholder="Password"
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
-                                    autoComplete="current-password" 
+                                    autoComplete="new-password"
                                 />
+                                <div className="invalid-feedback">{passwordError}</div>
                             </div>
 
                             <div className="row mb-4">
@@ -70,9 +92,9 @@ function Login() {
                                 >
                                     Sign in
                                 </button>
+                                {(usernameError || passwordError) && <div className="text-danger">Please fill in all required fields.</div>}
                             </div>
                         </form>
-                        {isLoggedIn && <p>Login Successful!</p>}
                     </div>
                 </div>
             </div>
