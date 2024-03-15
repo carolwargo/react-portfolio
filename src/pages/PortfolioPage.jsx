@@ -8,7 +8,7 @@ import Notes from "../assets/images/Portfolio/Notes.png";
 import README from "../assets/images/Portfolio/README.png";
 import Login from "../components/Portfolio/Forms/Login";
 import Signup from "../components/Portfolio/Forms/Signup";
-import Register from "../components/Portfolio/Forms/Register";
+//import Register from "../components/Portfolio/Forms/Register";
 import Graphics from "../components/Portfolio/Graphics/Graphics";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -78,7 +78,7 @@ function Portfolio() {
           </div>
           <Login />
           <Signup />
-          <Register />
+       
           <br />
           <br />
           <div className="container ">
