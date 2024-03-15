@@ -15,7 +15,7 @@ function BasicExample() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/">ABOUT</Nav.Link>
+              <Nav.Link href="/about">ABOUT</Nav.Link>
               <Nav.Link href="/resume">RESUME</Nav.Link>
               <Nav.Link href="portfolio">PORTFOLIO</Nav.Link>
               <Nav.Link href="/contact">CONTACT</Nav.Link>
