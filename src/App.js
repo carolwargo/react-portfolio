@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Home from "./pages/Home.jsx";
+import HomePage from "./pages/HomePage.jsx";
 import About from "./pages/About.jsx";
 import Portfolio  from "./pages/Portfolio.jsx";
 import Contact  from "./pages/Contact.jsx";
@@ -18,7 +18,7 @@ function App() {
       <BrowserRouter basename="/react-portfolio" >
 <NavFixed />
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<HomePage/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
