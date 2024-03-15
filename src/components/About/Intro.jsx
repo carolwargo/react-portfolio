@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Cover from "../../assets/images/Cover.png";
 import Me from "../../assets/images/Me.png";
+import { Link } from "react-router-dom";
 
 export default function Intro() {
   return (
@@ -99,16 +100,16 @@ export default function Intro() {
           Get to know a little, or a lot. You choose... <br></br>{" "}
           <strong>
             {" "}
-            <a href="#philisophy-values">My FAMILY, PHILISOPHY & VALUES</a>
+            <Link to="#philisophy-values">My FAMILY, PHILISOPHY & VALUES</Link>
           </strong>
           ,{" "}
           <strong>
             {" "}
-            <a href="#blessing-curse">MY BLESSING & MY CURSE</a>
+            <Link to="#blessing-curse">MY BLESSING & MY CURSE</Link>
           </strong>
           , and{" "}
           <strong>
-            <a href="#community">GIVING BACK & GAINING MORE</a>{" "}
+            <Link to="#community">GIVING BACK & GAINING MORE</Link>{" "}
           </strong>{" "}
           -{" "}
         </h5>

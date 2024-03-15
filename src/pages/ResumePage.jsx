@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -17,7 +18,7 @@ import Package from "../assets/images/Resume/Package.png";
 import BuildTest from "../assets/images/Resume/BuildTest.png";
 import APIQ from "../assets/images/Resume/APIQ.png";
 import ResumeWorkspace from "../assets/images/Resume/ResumeWorkspace.png";
-import Resume from "../assets/Resume.pdf";
+import ResumeDownload from "../assets/ResumeDownload.pdf";
 import Star1 from "../components/OnClickEvents/Star1";
 import Star2 from "../components/OnClickEvents/Star2";
 import Star3 from "../components/OnClickEvents/Star3";
@@ -289,14 +290,14 @@ export default function ResumePage() {
             <p className="text-white">DOWNLOAD A COPY OF MY RESUME</p>
            
             <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
-          <a
+          <Link 
               className="button text-black"
               id="resume-download"
               download
-              href={Resume}
+              to={ResumeDownload}
             >
             <i className="fa fa-download"></i> Download Resume
-            </a>
+            </Link>
           </button>
           </div>
           </div>

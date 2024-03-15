@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import MeWhite from "../assets/images/MeWhite.png";
-import ResumeDownload from "../assets/ResumeDownload.png";
+import ResumeDownload from "../assets/ResumeDownload.pdf";
 
 function HomePage() {
   return (
@@ -26,20 +27,20 @@ function HomePage() {
                  <p>Full Stack Developer | UX Designer.</p>
             
                  <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
-                   <a
+                   <Link
                      className="button text-black"
                      id="resume-download"
                      download
-                     href={ResumeDownload}
+                     to={ResumeDownload}
                    >
                      <i className="fa fa-download"></i> Download Resume
-                   </a>
+                   </Link>
                  </button>
                  <br />
                  <br />
                  <br />
                  <br />
-                 <a href="/about" className="w3-margin-bottom"><i className="fa fa-arrow-circle-right w3-xxxlarge" ></i></a>
+                 <Link to="/about" className="w3-margin-bottom"><i className="fa fa-arrow-circle-right w3-xxxlarge" ></i></Link>
            <p className="text-center">NEXT</p>
             </div>
           </div>

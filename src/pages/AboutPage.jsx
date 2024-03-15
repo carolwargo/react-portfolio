@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaLaptopCode } from "react-icons/fa";
 import { HiOutlinePuzzlePiece } from "react-icons/hi2";
 import { AiFillDatabase } from "react-icons/ai";
@@ -121,7 +122,7 @@ export default function AboutPage() {
           <br />
           <br />
           <p className="text-center">
-                <a href="/resume">View my resume or download a copy <HiOutlineArrowRight /></a>
+                <Link to="/resume">View my resume or download a copy <HiOutlineArrowRight /></Link>
               </p>
         </div> 
     </div>

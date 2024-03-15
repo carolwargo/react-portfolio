@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { HiOutlineHomeModern } from "react-icons/hi2";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -11,7 +11,8 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 import './NavBlack.css';
 
-function NavScrollExample() {  const [isNavbarFixed, setIsNavbarFixed] = useState(false);
+function NavScrollExample() {
+  const [isNavbarFixed, setIsNavbarFixed] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,62 +28,64 @@ function NavScrollExample() {  const [isNavbarFixed, setIsNavbarFixed] = useStat
   }, []);
 
   return (
-    <Navbar expand="lg" 
-    className={`bg-black ${isNavbarFixed ? 'fixed-navbar' : ''}`} 
-    style={{ fontFamily:'Raleway', boxShadow:'1px 1px 4px gray' }}>
-    <Container fluid className='mx-2'>
-      <Navbar.Brand href="/" style={{
-        textShadow: "1px 1px 2px #FDC5E8",
-        color:'white',
-        fontSize:'1rem',
-      }}>C.WARGO</Navbar.Brand>
-<Navbar.Toggle aria-controls="navbarScroll" id='navbarToggle' 
-style={{ borderColor: 'white', backgroundColor:'white' }} />
- <Navbar.Collapse id="navbarScroll" className='text-white'>
+    <Navbar expand="lg"
+      className={`bg-black ${isNavbarFixed ? 'fixed-navbar' : ''}`}
+      style={{ fontFamily: 'Raleway', boxShadow: '1px 1px 4px gray' }}>
+      <Container fluid className='mx-2'>
+        {/* Use Link component instead of Navbar.Brand */}
+        <Link to="/" className="navbar-brand" style={{
+          textShadow: "1px 1px 2px #FDC5E8",
+          color: 'white',
+          fontSize: '1rem',
+        }}>C.WARGO</Link>
+        <Navbar.Toggle aria-controls="navbarScroll" id='navbarToggle'
+          style={{ borderColor: 'white', backgroundColor: 'white' }} />
+        <Navbar.Collapse id="navbarScroll" className='text-white'>
           <Nav
             className="me-auto my-2 my-lg-0 justify-content-center align-items-center "
-            style={{ maxHeight: '100px'}}
+            style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/"><HiOutlineHomeModern style={{boxShadow: '1px 1px 4px #00FFFF'}}/> Home</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
-                <Nav.Link href="/resume" >Resume</Nav.Link>
-            <Nav.Link href="/portfolio">Portfolio</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
-            <Nav.Link href="/test">Test</Nav.Link>
+            {/* Replace href with to and wrap text inside Link */}
+            <Link to="/" className="nav-link"><HiOutlineHomeModern style={{ boxShadow: '1px 1px 4px #00FFFF' }} /> Home</Link>
+            <Link to="/about" className="nav-link">About</Link>
+            <Link to="/resume" className="nav-link">Resume</Link>
+            <Link to="/portfolio" className="nav-link">Portfolio</Link>
+            <Link to="/contact" className="nav-link">Contact</Link>
+            <Link to="/test" className="nav-link">Test</Link>
 
             <NavDropdown title="Sample Components" id="sample-components" style={{
-                  textShadow: "0px 0px 14px #00ffff"
-                }}>
-              <NavDropdown.Item href="/sample-components#blog">Blog</NavDropdown.Item>
-              <NavDropdown.Item href="#forms">Forms</NavDropdown.Item>
-              <NavDropdown.Item href="#pagnation">Pagenation</NavDropdown.Item>
-              <NavDropdown.Item href="#spy-scroll">Spy Scroll</NavDropdown.Item>
-              <NavDropdown.Item href="#tables">Tables</NavDropdown.Item>
+              textShadow: "0px 0px 14px #00ffff"
+            }}>
+              <NavDropdown.Item as={Link} to="/sample-components#blog">Blog</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="#forms">Forms</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="#pagnation">Pagenation</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="#spy-scroll">Spy Scroll</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="#tables">Tables</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#server-side">Backend Development</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="#server-side">Backend Development</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <hr  className='text-white'/>
+          <hr className='text-white' />
           <Nav className="d-flex justify-content-center align-items-center">
             <div>
 
-            <div className="d-flex align-items-center" style={{ fontSize: '1rem' }}>
-            <Navbar.Brand style={{fontSize:'14px', color:'white'}}>
-              <span style={{textShadow: "1px 1px 2px #00ffff",}}>Connect: </span></Navbar.Brand>
-        <a href="https://www.linkedin.com/in/carol-wargo-35021baa" className="me-3" style={{textShadow: "2px 2px 4px #00ffff",}}>
-          <FontAwesomeIcon icon={faLinkedin}  style={{ color: 'white' }}  />
-        </a>
-        <a href="https://github.com/carolwargo/" className="me-3 ">
-          <FontAwesomeIcon icon={faGithub} style={{ color: 'white' }} />
-        </a>
-        <a href="mailto:carolwargo.dev@gmail.com" className="me-3 ">
-          <FontAwesomeIcon icon={faEnvelope} style={{ color: 'white' }} />
-        </a>
-        <a href="tel:4437711726" className="me-3">
-          <FontAwesomeIcon icon={faPhone} style={{ color: 'white' }} />
-        </a>
-      </div>
+              <div className="d-flex align-items-center" style={{ fontSize: '1rem' }}>
+                <Navbar.Brand style={{ fontSize: '14px', color: 'white' }}>
+                  <span style={{ textShadow: "1px 1px 2px #00ffff", }}>Connect: </span></Navbar.Brand>
+                <a href="https://www.linkedin.com/in/carol-wargo-35021baa" className="me-3" style={{ textShadow: "2px 2px 4px #00ffff", }}>
+                  <FontAwesomeIcon icon={faLinkedin} style={{ color: 'white' }} />
+                </a>
+                <a href="https://github.com/carolwargo/" className="me-3 ">
+                  <FontAwesomeIcon icon={faGithub} style={{ color: 'white' }} />
+                </a>
+                <a href="mailto:carolwargo.dev@gmail.com" className="me-3 ">
+                  <FontAwesomeIcon icon={faEnvelope} style={{ color: 'white' }} />
+                </a>
+                <a href="tel:4437711726" className="me-3">
+                  <FontAwesomeIcon icon={faPhone} style={{ color: 'white' }} />
+                </a>
+              </div>
 
             </div>
           </Nav>
