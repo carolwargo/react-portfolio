@@ -46,22 +46,22 @@ export default function ResumePage() {
           Digital Resume contains{" "}
           <strong>
             {" "}
-            <a href="#professional-achievements"> PROFESSIONAL ACHIEVEMENTS</a>
+            <Link to="#professional-achievements"> PROFESSIONAL ACHIEVEMENTS</Link>
           </strong>
           ,<br></br>{" "}
           <strong>
             {" "}
-            <a href="#technical-skills">TECHNICAL SKILLS</a>
+            <Link to="#technical-skills">TECHNICAL SKILLS</Link>
           </strong>
           ,
           <strong>
             {" "}
-            <a href="#experience">EXPERIENCE & EDUCATION</a>{" "}
+            <Link to="#experience">EXPERIENCE & EDUCATION</Link>{" "}
           </strong>{" "}
           , and{" "}
           <strong>
             {" "}
-            <a href="#resume-download">RESUME DOWNLOAD</a>
+            <Link to="download">RESUME DOWNLOAD</Link>
           </strong>{" "}
           -{" "}
         </p>
@@ -292,7 +292,7 @@ export default function ResumePage() {
             <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
           <Link 
               className="button text-black"
-              id="resume-download"
+              id="download"
               download
               to={ResumeDownload}
             >

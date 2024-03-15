@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import TableBasic from "../components/Portfolio/Tables/TableBasic";
 import JATE from "../assets/images/Portfolio/JATE.png";
 import Horizen from "../assets/images/Portfolio/Horizen.png";
@@ -33,22 +34,28 @@ function Portfolio() {
           Digital Resume contains{" "}
           <strong>
             {" "}
-            <a href="#professional-achievements"> PROFESSIONAL ACHIEVEMENTS</a>
-          </strong>
-          ,<br></br>{" "}
-          <strong>
-            {" "}
-            <a href="#technical-skills">TECHNICAL SKILLS</a>
+            <Link to="#forms">FORMS</Link>
           </strong>
           ,
           <strong>
             {" "}
-            <a href="#experience">EXPERIENCE & EDUCATION</a>{" "}
+            <Link to="#tables">TABLES</Link>{" "}
           </strong>{" "}
-          , and{" "}
+          , <br></br>{" "}
           <strong>
             {" "}
-            <a href="#resume-download">RESUME DOWNLOAD</a>
+            <Link to="#server">SERVER-SIDE FUNCTION</Link>{" "}
+          </strong>{" "}
+          ,
+          <strong>
+            {" "}
+            <Link to="#graphics">GRAPHICS</Link>{" "}
+          </strong>{" "}
+          ,
+          and{" "}
+          <strong>
+            {" "}
+            <Link to="#page-samples">PAGE SAMPLES</Link>
           </strong>{" "}
           -{" "}
         </p>
@@ -357,7 +364,7 @@ function Portfolio() {
           {/*start grid sample page*/}
           <div className="container ">
        
-            <h4 className="w3-text-black" id="#server">
+            <h4 className="w3-text-black" id="#graphics">
               Graphic Elements.
             </h4>
             <hr className="w3-opacity" />
@@ -374,7 +381,7 @@ function Portfolio() {
 
             <br />
             <br />
-            <h4 className="w3-text-black" id="#server">
+            <h4 className="w3-text-black" id="#page-samples">
               Sample web pages.
             </h4>
             <hr className="w3-opacity" />
@@ -387,7 +394,7 @@ function Portfolio() {
               features and functionalities to effectively achieve its objectives
               and meet the needs of its target audience.
             </p>
-            <p className="text-center w3-xxlarge">    <a href="/page-samples">view page samples <br /><i className="fa fa-arrow-circle-right w3-xxlarge" ></i></a>
+            <p className="text-center w3-xxlarge">    <Link to="/page-samples">view page samples <br /><i className="fa fa-arrow-circle-right w3-xxlarge" ></i></Link>
        </p>
         </div>
           {/*end graphics*/}
