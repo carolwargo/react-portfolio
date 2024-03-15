@@ -389,8 +389,9 @@ function Portfolio() {
             <h4 className="w3-text-black" id="#spy-scroll">
               SPYSCROLL.
             </h4>
-            <p>SpyScroll is a popular technique used in web development to enhance user navigation and improve the user experience. It involves synchronizing the navigation menu with the scroll position on the page. As the user scrolls through different sections of a webpage, the corresponding navigation menu items are highlighted or activated, indicating the user's current position on the page.</p>
             <hr className="w3-opacity" />
+            <p>SpyScroll is a popular technique used in web development to enhance user navigation and improve the user experience. It involves synchronizing the navigation menu with the scroll position on the page. As the user scrolls through different sections of a webpage, the corresponding navigation menu items are highlighted or activated, indicating the user's current position on the page.</p>
+          
             <SpyScroll />
 
             <br />
