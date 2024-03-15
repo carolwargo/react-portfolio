@@ -16,7 +16,7 @@ function Portfolio() {
   return (
     <div >
       
-        <div className="portfolio" id="portfolio">
+        <div>
           {/**start Portfolio section */}
           <div className="w3-content w3-container py-2 bg-white text-black w3-padding-32">
         <h1 className="w3-text-black" id="tables">

@@ -12,8 +12,8 @@ import '../App.css';
 
 export default function AboutPage() {
   return (
-    <div>
-    <div className="w3-content w3-container w3-padding-64" id="about">
+    <div className="about-page" id="about-page">
+    <div className="w3-content w3-container w3-padding-64">
         <div className="w3-content w3-container ">
           <div className="row justify-content-center align-items-center  w3-margin-top">
             <div className="col-lg-6 w3-padding-large">

@@ -14,7 +14,7 @@ const HomeAbout = () => {
     return (
         <div>
         <div className="container-fluid w3-margin-top py-3 text-black">
-<div className="w3-content w3-container w3-margin-top " id="about">
+<div className="w3-content w3-container w3-margin-top">
 <div className="row d-flex justify-content-center align-items-center">
 <h2 className="w3-center py-2"> <i> "I'm Carol Wargo, and <br /> welcome to my corner of the internet!"</i></h2>
   <br />

@@ -27,7 +27,7 @@ import "../App.css";
 
 export default function ResumePage() {
   return (
-    <div className="resume" id="resume">
+    <div className="resume-page" id="resume-page">
    <div className="w3-container w3-padding-64 w3-margin-top">
    <div className="w3-content w3-padding-large w3-padding-48">
         {/**start Portfolio section */}

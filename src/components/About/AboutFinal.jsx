@@ -12,8 +12,8 @@ import '@fortawesome/fontawesome-free/css/all.css'; // Import Font Awesome CSS
 const AboutFinal = () => {
 
     return (
-        <div className="container-fluid py-4 bg-black text-white" id="about">
-        <div className="w3-content w3-container w3-padding-32 " id="about">
+        <div className="container-fluid py-4 bg-black text-white" >
+        <div className="w3-content w3-container w3-padding-32 " >
         <div className="row">
   <h3 className="w3-center fw-light">ABOUT ME</h3>
   <h5 className="w3-center fw-light">"I'm Carol Wargo, and welcome to my corner of 
@@ -32,7 +32,7 @@ const AboutFinal = () => {
     </div>
     
   
-<div className="w3-content w3-container " id="about">
+<div className="w3-content w3-container">
 <div className="row">
   <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-small py-3">
     <img src={MeWhite} className="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Me" width="500" height="333" />
@@ -65,7 +65,7 @@ const AboutFinal = () => {
 
 {/**start technical proficiencies */}
 <div className="container-fluid py-4 bg-white text-black">
-<div className="w3-content w3-container" id="about">
+<div className="w3-content w3-container" >
 <div className="row">
 <h3><strong>SKILLS & PROFICIENCIES</strong></h3>
     <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-large">
