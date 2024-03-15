@@ -2,9 +2,9 @@ import React from "react";
 import MeWhite from "../assets/images/MeWhite.png";
 import ResumeDownload from "../assets/ResumeDownload.png";
 
-function Header() {
+function HomePage() {
   return (
-    <div>
+    <div className="home" id="home">
       <header>
         <div className="row w3-justify w3-center w3-margin-top w3-padding-24">
           <div className="col-lg-5 ">
@@ -49,4 +49,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HomePage;
