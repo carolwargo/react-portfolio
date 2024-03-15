@@ -8,14 +8,14 @@ import Contact  from "./pages/Contact.jsx";
 import Resume  from "./pages/Resume.jsx";
 import Footer from "./components/Footer.jsx";
 import NavFixed from "./components/NavFixed.jsx"; 
-
+//basename="/react-portfolio"
 import "./App.css";
 
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/react-portfolio" >
+      <BrowserRouter >
 <NavFixed />
         <Routes>
           <Route path="/" element={<Home/>} />
