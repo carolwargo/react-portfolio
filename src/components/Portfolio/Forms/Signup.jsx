@@ -8,8 +8,8 @@ function Signup() {
         <div className="container w3-padding-16">
             <div className="w3-container w3-content bg-white shadow">
                 <div className="w3-container w3-content w3-padding-16 px-4 border-dark">
-                    <h4 className="fw-light w3-margin-top"><b>Signup & Register Form</b></h4>
-                    <form>
+                    <h4 className="fw-light w3-margin-top"><b>Signup Form</b></h4>
+                    <form autoComplete="on"> {/* Enable autocomplete */}
                         <div className="row mb-4">
                             <div className="col">
                                 <div className="form-outline ">
@@ -17,9 +17,10 @@ function Signup() {
                                         type="text" 
                                         id="firstName" 
                                         className="form-control shadow-sm border border-1" 
-                                        readOnly // Add readOnly attribute
+                                        placeholder="First Name" 
+                                        autoComplete="given-name" // Autocomplete for first name
                                     />
-                                    <label className="form-label" htmlFor="firstName"></label>
+                                    <label className="form-label" htmlFor="firstName">First Name</label>
                                 </div>
                             </div>
                             <div className="col">
@@ -28,9 +29,10 @@ function Signup() {
                                         type="text" 
                                         id="lastName" 
                                         className="form-control shadow-sm border border-1" 
-                                        readOnly // Add readOnly attribute
+                                        placeholder="Last Name" 
+                                        autoComplete="family-name" // Autocomplete for last name
                                     />
-                                    <label className="form-label" htmlFor="lastName"></label>
+                                    <label className="form-label" htmlFor="lastName">Last Name</label>
                                 </div>
                             </div>
                         </div>
@@ -40,18 +42,20 @@ function Signup() {
                                 type="email" 
                                 id="email" 
                                 className="form-control shadow-sm border border-1" 
-                                readOnly // Add readOnly attribute
+                                placeholder="Email" 
+                                autoComplete="email" // Autocomplete for email
                             />
-                            <label className="form-label" htmlFor="email"></label>
+                            <label className="form-label" htmlFor="email">Email</label>
                         </div>
 
                         <div  className="form-outline mb-4">
                             <input 
                                 type="password" 
                                 className="form-control shadow-sm border border-1" 
-                                readOnly // Add readOnly attribute
+                                placeholder="Password" 
+                                autoComplete="new-password" // Autocomplete for new password
                             />
-                            <label className="form-label"></label>
+                            <label className="form-label" htmlFor="password">Password</label>
                         </div>
 
                         <div className="form-check d-flex justify-content-center mb-4">
@@ -70,6 +74,7 @@ function Signup() {
                         <button 
                             type="button" 
                             className="btn btn-primary btn-block mb-4 px-5 shadow"
+                            autoComplete="on" // Enable autocomplete
                         >
                             Sign up
                         </button>
@@ -77,32 +82,36 @@ function Signup() {
                         <div className="text-center w3-margin-bottom">
                             <p>or sign up with:</p>
                             <button 
-                                type="button" 
-                                className="btn btn-secondary btn-floating mx-1 shadow"
-                            >
-                                <i className="fab fa-facebook-f"></i>
-                            </button>
+        type="button" 
+        className="btn btn-secondary btn-floating mx-1 shadow"
+        autoComplete="on" // Enable autocomplete
+    >
+        <i className="fab fa-facebook-f"></i>
+    </button>
 
-                            <button 
-                                type="button" 
-                                className="btn btn-secondary btn-floating mx-1 shadow"
-                            >
-                                <i className="fab fa-google"></i>
-                            </button>
+    <button 
+        type="button" 
+        className="btn btn-secondary btn-floating mx-1 shadow"
+        autoComplete="on" // Enable autocomplete
+    >
+        <i className="fab fa-google"></i>
+    </button>
 
-                            <button  
-                                type="button" 
-                                className="btn btn-secondary btn-floating mx-1 shadow"
-                            >
-                                <i className="fab fa-twitter"></i>
-                            </button>
+    <button  
+        type="button" 
+        className="btn btn-secondary btn-floating mx-1 shadow"
+        autoComplete="on" // Enable autocomplete
+    >
+        <i className="fab fa-twitter"></i>
+    </button>
 
-                            <button 
-                                type="button" 
-                                className="btn btn-secondary btn-floating mx-1 shadow"
-                            >
-                                <i className="fab fa-github"></i>
-                            </button>
+    <button 
+        type="button" 
+        className="btn btn-secondary btn-floating mx-1 shadow"
+        autoComplete="on" // Enable autocomplete
+    >
+        <i className="fab fa-github"></i>
+    </button>
                         </div>
                     </form>
                 </div>
