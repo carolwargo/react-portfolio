@@ -53,6 +53,11 @@ function Portfolio() {
             <Link to="#graphics">GRAPHICS</Link>{" "}
           </strong>{" "}
           ,
+          <strong>
+            {" "}
+            <Link to="#spy-scroll">SPYSCROLL</Link>{" "}
+          </strong>{" "}
+          ,
           and{" "}
           <strong>
             {" "}
@@ -70,10 +75,10 @@ function Portfolio() {
           {/* start Forms grid */}
           <div className="container ">
             <h4 className="w3-text-black" id="#forms">
-              Forms.{" "}
+              FORMS.{" "}
             </h4>
             <p>
-              Digital components play crucial roles in web development,
+              Digital components in web development are used to
               enhancing user interaction, organizing content, and improving the
               overall user experience of a website.
             </p>
@@ -91,7 +96,7 @@ function Portfolio() {
           <br />
           <div className="container ">
             <h4 className="w3-text-black" id="#tables">
-              Tables.{" "}
+              TABLES.{" "}
             </h4>
 
             <p>
@@ -108,11 +113,11 @@ function Portfolio() {
           <div className="container ">
             <div className="row w3-padding-16">
               <h4 className="w3-text-black" id="#server">
-                Server-side
+                SERVER-SIDE
               </h4>
               <hr className="w3-opacity" />
               <p>
-                Server-side functions play a crucial role in the backend
+                Server-side functions are a part of the backend
                 architecture of web applications, enabling efficient request
                 handling, data processing, security enforcement, and business
                 logic implementation. They are essential components of modern
@@ -366,12 +371,12 @@ function Portfolio() {
           <div className="container ">
        
             <h4 className="w3-text-black" id="#graphics">
-              Graphic Elements.
+              GRAPHICS.
             </h4>
             <hr className="w3-opacity" />
 
             <p>
-              Graphics play a crucial role in communication, whether it's in
+              Graphics play a key role in communication, whether it's in
               advertising, branding, web design, or multimedia content. They
               serve as visual elements that enhance the presentation of
               information and ideas, making them more engaging, memorable, and
@@ -380,24 +385,27 @@ function Portfolio() {
 <br />
             <Graphics />
             <br />
+            <br />
+            <h4 className="w3-text-black" id="#spy-scroll">
+              SPYSCROLL.
+            </h4>
+            <p>SpyScroll is a popular technique used in web development to enhance user navigation and improve the user experience. It involves synchronizing the navigation menu with the scroll position on the page. As the user scrolls through different sections of a webpage, the corresponding navigation menu items are highlighted or activated, indicating the user's current position on the page.</p>
+            <hr className="w3-opacity" />
             <SpyScroll />
 
             <br />
             <br />
             <h4 className="w3-text-black" id="#page-samples">
-              Sample web pages.
+              SAMPLE WEB PAGES.
             </h4>
             <hr className="w3-opacity" />
-
             <p>
-              <span style={{ color: "red" }}>
-                <b>COMING SOON!</b>{" "}
-              </span>
               Each type of website serves a unique purpose and requires specific
               features and functionalities to effectively achieve its objectives
               and meet the needs of its target audience.
             </p>
-            <p className="text-center w3-xxlarge">    <Link to="/page-samples">view page samples <br /><i className="fa fa-arrow-circle-right w3-xxlarge" ></i></Link>
+            <p className="text-center w3-xxlarge">    
+            <Link to="/page-samples">view page samples <br /><i className="fa fa-arrow-circle-right w3-xxlarge" ></i></Link>
        </p>
         </div>
           {/*end graphics*/}

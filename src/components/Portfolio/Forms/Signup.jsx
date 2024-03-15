@@ -108,7 +108,7 @@ function Signup() {
                         <div className="form-outline mb-4">
                             <input 
                                 type="password" 
-                                id="password" 
+                                id="anewpassword" 
                                 className={`form-control shadow-sm border border-1 ${passwordError ? 'is-invalid' : ''}`}
                                 placeholder="Password"
                                 value={password}

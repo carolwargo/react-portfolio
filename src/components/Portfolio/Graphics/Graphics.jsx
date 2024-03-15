@@ -38,7 +38,7 @@ const GraphicsPage = () => {
           { image: CuttersFlyers, title: "Special Event" },
           { image: Catching, title: "Services and Branding" },
           { image: Canceled, title: "Team Notifications" },
-          { image: YogaSet, title: "Yoga Set" },
+          { image: YogaSet, title: "Campaign" },
         ].map((item, index) => (
           <div
             key={index}

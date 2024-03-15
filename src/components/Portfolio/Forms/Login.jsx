@@ -60,7 +60,7 @@ function Login() {
                             <div className="form-outline mb-4">
                                 <input 
                                     type="password" 
-                                    id="password" 
+                                    id="new-password" 
                                     className={`form-control shadow-sm border border-1 ${passwordError ? 'is-invalid' : ''}`}
                                     placeholder="Password"
                                     value={password}
