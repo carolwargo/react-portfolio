@@ -8,12 +8,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Blog = () => {
   return (
-    <div>
-      <BlogHeader />
-      <main className="w3-light-grey">
+    <div className="blog" id="blog">
+      <main >
         <div className="w3-content" style={{ maxWidth: "1400px" }}>
-          {/* start Header */}
-          {/*row start for the whole page with exception of header & footer */}
+          <BlogHeader />
           <div className="w3-row p-2">
             {" "}
             {/*card start for bio, popular posts & tags*/}
@@ -64,7 +62,7 @@ const Blog = () => {
                       src={Business}
                       alt="Business"
                       className="w3-left w3-margin-right"
-                      style={{ width: "20%" }}
+                      style={{ width: "15%" }}
                     ></img>{" "}
                     <span className="w3-large">Style Option 1</span>
                     <br />
@@ -77,7 +75,7 @@ const Blog = () => {
                       src={Business}
                       alt="Business"
                       className="w3-left w3-margin-right"
-                      style={{ width: "20%" }}
+                      style={{ width: "15%" }}
                     ></img>
                     <span className="w3-large">Style Option 2</span>
                     <br></br>
@@ -90,7 +88,7 @@ const Blog = () => {
                       src={Business}
                       alt="Business"
                       className="w3-left w3-margin-right"
-                      style={{ width: "20%" }}
+                      style={{ width: "15%" }}
                     ></img>
                     <span className="w3-large">Title</span>
                     <br></br>
@@ -104,7 +102,7 @@ const Blog = () => {
                       src={Business}
                       alt="Business"
                       className="w3-left w3-margin-right"
-                      style={{ width: "20%" }}
+                      style={{ width: "15%" }}
                     ></img>
                     <span className="w3-large">Title</span>
                     <br />
@@ -179,7 +177,6 @@ const Blog = () => {
               {/*card end for all popular posts elements*/}
               {/*card end for all tags elements*/}
             </div>{" "}
-          
             {/*col end for bio, popular posts & tags*/}
             {/*col start for all posts iteration */}
             <div className="w3-col p-4 l8 s12">
@@ -188,47 +185,44 @@ const Blog = () => {
             </div>
             {/*col end for posts iteration */}
             <div>
-              <div className="w3-card w3-margin m-4 border-black">
+              <div className="w3-card w3-margin m-4 border-black ">
                 {" "}
                 {/*card start for all tags elements*/}
-               
                 {/*container end for stats Header*/}
-                <div className="w3-container w3-white">
-              
+                <div className="w3-container w3-white pb-3">
                   {/*container start for stats*/}
                   <p className="text">
-                    <span className='px-3' style={{fontSize:'1.5rem'}}>
-                   <b> DID YOU KNOW ?</b>
+                    <span className="px-3" style={{ fontSize: "1.5rem" }}>
+                      <b> DID YOU KNOW ?</b>
                     </span>
-                    </p>
-                    <span className="w3-tag w3-white w3-margin-bottom"></span>{" "}
-                    <br />
-                    <span>
-                      <ul>
-                        <li>
-                          Social share buttons increase sharing by 700% (Source:
-                          ShareThis).
-                        </li>
-                        <li>
-                          Content shared on social media generates 8 times more
-                          engagement than content shared through other channels
-                          (Source: QuickSprout).
-                        </li>
-                        <li>
-                          Articles with share buttons get 7 times more mentions
-                          than those without (Source: Buffer).
-                        </li>
-                        <li>
-                          Tweets with share buttons get 2.5 times more clicks
-                          than those without (Source: HubSpot).
-                        </li>
-                      </ul>
-                    </span>
-                    <span className="w3-tag w3-light-grey w3-margin-bottom p-2 mx-3">
-                      Share Buttons should be prominently displayed near the
-                      content and, mobile friendly,
-                    </span>
-                 
+                  </p>
+                  <span className="w3-tag w3-white w3-margin-bottom"></span>{" "}
+                  <br />
+                  <span>
+                    <ul>
+                      <li>
+                        Social share buttons increase sharing by 700% (Source:
+                        ShareThis).
+                      </li>
+                      <li>
+                        Content shared on social media generates 8 times more
+                        engagement than content shared through other channels
+                        (Source: QuickSprout).
+                      </li>
+                      <li>
+                        Articles with share buttons get 7 times more mentions
+                        than those without (Source: Buffer).
+                      </li>
+                      <li>
+                        Tweets with share buttons get 2.5 times more clicks than
+                        those without (Source: HubSpot).
+                      </li>
+                    </ul>
+                  </span>
+                  <span className="w3-tag w3-light-grey w3-margin-bottom p-2 mx-3">
+                    Share Buttons should be prominently displayed near the
+                    content and, mobile friendly,
+                  </span>
                 </div>{" "}
                 {/*container end for stats only*/}
               </div>

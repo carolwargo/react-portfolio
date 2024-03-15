@@ -290,14 +290,14 @@ export default function ResumePage() {
             <p className="text-white">DOWNLOAD A COPY OF MY RESUME</p>
            
             <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
-          <Link 
-              className="button text-black"
-              id="download"
-              download
-              to={ResumeDownload}
-            >
-            <i className="fa fa-download"></i> Download Resume
-            </Link>
+            <a
+    className="button text-black"
+    id="download"
+    download 
+    href={ResumeDownload}
+  >
+    <i className="fa fa-download"></i> Download Resume
+  </a>
           </button>
           </div>
           </div>
