@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SpyScroll from "../components/Portfolio/SpyScroll/SpyScroll";
 import TableBasic from "../components/Portfolio/Tables/TableBasic";
 import JATE from "../assets/images/Portfolio/JATE.png";
 import Horizen from "../assets/images/Portfolio/Horizen.png";
@@ -378,6 +379,8 @@ function Portfolio() {
             </p>
 <br />
             <Graphics />
+            <br />
+            <SpyScroll />
 
             <br />
             <br />
