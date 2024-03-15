@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -21,10 +21,10 @@ function BasicExample() {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link to="/about">ABOUT</Nav.Link>
-              <Nav.Link to="/resume">RESUME</Nav.Link>
-              <Nav.Link to="/portfolio">PORTFOLIO</Nav.Link>
-              <Nav.Link to="/contact">CONTACT</Nav.Link>
+              <Link to="/about" className="nav-link">ABOUT</Link>
+              <Link to="/resume" className="nav-link">RESUME</Link>
+              <Link to="/portfolio" className="nav-link">PORTFOLIO</Link>
+              <Link to="/contact" className="nav-link">CONTACT</Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

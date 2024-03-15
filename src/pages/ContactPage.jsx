@@ -5,7 +5,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import MeWhite from "../assets/images/MeWhite.png";
 const ContactPage = () => {
   return (
-    <div className="contact-page" id="contact-page">
+    <div className="contact" id="contact">
       <div className="w3-content w3-container w3-padding-64"> 
         {/* Start Contact section */}
         <div className="container-fluid py-2 bg-white text-black ">

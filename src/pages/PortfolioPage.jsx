@@ -15,7 +15,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function Portfolio() {
   return (
-    <div className="portfolio-page " id="portfolio-page">
+    <div className="portfolio" id="portfolio">
            <div className="w3-main w3-padding-large w3-padding-64 w3-margin-top">
         {/**start Portfolio section */}
         <div className="w3-content w3-container">

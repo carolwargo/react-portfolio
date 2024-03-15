@@ -5,7 +5,7 @@ import ResumeDownload from "../assets/ResumeDownload.pdf";
 
 function HomePage() {
   return (
-    <div className="home-page" id="home-page">
+    <div className="home" id="home">
       <header>
         <div className="row w3-justify w3-center w3-margin-top w3-padding-24">
           <div className="col-lg-5 ">
