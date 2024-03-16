@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <div className="home" id="home">
       <header>
-        <div className="row justify-content-center align-items-center w3-margin-top w3-padding-24">
+        <div className="row align-items-center w3-margin-top w3-padding-24">
           <div className="col-lg-5">
             <img
               src={MeWhite}

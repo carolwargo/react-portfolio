@@ -8,7 +8,7 @@ function Footer() {
     <div>
       {/*start Footer */}
       <footer
-        className="w3-container w3-padding-48 w3-light-gray w3-center w3-large"
+        className="w3-container w3-padding-48 w3-light-gray w3-center w3-large w3-margin-top w3-opacity w3-hover-opacity-off"
         style={{ margin: "-24px" }}
       >
         <Link to="/" className="w3-hover-opacity mx-1 text-black">
