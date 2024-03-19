@@ -50,6 +50,7 @@ function Portfolio() {
         <Link to="#alerts"> ALERTS</Link>
         </strong>
         ,
+        <br />
         <strong>
           {" "}
           <Link to="#tables">TABLES</Link>{" "}
@@ -57,7 +58,7 @@ function Portfolio() {
         , {" "}
         <strong>
           {" "}
-          <br />
+       
           <Link to="#server">SERVER-SIDE FUNCTION</Link>{" "}
         </strong>{" "}
         ,
@@ -71,7 +72,7 @@ function Portfolio() {
           <Link to="#spy-scroll">SPYSCROLL</Link>{" "}
         </strong>{" "}
         ,
-        <br />
+       
          and{" "}
         <strong>
           {" "}
