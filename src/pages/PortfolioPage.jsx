@@ -79,7 +79,7 @@ function Portfolio() {
           <div className="w3-col l4">
           <div className="container">
             {/*start accordian card*/}
-            <div className="w3-card w3-margin-top bg-white">
+            <div className="w3-card bg-white">
               <hr />
               <div className="fw-bold w3-padding-large w3-margin-bottom ">
                 <h2 className="w3-margin-top" style={{ color: "black" }}>
@@ -691,15 +691,13 @@ function Portfolio() {
               </h4>
               <hr />
               <p className="mb-0 w3-hover-opacity w3-margin-bottom">
-                <i>
-                  " Alerts are designed to be attention-grabbing, often with
+                  Alerts are designed to be attention-grabbing, often with
                   prominent colors, icons, and text formatting to ensure users
                   notice them. Portfolio Menu is an example of an accordion
-                  element "
-                </i>
+                  element.
               </p>
               {/**without link */}
-              <div className="container">
+            <br />
               <div className="row">
                
                 <div className="col-md-6">
@@ -793,7 +791,7 @@ function Portfolio() {
                         Show Alert
                       </Button>
                     )}
-                  </div>
+                
                 </div>
                 </div>
               </div>
