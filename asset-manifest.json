@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.fee3379a.css",
-    "main.js": "/react-portfolio/static/js/main.f3a70929.js",
+    "main.js": "/react-portfolio/static/js/main.3d6a3b1c.js",
     "static/media/ResumeDownload.pdf": "/react-portfolio/static/media/ResumeDownload.553847bf49898f2af5f0.pdf",
-    "static/media/ResumeWorkspace.png": "/react-portfolio/static/media/ResumeWorkspace.0913b9a19154bae1fccd.png",
     "static/media/Canceled.png": "/react-portfolio/static/media/Canceled.369172013c6d8e28ce8c.png",
     "static/media/YogaSet.png": "/react-portfolio/static/media/YogaSet.5b7bef601b298c2fce5f.png",
     "static/media/CuttersFlyers.png": "/react-portfolio/static/media/CuttersFlyers.f5a9088e8fa1791cda6f.png",
@@ -11,6 +10,7 @@
     "static/media/MidSeason.png": "/react-portfolio/static/media/MidSeason.0c0c82a8177618fdc1fd.png",
     "static/media/Business.png": "/react-portfolio/static/media/Business.2feb0411115e2f21fb28.png",
     "static/media/ProductCampaign.png": "/react-portfolio/static/media/ProductCampaign.c4471466f98570288e7f.png",
+    "static/media/Dev.png": "/react-portfolio/static/media/Dev.87a2f562baee9b5dacf1.png",
     "static/media/fa-solid-900.ttf": "/react-portfolio/static/media/fa-solid-900.45a265d0f07b31cde85f.ttf",
     "static/media/WomanReading.jpg": "/react-portfolio/static/media/WomanReading.9f7b768c7f3a87220bcc.jpg",
     "static/media/Horizen.png": "/react-portfolio/static/media/Horizen.e8e32ffff3b81362893a.png",
@@ -39,10 +39,10 @@
     "static/media/fa-v4compatibility.woff2": "/react-portfolio/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
     "index.html": "/react-portfolio/index.html",
     "main.fee3379a.css.map": "/react-portfolio/static/css/main.fee3379a.css.map",
-    "main.f3a70929.js.map": "/react-portfolio/static/js/main.f3a70929.js.map"
+    "main.3d6a3b1c.js.map": "/react-portfolio/static/js/main.3d6a3b1c.js.map"
   },
   "entrypoints": [
     "static/css/main.fee3379a.css",
-    "static/js/main.f3a70929.js"
+    "static/js/main.3d6a3b1c.js"
   ]
 }
