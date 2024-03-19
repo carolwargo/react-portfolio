@@ -82,12 +82,12 @@ function Portfolio() {
             <div className="w3-card bg-white">
               <hr />
               <div className="fw-bold w3-padding-large w3-margin-bottom ">
-                <h2 className="w3-margin-top" style={{ color: "black" }}>
+                <h2 className="" style={{ color: "black" }}>
                   <Link to="#portfolio">
                     <b style={{ color: "black" }}>PORTFOLIO</b>
                   </Link>
                 </h2>
-                
+                <br />
                 {show && (
                     <Alert
                       variant="info"
@@ -96,11 +96,9 @@ function Portfolio() {
                       className="shadow"
                     >
                       <Alert.Heading>Info Alert!</Alert.Heading>
-                      <p>
-                     This menu is an accordian component.
-                        <b> Click 'X' to close.</b>
-                      
-                      <span className='text-center' style={{fontSize:'12px', color:'grey'}}> <i> *in progress</i></span>
+                      <p style={{fontSize:'12px'}}>
+                 This menu is an accordian component, and is still in-progress.
+                         <span style={{color:'grey'}}> <b> Click 'X' to close.</b></span> 
                       </p>
                     </Alert>
                   )}
