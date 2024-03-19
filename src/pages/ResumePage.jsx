@@ -7,6 +7,9 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowTrendUp, faChartBar, faMoneyCheckAlt } from '@fortawesome/free-solid-svg-icons';
+
 
 import Design from "../assets/images/Resume/Design.png";
 import VCIDE from "../assets/images/Resume/VCIDE.png";
@@ -28,7 +31,7 @@ export default function ResumePage() {
 
   return (
     <div className="resume" id="resume">
-   <div className="w3-container w3-padding-64 w3-margin-top">
+   <div className="w3-container w3-padding-48 w3-margin-top">
  
         {/**start Portfolio section */}
         
@@ -66,7 +69,7 @@ export default function ResumePage() {
         </p>
   
         <hr />
-        <div className='bg-black text-white w3-padding-48 w3-padding-large'>
+        <div className='bg-black text-white d-flex flex-column w3-padding-32 w3-padding-large'>
                 <h1 className='text-center'>
                   <b>PROFESSIONAL ACHIEVEMENTS</b>
                 </h1>
@@ -79,37 +82,48 @@ export default function ResumePage() {
         <div className="row d-flex justify-content-center align-items-center" >
         <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
-        <Accordion.Header> <span>01.</span> DIGITAL MARKETING.</Accordion.Header>
+      <Accordion.Header className="text-center">
+  <span style={{fontSize:'1rem'}} >
+    <FontAwesomeIcon icon={faArrowTrendUp} />  </span> <span style={{fontSize:'1rem'}} className="px-3"> DIGITAL MARKETING.</span>
+ 
+</Accordion.Header>
         <Accordion.Body>
         <ul className="w3-margin-top">
             <br />
-            <li className="mx-2"><strong>Challenge Faced:</strong> Presented with a fiercely competitive market environment, the objective was to craft compelling marketing campaigns aimed at enticing prospective buyers.</li>
-            <li className="mx-2"><strong>Assigned Task:</strong> The mandate involved formulating and implementing a comprehensive digital marketing strategy tailored to effectively showcase the property's unique selling propositions.</li>
-            <li className="mx-2"><strong>Strategic Action:</strong> This encompassed detailed market research to pinpoint target demographics and buyer personas. It entailed the creation of multi-channel digital campaigns leveraging social media advertising, email marketing, and search engine optimization, all strategically designed to accentuate the property's features and benefits.</li>
-            <li className="mx-2 w3-padding-bottom"><strong>Outcome Achieved:</strong> The initiatives resulted in a notable upsurge in traffic, with campaigns generating an average increase of 40%. Moreover, the majority of closed sales, approximately 96%, were attributed to leads generated through these traffic-driven campaigns.</li>
+            <li  style={{fontSize:'14px'}}><strong>Challenge Faced:</strong> Presented with a fiercely competitive market environment, the objective was to craft compelling marketing campaigns aimed at enticing prospective buyers.</li>
+            <li  style={{fontSize:'14px'}}><strong>Assigned Task:</strong> The mandate involved formulating and implementing a comprehensive digital marketing strategy tailored to effectively showcase the property's unique selling propositions.</li>
+            <li  style={{fontSize:'14px'}}><strong>Strategic Action:</strong> This encompassed detailed market research to pinpoint target demographics and buyer personas. It entailed the creation of multi-channel digital campaigns leveraging social media advertising, email marketing, and search engine optimization, all strategically designed to accentuate the property's features and benefits.</li>
+            <li  style={{fontSize:'14px'}}><strong>Outcome Achieved:</strong> The initiatives resulted in a notable upsurge in traffic, with campaigns generating an average increase of 40%. Moreover, the majority of closed sales, approximately 96%, were attributed to leads generated through these traffic-driven campaigns.</li>
           </ul>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header> <span>02. </span> LEADERSHIP & PROFIT SURGE.</Accordion.Header>
-        <Accordion.Body>
+      <Accordion.Header>
+  <span style={{fontSize:'1rem'}}>
+    <FontAwesomeIcon icon={faMoneyCheckAlt} />  </span><span style={{fontSize:'1rem'}} className="px-3"> INCREASED PROFIT.</span>
+</Accordion.Header>  
+<Accordion.Body>
         <ul className="mx-2">
-  <li><strong>Challenge Faced:</strong> Transformed neglected property with substantial rent arrears.</li>
-  <li><strong>Assigned Task:</strong> Developed a cost-effective rehab plan to boost property appeal and recover lost rental income.</li>
-  <li><strong>Strategic Action:</strong> Led as General Contractor, conducted property assessment, prioritized upgrades, and managed legalities.</li>
-  <li className="w3-padding-bottom"><strong>Outcome Achieved:</strong> Slashed project time by 25%, achieved a 15% budget surplus, leading to a 20% profit boost.</li>
+  <li style={{fontSize:'14px'}}><strong>Challenge Faced:</strong> Transformed neglected property with substantial rent arrears.</li>
+  <li style={{fontSize:'14px'}}><strong>Assigned Task:</strong> Developed a cost-effective rehab plan to boost property appeal and recover lost rental income.</li>
+  <li style={{fontSize:'14px'}}><strong>Strategic Action:</strong> Led as General Contractor, conducted property assessment, prioritized upgrades, and managed legalities.</li>
+  <li style={{fontSize:'14px'}}><strong>Outcome Achieved:</strong> Slashed project time by 25%, achieved a 15% budget surplus, leading to a 20% profit boost.</li>
 </ul>
 
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
-        <Accordion.Header><span>03.</span>TECH TRANSFORMATION.</Accordion.Header>
-        <Accordion.Body>
+      <Accordion.Header>
+  <span style={{fontSize:'1rem'}}>
+    <FontAwesomeIcon icon={faChartBar} /></span> <span style={{fontSize:'1rem'}} className="px-3"> TECH UPGRADE.</span>
+
+</Accordion.Header> 
+<Accordion.Body>
         <ul className="w3-margin-top">
-  <li className="mx-2"><strong>Challenge Faced:</strong> The challenge involved upgrading operational practices by leveraging modern technology.</li>
-  <li className="mx-2"><strong>Assigned Task:</strong> This necessitated the implementation of cutting-edge real estate software and the adoption of paperless systems.</li>
-  <li className="mx-2"><strong>Strategic Action:</strong>The outcome resulted in a notable enhancement of operational efficiency and an enriched client experience. </li>
-<li className='mx-2'><strong>Outcome Achieved:</strong>The outcome resulted in a notable enhancement of operational efficiency and an enriched client experience.</li>
+<li  style={{fontSize:'14px'}}><strong>Challenge Faced:</strong> The challenge involved upgrading operational practices by leveraging modern technology.</li>
+<li  style={{fontSize:'14px'}}><strong>Assigned Task:</strong> This necessitated the implementation of cutting-edge real estate software and the adoption of paperless systems.</li>
+<li  style={{fontSize:'14px'}}><strong>Strategic Action:</strong>The outcome resulted in a notable enhancement of operational efficiency and an enriched client experience. </li>
+<li  style={{fontSize:'14px'}}><strong>Outcome Achieved:</strong>The outcome resulted in a notable enhancement of operational efficiency and an enriched client experience.</li>
 </ul>
 
         </Accordion.Body>
@@ -121,7 +135,7 @@ export default function ResumePage() {
       
       <div className="technical-skills-div d-flex flex-column bg-black text-white w3-padding-48">
         <h1
-          className="technical-skills text-light mt-2 text-center"
+          className="technical-skills text-light text-center"
           id="technical-skills"
         >
           TECHNICAL SKILLS

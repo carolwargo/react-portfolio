@@ -56,7 +56,7 @@ function Signup() {
     };
 
     return (
-        <div className="container w3-padding-16">
+        <div className="signup" id='signup'>
             <div className="w3-container w3-content bg-white shadow">
                 <div className="w3-container w3-content w3-padding-16 px-4 border-dark">
                     <h4 className="fw-light w3-margin-top"><b>Signup Form</b></h4>

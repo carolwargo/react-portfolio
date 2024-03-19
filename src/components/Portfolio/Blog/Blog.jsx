@@ -1,7 +1,6 @@
 import React from "react";
 import WomanReading from "../../../assets/images/WomanReading.jpg";
 import Business from "../../../assets/images/About/Business.png";
-import BlogHeader from "./BlogHeader";
 import PostsShare from "./PostsShare";
 import Posts from "./Posts";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -11,7 +10,7 @@ const Blog = () => {
     <div className="blog" id="blog">
       <main >
         <div className="w3-content" style={{ maxWidth: "1400px" }}>
-          <BlogHeader />
+        
           <div className="w3-row p-2">
             {" "}
             {/*card start for bio, popular posts & tags*/}
@@ -176,7 +175,7 @@ const Blog = () => {
               {/*card end for all tags elements*/}
               {/*card end for all popular posts elements*/}
               {/*card end for all tags elements*/}
-            </div>{" "}
+            </div>
             {/*col end for bio, popular posts & tags*/}
             {/*col start for all posts iteration */}
             <div className="w3-col p-4 l8 s12">
@@ -231,24 +230,6 @@ const Blog = () => {
           {/*row end for the whole page with exception of header & footer */}
         </div>
 
-        {/** 
-        <footer className="w3-container w3-dark-grey w3-padding-32 text-center">
-          <button className="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">
-            Previous
-          </button>
-          <button className="w3-button w3-black w3-padding-large w3-margin-bottom">
-            Next »
-          </button>
-          <p
-            style={{
-              textShadow: "1px 1px 2px rgba(0, 0, 0, 2.8)",
-              color: "#FDC5E8",
-            }}
-          >
-            LOGO<span style={{ color: "#00FFFF" }}> HERE</span>
-          </p>
-        </footer>
-        */}
       </main>
     </div>
   );

@@ -69,8 +69,6 @@ style={{fontWeight:'bold'}}>
     <a href="/" className="w3-bar-item w3-button">Shoes</a>
   </div>
 
-  <a href="#footer" className="w3-bar-item w3-button w3-padding">Contact</a> 
-  <a href="#footer"  className="w3-bar-item w3-button w3-padding">Subscribe</a>
 </nav>
 {/*}Top menu on small screens */}
 <header className="w3-bar w3-top w3-hide-large w3-black w3-xlarge">

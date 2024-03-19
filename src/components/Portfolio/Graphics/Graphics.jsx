@@ -29,9 +29,9 @@ const GraphicsPage = () => {
   };
 
   return (
-    <div className="w3-container w3-content mt-4">
-    
-      <div className="row graphics-container">
+    <div className="graphics" id="graphics">
+    <div  className="w3-content">
+      <div className="row">
         {[
           { image: ProductCampaign, title: "Product Campaign" },
           { image: MidSeason, title: "Large Format" },
@@ -45,7 +45,7 @@ const GraphicsPage = () => {
             className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-bottom"
           >
 
-            <div className="graphics-body justify-content-center py-2 align-bottom">
+            <div className="graphics-body justify-content-center align-bottom">
               
               <div className="graphics-title">
                 <h5 className="py-2 text-center">{item.title}</h5>
@@ -77,6 +77,7 @@ const GraphicsPage = () => {
         altText="Enlarged Image"
         title="close"
       />
+    </div>
     </div>
   );
 };

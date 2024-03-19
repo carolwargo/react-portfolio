@@ -23,14 +23,16 @@ export default function SpyScroll() {
   const collapseSubsections = [collapseSectionA, collapseSectionB];
 
   return (
-    <div className='spy-scroll ' id='spy-scroll'>
+    <div className='spy-scroll' id='spy-scroll'>
      
-    <MDBContainer className='w3-content shadow bg-white w3-padding-32 w3-padding-large px-lg-5'>
-      <MDBRow className='d-flex justify-content-center '>
-        
-        <MDBCol md='8' className=''>
+    <MDBContainer className='bg-black text-white shadow'>
+      <MDBRow className='row d-flex '>
+     
+        <MDBCol md='8' className='w3-padding-32'>
         <div id='collapse' ref={collapseContainerRef} className='scrollspy-example' style={{ height: '500px', overflowY: 'auto' }}>
-            <section ref={collapseSection1} id='section-collapse-1'>
+           
+           <div className='container w3-padding-large'>
+            <section ref={collapseSection1} id='section-collapse-1 '>
               <h3>Section 01.</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error
@@ -109,31 +111,32 @@ export default function SpyScroll() {
               </p>
             </section>
           </div>
+          </div>
         </MDBCol>
 
-        <MDBCol md='4'className='flex-column w3-padding-large justify-content-center align-items-center'>
-          <MDBScrollspy container={collapseContainerRef}>
+        <MDBCol md='4'className='w3-padding-16 justify-content-center align-items-center bg-black border-top'>
+          <MDBScrollspy container={collapseContainerRef} className='text-white w3-padding-large'>
             <MDBScrollspyLink targetRef={collapseSection1}
-            className='py-2' style={{fontSize:'2rem'}}
+            className='py-2 text-white' style={{fontSize:'1rem'}}
             >Section 01.</MDBScrollspyLink>
             <MDBScrollspyLink targetRef={collapseSection2}
-             className='py-2' style={{fontSize:'2rem'}}
+             className='py-2 text-white' style={{fontSize:'1rem'}}
              >Section 02.</MDBScrollspyLink>
             <MDBScrollspyLink collapsible subsections={collapseSubsections} targetRef={collapseSection3}
-             className='py-2' style={{fontSize:'2rem'}}
+             className='py-2 text-white' style={{fontSize:'1rem'}}
              >
               Section 03.
             </MDBScrollspyLink>
-            <MDBScrollspySubList className='ps-3' collapsible={collapseSubsections}>
+            <MDBScrollspySubList className='ps-3 text-white' collapsible={collapseSubsections}>
               <MDBScrollspyLink targetRef={collapseSectionA}
-               className='py-2' style={{fontSize:'2rem'}}
+               className='py-2 text-white' style={{fontSize:'1rem'}}
                >Subsection A.</MDBScrollspyLink>
               <MDBScrollspyLink targetRef={collapseSectionB}
-               className='py-2' style={{fontSize:'2rem'}}
+               className='py-2 text-white' style={{fontSize:'1rem'}}
                >Subsection B.</MDBScrollspyLink>
             </MDBScrollspySubList>
             <MDBScrollspyLink targetRef={collapseSection4}
-             className='py-2' style={{fontSize:'2rem'}}
+             className='py-2 text-white' style={{fontSize:'1rem'}}
              >Section 04.</MDBScrollspyLink>
           </MDBScrollspy>
         </MDBCol>
