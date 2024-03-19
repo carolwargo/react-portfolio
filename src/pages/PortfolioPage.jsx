@@ -26,7 +26,7 @@ function Portfolio() {
     <div className="portfolio" id="portfolio">
 
 
-      <div className="w3-main w3-padding-large w3-padding-32">
+      <div className="w3-main ">
               {/**body start */}
 <div className="container w3-padding-32">
       <h1
@@ -45,14 +45,14 @@ function Portfolio() {
         </strong>
         ,
         <strong>
-        <Link to="#alerts">ALERTS</Link>
+        <Link to="#alerts"> ALERTS</Link>
         </strong>
         ,
         <strong>
           {" "}
           <Link to="#tables">TABLES</Link>{" "}
         </strong>{" "}
-        , <br></br>{" "}
+        , {" "}
         <strong>
           {" "}
           <Link to="#server">SERVER-SIDE FUNCTION</Link>{" "}
@@ -77,9 +77,9 @@ function Portfolio() {
       </div>
         <div className="row d-flex w3-justify">
           <div className="w3-col l4">
-          <div className="container  w3-padding-32 ">
+          <div className="container">
             {/*start accordian card*/}
-            <div className="w3-card w3-margin w3-margin-top bg-white">
+            <div className="w3-card w3-margin-top bg-white">
               <hr />
               <div className="fw-bold w3-padding-large w3-margin-bottom ">
                 <h2 className="w3-margin-top" style={{ color: "black" }}>
@@ -359,7 +359,7 @@ function Portfolio() {
 <hr className="w3-opacity" />
 
             {/*start card-container server code*/}
-            <div className="w3-card w3-margin w3-margin-top bg-white" id="server">
+            <div className="w3-card w3-margin-top bg-white" id="server">
               {/*start card-image for bio*/}
               <img
                 src={Dev}
@@ -405,7 +405,7 @@ function Portfolio() {
      
             {/*START SERVER SIDE CARDS 1-6*/}
             {/*1. start card-image for JATE*/}
-            <div className="w3-card w3-margin" id="text-editor">
+            <div className="w3-card" id="text-editor">
               <img
                 src={JATE}
                 alt="blog-profile"
@@ -448,7 +448,7 @@ function Portfolio() {
             </div>
             <br />
             {/*2. start card-image for Notes*/}
-            <div className="w3-card w3-margin" id="notes">
+            <div className="w3-card" id="notes">
               <img
                 src={Notes}
                 alt="blog-profile"
@@ -490,7 +490,7 @@ function Portfolio() {
               {/*end card-body for Notes*/}
             </div><br />
             {/*3. start card-image for SVG*/}
-            <div className="w3-card w3-margin" id="svg">
+            <div className="w3-card" id="svg">
               <img src={SVG} alt="blog-profile" style={{ width: "100%" }}></img>
               {/*end card-image for note-taker*/}
               {/*start card-body for SVG*/}
@@ -527,7 +527,7 @@ function Portfolio() {
               {/*end card-body for SVG*/}
             </div><br />
             {/*4. start card-image for dayplanner*/}
-            <div className="w3-card w3-margin" id="dayplanner">
+            <div className="w3-card" id="dayplanner">
               <img
                 src={Desk}
                 alt="blog-profile"
@@ -569,7 +569,7 @@ function Portfolio() {
               {/*4. end card-body for dayplanner*/}
             </div><br />
             {/*5. start card-image forREADME*/}
-            <div className="w3-card w3-margin" id="readme">
+            <div className="w3-card" id="readme">
               <img
                 src={README}
                 alt="blog-profile"
@@ -611,7 +611,7 @@ function Portfolio() {
               {/*end card-body forREADME*/}
             </div>
             {/*6. start card-image for REFACTOR*/}
-            <div className="w3-card w3-margin" id="refactor">
+            <div className="w3-card" id="refactor">
               <img
                 src={Horizen}
                 alt="blog-profile"
@@ -660,7 +660,7 @@ function Portfolio() {
           {/*Start col-8*/}
          
           <div className="w3-col l8">
-          <div className="w3-container w3-padding-24 w3-padding-large">
+          <div className="w3-container">
               {/**start forms */}
               <h4 className="w3-text-black" id="#forms">
                 FORMS.
