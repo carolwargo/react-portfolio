@@ -17,13 +17,13 @@ export default function AboutPage() {
     <div className="w3-content w3-container w3-padding-64">
         <div className="w3-content w3-container ">
           <div className="row justify-content-center align-items-center  w3-margin-top">
-            <div className="col-lg-6 w3-padding-large">
-              <h1 className="text-center fw-light"><b>ABOUT ME.</b></h1>
-              <h5 className="text-center fw-light">"I'm Carol Wargo, and welcome to my corner of the internet! Join me as I share insights into who I am professionally and the years of experience that shape what I do."</h5>
+            <div className="col-lg-6 ">
+              <h1 className=" fw-light"><b>ABOUT ME.</b></h1>
+              <h5 className=" fw-light">"I'm Carol Wargo, and welcome to my corner of the internet! Join me as I share insights into who I am professionally and the years of experience that shape what I do."</h5>
               <br />
-              <p className="text-center fw-light"><em>"My passion lies in utilizing creative design to drive innovative solutions through technology. With a distinctive blend of skills and experience, I am a seasoned full-stack software developer and UX designer deeply committed to collaboration, bringing together diverse perspectives to tackle challenges effectively. With over 20 years of experience in business management & strategic development, I bring a wealth of knowledge and expertise to every project I undertake."</em></p>
+              <p className=" fw-light"><em>"My passion lies in utilizing creative design to drive innovative solutions through technology. With a distinctive blend of skills and experience, I am a seasoned full-stack software developer and UX designer deeply committed to collaboration, bringing together diverse perspectives to tackle challenges effectively. With over 20 years of experience in business management & strategic development, I bring a wealth of knowledge and expertise to every project I undertake."</em></p>
             </div>
-            <div className="col-lg-6 w3-padding-large">
+            <div className="col-lg-6 ">
               <img src={MeWhite} className="w3-round w3-image w3-opacity w3-hover-opacity-off mx-auto d-block" alt="Me" width="500" height="333" />
             </div>
           </div>
@@ -108,13 +108,13 @@ export default function AboutPage() {
       
 
         {/* Location */}
-        <div className="w3-content w3-container w3-padding-64 w3-margin-top">
+        <div className="w3-content w3-container w3-padding-32 w3-margin-top">
           <div className="row justify-content-center align-items-center">
-            <div className="col-lg-4 w3-padding-large py-3">
+            <div className="col-lg-4">
               <h1  className='text-center'>WHERE I'M LOCATED</h1>
               <h5 className='text-center'><em>Huntingtown, Maryland!</em></h5>
             </div>
-            <div className='col-lg-8 w3-padding-large'>
+            <div className='col-lg-8 '>
               <img src={LocationView} alt="htown" className="w3-image w3-round shadow" style={{width:"100%"}} />
             </div>
         
