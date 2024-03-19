@@ -2,7 +2,7 @@ import React from "react";
 
 const TableBasic = () => {
     return (
-        <div>
+        <div className="tables" id="tables">
                <div className="w3-padding-16">
             <div className="w3-container w3-content bg-white shadow">
                 <div className="w3-container w3-content w3-padding-16 px-4 border-dark">

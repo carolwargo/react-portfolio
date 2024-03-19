@@ -48,22 +48,22 @@ export default function ResumePage() {
           Digital Resume contains{" "}
           <strong>
             {" "}
-            <Link to="#professional-achievements"> PROFESSIONAL ACHIEVEMENTS</Link>
+            <a href="#professional-achievements"> PROFESSIONAL ACHIEVEMENTS</a>
           </strong>
           ,<br></br>{" "}
           <strong>
             {" "}
-            <Link to="#technical-skills">TECHNICAL SKILLS</Link>
+            <a href="#technical-skills">TECHNICAL SKILLS</a>
           </strong>
           ,
           <strong>
             {" "}
-            <Link to="#experience">EXPERIENCE & EDUCATION</Link>{" "}
+            <a href="#experience">EXPERIENCE & EDUCATION</a>{" "}
           </strong>{" "}
           , and{" "}
           <strong>
             {" "}
-            <Link to="download">RESUME DOWNLOAD</Link>
+            <a href="download">RESUME DOWNLOAD</a>
           </strong>{" "}
           -{" "}
         </p>
@@ -313,21 +313,21 @@ export default function ResumePage() {
             <p className="text-white">DOWNLOAD A COPY OF MY RESUME</p>
            
             <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
-            <a
+  <a
     className="button text-black"
-    id="download"
     download 
     href={ResumeDownload}
   >
     <i className="fa fa-download"></i> Download Resume
   </a>
-          </button>
+</button>
+
           </div>
           </div>
           </Timeline>
         </Timeline>
-        <Link to="/portfolio#portfolio" className="w3-margin-bottom"><i className="fa fa-arrow-circle-right w3-xxxlarge" ></i></Link>
-              <p className="text-center">NEXT</p>
+        <Link to="/portfolio#portfolio" className="w3-margin-bottom text-center"><i className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'white'}}></i></Link>
+              <p className="text-center"><b>NEXT</b></p>
         </div>
       
   </div>

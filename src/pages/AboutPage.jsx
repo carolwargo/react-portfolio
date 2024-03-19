@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FaLaptopCode } from "react-icons/fa";
 import { HiOutlinePuzzlePiece } from "react-icons/hi2";
 import { AiFillDatabase } from "react-icons/ai";
@@ -15,7 +14,7 @@ export default function AboutPage() {
   return (
     <div className="about" id="about">
     <div className="w3-content w3-container w3-padding-64">
-        <div className="w3-content w3-container ">
+        <div className="w3-content w3-container">
           <div className="row justify-content-center align-items-center  w3-margin-top">
             <div className="col-lg-6 ">
               <h1 className=" fw-light"><b>ABOUT ME.</b></h1>
@@ -119,11 +118,13 @@ export default function AboutPage() {
             </div>
         
           </div>
+          <div>
           <br />
           <br />
           <p className="text-center">
-                <Link to="/resume#resume">View my resume or download a copy <HiOutlineArrowRight /></Link>
+                <a href="/resume">View my resume or download a copy <HiOutlineArrowRight /></a>
               </p>
+              </div>
         </div> 
     </div>
   );

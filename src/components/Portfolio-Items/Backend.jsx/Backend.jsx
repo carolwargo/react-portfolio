@@ -29,7 +29,7 @@ function Portfolio() {
               projects, components, and designs.
             </p>
             {/* start Forms grid */}
-            <h3 className="w3-text-black" id="#forms">
+            <h3 className="w3-text-black">
               Components.{" "}
             </h3>
             <p>
@@ -38,7 +38,7 @@ function Portfolio() {
               overall user experience of a website.
             </p>
 
-            <h4 className="w3-text-black" id="#forms">
+            <h4 className="w3-text-black" >
               Form Components.{" "}
             </h4>
             <hr className="w3-opacity" />

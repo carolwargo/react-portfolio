@@ -43,40 +43,40 @@ function Portfolio() {
         Digital Resume contains{" "}
         <strong>
           {" "}
-          <Link to="#forms">FORMS</Link>
+          <a href="#forms">FORMS</a>
         </strong>
         ,
         <strong>
-        <Link to="#alerts"> ALERTS</Link>
+        <a href="#alerts"> ALERTS</a>
         </strong>
         ,
         <br />
         <strong>
           {" "}
-          <Link to="#tables">TABLES</Link>{" "}
+          <a href="#tables">TABLES</a>{" "}
         </strong>{" "}
         , {" "}
         <strong>
           {" "}
        
-          <Link to="#server">SERVER-SIDE FUNCTION</Link>{" "}
+          <a href="#server">SERVER-SIDE FUNCTION</a>{" "}
         </strong>{" "}
         ,
         <strong>
           {" "}
-          <Link to="#graphics">GRAPHICS</Link>{" "}
+          <a href="#graphics">GRAPHICS</a>{" "}
         </strong>{" "}
         ,
         <strong>
           {" "}
-          <Link to="#spy-scroll">SPYSCROLL</Link>{" "}
+          <a href="#spy-scroll">SPYSCROLL</a>{" "}
         </strong>{" "}
         ,
        
          and{" "}
         <strong>
           {" "}
-          <Link to="#page-samples">PAGE SAMPLES</Link>
+          <a href="#page-samples">PAGE SAMPLES</a>
         </strong> .{" "}
       </p>
       <hr />
@@ -88,9 +88,9 @@ function Portfolio() {
               <hr />
               <div className="fw-bold w3-padding-large w3-margin-bottom ">
                 <h2 className="" style={{ color: "black" }}>
-                  <Link to="#portfolio">
+                  <a href="#portfolio">
                     <b style={{ color: "black" }}>PORTFOLIO</b>
-                  </Link>
+                  </a>
                 </h2>
                 <br />
                 {show && (
@@ -211,42 +211,42 @@ function Portfolio() {
                 <Accordion.Item eventKey="2" className="border-0 ">
                   <Accordion.Header>
                     <span>
-                      <Link
-                        to="#alert"
+                      <a
+                        href="#alert"
                         style={{ fontSize: "16px", color: "black" }}
                         className="fw-bold border-0 w3-hover-text-gray"
                       >
                         ALERTS
-                      </Link>
+                      </a>
                     </span>
                   </Accordion.Header>
                   <Accordion.Body className="border-0 ">
                     <p className="w3-margin-left">
-                      <Link
-                        to="#alerts"
+                      <a
+                        href="#alerts"
                         className="w3-hover-text-red"
                         style={{ color: "gray" }}
                       >
                         Without Link
-                      </Link>
+                      </a>
                     </p>
                     <p className="w3-margin-left">
-                      <Link
-                        to="#alerts"
+                      <a
+                        href="#alerts"
                         className="w3-hover-text-red"
                         style={{ color: "gray" }}
                       >
                         With Link
-                      </Link>
+                      </a>
                     </p>
                     <p className="w3-margin-left">
-                      <Link
-                        to="#alerts"
+                      <a
+                        href="#alerts"
                         className="w3-hover-text-red"
                         style={{ color: "gray" }}
                       >
                         Message
-                      </Link>
+                      </a>
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -254,33 +254,33 @@ function Portfolio() {
                 <Accordion.Item eventKey="3" className="border-0 ">
                   <Accordion.Header>
                     <span>
-                      <Link
-                        to="#forms"
+                      <a
+                        href="#forms"
                         style={{ fontSize: "16px", color: "black" }}
                         className="fw-bold border-0 w3-hover-text-gray"
                       >
                         FORMS
-                      </Link>
+                      </a>
                     </span>
                   </Accordion.Header>
                   <Accordion.Body className="border-0 ">
                     <p className="w3-margin-left">
-                      <Link
-                        to="#login"
+                      <a
+                        href="#login"
                         className="w3-hover-text-red"
                         style={{ color: "gray" }}
                       >
                         Login
-                      </Link>
+                      </a>
                     </p>
                     <p className="w3-margin-left">
-                      <Link
-                        to="#signup"
+                      <a
+                        href="#signup"
                         className="w3-hover-text-red"
                         style={{ color: "gray" }}
                       >
                         Signup
-                      </Link>
+                      </a>
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -664,8 +664,13 @@ function Portfolio() {
          
           <div className="w3-col l8">
           <div className="w3-container w3-margin-top">
+          <h3 className="w3-margin-top w3-margin-bottom"> WEB COMPONENTS</h3>
+            <p>  Web components are a set of standardized technologies that enable the creation of custom elements for web applications. Promote code reusability, maintainability, and interoperability across different web frameworks and libraries.
+         </p>
+  <hr />
+  <br />
               {/**start forms */}
-              <h4 className="w3-text-black" id="#forms">
+              <h4 className="w3-text-black" id="forms">
                 FORMS.
               </h4>
               <p className="w3-text-black">
@@ -689,7 +694,7 @@ function Portfolio() {
               {/**end forms */}
 
               {/**start alerts */}
-              <h4 className="w3-text-black w3-margin-top" id="#alert">
+              <h4 className="w3-text-black w3-margin-top" id="alerts">
                 ALERTS.
               </h4>
               <hr />
@@ -802,7 +807,7 @@ function Portfolio() {
               <br />
               {/**end alerts */}
               {/**start tabless */}
-              <h4 className="text-black w3-margin-top" id="#tables">
+           <h4 className="text-black w3-margin-top" id="tables">
                 TABLES.{" "}
               </h4>
               <hr />
@@ -835,7 +840,7 @@ function Portfolio() {
               {/**endspyscroll */}
 
               {/*start graphics*/}
-              <h4 className="w3-text-black w3-margin-top" id="#graphics">
+              <h4 className="w3-text-black w3-margin-top" id="graphics">
                 GRAPHICS.
               </h4>
               <hr className="w3-opacity" />
@@ -857,7 +862,7 @@ function Portfolio() {
         {/**end row */}
         {/**start sample pages section*/}
         <div className="w3-content w3-container w3-padding-large w3-padding-32">
-          <h4 className="w3-text-black w3-margin-top" id="#page-samples">
+          <h4 className="w3-text-black w3-margin-top" id="page-samples">
             SAMPLE WEB PAGES.
           </h4>
           <hr className="w3-opacity" />
