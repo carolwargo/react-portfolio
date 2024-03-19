@@ -26,9 +26,11 @@ function Portfolio() {
     <div className="portfolio" id="portfolio">
 
 
-      <div className="w3-main ">
+      <div className="w3-main container">
               {/**body start */}
-<div className="container w3-padding-32">
+
+        <div className="row d-flex w3-justify">
+        <div className="w3-container w3-margin-top w3-padding-64 w3-padding-large">
       <h1
         style={{
           fontSize: "4rem",
@@ -55,6 +57,7 @@ function Portfolio() {
         , {" "}
         <strong>
           {" "}
+          <br />
           <Link to="#server">SERVER-SIDE FUNCTION</Link>{" "}
         </strong>{" "}
         ,
@@ -67,7 +70,9 @@ function Portfolio() {
           {" "}
           <Link to="#spy-scroll">SPYSCROLL</Link>{" "}
         </strong>{" "}
-        , and{" "}
+        ,
+        <br />
+         and{" "}
         <strong>
           {" "}
           <Link to="#page-samples">PAGE SAMPLES</Link>
@@ -75,7 +80,6 @@ function Portfolio() {
       </p>
       <hr />
       </div>
-        <div className="row d-flex w3-justify">
           <div className="w3-col l4">
           <div className="container">
             {/*start accordian card*/}
@@ -658,7 +662,7 @@ function Portfolio() {
           {/*Start col-8*/}
          
           <div className="w3-col l8">
-          <div className="w3-container">
+          <div className="w3-container w3-margin-top">
               {/**start forms */}
               <h4 className="w3-text-black" id="#forms">
                 FORMS.
