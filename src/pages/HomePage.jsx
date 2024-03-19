@@ -36,7 +36,7 @@ function HomePage() {
               <br />
               <br />
               <br />
-              <Link to="/about" className="w3-margin-bottom"><i className="fa fa-arrow-circle-right w3-xxxlarge" ></i></Link>
+              <Link to="/about#about" className="w3-margin-bottom"><i className="fa fa-arrow-circle-right w3-xxxlarge" ></i></Link>
               <p className="text-center">NEXT</p>
             </div>
           </div>

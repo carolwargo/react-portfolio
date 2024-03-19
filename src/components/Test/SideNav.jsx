@@ -27,7 +27,7 @@ function Portfolio() {
 
   return (
     
-    <div className="portfolio" id="portfolio">
+    <div >
         {/**body start */}
         <div className="w3-content" style={{ maxWidth: "1300px" }}>
           <nav

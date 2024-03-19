@@ -326,6 +326,8 @@ export default function ResumePage() {
           </div>
           </Timeline>
         </Timeline>
+        <Link to="/portfolio#portfolio" className="w3-margin-bottom"><i className="fa fa-arrow-circle-right w3-xxxlarge" ></i></Link>
+              <p className="text-center">NEXT</p>
         </div>
       
   </div>

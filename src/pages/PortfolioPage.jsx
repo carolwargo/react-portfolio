@@ -872,7 +872,7 @@ function Portfolio() {
           </p>
           <br />
           <p className="text-center">
-            <Link to="/page-samples">
+            <Link to="/page-samples#page-samples">
               VIEW SAMPLE PAGES
               <br />
               <br />

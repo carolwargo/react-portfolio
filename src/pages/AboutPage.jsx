@@ -13,7 +13,7 @@ import '../App.css';
 
 export default function AboutPage() {
   return (
-    <div className="about-page" id="about-page">
+    <div className="about" id="about">
     <div className="w3-content w3-container w3-padding-64">
         <div className="w3-content w3-container ">
           <div className="row justify-content-center align-items-center  w3-margin-top">
@@ -122,7 +122,7 @@ export default function AboutPage() {
           <br />
           <br />
           <p className="text-center">
-                <Link to="/resume">View my resume or download a copy <HiOutlineArrowRight /></Link>
+                <Link to="/resume#resume">View my resume or download a copy <HiOutlineArrowRight /></Link>
               </p>
         </div> 
     </div>
