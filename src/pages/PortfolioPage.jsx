@@ -599,26 +599,38 @@ function Portfolio() {
           </p>
             
           <div className="row text-center">
+            {/** 
             <div className="col l4">
+              <div className="card">
           <Link to="/page-samples#page-samples">
             <i className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'black'}}></i></Link>
               <p><b>BLOG</b></p>
               </div>
+              </div>
+            */}
+            {/** 
               <div className="col l4">
+              <div className="card">
           <Link to="/page-samples#page-samples">
             <i className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'black'}}></i></Link>
               <p><b>MENU</b></p>
               </div>
+              </  div>
+            */}
+{/** 
               <div className="col l4">
+              <div className="card">
           <Link to="/page-samples#page-samples">
             <i className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'black'}}></i></Link>
               <p><b>VIEW SAMPLE PAGES</b></p>
               </div>
               </div>
+*/}
+              </div>
+          <br />
           <br />
 
-
-          <div className="text-center">
+          <div className="text-center w3-padding-16">
           <Link to="/contact#contact">
             <i className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'black'}}></i></Link>
               <p><b>GET IN TOUCH!</b></p>
