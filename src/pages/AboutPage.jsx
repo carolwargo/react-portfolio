@@ -6,7 +6,7 @@ import { BsDatabaseLock } from "react-icons/bs";
 import { GiGears } from "react-icons/gi";
 import MeWhite from '../assets/images/MeWhite.png';
 import LocationView from '../assets/images/LocationView.png';
-import { HiOutlineArrowRight } from "react-icons/hi";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../App.css';
 
@@ -18,7 +18,7 @@ export default function AboutPage() {
           <div className="row justify-content-center align-items-center  w3-margin-top">
             <div className="col-lg-6 ">
               <h1 className=" fw-light"><b>ABOUT ME.</b></h1>
-              <h5 className=" fw-light">"I'm Carol Wargo, and welcome to my corner of the internet! Join me as I share insights into who I am professionally and the years of experience that shape what I do."</h5>
+              <h5 className=" fw-light">"I'm Carol Wargo, and welcome to my corner of the internet!"</h5>
               <br />
               <p className=" fw-light"><em>"My passion lies in utilizing creative design to drive innovative solutions through technology. With a distinctive blend of skills and experience, I am a seasoned full-stack software developer and UX designer deeply committed to collaboration, bringing together diverse perspectives to tackle challenges effectively. With over 20 years of experience in business management & strategic development, I bring a wealth of knowledge and expertise to every project I undertake."</em></p>
             </div>
@@ -121,9 +121,11 @@ export default function AboutPage() {
           <div>
           <br />
           <br />
-          <p className="text-center">
-                <a href="/resume">View my resume or download a copy <HiOutlineArrowRight /></a>
-              </p>
+          <div className="text-center">
+          <Link to="/resume#resume"><i 
+          className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'black'}}></i></Link>
+              <p><b>NEXT</b></p>
+              </div>
               </div>
         </div> 
     </div>

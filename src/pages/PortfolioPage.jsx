@@ -2,7 +2,7 @@ import { useState } from "react";
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import Accordion from "react-bootstrap/Accordion";
+//import Accordion from "react-bootstrap/Accordion";
 import Dev from "../assets/images/Portfolio/Dev.png";
 import SpyScroll from "../components/Portfolio/SpyScroll/SpyScroll";
 import TableBasic from "../components/Portfolio/Tables/TableBasic";
@@ -39,6 +39,7 @@ function Portfolio() {
       >
         Portfolio.{" "}
       </h1>
+      {/**header 
       <p className="header" id="header" style={{ fontFamily: "Raleway" }}>
         Digital Resume contains{" "}
         <strong>
@@ -79,285 +80,13 @@ function Portfolio() {
           <a href="#page-samples">PAGE SAMPLES</a>
         </strong> .{" "}
       </p>
+      */}
       <hr />
       </div>
           <div className="w3-col l4">
           <div className="container">
             {/*start accordian card*/}
-            <div className="w3-card bg-white">
-              <hr />
-              <div className="fw-bold w3-padding-large w3-margin-bottom ">
-                <h2 className="" style={{ color: "black" }}>
-                  <a href="#portfolio">
-                    <b style={{ color: "black" }}>PORTFOLIO</b>
-                  </a>
-                </h2>
-                <br />
-                {show && (
-                    <Alert
-                      variant="info"
-                      onClose={() => setShow(false)}
-                      dismissible
-                      className="shadow"
-                    >
-                      <Alert.Heading>Info Alert!</Alert.Heading>
-                      <p style={{fontSize:'12px'}}>
-                 This menu is an accordian component, and is still in-progress.
-                         <span style={{color:'grey'}}> <b> Click 'X' to close.</b></span> 
-                      </p>
-                    </Alert>
-                  )}
-                  <div >
-                    {!show && (
-                      <Button
-                        onClick={() => setShow(true)}
-                        variant="light"
-                        size="lg"
-                        style={{ paddingRight: "3rem", paddingLeft: "3rem" }}
-                     className="shadow"
-                     >
-                        Show Alert
-                      </Button>
-                    )}
-                  </div>
-
-              <Accordion defaultActiveKey="0" className="border-0 ">
-                {/**start server-side */}
-                <Accordion.Item eventKey="0" className="border-0 ">
-                  <Accordion.Header>
-                    <span>
-                      <Link
-                        to="#server"
-                        style={{ fontSize: "16px", color: "black" }}
-                        className="fw-bold border-0 w3-hover-text-gray"
-                      >
-                        SERVER-SIDE CODE
-                      </Link>
-                    </span>
-                  </Accordion.Header>
-                  <Accordion.Body className="border-0 ">
-                    <p className="w3-margin-left">
-                      <Link
-                        to="#text-editor"
-                        className="w3-hover-text-red"
-                        style={{ color: "gray" }}
-                      >
-                        Text Editor
-                      </Link>
-                    </p>
-                    <p className="w3-margin-left">
-                      <Link
-                        to="#notes"
-                        className="w3-hover-text-red"
-                        style={{ color: "gray" }}
-                      >
-                        Note Taker
-                      </Link>
-                    </p>
-                    <p className="w3-margin-left">
-                      <Link
-                        to="#svg"
-                        className="w3-hover-text-red"
-                        style={{ color: "gray" }}
-                      >
-                        SVG Generator
-                      </Link>
-                    </p>
-                    <p className="w3-margin-left">
-                      <Link
-                        to="#dayplanner"
-                        className="w3-hover-text-red"
-                        style={{ color: "gray" }}
-                      >
-                        Day-Planner
-                      </Link>
-                    </p>
-                    <p className="w3-margin-left">
-                      <Link
-                        to="#README"
-                        className="w3-hover-text-red"
-                        style={{ color: "gray" }}
-                      >
-                        README Generator
-                      </Link>
-                    </p>
-                  </Accordion.Body>
-                </Accordion.Item>
-                {/**end server-side */}
-
-                {/**start refactor */}
-                <Accordion.Item
-                  eventKey="1"
-                  
-                  className="border-0 mt-3"
-                >
-                  <p className="w3-margin-left">
-                    <Link
-                      to="#refactor"
-                      style={{
-                        fontSize: "16px",
-                        color: "black",
-                        marginLeft: "8px",
-                      }}
-                      className="fw-bold border-0 w3-hover-text-gray"
-                    >
-                      ACCESSIBILITY REFACTOR
-                    </Link>
-                  </p>
-                </Accordion.Item>
-                {/**end refactor */}
-                <hr />
-                {/**start alerts */}
-                <Accordion.Item eventKey="2" className="border-0 ">
-                  <Accordion.Header>
-                    <span>
-                      <a
-                        href="#alert"
-                        style={{ fontSize: "16px", color: "black" }}
-                        className="fw-bold border-0 w3-hover-text-gray"
-                      >
-                        ALERTS
-                      </a>
-                    </span>
-                  </Accordion.Header>
-                  <Accordion.Body className="border-0 ">
-                    <p className="w3-margin-left">
-                      <a
-                        href="#alerts"
-                        className="w3-hover-text-red"
-                        style={{ color: "gray" }}
-                      >
-                        Without Link
-                      </a>
-                    </p>
-                    <p className="w3-margin-left">
-                      <a
-                        href="#alerts"
-                        className="w3-hover-text-red"
-                        style={{ color: "gray" }}
-                      >
-                        With Link
-                      </a>
-                    </p>
-                    <p className="w3-margin-left">
-                      <a
-                        href="#alerts"
-                        className="w3-hover-text-red"
-                        style={{ color: "gray" }}
-                      >
-                        Message
-                      </a>
-                    </p>
-                  </Accordion.Body>
-                </Accordion.Item>
-
-                <Accordion.Item eventKey="3" className="border-0 ">
-                  <Accordion.Header>
-                    <span>
-                      <a
-                        href="#forms"
-                        style={{ fontSize: "16px", color: "black" }}
-                        className="fw-bold border-0 w3-hover-text-gray"
-                      >
-                        FORMS
-                      </a>
-                    </span>
-                  </Accordion.Header>
-                  <Accordion.Body className="border-0 ">
-                    <p className="w3-margin-left">
-                      <a
-                        href="#login"
-                        className="w3-hover-text-red"
-                        style={{ color: "gray" }}
-                      >
-                        Login
-                      </a>
-                    </p>
-                    <p className="w3-margin-left">
-                      <a
-                        href="#signup"
-                        className="w3-hover-text-red"
-                        style={{ color: "gray" }}
-                      >
-                        Signup
-                      </a>
-                    </p>
-                  </Accordion.Body>
-                </Accordion.Item>
-
-                <Accordion.Item
-                  eventKey="4"
-                  
-                  className="border-0 mt-3"
-                >
-                  <p className="w3-margin-left ">
-                    <Link to="#refactor" style={{ fontSize: "16px" }}>
-                      <b
-                        className="'fw-bold border-0 w3-hover-text-gray "
-                        style={{ marginLeft: "8px", color: "black" }}
-                      >
-                        TABLE
-                      </b>
-                    </Link>
-                  </p>
-                </Accordion.Item>
-
-                <Accordion.Item
-                  eventKey="5"
-                  
-                  className="border-0 mt-4"
-                >
-                  <p className="w3-margin-left">
-                    <Link
-                      to="#spyscroll"
-                      style={{
-                        fontSize: "16px",
-                        color: "black",
-                        marginLeft: "8px",
-                      }}
-                      className="fw-bold border-0 w3-hover-text-gray"
-                    >
-                      SPYSCROLL
-                    </Link>
-                  </p>
-                </Accordion.Item>
-
-                <Accordion.Item
-                  eventKey="6"
-                  
-                  className="border-0 mt-4"
-                >
-                  <p className="w3-margin-left">
-                    <Link
-                      to="#graphics"
-                      style={{
-                        fontSize: "16px",
-                        color: "black",
-                        marginLeft: "8px",
-                      }}
-                      className="fw-bold border-0 w3-hover-text-gray"
-                    >
-                      GRAPHICS
-                    </Link>
-                  </p>
-                </Accordion.Item>
-
-                <Accordion.Item eventKey="7" className="border-0 ">
-                  <Accordion.Header>
-                    <span>
-                      <Link
-                        to="#sample-pages"
-                        style={{ fontSize: "16px", color: "black" }}
-                        className="fw-bold border-0 w3-hover-text-gray"
-                      >
-                        SAMPLE PAGES
-                      </Link>
-                    </span>
-                  </Accordion.Header>
-                </Accordion.Item>
-              </Accordion>
-            </div>
-            </div>
+            
             {/*end accordian card*/}
 <hr className="w3-opacity" />
 
@@ -490,7 +219,6 @@ function Portfolio() {
                   </button>
                 </div>
               </div>
-              {/*end card-body for Notes*/}
             </div><br />
             {/*3. start card-image for SVG*/}
             <div className="w3-card" id="svg">
@@ -529,7 +257,7 @@ function Portfolio() {
               </div>
               {/*end card-body for SVG*/}
             </div><br />
-            {/*4. start card-image for dayplanner*/}
+            {/*4. start card for dayplanner*/}
             <div className="w3-card" id="dayplanner">
               <img
                 src={Desk}
@@ -537,8 +265,6 @@ function Portfolio() {
                 style={{ width: "100%" }}
                 className="rounded-top w3-opacity w3-hover-opacity-off"
               ></img>
-              {/*end card-image for dayplanner*/}
-              {/*start card-body for dayplanner*/}
               <div className="w3-container w3-white justify-content-center w3-center">
                 <br></br>
                 <h5
@@ -571,7 +297,7 @@ function Portfolio() {
               </div>
               {/*4. end card-body for dayplanner*/}
             </div><br />
-            {/*5. start card-image forREADME*/}
+            {/*5. start card for README*/}
             <div className="w3-card" id="readme">
               <img
                 src={README}
@@ -579,8 +305,6 @@ function Portfolio() {
                 style={{ width: "100%" }}
                 className="rounded-top w3-opacity w3-hover-opacity-off"
               ></img>
-              {/*end card-image for README*/}
-              {/*start card-body for readme*/}
               <div className="w3-container w3-white justify-content-center w3-center">
                 <br></br>
                 <h5
@@ -611,8 +335,8 @@ function Portfolio() {
                   </button>
                 </div>
               </div>
-              {/*end card-body forREADME*/}
             </div>
+            <br />
             {/*6. start card-image for REFACTOR*/}
             <div className="w3-card" id="refactor">
               <img
@@ -621,8 +345,6 @@ function Portfolio() {
                 style={{ width: "100%" }}
                 className="rounded-top w3-opacity w3-hover-opacity-off"
               ></img>
-              {/*end card-image for refactor*/}
-              {/*start card-body for refactor*/}
               <div className="w3-container w3-white justify-content-center w3-center">
                 <br></br>
                 <h5
@@ -663,7 +385,7 @@ function Portfolio() {
           {/*Start col-8*/}
          
           <div className="w3-col l8">
-          <div className="w3-container w3-margin-top">
+          <div className="w3-content w3-margin-top">
           <h3 className="w3-margin-top w3-margin-bottom"> WEB COMPONENTS</h3>
             <p>  Web components are a set of standardized technologies that enable the creation of custom elements for web applications. Promote code reusability, maintainability, and interoperability across different web frameworks and libraries.
          </p>
@@ -875,15 +597,32 @@ function Portfolio() {
               "Sample pages will be available soon. Thanks for your patience."{" "}
             </i>
           </p>
+            
+          <div className="row text-center">
+            <div className="col l4">
+          <Link to="/page-samples#page-samples">
+            <i className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'black'}}></i></Link>
+              <p><b>BLOG</b></p>
+              </div>
+              <div className="col l4">
+          <Link to="/page-samples#page-samples">
+            <i className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'black'}}></i></Link>
+              <p><b>MENU</b></p>
+              </div>
+              <div className="col l4">
+          <Link to="/page-samples#page-samples">
+            <i className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'black'}}></i></Link>
+              <p><b>VIEW SAMPLE PAGES</b></p>
+              </div>
+              </div>
           <br />
-          <p className="text-center">
-            <Link to="/page-samples#page-samples">
-              VIEW SAMPLE PAGES
-              <br />
-              <br />
-              <i className="fa fa-arrow-circle-right w3-xlarge"></i>
-            </Link>
-          </p>
+
+
+          <div className="text-center">
+          <Link to="/contact#contact">
+            <i className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'black'}}></i></Link>
+              <p><b>GET IN TOUCH!</b></p>
+              </div>
         </div>
         {/**end sample pages section*/}
       </div>

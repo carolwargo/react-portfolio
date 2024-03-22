@@ -17,7 +17,7 @@ function HomePage() {
             />
           </div>
           <div className="col-lg-6">
-            <div className="w3-container text-center" style={{ padding: "100px 16px" }}>
+            <div className="w3-container text-center" style={{ padding: "80px 16px" }}>
               <h1 className="w3-jumbo">
                 <b>Carol Wargo</b>
               </h1>
@@ -35,9 +35,12 @@ function HomePage() {
               <br />
               <br />
               <br />
-              <br />
-              <Link to="/about#about" className="w3-margin-bottom"><i className="fa fa-arrow-circle-right w3-xxxlarge" ></i></Link>
-              <p className="text-center">NEXT</p>
+             
+              <div className="text-center">
+          <Link to="/about#about"><i 
+          className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'black'}}></i></Link>
+              <p><b>NEXT</b></p>
+              </div>
             </div>
           </div>
         </div>

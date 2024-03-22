@@ -24,7 +24,7 @@ const Posts = () => {
     {" "}
     {/*col start for all posts */}
     {blogPosts.map((post) => (
-      <div key={post.id} className="w3-card-4 w3-margin w3-white m-4">
+      <div key={post.id} className="w3-container-4 w3-black">
         <img
           src={post.imageUrl}
           alt="blog-post"

@@ -77,7 +77,7 @@ const FullPosts = () => {
      
               {/*col start for all posts */}
               {blogPosts.map((post) => (
-                <div key={post.id} className="w3-card-4 w3-margin w3-white m-4">
+                <div key={post.id} className="w3-container w3-white">
                   <img
                     src={post.imageUrl}
                     alt="blog-post"
@@ -105,42 +105,30 @@ const FullPosts = () => {
                     </p>
                   </div>
 
-                  {/* end entries card title & title description */}
+                  {/* end entries containeritle & title description */}
 
-                  {/* start entries card content container*/}
-                  <div className="w3-container m-2">
+                  {/* start entries containerontent container*/}
+                  <div className="w3-container ">
                     <p>{post.content}</p>
-                    {/* start entries card content container ROW*/}
+                    {/* start entries containerontent container ROW*/}
                     <div className="w3-row">
-                      {/* start entries card content container COL BUT*/}
-                      <div className="w3-col p-4 m12 s12">
+                      {/* start entries containerontent container COL BUT*/}
+                      <div className="w3-col m12 s12">
                        
                           <button className="w3-button w3-padding-large w3-white w3-border">
                             <b>READ MORE »</b>
                           </button>
                        
                       </div>
-                      {/* start entries card content container COL COMMENTS*/}
+                      {/* start entries containerontent container COL COMMENTS*/}
                     </div>
-                    {/* end entries card content container ROW*/}
+                    {/* end entries containerontent container ROW*/}
                   </div>
-                  {/* end entries card content container*/}
+                  {/* end entries containerontent container*/}
                 </div>
               ))}
               {/*col end for posts iteration */}
-              <footer className="w3-container w3-dark-grey w3-padding-32 text-center">
-          <button className="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">
-            Previous
-          </button>
-          <button className="w3-button w3-black w3-padding-large w3-margin-bottom">
-            Next »
-          </button>
-          <p  style={{
-                  textShadow: "1px 1px 2px rgba(0, 0, 0, 2.8)",
-                  color: "#FDC5E8",
-                }}>2<span style={{color: '#00FFFF'}}>FACE</span>
-          </p>
-        </footer>
+
     </div>
   );
 };

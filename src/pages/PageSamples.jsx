@@ -4,11 +4,10 @@ function PageSamples() {
 
     return (
     <div className="page-samples" id="page-samples">
-        <div className='w3-padding-large w3-padding-64 w3-margin-top' >
+        <div className='w3-margin-top w3-padding-32' >
         <div className="blog" id="blog">
         <Blog/>
         </div>
-        <h1 className='text-center'>MORE TO COME</h1>
         </div>
         </div>
     );

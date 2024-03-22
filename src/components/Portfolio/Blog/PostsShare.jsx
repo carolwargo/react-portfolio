@@ -34,7 +34,7 @@ const Posts = () => {
     {" "}
     {/*col start for all posts */}
     {blogPosts.map((post) => (
-      <div key={post.id} className="w3-card-4 w3-margin w3-black m-4">
+      <div key={post.id} className="w3-container-4 mt-3 w3-black">
         <img
           src={post.imageUrl}
           alt="blog-post"
@@ -59,11 +59,11 @@ const Posts = () => {
           </p>
         </div>
 
-        {/* start entries card content container*/}
+        {/* start entries container content container*/}
         <div className="w3-container">
           <p>{post.content}</p>
        
-          {/* start entries card content container ROW*/}
+          {/* start entries container content container ROW*/}
        
 
 
@@ -77,45 +77,45 @@ const Posts = () => {
             </h6>
 
             <div className="mt-3">
-    <span className="">
+      <span className="mx-1">
         <TwitterShareButton url={window.location.href} title={post.title}>
-            <div className="w3-button btn btn-xs text-white bg-white rounded">
-                <FaTwitter style={{ color: "black" }} />
-            </div>
+          <div className="btn btn-xs" style={{ backgroundColor: "white", padding: "5px", borderRadius: "50%" }}>
+            <FaTwitter style={{ color: "black", fontSize: "16px" }} />
+          </div>
         </TwitterShareButton>{" "}
         {/* end Twitter Share Button */}
-    </span>
-    <span className="mx-1">
+      </span>
+      <span className="mx-1">
         {/* start Facebook Share Button */}
         <FacebookShareButton url={window.location.href} quote={post.title}>
-            <div className="w3-button btn btn-xs text-white bg-primary rounded">
-                <FaFacebook />
-            </div>
+          <div className="btn btn-xs" style={{ backgroundColor: "#007bff", padding: "5px", borderRadius: "50%" }}>
+            <FaFacebook style={{ color: "white", fontSize: "16px" }} />
+          </div>
         </FacebookShareButton>{" "}
         {/*end Facebook Share Button */}
-    </span>
-    <span className="mx-1">
+      </span>
+      <span className="mx-1">
         {/* start Pinterest Share Button */}
         <PinterestShareButton url={window.location.href} media={post.imageUrl} description={post.title}>
-            <div className="w3-button btn btn-xs text-white rounded" style={{ backgroundColor: "red" }}>
-                <FaPinterest style={{ color: "white" }} />
-            </div>
+          <div className="btn btn-xs" style={{ backgroundColor: "red", padding: "5px", borderRadius: "50%" }}>
+            <FaPinterest style={{ color: "white", fontSize: "16px" }} />
+          </div>
         </PinterestShareButton>{" "}
         {/* end Pinterest Share Button */}
-    </span>
-    <span className="mx-1">
+      </span>
+      <span className="mx-1">
         {/* start Github Button */}
-        <button className="w3-button btn btn-xs text-white rounded" style={{ backgroundColor: "#800080" }}>
-            <FaGithub style={{ color: "white" }} />
+        <button className="btn btn-xs" style={{ backgroundColor: "#800080", padding: "5px", borderRadius: "50%" }}>
+          <FaGithub style={{ color: "white", fontSize: "16px" }} />
         </button>
-    </span>
-</div>
+      </span>
+    </div>
 
     </div>
 </div>
           </div>
           </div>
-        {/* end entries card content container*/}
+        {/* end entries container content container*/}
       </div>
     ))}
        

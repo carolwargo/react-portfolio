@@ -7,8 +7,8 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowTrendUp, faChartBar, faMoneyCheckAlt } from '@fortawesome/free-solid-svg-icons';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { faArrowTrendUp, faChartBar, faMoneyCheckAlt } from '@fortawesome/free-solid-svg-icons';
 
 
 import Design from "../assets/images/Resume/Design.png";
@@ -21,8 +21,7 @@ import Package from "../assets/images/Resume/Package.png";
 import BuildTest from "../assets/images/Resume/BuildTest.png";
 import APIQ from "../assets/images/Resume/APIQ.png";
 import ResumeDownload from "../assets/ResumeDownload.pdf";
-
-import Accordion from 'react-bootstrap/Accordion';
+//import Accordion from 'react-bootstrap/Accordion';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
@@ -31,11 +30,13 @@ export default function ResumePage() {
 
   return (
     <div className="resume" id="resume">
-   <div className="w3-container w3-padding-48 w3-margin-top">
+   <div className="w3-container w3-margin-top w3-padding-16">
  
         {/**start Portfolio section */}
-        
-        <h1
+        <br />
+        <br />
+        <br />
+        <h1 className="text-center"
           style={{
             fontSize: "4rem",
             textShadow: "0px 0px 14px #00ffff",
@@ -44,13 +45,7 @@ export default function ResumePage() {
           RESUME{" "}
         </h1>
 
-        <p className="header" id="header" style={{ fontFamily: "Raleway" }}>
-          Digital Resume contains{" "}
-          <strong>
-            {" "}
-            <a href="#professional-achievements"> PROFESSIONAL ACHIEVEMENTS</a>
-          </strong>
-          ,<br></br>{" "}
+        <p className='text-center' style={{ fontFamily: "Raleway" }}>
           <strong>
             {" "}
             <a href="#technical-skills">TECHNICAL SKILLS</a>
@@ -58,18 +53,18 @@ export default function ResumePage() {
           ,
           <strong>
             {" "}
-            <a href="#experience">EXPERIENCE & EDUCATION</a>{" "}
+            <a href="#experience"> EDUCATION</a>{" "}
           </strong>{" "}
           , and{" "}
           <strong>
             {" "}
             <a href="download">RESUME DOWNLOAD</a>
           </strong>{" "}
-          -{" "}
         </p>
-  
-        <hr />
-        <div className='bg-black text-white d-flex flex-column w3-padding-32 w3-padding-large'>
+    {/** 
+        <div className='w3-container w3-black w3-padding-32'>
+        <div className="row d-flex justify-content-center align-items-center" >
+        <div>
                 <h1 className='text-center'>
                   <b>PROFESSIONAL ACHIEVEMENTS</b>
                 </h1>
@@ -77,16 +72,14 @@ export default function ResumePage() {
                   Discover some of my key accomplishments. Click on the
                   respective buttons for more details.
                 </p>
-                </div>
-        <div className='w3-container w3-content w3-padding-32'>
-        <div className="row d-flex justify-content-center align-items-center" >
+               
+        <div className="w3-col l4">
         <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
       <Accordion.Header className="text-center">
   <span style={{fontSize:'1rem'}} >
-    <FontAwesomeIcon icon={faArrowTrendUp} />  </span> <span style={{fontSize:'1rem'}} className="px-3"> DIGITAL MARKETING.</span>
- 
-</Accordion.Header>
+    <FontAwesomeIcon icon={faArrowTrendUp} />  </span> <span style={{fontSize:'1rem'}} > DIGITAL MARKETING.</span>
+    </Accordion.Header>
         <Accordion.Body>
         <ul className="w3-margin-top">
             <br />
@@ -97,10 +90,15 @@ export default function ResumePage() {
           </ul>
         </Accordion.Body>
       </Accordion.Item>
+    </Accordion>
+        </div>
+
+        <div className="w3-col l4">   
+        <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="1">
       <Accordion.Header>
   <span style={{fontSize:'1rem'}}>
-    <FontAwesomeIcon icon={faMoneyCheckAlt} />  </span><span style={{fontSize:'1rem'}} className="px-3"> INCREASED PROFIT.</span>
+    <FontAwesomeIcon icon={faMoneyCheckAlt} />  </span><span style={{fontSize:'1rem'}} > INCREASED PROFIT.</span>
 </Accordion.Header>  
 <Accordion.Body>
         <ul className="mx-2">
@@ -109,13 +107,17 @@ export default function ResumePage() {
   <li style={{fontSize:'14px'}}><strong>Strategic Action:</strong> Led as General Contractor, conducted property assessment, prioritized upgrades, and managed legalities.</li>
   <li style={{fontSize:'14px'}}><strong>Outcome Achieved:</strong> Slashed project time by 25%, achieved a 15% budget surplus, leading to a 20% profit boost.</li>
 </ul>
-
         </Accordion.Body>
       </Accordion.Item>
+    </Accordion>
+        </div>
+
+        <div className="w3-col l4">
+        <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="2">
       <Accordion.Header>
   <span style={{fontSize:'1rem'}}>
-    <FontAwesomeIcon icon={faChartBar} /></span> <span style={{fontSize:'1rem'}} className="px-3"> TECH UPGRADE.</span>
+    <FontAwesomeIcon icon={faChartBar} /></span> <span style={{fontSize:'1rem'}} > TECH UPGRADE.</span>
 
 </Accordion.Header> 
 <Accordion.Body>
@@ -129,11 +131,15 @@ export default function ResumePage() {
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
+        </div>
+        </div>
           </div>
         </div>
+        */}
         </div>
       
       <div className="technical-skills-div d-flex flex-column bg-black text-white w3-padding-48">
+        <br />
         <h1
           className="technical-skills text-light text-center"
           id="technical-skills"
