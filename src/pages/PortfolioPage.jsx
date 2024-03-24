@@ -1,10 +1,6 @@
-import { useState } from "react";
+import React from "react";
 import Alert from "react-bootstrap/Alert";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-//import Accordion from "react-bootstrap/Accordion";
-import Dev from "../assets/images/Portfolio/Dev.png";
-import SpyScroll from "../components/Portfolio/SpyScroll/SpyScroll";
 import TableBasic from "../components/Portfolio/Tables/TableBasic";
 import JATE from "../assets/images/Portfolio/JATE.png";
 import Horizen from "../assets/images/Portfolio/Horizen.png";
@@ -20,7 +16,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function Portfolio() {
-  const [show, setShow] = useState(true);
 
   return (
     <div className="portfolio" id="portfolio">
@@ -37,9 +32,8 @@ function Portfolio() {
           textShadow: "0px 0px 14px #00ffff",
         }}
       >
-        Portfolio.{" "}
+       <b>CW</b>Portfolio.{" "}
       </h1>
-      {/**header 
       <p className="header" id="header" style={{ fontFamily: "Raleway" }}>
         Digital Resume contains{" "}
         <strong>
@@ -80,26 +74,14 @@ function Portfolio() {
           <a href="#page-samples">PAGE SAMPLES</a>
         </strong> .{" "}
       </p>
-      */}
+    
       <hr />
       </div>
           <div className="w3-col l4">
           <div className="container">
-            {/*start accordian card*/}
-            
-            {/*end accordian card*/}
-<hr className="w3-opacity" />
-
             {/*start card-container server code*/}
             <div className="w3-card w3-margin-top bg-white" id="server">
-              {/*start card-image for bio*/}
-              <img
-                src={Dev}
-                alt="blog-profile"
-                style={{ width: "100%" }}
-                className="rounded-top w3-hover-opacity"
-              ></img>
-              {/*end card-image for bio*/}
+          
               {/*start card-body for bio*/}
               <div className="w3-container w3-white justify-content-center">
                 <br></br>
@@ -110,8 +92,9 @@ function Portfolio() {
                 >
                   <b>SERVER-SIDE APPS</b>
                 </h4>
+                <hr />
                 <p
-                  className="mb-3 fw-light w3-padding-16"
+                  className="mb-3 fw-light w3-padding-8"
                   style={{ fontSize: "14px" }}
                 >
                   Server-side functions are a part of the backend architecture
@@ -415,116 +398,22 @@ function Portfolio() {
               <br />
               {/**end forms */}
 
-              {/**start alerts */}
-              <h4 className="w3-text-black w3-margin-top" id="alerts">
-                ALERTS.
-              </h4>
+         
+            <br />
+            <h4 id="alerts">ALERTS.</h4>
               <hr />
-              <p className="mb-0 w3-hover-opacity w3-margin-bottom">
+<Alert variant="info">
+                    <Alert.Heading> <h4 id="alerts">THIS IS AN ALERT.</h4> </Alert.Heading>
+              <hr />
+                    <p className="mb-0 w3-hover-opacity w3-margin-bottom">
                   Alerts are designed to be attention-grabbing, often with
                   prominent colors, icons, and text formatting to ensure users
-                  notice them. Portfolio Menu is an example of an accordion
-                  element.
+                  notice them.
               </p>
-              {/**without link */}
-            <br />
-              <div className="row">
-               
-                <div className="col-md-6">
-                  {[
-                    "primary alert displays critical info",
-                    "secondary alert displays less critcal info",
-                    "light alert displays non-critical info",
-                    "dark alert displays non-critical info",
-                  ].map((variant) => (
-                    <Alert key={variant} variant={variant}>
-                      {variant}!
-                    </Alert>
-                  ))}
-
-                  {show && (
-                    <Alert
-                      variant="danger"
-                      onClose={() => setShow(false)}
-                      dismissible
-                    >
-                      <Alert.Heading>Woah, danger!</Alert.Heading>
-                      <p>
-                        {" "}
-                        Red alert indicates potentially negative action.
-                        Displaying heading, alert message, and 'X' in the right
-                        corner.
-                        <b> Click 'X' to see function IN REVERSE.</b>
-                      </p>
-                    </Alert>
-                  )}
-                  <div className="text-center ">
-                    {!show && (
-                      <Button
-                        onClick={() => setShow(true)}
-                        variant="danger"
-                        size="lg"
-                        style={{ paddingRight: "6rem", paddingLeft: "6rem" }}
-                      >
-                        Show Alert
-                      </Button>
-                    )}
-                  </div>
-                </div>
-
-                <div className="col-md-6">
-                  {["warning alert displays a potential issue"].map(
-                    (variant) => (
-                      <Alert key={variant} variant={variant}>
-                        {variant} with{" "}
-                        <Alert.Link href="#">Example link</Alert.Link>. to go
-                        somewhere.
-                      </Alert>
-                    )
-                  )}
-
-                  <Alert variant="success">
-                    <Alert.Heading>Success!.</Alert.Heading>
-                    <p>
-                      You did it. Comfirmation of succesfully completing a task.
-                    </p>
                     <hr />
-                    <p className="mb-0">Green indicates success.</p>
+                    <p>Color indicates info alert.</p>
                   </Alert>
-
-                  <Alert show={show} variant="info">
-                    <Alert.Heading>Info Alert</Alert.Heading>
-                    <p>
-                      Alert displays heading, alert message, and button in the
-                      right corner.
-                      <b> Click "Close Me" to see function IN REVERSE.</b>
-                    </p>
-                    <div className="d-flex justify-content-end">
-                      <Button
-                        onClick={() => setShow(false)}
-                        variant="info"
-                        size="lg"
-                        style={{ paddingRight: "6rem", paddingLeft: "6rem" }}
-                      >
-                        Close me
-                      </Button>
-                    </div>
-                  </Alert>
-                  <div className="text-center align-items-center">
-                    {!show && (
-                      <Button
-                        onClick={() => setShow(true)}
-                        variant="info"
-                        size="lg"
-                        style={{ paddingRight: "6rem", paddingLeft: "6rem" }}
-                      >
-                        Show Alert
-                      </Button>
-                    )}
                 
-                </div>
-                </div>
-              </div>
               <br />
               <br />
               {/**end alerts */}
@@ -539,24 +428,6 @@ function Portfolio() {
                 as product listings, pricing tables, or data summaries.
               </p>
               <TableBasic />
-              <br />
-              <br />
-              {/**end tabless */}
-              {/**start spyscroll */}
-              <h4 className="w3-text-black w3-margin-top" id="#spy-scroll">
-                SPYSCROLL.
-              </h4>
-              <hr className="w3-opacity" />
-              <p>
-                SpyScroll is a popular technique used in web development to
-                enhance user navigation and improve the user experience. It
-                involves synchronizing the navigation menu with the scroll
-                position on the page. As the user scrolls through different
-                sections of a webpage, the corresponding navigation menu items
-                are highlighted or activated, indicating the user's current
-                position on the page.
-              </p>
-              <SpyScroll />
               <br />
               <br />
               {/**endspyscroll */}

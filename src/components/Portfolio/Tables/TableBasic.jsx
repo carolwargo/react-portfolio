@@ -1,46 +1,74 @@
 import React from "react";
+import { Table } from "react-bootstrap";
+
 
 const TableBasic = () => {
     return (
         <div className="tables" id="tables">
-               <div className="w3-padding-16">
-            <div className="w3-container w3-content bg-white shadow">
-                <div className="w3-container w3-content w3-padding-16 px-4 border-dark">
-                    <h4 className="fw-light w3-margin-top"><b>Basic Table</b></h4>
-        <table className="table">
+                    <h5 className="fw-light w3-margin-top text-info"><b>Basic Table</b></h5>
+                    <Table striped bordered hover>
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col"><b>#</b></th>
+      <th scope="col"><b>First Name</b></th>
+      <th scope="col"><b>Last Name</b></th>
+      <th scope="col"><b>Twitter Handle</b></th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td>Abby</td>
+      <td>Andrews</td>
+      <td>@abby</td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <td>Brandy</td>
+      <td>Brown</td>
+      <td>@brownbrandy</td>
     </tr>
     <tr>
   <th scope="row">3</th>
-  <td colSpan="2">Larry the Bird</td>
-  <td>@twitter</td>
+  <td colSpan="2">Colin Clark</td>
+  <td>@clark</td>
 </tr>
 
   </tbody>
-</table>
+</Table>
+
+<h5 className="fw-light w3-margin-top text-info"><b>Dark Striped Variant</b></h5>
+<Table striped bordered hover variant="dark">
+  <thead>
+    <tr>
+      <th scope="col"><b>#</b></th>
+      <th scope="col"><b>First Name</b></th>
+      <th scope="col"><b>Last Name</b></th>
+      <th scope="col"><b>Twitter Handle</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Abby</td>
+      <td>Andrews</td>
+      <td>@abby</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Brandy</td>
+      <td>Brown</td>
+      <td>@brownbrandy</td>
+    </tr>
+    <tr>
+  <th scope="row">3</th>
+  <td colSpan="2">Colin Clark</td>
+  <td>@clark</td>
+</tr>
+
+  </tbody>
+</Table>
         </div>
-    </div>
-</div>
-</div>
     );
     };
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CV from "../components/Resume/CV";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -21,8 +22,6 @@ import Package from "../assets/images/Resume/Package.png";
 import BuildTest from "../assets/images/Resume/BuildTest.png";
 import APIQ from "../assets/images/Resume/APIQ.png";
 import ResumeDownload from "../assets/ResumeDownload.pdf";
-//import Accordion from 'react-bootstrap/Accordion';
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 
@@ -32,18 +31,10 @@ export default function ResumePage() {
     <div className="resume" id="resume">
    <div className="w3-container w3-margin-top w3-padding-16">
  
-        {/**start Portfolio section */}
+        {/**start Portfolio section 
         <br />
-        <br />
-        <br />
-        <h1 className="text-center"
-          style={{
-            fontSize: "4rem",
-            textShadow: "0px 0px 14px #00ffff",
-          }}
-        >
-          RESUME{" "}
-        </h1>
+     
+      
 
         <p className='text-center' style={{ fontFamily: "Raleway" }}>
           <strong>
@@ -61,84 +52,13 @@ export default function ResumePage() {
             <a href="download">RESUME DOWNLOAD</a>
           </strong>{" "}
         </p>
-    {/** 
-        <div className='w3-container w3-black w3-padding-32'>
-        <div className="row d-flex justify-content-center align-items-center" >
-        <div>
-                <h1 className='text-center'>
-                  <b>PROFESSIONAL ACHIEVEMENTS</b>
-                </h1>
-                <p className='text-center'>
-                  Discover some of my key accomplishments. Click on the
-                  respective buttons for more details.
-                </p>
-               
-        <div className="w3-col l4">
-        <Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
-      <Accordion.Header className="text-center">
-  <span style={{fontSize:'1rem'}} >
-    <FontAwesomeIcon icon={faArrowTrendUp} />  </span> <span style={{fontSize:'1rem'}} > DIGITAL MARKETING.</span>
-    </Accordion.Header>
-        <Accordion.Body>
-        <ul className="w3-margin-top">
-            <br />
-            <li  style={{fontSize:'14px'}}><strong>Challenge Faced:</strong> Presented with a fiercely competitive market environment, the objective was to craft compelling marketing campaigns aimed at enticing prospective buyers.</li>
-            <li  style={{fontSize:'14px'}}><strong>Assigned Task:</strong> The mandate involved formulating and implementing a comprehensive digital marketing strategy tailored to effectively showcase the property's unique selling propositions.</li>
-            <li  style={{fontSize:'14px'}}><strong>Strategic Action:</strong> This encompassed detailed market research to pinpoint target demographics and buyer personas. It entailed the creation of multi-channel digital campaigns leveraging social media advertising, email marketing, and search engine optimization, all strategically designed to accentuate the property's features and benefits.</li>
-            <li  style={{fontSize:'14px'}}><strong>Outcome Achieved:</strong> The initiatives resulted in a notable upsurge in traffic, with campaigns generating an average increase of 40%. Moreover, the majority of closed sales, approximately 96%, were attributed to leads generated through these traffic-driven campaigns.</li>
-          </ul>
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
-        </div>
-
-        <div className="w3-col l4">   
-        <Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="1">
-      <Accordion.Header>
-  <span style={{fontSize:'1rem'}}>
-    <FontAwesomeIcon icon={faMoneyCheckAlt} />  </span><span style={{fontSize:'1rem'}} > INCREASED PROFIT.</span>
-</Accordion.Header>  
-<Accordion.Body>
-        <ul className="mx-2">
-  <li style={{fontSize:'14px'}}><strong>Challenge Faced:</strong> Transformed neglected property with substantial rent arrears.</li>
-  <li style={{fontSize:'14px'}}><strong>Assigned Task:</strong> Developed a cost-effective rehab plan to boost property appeal and recover lost rental income.</li>
-  <li style={{fontSize:'14px'}}><strong>Strategic Action:</strong> Led as General Contractor, conducted property assessment, prioritized upgrades, and managed legalities.</li>
-  <li style={{fontSize:'14px'}}><strong>Outcome Achieved:</strong> Slashed project time by 25%, achieved a 15% budget surplus, leading to a 20% profit boost.</li>
-</ul>
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
-        </div>
-
-        <div className="w3-col l4">
-        <Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="2">
-      <Accordion.Header>
-  <span style={{fontSize:'1rem'}}>
-    <FontAwesomeIcon icon={faChartBar} /></span> <span style={{fontSize:'1rem'}} > TECH UPGRADE.</span>
-
-</Accordion.Header> 
-<Accordion.Body>
-        <ul className="w3-margin-top">
-<li  style={{fontSize:'14px'}}><strong>Challenge Faced:</strong> The challenge involved upgrading operational practices by leveraging modern technology.</li>
-<li  style={{fontSize:'14px'}}><strong>Assigned Task:</strong> This necessitated the implementation of cutting-edge real estate software and the adoption of paperless systems.</li>
-<li  style={{fontSize:'14px'}}><strong>Strategic Action:</strong>The outcome resulted in a notable enhancement of operational efficiency and an enriched client experience. </li>
-<li  style={{fontSize:'14px'}}><strong>Outcome Achieved:</strong>The outcome resulted in a notable enhancement of operational efficiency and an enriched client experience.</li>
-</ul>
-
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
-        </div>
-        </div>
-          </div>
-        </div>
         */}
-        </div>
       
+        <CV/>
+        </div>
+       
       <div className="technical-skills-div d-flex flex-column bg-black text-white w3-padding-48">
+       
         <br />
         <h1
           className="technical-skills text-light text-center"
@@ -335,7 +255,7 @@ export default function ResumePage() {
         <Link to="/portfolio#portfolio" className="w3-margin-bottom text-center"><i className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'white'}}></i></Link>
               <p className="text-center"><b>NEXT</b></p>
         </div>
-      
+  
   </div>
    
   );

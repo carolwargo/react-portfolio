@@ -1,9 +1,11 @@
 import React from "react";
-import { FaLaptopCode } from "react-icons/fa";
-import { HiOutlinePuzzlePiece } from "react-icons/hi2";
-import { AiFillDatabase } from "react-icons/ai";
-import { BsDatabaseLock } from "react-icons/bs";
-import { GiGears } from "react-icons/gi";
+//import { FaLaptopCode } from "react-icons/fa";
+//import { HiOutlinePuzzlePiece } from "react-icons/hi2";
+//import { AiFillDatabase } from "react-icons/ai";
+//import { BsDatabaseLock } from "react-icons/bs";
+//import { GiGears } from "react-icons/gi";
+import { SiAdobe } from "react-icons/si";
+
 import MeWhite from '../assets/images/MeWhite.png';
 import LocationView from '../assets/images/LocationView.png';
 import { Link } from "react-router-dom";
@@ -28,17 +30,60 @@ export default function AboutPage() {
           </div>
         </div>
 <br />
-<br />
+<hr />
 <br />
         {/* Technical Proficiencies */}
+        <div className="row">
+          <div className="col-lg-8">
         <div className="w3-content w3-container ">
-          <h2 className=""><strong>SKILLS & PROFICIENCIES.</strong></h2>
-          <hr />
+          <h2 className=""><strong>WHAT I DO BEST.</strong></h2>
           <br />
+              <h3><strong>FRONT END DEVELOPMENT.</strong></h3>
+              <div className="w3-light-grey w3-round-xlarge w3-small">
+            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
+          </div>
+          <p>HTML</p>
+          <div className="w3-light-grey w3-round-xlarge w3-small">
+            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
+          </div>
+          <p>CSS</p>
+          <div className="w3-light-grey w3-round-xlarge w3-small">
+            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
+          </div>
+          <p>JavaScript</p>
+          <div className="w3-light-grey w3-round-xlarge w3-small">
+            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
+          </div>
+          <p>React.js</p>
           <br />
-         
-              <h3><strong>Technical Proficiencies.</strong></h3>
-              <br />
+
+          <h2 className=""><strong>WHAT I DO BEST.</strong></h2>
+          <br />
+              <h4><strong>SERVER-SIDE DEVELOPMENT.</strong></h4>
+              <div className="w3-light-grey w3-round-xlarge w3-small">
+            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
+          </div>
+          <p><b>Frameworks & Package Manager: </b> <br />Node.js, Express.js and NPM.</p>
+          <div className="w3-light-grey w3-round-xlarge w3-small">
+            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
+          </div>
+          <p><b>Database Design & Management: </b> <br />Relational-MYSQL and NoSQL databases-MongoDB.</p>
+          <div className="w3-light-grey w3-round-xlarge w3-small">
+            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
+          </div>
+          <p><b>API Development:</b><br />Graph QL, RESTful API's and Webhooks.</p>
+          <div className="w3-light-grey w3-round-xlarge w3-small">
+            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
+          </div>
+          <p><b>Version Control:</b><br />
+          GIT + tools; VS Code and Github</p>
+          <br />
+          </div>
+          </div>
+<div className="col-lg-4"><SiAdobe />
+</div>
+       
+              {/**Start skills 
               <p className="w3-wide text-black" style={{fontSize:'1rem'}}><GiGears className="justify-content-center"/> Core Technologies</p>
               <div className="w3-light-grey shadow">
                 <div className="w3-container w3-padding-small w3-black w3-center shadow" style={{width:"85%"}}>85%</div>
@@ -63,21 +108,9 @@ export default function AboutPage() {
   <div className="w3-light-grey shadow">
     <div className="w3-container w3-padding-small w3-black w3-center" style= {{width:"75%"}}>75%</div>
   </div>
+  */}
   <br />
  <br />
- <br />
-
-        <h3><b>Agile Practices.</b></h3>
-        <p>PROMOTE FLEXIBILITY, COLLABORATION, AND ABILITY TO RESPOND TO CHANGING REQUIREMENTS. </p>
-    <h5><strong>Interpersonal Skills</strong></h5>
-    <ul>
-        <li>Effectively communicates, fostering customer and stakeholder engagement throughout the development process.</li>
-        <li>Articulates ideas, recommendations, and findings clearly, concisely, and inclusively.</li>
-        <li>Promotes and welcomes feedback from all stakeholders equally.</li>
-        <li>Embraces a culture of continuous improvement through post-implementation evaluations and knowledge sharing.</li>
-        <li>Adapts positively to change and embraces new challenges.</li>
-        <li>Delivers functional software (Minimum Viable Product) with a focus on meeting user needs and hope of exceeding expectations.</li>
-    </ul>
 </div>
 <br />
 </div>
