@@ -498,19 +498,19 @@ function Portfolio() {
               </div>
 */}
               </div>
-          <br />
-          <br />
-
-          <div className="text-center w3-padding-16">
-          <Link to="/contact#contact">
-            <i className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'black'}}></i></Link>
-              <p><b>GET IN TOUCH!</b></p>
-              </div>
+        
+       
         </div>
         {/**end sample pages section*/}
       </div>
       {/**^^^end main container*/}
       {/**end portfolio container wholepage */}
+                   
+      <div className="text-center w3-padding-32">
+          <Link to="/contact#contact"><i 
+          className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'black'}}></i></Link>
+              <p className="w3-margin-top"><b>CONTACT</b></p>
+              </div>
     </div>
   );
 }

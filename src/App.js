@@ -7,6 +7,7 @@ import PortfolioPage  from "./pages/PortfolioPage.jsx";
 import ContactPage  from "./pages/ContactPage.jsx";
 import ResumePage  from "./pages/ResumePage.jsx";
 import PageSamples from "./pages/PageSamples.jsx";
+import BlogPage from "./pages/Blog.jsx";
 import Test from "./pages/Test.jsx";
 import Footer from "./components/Footer.jsx";
 import NavFixed from "./components/NavFixed.jsx"; 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/resume" element={<ResumePage />} />
           <Route path="/test" element={<Test />} />
           <Route path="/page-samples" element={<PageSamples />} />  
+          <Route path="/blog" element={<BlogPage />} />
           {/* Add a catch-all route for handling errors */}
           <Route path="*" element={<NotFound />} />
         </Routes>

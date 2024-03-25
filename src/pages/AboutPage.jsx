@@ -1,10 +1,10 @@
 import React from "react";
-//import { FaLaptopCode } from "react-icons/fa";
-//import { HiOutlinePuzzlePiece } from "react-icons/hi2";
-//import { AiFillDatabase } from "react-icons/ai";
-//import { BsDatabaseLock } from "react-icons/bs";
-//import { GiGears } from "react-icons/gi";
-import { SiAdobe } from "react-icons/si";
+import { FaLaptopCode } from "react-icons/fa";
+import { HiOutlinePuzzlePiece } from "react-icons/hi2";
+import { AiFillDatabase } from "react-icons/ai";
+import { BsDatabaseLock } from "react-icons/bs";
+import { GiGears } from "react-icons/gi";
+//import { SiAdobe } from "react-icons/si";
 
 import MeWhite from '../assets/images/MeWhite.png';
 import LocationView from '../assets/images/LocationView.png';
@@ -34,10 +34,42 @@ export default function AboutPage() {
 <br />
         {/* Technical Proficiencies */}
         <div className="row">
-          <div className="col-lg-8">
+          
         <div className="w3-content w3-container ">
           <h2 className=""><strong>WHAT I DO BEST.</strong></h2>
           <br />
+          <p className="w3-wide text-black" style={{fontSize:'1rem'}}><GiGears className="justify-content-center"/> Core Technologies</p>
+              <div className="w3-light-grey shadow">
+                <div className="w3-container w3-padding-small w3-black w3-center shadow" style={{width:"85%"}}>85%</div>
+              </div>
+  <br />
+  <p className="w3-wide text-black" style={{fontSize:'1rem'}}><FaLaptopCode className="justify-content-center"/> Front-End Design</p>
+  <div className="w3-light-grey shadow">
+    <div className="w3-container w3-padding-small w3-black w3-center" style= {{width:"95%"}}>95%</div>
+  </div>
+  <br />
+  <p className="w3-wide text-black" style={{fontSize:'1rem'}}><BsDatabaseLock  className="justify-content-center"/> Server-Side Development</p>
+  <div className="w3-light-grey shadow">
+    <div className="w3-container w3-padding-small w3-black w3-center" style= {{width:"80%"}}>80%</div>
+  </div>
+<br />
+<p className="w3-wide text-black" style={{fontSize:'1rem'}}><HiOutlinePuzzlePiece className="justify-content-center"/> Full-Stack Integration</p>
+  <div className="w3-light-grey shadow">
+    <div className="w3-container w3-padding-small w3-black w3-center" style= {{width:"75%"}}>75%</div>
+  </div>
+<br />
+  <p className="w3-wide text-black" style={{fontSize:'1rem'}}><AiFillDatabase className="justify-content-center"/> Database Implementation</p>
+  <div className="w3-light-grey shadow">
+    <div className="w3-container w3-padding-small w3-black w3-center" style= {{width:"75%"}}>75%</div>
+  </div>
+
+
+
+
+
+
+{/** 
+
               <h3><strong>FRONT END DEVELOPMENT.</strong></h3>
               <div className="w3-light-grey w3-round-xlarge w3-small">
             <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
@@ -78,36 +110,12 @@ export default function AboutPage() {
           <p><b>Version Control:</b><br />
           GIT + tools; VS Code and Github</p>
           <br />
+          */}
           </div>
-          </div>
-<div className="col-lg-4"><SiAdobe />
-</div>
+
        
               {/**Start skills 
-              <p className="w3-wide text-black" style={{fontSize:'1rem'}}><GiGears className="justify-content-center"/> Core Technologies</p>
-              <div className="w3-light-grey shadow">
-                <div className="w3-container w3-padding-small w3-black w3-center shadow" style={{width:"85%"}}>85%</div>
-              </div>
-  <br />
-  <p className="w3-wide text-black" style={{fontSize:'1rem'}}><FaLaptopCode className="justify-content-center"/> Front-End Design</p>
-  <div className="w3-light-grey shadow">
-    <div className="w3-container w3-padding-small w3-black w3-center" style= {{width:"95%"}}>95%</div>
-  </div>
-  <br />
-  <p className="w3-wide text-black" style={{fontSize:'1rem'}}><BsDatabaseLock  className="justify-content-center"/> Server-Side Development</p>
-  <div className="w3-light-grey shadow">
-    <div className="w3-container w3-padding-small w3-black w3-center" style= {{width:"80%"}}>80%</div>
-  </div>
-<br />
-<p className="w3-wide text-black" style={{fontSize:'1rem'}}><HiOutlinePuzzlePiece className="justify-content-center"/> Full-Stack Integration</p>
-  <div className="w3-light-grey shadow">
-    <div className="w3-container w3-padding-small w3-black w3-center" style= {{width:"75%"}}>75%</div>
-  </div>
-<br />
-  <p className="w3-wide text-black" style={{fontSize:'1rem'}}><AiFillDatabase className="justify-content-center"/> Database Implementation</p>
-  <div className="w3-light-grey shadow">
-    <div className="w3-container w3-padding-small w3-black w3-center" style= {{width:"75%"}}>75%</div>
-  </div>
+ 
   */}
   <br />
  <br />
@@ -140,7 +148,7 @@ export default function AboutPage() {
       
 
         {/* Location */}
-        <div className="w3-content w3-container w3-padding-32 w3-margin-top">
+        <div className="w3-content w3-container w3-padding-64 w3-margin-top">
           <div className="row justify-content-center align-items-center">
             <div className="col-lg-4">
               <h1  className='text-center'>WHERE I'M LOCATED</h1>
@@ -153,14 +161,14 @@ export default function AboutPage() {
           </div>
           <div>
           <br />
-          <br />
-          <div className="text-center">
-          <Link to="/resume#resume"><i 
-          className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'black'}}></i></Link>
-              <p><b>NEXT</b></p>
-              </div>
               </div>
         </div> 
+                 
+        <div className="text-center w3-padding-32">
+          <Link to="/resume#resume"><i 
+          className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'black'}}></i></Link>
+              <p className="w3-margin-top"><b>RESUME</b></p>
+              </div>
     </div>
   );
 }

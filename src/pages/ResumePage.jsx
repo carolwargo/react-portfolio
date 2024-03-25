@@ -1,26 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CV from "../components/Resume/CV";
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
-import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import { faArrowTrendUp, faChartBar, faMoneyCheckAlt } from '@fortawesome/free-solid-svg-icons';
+import MeWhite from "../assets/images/MeWhite.png";
+import { FaGoogle } from "react-icons/fa";
+import { SiMicrosoftoffice } from "react-icons/si";
+import { SiAdobecreativecloud } from "react-icons/si";
 
 
-import Design from "../assets/images/Resume/Design.png";
-import VCIDE from "../assets/images/Resume/VCIDE.png";
-import Front from "../assets/images/Resume/Front.png";
-import Back from "../assets/images/Resume/Back.png";
-import DB from "../assets/images/Resume/DB.png";
-import Core from "../assets/images/Resume/Core.png";
-import Package from "../assets/images/Resume/Package.png";
-import BuildTest from "../assets/images/Resume/BuildTest.png";
-import APIQ from "../assets/images/Resume/APIQ.png";
 import ResumeDownload from "../assets/ResumeDownload.pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
@@ -29,34 +14,425 @@ export default function ResumePage() {
 
   return (
     <div className="resume" id="resume">
-   <div className="w3-container w3-margin-top w3-padding-16">
- 
-        {/**start Portfolio section 
-        <br />
-     
-      
+      <div className="w3-content w3-margin-top w3-padding-64 w3-light-gray" style={{maxWidth:"1400px"}}>
 
-        <p className='text-center' style={{ fontFamily: "Raleway" }}>
-          <strong>
-            {" "}
-            <a href="#technical-skills">TECHNICAL SKILLS</a>
-          </strong>
-          ,
-          <strong>
-            {" "}
-            <a href="#experience"> EDUCATION</a>{" "}
-          </strong>{" "}
-          , and{" "}
-          <strong>
-            {" "}
-            <a href="download">RESUME DOWNLOAD</a>
-          </strong>{" "}
-        </p>
-        */}
-      
-        <CV/>
+{/*} The Grid*/}
+<div className="w3-row-padding justify-content-center align-items-center">
+
+  {/*Left Column*/}
+  <div className="w3-third ">
+  
+    <div className="w3-white w3-text-grey w3-card-4">
+      <div className="w3-display-container">
+        <img src={MeWhite} style={{width:"100%"}} alt="me" className="w3-opacity w3-hover-opacity-off"/>
+        <div className="w3-display-bottomleft w3-container w3-text-light-blue">
+          <h4>Carol Wargo</h4>
         </div>
+      </div>
+      <br />
+      <div className="w3-container">
+        
+      <h6 className="w3-large w3-margin-top "><b>Contact Information</b></h6>
+      <p>
+                <i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-light-blue"></i>
+              Full Stack Developer
+              </p>
+              <p>
+                <i className="fa fa-home fa-fw w3-margin-right w3-large w3-text-light-blue"></i>
+                Huntingtown, MD
+              </p>
+              <p>
+                <a href="mail:carolwargo.dev@gmail.com">
+                  <i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-light-blue"></i>
+                  Email
+                </a>
+              </p>
+              <p>
+                <a href="tel:+14437711726">
+                  <i className="fa fa-phone fa-fw w3-margin-right w3-large w3-text-light-blue"></i>
+                  443-771-1726
+                </a>
+              </p>
+              <p>
+                <a href="mail:carolwargo.dev@gmail.com">
+                  <i className="fab fa-github fa-fw w3-margin-right w3-large w3-text-light-blue"></i>
+                 Github
+                </a>
+              </p>
+              <p className="w3-margin-bottom">
+                <a href="mail:carolwargo.dev@gmail.com">
+                  <i className="fab fa-linkedin fa-fw w3-margin-right w3-large w3-text-light-blue"></i>
+                 LinkedIn
+                </a>
+              </p>
+        <hr/>
+       {/**Start Tech Skills*/}
+        <h6 className="w3-large w3-margin-top"><i className="fa fa-asterisk fa-fw w3-margin-right w3-text-light-blue"></i><b>Technical Skills</b></h6>
+        <br />
+        
+        <div className="w3-light-grey w3-round-xlarge w3-small">
+          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"90%"}}>90%</div>
+        </div>
+        <p>Front-End</p>
+
+        <div className="w3-light-grey w3-round-xlarge w3-small">
+          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"75%"}}>75%</div>
+        </div>
+        <p>Back-End</p>
+
+        <div className="w3-light-grey w3-round-xlarge w3-small">
+          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"85%"}}>85%</div>
+        </div>
+        <p>Graphic Design</p>
+
+        <div className="w3-light-grey w3-round-xlarge w3-small">
+          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"80%"}}>
+            <div className="w3-center w3-text-black">80%</div>
+          </div>
+        </div>
+        <p>Digital Marketing</p>
+
+        <div className="w3-light-grey w3-round-xlarge w3-small">
+          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"75%"}}>75%</div>
+        </div>
+        <p>E-Commerce</p>
+     
+ {/**End Tech Skills */}      
+<hr className="w3-margin-top w3-margin-bottom"/>
+      {/**Start Programming Languages */}
+        <h6 className="w3-large w3-margin-top w3-text-theme"><i className="fa fa-globe fa-fw w3-margin-right w3-text-light-blue"></i><b>Programming Languages</b></h6>
+        <br/>
+        <div className="w3-light-grey w3-round-xlarge w3-small">
+          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"95%"}}>95%</div>
+        </div>
+        <p>HTML</p>
+     
+        <div className="w3-light-grey w3-round-xlarge w3-small">
+          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"90%"}}>90%</div>
+        </div>
+        <p>CSS</p>
+      
+        <div className="w3-light-grey w3-round-xlarge w3-small">
+          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"75%"}}>75%</div>
+        </div>
+        <p>JavaScript</p>
+     {/**End Programming Languages */}
+     <hr className="w3-margin-top w3-margin-bottom"/>
+         {/**Start Frameworks */}
+        <h6 className="w3-large w3-margin-top w3-text-theme"><i className="fa fa-globe fa-fw w3-margin-right w3-text-light-blue"></i><b>Frameworks</b></h6>
+        <br/>
+        <div className="w3-light-grey w3-round-xlarge w3-small">
+          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"85%"}}>85%</div>
+        </div>
+        <p>Front-End Frameworks- <span className="text-gray" style={{fontSize:'12px'}}><i> " <i className="fa fa-heart w3-text-pink"></i> React."</i></span></p>
+        
+        <div className="w3-light-grey w3-round-xlarge w3-small">
+          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"75%"}}>75%</div>
+        </div>
+        <p>Back-End Frameworks</p>
+      
+        <div className="w3-light-grey w3-round-xlarge w3-small">
+          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"90%"}}>90%</div>
+        </div>
+        <p>UI Frameworks</p>
+      
+        <div className="w3-light-grey w3-round-xlarge w3-small">
+          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"70%"}}>70%</div>
+        </div>
+        <p className="w3-margin-bottom">Mobile App Frameworks</p>
+
+<hr className="w3-margin-top w3-margin-bottom"/>
+
+      <h5 className="w3-text-gray w3-margin-top w3-margin-bottom "><i className="fas fa-desktop  w3-text-light-blue"></i><b className="w3-margin-left"> Software Proficiencies</b></h5>
+      <h5 className=" text-center"> Productivity Suites</h5>
+  <h6 className="w3-text-gray w3-margin-left">
+                  <FaGoogle className="fa-fw w3-margin-left w3-text-light-blue" /> Google Workspace
+                </h6>
+                <h6 className="w3-text-gray w3-margin-left">
+                  <SiMicrosoftoffice className="fa-fw w3-margin-left w3-text-light-blue" /> Microsoft Suite
+                </h6>
+                <h6 className="w3-text-gray w3-margin-left">
+                  <SiAdobecreativecloud className="fa-fw w3-margin-left w3-text-light-blue" /> Adobe Creative
+                  Cloud
+                </h6>
+                <br/>
+
+                <div className="w3-light-grey w3-round-xlarge w3-small">
+          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"80%"}}>
+            <div className="w3-center w3-text-black">80%</div>
+          </div>
+        </div>
+        <p>Collaborative Software</p>
+                <div className="w3-light-grey w3-round-xlarge w3-small">
+          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"90%"}}>90%</div>
+        </div>
+        <p>Design Software</p>
+    </div>
+<hr />
+
+    <div className="w3-center">
+            <button className="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">
+  <a
+    className="button text-black"
+    download 
+    href={ResumeDownload}
+  >
+    <i className="fa fa-download"></i> Download Resume
+  </a>
+</button>
+
+          </div>
+    <br />
+    </div>
+
+  {/*End Left Column*/}
+  </div>
+
+  {/*Right Column*/}
+  <div className="w3-twothird w3-padding-16">
+
+  <div className="w3-container w3-card w3-white w3-margin-bottom ">
+      <h4 className="w3-text-grey w3-padding-16"><i className="fas fa-user fa-fw  w3-xlarge w3-text-light-blue w3-margin-top"></i> Carol Wargo</h4>
+      <div className="w3-container">
+      <h6 className="w3-opacity"><b>Full Stack Developer / UX Designer</b></h6>
+       <p className="w3-text-gray w3-margin-top"><i className="fas fa-feather-alt fa-fw w3-large "></i><b>    <i>
+                  “I am a passionate Full-Stack Software Developer and Graphic
+                  Designer with a solid foundation in both frontend & backend
+                  technologies, and a 20-year background in Business Analysis &
+                  Project Management. I excel in leading and collaborating with
+                  cross-functional teams, leveraging the latest tools and
+                  frameworks to bring innovative ideas to life. From crafting
+                  interactive User interfaces to designing efficient and secure
+                  server-side solutions, I am dedicated to delivering a seamless
+                  User experience while optimizing performance.”
+                </i></b></p>
+      
+        </div>
+        </div>
+
+  
+    <div className="w3-container w3-card w3-white w3-margin-bottom">
+      <h4 className="w3-text-grey w3-padding-16"><i className="fa fa-suitcase fa-fw  w3-xlarge w3-text-light-blue"></i> Work Experience</h4>
+      <div className="w3-container">
+        <div className="row align-items-end">
+        <div className="col">
+        <h6 className="w3-opacity"><b>Real Estate Agent / Investor</b></h6>
+        <h6 className="w3-text-light-blue"><i className="fa fa-calendar fa-fw"></i> June 2003 - <span className="w3-tag w3-light-blue w3-round">Current</span></h6>
+        <p className="w3-text-gray w3-margin-top"><i className="far fa-sticky-note fa-fw "></i><b> Duties</b></p>
+      
+      <ul>
+      <li>Employ marketing strategies</li>
+                    <li>Analyze current & past market trends</li>
+      <li>Write, edit & negotiate contracts.</li>
+                    <li>
+                      Facilitate inspections, appraisals & legal matters.
+                    </li>
+                    <li>Oversee home staging and architectural Design.</li>
+                  </ul>
+        </div>
+        <div className="col">
+        <ul className="">
+        <li>Employ marketing strategies</li>
+                      <li>Analyze current & past market trends</li>
+        <li>Write, edit & negotiate contracts.</li>
+                      <li>
+                        Facilitate inspections, appraisals & legal matters.
+                      </li>
+                      <li>Oversee home staging and architectural Design.</li>
+                    </ul>
+      </div>
+      </div>
+      </div>
+      <hr/>
+      <div className="w3-container">
+        <div className="row align-items-end">
+        <div className="col">
+        <h6 className="w3-opacity"><b>Freelance Design & Development</b></h6>
+        <h6 className="w3-text-light-blue"><i className="fa fa-calendar fa-fw"></i> June 2021 - <span className="w3-tag w3-light-blue w3-round">Current</span></h6>
+        <p className="w3-text-gray w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
        
+        <ul>
+          <li>Refactor and maintain sites to ensure a user-friendly UI.</li>
+          <li>Develop and integrate e-commerce platforms.</li>
+          <li>Implement design changes to improve user experience.</li>
+          <li>Conduct audits to identify and fix any technical issues or broken links.</li>
+          <li>Implement SEO strategies.</li>
+       
+</ul>
+        </div>
+        <div className="col">
+        <ul className="">    
+          <li>Create engaging content.</li>
+          <li>Monitor site security for threats & vulnerabilities.</li>
+          <li>Collaborate with clients and cross-functional teams.</li>
+          <li>Respond to client to address user inquiries and feedback.</li>
+          <li>Develop digital surveys.</li>
+          <li>Develop digital marketing strategies and social media management systems.</li>
+</ul>
+        </div>
+        </div>
+      </div>
+      <hr/>
+      <div className="w3-container">
+        <div className="row align-items-end">
+        <div className="col">
+        <h6 className="w3-opacity"><b>Media Manager & Webmaster</b></h6>
+        <h6 className="w3-text-light-blue"><i className="fa fa-calendar fa-fw"></i> Jun 2010 - Mar 2012</h6>
+        <p className="w3-text-gray w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
+        <ul className="">
+                      <li>Maintain site to ensure a user-friendly UI.</li>
+                      <li>
+                        Develop, refactor and Maintain e-commerce platforms.
+                      </li>
+                      <li>
+                        Implement design changes to improve user experience.
+                      </li>
+                      <li>Create engaging content.</li>
+                    </ul>
+        </div>
+        <div className="col">
+    {/*   <p>Manage & maintain the club's site to ensure a functional, up-to-date, and user-friendly UI.
+Implemented design changes to improve appearance and user experience.
+Monitor performance, analyzed traffic to optimize environment .
+Regular audits to identify and fix any technical issues or broken links.
+Implement SEO strategies to improve search engine rankings and increase traffic.
+Monitored site security, to protect against potential threats and vulnerabilities.
+Collaborated with teams to create and upload engaging content.
+Utilized web analytics tools to track key performance indicators and user behavior.
+Responded to user inquiries and feedback, ensuring prompt and helpful customer support.</p><br/>
+*/} 
+   <ul className="">    
+<li>
+                        Conduct audits to identify and fix any technical issues
+                        or broken links.
+                      </li>
+                      <li>Implement SEO strategies.</li>
+                      <li>
+                        Monitor site security for threats & vulnerabilities.
+                      </li>
+                      <li>
+                        Respond to client to address user inquiries and
+                        feedback.
+                      </li>
+                      <li>Collaborate with board members, stakeholders and lawmakers</li>
+                      <li>Address user inquiries and feedback.</li>
+                    </ul>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div className="w3-container w3-card w3-white w3-margin-bottom">
+      <h4 className="w3-text-grey w3-padding-16">
+        <i className="fa fa-certificate fa-fw  w3-xlarge w3-text-light-blue"></i> Education
+          </h4>
+          <div className="w3-container">
+        <h6 className="w3-opacity"><b>George Washington University</b></h6>
+        <h6 className="w3-text-light-blue"><i className="fa fa-calendar fa-fw "></i> Jan. 2023- Aug. 2023</h6>
+        <p>Full Stack Developer | UX Design Certificate</p>
+      </div>
+     
+      <div className="w3-container">
+        <h6 className="w3-opacity"><b>Real Estate License</b></h6>
+        <h6 className="w3-text-light-blue">   <i className="fa fa-calendar fa-fw "></i> June 2003</h6>
+        <p>State of Maryland</p>
+      </div>
+    </div>
+
+    <div className="w3-container w3-card w3-white">
+      <h4 className="w3-text-grey  w3-margin-top">
+        <i className="fas fa-user-tie fa-fw  w3-xlarge w3-text-light-blue"></i> Professional Practices
+          </h4>
+
+          <div className="w3-container w3-padding-16">
+        <h6 className="w3-opacity"><b>Best Practices Followed.</b></h6>
+        <h6 className="w3-text-light-blue"><i className="fa fa-cog fa-fw "></i> Development Practices</h6>
+        <ul>
+              <li>
+                Effectively communicates to engage stakeholders throughout the
+                development process.
+              </li>
+              <li>
+                Articulates ideas, recommendations, and findings clearly and
+                inclusively.
+              </li>
+              <li>Promotes and welcomes feedback from all stakeholders.</li>
+              <li>
+                Embraces continuous improvement through post-implementation
+                evaluations and knowledge sharing.
+              </li>
+              <li>
+                Adapts positively to change and proactively embraces new
+                challenges.
+              </li>
+              <li>
+                Applies critical thinking to analyze problems and propose
+                innovative solutions.
+              </li>
+              <li>
+                Inspires and motivates team members to achieve common goals.
+              </li>
+              <li>
+                Negotiates and mediates to resolve conflicts and reach
+                consensus.
+              </li>
+              <li>
+                Delivers functional software focusing on meeting user needs and
+                exceeding expectations.
+              </li>
+            </ul> 
+      </div>
+
+      <div className="w3-container w3-padding-16">
+        <h6 className="w3-opacity"><b>Best Practices Followed.</b></h6>
+        <h6 className="w3-text-light-blue w3-margin-bottom"><i className="fas fa-handshake fa-fw "></i> Interpersonal Practices</h6>
+        <ul>
+                <li>
+                  Foster customer and stakeholder engagement through effective
+                  communication.
+                </li>
+                <li>
+                  Articulate ideas, recommendations, and findings clearly and
+                  inclusively.
+                </li>
+                <li>
+                  Welcome feedback from stakeholders and promote an inclusive
+                  feedback culture.
+                </li>
+                <li>
+                  Embrace continuous improvement through post-implementation
+                  evaluations and knowledge sharing.
+                </li>
+                <li>
+                  Adapt positively to change and proactively tackle challenges.
+                </li>
+                <li>
+                  Demonstrate critical thinking skills to analyze and solve
+                  complex problems.
+                </li>
+                <li>Inspire and motivate team members towards common goals.</li>
+                <li>
+                  Proficient in negotiation and conflict resolution among
+                  stakeholders.
+                </li>
+                <li>
+                  Deliver functional software focused on meeting user needs and
+                  exceeding expectations.
+                </li>
+              </ul>
+      </div>
+      </div>
+  {/*End Right Column*/}
+  
+  </div>
+  
+{/*} End Grid*/}
+</div>
+<br />
+
+</div>
+
+{/** 
+
       <div className="technical-skills-div d-flex flex-column bg-black text-white w3-padding-48">
        
         <br />
@@ -218,9 +594,9 @@ export default function ResumePage() {
             <br />
             <TimelineItem>
               <TimelineOppositeContent color="text.light" id="education">
-                <h5 className="text-white">
+                <h6 className="text-white">
                   Certificate of Full Stack Web Development
-                </h5>
+                </h6>
                 <h6 className="text-white">
                   George Washington University (July 2023)
                 </h6>
@@ -235,7 +611,7 @@ export default function ResumePage() {
               </TimelineContent>
             </TimelineItem>
             <div className="d-flex flex-row justify-content-center">
-          <div className="d-flex flex-column">
+          <div className="">
             <p className="text-white">DOWNLOAD A COPY OF MY RESUME</p>
            
             <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
@@ -252,10 +628,15 @@ export default function ResumePage() {
           </div>
           </Timeline>
         </Timeline>
-        <Link to="/portfolio#portfolio" className="w3-margin-bottom text-center"><i className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'white'}}></i></Link>
-              <p className="text-center"><b>NEXT</b></p>
+   
         </div>
-  
+  */}
+                
+                <div className="text-center w3-padding-32 w3-margin-top">
+          <Link to="/portfolio#portfolio"><i 
+          className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'black'}}></i></Link>
+              <p className="w3-margin-top"><b>PORTFOLIO</b></p>
+              </div>
   </div>
    
   );
