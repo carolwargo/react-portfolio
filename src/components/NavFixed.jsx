@@ -30,6 +30,7 @@ function BasicExample() {
               <Link to="/resume#resume" className="nav-link" onClick={closeNav}>RESUME</Link>
               <Link to="/portfolio#portfolio" className="nav-link" onClick={closeNav}>PORTFOLIO</Link>
               <Link to="/contact#contact" className="nav-link" onClick={closeNav}>CONTACT</Link>
+              <Link to='/page-samples' className="nav-link" onClick={closeNav}>SAMPLES</Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -30,7 +30,7 @@ const Posts = () => {
   ];
 
   return (
-    <div style={{fontSize:'12px'}} >
+    <div style={{fontSize:'11.5px'}} >
     {" "}
     {/*col start for all posts */}
     {blogPosts.map((post) => (

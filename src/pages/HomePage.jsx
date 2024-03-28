@@ -4,6 +4,12 @@ import MeWhite from "../assets/images/MeWhite.png";
 import ResumeDownload from "../assets/ResumeDownload.pdf";
 
 function HomePage() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
   return (
     <div className="home" id="home">
       <header>
@@ -35,11 +41,13 @@ function HomePage() {
               <br />
               <br />
               <br />
-             
-              <div className="text-center">
-          <Link to="/about#about"><i 
-          className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'black'}}></i></Link>
-              <p><b>NEXT</b></p>
+                 
+              <div className="text-center w3-padding-16">
+        <Link to="/about#about" onClick={scrollToTop}>
+          <p><b>Follow the link to learn more about me professionally. </b>             
+          <i className="fa fa-arrow-right w3-hover-opacity"></i>
+          </p>
+          </Link>
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import Dev from "../assets/images/Portfolio/Dev.png";
+import Dev from "../../assets/images/Portfolio/Dev.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,7 +8,7 @@ import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 //import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-function Portfolio() {
+function SideNav() {
 
   const [showAccordion, setShowAccordion] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -38,7 +38,7 @@ function Portfolio() {
             <div
               className="w3-container w3-display-container  w3-padding-64"
             >
-              <i onClick={openSidebar} class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+              <i onClick={openSidebar} className="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
               <h3 className="w3-wide ">
                 <b>LOGO</b>
               </h3>
@@ -153,5 +153,5 @@ function Portfolio() {
        } ;
 
 
-export default Portfolio;
+export default SideNav;
 

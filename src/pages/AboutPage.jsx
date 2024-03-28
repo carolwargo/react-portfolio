@@ -13,6 +13,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import '../App.css';
 
 export default function AboutPage() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
     <div className="about" id="about">
     <div className="w3-content w3-container w3-padding-64">
@@ -164,10 +171,12 @@ export default function AboutPage() {
               </div>
         </div> 
                  
-        <div className="text-center w3-padding-32">
-          <Link to="/resume#resume"><i 
-          className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'black'}}></i></Link>
-              <p className="w3-margin-top"><b>RESUME</b></p>
+        <div className="text-center w3-padding-16">
+        <Link to="/resume#resume" onClick={scrollToTop}>
+          <p><b>Follow the link to view my digital resume and/or download a copy. </b>             
+          <i className="fa fa-arrow-right w3-hover-opacity"></i>
+          </p>
+          </Link>
               </div>
     </div>
   );

@@ -8,9 +8,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Blog = () => {
   return (
-    <div className="blog" id="blog">
-      <main >
-        <div className="w3-content" style={{ maxWidth: "1400px" }}>
+    <div > 
+        <div style={{ maxWidth: "1400px" }}>
         
           <div className="w3-row">
             {/*card start for bio, popular posts & tags*/}
@@ -168,7 +167,7 @@ const Blog = () => {
                   </p>
               </div>
             </div>
-            <div className="w3-col l8 s12 ">
+            <div className="w3-col l8 s12 w3-padding">
               <Posts />
               <PostsShare />
             </div>
@@ -208,7 +207,6 @@ const Blog = () => {
     </ul>
   </Alert>
 </div>
-      </main>
     </div>
   );
 };

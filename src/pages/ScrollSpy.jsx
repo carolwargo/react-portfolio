@@ -1,42 +1,49 @@
 import React from 'react';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+//import ScrollSpyComponent from '../components/Portfolio/SpyScroll/SpyScrollComponent.jsx';
 
-
-const ScrollSpyWeb = () => {
+const ScrollSpy = () => {
 
         return (
-            <div className="scroll-spy-web">
+            <div className="scroll-spy" id='scroll-spy' >
+<div className='w3-padding-top-64'>
+
+  <div className='w3-center w3-content w3-padding-large'>
+  <h1 >SCROLL SPY EXAMPLE</h1>
+  <p>Scroll spy example with content</p>
+  </div> 
+  <hr />
                <div className="row">
                <div className="col-md-4">
-    <nav id="navbar-webdev" className=" p-2 h-100 flex-column align-items-stretch pe-4 border-end">
-    <div data-bs-spy="scroll" data-bs-target="#navbar-webdev" data-bs-smooth-scroll="true" className="scrollspy-webdev p-3" tabIndex="0">
-      <nav className="nav nav-pills flex-column">
-       
-        <div>
+    <nav id="navbar-webdev" 
+    className=" h-100 flex-column align-items-stretch  border-end">
+    <div data-bs-spy="scroll" data-bs-target="#navbar-webdev" data-bs-smooth-scroll="true" 
+    className="scrollspy-webdev" tabIndex="0">
+      <nav className="nav flex-column ">
         <a className="nav-link" href="#item-1"><b>DATABASE & AUTHORIZATION</b></a>
-        <nav className="nav nav-pills flex-column">
-        <ul style={{fontSize:'14px'}}>
-          <a className="nav-link p-0 ms-3 my-0" href="#item-1-1"><b>I. DATABASE INTEGRATION</b></a>
-          <ul style={{fontSize:'14px'}}>
-          <a className="nav-link p-0 ms-3 my-0" href="#item-1-1-1">- Benefits & Impact Chart</a>
-          <a className="nav-link p-0 ms-3 my-0" href="#item-1-1-2">- Samples & Senarios</a>
-          <a className="nav-link p-0 ms-3 my-0" href="#item-1-1-3">- "Project Overview: Build Process, Timeframe, and Cost"</a>
+        <nav className="nav flex-column">
+        <ul style={{fontSize:'1rem'}}>
+          <a className="nav-link" href="#item-1-1"><b>I. DATABASE INTEGRATION</b></a>
+          <ul style={{fontSize:'1rem'}}>
+          <a className="nav-link " href="#item-1-1-1">- Benefits & Impact Chart</a>
+          <a className="nav-link " href="#item-1-1-2">- Samples & Senarios</a>
+          <a className="nav-link " href="#item-1-1-3">-"Project Overview: Build Process, Timeframe, and Cost"</a>
         </ul>
         <br></br>
-          <a className="nav-link p-0 ms-3 my-0" href="#item-1-2"><b>II. AUTH SERVICES</b></a>
-          <ul style={{fontSize:'14px'}}>
-          <a className="nav-link p-0 ms-3 my-0" href="#item-1-2-1">- Benefits & Impact Chart</a>
-          <a className="nav-link p-0 ms-3 my-0" href="#item-1-2-2">- Examples & Scenarios</a>
-          <a className="nav-link p-0 ms-3 my-0" href="#item-1-2-3">- "Project Overview: Build Process, Timeframe, and Cost"</a>
+          <a className="nav-link " href="#item-1-2"><b>II. AUTH SERVICES</b></a>
+          <ul style={{fontSize:'1rem'}}>
+          <a className="nav-link " href="#item-1-2-1">- Benefits & Impact Chart</a>
+          <a className="nav-link " href="#item-1-2-2">- Examples & Scenarios</a>
+          <a className="nav-link " href="#item-1-2-3">- "Project Overview: Build Process, Timeframe, and Cost"</a>
           </ul>
 
           <br></br>
-          <a className="nav-link p-0 ms-3 my-0" href="#item-1-3"><b>III. INTEGRATED SOLUTIONS:</b><br></br><span className='ml-auto' style={{ marginLeft: '22px', marginTop:'0px' }}>For Enhanced User Experience</span></a>
-        <ul style={{fontSize:'14px'}}>
-          <a className="nav-link p-0 ms-3 my-0" href="#item-1-3-1">- Dashboards</a>
-          <a className="nav-link p-0 ms-3 my-0" href="#item-1-3-2">- Forms</a>
-          <a className="nav-link p-0 ms-3 my-0" href="#item-1-3-3">- Profiles</a>
+          <a className="nav-link " href="#item-1-3"><b>III. INTEGRATED SOLUTIONS:</b><br></br><span className='ml-auto' style={{ marginLeft: '22px', marginTop:'0px' }}>For Enhanced User Experience</span></a>
+        <ul style={{fontSize:'1rem'}}>
+          <a className="nav-link " href="#item-1-3-1">- Dashboards</a>
+          <a className="nav-link " href="#item-1-3-2">- Forms</a>
+          <a className="nav-link " href="#item-1-3-3">- Profiles</a>
           </ul>
 
         </ul>
@@ -45,19 +52,17 @@ const ScrollSpyWeb = () => {
 
 
 
-        </div>
-
 
         <div>
-        <a className="nav-link" href="#item-2"><b>E-COMMERCE</b></a>
-        <nav className="nav nav-pills flex-column">
-        <ul style={{fontSize:'14px'}}>
-          <a className="nav-link p-0 ms-3 my-0" href="#item-2-1">- Storefront</a>
-          <a className="nav-link p-0 ms-3 my-0" href="#item-2-2">- Payments</a>
-          <a className="nav-link p-0 ms-3 my-0" href="#item-2-3">- Catalog</a>
-          <a className="nav-link p-0 ms-3 my-0" href="#item-2-4">- Inventory</a>
-          <a className="nav-link p-0 ms-3 my-0" href="#item-2-3">- Examples & Scenarios</a>
-          <a className="nav-link p-0 ms-3 my-0" href="#item-2-5">- "Project Overview: Build Process, Timeframe, and Cost"</a>
+        <a className="nav-link " href="#item-2"><b>E-COMMERCE</b></a>
+        <nav className="nav flex-column ">
+        <ul style={{fontSize:'1rem'}}>
+          <a className="nav-link " href="#item-2-1">- Storefront</a>
+          <a className="nav-link " href="#item-2-2">- Payments</a>
+          <a className="nav-link " href="#item-2-3">- Catalog</a>
+          <a className="nav-link " href="#item-2-4">- Inventory</a>
+          <a className="nav-link " href="#item-2-3">- Examples & Scenarios</a>
+          <a className="nav-link " href="#item-2-5">- "Project Overview: Build Process, Timeframe, and Cost"</a>
           </ul>
         </nav>
         </div>
@@ -69,7 +74,7 @@ const ScrollSpyWeb = () => {
   </div>
 
   <div className="col-sm-8 ">
-    <div data-bs-spy="scroll" data-bs-target="#navbar-webdev" data-bs-smooth-scroll="true" className="scrollspy-webdev p-3" tabIndex="0">
+    <div data-bs-spy="scroll" data-bs-target="#navbar-webdev" data-bs-smooth-scroll="true" className="scrollspy-webdev p-3" tabIndex="0" style={{ height: '500px', overflowY: 'auto' }}>
     {/*start db & AUTH */}
     <div id="item-1">
         <h3 style={{fontFamily:'belotta text'}}><b>DATABASE & AUTH SERVICES</b></h3>
@@ -98,7 +103,8 @@ const ScrollSpyWeb = () => {
                     <p>"Two Foundational Components Needed To Maximize Efficiency..."</p>
                     <h5>DATABASE & AUTH SERVICES WORKING TOGETHER</h5>
                     <p>Database and Authentication (auth) services work together, and are the most important components to incorporate when developing an efficient website or web application. Playing a foundational role in ensuring security, organization, and reliability of your site, and extention of your business. </p>       
-</div><p>By implementing a Database & Authentication Services into your new or existing site, your website will achieve efficiency standards needed to allow you <i>" to make the most of your time & resources "</i>.</p>
+</div>
+<p>By implementing a Database & Authentication Services into your new or existing site, your website will achieve efficiency standards needed to allow you <i>" to make the most of your time & resources "</i>.</p>
                     
 {/*end db & auth*/}
       <br></br>
@@ -123,13 +129,13 @@ const ScrollSpyWeb = () => {
         <table className="table table-dark table-striped">
   <thead>
     <tr>
-      <th className='p-2' scope="col" style={{fontSize:'12px'}}><b>CATEGORY</b></th>
-      <th className='p-2' scope="col" style={{fontSize:'12px'}}><b>BENEFITS</b></th>
-      <th className='p-2' scope="col" style={{fontSize:'12px'}}><b>IMPACT</b></th>
+      <th className='p-2' scope="col" style={{fontSize:'1rem'}}><b>CATEGORY</b></th>
+      <th className='p-2' scope="col" style={{fontSize:'1rem'}}><b>BENEFITS</b></th>
+      <th className='p-2' scope="col" style={{fontSize:'1rem'}}><b>IMPACT</b></th>
     </tr>
   </thead>
-  <tbody style={{fontSize:'12px'}}>
-    <tr style={{fontSize:'12px'}}>
+  <tbody style={{fontSize:'1rem'}}>
+    <tr style={{fontSize:'1rem'}}>
       <th className='p-2'scope="row">Data Centralization</th>
       <td className='p-2'>A centralized database stores all relevant data in one place, making it easier to manage, update, and retrieve information.</td>
       <td className='p-2'>Streamlines data access and reduces the risk of data inconsistency or redundancy.</td>
@@ -247,12 +253,12 @@ const ScrollSpyWeb = () => {
         <table className="table table-dark table-striped border-bottom">
   <thead>
     <tr>
-      <th className='p-2' scope="col" style={{fontSize:'12px'}}><b>CATEGORY</b></th>
-      <th className='p-2' scope="col" style={{fontSize:'12px'}}><b>BENEFITS</b></th>
-      <th className='p-2' scope="col" style={{fontSize:'12px'}}><b>IMPACT</b></th>
+      <th className='p-2' scope="col" style={{fontSize:'1rem'}}><b>CATEGORY</b></th>
+      <th className='p-2' scope="col" style={{fontSize:'1rem'}}><b>BENEFITS</b></th>
+      <th className='p-2' scope="col" style={{fontSize:'1rem'}}><b>IMPACT</b></th>
     </tr>
   </thead>
-  <tbody style={{fontSize:'12px'}} >
+  <tbody style={{fontSize:'1rem'}} >
     <tr>
       <th className='p-2'scope="row">Enhanced User Security</th>
       <td className='p-2'> Authentication verifies the identity of users, ensuring that only authorized individuals can access the website.</td>
@@ -377,14 +383,9 @@ const ScrollSpyWeb = () => {
       <p>The integration of these security measures plays a pivotal role in safeguarding the integrity of a business ecosystem. Below are key advantages of implementing authentication and authorization systems within a business:</p>
       </div>
       </div>
-
-
-      
-
-      
       </div>
       </div>
-     
+      </div>    
   </div>
 </div>
 <br></br>
@@ -394,4 +395,4 @@ const ScrollSpyWeb = () => {
         )
     }
 
-export default ScrollSpyWeb;
+export default ScrollSpy;

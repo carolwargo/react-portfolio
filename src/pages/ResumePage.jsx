@@ -4,7 +4,7 @@ import MeWhite from "../assets/images/MeWhite.png";
 import { FaGoogle } from "react-icons/fa";
 import { SiMicrosoftoffice } from "react-icons/si";
 import { SiAdobecreativecloud } from "react-icons/si";
-
+import Alert from "react-bootstrap/Alert";
 
 import ResumeDownload from "../assets/ResumeDownload.pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -12,8 +12,15 @@ import "../App.css";
 
 export default function ResumePage() {
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
-    <div className="resume" id="resume">
+    <div className="resume w3-light-gray" id="resume">
       <div className="w3-content w3-margin-top w3-padding-64 w3-light-gray" style={{maxWidth:"1400px"}}>
 
 {/*} The Grid*/}
@@ -144,8 +151,7 @@ export default function ResumePage() {
 <hr className="w3-margin-top w3-margin-bottom"/>
 
       <h5 className="w3-text-gray w3-margin-top w3-margin-bottom "><i className="fas fa-desktop  w3-text-light-blue"></i><b className="w3-margin-left"> Software Proficiencies</b></h5>
-      <h5 className=" text-center"> Productivity Suites</h5>
-  <h6 className="w3-text-gray w3-margin-left">
+ <h6 className="w3-text-gray w3-margin-left">
                   <FaGoogle className="fa-fw w3-margin-left w3-text-light-blue" /> Google Workspace
                 </h6>
                 <h6 className="w3-text-gray w3-margin-left">
@@ -167,11 +173,15 @@ export default function ResumePage() {
           <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"90%"}}>90%</div>
         </div>
         <p>Design Software</p>
+        <br />
+        <hr />
     </div>
-<hr />
-
-    <div className="w3-center">
-            <button className="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">
+ 
+  <div className="w3-center w3-padding-large w3-padding-24">
+    <h5 className="w3-text-gray w3-margin-bottom"><i className="fas fa-download w3-text-light-blue"></i><b className="w3-margin-left">Resume Download</b></h5>
+   
+    <p>For a physical copy, click the "Download Resume" button below to download a PDF of my resume.</p>
+            <button className="w3-button w3-light-grey w3-padding-large">
   <a
     className="button text-black"
     download 
@@ -189,7 +199,7 @@ export default function ResumePage() {
   </div>
 
   {/*Right Column*/}
-  <div className="w3-twothird w3-padding-16">
+  <div className="w3-twothird">
 
   <div className="w3-container w3-card w3-white w3-margin-bottom ">
       <h4 className="w3-text-grey w3-padding-16"><i className="fas fa-user fa-fw  w3-xlarge w3-text-light-blue w3-margin-top"></i> Carol Wargo</h4>
@@ -384,7 +394,7 @@ Responded to user inquiries and feedback, ensuring prompt and helpful customer s
 
       <div className="w3-container w3-padding-16">
         <h6 className="w3-opacity"><b>Best Practices Followed.</b></h6>
-        <h6 className="w3-text-light-blue w3-margin-bottom"><i className="fas fa-handshake fa-fw "></i> Interpersonal Practices</h6>
+        <h6 className="w3-text-light-blue "><i className="fas fa-handshake fa-fw "></i> Interpersonal Practices</h6>
         <ul>
                 <li>
                   Foster customer and stakeholder engagement through effective
@@ -426,9 +436,6 @@ Responded to user inquiries and feedback, ensuring prompt and helpful customer s
   </div>
   
 {/*} End Grid*/}
-</div>
-<br />
-
 </div>
 
 {/** 
@@ -631,13 +638,30 @@ Responded to user inquiries and feedback, ensuring prompt and helpful customer s
    
         </div>
   */}
-                
-                <div className="text-center w3-padding-32 w3-margin-top">
-          <Link to="/portfolio#portfolio"><i 
-          className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity" style={{color:'black'}}></i></Link>
-              <p className="w3-margin-top"><b>PORTFOLIO</b></p>
-              </div>
+                  
   </div>
-   
+  <div className="container w3-margin-top">
+      <div className="row">
+        <div className="col-md-4 mx-auto">
+          <div className="text-center w3-padding-16">
+          <Alert variant="warning" className="shadow">
+      <Alert.Heading>
+        <i className="fa fa-exclamation-triangle"></i> WARNING
+      </Alert.Heading>
+      <p>I am currently adding to my portfolio. <br />Thanks in advance for your patience!</p>
+      <hr className="text-warning" />
+      <Alert.Link as={Link} to='/portfolio#portfolio' onClick={scrollToTop} className="w3-hover-opacity w3-hover-sepia">
+        <p><u>Follow the link to view my portfolio</u>
+          <i className="fa fa-arrow-right w3-hover-opacity w3-hover-sepia w3-margin-left"></i>
+        </p>
+      </Alert.Link>
+    </Alert>
+          </div>
+          <br />
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
   );
 }

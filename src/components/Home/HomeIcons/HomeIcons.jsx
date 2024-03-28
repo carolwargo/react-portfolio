@@ -18,7 +18,7 @@ const HomeIcons = () => {
   
             <div className='w3-container w3-content'>
             <h1 className='bg-white py-3 rounded-1 text-center w3-padding-top'>WHAT'S NEXT?</h1>
-            <p class='text-center px-lg-5'>Discover more about me, explore my portfolio, delve into my professional background, browse through my collection of reusable components, or get in touch! Select your path below and click the button to follow it.</p>
+            <p className='text-center px-lg-5'>Discover more about me, explore my portfolio, delve into my professional background, browse through my collection of reusable components, or get in touch! Select your path below and click the button to follow it.</p>
 
             </div>
        
