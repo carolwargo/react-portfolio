@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Login from "../components/Portfolio/Forms/Login";
 import Signup from "../components/Portfolio/Forms/Signup";
-import ScrollSpy from "../components/Portfolio/SpyScroll/SpyScrollComponent";
+//import ScrollSpy from "../components/Portfolio/SpyScroll/SpyScrollComponent";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function PageSamples() {
@@ -17,7 +17,7 @@ function PageSamples() {
 
     return (
         <div className="page-samples" id="page-samples">
-            <div className="w3-content w3-container w3-padding-64 w3-margin-top w3-padding-large justify-content-between ">
+            <div className="w3-content w3-container w3-padding-64 w3-margin-top justify-content-between ">
                 <h1
                     className="w3-padding-large text-center w3-margin-top"
                     style={{
@@ -29,14 +29,12 @@ function PageSamples() {
             </div>
 
             <div className="container-fluid w3-light-gray">
-                <div className="blog-page  w3-padding-64" id="blog-page">
-                  <div className="w3-container">
+                <div className="blog-page  w3-padding-32" id="blog-page">
                     <h4 className="w3-text-black">BLOG PAGE SAMPLE.</h4>
                     <hr className="w3-opacity" />
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde voluptate porro consequuntur velit ducimus quae enim deserunt a officia hic dolorem, sed vitae provident minima nihil possimus exercitationem dolores doloribus.
                     </p>
-                    </div> 
                     <div className="row d-flex justify-content-center align-items-center">
                     <div className="col-md-8 d-flex justify-content-center  w3-padding-32">
     <div className="shadow rounded bg-white" style={{ height: "400px", overflowY: "auto" }}>
@@ -79,8 +77,9 @@ function PageSamples() {
                     </div>
                 </div>
             </div>
+            {/*}
             <div className="container-fluid">
-                <div className="spyscroll w3-container w3-padding-64" id="spyscroll">
+                <div className="spyscroll w3-container w3-padding-32" id="spyscroll">
                     <h4 className="w3-margin-top" id="#spy-scroll">SPYSCROLL.</h4>
                     <hr className="w3-opacity" />
                     <p>
@@ -97,9 +96,9 @@ function PageSamples() {
                     </div>
                 </div>
             </div>
-
+*/}
             <div className="container-fluid w3-light-gray" id="login-page">
-                <div className="w3-container w3-padding-64">
+                <div className="w3-padding-32">
                     <h4 id="forms"><b className="fw-bolder w3-text-black">FORM</b><span className="fw-lighter text-muted">COMPONENTS.</span></h4>
                     <hr className="w3-opacity" />
                     <p className="w3-text-black">
@@ -116,9 +115,9 @@ function PageSamples() {
                     </div>
                 </div>
             </div>
-
+{/*}
             <div className="container-fluid bg-white" id="album-page">
-                <div className="w3-container w3-padding-64">
+                <div className="w3-container w3-padding-32">
                     <h4 className="w3-text-black w3-margin-top">ALBUM.</h4>
                     <hr className="w3-opacity" />
                     <p>
@@ -126,8 +125,108 @@ function PageSamples() {
                     </p>
                 </div>
             </div>
+*/}
+            <div className="container-fluid w3-light-gray">
+                <div className="blog-page  w3-padding-64" id="blog-page">
+                    <h4 className="w3-text-black">SCROLLSPY SAMPLE.</h4>
+                    <hr className="w3-opacity" />
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde voluptate porro consequuntur velit ducimus quae enim deserunt a officia hic dolorem, sed vitae provident minima nihil possimus exercitationem dolores doloribus.
+                    </p>
+                    <div className="row d-flex justify-content-center align-items-center">
+                    <div className="col-md-8 d-flex justify-content-center  w3-padding-32">
+    <div className="shadow rounded bg-white" style={{ height: "400px", overflowY: "auto" }}>
+        <div to="/blog#blog" onClick={scrollToTop}>
+            <img src={BlogShot} alt="blog-sample" className='shadow mx-auto' style={{ maxWidth: "750px" }} />
+        </div>
+    </div>
+</div>
+                        <div className="col-md-4  w3-padding-32">
+                            <div>
+                                <div className="row">
+                                    <h6 className="w3-margin-left">SCROLL SPY FEATURES:</h6>
+                                    <div className="col">
+                                        <ul style={{ fontSize: '12px' }} className="fw-lighter">
+                                            <li>Navigation</li>
+                                            <li>Header Element</li>
+                                            <li>CTA Button</li>
+                                            <li>Blogger Bio</li>
+                                        </ul>
+                                    </div>
 
-            <div className="container-fluid bg-white"></div>
+                                    <div className="col">
+                                        <ul style={{ fontSize: '12px' }} className="fw-lighter">
+                                            <li>Popular Posts</li>
+                                            <li>Read More option</li>
+                                            <li>Share Button Option</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="w3-padding-large">
+                                    <h6 >POSSIBILITIES:</h6>
+                                    <p style={{ fontSize: '12px' }}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea mollitia sint doloremque ab in exercitationem veniam. Quo nam ad libero autem error. Quisquam provident qui quo facere ipsam inventore nobis.</p>
+                                    <p style={{ fontSize: '12px' }} className="fw-lighter">Click the view sample button below to view the full sample site.</p>
+                                    <Link to='/scroll-spy'>
+                                        <Button className="btn btn-warning">VIEW SAMPLE</Button>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div className="container-fluid w3-light-gray">
+                <div className="blog-page  w3-padding-32" id="blog-page">
+                    <h4 className="w3-text-black">ALBUM SAMPLE.</h4>
+                    <hr className="w3-opacity" />
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde voluptate porro consequuntur velit ducimus quae enim deserunt a officia hic dolorem, sed vitae provident minima nihil possimus exercitationem dolores doloribus.
+                    </p>
+                    <div className="row d-flex justify-content-center align-items-center">
+                    <div className="col-md-8 d-flex justify-content-center  w3-padding-32">
+    <div className="shadow rounded bg-white" style={{ height: "400px", overflowY: "auto" }}>
+        <div to="/blog#blog" onClick={scrollToTop}>
+            <img src={BlogShot} alt="blog-sample" className='shadow mx-auto' style={{ maxWidth: "750px" }} />
+        </div>
+    </div>
+</div>
+                        <div className="col-md-4  w3-padding-32">
+                            <div>
+                                <div className="row">
+                                    <h6 className="w3-margin-left">ALBUM FEATURES:</h6>
+                                    <div className="col">
+                                        <ul style={{ fontSize: '12px' }} className="fw-lighter">
+                                            <li>Navigation</li>
+                                            <li>Header Element</li>
+                                            <li>CTA Button</li>
+                                            <li>Blogger Bio</li>
+                                        </ul>
+                                    </div>
+
+                                    <div className="col">
+                                        <ul style={{ fontSize: '12px' }} className="fw-lighter">
+                                            <li>Popular Posts</li>
+                                            <li>Read More option</li>
+                                            <li>Share Button Option</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="w3-padding-large">
+                                    <h6 >POSSIBILITIES:</h6>
+                                    <p style={{ fontSize: '12px' }}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea mollitia sint doloremque ab in exercitationem veniam. Quo nam ad libero autem error. Quisquam provident qui quo facere ipsam inventore nobis.</p>
+                                    <p style={{ fontSize: '12px' }} className="fw-lighter">Click the view sample button below to view the full sample site.</p>
+                                    <Link to='/album'>
+                                        <Button className="btn btn-warning">VIEW SAMPLE</Button>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     );

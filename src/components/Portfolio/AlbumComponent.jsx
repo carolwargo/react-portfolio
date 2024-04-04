@@ -2,8 +2,8 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import PalmTan from "../assets/images/ShadowBackgrounds/PalmTan.png";
-import Placeholder from "../assets/images/Placeholder.png";
+import PalmTan from "../../assets/images/ShadowBackgrounds/PalmTan.png";
+import Placeholder from "../../assets/images/Placeholder.png";
 import Card from "react-bootstrap/Card";
 
 function AlbumExample() {
@@ -238,13 +238,13 @@ function AlbumExample() {
                       <li>
                         <a href="/" className="link-info" style={{fontSize:'16px'}}>
                           <i className="fab fa-twitter w3-margin-right"></i>
-                          Twitter
+                          Follow on Twitter
                         </a>
                       </li>
                       <li>
                         <a href="/" className="link-info" style={{fontSize:'16px'}}>
                           <i className="fab fa-facebook w3-margin-right"></i>
-                          Facebook
+                          Like on Facebook
                         </a>
                       </li>
                     </ul>
@@ -260,7 +260,7 @@ function AlbumExample() {
                       <li>
                         <a href="/" className="link-info" style={{fontSize:'16px'}}>
                           <i className="fas fa-phone w3-margin-right"></i>
-                         Support
+                          Customer Support
                         </a>
                       </li>
                     </ul>
