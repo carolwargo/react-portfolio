@@ -25,11 +25,11 @@ export default function SpyScrollComponent() {
   return (
     <div className="spy-scroll" id="spy-scroll">
       <br />
-      <div className="w3-center w3-margin-top w3-padding-64">
-        <h1>SCROLL SPY EXAMPLE</h1>
-        <p>Scroll spy example with content</p>
+      <div className="w3-center w3-margin-top">
+        <h1 className="text-white">SCROLL SPY EXAMPLE</h1>
+        <p className="text-white">Scroll spy example with content <span><i>content coming soon!</i></span></p>
       </div>
-      <MDBContainer className="shadow">
+      <MDBContainer className="shadow bg-white text-black">
         <MDBRow className="row d-flex border-top">
           <MDBCol
             md="4"

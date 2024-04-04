@@ -51,14 +51,18 @@ function Signup() {
         // If form is valid, proceed with submission
         if (isValid) {
             console.log('Submitting form...');
-            // Implement form submission logic here
+            console.log('First Name:', firstName);
+            console.log('Last Name:', lastName);
+            console.log('Email:', email);
+            console.log('Password:', password);
+            console.log('Subscribe to newsletter:', newsletterChecked ? 'Yes' : 'No');
         }
     };
 
     return (
         <div className="signup" id='signup'>
             <div className="w3-container w3-content bg-white shadow">
-                <div className="w3-container w3-content w3-padding-16 px-4 border-dark">
+            <div className="w3-padding-16 border-dark">
                     <h4 className="fw-light w3-margin-top"><b>Signup Form</b></h4>
                     <form onSubmit={handleSubmit} autoComplete="on">
                         <div className="row mb-4">

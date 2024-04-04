@@ -93,7 +93,7 @@ function AlbumExample() {
             ></div>
 
             <div className="container">
-              <div className="row py-lg-5">
+              <div className="row  justify-content-center align-items-center py-lg-5">
                 <div className="col-lg-6 col-md-8 mx-auto">
                   <h1 className="fw-light">   <i className="fas fa-camera w3-margin-right"></i><b>my</b>album.</h1>
                   <p className="lead text-muted">
@@ -130,9 +130,7 @@ function AlbumExample() {
 
                     <div className="card-body bg-info-subtle">
                       <p className="card-text">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum velit ullam dolorum fugit maiores autem consequuntur at obcaecati nemo accusantium quisquam fugiat fuga, molestias reprehenderit recusandae tenetur beatae voluptatibus nisi?
                       </p>
                       <div className="d-flex justify-content-between align-items-center">
                         <div className="btn-group">
@@ -162,19 +160,19 @@ function AlbumExample() {
         </div>
       </main>
 
-      <div className=" w3-padding-64 w3-light" id="navbarHeader">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-6 offset-md-1 py-4">
+      <div className="w3-light" id="navbarHeader">
+      <div className="container w3-padding-64">
+          <div className="row justify-content-center align-items-center">
+            <div className="col-sm-6 py-4">
               <h4>Create An Album</h4>
 
-              <ol>
-                <li>Click the 'Upload' button to start the process. </li>
-                <li>
+              <ol style={{fontSize:'14px'}}>
+                <li style={{fontSize:'14px'}}>Click the 'Upload' button to start the process. </li>
+                <li style={{fontSize:'14px'}}>
                   Once prompted, select the photos you want to include in the
                   album.
                 </li>
-                <li>
+                <li style={{fontSize:'14px'}}>
                   After that, add some information about the album. Feel free to
                   provide a brief description, including details about the
                   creator or the contents of the album. Make it informative but
@@ -182,59 +180,7 @@ function AlbumExample() {
                   images.
                 </li>
               </ol>
-              <hr />
-              <div className="w3-margin-left">
-                <h5 className="">Connect with Us</h5>
-                <p className="">
-                  If you need inspiration from our community,{" "}
-                  <a href="/" className="">
-                    Follow us on Twitter X{" "}
-                  </a>
-                  , or{" "}
-                  <a href="/" className="">
-                    {" "}
-                    Like us on Facebook{" "}
-                  </a>
-                  . For non-urgent inquiries, feel free to reach out to us via{" "}
-                  <a href="mailto:">Email</a>. Have a concern that just can't
-                  wait, contact <a href="mailto:">Customer Support</a>.
-                </p>
-                <br />
-                <div className="row">
-                  <div className="col l6">
-                    <ul className="list-unstyled">
-                      <li>
-                        <a href="/" className="">
-                          <i className="fab fa-twitter w3-margin-right"></i>
-                          Follow on Twitter
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/" className="">
-                          <i className="fab fa-facebook w3-margin-right"></i>
-                          Like on Facebook
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="col l6">
-                    <ul className="list-unstyled">
-                      <li>
-                        <a href="/" className="">
-                          <i className="fas fa-envelope w3-margin-right"></i>
-                          Email Us
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/" className="">
-                          <i className="fas fa-phone w3-margin-right"></i>
-                          Customer Support
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+           
             </div>
             <div className="col-sm-6 col-md-5 py-4">
               <div className="w3-container">
@@ -250,18 +196,77 @@ function AlbumExample() {
                       ></i>
                     </a>
                   </Card.Body>
-                  <Card.Footer
-                    className="align-items-end w3-margin bg-info-subtle"
-                    style={{ fontSize: "14px" }}
-                  >
-                    <p>
-                      Once saved, share the album on various social sites, or
-                      directly with your friends, family, or colleagues by
-                      copying the link and sending it to them via email or
-                      messaging platforms."
-                    </p>
-                  </Card.Footer>
+         
                 </Card>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div className="container w3-light-gray w3-padding-64">
+          <div className="row justify-content-center align-items-center">
+            <div className="col-sm-6 w3-padding-large">
+             
+              <div className="w3-margin-left">
+                <h4>Connect with Us</h4>
+                <br></br>
+                <p style={{fontSize:'14px'}}>
+                  If you need inspiration from our community,{" "}
+                  <a  style={{fontSize:'14px'}}href="/" className="link-info">
+                    Follow us on Twitter X{" "}
+                  </a>
+                  , or{" "}
+                  <a href="/"className="link-info" style={{fontSize:'14px'}}>
+                    {" "}
+                    Like us on Facebook{" "}
+                  </a>
+                  . For non-urgent inquiries, feel free to reach out to us via{" "}
+                  <a href="mailto:" className="link-info">Email</a>. Have a concern that just can't
+                  wait, contact <a href="mailto:" className="link-info">Customer Support</a>.
+                </p>
+             
+              </div>
+            </div>
+            <div className="col-sm-6 col-md-5 w3-padding-large">
+              <div className="w3-container">
+              <div className="row">
+              <h5 className="w3-padding-16">CUSTOMER SERVICE</h5>
+              <br />
+                  <div className="col l6">
+                   
+                    <ul className="list-unstyled">
+                      <li>
+                        <a href="/" className="link-info" style={{fontSize:'16px'}}>
+                          <i className="fab fa-twitter w3-margin-right"></i>
+                          Follow on Twitter
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="link-info" style={{fontSize:'16px'}}>
+                          <i className="fab fa-facebook w3-margin-right"></i>
+                          Like on Facebook
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col l6">
+                    <ul className="list-unstyled">
+                      <li>
+                        <a href="/" className="link-info" style={{fontSize:'16px'}}>
+                          <i className="fas fa-envelope w3-margin-right"></i>
+                          Email Us
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="link-info" style={{fontSize:'16px'}}>
+                          <i className="fas fa-phone w3-margin-right"></i>
+                          Customer Support
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+               
               </div>
             </div>
           </div>

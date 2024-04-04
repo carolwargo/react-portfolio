@@ -13,9 +13,14 @@ function Login() {
         e.preventDefault();
         console.log('Form login submitted');
 
-        // Reset previous error messages
-        setUsernameError('');
-        setPasswordError('');
+ // Reset previous error messages
+ setUsernameError('');
+ setPasswordError('');
+
+ // Reset form fields
+ setUsername(''); // Reset username to empty string
+ setPassword(''); // Reset password to empty string
+
 
         // Validation logic
         let isValid = true;
@@ -39,34 +44,34 @@ function Login() {
     return (
         <div className="login" id='login'>
             <div className="w3-container w3-content bg-white shadow">
-                <div className="w3-padding-16 px-4 border-dark">
+                <div className="w3-padding-16 border-dark">
                     <h4 className="fw-light w3-margin-top"><b>Login Form</b></h4>
                     <div className="w3-padding-24">
                         <form onSubmit={handleLogin}> {/* Wrap input fields with a form */}
 
                             <div className="form-outline mb-4">
-                                <input 
-                                    type="text" 
-                                    id="username" 
-                                    className={`form-control shadow-sm border border-1 ${usernameError ? 'is-invalid' : ''}`}
-                                    placeholder="Username"
-                                    value={username}
-                                    onChange={(e) => setUsername(e.target.value)}
-                                    autoComplete="username"
-                                />
+                            <input 
+    type="text" 
+    id="username" 
+    className={`form-control shadow-sm border border-1 ${usernameError ? 'is-invalid' : ''}`}
+    placeholder="Username"
+    value={username || 'Username'} // Use username state variable if not empty, otherwise use 'Username' placeholder
+    onChange={(e) => setUsername(e.target.value)}
+    autoComplete="username"
+/>
                                 <div className="invalid-feedback">{usernameError}</div>
                             </div>
 
                             <div className="form-outline mb-4">
-                                <input 
-                                    type="password" 
-                                    id="new-password" 
-                                    className={`form-control shadow-sm border border-1 ${passwordError ? 'is-invalid' : ''}`}
-                                    placeholder="Password"
-                                    value={password}
-                                    onChange={(e) => setPassword(e.target.value)}
-                                    autoComplete="new-password"
-                                />
+                            <input 
+    type="password" 
+    id="new-password" 
+    className={`form-control shadow-sm border border-1 ${passwordError ? 'is-invalid' : ''}`}
+    placeholder="Password"
+    value={password || 'Password'} // Use password state variable if not empty, otherwise use 'Password' placeholder
+    onChange={(e) => setPassword(e.target.value)}
+    autoComplete="new-password"
+/>
                                 <div className="invalid-feedback">{passwordError}</div>
                             </div>
 
