@@ -12,7 +12,6 @@ import README from "../assets/images/Portfolio/README.png";
 import Login from "../components/Portfolio/Forms/Login";
 import Signup from "../components/Portfolio/Forms/Signup";
 import Graphics from "../components/Portfolio/Graphics/Graphics";
-import BlogShot from "../assets/images/FullPage/BlogShot.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -799,42 +798,15 @@ function Portfolio() {
               "Sample pages will be available soon. Thanks for your patience."{" "}
             </i>
           </p>
+          <div className="text-center w3-padding-16">
+        <Link to="/page-samples#page-samples" onClick={scrollToTop}>
+          <p><b>Follow the link to see the start of my sample sites. </b>             
+          <i className="fa fa-arrow-right w3-hover-opacity"></i>
+          </p>
+          </Link>
+              </div>
           </div>
-
-  <div className="row justify-content-center align-items-center">
-        <div className="col-lg-8 text-center">
-          <div className="card w3-padding-small" >
-            <div className="card-body"style={{ height: "350px", overflowY: "auto" }}>
-            <Link to="/blog#blog" onClick={scrollToTop}>
-              <img src={BlogShot} alt="blog-sample" className='shadow' style={{ width: "600px" }} />
-            </Link>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-4 d-flex flex-column justify-content-between">
-  <div className="w3-padding-16 w3-margin-left">
-    <div>
-      <h4>FEATURES</h4> 
-      <ul>
-        <li>Navigation</li>
-        <li>Header Element with CTA</li>
-        <li>Blogger Bio</li>
-        <li>Popular Posts</li>
-        <li>Read More option</li>
-        <li>Share Button Option</li>
-      </ul>
-    </div>
-  </div>
-  <div className="align-self-end">
-    <Link to="/blog#blog" onClick={scrollToTop}>
-      <Button className="btn-primary" size="sm"> 
-      View Blog
-      </Button> 
-    </Link>
-          </div>
-        </div>
-  
-  </div>
+      
 </div>
       {/**^^^end main container*/}
       {/**end portfolio container wholepage */}
