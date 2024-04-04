@@ -6,8 +6,12 @@ import WomanReading from "../assets/images/WomanReading.jpg";
 import Business from "../assets/images/About/Business.png";
 import PostsShare from "../components/Portfolio/Blog/PostsShare";
 import Posts from "../components/Portfolio/Blog/Posts";
+import { Button } from "react-bootstrap";
 
 const BlogPage = () => {
+
+
+
     return (
         <div className="blog" id="blog">
             <Alert variant="light" className="container-fluid shadow w3-margin-top">
@@ -15,7 +19,14 @@ const BlogPage = () => {
                 <Alert.Heading className="w3-center w3-xlarge">BLOG</Alert.Heading>
                 <p className="w3-center">
                     Welcome to my blog! Here you'll find a collection of articles and posts on a variety of topics, including web development, design, and more. Feel free to explore and leave a comment if you have any questions or feedback.
-                </p>
+                </p>    <div className="text-center"> {/* Added text-center class here */}
+      <Link to="/blog#blog">
+        <Button className="btn-primary" size="sm"> 
+         CALL TO ACTION
+        </Button> 
+      </Link>
+    </div>
+
                 </div>
             </Alert>
     <div > 
@@ -225,7 +236,7 @@ const BlogPage = () => {
   
         <br />
 <div className="text-center w3-padding-bottom">
-          <Link to="/sample-pages#sample-pages"><i 
+          <Link to="/portfolio#samples"><i 
           className="fa fa-arrow-left  w3-hover-opacity" ></i>
            <span className="w3-margin-left"><b>Return to sample pages.</b></span>
               </Link>

@@ -1,5 +1,6 @@
 import React from "react";
 import Alert from "react-bootstrap/Alert";
+import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import TableBasic from "../components/Portfolio/Tables/TableBasic";
 import JATE from "../assets/images/Portfolio/JATE.png";
@@ -11,6 +12,7 @@ import README from "../assets/images/Portfolio/README.png";
 import Login from "../components/Portfolio/Forms/Login";
 import Signup from "../components/Portfolio/Forms/Signup";
 import Graphics from "../components/Portfolio/Graphics/Graphics";
+import BlogShot from "../assets/images/FullPage/BlogShot.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -39,36 +41,45 @@ function Portfolio() {
               <b>CW</b>Portfolio.
             </h1>
             <h5>Select a component to view from the tabs below...</h5>
-            <ul className="nav nav-tabs justify-content-center flex-column flex-sm-row"> {/* Added flex classes for responsiveness */}
-  <li className="nav-item w3-light-gray mx-1 my-1 w3-xxlarge"> 
-    <a className="nav-link fw-bold" href="#forms">FORMS</a>
-  </li>
-  
-  <li className="nav-item w3-light-gray mx-1 my-1 w3-xxlarge"> 
-    <a className="nav-link fw-bold" href="#alerts">ALERTS</a>
-  </li>
-  
-  <li className="nav-item w3-light-gray mx-1 my-1 w3-xxlarge"> 
-    <a className="nav-link fw-bold" href="#tables">TABLES</a>
-  </li>
-  
-  <li className="nav-item w3-light-gray mx-1 my-1 w3-xxlarge"> 
-    <a className="nav-link fw-bold" href="#server">SERVER-SIDE FUNCTIONS</a>
-  </li>
-  
-  <li className="nav-item w3-light-gray mx-1 my-1 w3-xxlarge"> 
-    <a className="nav-link fw-bold" href="#graphics">GRAPHICS</a>
-  </li>
-  
-  <li className="nav-item w3-light-gray mx-1 my-1 w3-xxlarge">
-    <a className="nav-link fw-bold" href="#spy-scroll">SPY SCROLL</a>
-  </li>
-  
-  <li className="nav-item w3-light-gray mx-1 my-1 w3-xxlarge"> 
-    <a className="nav-link fw-bold" href="#page-samples">SAMPLES</a>
-  </li>
-</ul>
-
+            <ul className="nav nav-tabs justify-content-center flex-column flex-sm-row">
+              {" "}
+              {/* Added flex classes for responsiveness */}
+              <li className="nav-item w3-light-gray mx-1 my-1 w3-xxlarge">
+                <a className="nav-link fw-bold" href="#forms">
+                  FORMS
+                </a>
+              </li>
+              <li className="nav-item w3-light-gray mx-1 my-1 w3-xxlarge">
+                <a className="nav-link fw-bold" href="#alerts">
+                  ALERTS
+                </a>
+              </li>
+              <li className="nav-item w3-light-gray mx-1 my-1 w3-xxlarge">
+                <a className="nav-link fw-bold" href="#tables">
+                  TABLES
+                </a>
+              </li>
+              <li className="nav-item w3-light-gray mx-1 my-1 w3-xxlarge">
+                <a className="nav-link fw-bold" href="#server">
+                  SERVER-SIDE FUNCTIONS
+                </a>
+              </li>
+              <li className="nav-item w3-light-gray mx-1 my-1 w3-xxlarge">
+                <a className="nav-link fw-bold" href="#graphics">
+                  GRAPHICS
+                </a>
+              </li>
+              <li className="nav-item w3-light-gray mx-1 my-1 w3-xxlarge">
+                <a className="nav-link fw-bold" href="#spy-scroll">
+                  SPY SCROLL
+                </a>
+              </li>
+              <li className="nav-item w3-light-gray mx-1 my-1 w3-xxlarge">
+                <a className="nav-link fw-bold" href="#page-samples">
+                  SAMPLES
+                </a>
+              </li>
+            </ul>
           </div>
           <div className="w3-col l4">
             <div className="container ">
@@ -84,12 +95,24 @@ function Portfolio() {
                   >
                     <b>SERVER-SIDE APPS</b>
                   </h4>
-                  <p className='fw-lighter' style={{fontSize:'12px'}}><i>'Please note that back-end or server-side functions are not intended for visual appeal; rather, they are designed for functionality, data processing, and managing the logic of a web application.'</i></p>
+                  <p className="fw-lighter" style={{ fontSize: "12px" }}>
+                    <i>
+                      'Please note that back-end or server-side functions are
+                      not intended for visual appeal; rather, they are designed
+                      for functionality, data processing, and managing the logic
+                      of a web application.'
+                    </i>
+                  </p>
 
-<div className="card-footer w3-margin-bottom"></div>
-<p className="mb-3 fw-light">
-  Server-side functions are a part of the backend architecture of web applications, enabling efficient request handling, data processing, security enforcement, and business logic implementation. They are essential components of modern web development, especially in building scalable, secure, and performant web applications.
-</p>
+                  <div className="card-footer w3-margin-bottom"></div>
+                  <p className="mb-3 fw-light">
+                    Server-side functions are a part of the backend architecture
+                    of web applications, enabling efficient request handling,
+                    data processing, security enforcement, and business logic
+                    implementation. They are essential components of modern web
+                    development, especially in building scalable, secure, and
+                    performant web applications.
+                  </p>
 
                   <div
                     className="card-footer w3-padding-24 w3-text-light-gray"
@@ -356,6 +379,46 @@ function Portfolio() {
               </div>
               <br />
               {/*************************************************************************/}
+
+            <div className="w3-card" id="text-editor">
+              <div className="container w3-padding w3-padding-24">
+              <h4
+                    className=""
+                    style={{ fontFamily: "sans-serif" }}
+                    id="#button"
+                  >
+                  BUTTONS
+                  </h4>
+                  <hr />
+
+                  <div className="row justify-content-center align-items-center">
+                  <div className="flex-column col-sm-12 col-md-12 col-lg-12">
+                <p className="mb-2">Large button with outline style</p> 
+                  <Button variant="secondary" size="lg" className="mb-2">
+         Large button
+       </Button>
+                  </div>
+                  </div>
+               
+      
+  <br />  
+                <Button variant="outline-secondary" size="lg" className="mb-2">
+          Large button
+        </Button>{' '}
+  
+        <Button variant="primary" size="sm">
+          Small button
+        </Button>{' '}
+        </div>
+        <div>
+        <Button variant="secondary" size="sm">
+          Small button
+        </Button>
+        </div>
+        </div>
+
+<div>
+              </div>
             </div>
           </div>
           {/*End col-4*/}
@@ -365,8 +428,7 @@ function Portfolio() {
           <div className="w3-col l8">
             <div className="w3-content ">
               <h3 className=" w3-margin-bottom">
-                {" "}
-                WEB COMPONENTS
+              <b className="fw-bold text-black">WEB</b><span className="text-muted fw-light">COMPONENTS</span>
               </h3>
               <p>
                 {" "}
@@ -378,8 +440,8 @@ function Portfolio() {
               <hr />
               <br />
               {/**start forms */}
-              <h4 className="w3-text-black" id="forms">
-                FORMS.
+              <h4  id="forms">
+                <b className="fw-bolder w3-text-black">FORM</b><span className="fw-lighter text-muted">COMPONENTS.</span>
               </h4>
               <p className="w3-text-black">
                 Digital components in web development are used to enhancing user
@@ -392,6 +454,7 @@ function Portfolio() {
                 checkboxes, and buttons, allowing users to interact with the
                 website and provide information.
               </p>
+              
               <br />
               <Login />
               <br />
@@ -402,7 +465,13 @@ function Portfolio() {
               {/**end forms */}
 
               <br />
-              <h4 id="alerts">ALERTS.</h4>
+              <h4 id="alerts">
+              <b className="fw-bold text-black">ALERT</b><span className="fw-light text-muted">COMPONENTS.</span>
+              </h4>
+              <p>
+                  Alert color options are strategically chosen to convey
+                  different meanings and priorities. Color options and designed use are as follows:{" "}
+                </p>
               <hr />
               <Alert variant="info">
                 <Alert.Heading>
@@ -415,18 +484,274 @@ function Portfolio() {
                   prominent colors, icons, and text formatting to ensure users
                   notice them.
                 </p>
+                
                 <hr />
                 <p>Color indicates info alert.</p>
               </Alert>
+              <div className="container">
+                <h5 className="w3-margin-bottom w3-margin-top">
+                  ALERT BOX COLOR OPTIONS & USE:
+                </h5>
+                <div className="row justify-content-center align-items-center ">
+                  <div className="flex-column col-sm-12 col-md-6 col-lg-6">
+                    <p style={{fontSize:'14px'}}>
+                      {" "}
+                      Blue, light gray, white, and black are often used to
+                      establish a messaging hierarchy, with 'primary' being the
+                      most prominent color, indicating the primary action or
+                      information.
+                    </p>
+                  </div>
+                  <div className="col-sm-12 col-md-6 col-lg-6">
+                    <div style={{ display: "flex", gap: "10px" }} className=" justify-content-center">
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: "#b8daff",
+                          }}
+                          className="shadow"
+                        ></div>
+                        <p style={{ marginTop: "5px", fontSize: "12px" }}>
+                          Primary
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: "#d6d8db",
+                          }}
+                          className="shadow"
+                        ></div>
+                        <p style={{ marginTop: "5px", fontSize: "12px" }}>
+                          Secondary
+                        </p>
+                      </div>
+                      
+
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: "white",
+                          }}
+                          className="shadow"
+                        ></div>
+                        <p style={{ marginTop: "5px", fontSize: "12px" }}>
+                          White
+                        </p>
+                      </div>
+
+
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: "black",
+                          }}
+                          className="shadow"
+                        ></div>
+                        <p style={{ marginTop: "5px", fontSize: "12px" }}>
+                          Black
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br />
+
+                <div className="row justify-content-center align-items-center ">
+                  <div className="col-sm-12 col-md-6 col-lg-6">
+                  <p style={{fontSize:'14px'}}>
+                      {" "}
+                      Green, red, and yellow are commonly associated with
+                      actions or statuses.
+                    </p>
+                  </div>
+                  <div className="col-sm-12 col-md-6 col-lg-6">
+                    <div style={{ display: "flex", gap: "10px" }} className="justify-content-center align-items-center ">
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: "#c3e6cb",
+                          }}
+                          className="shadow"
+                        ></div>
+                        <p style={{ marginTop: "5px", fontSize: "12px" }}>
+                          Success
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: " #f5c6cb",
+                          }}
+                          className="shadow"
+                        ></div>
+                        <p style={{ marginTop: "5px", fontSize: "12px" }}>
+                          Danger
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: "#ffeeba",
+                          }}
+                          className="shadow"
+                        ></div>
+                        <p style={{ marginTop: "5px", fontSize: "12px" }}>
+                          Warning
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div className="row justify-content-center align-items-center ">
+                  <div className="col-sm-12 col-md-6 col-lg-6">
+                  <p style={{fontSize:'14px'}}>
+                      {" "}
+                      Lighter shades such as light and teal are frequently
+                      employed to inform, direct, or notify users without
+                      necessarily signaling urgency or importance.
+                    </p>
+                  </div>
+                  <div className="col-sm-12 col-md-6 col-lg-6">
+                    <div style={{ display: "flex", gap: "10px" }} className="justify-content-center align-items-center ">
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: "#bee5eb",
+                          }}
+                          className="shadow"
+                        ></div>
+                        <p style={{ marginTop: "5px", fontSize: "12px" }}>
+                          Info
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: "#f8f9fa",
+                          }}
+                          className="shadow"
+                        ></div>
+                        <p style={{ marginTop: "5px", fontSize: "12px" }}>
+                          Light
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: "#495057",
+                          }}
+                          className="shadow"
+                        ></div>
+                        <p style={{ marginTop: "5px", fontSize: "12px" }}>
+                          Dark
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <br />
               <br />
               {/**end alerts */}
               {/**start tabless */}
               <h4 className="text-black w3-margin-top" id="tables">
-                TABLES.
+              <b className="fw-bold text-black">TABLE</b><span className="fw-light text-muted">COMPONENTS.</span>
               </h4>
               <hr />
+              
               <p className="w3-text-black">
                 Tables are structured grids used to present data in rows and
                 columns. They're commonly used for displaying tabular data, such
@@ -438,9 +763,9 @@ function Portfolio() {
               {/**endspyscroll */}
 
               {/*start graphics*/}
-              <h4 className="w3-text-black w3-margin-top" id="graphics">
-                GRAPHICS.
-              </h4>
+              <h4 className="w3-text-black w3-margin-top" id="page-samples">
+              <b className="fw-bold text-black">GRAPHIC</b><span className="fw-light text-muted"> ELEMENTS.</span>
+          </h4>
               <hr className="w3-opacity" />
               <p className="w3-text-black">
                 Graphics play a key role in communication, whether it's in
@@ -459,9 +784,10 @@ function Portfolio() {
         </div>
         {/**end row */}
         {/**start sample pages section*/}
-        <div className="w3-content w3-container w3-padding-large w3-padding-32">
-          <h4 className="w3-text-black w3-margin-top" id="page-samples">
-            SAMPLE WEB PAGES.
+
+          <div className="w3-container w3-margin-top">
+          <h4 className="w3-text-black" id="page-samples">
+          <b className="fw-bold text-black">WEB PAGE</b><span className="fw-light text-muted">SAMPLES.</span>
           </h4>
           <hr className="w3-opacity" />
           <p>
@@ -473,29 +799,45 @@ function Portfolio() {
               "Sample pages will be available soon. Thanks for your patience."{" "}
             </i>
           </p>
+          </div>
 
-          <div className="row text-center">
-            <div className="col l4">
-              <div className="container">
-                <Link to="/blog#blog" onClick={scrollToTop}>
-                  <i
-                    className="fa fa-arrow-circle-right w3-xxlarge w3-hover-opacity"
-                    style={{ color: "black" }}
-                  ></i>
-                </Link>
-                <p>
-                  <b>sample blog page</b>
-                </p>
-              </div>
+  <div className="row justify-content-center align-items-center">
+        <div className="col-lg-8 text-center">
+          <div className="card w3-padding-small" >
+            <div className="card-body"style={{ height: "350px", overflowY: "auto" }}>
+            <Link to="/blog#blog" onClick={scrollToTop}>
+              <img src={BlogShot} alt="blog-sample" className='shadow' style={{ width: "600px" }} />
+            </Link>
             </div>
-  
           </div>
         </div>
-        {/**end sample pages section*/}
-      </div>
+        <div className="col-lg-4 d-flex flex-column justify-content-between">
+  <div className="w3-padding-16 w3-margin-left">
+    <div>
+      <h4>FEATURES</h4> 
+      <ul>
+        <li>Navigation</li>
+        <li>Header Element with CTA</li>
+        <li>Blogger Bio</li>
+        <li>Popular Posts</li>
+        <li>Read More option</li>
+        <li>Share Button Option</li>
+      </ul>
+    </div>
+  </div>
+  <div className="align-self-end">
+    <Link to="/blog#blog" onClick={scrollToTop}>
+      <Button className="btn-primary" size="sm"> 
+      View Blog
+      </Button> 
+    </Link>
+          </div>
+        </div>
+  
+  </div>
+</div>
       {/**^^^end main container*/}
       {/**end portfolio container wholepage */}
-
     </div>
   );
 }

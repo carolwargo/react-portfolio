@@ -12,7 +12,7 @@ import ScrollSpy from './pages/ScrollSpy.jsx'
 import Test from "./pages/Test.jsx";
 import Footer from "./components/Footer.jsx";
 import NavFixed from "./components/NavFixed.jsx"; 
-
+import Album from "./pages/Album.jsx";
 import "./App.css";
 
 function App() {
@@ -28,6 +28,7 @@ function App() {
           <Route path="/resume" element={<ResumePage />} />
           <Route path="/test" element={<Test />} />
           <Route path="/page-samples" element={<PageSamples />} />  
+          <Route path="/album" element={<Album />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/scroll-spy" element={<ScrollSpy />} />
           {/* Add a catch-all route for handling errors */}

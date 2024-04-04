@@ -1,4 +1,5 @@
 import React from "react";
+import SideNavbar from "../components/SideNavbar/SideNavbar";
 
 function Test() {
 
@@ -6,7 +7,7 @@ function Test() {
 
         <div className="w3-padding-64">
           
-          <h1>test</h1>
+       <SideNavbar />
 
           
         </div>
