@@ -26,7 +26,7 @@ function PageSamples() {
         </h1>
         </div>
       
-        <div className="container-fluid bg-white p-5">
+        <div className="container-fluid bg-white p-4">
         <div className="blog-page" id="blog-page">
         <h4 className="w3-text-black w3-margin-top" >
           BLOG.
@@ -38,7 +38,7 @@ function PageSamples() {
       </div>
           <div className="row d-flex justify-content-center align-items-center">
           <div className="col-md-8">
-            <div className="w3-padding-small w3-padding-24" >
+            <div className=" w3-padding-24" >
         
             <div className="body "style={{ height: "400px", overflowY: "auto" }}>
             <div to="/blog#blog" onClick={scrollToTop}>
@@ -93,7 +93,7 @@ function PageSamples() {
         <br />
          <br />
         <br />
-        <div className="container-fluid bg-white p-5">
+        <div className="container-fluid bg-white p-4">
       <div className="spyscroll" id="spyscroll">
         <h4 className="w3-text-black w3-margin-top" id="#spy-scroll">
           SPYSCROLL.
@@ -111,7 +111,7 @@ function PageSamples() {
       </div>
       </div>
 
-      <div className="container-fluid bg-white p-5" >
+      <div className="container-fluid bg-white p-4" >
       <div className="login-page" id="login-page">
         <h4 className="w3-text-black w3-margin-top" >
           LOGIN.
@@ -124,7 +124,7 @@ function PageSamples() {
         </div>
 
 
-        <div className="container-fluid bg-white p-5" id="">
+        <div className="container-fluid bg-white p-4" id="">
         <div className="album-page" id="album-page">
         <h4 className="w3-text-black w3-margin-top" >
           ALBUM.
@@ -137,7 +137,7 @@ function PageSamples() {
         </div>
 
 
-        <div className="container-fluid bg-white p-5" id="">
+        <div className="container-fluid bg-white p-4" id="">
         </div>
 
 
