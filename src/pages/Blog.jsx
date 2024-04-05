@@ -16,8 +16,8 @@ const BlogPage = () => {
         <div className="blog" id="blog">
             <Alert variant="light" className="container-fluid shadow w3-margin-top">
             <div className="container-fluid w3-padding-64">
-                <Alert.Heading className="w3-center w3-xlarge">BLOG</Alert.Heading>
-                <p className="w3-center">
+                <Alert.Heading className="w3-center w3-xlarge">MYBLOG.COM</Alert.Heading>
+                <p className="w3-center px-3">
                     Welcome to my blog! Here you'll find a collection of articles and posts on a variety of topics, including web development, design, and more. Feel free to explore and leave a comment if you have any questions or feedback.
                 </p>    <div className="text-center"> {/* Added text-center class here */}
       <Link to="/blog#blog">
