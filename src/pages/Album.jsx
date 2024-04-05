@@ -2,18 +2,23 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import PalmTan from "../assets/images/ShadowBackgrounds/PalmTan.png";
-import Placeholder from "../assets/images/Placeholder.png";
+import Colors from '../assets/images/LandScape/Colors.png';
+import Purple from '../assets/images/LandScape/Purple.png';
+import Lake from '../assets/images/LandScape/Lake.png';
+import SunRay from '../assets/images/LandScape/SunRay.png';
+import Waterfall from '../assets/images/LandScape/Waterfall.png';
+import YellowFlowers from '../assets/images/LandScape/YellowFlowers.png';
+import White from '../assets/images/LandScape/White.png';
 import Card from "react-bootstrap/Card";
 
 function AlbumExample() {
   const imageArray = [
-    Placeholder,
-    Placeholder,
-    Placeholder,
-    Placeholder,
-    Placeholder,
-    Placeholder,
+    Colors,
+    Purple,
+    Lake,
+    Waterfall,
+    SunRay,
+    YellowFlowers,
   ];
 
   return (
@@ -72,9 +77,10 @@ function AlbumExample() {
             className="py-5 text-center"
             style={{
               position: "relative",
-              backgroundImage: `url(${PalmTan})`,
+              backgroundImage: `url(${White})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
+              backgroundColor: "rgba(255, 255, 255, 0.5)", // Adjust the alpha value (0.5 in this example)
             }}
           >
             {/* White mask */}

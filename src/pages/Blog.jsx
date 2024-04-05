@@ -194,13 +194,45 @@ const BlogPage = () => {
               <div className="w3-card shadow">
               <PostsShare />
               </div>
-            
-          
             </div>
             {/*col end for posts iteration */}   
   </div>
   <br />
-     <hr />
+
+  {/**End About Section */}
+<div className="w3-container w3-padding-48 w3-black" id="contact">
+  <div className="row justify-content-center align-items-center">
+  <div className="col-sm-12 col-md-2 col-lg-2" ></div>
+    <div className="col-sm-12 col-md-5 col-lg-5" >
+<div className="w3-content w3-container">
+  
+<h1 className="w3-border-light-grey w3-padding-16"><b>SUBSCRIBE</b></h1>
+
+    <p> Join our community to unwrap exclusive content, dazzling updates, and behind-the-scenes secrets! Be the first to discover our latest news, captivating stories, and fabulous giveaways. Become part of our circle today! </p>
+
+
+</div>
+    </div>
+    <div className="col-sm-12 col-md-3 col-lg-3 w3-margin-top">
+      <div className="w3-container">
+  <form action="/action_page.php" target="_blank">
+    <input className="w3-input w3-border" type="text" placeholder="Name" required name="Name"/>
+    <input className="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email"/>
+    <div className="d-flex justify-content-end"> {/* Wrap the button in this div */}
+      <button className="w3-button w3-white w3-section" type="submit">
+        <i className="fa fa-paper-plane"></i> SUBMIT
+      </button>
+    </div>
+  </form>
+</div>
+</div>
+<div className="col-sm-12 col-md-2 col-lg-2"></div>
+
+  </div>
+  </div>
+  
+   {/*End Page Container */}
+  
      <br />
         <div className="w3-container d-flex w3-white justify-content-around" >
   {/*container start for stats*/}
@@ -241,7 +273,7 @@ const BlogPage = () => {
            <span className="w3-margin-left"><b>Return to sample pages.</b></span>
               </Link>
               </div>
-              <br />
+              
 </div>         
 </div>
 </div>

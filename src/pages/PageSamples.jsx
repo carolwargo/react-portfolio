@@ -1,5 +1,6 @@
 import React from "react";
 import BlogShot from "../assets/images/FullPage/BlogShot.png";
+import RealEstate from "../assets/images/FullPage/RealEstate.png";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Login from "../components/Portfolio/Forms/Login";
@@ -28,13 +29,74 @@ function PageSamples() {
                 </h1>
             </div>
 
+
+
+            <div className="container-fluid w3-light-gray">
+                <div className="realestate-page  w3-padding-32" id="realestate-page">
+               
+                    <div className="row d-flex justify-content-center align-items-center">
+                    <div className="col-md-8 d-flex justify-content-center  w3-padding-32">
+    
+    <div className="shadow rounded bg-white" style={{ height: "400px", overflowY: "auto" }}>
+        <div to="/blog#blog" onClick={scrollToTop}>
+            <img src={RealEstate} alt="realestate" className='shadow mx-auto' style={{ maxWidth: "750px" }} />
+        </div>
+    </div>
+</div>
+                        <div className="col-md-4  w3-padding-32">
+                            <div>
+                                <div className="row px-4 justify-content-center">
+                               
+                    <h4 className="w3-text-black">REAL ESTATE SAMPLE PAGE.</h4>
+                    <hr className="w3-opacity" />
+                                    <h6 >FEATURES:</h6>
+                                    <div className="col">
+                                        <ul style={{ fontSize: '12px' }} className="fw-lighter">
+                                            <li>Navigation</li>
+                                            <li>Header Element</li>
+                                            <li>CTA Button</li>
+                                            <li>Blogger Bio</li>
+                                        </ul>
+                                    </div>
+
+                                    <div className="col">
+                                        <ul style={{ fontSize: '12px' }} className="fw-lighter">
+                                            <li>Popular Posts</li>
+                                            <li>Read More option</li>
+                                            <li>Share Button Option</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="w3-padding-large">
+                                    <h6 >POSSIBILITIES:</h6>
+                                    <p style={{ fontSize: '12px' }}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea mollitia sint doloremque ab in exercitationem veniam. Quo nam ad libero autem error. Quisquam provident qui quo facere ipsam inventore nobis.</p>
+                                    <p style={{ fontSize: '12px' }} className="fw-lighter">Click the view sample button below to view the full sample site.</p>
+                                    <Link to='/blog'>
+                                        <Button className="btn btn-warning">VIEW SAMPLE</Button>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
             <div className="container-fluid w3-light-gray">
                 <div className="blog-page  w3-padding-32" id="blog-page">
+                <div className="px-2 justify-content-center">
                     <h4 className="w3-text-black">BLOG PAGE SAMPLE.</h4>
                     <hr className="w3-opacity" />
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde voluptate porro consequuntur velit ducimus quae enim deserunt a officia hic dolorem, sed vitae provident minima nihil possimus exercitationem dolores doloribus.
                     </p>
+                    </div>
                     <div className="row d-flex justify-content-center align-items-center">
                     <div className="col-md-8 d-flex justify-content-center  w3-padding-32">
     <div className="shadow rounded bg-white" style={{ height: "400px", overflowY: "auto" }}>
@@ -43,10 +105,13 @@ function PageSamples() {
         </div>
     </div>
 </div>
-                        <div className="col-md-4  w3-padding-32">
+<div className="col-md-4  w3-padding-32">
                             <div>
-                                <div className="row">
-                                    <h6 className="w3-margin-left">BLOG FEATURES:</h6>
+                                <div className="row px-4 justify-content-center">
+                               
+                    <h4 className="w3-text-black">REAL ESTATE SAMPLE PAGE.</h4>
+                    <hr className="w3-opacity" />
+                                    <h6 >FEATURES:</h6>
                                     <div className="col">
                                         <ul style={{ fontSize: '12px' }} className="fw-lighter">
                                             <li>Navigation</li>
@@ -97,8 +162,8 @@ function PageSamples() {
                 </div>
             </div>
 */}
-            <div className="container-fluid w3-light-gray" id="login-page">
-                <div className="w3-padding-32">
+            <div className="container-fluid w3-light-gray w3-padding-32" id="login-page">
+            <div className="px-2 justify-content-center">
                     <h4 id="forms"><b className="fw-bolder w3-text-black">FORM</b><span className="fw-lighter text-muted">COMPONENTS.</span></h4>
                     <hr className="w3-opacity" />
                     <p className="w3-text-black">
@@ -127,24 +192,22 @@ function PageSamples() {
             </div>
 */}
             <div className="container-fluid w3-light-gray">
-                <div className="blog-page  w3-padding-64" id="blog-page">
-                    <h4 className="w3-text-black">SCROLLSPY SAMPLE.</h4>
-                    <hr className="w3-opacity" />
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde voluptate porro consequuntur velit ducimus quae enim deserunt a officia hic dolorem, sed vitae provident minima nihil possimus exercitationem dolores doloribus.
-                    </p>
+                <div className="blog-page w3-padding-32" id="scroll-spy-page">
+               
                     <div className="row d-flex justify-content-center align-items-center">
                     <div className="col-md-8 d-flex justify-content-center  w3-padding-32">
     <div className="shadow rounded bg-white" style={{ height: "400px", overflowY: "auto" }}>
-        <div to="/blog#blog" onClick={scrollToTop}>
-            <img src={BlogShot} alt="blog-sample" className='shadow mx-auto' style={{ maxWidth: "750px" }} />
+        <div to="/scroll-spy" onClick={scrollToTop}>
+            <img src={BlogShot} alt="scroll-spy-sample" className='shadow mx-auto' style={{ maxWidth: "750px" }} />
         </div>
     </div>
 </div>
-                        <div className="col-md-4  w3-padding-32">
+<div className="col-md-4  w3-padding-32">
                             <div>
-                                <div className="row">
-                                    <h6 className="w3-margin-left">SCROLL SPY FEATURES:</h6>
+                                <div className="row px-4 justify-content-center">
+                                <h4 className="w3-text-black">SCROLLSPY SAMPLE.</h4>
+                    <hr className="w3-opacity" />
+                                    <h6 >FEATURES:</h6>
                                     <div className="col">
                                         <ul style={{ fontSize: '12px' }} className="fw-lighter">
                                             <li>Navigation</li>
@@ -166,7 +229,7 @@ function PageSamples() {
                                     <h6 >POSSIBILITIES:</h6>
                                     <p style={{ fontSize: '12px' }}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea mollitia sint doloremque ab in exercitationem veniam. Quo nam ad libero autem error. Quisquam provident qui quo facere ipsam inventore nobis.</p>
                                     <p style={{ fontSize: '12px' }} className="fw-lighter">Click the view sample button below to view the full sample site.</p>
-                                    <Link to='/scroll-spy'>
+                                    <Link to='/blog'>
                                         <Button className="btn btn-warning">VIEW SAMPLE</Button>
                                     </Link>
                                 </div>
@@ -179,24 +242,22 @@ function PageSamples() {
 
 
             <div className="container-fluid w3-light-gray">
-                <div className="blog-page  w3-padding-32" id="blog-page">
-                    <h4 className="w3-text-black">ALBUM SAMPLE.</h4>
-                    <hr className="w3-opacity" />
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde voluptate porro consequuntur velit ducimus quae enim deserunt a officia hic dolorem, sed vitae provident minima nihil possimus exercitationem dolores doloribus.
-                    </p>
+                <div className="album-page  w3-padding-32" id="album-page">
                     <div className="row d-flex justify-content-center align-items-center">
                     <div className="col-md-8 d-flex justify-content-center  w3-padding-32">
     <div className="shadow rounded bg-white" style={{ height: "400px", overflowY: "auto" }}>
-        <div to="/blog#blog" onClick={scrollToTop}>
-            <img src={BlogShot} alt="blog-sample" className='shadow mx-auto' style={{ maxWidth: "750px" }} />
+        <div to="/album" onClick={scrollToTop}>
+            <img src={BlogShot} alt="album-sample" className='shadow mx-auto' style={{ maxWidth: "750px" }} />
         </div>
     </div>
 </div>
-                        <div className="col-md-4  w3-padding-32">
+<div className="col-md-4  w3-padding-32">
                             <div>
-                                <div className="row">
-                                    <h6 className="w3-margin-left">ALBUM FEATURES:</h6>
+                                <div className="row px-4 justify-content-center">
+                               
+                    <h4 className="w3-text-black">ALBUM SAMPLE PAGE.</h4>
+                    <hr className="w3-opacity" />
+                                    <h6 >FEATURES:</h6>
                                     <div className="col">
                                         <ul style={{ fontSize: '12px' }} className="fw-lighter">
                                             <li>Navigation</li>
@@ -218,7 +279,7 @@ function PageSamples() {
                                     <h6 >POSSIBILITIES:</h6>
                                     <p style={{ fontSize: '12px' }}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea mollitia sint doloremque ab in exercitationem veniam. Quo nam ad libero autem error. Quisquam provident qui quo facere ipsam inventore nobis.</p>
                                     <p style={{ fontSize: '12px' }} className="fw-lighter">Click the view sample button below to view the full sample site.</p>
-                                    <Link to='/album'>
+                                    <Link to='/blog'>
                                         <Button className="btn btn-warning">VIEW SAMPLE</Button>
                                     </Link>
                                 </div>
@@ -227,6 +288,7 @@ function PageSamples() {
                     </div>
                 </div>
             </div>
+
 
         </div>
     );
