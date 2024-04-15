@@ -228,6 +228,7 @@ export default function ResumePage() {
     <br />
     </div>
 
+<br />
   {/*End Left Column*/}
   </div>
 
