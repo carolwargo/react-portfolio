@@ -10,6 +10,7 @@ import Waterfall from '../assets/images/LandScape/Waterfall.png';
 import YellowFlowers from '../assets/images/LandScape/YellowFlowers.png';
 import White from '../assets/images/LandScape/White.png';
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
 
 function AlbumExample() {
   const imageArray = [
@@ -277,11 +278,16 @@ function AlbumExample() {
             </div>
           </div>
         </div>
-
-        <footer className="text-muted py-5">
+        <div className="text-center w3-padding-bottom">
+          <Link to="/page-samples#samples"><i 
+          className="fa fa-arrow-left  w3-hover-opacity" ></i>
+           <span className="w3-margin-left"><b>Return to sample pages.</b></span>
+              </Link>
+              </div>
+        <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">
-              <a href="/">Back to top</a>
+              <a href="Album">Back to top</a>
             </p>
           </div>
         </footer>

@@ -483,7 +483,7 @@ function Portfolio() {
               <hr />
               <br />
               {/**start forms */}
-              <h4  id="forms">
+              <h4 className="w3-margin-top" id="forms">
                 <b className="fw-bolder w3-text-black">FORM</b><span className="fw-lighter text-muted">COMPONENTS.</span>
               </h4>
               <p className="w3-text-black">
@@ -497,19 +497,20 @@ function Portfolio() {
                 checkboxes, and buttons, allowing users to interact with the
                 website and provide information.
               </p>
-              </div>
+          
               <br />
+           
               <Login />
               <br />
               <br />
               <Signup />
+            
               <br />
               <br />
               {/**end forms */}
 
-              <br />
-              <div className="container w3-padding">
-              <h4 id="alerts">
+            
+              <h4 id="alerts" className="w3-margin-top">
               <b className="fw-bold text-black">ALERT</b><span className="fw-light text-muted">COMPONENTS.</span>
               </h4>
               <p>
@@ -791,16 +792,14 @@ function Portfolio() {
                   </div>
                 </div>
               </div>
-              </div>
-             
-              <br />
-              {/**end alerts */}
-              {/**start tabless */}
-              <div className="container w3-padding">
-              <h4 className="text-black w3-margin-top" id="tables">
+           <br />
+           <br />
+           <h4 className="text-black w3-margin-top" id="tables">
               <b className="fw-bold text-black">TABLE</b><span className="fw-light text-muted">COMPONENTS.</span>
               </h4>
               <hr />
+           <div className="container">
+           
               
               <p className="w3-text-black">
                 Tables are structured grids used to present data in rows and
@@ -810,12 +809,7 @@ function Portfolio() {
               <div className="container  w3-padding">
               <TableBasic />
               </div>
-              </div>
-              <br />
-              {/**endspyscroll */}
-
-              {/*start graphics*/}
-              <div className="container w3-padding">
+            <br />
               <h4 className="w3-text-black w3-margin-top" id="page-samples">
               <b className="fw-bold text-black">GRAPHIC</b><span className="fw-light text-muted"> ELEMENTS.</span>
           </h4>
@@ -827,7 +821,7 @@ function Portfolio() {
                 information and ideas, making them more engaging, memorable, and
                 effective.
               </p>
-             
+             <br />
               <br />
               <Graphics />
               {/**end graphics */}
@@ -840,18 +834,15 @@ function Portfolio() {
         {/**end row */}
         {/**start sample pages section*/}
 
-          <div className="w3-container w3-margin-top">
-          <h4 className="w3-text-black" id="page-samples">
+         <div className="container w3-padding">
+          <h4 className="w3-text-black w3-margin-top" id="page-samples">
           <b className="fw-bold text-black">WEB PAGE</b><span className="fw-light text-muted">SAMPLES.</span>
           </h4>
           <hr className="w3-opacity" />
           <p>
             Each type of website serves a unique purpose and requires specific
             features and functionalities to effectively achieve its objectives
-            and meet the needs of its target audience. <br />
-            <br />
-            <i>
-              <b>NOTE:</b>{" "} "Sample pages are under construction. View with the understanding it's a work in progress. Thanks for your patience."{" "}
+            and meet the needs of its target audience. <i> <b> NOTE:</b>{" "} "Sample pages are under construction. View with the understanding it's a work in progress. Thanks for your patience."{" "}
             </i>
           </p>
           <div className="text-center w3-padding-16 w3-padding-large">
@@ -862,13 +853,15 @@ function Portfolio() {
           </Link>
               </div>
           </div>
-          <footer className="text-muted py-5">
-          <div className="container">
-            <p className="float-end mb-1">
-            <a href="#portfolio">Back to top</a>
-            </p>
-          </div>
-        </footer>
+          <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
+  <div className="container">
+    <p className="float-end mb-1">
+      <a href="#portfolio">Back to top</a>
+    </p>
+  </div>
+</footer>
+
+        </div>
 </div>
       {/**^^^end main container*/}
       {/**end portfolio container wholepage */}

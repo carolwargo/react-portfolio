@@ -28,7 +28,7 @@ function PageSamples() {
                         backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",
                         backgroundPosition: "center",
-                        minHeight: "400px", // Set minimum height or adjust as needed
+                        minHeight: "600px", // Set minimum height or adjust as needed
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
@@ -215,9 +215,9 @@ function PageSamples() {
                                                    </ul>
                                                </div>
                                          <p style={{ fontSize: '12px' }} className="fw-lighter">Click the view sample button below to view the full sample site.</p>
-                                    <Link to='/blog'>
+                                    <a href='https://carolwargo.github.io/realestate/'>
                                         <Button className="btn btn-warning">VIEW SAMPLE</Button>
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -399,7 +399,7 @@ function PageSamples() {
                 </div>
             </div>
 */}
-          <footer className="text-muted py-5">
+          <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">
               <a href="#page-samples">Back to top</a>

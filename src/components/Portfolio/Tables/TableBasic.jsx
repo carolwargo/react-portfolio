@@ -1,13 +1,13 @@
 import React from "react";
 import { Table } from "react-bootstrap";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const TableBasic = () => {
   return (
-      <div className="tables" id="tables">
-          <div className="container">
-              <h5 className="fw-light w3-margin-top text-info"><b>Basic</b></h5>
-              <div className="row justify-content-center">
+   <div className="tables" id="tables">
+      <div className="container">
+        <h5 className="fw-light w3-margin-top text-info"><b>Basic</b></h5>
+        <div className="row justify-content-center">
                   <Table striped bordered hover className="w3-padding-small">
                       <thead>
                           <tr>
@@ -39,9 +39,10 @@ const TableBasic = () => {
                   </Table>
               </div>
 
+
               <h5 className="fw-light w3-margin-top text-info"><b>Light Striped with Hover</b></h5>
-              <div className="row justify-content-center">
-                  <Table striped bordered hover variant="light">
+        <div className="row justify-content-center">
+          <Table striped bordered hover variant="light">
                       <thead>
                           <tr>
                               <th scope="col"><b>#</b></th>
@@ -71,10 +72,9 @@ const TableBasic = () => {
                       </tbody>
                   </Table>
               </div>
-
-              <h5 className="fw-light w3-margin-top text-info"><b>Dark Striped with Hover</b></h5>
-              <div className="row justify-content-center">
-                  <Table striped bordered hover variant="dark">
+    <h5 className="fw-light w3-margin-top text-info"><b>Dark Striped with Hover</b></h5>
+        <div className="row justify-content-center">
+          <Table striped bordered hover variant="dark">
                       <thead>
                           <tr>
                               <th scope="col"><b>#</b></th>

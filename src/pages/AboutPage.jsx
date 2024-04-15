@@ -177,8 +177,7 @@ export default function AboutPage() {
           <i className="fa fa-arrow-right w3-hover-opacity w3-margin-left"></i>
           </p>
           </Link>
-            
-              <footer className="text-muted py-5">
+          <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">
               <a href="#about">Back to top</a>

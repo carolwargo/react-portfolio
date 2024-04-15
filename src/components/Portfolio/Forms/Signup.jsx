@@ -64,7 +64,7 @@ function Signup() {
             <div className="col-md-6 mx-auto">
                 <div className="signup" id='signup'>
                     <div className="w3-container w3-content bg-white shadow ">
-                        <div className="w3-padding-16 border-dark px-2">
+                        <div className="w3-padding-16 border-dark">
                             <h4 className="fw-light w3-margin-top w3-margin-bottom"><b>Signup Form</b></h4>
                             <form onSubmit={handleSubmit} autoComplete="on" >
                                 <div className="row my-4">

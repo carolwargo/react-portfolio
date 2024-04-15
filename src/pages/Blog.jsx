@@ -268,7 +268,7 @@ const BlogPage = () => {
   
         <br />
 <div className="text-center w3-padding-bottom">
-          <Link to="/portfolio#samples"><i 
+          <Link to="/page-samples#samples"><i 
           className="fa fa-arrow-left  w3-hover-opacity" ></i>
            <span className="w3-margin-left"><b>Return to sample pages.</b></span>
               </Link>
