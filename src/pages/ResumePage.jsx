@@ -22,7 +22,19 @@ export default function ResumePage() {
   return (
     <div className="resume w3-light-gray" id="resume">
       <div className="w3-content w3-margin-top w3-padding-64 w3-light-gray" style={{maxWidth:"1400px"}}>
+      <div className="w3-display-container w3-padding">
+      <div className="w3-white w3-text-grey w3-card w3-padding">
+      <div className="w3-row d-flex justify-content-center" >
+    <div className="w3-col m12 flex-column w3-padding-8">
+        <h1 className='w3-text-light-blue'>DIGITAL RESUME</h1>
 
+<p>View my skills, work experience, volunteer background and more, or download a physical copy of my resume.</p>
+</div>
+
+
+</div>
+</div>
+</div>
 {/*} The Grid*/}
 <div className="w3-row-padding justify-content-center align-items-center">
 
@@ -41,38 +53,59 @@ export default function ResumePage() {
         
       <h6 className="w3-large w3-margin-top "><b>Contact Information</b></h6>
       <p>
-                <i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-light-blue"></i>
+                <i className="fa fa-briefcase fa-fw w3-margin-right w3-text-light-blue"></i>
               Full Stack Developer
               </p>
-              <p>
-                <i className="fa fa-home fa-fw w3-margin-right w3-large w3-text-light-blue"></i>
+
+                   <p>
+              <i className="fa fa-home fa-fw w3-margin-right w3-text-light-blue"></i>
                 Huntingtown, MD
               </p>
-              <p>
-                <a href="mail:carolwargo.dev@gmail.com">
-                  <i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-light-blue"></i>
-                  Email
+
+<br/>
+              <div className="row ">
+              <div className="col-md-6">
+              <a href="mail:carolwargo.dev@gmail.com">
+              <i className="fa fa-envelope fa-fw  w3-margin-right w3-text-light-blue"></i>
+              
+             Email
+             </a>
+             <br/>
+              <a href="tel:+14437711726">
+              <i className="fa fa-phone fa-fw w3-margin-Left  w3-margin-right  w3-text-light-blue"></i>
+             Phone
+               </a>
+            
+
+</div>
+<div className="col-md-6">          
+<a href="https://github.com/carolwargo">
+                  <i className="fab fa-github fa-fw w3-margin-right w3-text-light-blue"></i>
+                  Github
                 </a>
-              </p>
-              <p>
-                <a href="tel:+14437711726">
-                  <i className="fa fa-phone fa-fw w3-margin-right w3-large w3-text-light-blue"></i>
-                  443-771-1726
-                </a>
-              </p>
-              <p>
-                <a href="mail:carolwargo.dev@gmail.com">
-                  <i className="fab fa-github fa-fw w3-margin-right w3-large w3-text-light-blue"></i>
-                 Github
-                </a>
-              </p>
-              <p className="w3-margin-bottom">
-                <a href="mail:carolwargo.dev@gmail.com">
-                  <i className="fab fa-linkedin fa-fw w3-margin-right w3-large w3-text-light-blue"></i>
-                 LinkedIn
-                </a>
-              </p>
+              
+             <br/>
+                <a href="https://www.linkedin.com/in/carol-wargo-35021baa/">
+                  <i className="fab fa-linkedin fa-fw w3-margin-right w3-text-light-blue"></i>
+                  LinkedIn
+                </a>      
+             
+               </div>
+                </div>   
+               
         <hr/>
+        <p className="w3-text-gray w3-margin-top" style={{fontSize:'14px'}}><i className="fas fa-feather-alt fa-fw"></i><b>    <i>
+                  “I am a Full-Stack Software Developer and Graphic
+                  Designer with a solid foundation in both frontend & backend
+                  technologies, and a 20-year background in Business Analysis &
+                  Project Management. I excel in leading and collaborating with
+                  cross-functional teams, leveraging the latest tools and
+                  frameworks to bring innovative ideas to life. From crafting
+                  interactive User interfaces to designing efficient and secure
+                  server-side solutions, I am dedicated to delivering a seamless
+                  User experience while optimizing performance.”
+                </i></b></p>
+                <hr/>
        {/**Start Tech Skills*/}
         <h6 className="w3-large w3-margin-top"><i className="fa fa-asterisk fa-fw w3-margin-right w3-text-light-blue"></i><b>Technical Skills</b></h6>
         <br />
@@ -173,14 +206,14 @@ export default function ResumePage() {
           <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"90%"}}>90%</div>
         </div>
         <p>Design Software</p>
-        <br />
+      
         <hr />
     </div>
  
-  <div className="w3-center w3-padding-large w3-padding-24">
+  <div className="w3-center w3-padding-large w3-padding-8">
     <h5 className="w3-text-gray w3-margin-bottom"><i className="fas fa-download w3-text-light-blue"></i><b className="w3-margin-left">Resume Download</b></h5>
    
-    <p>For a physical copy, click the "Download Resume" button below to download a PDF of my resume.</p>
+    <p style={{fontSize:'14px'}}>For a physical copy, click the "Download Resume" button below to download a PDF of my resume.</p>
             <button className="w3-button w3-light-grey w3-padding-large">
   <a
     className="button text-black"
@@ -201,31 +234,13 @@ export default function ResumePage() {
   {/*Right Column*/}
   <div className="w3-twothird">
 
-  <div className="w3-container w3-card w3-white w3-margin-bottom ">
-      <h4 className="w3-text-grey w3-padding-16"><i className="fas fa-user fa-fw  w3-xlarge w3-text-light-blue w3-margin-top"></i> Carol Wargo</h4>
-      <div className="w3-container">
-      <h6 className="w3-opacity"><b>Full Stack Developer / UX Designer</b></h6>
-       <p className="w3-text-gray w3-margin-top"><i className="fas fa-feather-alt fa-fw w3-large "></i><b>    <i>
-                  “I am a passionate Full-Stack Software Developer and Graphic
-                  Designer with a solid foundation in both frontend & backend
-                  technologies, and a 20-year background in Business Analysis &
-                  Project Management. I excel in leading and collaborating with
-                  cross-functional teams, leveraging the latest tools and
-                  frameworks to bring innovative ideas to life. From crafting
-                  interactive User interfaces to designing efficient and secure
-                  server-side solutions, I am dedicated to delivering a seamless
-                  User experience while optimizing performance.”
-                </i></b></p>
-      
-        </div>
-        </div>
+
 
   
     <div className="w3-container w3-card w3-white w3-margin-bottom">
       <h4 className="w3-text-grey w3-padding-16"><i className="fa fa-suitcase fa-fw  w3-xlarge w3-text-light-blue"></i> Work Experience</h4>
       <div className="w3-container">
-        <div className="row align-items-end">
-        <div className="col">
+       
         <h6 className="w3-opacity"><b>Real Estate Agent / Investor</b></h6>
         <h6 className="w3-text-light-blue"><i className="fa fa-calendar fa-fw"></i> June 2003 - <span className="w3-tag w3-light-blue w3-round">Current</span></h6>
         <p className="w3-text-gray w3-margin-top"><i className="far fa-sticky-note fa-fw "></i><b> Duties</b></p>
@@ -239,8 +254,8 @@ export default function ResumePage() {
                     </li>
                     <li>Oversee home staging and architectural Design.</li>
                   </ul>
-        </div>
-        <div className="col">
+      
+     
         <ul className="">
         <li>Employ marketing strategies</li>
                       <li>Analyze current & past market trends</li>
@@ -250,13 +265,12 @@ export default function ResumePage() {
                       </li>
                       <li>Oversee home staging and architectural Design.</li>
                     </ul>
-      </div>
-      </div>
+    
       </div>
       <hr/>
+      <br />
       <div className="w3-container">
-        <div className="row align-items-end">
-        <div className="col">
+    
         <h6 className="w3-opacity"><b>Freelance Design & Development</b></h6>
         <h6 className="w3-text-light-blue"><i className="fa fa-calendar fa-fw"></i> June 2021 - <span className="w3-tag w3-light-blue w3-round">Current</span></h6>
         <p className="w3-text-gray w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
@@ -267,11 +281,7 @@ export default function ResumePage() {
           <li>Implement design changes to improve user experience.</li>
           <li>Conduct audits to identify and fix any technical issues or broken links.</li>
           <li>Implement SEO strategies.</li>
-       
-</ul>
-        </div>
-        <div className="col">
-        <ul className="">    
+ 
           <li>Create engaging content.</li>
           <li>Monitor site security for threats & vulnerabilities.</li>
           <li>Collaborate with clients and cross-functional teams.</li>
@@ -279,13 +289,11 @@ export default function ResumePage() {
           <li>Develop digital surveys.</li>
           <li>Develop digital marketing strategies and social media management systems.</li>
 </ul>
-        </div>
-        </div>
+       
       </div>
       <hr/>
+      <br />
       <div className="w3-container">
-        <div className="row align-items-end">
-        <div className="col">
         <h6 className="w3-opacity"><b>Media Manager & Webmaster</b></h6>
         <h6 className="w3-text-light-blue"><i className="fa fa-calendar fa-fw"></i> Jun 2010 - Mar 2012</h6>
         <p className="w3-text-gray w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
@@ -298,20 +306,8 @@ export default function ResumePage() {
                         Implement design changes to improve user experience.
                       </li>
                       <li>Create engaging content.</li>
-                    </ul>
-        </div>
-        <div className="col">
-    {/*   <p>Manage & maintain the club's site to ensure a functional, up-to-date, and user-friendly UI.
-Implemented design changes to improve appearance and user experience.
-Monitor performance, analyzed traffic to optimize environment .
-Regular audits to identify and fix any technical issues or broken links.
-Implement SEO strategies to improve search engine rankings and increase traffic.
-Monitored site security, to protect against potential threats and vulnerabilities.
-Collaborated with teams to create and upload engaging content.
-Utilized web analytics tools to track key performance indicators and user behavior.
-Responded to user inquiries and feedback, ensuring prompt and helpful customer support.</p><br/>
-*/} 
-   <ul className="">    
+      
+
 <li>
                         Conduct audits to identify and fix any technical issues
                         or broken links.
@@ -327,8 +323,7 @@ Responded to user inquiries and feedback, ensuring prompt and helpful customer s
                       <li>Collaborate with board members, stakeholders and lawmakers</li>
                       <li>Address user inquiries and feedback.</li>
                     </ul>
-      </div>
-    </div>
+  
     </div>
     </div>
     <div className="w3-container w3-card w3-white w3-margin-bottom">
@@ -356,6 +351,7 @@ Responded to user inquiries and feedback, ensuring prompt and helpful customer s
           <div className="w3-container w3-padding-16">
         <h6 className="w3-opacity"><b>Best Practices Followed.</b></h6>
         <h6 className="w3-text-light-blue"><i className="fa fa-cog fa-fw "></i> Development Practices</h6>
+        <br />
         <ul>
               <li>
                 Effectively communicates to engage stakeholders throughout the
@@ -395,6 +391,7 @@ Responded to user inquiries and feedback, ensuring prompt and helpful customer s
       <div className="w3-container w3-padding-16">
         <h6 className="w3-opacity"><b>Best Practices Followed.</b></h6>
         <h6 className="w3-text-light-blue "><i className="fas fa-handshake fa-fw "></i> Interpersonal Practices</h6>
+         <br />
         <ul>
                 <li>
                   Foster customer and stakeholder engagement through effective
@@ -662,6 +659,13 @@ Responded to user inquiries and feedback, ensuring prompt and helpful customer s
         </div>
       </div>
     </div>
+    <footer className="text-muted py-5">
+          <div className="container">
+            <p className="float-end mb-1">
+              <a href="#resume">Back to top</a>
+            </p>
+          </div>
+        </footer>
   </div>
   );
 }

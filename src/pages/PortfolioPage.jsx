@@ -1,6 +1,8 @@
 import React from "react";
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
+import Badge from "react-bootstrap/Badge";
+import CloseButton from "react-bootstrap/CloseButton";
 import { Link } from "react-router-dom";
 import TableBasic from "../components/Portfolio/Tables/TableBasic";
 import JATE from "../assets/images/Portfolio/JATE.png";
@@ -12,6 +14,8 @@ import README from "../assets/images/Portfolio/README.png";
 import Login from "../components/Portfolio/Forms/Login";
 import Signup from "../components/Portfolio/Forms/Signup";
 import Graphics from "../components/Portfolio/Graphics/Graphics";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPinterest } from "@fortawesome/free-brands-svg-icons";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -390,29 +394,79 @@ function Portfolio() {
                   </h4>
                   <hr />
 
-                  <div className="row justify-content-center align-items-center">
-                  <div className="flex-column col-sm-12 col-md-12 col-lg-12">
-                <p className="mb-2">Large button with outline style</p> 
+                  <div className="row d-flex justify-content-center align-items-center w3-margin-top">
+                  <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
+                <div className="container text-center">
+                <p className="mb-2"><i className="fa fa-info-circle  w3-large text-info"></i><b> Button variations displayed include:</b> <br />size, color, outline, solid, shape, icon elements and shadowing to give the appearance the element is floating. </p> 
+                <br />
                   <Button variant="secondary" size="lg" className="mb-2">
          Large button
        </Button>
-                  </div>
-                  </div>
-               
-      
-  <br />  
-                <Button variant="outline-secondary" size="lg" className="mb-2">
+       <Button variant="outline-secondary" size="lg" className="mb-2 shadow" style={{width:'100%'}}>
           Large button
         </Button>{' '}
+       </div>
+
+                  </div>
+                  </div>
+
+                  <div className="row d-flex justify-content-center align-items-center w3-margin-top">
+                  <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
+                <div className="container text-center">
   
-        <Button variant="primary" size="sm">
-          Small button
-        </Button>{' '}
-        </div>
-        <div>
-        <Button variant="secondary" size="sm">
+        <Button variant="primary" size="sm" className="w3-margin-right">
           Small button
         </Button>
+       
+       
+        <Button variant="secondary" size="sm" className="shadow">
+          Small button
+        </Button>
+        </div>
+        </div>
+        </div>
+<br />
+        <hr />
+        <div className="row d-flex justify-content-center align-items-center w3-margin-top w3-padding-16">
+                  <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
+                <div className="container text-center">
+        <p>   <i className="fa fa-info-circle  w3-large text-info"></i> Buttons can serve as notifiers such as: close "this", or badges notifications to look at "that".</p>  
+       <CloseButton className="w3-margin-right w3-padding-large shadow border border-black border-2"/>
+        <Button variant="primary" style={{padding:"12px"}}>
+      Profile <Badge bg="secondary">9</Badge>
+      <span className="visually-hidden">unread messages</span>
+    </Button>
+    
+        </div>
+        </div>
+        </div>
+        
+        <hr />
+       
+        <div className="row d-flex justify-content-center align-items-center w3-margin-top w3-padding-16">
+                  <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
+                <div className="container text-center">
+  <p><i className="fa fa-info-circle w3-large text-info"></i> Buttons can be linked to functions such as: downloads, video play and even social media profiles.</p>
+        <Button 
+        variant="secondary" 
+        size="sm" className="rounded-circle shadow w3-margin-right"
+        style={{ width: '50px', height: '50px', borderRadius: '50%' }}
+        >
+       <i className="fa fa-download w3-large"></i>
+        </Button>
+      
+        <Button variant="success" size="sm" className="w3-opacity w3-hover-opacity-off rounded-circle w3-margin-right"
+        style={{ width: '50px', height: '50px', borderRadius: '50%' }}>
+        <i className="fa fa-play w3-large"></i>
+        </Button>
+        <Button variant="danger" size="sm" className=" rounded-circle"
+        style={{ width: '50px', height: '50px', borderRadius: '50%' }}>
+         <FontAwesomeIcon icon={faPinterest} className="w3-large"/>
+        </Button>
+       
+        </div>
+        </div>
+        </div>
         </div>
         </div>
 
@@ -798,15 +852,21 @@ function Portfolio() {
               "Sample pages will be available soon. Thanks for your patience."{" "}
             </i>
           </p>
-          <div className="text-center w3-padding-16">
+          <div className="text-center w3-padding-16 w3-padding-large">
         <Link to="/page-samples#page-samples" onClick={scrollToTop}>
-          <p><b>Follow the link to see the start of my sample sites. </b>             
-          <i className="fa fa-arrow-right w3-hover-opacity"></i>
+          <p>Follow the link to see the start of my sample sites.            
+          <i className="fa fa-arrow-right w3-hover-opacity w3-margin-left"></i>
           </p>
           </Link>
               </div>
           </div>
-      
+          <footer className="text-muted py-5">
+          <div className="container">
+            <p className="float-end mb-1">
+            <a href="#portfolio">Back to top</a>
+            </p>
+          </div>
+        </footer>
 </div>
       {/**^^^end main container*/}
       {/**end portfolio container wholepage */}

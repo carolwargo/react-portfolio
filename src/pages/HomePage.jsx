@@ -42,10 +42,10 @@ function HomePage() {
               <br />
               <br />
                  
-              <div className="text-center w3-padding-16">
+              <div className="text-center w3-padding-16 w3-padding-large">
         <Link to="/about#about" onClick={scrollToTop}>
-          <p><b>Follow the link to learn more about me professionally. </b>             
-          <i className="fa fa-arrow-right w3-hover-opacity"></i>
+          <p>Follow the link to learn more about me professionally.           
+          <i className="fa fa-arrow-right w3-hover-opacity w3-margin-left"></i>
           </p>
           </Link>
               </div>

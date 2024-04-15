@@ -74,7 +74,13 @@ const ScrollSpy = () => {
   </div>
 
   <div className="col-sm-8 ">
-    <div data-bs-spy="scroll" data-bs-target="#navbar-webdev" data-bs-smooth-scroll="true" className="scrollspy-webdev p-3" tabIndex="0" style={{ height: '500px', overflowY: 'auto' }}>
+    <div 
+    data-bs-spy="scroll" 
+    data-bs-target="#navbar-webdev" 
+    data-bs-smooth-scroll="true" 
+    className="scrollspy-webdev p-3" 
+    tabIndex="0" 
+    style={{ height: '500px', overflowY: 'auto' }}>
     {/*start db & AUTH */}
     <div id="item-1">
         <h3 style={{fontFamily:'belotta text'}}><b>DATABASE & AUTH SERVICES</b></h3>

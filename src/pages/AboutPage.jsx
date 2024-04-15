@@ -171,13 +171,20 @@ export default function AboutPage() {
               </div>
         </div> 
                  
-        <div className="text-center w3-padding-16">
+        <div className="text-center w3-padding-16 w3-padding-large">
         <Link to="/resume#resume" onClick={scrollToTop}>
-          <p><b>Follow the link to view my digital resume and/or download a copy. </b>             
-          <i className="fa fa-arrow-right w3-hover-opacity"></i>
+          <p>Follow the link to view my digital resume and/or download a copy.            
+          <i className="fa fa-arrow-right w3-hover-opacity w3-margin-left"></i>
           </p>
           </Link>
               </div>
+              <footer className="text-muted py-5">
+          <div className="container">
+            <p className="float-end mb-1">
+              <a href="#about">Back to top</a>
+            </p>
+          </div>
+        </footer>
     </div>
   );
 }
