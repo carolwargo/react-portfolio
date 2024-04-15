@@ -177,7 +177,7 @@ export default function AboutPage() {
           <i className="fa fa-arrow-right w3-hover-opacity w3-margin-left"></i>
           </p>
           </Link>
-              </div>
+            
               <footer className="text-muted py-5">
           <div className="container">
             <p className="float-end mb-1">
@@ -185,6 +185,7 @@ export default function AboutPage() {
             </p>
           </div>
         </footer>
+        </div>
     </div>
   );
 }

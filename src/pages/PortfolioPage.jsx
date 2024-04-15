@@ -85,7 +85,7 @@ function Portfolio() {
             </ul>
           </div>
           <div className="w3-col l4">
-            <div className="container ">
+            <div className="container w3-margin-bottom">
               {/*start card-container server code*/}
               <div className="w3-card w3-black" id="server">
                 {/*start card-body for bio*/}
@@ -98,23 +98,12 @@ function Portfolio() {
                   >
                     <b>SERVER-SIDE APPS</b>
                   </h4>
-                  <p className="fw-lighter" style={{ fontSize: "12px" }}>
-                    <i>
-                      'Please note that back-end or server-side functions are
-                      not intended for visual appeal; rather, they are designed
-                      for functionality, data processing, and managing the logic
-                      of a web application.'
-                    </i>
-                  </p>
+     
 
-                  <div className="card-footer w3-margin-bottom"></div>
-                  <p className="mb-3 fw-light">
-                    Server-side functions are a part of the backend architecture
-                    of web applications, enabling efficient request handling,
-                    data processing, security enforcement, and business logic
-                    implementation. They are essential components of modern web
-                    development, especially in building scalable, secure, and
-                    performant web applications.
+                
+                  <p className="mb-3 fw-light w3-margin-top"  style={{ fontSize: "14px" }}>
+                  Server-side functions handle request processing, data management, security, and business logic in web apps. They are vital for building scalable and secure applications.
+
                   </p>
 
                   <div
@@ -384,7 +373,7 @@ function Portfolio() {
               {/*************************************************************************/}
 
             <div className="w3-card" id="text-editor">
-              <div className="container w3-padding w3-padding-24">
+              <div className="container w3-padding w3-padding-32">
               <h4
                     className=""
                     style={{ fontFamily: "sans-serif" }}
@@ -443,7 +432,7 @@ function Portfolio() {
         
         <hr />
        
-        <div className="row d-flex justify-content-center align-items-center w3-margin-top w3-padding-16">
+        <div className="row d-flex  justify-content-center align-items-center w3-margin-top w3-padding-16">
                   <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
                 <div className="container text-center">
   <p><i className="fa fa-info-circle w3-large text-info"></i> Buttons can be linked to functions such as: downloads, video play and even social media profiles.</p>
@@ -479,7 +468,8 @@ function Portfolio() {
           {/*Start col-8*/}
 
           <div className="w3-col l8">
-            <div className="w3-content ">
+            <div className="w3-content mt-3">
+              <div className="container w3-padding">
               <h3 className=" w3-margin-bottom">
               <b className="fw-bold text-black">WEB</b><span className="text-muted fw-light">COMPONENTS</span>
               </h3>
@@ -507,7 +497,7 @@ function Portfolio() {
                 checkboxes, and buttons, allowing users to interact with the
                 website and provide information.
               </p>
-              
+              </div>
               <br />
               <Login />
               <br />
@@ -518,6 +508,7 @@ function Portfolio() {
               {/**end forms */}
 
               <br />
+              <div className="container w3-padding">
               <h4 id="alerts">
               <b className="fw-bold text-black">ALERT</b><span className="fw-light text-muted">COMPONENTS.</span>
               </h4>
@@ -526,6 +517,7 @@ function Portfolio() {
                   different meanings and priorities. Color options and designed use are as follows:{" "}
                 </p>
               <hr />
+             
               <Alert variant="info">
                 <Alert.Heading>
                   {" "}
@@ -540,7 +532,9 @@ function Portfolio() {
                 
                 <hr />
                 <p>Color indicates info alert.</p>
+                
               </Alert>
+            
               <div className="container">
                 <h5 className="w3-margin-bottom w3-margin-top">
                   ALERT BOX COLOR OPTIONS & USE:
@@ -555,6 +549,7 @@ function Portfolio() {
                       information.
                     </p>
                   </div>
+               
                   <div className="col-sm-12 col-md-6 col-lg-6">
                     <div style={{ display: "flex", gap: "10px" }} className=" justify-content-center">
                       <div
@@ -644,6 +639,7 @@ function Portfolio() {
                     </div>
                   </div>
                 </div>
+
                 <br />
 
                 <div className="row justify-content-center align-items-center ">
@@ -795,11 +791,12 @@ function Portfolio() {
                   </div>
                 </div>
               </div>
-
-              <br />
+              </div>
+             
               <br />
               {/**end alerts */}
               {/**start tabless */}
+              <div className="container w3-padding">
               <h4 className="text-black w3-margin-top" id="tables">
               <b className="fw-bold text-black">TABLE</b><span className="fw-light text-muted">COMPONENTS.</span>
               </h4>
@@ -810,12 +807,15 @@ function Portfolio() {
                 columns. They're commonly used for displaying tabular data, such
                 as product listings, pricing tables, or data summaries.
               </p>
+              <div className="container  w3-padding">
               <TableBasic />
-              <br />
+              </div>
+              </div>
               <br />
               {/**endspyscroll */}
 
               {/*start graphics*/}
+              <div className="container w3-padding">
               <h4 className="w3-text-black w3-margin-top" id="page-samples">
               <b className="fw-bold text-black">GRAPHIC</b><span className="fw-light text-muted"> ELEMENTS.</span>
           </h4>
@@ -827,6 +827,7 @@ function Portfolio() {
                 information and ideas, making them more engaging, memorable, and
                 effective.
               </p>
+             
               <br />
               <Graphics />
               {/**end graphics */}
@@ -834,6 +835,7 @@ function Portfolio() {
             {/**end col-8 container*/}
           </div>
           {/**end col-8*/}
+        </div>
         </div>
         {/**end row */}
         {/**start sample pages section*/}
@@ -846,10 +848,10 @@ function Portfolio() {
           <p>
             Each type of website serves a unique purpose and requires specific
             features and functionalities to effectively achieve its objectives
-            and meet the needs of its target audience. <b>NOTE:</b>
+            and meet the needs of its target audience. <br />
+            <br />
             <i>
-              {" "}
-              "Sample pages will be available soon. Thanks for your patience."{" "}
+              <b>NOTE:</b>{" "} "Sample pages are under construction. View with the understanding it's a work in progress. Thanks for your patience."{" "}
             </i>
           </p>
           <div className="text-center w3-padding-16 w3-padding-large">

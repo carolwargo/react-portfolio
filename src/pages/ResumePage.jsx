@@ -659,7 +659,7 @@ export default function ResumePage() {
           <br />
         </div>
       </div>
-    </div>
+   
     <footer className="text-muted py-5">
           <div className="container">
             <p className="float-end mb-1">
@@ -667,6 +667,7 @@ export default function ResumePage() {
             </p>
           </div>
         </footer>
+        </div>
   </div>
   );
 }
