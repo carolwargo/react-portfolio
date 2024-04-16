@@ -6,13 +6,20 @@ import {
   MDBRow,
   MDBIcon
 } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 import ResumeDownload from '../assets/ResumeDownload.pdf';
 
 export default function App() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
   return (
     <div className='footer' id='footer' style={{fontFamily:'Raleway'}}>
     <MDBFooter className='text-center text-white' 
-    style={{ backgroundColor: '#721D67' }}>
+    style={{ backgroundColor: '#6F9699' }}>
     
 
     <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
@@ -66,36 +73,36 @@ export default function App() {
             <h6 className='text-uppercase fw-bold mb-4'>Pages</h6>
         
             <p>
-              <a href='/about' className='text-reset'>
+              <Link to='/about' className='text-reset' onClick={scrollToTop} >
                 About
-              </a>
+              </Link>
             </p>
             <p>
-              <a href='/resume' className='text-reset'>
+              <Link to='/resume' className='text-reset' onClick={scrollToTop} >
                 Digital Resume
-              </a>
+              </Link>
             </p>
             <p>
-              <a href='/portfolio' className='text-reset'>
+              <Link to='/portfolio' className='text-reset' onClick={scrollToTop} >
                Portfolio
-              </a>
+              </Link>
             </p>
           </MDBCol>
 
           <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
             <h6 className='text-uppercase fw-bold mb-4'>Samples</h6>
             <p>
-              <a href='/blog' className='text-reset'>
+              <Link to='/blog' className='text-reset' onClick={scrollToTop} >
                Blog
-              </a>
+              </Link>
             </p>
             <p>
-              <a href='/album' className='text-reset'>
+            <Link to='/album' className='text-reset' onClick={scrollToTop} >
                 Album
-              </a>
+              </Link>
             </p>
             <p>
-              <a href='/real-estate' className='text-reset'>
+              <a href='http://carolwargo.github.io/realestate' className='text-reset' onClick={scrollToTop} >
                 Real Estate
               </a>
             </p>

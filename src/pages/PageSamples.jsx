@@ -21,18 +21,18 @@ function PageSamples() {
     return (
         <div className="page-samples" id="page-samples">
             <div className="w3-padding-top-64 pt-5">
-            <header 
+                <header 
                     className=""
                     style={{
                         backgroundImage: `url(${SampleHeader})`,
                         backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",
                         backgroundPosition: "center",
-                        minHeight: "600px", // Set minimum height or adjust as needed
+                        minHeight: "400px", // Default minimum height
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
-                        position: "relative", // Set position to relative for absolute positioning of mask and text
+                        position: "relative",
                     }}
                 >
                     <div className="mask" 
@@ -42,23 +42,23 @@ function PageSamples() {
                             left: 0,
                             right: 0,
                             bottom: 0,
-                            backgroundColor: "rgba(0, 0, 0, 0.5)", // Adjust opacity as needed
-                            pointerEvents: "none", // Allows click-through to background
+                            backgroundColor: "rgba(0, 0, 0, 0.5)",
+                            pointerEvents: "none",
                         }}
                     ></div>
                     <div 
                         className="w3-content w3-container w3-padding-64 w3-margin-top justify-content-between" 
                         style={{
-                            position: "relative", // Set position to relative to position the text
-                            zIndex: 1, // Ensure text appears above the mask
+                            position: "relative",
+                            zIndex: 1,
                         }}
                     >
                         <h1
                             className="w3-padding-large text-center w3-margin-top"
                             style={{
                                 fontSize: "3rem",
-                                color: "#ffffff", // Set text color
-                                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" // Optional: Add text shadow for better readability
+                                color: "#ffffff",
+                                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)"
                             }}
                         >
                             <b>CW</b><span className="fw-lighter">SAMPLES</span>.

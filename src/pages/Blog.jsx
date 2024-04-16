@@ -263,17 +263,20 @@ const BlogPage = () => {
       </li>
     </ul>
   </Alert>
+  <div className="text-center w3-padding-bottom">
+  <Link to="/page-samples">
+            <p><i 
+          className="fa fa-arrow-left  w3-hover-opacity" ></i>
+           <span className=""><b> Return </b></span>
+           </p>
+              </Link>
+              </div>
+              
   </div>
           {/*row end for the whole page with exception of header & footer */}
   
         <br />
-<div className="text-center w3-padding-bottom">
-          <Link to="/page-samples#samples"><i 
-          className="fa fa-arrow-left  w3-hover-opacity" ></i>
-           <span className="w3-margin-left"><b>Return to sample pages.</b></span>
-              </Link>
-              </div>
-              
+
 </div>         
 </div>
 </div>
