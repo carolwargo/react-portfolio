@@ -18,27 +18,17 @@ export default function App() {
   };
   return (
     <div className='footer' id='footer' style={{fontFamily:'Raleway'}}>
-    <MDBFooter className='text-center text-white' 
-    style={{ backgroundColor: '#6F9699' }}>
+    <MDBFooter className='text-center w3-black' >
     
 
     <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
-      <div className='me-5 d-none d-lg-block'>
-        <span>   <p>
-               <button className="w3-button w3-light-grey w3-padding-large">
-                <a
-                  className="button text-black"
-                  id="download"
-                  download 
-                  href={ResumeDownload}
-                >
-                  <i className="fa fa-download"></i> Download Resume
-                </a>
-              </button>
-            </p></span>
+      <div className='me-5 d-none d-lg-block' >
+      Connect with me:
       </div>
 
       <div>
+      
+          
       <a href='tel:+4437711726' className='me-4 text-reset'>
       <MDBIcon icon="phone-alt" />
 
@@ -53,6 +43,8 @@ export default function App() {
         <a href='https://github.com/carolwargo' className='me-4 text-reset'>
           <MDBIcon fab icon="github" />
         </a>
+        
+      
       </div>
     </section>
 
@@ -64,9 +56,19 @@ export default function App() {
          
               <b>Carol</b> Wargo
             </h6>
-            <p>
+            <p style={{fontSize:'12px'}}>
             Thank you for visiting my site. I hope you found what you were looking for and enjoyed your time here. Feel free to reach out if you have any questions or feedback!
             </p>
+            <button className="w3-button w3-light-grey w3-padding w3-margin-right" >
+                <a
+                  className="button text-black"
+                  id="download"
+                  download 
+                  href={ResumeDownload}
+                >
+                  <i className="fa fa-download"></i> Download Resume
+                </a>
+              </button>
           </MDBCol>
           
           <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
@@ -114,7 +116,7 @@ export default function App() {
             <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
             <p>
               <MDBIcon icon="home" className="me-2" />
-              Huntingtown, MD 20639, US
+              Huntingtown, MD
             </p>
             <p>
               <MDBIcon icon="envelope" className="me-3" />

@@ -20,7 +20,7 @@ function PageSamples() {
 
     return (
         <div className="page-samples" id="page-samples">
-            <div className="w3-padding-top-64 pt-5">
+            <div className="w3-padding-top-64 pt-5 ">
                 <header 
                     className=""
                     style={{
@@ -47,7 +47,7 @@ function PageSamples() {
                         }}
                     ></div>
                     <div 
-                        className="w3-content w3-container w3-padding-64 w3-margin-top justify-content-between" 
+                        className="w3-content w3-container w3-padding-64 w3-margin-top justify-content-between " 
                         style={{
                             position: "relative",
                             zIndex: 1,
@@ -71,91 +71,9 @@ function PageSamples() {
 
       
 
-
-
-
-
-
-            <div className="container-fluid w3-light-gray">
+            <div className="container-fluid " style={{backgroundColor:'#F6EFD4'}}>
                 <div className="album-page  w3-padding-32" id="album-page">
-                <div className="w3-black w3-padding justify-content-center">
-                <div className=" w3-padding justify-content-center w3-margin-top">
-                    <h4>BLOG PAGE SAMPLE.</h4>
-                    <hr className="w3-opacity" />
-                    <p>
-                    While traditional websites are essential for providing information about products, services, and company details, blog-style websites offer a more interactive and engaging platform for individuals and businesses to connect with their audience. Whether you're looking to establish a personal brand, promote a business, or share valuable insights, a blog-style website can be a highly effective and versatile tool for achieving your goals.
-                   </p>
-                    </div>
-                  
-                    <div className=" w3-padding justify-content-center">
-                    <div className="row d-flex justify-content-center align-items-center">
-                    <div className="col-md-8 d-flex justify-content-center  w3-padding-24">
-    <div className="shadow rounded bg-white" style={{ height: "400px", overflowY: "auto" }}>
-        <div to="/blog#blog" onClick={scrollToTop}>
-            <img src={BlogShot} alt="blog-sample" className='shadow mx-auto p-1' style={{ width: "100%" }} />
-        </div>
-    </div>
-</div>
-<div className="col-md-4  w3-padding-16">
-                            <div>
-                                <div className="row px-4 justify-content-center">
-                          
-                                    <h6 >Consumer Benefits:</h6>
-                                    <div className="col">
-                                        <ul style={{ fontSize: '12px' }} className="fw-lighter">
-                                            
-                                           
-                                            <li>Ease of Use</li>
-                                            <li>Community Building</li>
-                                        </ul>
-                                    </div>
-
-                                    <div className="col">
-                                        <ul style={{ fontSize: '12px' }} className="fw-lighter">
-                                       
-                                        <li>Cost-Effective</li>
-                                        <li>Personal Branding</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                              
-                                <div className="row px-4 justify-content-center">
-                               
-                               <hr className="w3-opacity" />
-                               <h6 >Professional Benefits:</h6>
-                                               <div className="col">
-                                                   <ul style={{ fontSize: '12px' }} className="fw-lighter">
-                                                       <li>Content Marketing</li>
-                                                       <li>Authority and Credibility</li>
-                                                   
-                                                   </ul>
-                                               </div>
-           
-                                               <div className="col">
-                                                   <ul style={{ fontSize: '12px' }} className="fw-lighter">
-                                                   <li>Customer Engagement</li>
-                                                       <li>Flexibility and Adaptability</li>
-                                                   </ul>
-                                               </div>
-                                        
-                                            <p style={{ fontSize: '12px' }} className="fw-lighter">Click the view sample button below to view the full sample site.</p>
-                                    <Link to='/blog'>
-                                        <Button className="btn btn-warning">VIEW SAMPLE</Button>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                </div>
-        
-           
-
-                <div className="container-fluid w3-light-gray">
-                <div className="album-page  w3-padding-32" id="album-page">
-                <div className="w3-black w3-padding justify-content-center">
+                <div className=" text-black w3-padding justify-content-center">
                 <div className=" w3-padding justify-content-center w3-margin-top">
                     <h4>REAL ESTATE SAMPLE.</h4>
                     <hr className="w3-opacity" />
@@ -229,9 +147,91 @@ function PageSamples() {
 
 
 
-            <div className="container-fluid w3-light-gray">
+
+
+
+            <div className="container-fluid w3-black">
                 <div className="album-page  w3-padding-32" id="album-page">
                 <div className="w3-black w3-padding justify-content-center">
+                <div className=" w3-padding justify-content-center w3-margin-top">
+                    <h4>BLOG PAGE SAMPLE.</h4>
+                    <hr className="w3-opacity" />
+                    <p>
+                    While traditional websites are essential for providing information about products, services, and company details, blog-style websites offer a more interactive and engaging platform for individuals and businesses to connect with their audience. Whether you're looking to establish a personal brand, promote a business, or share valuable insights, a blog-style website can be a highly effective and versatile tool for achieving your goals.
+                   </p>
+                    </div>
+                  
+                    <div className=" w3-padding justify-content-center">
+                    <div className="row d-flex justify-content-center align-items-center">
+                    <div className="col-md-8 d-flex justify-content-center  w3-padding-24">
+    <div className="shadow rounded bg-white" style={{ height: "400px", overflowY: "auto" }}>
+        <div to="/blog#blog" onClick={scrollToTop}>
+            <img src={BlogShot} alt="blog-sample" className='shadow mx-auto p-1' style={{ width: "100%" }} />
+        </div>
+    </div>
+</div>
+<div className="col-md-4  w3-padding-16">
+                            <div>
+                                <div className="row px-4 justify-content-center">
+                          
+                                    <h6 >Consumer Benefits:</h6>
+                                    <div className="col">
+                                        <ul style={{ fontSize: '12px' }} className="fw-lighter">
+                                            
+                                           
+                                            <li>Ease of Use</li>
+                                            <li>Community Building</li>
+                                        </ul>
+                                    </div>
+
+                                    <div className="col">
+                                        <ul style={{ fontSize: '12px' }} className="fw-lighter">
+                                       
+                                        <li>Cost-Effective</li>
+                                        <li>Personal Branding</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                              
+                                <div className="row px-4 justify-content-center">
+                               
+                               <hr className="w3-opacity" />
+                               <h6 >Professional Benefits:</h6>
+                                               <div className="col">
+                                                   <ul style={{ fontSize: '12px' }} className="fw-lighter">
+                                                       <li>Content Marketing</li>
+                                                       <li>Authority and Credibility</li>
+                                                   
+                                                   </ul>
+                                               </div>
+           
+                                               <div className="col">
+                                                   <ul style={{ fontSize: '12px' }} className="fw-lighter">
+                                                   <li>Customer Engagement</li>
+                                                       <li>Flexibility and Adaptability</li>
+                                                   </ul>
+                                               </div>
+                                        
+                                            <p style={{ fontSize: '12px' }} className="fw-lighter">Click the view sample button below to view the full sample site.</p>
+                                    <Link to='/blog'>
+                                        <Button className="btn btn-light">VIEW SAMPLE</Button>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+        
+           
+
+
+
+            <div className="container-fluid bg-info-subtle">
+                <div className="album-page  w3-padding-32" id="album-page">
+                <div className="w3-padding justify-content-center">
                 <div className=" w3-padding justify-content-center w3-margin-top">
                     <h4>ALBUM PAGE SAMPLE.</h4>
                     <hr className="w3-opacity" />
@@ -297,15 +297,24 @@ function PageSamples() {
 
                                     <p style={{ fontSize: '12px' }} className="fw-lighter">Click the view sample button below to view the full sample site.</p>
                                     <Link to='/blog'>
-                                        <Button className="btn btn-warning">VIEW SAMPLE</Button>
+                                        <Button className="btn btn-info">VIEW SAMPLE</Button>
                                     </Link>
                                     </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <footer className="text-muted py-2 bg-info-subtle">
+          <div className="container bg-info-subtle">
+            <p className="float-end mb-1">
+              <a href="#page-samples">Back to top</a>
+            </p>
+          </div>
+        </footer>
             </div>
+       
             </div>
+        
 </  div>
  {/*}
             <div className="container-fluid">
@@ -399,13 +408,7 @@ function PageSamples() {
                 </div>
             </div>
 */}
-          <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
-          <div className="container">
-            <p className="float-end mb-1">
-              <a href="#page-samples">Back to top</a>
-            </p>
-          </div>
-        </footer>
+         
         </div>
     );
 }

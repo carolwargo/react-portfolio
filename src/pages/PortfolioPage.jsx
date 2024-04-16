@@ -853,7 +853,7 @@ function Portfolio() {
           </Link>
               </div>
           </div>
-          <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
+          <footer className="text-muted py-5">
   <div className="container">
     <p className="float-end mb-1">
       <a href="#portfolio">Back to top</a>
