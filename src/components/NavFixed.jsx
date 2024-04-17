@@ -9,11 +9,23 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css"; // Import the CSS file where you define custom styles
 
 function BasicExample() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
+  const closeNav = () => setExpanded(false);
+
   const [expanded, setExpanded] = useState(false);
 
   const handleToggle = () => setExpanded(!expanded);
 
-  const closeNav = () => setExpanded(false);
+  const handleNavLinkClick = () => {
+    scrollToTop();
+    closeNav();
+  };
 
   return (
     <div>
@@ -26,11 +38,11 @@ function BasicExample() {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Link to="/about#about" className="nav-link" onClick={closeNav}>ABOUT</Link>
-              <Link to="/resume#resume" className="nav-link" onClick={closeNav}>RESUME</Link>
-              <Link to="/portfolio#portfolio" className="nav-link" onClick={closeNav}>PORTFOLIO</Link>
-              <Link to="/contact#contact" className="nav-link" onClick={closeNav}>CONTACT</Link>
-              <Link to='/page-samples' className="nav-link" onClick={closeNav}>SAMPLES</Link>
+              <Link to="/about#about" className="nav-link" onClick={handleNavLinkClick}>ABOUT</Link>
+              <Link to="/resume#resume" className="nav-link" onClick={handleNavLinkClick}>RESUME</Link>
+              <Link to="/portfolio#portfolio" className="nav-link" onClick={handleNavLinkClick}>PORTFOLIO</Link>
+              <Link to="/contact#contact" className="nav-link" onClick={handleNavLinkClick}>CONTACT</Link>
+              <Link to='/page-samples' className="nav-link" onClick={handleNavLinkClick}>SAMPLES</Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

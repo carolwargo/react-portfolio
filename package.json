@@ -4,6 +4,7 @@
   "name": "react-portfolio",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@floating-ui/react": "^0.26.10",
@@ -22,6 +23,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^8.0.2",
     "mdb-react-ui-kit": "^7.2.0",
     "moment": "^2.30.1",
