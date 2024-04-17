@@ -1,4 +1,5 @@
 import React from "react";
+import {motion} from "framer-motion";
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
@@ -29,6 +30,13 @@ function Portfolio() {
   };
 
   return (
+    <motion.div
+    initial={{ y: -20, opacity: 0}}
+    animate={{y: 0, opacity: 1}}
+    exit={{y: 20, opacity: 0}}
+    className="home"
+    
+    >
     <div className="portfolio" id="portfolio">
       <div className="w3-main container">
         {/**body start */}
@@ -866,6 +874,7 @@ function Portfolio() {
       {/**^^^end main container*/}
       {/**end portfolio container wholepage */}
     </div>
+    </motion.div>
   );
 }
 

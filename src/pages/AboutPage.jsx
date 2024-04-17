@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FaLaptopCode } from "react-icons/fa";
 import { HiOutlinePuzzlePiece } from "react-icons/hi2";
 import { AiFillDatabase } from "react-icons/ai";
@@ -21,7 +22,15 @@ export default function AboutPage() {
   };
 
   return (
+    <motion.div
+    initial={{ y: -20, opacity: 0}}
+    animate={{y: 0, opacity: 1}}
+    exit={{y: 20, opacity: 0}}
+    className="home"
+    
+    >
     <div className="about" id="about">
+     
     <div className="w3-content w3-container w3-padding-64">
         <div className="w3-content w3-container">
           <div className="row justify-content-center align-items-center  w3-margin-top">
@@ -186,5 +195,6 @@ export default function AboutPage() {
         </footer>
         </div>
     </div>
+    </motion.div>
   );
 }

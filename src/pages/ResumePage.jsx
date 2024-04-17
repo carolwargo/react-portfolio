@@ -5,7 +5,7 @@ import { FaGoogle } from "react-icons/fa";
 import { SiMicrosoftoffice } from "react-icons/si";
 import { SiAdobecreativecloud } from "react-icons/si";
 import Alert from "react-bootstrap/Alert";
-
+import { motion } from "framer-motion";
 import ResumeDownload from "../assets/ResumeDownload.pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
@@ -20,6 +20,13 @@ export default function ResumePage() {
   };
 
   return (
+    <motion.div
+    initial={{ y: -20, opacity: 0}}
+    animate={{y: 0, opacity: 1}}
+    exit={{y: 20, opacity: 0}}
+    className="home"
+    
+    >
     <div className="resume w3-light-gray" id="resume">
       <div className="w3-content w3-margin-top w3-padding-64 w3-light-gray" style={{maxWidth:"1400px"}}>
       <div className="w3-display-container w3-padding">
@@ -670,5 +677,6 @@ export default function ResumePage() {
 
         </div>
   </div>
+  </motion.div>
   );
 }

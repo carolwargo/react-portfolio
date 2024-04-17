@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import MeWhite from "../assets/images/MeWhite.png";
 import ResumeDownload from "../assets/ResumeDownload.pdf";
 
@@ -11,6 +12,14 @@ function HomePage() {
     });
   };
   return (
+
+    <motion.div
+    initial={{ y: -20, opacity: 0}}
+    animate={{y: 0, opacity: 1}}
+    exit={{y: 20, opacity: 0}}
+    className="home"
+    
+    >
     <div className="home" id="home">
       <header>
         <div className="row align-items-center w3-margin-top w3-padding-24">
@@ -54,6 +63,7 @@ function HomePage() {
         </div>
       </header>
     </div>
+    </motion.div>
   );
 }
 
