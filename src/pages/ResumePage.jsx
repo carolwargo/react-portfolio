@@ -34,11 +34,8 @@ export default function ResumePage() {
       <div className="w3-row d-flex justify-content-center" >
     <div className="w3-col m12 flex-column w3-padding-24 w3-center">
         <h1 className='w3-text-light-blue'>DIGITAL RESUME</h1>
-
 <p>View my skills, work experience, volunteer background and more, or download a physical copy of my resume.</p>
 </div>
-
-
 </div>
 </div>
 </div>
@@ -212,14 +209,12 @@ export default function ResumePage() {
                 <div className="w3-light-grey w3-round-xlarge w3-small">
           <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"90%"}}>90%</div>
         </div>
-        <p>Design Software</p>
-      
+        <p>Design Software</p>  
         <hr />
     </div>
  
-  <div className="w3-center w3-padding-large w3-padding-8">
+  <div className="w3-center w3-padding-large w3-padding-16">
     <h5 className="w3-text-gray w3-margin-bottom"><i className="fas fa-download w3-text-light-blue"></i><b className="w3-margin-left">Resume Download</b></h5>
-   
     <p style={{fontSize:'14px'}}>For a physical copy, click the "Download Resume" button below to download a PDF of my resume.</p>
             <button className="w3-button w3-light-grey w3-padding-large">
   <a
@@ -643,6 +638,75 @@ export default function ResumePage() {
    
         </div>
   */}
+
+<div className="w3-container">
+      <div className=" w3-white w3-text-grey w3-card w3-padding w3-padding-16">
+      <div className="w3-container">
+     
+      <div className="w3-row d-flex justify-content-center">
+    <div className="w3-col m12 flex-column">
+     <div className="row d-flex justify-content-center align-items-end">
+         <div className="w3-col m4 flex-column w3-padding-large">
+         <p>EXPERIENCE THROUGH SERVICE TO OTHERS</p>
+          <h3><strong> <i className="fas fa-heart w3-margin-right w3-text-light-blue"></i>
+VOLUNTEER PROGRAM PARTICIPATION.</strong></h3> 
+<br />  
+          <p style={{fontSize:'14px'}}>
+            "Volunteer work has and will consistently hold a central place in my
+            household. Beyond its apparent merits, I personally consider
+            community service to be the single most powerful platform for my
+            personal growth, skill development, and most important exposure through the
+            opportunity to explore aspects of life that I may not have
+            encountered otherwise. "
+          </p>    
+         </div>
+          <div className="w3-col m4 flex-column w3-padding-large">
+          <ul style={{fontSize:'13px'}}>
+            <li className="ml-3">
+                <strong className="w3-text-light-blue">MIRACLE LEAGUE (favorite):</strong> Assist with organized sports for children & young adults with disabilities.
+              </li>
+             
+              <li className="ml-3">
+                <strong className="w3-text-light-blue">NATURE CENTER VOLUNTEER:</strong> Provide care for the animals, monitor health, collect data, and assist with educational programs.
+              </li>
+              <li className="ml-3">
+                <strong className="w3-text-light-blue">YOUTH CLUB SECRETARTY:</strong> Maintain website & database, facilitate meetings, coordinate registration, plan events and organize fundraising activities. 
+              </li>
+              <li className="ml-3">
+                <strong className="w3-text-light-blue">PUBLIC SCHOOLS VOLUNTEER:</strong> Assist with classroom activities, work with & support kids in need, plan & facilitate events.
+              </li>
+            </ul>
+          </div>
+          <div className="w3-col m4 flex-column w3-padding-large">
+            <div className="">
+            <ul style={{fontSize:'13px'}}>
+            <li className="ml-3">
+                <strong className="w3-text-light-blue">UNDER ARMOUR GIVE-BACK:</strong> Participation includes: rebuilding schools, distributing school supplies, assisting with students & assemblies, and packing & shipping food items to ship overseas. 
+              </li>
+              <li className="ml-3">
+                <strong className="w3-text-light-blue">ABUSED PERSONS PROGRAM (1st-experience):</strong>{" "}
+                Provide a range of services to support those affected by violence.
+              </li>
+           
+              <li className="ml-3">
+                <strong className="w3-text-light-blue">FOOD PANTRY:</strong> Distributes food & household goods
+                to those in need.
+              </li>
+              <li className="ml-3">
+                <strong className="w3-text-light-blue">FARMING 4HUNGER:</strong> Grows and distributes locally
+                grown produce.
+              </li>
+            </ul>
+            </div>
+          </div>
+         
+          
+         </div>
+         </div>
+</div>
+</div>
+</div>
+</div>
                   
   </div>
   <div className="container w3-margin-top">

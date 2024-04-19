@@ -52,6 +52,7 @@ export default function AboutPage() {
         <div className="row">
           
         <div className="w3-content w3-container ">
+          <p>TECHNOLOGICAL PROFICIENCIES</p>
           <h2 className=""><strong>WHAT I DO BEST.</strong></h2>
           <br />
           <p className="w3-wide text-black" style={{fontSize:'1rem'}}><GiGears className="justify-content-center"/> Core Technologies</p>
@@ -143,7 +144,8 @@ export default function AboutPage() {
 
 {/**start experience count */}
 
-<div className="w3-row w3-center w3-black w3-padding-32">
+<div 
+className="w3-row w3-center w3-black w3-padding-32">
   <div className="w3-quarter w3-section">
     <span className="w3-xlarge">20<span style={{fontSize:'10px'}}>yrs</span> +</span><br />
     BUSINESS EXPERIENCE
