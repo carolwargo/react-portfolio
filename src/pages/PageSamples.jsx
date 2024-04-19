@@ -56,32 +56,86 @@ function PageSamples() {
             }}
           ></div>
           <div
-            className="w3-content w3-container w3-padding-64 w3-margin-top justify-content-between "
+            className="w3-content w3-container w3-padding-64 w3-margin-top justify-content-center"
             style={{
               position: "relative",
               zIndex: 1,
             }}
           >
+            <div className="w3-container w3-content text-center w3-padding-large">
             <h1
-              className="w3-padding-large text-center w3-margin-top"
+              className="text-center w3-margin-top"
               style={{
                 fontSize: "3rem",
                 color: "#ffffff",
-                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.9)",
               }}
             >
               <b>CW</b>
               <span className="fw-lighter">SAMPLES</span>.
             </h1>
-          </div>
+            <p className="w3-padding-small"><b>The following sample sites are meant to showcase the possibilities. These sites do not have server-side functionalities, and only a few client-side features are active. For instance, databases, authentication, and email services for forms are not connected, and the primary use of state in these samples is for design purposes.</b></p>
+            <p><b><em>'Each sample site below started as a full, multi-page website created for a client, now showcased here as one-page snippets.'</em></b></p>
+</div>
+</div>
         </header>
       </div>
 
+
+{/**Start Real Estate */}
       <div className="container-fluid " style={{ backgroundColor: "#E7E7E7" }}>
         <div className="realestate-page  w3-padding-32" id="realestate-page">
-          <div className=" text-black w3-padding justify-content-center">
-            <div className=" w3-padding justify-content-center">
+          <div className=" text-black justify-content-center">
+            <div className="  justify-content-center">
               <div className="row d-flex justify-content-center align-items-center">
+               
+                <div className="col-md-5  w3-padding-16">
+                  <div className=" w3-padding justify-content-center w3-margin-top">
+                    <h4>REAL ESTATE SAMPLE.</h4>
+                 
+                    <hr className="w3-opacity" />
+                    <p style={{ fontSize: "13px" }}>
+                      A real estate website serves as a valuable tool for both
+                      real estate professionals and consumers by offering a
+                      centralized platform for property listings, market
+                      information, and client engagement. It enhances
+                      visibility, facilitates lead generation, and provides a
+                      seamless user experience, making it an essential component
+                      of modern real estate marketing and operations.
+                    </p>
+                  </div>
+                  <div className="row px-4 justify-content-center">
+                    <div className="col">
+                      <h6 style={{fontSize:'14px'}}>Customer Benefits:</h6>
+                      <ul style={{ fontSize: "12px" }} className="fw-lighter">
+                      <li>Detailed Property Information</li>
+                        <li>Convenience</li>
+                        <li>Educational Resources</li>
+                        <li>Interactive Features</li>
+                      </ul>
+                    </div>
+
+                    <div className="col">
+                      <h6 style={{fontSize:'14px'}}>Professional Benefits:</h6>
+                      <ul style={{ fontSize: "12px" }} className="fw-lighter">
+                      <li>Lead Generation</li>
+                        <li>Controlled Platform</li>
+                        <li>Increased Visibility</li>
+                     <li>Transaction Management</li>
+                      </ul>
+                    </div>
+                    <div className="w3-margin-top ">
+                      <a href="https://carolwargo.github.io/realestate/">
+                        <Button
+                          className="btn btn-warning"
+                          style={{ width: "100%", borderRadius: "0"}}
+                        >
+                         <b style={{fontSize:'.8rem'}}>VIEW SAMPLE</b>
+                        </Button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <div className="col-md-7 d-flex justify-content-center  w3-padding-16">
                   <div
                     className="shadow rounded bg-white"
@@ -97,144 +151,19 @@ function PageSamples() {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-5  w3-padding-16">
-                  <div className=" w3-padding justify-content-center w3-margin-top">
-                    <h4>REAL ESTATE SAMPLE.</h4>
-                    <hr className="w3-opacity" />
-                    <p style={{ fontSize: "13px" }}>
-                      A real estate website serves as a valuable tool for both
-                      real estate professionals and consumers by offering a
-                      centralized platform for property listings, market
-                      information, and client engagement. It enhances
-                      visibility, facilitates lead generation, and provides a
-                      seamless user experience, making it an essential component
-                      of modern real estate marketing and operations.
-                    </p>
-                  </div>
-                  <div className="row px-4 justify-content-center">
-                    <div className="col">
-                      <h6>Customer Benefits:</h6>
-                      <ul style={{ fontSize: "12px" }} className="fw-lighter">
-                        <li>Lead Generation</li>
-                        <li>Controlled Platform</li>
-                        <li>Brand Building</li>
-                        <li>Increased Visibility</li>
-                      </ul>
-                    </div>
-
-                    <div className="col">
-                      <h6>Professional Benefits:</h6>
-                      <ul style={{ fontSize: "12px" }} className="fw-lighter">
-                        <li>Detailed Property Information</li>
-                        <li>Convenience</li>
-                        <li>Educational Resources</li>
-                        <li>Interactive Features</li>
-                      </ul>
-                    </div>
-                    <div className="w3-margin-top ">
-                      <a href="https://carolwargo.github.io/realestate/">
-                        <Button
-                          className="btn btn-warning"
-                          style={{ width: "100%" }}
-                        >
-                          VIEW SAMPLE
-                        </Button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+{/**End Real Estate */}
     
 
-      <div className="container-fluid bg-info-subtle">
-        <div className="album-page  w3-padding-32" id="album-page">
-          <div className="w3-padding justify-content-center">
-           
-            <div className=" w3-padding justify-content-center">
-              <div className="row d-flex justify-content-center align-items-center">
-                <div className="col-md-7 d-flex justify-content-center  w3-padding-16">
-                  <div
-                    className="shadow rounded bg-white"
-                    style={{ height: "400px", overflowY: "auto" }}
-                  >
-                    <div to="/album" onClick={scrollToTop}>
-                      <img
-                        src={Album}
-                        alt="album-sample"
-                        className="shadow mx-auto p-2"
-                        style={{ width: "100%" }}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-5  w3-padding-16">
-                 
-                    <div className="row px-4 justify-content-center">
-                    <div className=" w3-padding justify-content-center w3-margin-top">
-              <h4>ALBUM PAGE SAMPLE.</h4>
-              <hr className="w3-opacity" />
-              <p>
-                A photo album website offers a versatile platform for
-                individuals, photographers, and businesses to organize,
-                showcase, and share photos effectively. It enhances personal
-                connections, facilitates professional growth, and drives
-                engagement and sales opportunities, making it a valuable asset
-                for anyone looking to manage and monetize their visual content
-                online.
-              </p>
-            </div>
 
-                      <div className="col">
-                        <h6>Benefits for Individuals:</h6>
-                        <ul style={{ fontSize: "12px" }} className="fw-lighter">
-                          <li>Easy Sharing</li>
-                          <li>Privacy Controls</li>
-                          <li>Personalized Photo Storage</li>
-                          <li>Accessibility</li>
-                        </ul>
-                      </div>
-                   
-
-         
-                      <div className="col">
-                        <h6>Benefits for Bussinesses:</h6>
-
-                        <ul style={{ fontSize: "12px" }} className="fw-lighter">
-                          <li>Print and Merchandise Sales</li>
-                          <li>Customer Engagement</li>
-                          <li>Portfolio Showcase</li>
-                          <li>E-commerce Integration</li>
-                        </ul>
-                      </div>
-                      <Link to="/blog">
-                        <Button className="btn btn-info" style={{width:'100%'}}>VIEW SAMPLE</Button>
-                      </Link>
-                   
-                      </div>
-                </div>
-              </div>
-            </div>
-            <footer className="text-muted py-2 bg-info-subtle">
-              <div className="container bg-info-subtle" >
-                <p className="float-end mb-1">
-                  <a href="#page-samples">Back to top</a>
-                </p>
-              </div>
-            </footer>
-          </div>
-        </div>
-      </div>
-
-
-      <div className="container-fluid w3-black">
-        <div className="realestate-page  w3-padding-32" id="realestate-page">
-          <div className="w3-black w3-padding justify-content-center">
-            <div className=" w3-padding justify-content-center">
+      {/*<div className="container-fluid w3-black">
+        <div className="sidenav-page  w3-padding-32" id="sidenav-page">
+          <div className="w3-black justify-content-center">
+            <div className="  justify-content-center">
               <div className="row d-flex justify-content-center align-items-center">
                 <div className="col-md-7 d-flex justify-content-center  w3-padding-24">
                   <div
@@ -258,7 +187,7 @@ function PageSamples() {
                       <hr className="w3-opacity" />
                       <p style={{fontSize:'14px'}}>
                        Blog-style websites offer an interactive
-                        and engaging platform for individuals and businesses to
+                        and engaging platform for individual bloggers and businesses to
                         connect with their audience. Whether you're looking to
                         establish a personal brand, promote a business, or share
                         valuable insights, a blog-style website can be a highly
@@ -266,7 +195,7 @@ function PageSamples() {
                       </p>
                     </div>
                     <div className="col">
-                      <h6>Consumer Benefits:</h6>
+                      <h6> Blogger Benefits:</h6>
 
                       <ul style={{ fontSize: "12px" }} className="fw-lighter">
                         <li>Ease of Use</li>
@@ -278,14 +207,13 @@ function PageSamples() {
                     </div>
 
                     <div className="col">
-                      <h6>Professional Benefits:</h6>
+                      <h6>Business Benefits:</h6>
 
                       <ul style={{ fontSize: "12px" }} className="fw-lighter">
                         <li>Content Marketing</li>
                         <li>Authority and Credibility</li>
-
-                        <li>Customer Engagement</li>
-                        <li>Flexibility and Adaptability</li>
+                        <li>SEO Benefits</li>
+                        <li>Flexibility</li>
                       </ul>
                     </div>
 
@@ -299,6 +227,164 @@ function PageSamples() {
           </div>
         </div>
       </div>
+*/}
+
+{/** Start Blog*/}
+      <div className="container-fluid w3-black">
+        <div className="blog-page  w3-padding-32" id="blog-page">
+          <div className="w3-black justify-content-center">
+            <div className="  justify-content-center">
+              <div className="row d-flex justify-content-center align-items-center">
+              
+                <div className="col-md-5  w3-padding-16">
+                  <div className="row px-4 justify-content-center">
+                    <div className=" w3-padding justify-content-center w3-margin-top">
+                      <h4>BLOG PAGE SAMPLE.</h4>
+                      <hr className="w3-opacity" />
+                      <p style={{fontSize:'14px'}}>
+                       Blog-style websites offer an interactive
+                        and engaging platform for individual bloggers and businesses to
+                        connect with their audience. Whether you're looking to
+                        establish a personal brand, promote a business, or share
+                        valuable insights, a blog-style website can be a highly
+                        effective and versatile tool for achieving your goals.
+                      </p>
+                    </div>
+                    <div className="col">
+                      <h6 style={{fontSize:'14px'}}> Blogger Benefits:</h6>
+
+                      <ul style={{ fontSize: "12px" }} className="fw-lighter">
+                        <li>Ease of Use</li>
+                        <li>Community Building</li>
+
+                        <li>Cost-Effective</li>
+                        <li>Personal Branding</li>
+                      </ul>
+                    </div>
+
+                    <div className="col">
+                      <h6 style={{fontSize:'14px'}}>Business Benefits:</h6>
+
+                      <ul style={{ fontSize: "12px" }} className="fw-lighter">
+                        <li>Content Marketing</li>
+                        <li>Authority and Credibility</li>
+                        <li>SEO Benefits</li>
+                        <li>Flexibility</li>
+                      </ul>
+                    </div>
+
+                    <Link to="/blog" className="w3-margin-top">
+                      <Button className="btn btn-light" style={{width:'100%', borderRadius:'0'}}><b style={{fontSize:'.9rem'}}>VIEW SAMPLE</b></Button>
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="col-md-7 d-flex justify-content-center  w3-padding-24">
+                  <div
+                    className="shadow rounded bg-white"
+                    style={{ height: "400px", overflowY: "auto" }}
+                  >
+                    <div to="/blog#blog" onClick={scrollToTop}>
+                      <img
+                        src={BlogShot}
+                        alt="blog-sample"
+                        className="shadow mx-auto p-1"
+                        style={{ width: "100%" }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/** End Blog*/}
+
+
+
+      
+{/**Start Album */}
+<div className="container-fluid bg-info-subtle">
+        <div className="album-page  w3-padding-32" id="album-page">
+          <div className=" justify-content-center">
+           
+            <div className="  justify-content-center">
+              <div className="row d-flex justify-content-center align-items-center">
+            
+                <div className="col-md-5  w3-padding-16">
+                 
+                    <div className="row px-4 justify-content-center">
+                    <div className=" w3-padding justify-content-center w3-margin-top">
+              <h4>ALBUM PAGE SAMPLE.</h4>
+              <hr className="w3-opacity" />
+              <p>
+                A photo album website offers a platform for
+                individuals, photographers, and businesses to organize,
+                showcase, and share photos effectively. It enhances personal
+                connections, facilitates professional growth, and drives
+                engagement and sales opportunities, making it a valuable asset
+                for anyone looking to manage and monetize their visual content
+                online.
+              </p>
+            </div>
+
+                      <div className="col">
+                        <h6 style={{fontSize:'14px'}}>Consumer Benefits:</h6>
+                        <ul style={{ fontSize: "12px" }} className="fw-lighter">
+                          <li>Easy Sharing</li>
+                          <li>Privacy Controls</li>
+                          <li>Personalized Photo Storage</li>
+                        </ul>
+                      </div>
+                   
+
+         
+                      <div className="col">
+                        <h6 style={{fontSize:'14px'}}>Bussiness Benefits:</h6>
+
+                        <ul style={{ fontSize: "12px" }} className="fw-lighter">
+                        
+                          <li>Portfolio Showcase</li>
+                          <li>E-commerce Integration</li>
+                        </ul>
+                      </div>
+                      <Link to="/blog" className="w3-margin-top">
+                        <Button className="btn btn-info" style={{width:'100%', borderRadius:'0'}}><b style={{fontSize:'.8rem'}}>VIEW SAMPLE</b></Button>
+                      </Link>
+                   
+                      </div>
+                </div>
+                <div className="col-md-7 d-flex justify-content-center  w3-padding-16">
+                  <div
+                    className="shadow rounded bg-white"
+                    style={{ height: "400px", overflowY: "auto" }}
+                  >
+                    <div to="/album" onClick={scrollToTop}>
+                      <img
+                        src={Album}
+                        alt="album-sample"
+                        className="shadow mx-auto p-2"
+                        style={{ width: "100%" }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <footer className="text-muted py-4 bg-info-subtle">
+              <div className="container bg-info-subtle" >
+                <p className="float-end mb-1">
+                  <a href="#page-samples">Back to top</a>
+                </p>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+{/**End Album */}
+
+
       {/*}
             <div className="container-fluid">
                 <div className="spyscroll w3-container w3-padding-32" id="spyscroll">

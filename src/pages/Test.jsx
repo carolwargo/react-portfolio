@@ -1,5 +1,5 @@
 import React from "react";
-import SideNavbar from "../components/SideNavbar/SideNavbar";
+import SignUpComponent from "../components/SignUp/SignUpComponent.jsx";
 
 function Test() {
 
@@ -7,7 +7,7 @@ function Test() {
 
         <div className="w3-padding-64">
           
-       <SideNavbar />
+       <SignUpComponent />
 
           
         </div>

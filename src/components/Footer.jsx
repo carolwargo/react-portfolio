@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import {
   MDBFooter,
   MDBContainer,
@@ -17,13 +18,20 @@ export default function App() {
     });
   };
   return (
+    <motion.div
+    initial={{ y: -20, opacity: 0}}
+    animate={{y: 0, opacity: 1}}
+    exit={{y: 20, opacity: 0}}
+    className="home"
+    
+    >
     <div className='footer' id='footer' style={{fontFamily:'Raleway'}}>
     <MDBFooter className='text-center w3-black' >
     
 
     <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
       <div className='me-5 d-none d-lg-block' >
-      Connect with me:
+      HOW TO CONNECT:
       </div>
 
       <div>
@@ -74,17 +82,22 @@ export default function App() {
           <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
             <h6 className='text-uppercase fw-bold mb-4'>Pages</h6>
         
-            <p>
+            <p style={{fontSize:'14px'}}>
+              <Link to='/about' className='text-reset' onClick={scrollToTop} >
+              Home
+              </Link>
+            </p>
+            <p style={{fontSize:'14px'}}>
               <Link to='/about' className='text-reset' onClick={scrollToTop} >
                 About
               </Link>
             </p>
-            <p>
+            <p style={{fontSize:'14px'}}>
               <Link to='/resume' className='text-reset' onClick={scrollToTop} >
                 Digital Resume
               </Link>
             </p>
-            <p>
+            <p style={{fontSize:'14px'}}>
               <Link to='/portfolio' className='text-reset' onClick={scrollToTop} >
                Portfolio
               </Link>
@@ -93,20 +106,25 @@ export default function App() {
 
           <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
             <h6 className='text-uppercase fw-bold mb-4'>Samples</h6>
-            <p>
+            <p style={{fontSize:'14px'}}>
               <Link to='/blog' className='text-reset' onClick={scrollToTop} >
                Blog
               </Link>
             </p>
-            <p>
+            <p style={{fontSize:'14px'}}>
             <Link to='/album' className='text-reset' onClick={scrollToTop} >
                 Album
               </Link>
             </p>
-            <p>
+            <p style={{fontSize:'14px'}}>
               <a href='http://carolwargo.github.io/realestate' className='text-reset' onClick={scrollToTop} >
                 Real Estate
               </a>
+            </p>
+            <p style={{fontSize:'14px'}}>
+              <Link to='sidenav' className='text-reset' onClick={scrollToTop} >
+               Price Menu
+              </Link>
             </p>
             
           </MDBCol>
@@ -114,17 +132,17 @@ export default function App() {
 
           <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
             <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
-            <p>
+            <p style={{fontSize:'14px'}}>
               <MDBIcon icon="home" className="me-2" />
               Huntingtown, MD
             </p>
-            <p>
+            <p style={{fontSize:'14px'}}>
               <MDBIcon icon="envelope" className="me-3" />
               <a href='mailto:carolwargo.dev@gmail.com' className='text-reset'>
               Email
               </a>
             </p>
-            <p>
+            <p style={{fontSize:'14px'}}>
             <a href='tel:+4437711726' className='me-4 text-reset'>
               <MDBIcon icon="phone" className="me-3" /> Call
 </a>
@@ -135,13 +153,13 @@ export default function App() {
       </MDBContainer>
     </section>
 
-      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-        © 2023 Copyright:
-        <a className='text-white' href='https:carolwargo.github.io/react-portfolio'> <b> C</b>W
-        </a>
+      <div className='text-center p-3 w3-margin-top ' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)'}}>
+       <p style={{fontSize:'12px'}}> © 2023 Copyright:    <a className='text-white' href='https:carolwargo.github.io/react-portfolio' style={{fontSize:'12px'}}> <b> C</b>WARGO
+        </a></p>
+     
       </div>
-    </MDBFooter>
-   
+    </MDBFooter> 
   </div>
+  </motion.div>
   );
 }

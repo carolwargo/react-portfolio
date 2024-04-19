@@ -10,6 +10,7 @@ import PageSamples from "./pages/PageSamples.jsx";
 import BlogPage from "./pages/Blog.jsx";
 import ScrollSpy from './pages/ScrollSpy.jsx'
 import Test from "./pages/Test.jsx";
+import SideNav from "./pages/SideNav.jsx";
 import Footer from "./components/Footer.jsx";
 import NavFixed from "./components/NavFixed.jsx"; 
 import Album from "./pages/Album.jsx";
@@ -27,6 +28,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/resume" element={<ResumePage />} />
           <Route path="/test" element={<Test />} />
+          <Route path="/sidenav" element={<SideNav />} />
           <Route path="/page-samples" element={<PageSamples />} />  
           <Route path="/album" element={<Album />} />
           <Route path="/blog" element={<BlogPage />} />

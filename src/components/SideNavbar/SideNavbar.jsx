@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 function TopNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +9,15 @@ function TopNav() {
   };
 
   return (
-    <div>
+    <motion.div
+    initial={{ y: -20, opacity: 0}}
+    animate={{y: 0, opacity: 1}}
+    exit={{y: 20, opacity: 0}}
+    className="home"
+    
+    >
+    <div className='sidenav w3-padding-top-48' id='sidenav'>
+      <div>
       {/* Side Navigation */}
       <nav className={`w3-sidebar w3-bar-block w3-card w3-animate-top w3-center  w3-padding-64 ${isOpen ? 'w3-show' : 'w3-hide'}`} style={{ zIndex: '999', width: '100%', position: 'fixed', top: '0', backgroundColor: '#f1f1f1' }}>
         <h1 className="w3-xxxlarge w3-text-theme">Services</h1>
@@ -26,25 +35,31 @@ function TopNav() {
           <h4>CUSTOM WEB SITE DESIGN</h4>
           <h1 className="w3-xxxlarge w3-animate-bottom">Get Started</h1>
           <div className="w3-padding-32">
-            <button className="w3-btn w3-xlarge w3-black w3-hover-light-grey" onClick={() => document.getElementById('id01').style.display='block'} style={{fontWeight:"900"}}>LEARN W3.CSS</button>
+            <button className="w3-btn w3-xlarge bg-info w3-hover-light-grey" onClick={() => document.getElementById('id01').style.display='block'} style={{fontWeight:"900"}}>LEARN MORE</button>
           </div>
         </div>
       </header>
 
       {/* Modal */}
-      <div id="id01" className="w3-modal">
-        <div className="w3-modal-content w3-card-4 w3-animate-top">
-          <header className="w3-container w3-theme-l1"> 
-            <span onClick={() => document.getElementById('id01').style.display='none'} className="w3-button w3-display-topright">×</span>
-            <h4>Oh snap! We just showed you a modal..</h4>
-            <h5>Because we can <i className="fa fa-smile-o"></i></h5>
+      <div id="id01" className="w3-modal w3-margin-top w3-margin-bottom">
+        <div className="w3-modal-content text-center w3-card-4 w3-pale-blue w3-animate-top shadow border">
+          <header className="w3-container w3-theme-l1 w3-padding-top-24"> 
+            <span onClick={() => document.getElementById('id01').style.display='none'} className="w3-button w3-display-topright"> <b>X</b></span>
+            
+            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Deserunt architecto exercitationem numquam alias ipsum. 
+              Eveniet sint nam repellat non! Id ipsa maxime distinctio 
+              atque accusantium reiciendis adipisci at saepe earum.</h5>
+            
           </header>
           <div className="w3-padding">
-            <p>Cool huh? Ok, enough teasing around..</p>
-            <p>Go to our <a className="w3-btn" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+            <p>Id ipsa maxime distinctio 
+              atque accusantium reiciendis adipisci at saepe earum.</p>
+            <p><a className="w3-btn w3-black" href="/w3css/default.asp">LEARN EVEN MORE</a></p>
           </div>
           <footer className="w3-container w3-theme-l1">
-            <p>Modal footer</p>
+            <p>Don't forget to 'X' to return to home.</p>
+            <br />
           </footer>
         </div>
       </div>
@@ -52,15 +67,17 @@ function TopNav() {
 <div className="w3-row-padding w3-center w3-margin-top">
 <div className="w3-third">
   <div className="w3-card w3-container w3-padding-top-48" style={{minHeight:"525px"}}>
-  <h3 className='w3-text-black'>One Page</h3>
+  <h3 className='w3-text-black'>ONE PAGE DESIGN</h3>
   <p>6-Sections</p>
   <i className="far fa-file-alt
- w3-margin-bottom w3-text-black" style={{fontSize:"120px"}}></i>
+ w3-margin-bottom text-info" style={{fontSize:"120px"}}></i>
   <p>Navigation</p>
   <p>6-sections</p>
   <p>Fits any screen sizes</p>
   <p>PC Tablet and Mobile</p>
-  <div className="btn-group ">
+  <hr />
+  <div className="btn-group w3-margin-bottom w3-margin-top">
+   
                           <button type="button" className="btn btn-sm btn-info">
                             <i className="fas fa-edit"></i> Edit
                           </button>
@@ -77,14 +94,15 @@ function TopNav() {
 
 <div className="w3-third">
   <div className="w3-card w3-container w3-padding-top-48" style={{minHeight:"525px"}}>
-  <h3>Multi-Page</h3>
+  <h3>MULTI-PAGE</h3>
   <p>6 pages</p>
-  <i className="fa fa-desktop w3-margin-bottom w3-text-black" style={{fontSize:"120px"}}></i>
+  <i className="fa fa-desktop w3-margin-bottom w3-text-black text-info" style={{fontSize:"120px"}}></i>
   <p>Landing Page</p>
   <p>About Page</p>
   <p>Contact Page</p>
   <p>3-Additional Pages</p>
-  <div className="btn-group w3-margin-bottom">
+  <hr />
+  <div className="btn-group w3-margin-bottom w3-margin-top">
                           <button type="button" className="btn btn-sm btn-info">
                             <i className="fas fa-edit"></i> Edit
                           </button>
@@ -99,15 +117,17 @@ function TopNav() {
   </div>
 </div>
 
-<div className="w3-third">
+<div className="w3-third w3-margin-bottom">
   <div className="w3-card w3-container w3-padding-top-48" style={{minHeight:"525px"}}>
-  <h3>Custom Solutions</h3><br/>
-  <i className="fa fa-tools w3-margin-bottom w3-text-black" style={{fontSize:"120px"}}></i>
+  <h3>CUSTOM SOLUTIONS</h3><br/>
+  <i className="fa fa-tools w3-margin-bottom w3-text-black text-info" style={{fontSize:"120px"}}></i>
   <p>Database Integration</p>
   <p>Auth Services</p>
   <p>Digital Forms</p>
   <p>Payment</p>
-  <div className="btn-group w3-margin-top">
+  <hr className='mt-4'/>
+  <div className="btn-group w3-margin-bottom w3-margin-top">
+
                           <button type="button" className="btn btn-sm btn-info">
                             <i className="fas fa-edit"></i> Edit
                           </button>
@@ -122,8 +142,9 @@ function TopNav() {
   </div>
 </div>
 </div>
-
+</div>
     </div>
+    </motion.div>
   );
 }
 

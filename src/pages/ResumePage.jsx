@@ -32,7 +32,7 @@ export default function ResumePage() {
       <div className="w3-display-container w3-padding">
       <div className="w3-white w3-text-grey w3-card w3-padding">
       <div className="w3-row d-flex justify-content-center" >
-    <div className="w3-col m12 flex-column w3-padding-8">
+    <div className="w3-col m12 flex-column w3-padding-24 w3-center">
         <h1 className='w3-text-light-blue'>DIGITAL RESUME</h1>
 
 <p>View my skills, work experience, volunteer background and more, or download a physical copy of my resume.</p>
@@ -245,8 +245,8 @@ export default function ResumePage() {
 
 
   
-    <div className="w3-container w3-card w3-white w3-margin-bottom">
-      <h4 className="w3-text-grey w3-padding-16"><i className="fa fa-suitcase fa-fw  w3-xlarge w3-text-light-blue"></i> Work Experience</h4>
+    <div className="w3-container w3-card w3-white w3-margin-bottom ">
+      <h4 className="w3-text-grey w3-padding-16 w3-margin-top"><i className="fa fa-suitcase fa-fw  w3-xlarge w3-text-light-blue"></i> Work Experience</h4>
       <div className="w3-container">
        
         <h6 className="w3-opacity"><b>Real Estate Agent / Investor</b></h6>
