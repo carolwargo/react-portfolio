@@ -85,10 +85,9 @@ function Portfolio() {
 
         <div className="w3-main container w3-padding-top-32">
           <div className="row d-flex w3-justify">
-            <div className="w3-col l4">
-              <div className="container w3-margin-bottom">
+            <div className="w3-col l4 pb-5">
                 {/*start card-container server code*/}
-                <div className="w3-card w3-black" id="server">
+                <div className="w3-card w3-light-gray" id="server">
                   {/*start card-body for bio*/}
                   <div className="w3-container justify-content-center">
                     <br></br>
@@ -110,7 +109,7 @@ function Portfolio() {
                     </p>
 
                     <div
-                      className="card-footer w3-padding-24 w3-text-light-gray"
+                      className="card-footer w3-padding-24"
                       style={{ fontSize: "12px" }}
                     >
                       Below you will find examples of some widely employed
@@ -519,7 +518,7 @@ function Portfolio() {
                 </div>
 
                 <div></div>
-              </div>
+            
             </div>
             {/*End col-4*/}
 
@@ -528,66 +527,24 @@ function Portfolio() {
             <div className="w3-col l8">
               <div className="w3-content">
                 <div className="w3-white align-items-center justify-content-center"></div>
-                <div className="container w3-padding">
-                  <div className="row d-flex justify-content-center">
-                   
-                    <div className="mt-0" style={{paddingTop:'0px'}}>
-                    <h3 className="w3-margin-bottom">
+                <div className="w3-card w3-light-gray" style={{paddingTop:'0px'}}>
+                <div className="container w3-padding-large w3-padding-24">
+                  <h3 className="">
                       <b className="fw-bold text-black">WEB</b>
                       <span className="text-muted fw-light">COMPONENTS</span>
                     </h3>
                     <hr />
-                    </div>
-
-                    <p >
+                    <p style={{fontSize:'18px'}}>
                       Web components are a set of standardized technologies that
                       enable the creation of custom elements for web
                       applications. Promote code reusability, maintainability,
                       and interoperability across different web frameworks and
                       libraries.
                     </p>
-                    <p>Choose a component to view from the menu below.</p>
-                  
-                    <div className="container d-flex justify-content-center w3-margin-top w3-light-grey">
-              
-                      <div className="w3-button w3-light-grey mb-1">
-                        <a className="fw-bold text-black" href="#forms">
-                          FORMS
-                        </a>
-                      </div>
-                      <div className="w3-button w3-light-grey mb-1">
-                        <a className="fw-bold text-black" href="#alerts">
-                          ALERTS
-                        </a>
-                      </div>
-                      <div className="w3-button mb-1 w3-light-grey">
-                        <a className="fw-bold text-black" href="#tables">
-                          TABLES
-                        </a>
-                      </div>
-
-                      <div className="w3-button mb-1 w3-light-gray ">
-                        <a className="fw-bold text-black" href="#graphics">
-                          GRAPHICS
-                        </a>
-                      </div>
-                      <div className="w3-button mb-1 w3-light-gray ">
-                        <a className="fw-bold text-black" href="#spy-scroll">
-                          SPY SCROLL
-                        </a>
-                      </div>
-                      <div className="w3-button mb-1 w3-light-gray ">
-                        <a className="fw-bold text-black" href="#page-samples">
-                          SAMPLES
-                        </a>
-                      </div>
                     </div>
-                  </div>
-
-                  <br />
-               
-
-                  {/**start forms */}
+                    </div>
+                    <div className="w3-card  w3-margin-top">
+                <div className="container w3-padding-large w3-padding-24">
                   <h4 className="w3-margin-top" id="forms">
                     <b className="fw-bolder w3-text-black">FORM</b>
                     <span className="fw-lighter text-muted">COMPONENTS.</span>
@@ -615,7 +572,13 @@ function Portfolio() {
                   <br />
                   <br />
                   {/**end forms */}
+</div>
+</div>
 
+
+<div className="w3-card  w3-margin-top" >
+                <div className="container w3-padding-large w3-padding-24">
+                 
                   <h4 id="alerts" className="w3-margin-top">
                     <b className="fw-bold text-black">ALERT</b>
                     <span className="fw-light text-muted">COMPONENTS.</span>
@@ -906,6 +869,8 @@ function Portfolio() {
                       </div>
                     </div>
                   </div>
+                  </div>
+                  </div>
                   <br />
                   <br />
                   <h4 className="text-black w3-margin-top" id="tables">
@@ -945,7 +910,7 @@ function Portfolio() {
                     {/**end graphics */}
                   </div>
                   {/**end col-8 container*/}
-                </div>
+              
                 {/**end col-8*/}
               </div>
             </div>
