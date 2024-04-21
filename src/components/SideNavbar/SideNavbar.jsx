@@ -19,8 +19,8 @@ function TopNav() {
     <div className='sidenav w3-padding-top-48' id='sidenav'>
       <div>
       {/* Side Navigation */}
-      <nav className={`w3-sidebar w3-bar-block w3-card w3-animate-top w3-center  w3-padding-64 ${isOpen ? 'w3-show' : 'w3-hide'}`} style={{ zIndex: '999', width: '100%', position: 'fixed', top: '0', backgroundColor: '#f1f1f1' }}>
-        <h1 className="w3-xxxlarge w3-text-theme">Services</h1>
+      <nav className={`w3-sidebar w3-bar-block w3-card w3-animate-top w3-center  w3-padding-64 ${isOpen ? 'w3-show' : 'w3-hide'}`} style={{ zIndex: '999', width: '100%', position: 'fixed', top: '0' }}>
+        <h1 className="w3-xxxlarge ">Services</h1>
         <button className="w3-bar-item w3-button w3-large" onClick={toggleSidebar}>Close <i className="fa fa-remove w3-large"></i></button>
         <a href="#graphics" className="w3-bar-item w3-button w3-xxlarge">Graphic Design</a>
         <a href="#dev" className="w3-bar-item w3-button w3-xxlarge">Software Solutions</a>
@@ -29,7 +29,7 @@ function TopNav() {
       </nav>
 
       {/* Header */}
-      <header className="w3-container w3-theme w3-padding w3-black" id="myHeader">
+      <header className="w3-container w3-theme w3-padding w3-light-gray" id="myHeader">
         <i className="fa fa-bars w3-xlarge w3-button w3-theme" onClick={toggleSidebar}></i>
         <div className="w3-center">
           <h4>CUSTOM WEB SITE DESIGN</h4>
@@ -78,14 +78,11 @@ function TopNav() {
   <hr />
   <div className="btn-group w3-margin-bottom w3-margin-top">
    
-                          <button type="button" className="btn btn-sm btn-info">
-                            <i className="fas fa-edit"></i> Edit
-                          </button>
                           <button
                             type="button"
                             className="btn btn-sm btn-secondary"
                           >
-                            <i className="fas fa-share"></i> Share
+                            <i className="fas fa-shopping-cart"></i> Share
                           </button>
                         </div>
                         <br />

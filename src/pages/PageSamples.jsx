@@ -63,20 +63,28 @@ function PageSamples() {
             }}
           >
             <div className="w3-container w3-content text-center w3-padding-large">
-            <h1
+            <div className="row d-flex justify-content-center">
+              <div className="col-sm-12 col-md-3 col-lg-3 flex-column"></div>
+              <div className="col-sm-12 col-md-6 col-lg-6 flex-column">
+              <h1
               className="text-center w3-margin-top"
               style={{
-                fontSize: "3rem",
+                fontSize: "4rem",
+                fontWeight: "900",
                 color: "#ffffff",
                 textShadow: "2px 2px 4px rgba(0, 0, 0, 0.9)",
               }}
-            >
-              <b>CW</b>
-              <span className="fw-lighter">SAMPLES</span>.
+          >SAMPLES
             </h1>
-            <p className="w3-padding-small"><b>The following sample sites are meant to showcase the possibilities. These sites do not have server-side functionalities, and only a few client-side features are active. For instance, databases, authentication, and email services for forms are not connected, and the primary use of state in these samples is for design purposes.</b></p>
+           
+            <h4 className="w3-padding-small"><b>The following sample sites are meant to showcase the possibilities.</b></h4>
+            
             <p><b><em>'Each sample site below started as a full, multi-page website created for a client, now showcased here as one-page snippets.'</em></b></p>
-</div>
+
+              </div>
+              <div className="col-sm-12 col-md-3 col-lg-3 flex-column"></div>
+            </div>
+ </div>
 </div>
         </header>
       </div>
@@ -91,7 +99,7 @@ function PageSamples() {
                
                 <div className="col-md-5  w3-padding-16">
                   <div className=" w3-padding justify-content-center w3-margin-top">
-                    <h4>REAL ESTATE SAMPLE.</h4>
+                    <h4 className="text-warning"> <i className="fas fa-home"></i> REAL ESTATE SAMPLE.</h4>
                  
                     <hr className="w3-opacity" />
                     <p style={{ fontSize: "13px" }}>
@@ -239,7 +247,7 @@ function PageSamples() {
                 <div className="col-md-5  w3-padding-16">
                   <div className="row px-4 justify-content-center">
                     <div className=" w3-padding justify-content-center w3-margin-top">
-                      <h4>BLOG PAGE SAMPLE.</h4>
+                      <h4><i className="fas fa-user-edit"></i> BLOG PAGE SAMPLE.</h4>
                       <hr className="w3-opacity" />
                       <p style={{fontSize:'14px'}}>
                        Blog-style websites offer an interactive
@@ -316,7 +324,7 @@ function PageSamples() {
                  
                     <div className="row px-4 justify-content-center">
                     <div className=" w3-padding justify-content-center w3-margin-top">
-              <h4>ALBUM PAGE SAMPLE.</h4>
+              <h4><i className="fas fa-images"></i> ALBUM PAGE SAMPLE.</h4>
               <hr className="w3-opacity" />
               <p>
                 A photo album website offers a platform for
