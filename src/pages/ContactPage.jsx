@@ -73,21 +73,16 @@ const ContactPage = () => {
         }}
       > 
     
-        <div className="container-fluid py-5 w3-margin-top" >
-        <h2 className='text-white ' style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>
-              <b>CONTACT</b><span className='fw-light text-white'>|PAGE</span>
-            </h2>
+        <div className="container-fluid py-2 w3-margin-top" >
+      
         <div className='card shadow border bg-white text-black'style={{borderRadius:'5px'}} >
-          <div className="w3-content w3-justify w3-text-black ">
-       
-           
             <div className="row w3-justify align-items-center">
-              <div className="col-lg-8 ">
+              <div className="col-lg-7">
             
             <img src={MeWhite} alt="me" style={{width:'100%'}} className='border shadow'/>
               </div>
-              <div className="col-lg-4 w3-justify align-items-center w3-padding-large px-3">
-                <div className="w3-display-container w3-margin-top">
+              <div className="col-lg-5 w3-justify align-items-center  px-3">
+                <div className="w3-display-container ">
                   <div className='w3-padding-large'>
                 <h5>THANKS FOR VISITING!</h5>
                 <p style={{fontSize:'14px'}}>
@@ -99,7 +94,7 @@ const ContactPage = () => {
                 </p>
                
 
-                  <p style={{fontSize:'14px'}}>
+                  <p style={{fontSize:'14px', marginTop:"0px", marginBottom:'0px'}}>
                     <FontAwesomeIcon
                       icon={faEnvelope}
                       className="fa-fw w3-medium w3-margin-right"
@@ -109,7 +104,7 @@ const ContactPage = () => {
                       email
                     </a>
                   </p>
-                  <p style={{fontSize:'14px'}}>
+                  <p style={{fontSize:'14px', marginTop:"0px", marginBottom:'0px'}}>
                     <FontAwesomeIcon
                       icon={faPhone}
                       className="fa-fw w3-medium w3-margin-right"
@@ -118,7 +113,7 @@ const ContactPage = () => {
                   </p>
                
 
-                <p style={{fontSize:'14px'}}>
+                <p style={{fontSize:'14px', marginTop:"0px", marginBottom:'0px'}}>
                   <FontAwesomeIcon
                     icon={faGithub}
                     className="fa-fw w3-medium w3-margin-right"
@@ -126,7 +121,7 @@ const ContactPage = () => {
                   GitHub:{" "}
                   <a href="https://github.com/carolwargo">Github Page</a>
                 </p>
-                <p style={{fontSize:'14px'}}>
+                <p style={{fontSize:'14px', marginTop:"0px", marginBottom:'0px'}}>
                   <FontAwesomeIcon
                     icon={faLinkedin}
                     className="fa-fw w3-medium w3-margin-right"
@@ -136,18 +131,14 @@ const ContactPage = () => {
                     LinkedIn Profile
                   </a>
                 </p>
+             
               </div>
               </div>
               <div className="w3-display-container bg-white">
               <div className='w3-content w3-padding-large  w3-justify align-items-center'>
             
             <form ref={form} onSubmit={sendEmail}>
-            <p style={{fontSize:'14px'}}>
-                
-                <em>
-             Or send me a message!
-                </em>
-              </p>
+         
 <div className='form-group'>
 <label style={{fontSize:'14px'}}>Name</label>
 <input 
@@ -189,7 +180,7 @@ className='btn btn-secondary'
               </div>
               
             </div>
-             </div>
+           
       
 
 
