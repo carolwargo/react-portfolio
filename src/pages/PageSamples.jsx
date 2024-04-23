@@ -64,8 +64,8 @@ function PageSamples() {
           >
             <div className="w3-container w3-content text-center w3-padding-large">
             <div className="row d-flex justify-content-center">
-              <div className="col-sm-12 col-md-3 col-lg-3 flex-column"></div>
-              <div className="col-sm-12 col-md-6 col-lg-6 flex-column">
+              <div className="col-sm-12 col-md-2 col-lg-2 flex-column"></div>
+              <div className="col-sm-12 col-md-8 col-lg-8 flex-column">
               <h1
               className="text-center w3-margin-top"
               style={{
@@ -79,10 +79,10 @@ function PageSamples() {
            
             <h4 className="w3-padding-small"><b>The following sample sites are meant to showcase the possibilities.</b></h4>
             
-            <p><b><em>'Each sample site below started as a full, multi-page website created for a client, now showcased here as one-page snippets.'</em></b></p>
+            <p><b><em>'Each sample site below started as a full, multi-page website, now showcased here as one-page snippets.'</em></b></p>
 
               </div>
-              <div className="col-sm-12 col-md-3 col-lg-3 flex-column"></div>
+              <div className="col-sm-12 col-md-2 col-lg-2 flex-column"></div>
             </div>
  </div>
 </div>

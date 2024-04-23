@@ -52,7 +52,7 @@ const GraphicsPage = () => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="mb-2 border border-black clickable-image"
+                  className="mb-2 border border-black clickable-image w3-opacity w3-hover-opacity-off"
                   style={{
                     width: "100%",
                     height: "auto",

@@ -124,7 +124,7 @@ function Portfolio() {
 
                 {/*START SERVER SIDE CARDS 1-6*/}
                 {/*1. start card-image for JATE*/}
-                <div className="w3-card" id="text-editor">
+                <div className="w3-card w3-grayscale-min w3-opacity w3-hover-opacity-off" id="text-editor">
                   <img
                     src={JATE}
                     alt="blog-profile"
@@ -167,7 +167,7 @@ function Portfolio() {
                 </div>
                 <br />
                 {/*2. start card-image for Notes*/}
-                <div className="w3-card" id="notes">
+                <div className="w3-card w3-grayscale-min w3-opacity w3-hover-opacity-off" id="notes">
                   <img
                     src={Notes}
                     alt="blog-profile"
@@ -209,7 +209,7 @@ function Portfolio() {
                 </div>
                 <br />
                 {/*3. start card-image for SVG*/}
-                <div className="w3-card" id="svg">
+                <div className="w3-card w3-grayscale-min w3-opacity w3-hover-opacity-off" id="svg">
                   <img
                     src={SVG}
                     alt="blog-profile"
@@ -252,7 +252,7 @@ function Portfolio() {
                 </div>
                 <br />
                 {/*4. start card for dayplanner*/}
-                <div className="w3-card" id="dayplanner">
+                <div className="w3-card w3-grayscale-min w3-opacity w3-hover-opacity-off" id="dayplanner">
                   <img
                     src={Desk}
                     alt="blog-profile"
@@ -293,7 +293,7 @@ function Portfolio() {
                 </div>
                 <br />
                 {/*5. start card for README*/}
-                <div className="w3-card" id="readme">
+                <div className="w3-card w3-grayscale-min w3-opacity w3-hover-opacity-off" id="readme">
                   <img
                     src={README}
                     alt="blog-profile"
