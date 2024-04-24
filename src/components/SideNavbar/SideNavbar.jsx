@@ -64,19 +64,19 @@ function TopNav() {
         </div>
       </div>
       
-<div className="w3-row-padding w3-center w3-margin-top">
+<div className="w3-row-padding w3-center">
 <div className="w3-third">
-  <div className="w3-card w3-container w3-padding-top-48" style={{minHeight:"525px"}}>
+  <div className="w3-card w3-container w3-padding-48" style={{minHeight:"425px"}}>
   <h3 className='w3-text-black'>ONE PAGE DESIGN</h3>
   <p>6-Sections</p>
   <i className="far fa-file-alt
- w3-margin-bottom text-info" style={{fontSize:"120px"}}></i>
+ w3-margin-bottom text-info" style={{fontSize:"100px"}}></i>
   <p>Navigation</p>
   <p>6-sections</p>
   <p>Fits any screen sizes</p>
   <p>PC Tablet and Mobile</p>
   <hr />
-  <div className="btn-group w3-margin-bottom w3-margin-top">
+  <div className="btn-group  w3-margin-top">
    
                           <button
                             type="button"
@@ -90,16 +90,16 @@ function TopNav() {
 </div>
 
 <div className="w3-third">
-  <div className="w3-card w3-container w3-padding-top-48" style={{minHeight:"525px"}}>
+  <div className="w3-card w3-container w3-padding-48" style={{minHeight:"425px"}}>
   <h3>MULTI-PAGE</h3>
   <p>6 pages</p>
-  <i className="fa fa-desktop w3-margin-bottom w3-text-black text-info" style={{fontSize:"120px"}}></i>
+  <i className="fa fa-desktop w3-margin-bottom w3-text-black text-info" style={{fontSize:"100px"}}></i>
   <p>Landing Page</p>
   <p>About Page</p>
   <p>Contact Page</p>
   <p>3-Additional Pages</p>
   <hr />
-  <div className="btn-group w3-margin-bottom w3-margin-top">
+  <div className="btn-group w3-margin-top">
                           <button type="button" className="btn btn-sm btn-info">
                             <i className="fas fa-edit"></i> Edit
                           </button>
@@ -114,16 +114,16 @@ function TopNav() {
   </div>
 </div>
 
-<div className="w3-third w3-margin-bottom">
-  <div className="w3-card w3-container w3-padding-top-48" style={{minHeight:"525px"}}>
+<div className="w3-third">
+  <div className="w3-card w3-container w3-padding-48" style={{minHeight:"425px"}}>
   <h3>CUSTOM SOLUTIONS</h3><br/>
-  <i className="fa fa-tools w3-margin-bottom w3-text-black text-info" style={{fontSize:"120px"}}></i>
+  <i className="fa fa-tools w3-margin-bottom w3-text-black text-info" style={{fontSize:"100px"}}></i>
   <p>Database Integration</p>
   <p>Auth Services</p>
   <p>Digital Forms</p>
   <p>Payment</p>
   <hr className='mt-4'/>
-  <div className="btn-group w3-margin-bottom w3-margin-top">
+  <div className="btn-group w3-margin-top">
 
                           <button type="button" className="btn btn-sm btn-info">
                             <i className="fas fa-edit"></i> Edit
