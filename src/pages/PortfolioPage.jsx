@@ -920,7 +920,7 @@ function Portfolio() {
             {/**end row */}
             {/**start sample pages section*/}
 
-            <div className="container w3-padding">
+            <div className="container w3-padding-large">
               <h4 className="w3-text-black w3-margin-top" id="page-samples">
                 <b className="fw-bold text-black">WEB PAGE</b>
                 <span className="fw-light text-muted">SAMPLES.</span>
@@ -937,7 +937,7 @@ function Portfolio() {
                   patience."{" "}
                 </i>
               </p>
-              <div className="text-center w3-padding-16 w3-padding-large">
+              <div className="text-center w3-padding-24 w3-padding-large w3-margin-bottom">
                 <Link to="/page-samples#page-samples" onClick={scrollToTop}>
                   <p>
                     Follow the link to see the start of my sample sites.
@@ -946,14 +946,14 @@ function Portfolio() {
                 </Link>
               </div>
             </div>
-            <footer className="text-muted py-5">
-              <div className="container">
-                <p className="float-end mb-1">
-                  <a href="#portfolio">Back to top</a>
-                </p>
-              </div>
-            </footer>
           </div>
+          <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
+          <div className="container">
+            <p className="float-end mb-1">
+              <a href="#portfolio">Back to top</a>
+            </p>
+          </div>
+        </footer>
         </div>
         {/**^^^end main container*/}
         {/**end portfolio container wholepage */}

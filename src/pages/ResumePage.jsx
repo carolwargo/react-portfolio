@@ -712,7 +712,7 @@ VOLUNTEER PROGRAM PARTICIPATION.</strong></h3>
   <div className="container w3-margin-top">
       <div className="row">
         <div className="col-md-4 mx-auto">
-          <div className="text-center w3-padding-16">
+          <div className="text-center w3-padding-16  w3-margin-bottom">
           <Alert variant="warning" className="shadow">
       <Alert.Heading>
         <i className="fa fa-exclamation-triangle"></i> WARNING
@@ -725,20 +725,16 @@ VOLUNTEER PROGRAM PARTICIPATION.</strong></h3>
         </p>
       </Alert.Link>
     </Alert>
+    <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
+          <div className="container">
+            <p className="float-end mb-1">
+              <a href="#resume">Back to top</a>
+            </p>
           </div>
-          <br />
-          <br />
+        </footer>
+          </div>
         </div>
       </div>
-   
-      <footer className="text-muted py-5">
-  <div className="container">
-    <p className="float-end mb-1">
-      <a href="#resume">Back to top</a>
-    </p>
-  </div>
-</footer>
-
         </div>
   </div>
   </motion.div>

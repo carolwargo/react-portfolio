@@ -182,7 +182,7 @@ className="w3-row w3-center w3-black w3-padding-32">
               </div>
         </div> 
                  
-        <div className="text-center w3-padding-16 w3-padding-large">
+        <div className="text-center w3-padding-16 w3-padding-large " style={{marginBottom:'4rem'}}>
         <Link to="/resume#resume" onClick={scrollToTop}>
           <p>Follow the link to view my digital resume and/or download a copy.            
           <i className="fa fa-arrow-right w3-hover-opacity w3-margin-left"></i>

@@ -192,6 +192,7 @@ const ContactPage = () => {
                             className="btn btn-secondary"
                           />
                         </div>
+                        <br />
                       </form>
                     </div>
                   </div>
