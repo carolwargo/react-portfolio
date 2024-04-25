@@ -4,7 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
 function Login() {
-    const [username, setUsername] = useState('testuser');
+    const [username, setUsername] = useState('John Doe');
     const [password, setPassword] = useState('password123');
     const [usernameError, setUsernameError] = useState('');
     const [passwordError, setPasswordError] = useState('');
@@ -41,12 +41,10 @@ function Login() {
     };
 
     return (
-        <div className="row justify-content-center">
-            <div className="col-md-6 mx-auto">
+    
                 <div className="login" id='login'>
-                    <div className="w3-container w3-content bg-white shadow">
-                        <div className="w3-padding-16 border-dark ">
-                            <h4 className="fw-light w3-margin-top"><b>Login Form</b></h4>
+                    <div className="w3-container bg-white shadow">
+                        <div className="border-dark">
                             <div className="w3-padding-24">
                                 <form onSubmit={handleLogin}> {/* Wrap input fields with a form */}
 
@@ -55,7 +53,7 @@ function Login() {
                                             type="text" 
                                             id="username" 
                                             className={`form-control shadow-sm border border-1 ${usernameError ? 'is-invalid' : ''}`}
-                                            placeholder="Username"
+                                            placeholder="John Doe"
                                             value={username || 'Username'} // Use username state variable if not empty, otherwise use 'Username' placeholder
                                             onChange={(e) => setUsername(e.target.value)}
                                             autoComplete="username"
@@ -77,18 +75,18 @@ function Login() {
                                     </div>
 
                                     <div className="row mb-4">
-                                        <div className="col d-flex">
+                                        <div className="col-sm-12 col-md-7 col-lg-7 d-flex">
                                             <div className="form-check">
                                                 <input 
                                                     type="checkbox" 
                                                     id="rememberMe" 
                                                     className="form-check-input" 
                                                 />
-                                                <label className="form-check-label" htmlFor="rememberMe" style={{fontSize:'12px'}}> Remember me </label>
+                                                <label className="form-check-label" htmlFor="rememberMe" style={{fontSize:'11px'}}>Remember me</label>
                                             </div>
                                         </div>
-                                        <div className="col">
-                                            <a href="#!" style={{fontSize:'12px'}}>Forgot password?</a>
+                                        <div className="col-sm-12 col-md-5 col-lg-5">
+                                            <a href="#!" style={{fontSize:'11px'}}>Forgot password?</a>
                                         </div>
                                     </div>
                                     <div>
@@ -105,8 +103,8 @@ function Login() {
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+           
+       
     );
 }
 

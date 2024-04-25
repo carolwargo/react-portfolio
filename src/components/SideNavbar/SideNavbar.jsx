@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Login  from '../../components/Portfolio/Forms/Login.jsx';
+import SignUp  from '../../components/Portfolio/Forms/Signup.jsx';
+import LoginImage from '../../assets/images/Portfolio/LoginImage.png'
+import "bootstrap/dist/css/bootstrap.min.css";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
 
 function TopNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,15 +37,15 @@ function TopNav() {
 
       {/* Header */}
       <header className="w3-container w3-theme w3-padding w3-light-gray" id="myHeader">
-        <i className="fa fa-bars w3-xlarge w3-button w3-theme" onClick={toggleSidebar}></i>
-        <div className="w3-center">
-          <h4>CUSTOM WEB SITE DESIGN</h4>
-          <h1 className="w3-xxxlarge w3-animate-bottom">Get Started</h1>
-          <div className="w3-padding-32">
-            <button className="w3-btn w3-xlarge bg-info w3-hover-light-grey" onClick={() => document.getElementById('id01').style.display='block'} style={{fontWeight:"900"}}>LEARN MORE</button>
-          </div>
+      <div className="w3-center" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+        <i className="fa fa-bars w3-xlarge w3-button w3-theme" onClick={toggleSidebar} style={{ verticalAlign: 'middle' }}></i>
+     
+        <h1 className="w3-xxxlarge w3-animate-bottom">Get Started</h1>
+        <div className="w3-padding-32">
+          <button className="w3-btn w3-xlarge bg-info w3-hover-light-grey" onClick={() => document.getElementById('id01').style.display='block'} style={{ fontWeight: "900" }}>LEARN MORE</button>
         </div>
-      </header>
+      </div>
+    </header>
 
       {/* Modal */}
       <div id="id01" className="w3-modal w3-margin-top w3-margin-bottom">
@@ -63,7 +70,49 @@ function TopNav() {
           </footer>
         </div>
       </div>
-      
+
+
+      <div className="w3-row-padding d-flex w3-center w3-padding-32 w3-padding-large align-items-center">
+
+  <div className="w3-half flex-column justify-content-center align-items-center">
+ 
+  <a href='#forms'>
+    <div className="justify-content-center w3-hover-opacity">
+    <img src={LoginImage} alt='login-form' style={{width:'100%'}} className='shadow'></img>
+  </div>
+ 
+  </a>
+</div>
+<div className="w3-half d-flex justify-content-center align-items-center">
+<div className='w3-card w3-padding-large w3-white'>
+  
+<h4 className='w3-text-dark-blue'> WEB FORMS</h4>
+  </div>
+</div>
+</div>   
+
+<div style={{backgroundColor:'#4580BF'}}>
+
+
+
+<div className="w3-row-padding d-flex w3-padding-32 justify-content-center">
+<div className='col-sm-12 col-md-4 col-lg-4'></div>
+<div className='col-sm-12 col-md-4 col-lg-4'>
+<Login/>
+</div>
+<div className='col-sm-12 col-md-4 col-lg-4'></div>
+</div>
+
+
+<div className="w3-row-padding d-flex w3-padding-32 justify-content-center">
+<div className='col-sm-12 col-md-4 col-lg-4'></div>
+<div className='col-sm-12 col-md-4 col-lg-4'>
+<SignUp/>
+</div>
+<div className='col-sm-12 col-md-4 col-lg-4 '></div>
+</div>
+</div>
+    {/* 
 <div className="w3-row-padding w3-center">
 <div className="w3-third">
   <div className="w3-card w3-container w3-padding-48" style={{minHeight:"425px"}}>
@@ -139,6 +188,7 @@ function TopNav() {
   </div>
 </div>
 </div>
+*/ } 
 </div>
     </div>
     </motion.div>
