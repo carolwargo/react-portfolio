@@ -42,12 +42,10 @@ function Login() {
 
     return (
     
-                <div className="login" id='login'>
                     <div className="w3-container bg-white shadow">
-                        <div className="border-dark">
                             <div className="w3-padding-24">
+                            <div><h6 className='text-muted w3-padding-16 w3-center'>LOGIN TO ACCOUNT</h6></div>
                                 <form onSubmit={handleLogin}> {/* Wrap input fields with a form */}
-
                                     <div className="form-outline mb-4">
                                         <input 
                                             type="text" 
@@ -74,7 +72,7 @@ function Login() {
                                         <div className="invalid-feedback">{passwordError}</div>
                                     </div>
 
-                                    <div className="row mb-4">
+                                    <div className="row mb-4 d-flex">
                                         <div className="col-sm-12 col-md-7 col-lg-7 d-flex">
                                             <div className="form-check">
                                                 <input 
@@ -100,9 +98,9 @@ function Login() {
                                     </div>
                                 </form>
                             </div>
-                        </div>
+                       
                     </div>
-                </div>
+              
            
        
     );

@@ -70,6 +70,9 @@ function Portfolio() {
               zIndex: 1,
             }}
           >
+            <div className="shadow">
+            <h4 className="w3-padding-large w3-padding-32 text-danger"><i><b>'I am currently developing individual component pages to streamline the site. Thank you in advance for your patience as I work through any disruptions to the site, styling or layout!' </b></i></h4>
+            </div>
             <h1 className="mt-5"
               style={{
                 fontSize: "3rem",

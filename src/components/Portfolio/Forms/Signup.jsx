@@ -63,7 +63,9 @@ function Signup() {
 
                 <div className="signup" id='signup'>
                     <div className="w3-container bg-white shadow ">
+                 
                         <div className="w3-padding-16 border-dark">
+                        <div><h6 className='text-muted w3-margin-top w3-center'>SIGNUP & REGISTER</h6></div>
                             <form onSubmit={handleSubmit} autoComplete="on" >
                                 <div className="row my-4">
                                     <div className="col">

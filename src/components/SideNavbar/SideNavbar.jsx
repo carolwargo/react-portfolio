@@ -73,43 +73,49 @@ function TopNav() {
 
 
       <div className="w3-row-padding d-flex w3-center w3-padding-32 w3-padding-large align-items-center">
-
   <div className="w3-half flex-column justify-content-center align-items-center">
- 
-  <a href='#forms'>
     <div className="justify-content-center w3-hover-opacity">
     <img src={LoginImage} alt='login-form' style={{width:'100%'}} className='shadow'></img>
   </div>
- 
-  </a>
 </div>
 <div className="w3-half d-flex justify-content-center align-items-center">
 <div className='w3-card w3-padding-large w3-white'>
-  
 <h4 className='w3-text-dark-blue'> WEB FORMS</h4>
   </div>
 </div>
 </div>   
 
 <div style={{backgroundColor:'#4580BF'}}>
+<div className="w3-row-padding d-flex w3-padding-32 justify-content-center">
+  <div className='col-sm-12 col-md-7 col-lg-7 flex-column justify-content-center text-white'>
+    <h4>AUTHENTICATION & AUTHORIZATION</h4>
+    <br />
+    <p className='text-white'>Authentication is the process of verifying the identity of a user, system, or application.</p>
+    <p className='text-white'>Authentication is the process of verifying the identity of a user, system, or application.</p>
+  </div>
+
+  <div className='col-sm-12 col-md-5 col-lg-5 flex-column justify-content-center align-items-center'>
+    <Login/>
+  </div>
+  </div>
 
 
 
 <div className="w3-row-padding d-flex w3-padding-32 justify-content-center">
-<div className='col-sm-12 col-md-4 col-lg-4'></div>
+<div className='col-sm-12 col-md-1 col-lg-1 '></div>
 <div className='col-sm-12 col-md-4 col-lg-4'>
-<Login/>
+<div className='col-sm-12 col-md-7 col-lg-7 flex-column justify-content-center text-white'>
+    <h4>AUTHENTICATION & AUTHORIZATION</h4>
+    <br />
+    <p className='text-white'>Authentication is the process of verifying the identity of a user, system, or application.</p>
+    <p className='text-white'>Authentication is the process of verifying the identity of a user, system, or application.</p>
+  </div>
 </div>
-<div className='col-sm-12 col-md-4 col-lg-4'></div>
-</div>
-
-
-<div className="w3-row-padding d-flex w3-padding-32 justify-content-center">
-<div className='col-sm-12 col-md-4 col-lg-4'></div>
 <div className='col-sm-12 col-md-4 col-lg-4'>
 <SignUp/>
 </div>
-<div className='col-sm-12 col-md-4 col-lg-4 '></div>
+
+<div className='col-sm-12 col-md-1 col-lg-1 '></div>
 </div>
 </div>
     {/* 

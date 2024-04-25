@@ -14,6 +14,7 @@ import SideNav from "./pages/SideNav.jsx";
 import Footer from "./components/Footer.jsx";
 import NavFixed from "./components/NavFixed.jsx"; 
 import Album from "./pages/Album.jsx";
+import Forms from "./pages/Forms.jsx";
 import "./App.css";
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/album" element={<Album />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/scroll-spy" element={<ScrollSpy />} />
+          <Route path="/forms" element={<Forms />} />
           {/* Add a catch-all route for handling errors */}
           <Route path="*" element={<NotFound />} />
         </Routes>
