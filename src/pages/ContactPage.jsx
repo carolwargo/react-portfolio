@@ -67,13 +67,15 @@ const ContactPage = () => {
             zIndex: 1, // Set zIndex to 1 to position it above the white mask
           }}
         >
-          <div className="container-fluid py-5 w3-margin-top">
+          <div className="container-fluid py-1 w3-margin-top">
             <div
               className="card shadow border bg-white text-black"
               style={{ borderRadius: "5px" }}
             >
-              <div className="row w3-justify align-items-center">
+              <div className="row justify-content-center align-items-center">
+               
                 <div className="col-lg-7">
+               
                   <img
                     src={MeWhite}
                     alt="me"
@@ -81,46 +83,46 @@ const ContactPage = () => {
                     className="border shadow"
                   />
                 </div>
-                <div className="col-lg-5 justify-content-center align-items-center px-3">
-  <div className="w3-display-container w3-padding-large" style={{ display: "flex", alignItems: "center" }}>
-    <div className="">
-      <h4>THANKS FOR VISITING!</h4>
+                <div className="col-lg-5 text-center justify-content-center align-items-center px-3">
+  <div className="w3-display-container w3-margin-top" style={{ display: "flex", alignItems: "center" }}>
+    <div className="w3-container w3-padding-large">
+      <h5>THANKS FOR VISITING!</h5>
       <p >
         <em>
           If you have any questions, inquiries, or just want to say hello, I'd love to hear from you!
         </em>
       </p>
-
-      <div style={{ display: "flex" }}>
-        <p style={{ margin: "0px" }}>
+    
+      <div className="justify-content-center" style={{ display: "flex" }}>
+        <p  className="text-center">
           <a href="mailto:carolwargo.dev@gmail.com" alt="me" style={{ color: 'black' }}>
             <FontAwesomeIcon
               icon={faEnvelope}
-              className="fa-fw w3-xlarge mx-1"
+              className="fa-fw w3-large mx-1"
             />
           </a>
         </p>
-        <p style={{ margin: "0px" }}>
+        <p  className="text-center">
           <a href="tel:+4437711726" style={{ color: 'black' }}>
             <FontAwesomeIcon
               icon={faPhone}
-              className="fa-fw w3-xlarge mx-1"
+              className="fa-fw w3-large mx-1"
             />
           </a>
         </p>
-        <p style={{ margin: "0px" }}>
+        <p  className="text-center">
           <a href="https://github.com/carolwargo" style={{ color: 'black' }}>
             <FontAwesomeIcon
               icon={faGithub}
-              className="fa-fw w3-xlarge mx-1"
+              className="fa-fw w3-large mx-1"
             />
           </a>
         </p>
-        <p style={{ margin: "0px" }}>
+        <p  className="text-center">
           <a href="https://www.linkedin.com/in/carol-wargo-35021baa/" style={{ color: 'black' }}>
             <FontAwesomeIcon
               icon={faLinkedin}
-              className="fa-fw w3-xlarge mx-1"
+              className="fa-fw w3-large mx-1"
             />
           </a>
         </p>
@@ -128,8 +130,8 @@ const ContactPage = () => {
     </div>
   </div>
 
-                  <div className="w3-display-container bg-white">
-                    <div className="w3-content w3-padding-large  w3-justify align-items-center">
+                  <div className="w3-display-container w3-margin-top bg-white">
+                    <div className="w3-content w3-padding-large w3-justify align-items-center">
                       <form ref={form} onSubmit={sendEmail}>
                         <div className="form-group">
                           <label style={{ fontSize: "14px" }}>Name</label>
