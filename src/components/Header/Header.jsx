@@ -72,12 +72,12 @@ const Header = () => {
             <br></br>
             <div className="p-2">
               <Link to="/contact">
-              <button type="button" className="btn btn-light mx-2 my-2">
+              <button type="button" className="btn btn-light mx-2 my-2 w3-round-xlarge">
                   <b>Contact Me</b>
                 </button>
               </Link>
               <Link to="/#what-we-do">
-              <button type="button" className="btn btn-light mx-2">
+              <button type="button" className="btn btn-light mx-2 w3-round-xlarge">
                   <b style={{ textShadow: "2px 2px 4px #F63DB0",}}>Learn More</b>
                 </button>
               </Link>

@@ -26,86 +26,67 @@ export default function App() {
     
     >
     <div className='footer' id='footer' style={{fontFamily:'Raleway'}}>
-    <MDBFooter className='text-center w3-black' >
+    <MDBFooter className=' w3-black' >
     
 
-    <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
-      <div className='me-5 d-none d-lg-block' >
-      HOW TO CONNECT:
-      </div>
-
-      <div>
-      
-          
-      <a href='tel:+4437711726' className='me-4 text-reset'>
-      <MDBIcon icon="phone-alt" />
-
-        </a>
-        <a href='mailto:carolwargo.dev@gmail.com' className='me-4 text-reset'>
-        <MDBIcon icon="envelope" />
-        </a>
-    
-        <a href='https://www.linkedin.com/in/carol-wargo-35021baa/' className='me-4 text-reset'>
-          <MDBIcon fab icon="linkedin" />
-        </a>
-        <a href='https://github.com/carolwargo' className='me-4 text-reset'>
-          <MDBIcon fab icon="github" />
-        </a>
-        
-      
-      </div>
-    </section>
-
-    <section className=''>
+   
+    <section className='text-center w3-padding-top-16 w3-padding-24'>
       <MDBContainer className='text-center text-md-start mt-5'>
         <MDBRow className='mt-3'>
-          <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
+          <MDBCol md="4" lg="4" xl="4" className='mx-auto mb-4 me-2'>
             <h6 className='text-uppercase fw-bold mb-4'>
          
               <b>Carol</b> Wargo
             </h6>
-            <p style={{fontSize:'12px'}}>
+            <p style={{fontSize:'14px'}}>
             Thank you for visiting my site. I hope you found what you were looking for and enjoyed your time here. Feel free to reach out if you have any questions or feedback!
             </p>
-            <button className="w3-button w3-light-grey w3-padding w3-margin-right" >
+            <button className="w3-button w3-light-grey w3-padding w3-round-xxlarge " >
                 <a
                   className="button text-black"
                   id="download"
                   download 
                   href={ResumeDownload}
                 >
-                  <i className="fa fa-download"></i> Download Resume
+                 Download Resume
                 </a>
               </button>
           </MDBCol>
           
-          <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
-            <h6 className='text-uppercase fw-bold mb-4'>Pages</h6>
+          <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
+          
         
-            <p style={{fontSize:'14px'}}>
-              <Link to='/about' className='text-reset' onClick={scrollToTop} >
+          
+              <Link to='/' className='text-reset' onClick={scrollToTop} >
+              <p style={{fontSize:'14px'}}>
               Home
+              </p>
               </Link>
-            </p>
-            <p style={{fontSize:'14px'}}>
+          
+           
               <Link to='/about' className='text-reset' onClick={scrollToTop} >
+              <p style={{fontSize:'14px'}}>
                 About
+                </p>
               </Link>
-            </p>
-            <p style={{fontSize:'14px'}}>
+           
+           
               <Link to='/resume' className='text-reset' onClick={scrollToTop} >
+              <p style={{fontSize:'14px'}}>
                 Digital Resume
+                </p>
               </Link>
-            </p>
-            <p style={{fontSize:'14px'}}>
+          
+            
               <Link to='/portfolio' className='text-reset' onClick={scrollToTop} >
+              <p style={{fontSize:'14px'}}>
                Portfolio
+               </p>
               </Link>
-            </p>
+           
           </MDBCol>
 
-          <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-            <h6 className='text-uppercase fw-bold mb-4'>Samples</h6>
+          <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4 justify-content-center'>
             <p style={{fontSize:'14px'}}>
               <Link to='/blog' className='text-reset' onClick={scrollToTop} >
                Blog
@@ -130,34 +111,62 @@ export default function App() {
           </MDBCol>
 
 
-          <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
-            <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
-            <p style={{fontSize:'14px'}}>
+          <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-md-0 mb-4 flex-column justify-content-center text-center'>
+            <p style={{fontSize:'14px'}} className='text-center'>
               <MDBIcon icon="home" className="me-2" />
               Huntingtown, MD
             </p>
-            <p style={{fontSize:'14px'}}>
-              <MDBIcon icon="envelope" className="me-3" />
-              <a href='mailto:carolwargo.dev@gmail.com' className='text-reset'>
+            <p style={{fontSize:'14px'}}  className='text-center'>
+              <MDBIcon icon="envelope" className="me-2" />
+              <a href='mailto:carolwargo.dev@gmail.com' 
+              className='text-reset'>
               Email
               </a>
             </p>
-            <p style={{fontSize:'14px'}}>
-            <a href='tel:+4437711726' className='me-4 text-reset'>
-              <MDBIcon icon="phone" className="me-3" /> Call
+            <p style={{fontSize:'14px'}}  className='text-center'>
+            <a href='tel:+4437711726'className='text-reset'>
+              <MDBIcon icon="phone" className="me-2" /> Call
 </a>
             </p>
-         
+            <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2" 
+              style={{backgroundColor:'#FF385C'}}>
+              <Link to="/contact#contact"
+                  className="button text-white"
+                  onClick={scrollToTop}
+                >
+                Contact Me
+                </Link>
+              </button>
           </MDBCol>
         </MDBRow>
       </MDBContainer>
     </section>
-
-      <div className='text-center p-3 w3-margin-top ' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)'}}>
-       <p style={{fontSize:'12px'}}> © 2023 Copyright:    <a className='text-white' href='https:carolwargo.github.io/react-portfolio' style={{fontSize:'12px'}}> <b> C</b>WARGO
+    <hr />
+    <section className='d-flex justify-content-center text-center justify-content-lg-between w3-padding-large border-bottom'>
+      <div className='me-5 d-none d-lg-block' >
+      <p style={{fontSize:'12px', fontWeight:'light'}}> © 2023 Copyright:    <a className='text-white' href='https:carolwargo.github.io/react-portfolio' style={{fontSize:'12px'}}> <b> C</b>WARGO
         </a></p>
-     
       </div>
+
+      <div>
+      
+          
+      <a href='tel:+4437711726' className='me-4 text-reset'>
+      <MDBIcon icon="phone-alt" />
+
+        </a>
+        <a href='mailto:carolwargo.dev@gmail.com' className='me-4 text-reset'>
+        <MDBIcon icon="envelope" />
+        </a>
+    
+        <a href='https://www.linkedin.com/in/carol-wargo-35021baa/' className='me-4 text-reset'>
+          <MDBIcon fab icon="linkedin" />
+        </a>
+        <a href='https://github.com/carolwargo' className='me-4 text-reset'>
+          <MDBIcon fab icon="github" />
+        </a>
+      </div>
+    </section>
     </MDBFooter> 
   </div>
   </motion.div>

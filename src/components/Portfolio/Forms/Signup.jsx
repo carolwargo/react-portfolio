@@ -139,7 +139,7 @@ function Signup() {
 
                                 <button 
                                     type="submit" 
-                                    className="btn btn-primary btn-block mb-4 px-5 shadow"
+                                    className="btn btn-primary btn-block mb-4 px-5 shadow w3-round-xxxlarge"
                                 >
                                     Sign up
                                 </button>

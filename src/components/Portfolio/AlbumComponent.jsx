@@ -124,7 +124,7 @@ function AlbumExample() {
                   <div className="card shadow-sm">
                     <img
                       src={image}
-                      className="card-img-top w3-opacity w3-hover-opacity-off border border-bottom"
+                      className="w3-round-xxlarge card-img-top w3-opacity w3-hover-opacity-off border border-bottom"
                       alt={` ${index + 1}`}
                     />
 
@@ -275,7 +275,7 @@ function AlbumExample() {
         <footer className="text-muted py-5">
           <div className="container">
             <p className="float-end mb-1">
-              <a href="/">Back to top</a>
+              <a href="/"    style={{color:'#FF385C'}}>Back to top</a>
             </p>
           </div>
         </footer>

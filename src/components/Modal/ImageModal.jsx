@@ -9,7 +9,7 @@ const ImageModal = ({ showModal, handleModalClose, imageSrc, altText, title }) =
         <Modal.Title style={{ fontSize: '1rem' }}>{title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <img src={imageSrc} alt={altText} className="w-100 h-auto" />
+        <img src={imageSrc} alt={altText} className="w-100  h-auto w3-round-xxlarge" />
       </Modal.Body>
     </Modal>
   );

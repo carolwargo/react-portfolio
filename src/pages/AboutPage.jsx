@@ -79,55 +79,6 @@ export default function AboutPage() {
   <div className="w3-light-grey shadow">
     <div className="w3-container w3-padding-small w3-black w3-center" style= {{width:"75%"}}>75%</div>
   </div>
-
-
-
-
-
-
-{/** 
-
-              <h3><strong>FRONT END DEVELOPMENT.</strong></h3>
-              <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
-          </div>
-          <p>HTML</p>
-          <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
-          </div>
-          <p>CSS</p>
-          <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
-          </div>
-          <p>JavaScript</p>
-          <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
-          </div>
-          <p>React.js</p>
-          <br />
-
-          <h2 className=""><strong>WHAT I DO BEST.</strong></h2>
-          <br />
-              <h4><strong>SERVER-SIDE DEVELOPMENT.</strong></h4>
-              <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
-          </div>
-          <p><b>Frameworks & Package Manager: </b> <br />Node.js, Express.js and NPM.</p>
-          <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
-          </div>
-          <p><b>Database Design & Management: </b> <br />Relational-MYSQL and NoSQL databases-MongoDB.</p>
-          <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
-          </div>
-          <p><b>API Development:</b><br />Graph QL, RESTful API's and Webhooks.</p>
-          <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
-          </div>
-          <p><b>Version Control:</b><br />
-          GIT + tools; VS Code and Github</p>
-          <br />
-          */}
           </div>
 
        
@@ -145,7 +96,7 @@ export default function AboutPage() {
 {/**start experience count */}
 
 <div 
-className="w3-row w3-center w3-black w3-padding-32">
+className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#FF385C'}}>
   <div className="w3-quarter w3-section">
     <span className="w3-xlarge">20<span style={{fontSize:'10px'}}>yrs</span> +</span><br />
     BUSINESS EXPERIENCE
@@ -175,27 +126,31 @@ className="w3-row w3-center w3-black w3-padding-32">
             <div className='col-lg-8 '>
               <img src={LocationView} alt="htown" className="w3-image w3-round shadow" style={{width:"100%"}} />
             </div>
-        
+            </div>
           </div>
           <div>
-          <br />
               </div>
-        </div> 
-                 
-        <div className="text-center w3-padding-16 w3-padding-large " style={{marginBottom:'4rem'}}>
-        <Link to="/resume#resume" onClick={scrollToTop}>
-          <p>Follow the link to view my digital resume and/or download a copy.            
-          <i className="fa fa-arrow-right w3-hover-opacity w3-margin-left"></i>
-          </p>
-          </Link>
+              <div className="w3-container w3-content text-center w3-padding-48 w3-margin-bottom w3-padding-large">
+              <h2 className="text-black">View my digital resume to learn more about my professional experience and qualifications.        
+        </h2><br />
+              <button className="w3-button w3-text-light-grey w3-padding w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom" 
+              style={{backgroundColor:'#FF385C'}}>
+              <Link to="/resume#resume"
+                  className="button text-white"
+                  onClick={scrollToTop}
+                >
+                Resume
+                </Link>
+              </button>
+              </div> 
+             
           <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">
-              <a href="#about">Back to top</a>
+              <a href="#about" style={{color:'#FF385C'}}>Back to top</a>
             </p>
           </div>
         </footer>
-        </div>
     </div>
     </motion.div>
   );

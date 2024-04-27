@@ -124,7 +124,7 @@ function Portfolio() {
                     <p>
                       <button
                         href="https://github.com/carolwargo/Text_Editor-in-Chief"
-                        className="w3-button w3-white shadow-lg w3-block"
+                        className="w3-button w3-white shadow-lg w3-block w3-round-xlarge"
                       >
                         {" "}
                         Github
@@ -204,7 +204,7 @@ function Portfolio() {
                     <p>
                       <button
                         href="https://github.com/carolwargo/09-README-generator"
-                        className="w3-button w3-white shadow-lg w3-block"
+                        className="w3-button w3-white shadow-lg w3-block w3-round-xlarge"
                       >
                         {" "}
                         Github
@@ -243,7 +243,7 @@ function Portfolio() {
                     <p>
                       <button
                         href="https://github.com/carolwargo/SV-Genie"
-                        className="w3-button w3-white shadow-lg w3-block"
+                        className="w3-button w3-white shadow-lg w3-block w3-round-xlarge"
                       >
                         {" "}
                         Github
@@ -284,7 +284,7 @@ function Portfolio() {
                     <p>
                       <button
                         href="https://github.com/carolwargo/Code-Refactor-Horisen"
-                        className="w3-button w3-white shadow-lg w3-block"
+                        className="w3-button w3-white shadow-lg w3-block w3-round-xlarge"
                       >
                         {" "}
                         Github
@@ -323,7 +323,7 @@ function Portfolio() {
                     <p>
                       <button
                         href="https://carolwargo.github.io/Desk_Jockey-dayplanner/"
-                        className="w3-button w3-white shadow-lg w3-block"
+                        className="w3-button w3-white shadow-lg w3-block w3-round-xlarge"
                       >
                         {" "}
                         Github

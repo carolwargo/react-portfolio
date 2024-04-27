@@ -18,33 +18,35 @@ function HomePage() {
     animate={{y: 0, opacity: 1}}
     exit={{y: 20, opacity: 0}}
     className="home"
+    id="home"
     
     >
-    <div className="home" id="home">
+    <div>
       <header>
-        <div className="row align-items-center w3-margin-top w3-padding-24">
-          <div className="col-lg-5">
+        <div className="row align-items-center w3-margin-top w3-padding-32">
+          <div className="col-lg-5 align-items-center">
             <img
               src={MeWhite}
-              className="w3-image w3-round"
+              className="w3-image w3-round-xxlarge w3-padding-large w3-padding-24"
               style={{ display: "block", width: "100%" }}
               alt="Profile"
+
             />
           </div>
-          <div className="col-lg-6">
-            <div className="w3-container text-center" style={{ padding: "80px 16px" }}>
-              <h1 className="w3-jumbo">
+          <div className="col-lg-6 align-items-center">
+            <div className="w3-container text-center" >
+              <h1 className="w3-jumbo text-black">
                 <b>Carol Wargo</b>
               </h1>
               <p>Full Stack Developer | UX Designer.</p>
-              <button className="w3-button w3-light-grey w3-padding-large">
+              <button className="w3-button w3-black w3-padding-large w3-round-xxlarge">
                 <a
-                  className="button text-black"
+                  className="button text-white w3-hover-opacity"
                   id="download"
                   download 
                   href={ResumeDownload}
                 >
-                  <i className="fa fa-download"></i> Download Resume
+                  <i className="fa fa-download-alt"></i> Download Resume
                 </a>
               </button>
               <br />
@@ -52,11 +54,18 @@ function HomePage() {
               <br />
                  
               <div className="text-center w3-padding-16 w3-padding-large">
-        <Link to="/about#about" onClick={scrollToTop}>
-          <p>Follow the link to learn more about me professionally.           
-          <i className="fa fa-arrow-right w3-hover-opacity w3-margin-left"></i>
-          </p>
-          </Link>
+              <h4 className="text-black">Follow the link to learn more about me professionally.           
+        </h4>
+              <button className="w3-button w3-text-light-grey w3-padding w3-margin-right w3-round-xxlarge mt-2" 
+              style={{backgroundColor:'#FF385C'}}>
+              <Link to="/about#about"
+                  className="button text-white"
+                  onClick={scrollToTop}
+                >
+                About Me
+                </Link>
+              </button>
+       
               </div>
             </div>
           </div>

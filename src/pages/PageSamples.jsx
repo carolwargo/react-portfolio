@@ -384,7 +384,7 @@ function PageSamples() {
           <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
                 <p className="float-end mb-1">
-                  <a href="#page-samples">Back to top</a>
+                  <a href="#page-samples" style={{color:'#FF385C'}}>Back to top</a>
                 </p>
               </div>
             </footer>

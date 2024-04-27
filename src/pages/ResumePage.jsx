@@ -4,11 +4,11 @@ import MeWhite from "../assets/images/MeWhite.png";
 import { FaGoogle } from "react-icons/fa";
 import { SiMicrosoftoffice } from "react-icons/si";
 import { SiAdobecreativecloud } from "react-icons/si";
-import Alert from "react-bootstrap/Alert";
 import { motion } from "framer-motion";
 import ResumeDownload from "../assets/ResumeDownload.pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
+//import { BorderColor } from "@mui/icons-material";
 
 export default function ResumePage() {
 
@@ -24,81 +24,86 @@ export default function ResumePage() {
     initial={{ y: -20, opacity: 0}}
     animate={{y: 0, opacity: 1}}
     exit={{y: 20, opacity: 0}}
-    className="home"
+    className="resume "
+    id="resume"
     
     >
-    <div className="resume w3-light-gray" id="resume">
-      <div className="w3-content w3-margin-top w3-padding-64 w3-light-gray" style={{maxWidth:"1400px"}}>
-      <div className="w3-display-container w3-padding">
-      <div className="w3-white w3-text-grey w3-card w3-padding">
+    
+      <div className="w3-margin-top w3-padding-32 " style={{maxWidth:"1400px"}}>
+      <div className="w3-display-container w3-padding w3-white">
+  
       <div className="w3-row d-flex justify-content-center" >
-    <div className="w3-col m12 flex-column w3-padding-24 w3-center">
-        <h1 className='w3-text-light-blue'>DIGITAL RESUME</h1>
-<p>View my skills, work experience, volunteer background and more, or download a physical copy of my resume.</p>
+    <div className="w3-col m8 flex-column w3-padding-48 w3-center">
+        <h1 className='w3-text-black'>DIGITAL RESUME</h1>
+<h3>View my skills, work experience, volunteer background, or download a physical copy of my resume.</h3>
 </div>
 </div>
+
 </div>
-</div>
+<div className="w3-text-black w3-margin-top" >
 {/*} The Grid*/}
-<div className="w3-row-padding justify-content-center align-items-center">
+<div className="w3-row-padding justify-content-center w3-white align-items-center ">
 
   {/*Left Column*/}
   <div className="w3-third ">
   
-    <div className="w3-white w3-text-grey w3-card-4">
+    <div className="w3-text-grey w3-margin-bottom">
       <div className="w3-display-container">
-        <img src={MeWhite} style={{width:"100%"}} alt="me" className="w3-opacity w3-hover-opacity-off"/>
-        <div className="w3-display-bottomleft w3-container w3-text-light-blue">
-          <h4>Carol Wargo</h4>
+      <img src={MeWhite} style={{ width: "100%", border: '4px solid #FF385C' }} alt="me" className="w3-hover-opacity-off" />
+ <div className="w3-display-bottomleft w3-container w3-text-white">
+          <h4 className="w3-margin-bottom" style={{color:'#FF000C'}}>Carol Wargo</h4>
+        
         </div>
       </div>
       <br />
       <div className="w3-container">
-        
-      <h6 className="w3-large w3-margin-top "><b>Contact Information</b></h6>
-      <p>
-                <i className="fa fa-briefcase fa-fw w3-margin-right w3-text-light-blue"></i>
+      <div className="w3-container">
+      <h6 className="w3-large text-black"><b>Contact Information</b></h6>
+      <p className="mb-0">
+                <i className="fa fa-briefcase w3-margin-right w3-text-black"></i>
               Full Stack Developer
               </p>
 
                    <p>
-              <i className="fa fa-home fa-fw w3-margin-right w3-text-light-blue"></i>
+              <i className="fa fa-home w3-margin-right w3-text-black"></i>
                 Huntingtown, MD
               </p>
 
 <br/>
+<div className="w3-content">
               <div className="row ">
               <div className="col-md-6">
-              <a href="mail:carolwargo.dev@gmail.com">
-              <i className="fa fa-envelope fa-fw  w3-margin-right w3-text-light-blue"></i>
+              <a href="mail:carolwargo.dev@gmail.com" className="w3-text-black">
+              <i className="fa fa-envelope  w3-margin-right w3-text-black"></i>
               
              Email
              </a>
              <br/>
-              <a href="tel:+14437711726">
-              <i className="fa fa-phone fa-fw w3-margin-Left  w3-margin-right  w3-text-light-blue"></i>
+              <a href="tel:+14437711726" className="w3-text-black">
+              <i className="fa fa-phone w3-margin-Left  w3-margin-right  w3-text-black"></i>
              Phone
                </a>
             
 
 </div>
 <div className="col-md-6">          
-<a href="https://github.com/carolwargo">
-                  <i className="fab fa-github fa-fw w3-margin-right w3-text-light-blue"></i>
+<a href="https://github.com/carolwargo" className="w3-text-black">
+                  <i className="fab fa-github w3-margin-right w3-text-black"></i>
                   Github
                 </a>
               
              <br/>
-                <a href="https://www.linkedin.com/in/carol-wargo-35021baa/">
-                  <i className="fab fa-linkedin fa-fw w3-margin-right w3-text-light-blue"></i>
+                <a href="https://www.linkedin.com/in/carol-wargo-35021baa/" className="w3-text-black">
+                  <i className="fab fa-linkedin w3-margin-right w3-text-black"></i>
                   LinkedIn
                 </a>      
-             
+             </ div>
                </div>
                 </div>   
-               
+               </div>
         <hr/>
-        <p className="w3-text-gray w3-margin-top" style={{fontSize:'14px'}}><i className="fas fa-feather-alt fa-fw"></i><b>    <i>
+        <p className="w3-text-black w3-margin-top w3-padding-small" style={{fontSize:'14px'}}>
+          <b><i>
                   “I am a Full-Stack Software Developer and Graphic
                   Designer with a solid foundation in both frontend & backend
                   technologies, and a 20-year background in Business Analysis &
@@ -111,142 +116,143 @@ export default function ResumePage() {
                 </i></b></p>
                 <hr/>
        {/**Start Tech Skills*/}
-        <h6 className="w3-large w3-margin-top"><i className="fa fa-asterisk fa-fw w3-margin-right w3-text-light-blue"></i><b>Technical Skills</b></h6>
+        <h6 className="w3-large w3-margin-top w3-text-black">
+          <i className="fa fa-asterisk fa-fw w3-margin-right">
+            </i><b>Technical Skills</b></h6>
         <br />
         
         <div className="w3-light-grey w3-round-xlarge w3-small">
-          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"90%"}}>90%</div>
+          <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
         </div>
         <p>Front-End</p>
 
         <div className="w3-light-grey w3-round-xlarge w3-small">
-          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"75%"}}>75%</div>
+          <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"75%"}}>75%</div>
         </div>
         <p>Back-End</p>
 
         <div className="w3-light-grey w3-round-xlarge w3-small">
-          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"85%"}}>85%</div>
+          <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"85%"}}>85%</div>
         </div>
         <p>Graphic Design</p>
 
         <div className="w3-light-grey w3-round-xlarge w3-small">
-          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"80%"}}>
+          <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"80%"}}>
             <div className="w3-center w3-text-black">80%</div>
           </div>
         </div>
         <p>Digital Marketing</p>
 
         <div className="w3-light-grey w3-round-xlarge w3-small">
-          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"75%"}}>75%</div>
+          <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"75%"}}>75%</div>
         </div>
         <p>E-Commerce</p>
      
  {/**End Tech Skills */}      
 <hr className="w3-margin-top w3-margin-bottom"/>
       {/**Start Programming Languages */}
-        <h6 className="w3-large w3-margin-top w3-text-theme"><i className="fa fa-globe fa-fw w3-margin-right w3-text-light-blue"></i><b>Programming Languages</b></h6>
+        <h6 className="w3-large w3-margin-top w3-text-theme w3-text-black"><i className="fa fa-globe fa-fw w3-margin-right w3-text-black"></i><b>Programming Languages</b></h6>
         <br/>
         <div className="w3-light-grey w3-round-xlarge w3-small">
-          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"95%"}}>95%</div>
+          <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"95%"}}>95%</div>
         </div>
         <p>HTML</p>
      
         <div className="w3-light-grey w3-round-xlarge w3-small">
-          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"90%"}}>90%</div>
+          <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
         </div>
         <p>CSS</p>
       
         <div className="w3-light-grey w3-round-xlarge w3-small">
-          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"75%"}}>75%</div>
+          <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"75%"}}>75%</div>
         </div>
         <p>JavaScript</p>
      {/**End Programming Languages */}
      <hr className="w3-margin-top w3-margin-bottom"/>
          {/**Start Frameworks */}
-        <h6 className="w3-large w3-margin-top w3-text-theme"><i className="fa fa-globe fa-fw w3-margin-right w3-text-light-blue"></i><b>Frameworks</b></h6>
+        <h6 className="w3-large w3-margin-top w3-text-theme w3-text-black"><i className="fa fa-globe fa-fw w3-margin-right w3-text-black"></i><b>Frameworks</b></h6>
         <br/>
         <div className="w3-light-grey w3-round-xlarge w3-small">
-          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"85%"}}>85%</div>
+          <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"85%"}}>85%</div>
         </div>
         <p>Front-End Frameworks- <span className="text-gray" style={{fontSize:'12px'}}><i> " <i className="fa fa-heart w3-text-pink"></i> React."</i></span></p>
         
         <div className="w3-light-grey w3-round-xlarge w3-small">
-          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"75%"}}>75%</div>
+          <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"75%"}}>75%</div>
         </div>
         <p>Back-End Frameworks</p>
       
         <div className="w3-light-grey w3-round-xlarge w3-small">
-          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"90%"}}>90%</div>
+          <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
         </div>
         <p>UI Frameworks</p>
       
         <div className="w3-light-grey w3-round-xlarge w3-small">
-          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"70%"}}>70%</div>
+          <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"70%"}}>70%</div>
         </div>
         <p className="w3-margin-bottom">Mobile App Frameworks</p>
 
 <hr className="w3-margin-top w3-margin-bottom"/>
 
-      <h5 className="w3-text-gray w3-margin-top w3-margin-bottom "><i className="fas fa-desktop  w3-text-light-blue"></i><b className="w3-margin-left"> Software Proficiencies</b></h5>
- <h6 className="w3-text-gray w3-margin-left">
-                  <FaGoogle className="fa-fw w3-margin-left w3-text-light-blue" /> Google Workspace
+      <h5 className="w3-text-black w3-margin-top w3-margin-bottom "><i className="fas fa-desktop  w3-text-black"></i><b className="w3-margin-left"> Software Proficiencies</b></h5>
+ <h6 className="w3-text-black w3-margin-left">
+                  <FaGoogle className="fa-fw w3-margin-left w3-text-black" /> Google Workspace
                 </h6>
-                <h6 className="w3-text-gray w3-margin-left">
-                  <SiMicrosoftoffice className="fa-fw w3-margin-left w3-text-light-blue" /> Microsoft Suite
+                <h6 className="w3-text-black w3-margin-left">
+                  <SiMicrosoftoffice className="fa-fw w3-margin-left w3-text-black" /> Microsoft Suite
                 </h6>
-                <h6 className="w3-text-gray w3-margin-left">
-                  <SiAdobecreativecloud className="fa-fw w3-margin-left w3-text-light-blue" /> Adobe Creative
+                <h6 className="w3-text-black w3-margin-left">
+                  <SiAdobecreativecloud className="fa-fw w3-margin-left w3-text-black" /> Adobe Creative
                   Cloud
                 </h6>
                 <br/>
 
                 <div className="w3-light-grey w3-round-xlarge w3-small">
-          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"80%"}}>
+          <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"80%"}}>
             <div className="w3-center w3-text-black">80%</div>
           </div>
         </div>
-        <p>Collaborative Software</p>
+        <p className="w3-text-black">Collaborative Software</p>
                 <div className="w3-light-grey w3-round-xlarge w3-small">
-          <div className="w3-container w3-center w3-round-xlarge w3-light-blue" style={{width:"90%"}}>90%</div>
+          <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
         </div>
-        <p>Design Software</p>  
-        <hr />
+        <p className="w3-text-black">Design Software</p>  
+  
     </div>
- 
-  <div className="w3-center w3-padding-large w3-padding-16">
-    <h5 className="w3-text-gray w3-margin-bottom"><i className="fas fa-download w3-text-light-blue"></i><b className="w3-margin-left">Resume Download</b></h5>
-    <p style={{fontSize:'14px'}}>For a physical copy, click the "Download Resume" button below to download a PDF of my resume.</p>
-            <button className="w3-button w3-light-grey w3-padding-large">
-  <a
-    className="button text-black"
-    download 
-    href={ResumeDownload}
-  >
-    <i className="fa fa-download"></i> Download Resume
-  </a>
-</button>
+    </div>
+  <div className="w3-center w3-padding-large w3-padding-32 text-white shadow" style={{backgroundColor:'#FF385C'}}>
+    <h5 className="w3-text-white w3-margin-bottom"><b className="w3-margin-left">Resume Download</b></h5>
+    <p style={{fontSize:'15px'}}>For a physical copy, click the "Download Resume" button below to download a PDF of my resume.</p>
+    <button className="w3-button w3-black w3-padding-large w3-round-xxlarge mt-2">
+                <a
+                  className="button text-white w3-hover-opacity "
+                  id="download"
+                  download 
+                  href={ResumeDownload}
+                >
+                  <i className="fa fa-download-alt"></i> Download Resume
+                </a>
+              </button>
 
           </div>
     <br />
-    </div>
+   
 
 <br />
   {/*End Left Column*/}
   </div>
 
   {/*Right Column*/}
-  <div className="w3-twothird">
+  <div className="w3-twothird flex-column justify-content-center">
+    
+<div className="w3-content w3-light-gray w3-padding-large">
+      <h2 className="w3-padding-16  text-black">
+        <i className="fa fa-suitcase fa-fw  w3-xlarge w3-text-black">
+          </i> WORK EXPERIENCE</h2>
 
-
-
-  
-    <div className="w3-container w3-card w3-white w3-margin-bottom ">
-      <h4 className="w3-text-grey w3-padding-16 w3-margin-top"><i className="fa fa-suitcase fa-fw  w3-xlarge w3-text-light-blue"></i> Work Experience</h4>
-      <div className="w3-container">
-       
-        <h6 className="w3-opacity"><b>Real Estate Agent / Investor</b></h6>
-        <h6 className="w3-text-light-blue"><i className="fa fa-calendar fa-fw"></i> June 2003 - <span className="w3-tag w3-light-blue w3-round">Current</span></h6>
-        <p className="w3-text-gray w3-margin-top"><i className="far fa-sticky-note fa-fw "></i><b> Duties</b></p>
+        <h5 className=" w3-text-black"><b>Real Estate Agent / Investor</b></h5>
+        <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> June 2003 - <span className="w3-tag w3-black w3-round">Current</span></h6>
+        <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw "></i><b> Duties</b></p>
       
       <ul>
       <li>Employ marketing strategies</li>
@@ -259,7 +265,7 @@ export default function ResumePage() {
                   </ul>
       
      
-        <ul className="">
+        <ul>
         <li>Employ marketing strategies</li>
                       <li>Analyze current & past market trends</li>
         <li>Write, edit & negotiate contracts.</li>
@@ -269,14 +275,13 @@ export default function ResumePage() {
                       <li>Oversee home staging and architectural Design.</li>
                     </ul>
     
-      </div>
+    
       <hr/>
       <br />
-      <div className="w3-container">
     
-        <h6 className="w3-opacity"><b>Freelance Design & Development</b></h6>
-        <h6 className="w3-text-light-blue"><i className="fa fa-calendar fa-fw"></i> June 2021 - <span className="w3-tag w3-light-blue w3-round">Current</span></h6>
-        <p className="w3-text-gray w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
+        <h5><b>Freelance Design & Development</b></h5>
+        <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> June 2021 - <span className="w3-tag w3-black w3-round">Current</span></h6>
+        <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
        
         <ul>
           <li>Refactor and maintain sites to ensure a user-friendly UI.</li>
@@ -293,14 +298,14 @@ export default function ResumePage() {
           <li>Develop digital marketing strategies and social media management systems.</li>
 </ul>
        
-      </div>
+     
       <hr/>
       <br />
-      <div className="w3-container">
-        <h6 className="w3-opacity"><b>Media Manager & Webmaster</b></h6>
-        <h6 className="w3-text-light-blue"><i className="fa fa-calendar fa-fw"></i> Jun 2010 - Mar 2012</h6>
-        <p className="w3-text-gray w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
-        <ul className="">
+  
+        <h5><b>Media Manager & Webmaster</b></h5>
+        <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> Jun 2010 - Mar 2012</h6>
+        <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
+        <ul>
                       <li>Maintain site to ensure a user-friendly UI.</li>
                       <li>
                         Develop, refactor and Maintain e-commerce platforms.
@@ -326,35 +331,36 @@ export default function ResumePage() {
                       <li>Collaborate with board members, stakeholders and lawmakers</li>
                       <li>Address user inquiries and feedback.</li>
                     </ul>
-  
     </div>
-    </div>
-    <div className="w3-container w3-card w3-white w3-margin-bottom">
-      <h4 className="w3-text-grey w3-padding-16">
-        <i className="fa fa-certificate fa-fw  w3-xlarge w3-text-light-blue"></i> Education
+   
+<br />
+    <div className="w3-container w3-black w3-padding-16">
+    <div className="w3-container">
+      <h4 className=" w3-padding-16">
+        <i className="fa fa-certificate w3-xlarge "></i> Education
           </h4>
+          </div>
           <div className="w3-container">
-        <h6 className="w3-opacity"><b>George Washington University</b></h6>
-        <h6 className="w3-text-light-blue"><i className="fa fa-calendar fa-fw "></i> Jan. 2023- Aug. 2023</h6>
+        <h6><b>George Washington University</b></h6>
+        <h6><i className="fa fa-calendar "></i> Jan. 2023- Aug. 2023</h6>
         <p>Full Stack Developer | UX Design Certificate</p>
       </div>
      
       <div className="w3-container">
-        <h6 className="w3-opacity"><b>Real Estate License</b></h6>
-        <h6 className="w3-text-light-blue">   <i className="fa fa-calendar fa-fw "></i> June 2003</h6>
+        <h6><b>Real Estate License</b></h6>
+        <h6>   <i className="fa fa-calendar "></i> June 2003</h6>
         <p>State of Maryland</p>
       </div>
     </div>
-
-    <div className="w3-container w3-card w3-white">
-      <h4 className="w3-text-grey  w3-margin-top">
-        <i className="fas fa-user-tie fa-fw  w3-xlarge w3-text-light-blue"></i> Professional Practices
-          </h4>
-
-          <div className="w3-container w3-padding-16">
-        <h6 className="w3-opacity"><b>Best Practices Followed.</b></h6>
-        <h6 className="w3-text-light-blue"><i className="fa fa-cog fa-fw "></i> Development Practices</h6>
-        <br />
+<br />
+    <div className="w3-container w3-light-gray w3-padding-32">
+   
+      <h3 className="w3-text-black w3-margin-top">
+       PRACTICES FOLLOWED
+          </h3>
+          <br />
+        <h5 className="w3-margin-left"><b>Development Practices.</b></h5>
+       
         <ul>
               <li>
                 Effectively communicates to engage stakeholders throughout the
@@ -389,12 +395,9 @@ export default function ResumePage() {
                 exceeding expectations.
               </li>
             </ul> 
-      </div>
-
-      <div className="w3-container w3-padding-16">
-        <h6 className="w3-opacity"><b>Best Practices Followed.</b></h6>
-        <h6 className="w3-text-light-blue "><i className="fas fa-handshake fa-fw "></i> Interpersonal Practices</h6>
-         <br />
+            <br />
+            <h5 className="w3-margin-left"><b>Interpersonal Practices.</b></h5>
+        
         <ul>
                 <li>
                   Foster customer and stakeholder engagement through effective
@@ -430,312 +433,107 @@ export default function ResumePage() {
                 </li>
               </ul>
       </div>
-      </div>
+     
   {/*End Right Column*/}
   
   </div>
   
 {/*} End Grid*/}
 </div>
+ 
+ </div>
 
-{/** 
-
-      <div className="technical-skills-div d-flex flex-column bg-black text-white w3-padding-48">
-       
-        <br />
-        <h1
-          className="technical-skills text-light text-center"
-          id="technical-skills"
-        >
-          TECHNICAL SKILLS
-        </h1>
-        <Timeline position="alternate">
-          <TimelineItem>
-            <TimelineOppositeContent color="text.light"></TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-              DESIGN & COLLABORATION TOOLS
-              <img
-                src={Design}
-                alt="Design"
-                className="img-fluid"
-                style={{ width: "130%"}}
-              />
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineOppositeContent color="text.light"></TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-              VERSION CONTROL & IDE
-              <img
-                src={VCIDE}
-                alt="VCIDE"
-                className="img-fluid"
-                style={{ width: "130%"}}
-              />
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineOppositeContent color="text.light"></TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-              CORE TECHNOLOGIES
-              <img
-                src={Core}
-                alt="Core"
-                className="img-fluid"
-                style={{ width: "130%"}}
-              />
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineOppositeContent color="text.light"></TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-              FRONT END DEVELOPMENT
-              <img
-                src={Front}
-                alt="Front"
-                className="img-fluid"
-                style={{ width: "130%"}}
-              />
-            </TimelineContent>
-          </TimelineItem>
-          <Timeline position="alternate">
-            <TimelineItem>
-              <TimelineOppositeContent color="text.light"></TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent>
-                BACK END DEVELOPMENT
-                <img
-                  src={Back}
-                  alt="Back"
-                  className="img-fluid"
-                  style={{ width: "130%"}}
-                />
-              </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-              <TimelineOppositeContent color="text.light"></TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent>
-                DATABASES
-                <br></br>
-                <img
-                  src={DB}
-                  alt="DB"
-                  className="img-fluid"
-                  style={{ width: "150%"}}
-                />
-              </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-              <TimelineOppositeContent color="text.light"></TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent>
-                PACKAGE MANAGERS
-                <img
-                  src={Package}
-                  alt="Package"
-                  className="img-fluid"
-                  style={{ width: "130%"}}
-                />
-              </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-              <TimelineOppositeContent color="text.light"></TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent>
-                BUILD & TEST TOOLS
-                <img
-                  src={BuildTest}
-                  alt="BuildTest"
-                  className="img-fluid"
-                  style={{ width: "130%"}}
-                />
-              </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-              <TimelineOppositeContent color="text.light"></TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-                <TimelineDot />
-              </TimelineSeparator>
-              <TimelineContent>
-                API & QUERY LANGUAGE
-                <img
-                  src={APIQ}
-                  alt="APIQ"
-                  className="img-fluid"
-                  style={{ width: "130%"}}
-                />
-              </TimelineContent>
-            </TimelineItem>
-            <br />
-            <br />
-            <TimelineItem>
-              <TimelineOppositeContent color="text.light" id="education">
-                <h6 className="text-white">
-                  Certificate of Full Stack Web Development
-                </h6>
-                <h6 className="text-white">
-                  George Washington University (July 2023)
-                </h6>
-              </TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-              </TimelineSeparator>
-
-              <TimelineContent>
-                <h3>EDUCATION</h3>
-              </TimelineContent>
-            </TimelineItem>
-            <div className="d-flex flex-row justify-content-center">
-          <div className="">
-            <p className="text-white">DOWNLOAD A COPY OF MY RESUME</p>
-           
-            <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
-  <a
-    className="button text-black"
-    download 
-    href={ResumeDownload}
-  >
-    <i className="fa fa-download"></i> Download Resume
-  </a>
-</button>
-
-          </div>
-          </div>
-          </Timeline>
-        </Timeline>
-   
-        </div>
-  */}
-
-<div className="w3-container">
-      <div className=" w3-white w3-text-grey w3-card w3-padding w3-padding-16">
-      <div className="w3-container">
-     
-      <div className="w3-row d-flex justify-content-center">
-    <div className="w3-col m12 flex-column">
-     <div className="row d-flex justify-content-center align-items-end">
-         <div className="w3-col m4 flex-column w3-padding-large">
-         <p>EXPERIENCE THROUGH SERVICE TO OTHERS</p>
-          <h3><strong> <i className="fas fa-heart w3-margin-right w3-text-light-blue"></i>
-VOLUNTEER PROGRAM PARTICIPATION.</strong></h3> 
-<br />  
-          <p style={{fontSize:'14px'}}>
-            "Volunteer work has and will consistently hold a central place in my
+      <div className="w3-white w3-padding-48
+      ">
+      <div className="w3-container"> 
+      <div className="row d-flex justify-content-center align-items-end ">
+      <div className="w3-col m12 flex-column">
+        <div className="w3-container w3-padding-16 text-center">
+     <h2 className="text-black"> " <span style={{color:'#FF385C'}}>SERVICE TO OTHERS</span> consistently holds a central place in my
             household. Beyond its apparent merits, I personally consider
             community service to be the single most powerful platform for my
             personal growth, skill development, and most important exposure through the
             opportunity to explore aspects of life that I may not have
-            encountered otherwise. "
-          </p>    
-         </div>
-          <div className="w3-col m4 flex-column w3-padding-large">
-          <ul style={{fontSize:'13px'}}>
+            encountered otherwise. Listed below are some of the programs I have been involved in."
+          
+       
+       </h2><br />
+        
+          </div>
+        </div>
+        </div>
+     <div className="row d-flex justify-content-center align-items-end ">
+          <div className="w3-col m4 flex-column  mt-2">
+          <ul>
             <li className="ml-3">
-                <strong className="w3-text-light-blue">MIRACLE LEAGUE (favorite):</strong> Assist with organized sports for children & young adults with disabilities.
+                <strong style={{color:'#FF385C'}}>MIRACLE LEAGUE (favorite):</strong> Assist with organized sports for children & young adults with disabilities.
               </li>
              
               <li className="ml-3">
-                <strong className="w3-text-light-blue">NATURE CENTER VOLUNTEER:</strong> Provide care for the animals, monitor health, collect data, and assist with educational programs.
+                <strong style={{color:'#FF385C'}}>NATURE CENTER VOLUNTEER:</strong> Provide care for the animals, monitor health, collect data, and assist with educational programs.
               </li>
               <li className="ml-3">
-                <strong className="w3-text-light-blue">YOUTH CLUB SECRETARTY:</strong> Maintain website & database, facilitate meetings, coordinate registration, plan events and organize fundraising activities. 
+                <strong style={{color:'#FF385C'}}>YOUTH CLUB SECRETARTY:</strong> Maintain website & database, facilitate meetings, coordinate registration, plan events and organize fundraising activities. 
               </li>
               <li className="ml-3">
-                <strong className="w3-text-light-blue">PUBLIC SCHOOLS VOLUNTEER:</strong> Assist with classroom activities, work with & support kids in need, plan & facilitate events.
+                <strong style={{color:'#FF385C'}}>PUBLIC SCHOOLS VOLUNTEER:</strong> Assist with classroom activities, work with & support kids in need, plan & facilitate events.
               </li>
             </ul>
           </div>
-          <div className="w3-col m4 flex-column w3-padding-large">
-            <div className="">
-            <ul style={{fontSize:'13px'}}>
+          <div className="w3-col m4 flex-column ">
+            <div>
+            <ul>
             <li className="ml-3">
-                <strong className="w3-text-light-blue">UNDER ARMOUR GIVE-BACK:</strong> Participation includes: rebuilding schools, distributing school supplies, assisting with students & assemblies, and packing & shipping food items to ship overseas. 
+                <strong style={{color:'#FF385C'}}>UNDER ARMOUR GIVE-BACK:</strong> Participation includes: rebuilding schools, distributing school supplies, assisting with students & assemblies, and packing & shipping food items to ship overseas. 
               </li>
               <li className="ml-3">
-                <strong className="w3-text-light-blue">ABUSED PERSONS PROGRAM (1st-experience):</strong>{" "}
+                <strong style={{color:'#FF385C'}}>ABUSED PERSONS PROGRAM (1st-experience):</strong>{" "}
                 Provide a range of services to support those affected by violence.
               </li>
            
               <li className="ml-3">
-                <strong className="w3-text-light-blue">FOOD PANTRY:</strong> Distributes food & household goods
+                <strong style={{color:'#FF385C'}}>FOOD PANTRY:</strong> Distributes food & household goods
                 to those in need.
               </li>
               <li className="ml-3">
-                <strong className="w3-text-light-blue">FARMING 4HUNGER:</strong> Grows and distributes locally
+                <strong style={{color:'#FF385C'}}>FARMING 4HUNGER:</strong> Grows and distributes locally
                 grown produce.
               </li>
             </ul>
             </div>
           </div>
          
-          
-         </div>
-         </div>
+
+</div>
+
 </div>
 </div>
-</div>
-</div>
-                  
-  </div>
+                
+
+  <div className="w3-container w3-content text-center w3-padding-48 w3-margin-top w3-margin-bottom w3-padding-small">
+              <h2 className="text-black">Please view my portfolio with the understanding, lots of changes and improvements are taking place behind the scenes. Thanks in advance for your patience!
+       
+        </h2><br />
+              <button className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom" 
+              style={{backgroundColor:'#FF385C'}}>
+              <Link to="/portfolio#portfolio"
+                  className="button text-white"
+                  onClick={scrollToTop}
+                >
+                Portfolio
+                </Link>
+              </button>
+              </div> 
   <div className="container w3-margin-top">
-      <div className="row">
-        <div className="col-md-4 mx-auto">
-          <div className="text-center w3-padding-16  w3-margin-bottom">
-          <Alert variant="warning" className="shadow">
-      <Alert.Heading>
-        <i className="fa fa-exclamation-triangle"></i> WARNING
-      </Alert.Heading>
-      <p>I am currently adding to my portfolio. <br />Thanks in advance for your patience!</p>
-      <hr className="text-warning" />
-      <Alert.Link as={Link} to='/portfolio#portfolio' onClick={scrollToTop} className="w3-hover-opacity w3-hover-sepia">
-        <p><u>Follow the link to view my portfolio</u>
-          <i className="fa fa-arrow-right w3-hover-opacity w3-hover-sepia w3-margin-left"></i>
-        </p>
-      </Alert.Link>
-    </Alert>
     <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">
-              <a href="#resume">Back to top</a>
+              <a href="#resume" style={{color:'#FF385C'}}>Back to top</a>
             </p>
           </div>
         </footer>
           </div>
-        </div>
-      </div>
-        </div>
+     
   </div>
   </motion.div>
   );

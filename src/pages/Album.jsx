@@ -290,7 +290,7 @@ function AlbumExample() {
         <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">
-              <a href="Album">Back to top</a>
+              <a href="Album" style={{color:'#FF385C'}}>Back to top</a>
             </p>
           </div>
         </footer>

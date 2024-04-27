@@ -52,7 +52,7 @@ const GraphicsPage = () => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="mb-2 border border-black clickable-image w3-opacity w3-hover-opacity-off"
+                  className="mb-2 border border-black clickable-image w3-opacity w3-hover-opacity-off w3-round-xlarge"
                   style={{
                     width: "100%",
                     height: "auto",
@@ -60,8 +60,8 @@ const GraphicsPage = () => {
                   }}
                   onClick={() => handleModalOpen(item.image)}
                 />
-                <p className= 'text-center' style={{ fontSize: "12px", color: "blue" }}>
-                  <HiMagnifyingGlassPlus /> click image to enlarge
+                <p className= 'text-center' style={{ fontSize: "12px", color: "black" }}>
+                  <HiMagnifyingGlassPlus /> click to enlarge
                 </p>
               </div>
             </div>

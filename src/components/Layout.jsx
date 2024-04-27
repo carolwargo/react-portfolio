@@ -57,7 +57,7 @@ const Layout = () => {
         <a
           href="/"
           onClick={closeNav}
-          className="w3-button w3-black w3-xxxlarge w3-display-topright"
+          className="w3-button w3-black w3-xxxlarge w3-display-topright w3-round-xlarge"
           style={{ padding: "0 12px" }}
         >
           <i className="fa fa-remove"></i>
@@ -65,35 +65,35 @@ const Layout = () => {
         <div className="w3-bar-block w3-center">
           <a
             href="/"
-            className="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            className="w3-bar-item w3-button w3-text-grey w3-hover-black w3-round-xlarge"
             onClick={closeNav}
           >
             Home
           </a>
           <a
             href="/about"
-            className="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            className="w3-bar-item w3-button w3-text-grey w3-hover-black w3-round-xlarge"
             onClick={closeNav}
           >
             About
           </a>
           <a
             href="/resume"
-            className="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            className="w3-bar-item w3-button w3-text-grey w3-hover-black w3-round-xlarge"
             onClick={closeNav}
           >
             Resume
           </a>
           <a
             href="/portfolio"
-            className="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            className="w3-bar-item w3-button w3-text-grey w3-hover-black w3-round-xlarge"
             onClick={closeNav}
           >
             Portfolio
           </a>
           <a
             href="/contact"
-            className="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            className="w3-bar-item w3-button w3-text-grey w3-hover-black w3-round-xlarge"
             onClick={closeNav}
           >
             Contact
@@ -105,7 +105,7 @@ const Layout = () => {
       <div className="w3-main w3-padding-large" style={{ marginLeft: "40%" }}>
         {/* Menu icon to open sidebar */}
         <span
-          className="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black"
+          className="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black w3-round-xlarge"
           style={{ width: "auto;right:0" }}
           onClick={openNav}
         >
@@ -136,7 +136,7 @@ const Layout = () => {
             alt="Profile"
           />
 
-          <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
+          <button className="w3-button w3-light-grey w3-padding-large w3-margin-top w3-round-xlarge">
             <a
               className="button text-black"
               id="resume-download"

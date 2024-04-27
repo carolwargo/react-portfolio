@@ -76,7 +76,6 @@ function Portfolio() {
             <h1 className="mt-5"
               style={{
                 fontSize: "3rem",
-                textShadow: "0px 0px 14px #00ffff",
               }}
             >
               <span className="fw-light">PORTFOLIO.</span>
@@ -920,37 +919,40 @@ function Portfolio() {
             {/**end row */}
             {/**start sample pages section*/}
 
-            <div className="container w3-padding-large">
-              <h4 className="w3-text-black w3-margin-top" id="page-samples">
-                <b className="fw-bold text-black">WEB PAGE</b>
-                <span className="fw-light text-muted">SAMPLES.</span>
-              </h4>
+              <div className="w3-container w3-content text-center w3-padding-48 w3-margin-top w3-margin-bottom w3-padding-small">
+              <h2 className="w3-text-black w3-margin-top" id="page-samples">
+                <b className="fw-bold text-black">PAGE</b>
+                <span className="fw-light" style={{color:'#FF385C'}}>|SAMPLES.</span>
+              </h2>
               <hr className="w3-opacity" />
-              <p>
-                Each type of website serves a unique purpose and requires
+             
+             
+              <h2 className="text-black">
+              Each type of website serves a unique purpose and requires
                 specific features and functionalities to effectively achieve its
                 objectives and meet the needs of its target audience.{" "}
-                <i>
-                  {" "}
+        </h2><br />
+        <p> <i>
                   <b> NOTE:</b> "Sample pages are under construction. View with
                   the understanding it's a work in progress. Thanks for your
-                  patience."{" "}
-                </i>
-              </p>
-              <div className="text-center w3-padding-24 w3-padding-large w3-margin-bottom">
-                <Link to="/page-samples#page-samples" onClick={scrollToTop}>
-                  <p>
-                    Follow the link to see the start of my sample sites.
-                    <i className="fa fa-arrow-right w3-hover-opacity w3-margin-left"></i>
-                  </p>
+                  patience."
+                </i></p>
+              <button className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom" 
+              style={{backgroundColor:'#FF385C'}}>
+              <Link to="/page-samples#page-samples"
+                  className="button text-white"
+                  onClick={scrollToTop}
+                >
+               Sample Sites
                 </Link>
-              </div>
-            </div>
+              </button>
+              </div> 
+          
           </div>
           <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">
-              <a href="#portfolio">Back to top</a>
+              <a href="#portfolio" style={{color:'#FF385C'}}>Back to top</a>
             </p>
           </div>
         </footer>

@@ -35,7 +35,7 @@ const AboutFinal = () => {
 <div className="w3-content w3-container">
 <div className="row">
   <div className="col-sm-12 col-md-6 col-lg-6 w3-padding-small py-3">
-    <img src={MeWhite} className="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Me" width="500" height="333" />
+    <img src={MeWhite} className="w3-round-xxlarge w3-image w3-opacity w3-hover-opacity-off" alt="Me" width="500" height="333" />
  
  </div>
 

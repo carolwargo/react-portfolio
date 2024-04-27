@@ -112,7 +112,7 @@ export default function PortfolioItems() {
                       {card.text}
                     </Card.Text>
                     <Button
-                      className="button"
+                      className="button w3-round-xlarge"
                       variant="primary"
                       href={card.githubLink}
                       size="md"
