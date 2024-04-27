@@ -67,9 +67,9 @@ const ContactPage = () => {
             zIndex: 1, // Set zIndex to 1 to position it above the white mask
           }}
         >
-          <div className="container-fluid py-1 w3-margin-top">
+          <div className="container-fluid w3-margin-top">
             <div
-              className="card shadow border bg-white text-black"
+              className=" bg-white text-black"
               style={{ borderRadius: "5px" }}
             >
               <div className="row justify-content-center align-items-center">
@@ -80,12 +80,12 @@ const ContactPage = () => {
                     src={MeWhite}
                     alt="me"
                     style={{ width: "100%" }}
-                    className="border shadow"
+                    className=""
                   />
                 </div>
                 <div className="col-lg-5 text-center justify-content-center align-items-center px-3">
-  <div className="w3-display-container w3-margin-top" style={{ display: "flex", alignItems: "center" }}>
-    <div className="w3-container w3-padding-large">
+  <div className="w3-display-container margin-top" style={{ display: "flex", alignItems: "center" }}>
+    <div className="w3-container  w3-padding-large">
       <h5>THANKS FOR VISITING!</h5>
       <p >
         <em>
@@ -129,8 +129,8 @@ const ContactPage = () => {
       </div>
     </div>
   </div>
-
-                  <div className="w3-display-container w3-margin-top bg-white">
+<br />
+                  <div className="w3-display-container bg-white">
                     <div className="w3-content w3-padding-large w3-justify align-items-center">
                       <form ref={form} onSubmit={sendEmail}>
                         <div className="form-group">
@@ -169,7 +169,6 @@ const ContactPage = () => {
                             style={{backgroundColor:'#FF385C'}}
                           />
                         </div>
-                        <br />
                       </form>
                     </div>
                   </div>
