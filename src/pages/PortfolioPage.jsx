@@ -924,7 +924,7 @@ function Portfolio() {
               <div className="w3-container w3-content text-center w3-padding-48 w3-margin-top w3-margin-bottom w3-padding-small">
               <h2 className="w3-text-black w3-margin-top" id="page-samples">
                 <b className="fw-bold text-black">PAGE</b>
-                <span className="fw-light" style={{color:'#FF385C'}}>|SAMPLES.</span>
+                <span className="fw-light text-reset" >SAMPLES.</span>
               </h2>
               <hr className="w3-opacity" />
              

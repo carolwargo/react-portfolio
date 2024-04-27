@@ -2,12 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import BlogShot from "../assets/images/FullPage/BlogShot.png";
 import RealEstate from "../assets/images/FullPage/RealEstate.png";
-import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 //import Login from "../components/Portfolio/Forms/Login";
 //import Signup from "../components/Portfolio/Forms/Signup";
 import Album from "../assets/images/FullPage/Album.png";
-import SampleHeader from "../assets/images/Portfolio/SampleHeader.png";
 //import ScrollSpy from "../components/Portfolio/SpyScroll/SpyScrollComponent";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -29,32 +27,8 @@ function PageSamples() {
     >
     <div className="page-samples" id="page-samples">
       <div className="w3-padding-top-32 pt-5 ">
-        <header
-          className=""
-          style={{
-            backgroundImage: `url(${SampleHeader})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            minHeight: "400px", // Default minimum height
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            position: "relative",
-          }}
-        >
-          <div
-            className="mask"
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              backgroundColor: "rgba(255, 255, 255, 0.5)",
-              pointerEvents: "none",
-            }}
-          ></div>
+        <header className='w3-padding-top-24'>
+     
           <div
             className="w3-content w3-container w3-padding-16 w3-margin-top justify-content-center"
             style={{
@@ -63,27 +37,14 @@ function PageSamples() {
             }}
           >
             <div className="w3-container w3-content w3-padding-small">
-            <div className="row d-flex justify-content-center">
-              <div className="col-sm-12 col-md-2 col-lg-2 flex-column"></div>
-              <div className="col-sm-12 col-md-8 col-lg-8 flex-column">
-              <h1
-              className="w3-margin-top"
-              style={{
-                fontSize: "4rem",
-                fontWeight: "900",
-                color: "#ffffff",
-                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.9)",
-              }}
-          >SAMPLES
-            </h1>
-           
-            <h5><b>The following sample sites are meant to showcase the possibilities.</b></h5>
+          
+            <h2 className="text-center text-black"><b>The following sample sites are meant to showcase the possibilities.</b>
             
-            <p style={{fontSize:'14px'}}><b><em>'Each sample site below started as a full, multi-page website, now showcased here as one-page snippets.'</em></b></p>
+            <span className='text-black' >
+              <b><em>'Each sample site below started as a full, 
+                multi-page website, now showcased here as one-page 
+                snippets.'</em></b></span></h2>
 
-              </div>
-              <div className="col-sm-12 col-md-2 col-lg-2 flex-column"></div>
-            </div>
  </div>
 </div>
         </header>
@@ -91,17 +52,17 @@ function PageSamples() {
 
 
 {/**Start Real Estate */}
-      <div className="container-fluid " style={{ backgroundColor: "#E7E7E7" }}>
-        <div className="realestate-page w3-padding-32" id="realestate-page">
+      <div className="container-fluid  text-black">
+        <div className="realestate-page w3-padding-48" id="realestate-page">
           <div className=" text-black justify-content-center">
             <div className="justify-content-center">
               <div className="row d-flex w3-padding-large justify-content-center align-items-center">
                
                 <div className="col-md-5  w3-padding-16">
                   <div className=" justify-content-center w3-margin-top">
-                    <h4 className="text-warning"> <i className="fas fa-home"></i> REAL ESTATE SAMPLE.</h4>
+                    <h4 className="text-black"> REAL ESTATE SAMPLE.</h4>
                  
-                    <hr className="w3-opacity" />
+                  
                     <p style={{ fontSize: "14px" }}>
                       A real estate website serves as a valuable tool for both
                       real estate professionals and consumers by offering a
@@ -111,6 +72,7 @@ function PageSamples() {
                       seamless user experience, making it an essential component
                       of modern real estate marketing and operations.
                     </p>
+                    <hr className="w3-opacity" />
                   </div>
                   <div className="row px-2 justify-content-center">
                     <div className="col-sm-12 col-md-6 col-lg-6">
@@ -134,12 +96,10 @@ function PageSamples() {
                     </div>
                     <div className="w3-margin-top ">
                       <a href="https://carolwargo.github.io/realestate/">
-                        <Button
-                          className="btn btn-warning"
-                          style={{ width: "100%", borderRadius: "0"}}
-                        >
-                         <b style={{fontSize:'.8rem'}}>VIEW SAMPLE</b>
-                        </Button>
+                      <button className="w3-button w3-text-light-grey w3-padding w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom" 
+              style={{backgroundColor:'#FF385C'}}>
+               VIEW SAMPLE
+                        </button>
                       </a>
                     </div>
                   </div>
@@ -238,17 +198,18 @@ function PageSamples() {
 */}
 
 {/** Start Blog*/}
-      <div className="container-fluid w3-black">
-        <div className="blog-page  w3-padding-32" id="blog-page">
-          <div className="w3-black justify-content-center">
+<hr className="w3-opacity" />
+      <div className="container-fluid  text-black">
+        <div className="blog-page  w3-padding-48" id="blog-page">
+          <div className=" justify-content-center">
             <div className="justify-content-center">
               <div className="row d-flex w3-padding-large justify-content-center align-items-center">
               
                 <div className="col-md-5 w3-padding-16">
                   <div className="row px-2 justify-content-center">
                     <div className="justify-content-center w3-margin-top">
-                      <h4><i className="fas fa-user-edit"></i> BLOG PAGE SAMPLE.</h4>
-                      <hr className="w3-opacity" />
+                      <h4>BLOG PAGE SAMPLE.</h4>
+                    
                       <p style={{fontSize:'14px'}}>
                        Blog-style websites offer an interactive
                         and engaging platform for individual bloggers and businesses to
@@ -257,6 +218,7 @@ function PageSamples() {
                         valuable insights, a blog-style website can be a highly
                         effective and versatile tool for achieving your goals.
                       </p>
+                      <hr className="w3-opacity" />
                     </div>
                     <div className="col-sm-12 col-md-6 col-lg-6">
                       <h6 style={{fontSize:'14px'}}> Blogger Benefits:</h6>
@@ -282,7 +244,9 @@ function PageSamples() {
                     </div>
 
                     <Link to="/blog" className="w3-margin-top">
-                      <Button className="btn btn-light" style={{width:'100%', borderRadius:'0'}}><b style={{fontSize:'.9rem'}}>VIEW SAMPLE</b></Button>
+                    <button className="w3-button w3-text-light-grey w3-padding w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom" 
+              style={{backgroundColor:'#FF385C'}}>
+                        VIEW SAMPLE</button>
                     </Link>
                   </div>
                 </div>
@@ -310,11 +274,11 @@ function PageSamples() {
       {/** End Blog*/}
 
 
-
+      <hr className="w3-opacity" />
       
 {/**Start Album */}
-<div className="container-fluid bg-info-subtle">
-        <div className="album-page  w3-padding-32" id="album-page">
+<div className="container-fluid  text-black">
+        <div className="album-page  w3-padding-48" id="album-page">
           <div className=" justify-content-center">
            
             <div className="justify-content-center">
@@ -324,8 +288,8 @@ function PageSamples() {
                  
                     <div className="row px-2 justify-content-center">
                     <div className="justify-content-center w3-margin-top">
-              <h3><i className="fas fa-images"></i> ALBUM PAGE SAMPLE.</h3>
-              <hr className="w3-opacity" />
+              <h3>ALBUM PAGE SAMPLE.</h3>
+            
               <p style={{fontSize:'14px'}}>
                 A photo album website offers a platform for
                 individuals, photographers, and businesses to organize,
@@ -335,6 +299,7 @@ function PageSamples() {
                 for anyone looking to manage and monetize their visual content
                 online.
               </p>
+              <hr className="w3-opacity" />
             </div>
 
                       <div className="col-sm-12 col-md-6 col-lg-6">
@@ -357,8 +322,10 @@ function PageSamples() {
                           <li>E-commerce Integration</li>
                         </ul>
                       </div>
+                      
                       <Link to="/blog" className="w3-margin-top">
-                        <Button className="btn btn-info" style={{width:'100%', borderRadius:'0'}}><b style={{fontSize:'.8rem'}}>VIEW SAMPLE</b></Button>
+                      <button className="w3-button w3-text-light-grey w3-padding w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom" 
+              style={{backgroundColor:'#FF385C'}}>VIEW SAMPLE</button>
                       </Link>
                    
                       </div>
