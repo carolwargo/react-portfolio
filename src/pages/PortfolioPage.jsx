@@ -70,9 +70,7 @@ function Portfolio() {
               zIndex: 1,
             }}
           >
-            <div className="shadow">
-            <h4 className="w3-padding-large w3-padding-32 text-danger"><i><b>'I am currently developing individual component pages to streamline the site. Thank you in advance for your patience as I work through any disruptions to the site, styling or layout!' </b></i></h4>
-            </div>
+      
             <h1 className="mt-5"
               style={{
                 fontSize: "3rem",
@@ -80,7 +78,11 @@ function Portfolio() {
             >
               <span className="fw-light">PORTFOLIO.</span>
             </h1>
-            <p>Portfolio includes server side functions, web components, forms, and sample sites, and more...</p>
+          
+            <h3 className="text-danger">
+              <i><b>'Thank you in advance for your patience as I add to and improve my site.' </b></i></h3>
+       
+            <h5>Portfolio includes server side functions, web components, forms, and sample sites, and more...</h5>
           </div>
         </header>
         {/**body start */}
