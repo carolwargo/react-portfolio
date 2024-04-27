@@ -96,7 +96,7 @@ function PageSamples() {
                     </div>
                     <div className="w3-margin-top ">
                       <a href="https://carolwargo.github.io/realestate/">
-                      <button className="w3-button w3-text-light-grey w3-padding w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom" 
+                      <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
               style={{backgroundColor:'#FF385C'}}>
                VIEW SAMPLE
                         </button>
@@ -244,7 +244,7 @@ function PageSamples() {
                     </div>
 
                     <Link to="/blog" className="w3-margin-top">
-                    <button className="w3-button w3-text-light-grey w3-padding w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom" 
+                    <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
               style={{backgroundColor:'#FF385C'}}>
                         VIEW SAMPLE</button>
                     </Link>
@@ -324,7 +324,7 @@ function PageSamples() {
                       </div>
                       
                       <Link to="/blog" className="w3-margin-top">
-                      <button className="w3-button w3-text-light-grey w3-padding w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom" 
+                      <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
               style={{backgroundColor:'#FF385C'}}>VIEW SAMPLE</button>
                       </Link>
                    

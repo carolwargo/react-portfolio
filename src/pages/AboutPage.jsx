@@ -133,7 +133,7 @@ className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#F
               <div className="w3-container w3-content text-center w3-padding-48 w3-margin-bottom w3-padding-large">
               <h2 className="text-black">View my digital resume to learn more about my professional experience and qualifications.        
         </h2><br />
-              <button className="w3-button w3-text-light-grey w3-padding w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom" 
+              <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
               style={{backgroundColor:'#FF385C'}}>
               <Link to="/resume#resume"
                   className="button text-white"

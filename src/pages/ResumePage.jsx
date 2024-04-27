@@ -35,7 +35,7 @@ export default function ResumePage() {
       <div className="w3-row d-flex justify-content-center" >
     <div className="w3-col m8 flex-column w3-padding-48 w3-center">
         <h1 className='w3-text-black'>DIGITAL RESUME</h1>
-<h3>View my skills, work experience, volunteer background, or download a physical copy of my resume.</h3>
+<h4>View my skills, work experience, volunteer background, or download a physical copy of my resume.</h4>
 </div>
 </div>
 
@@ -45,7 +45,7 @@ export default function ResumePage() {
 <div className="w3-row-padding justify-content-center w3-white align-items-center ">
 
   {/*Left Column*/}
-  <div className="w3-third ">
+  <div className="w3-third flex-column justify-content-center align-items-center">
   
     <div className="w3-text-grey w3-margin-bottom">
       <div className="w3-display-container">
@@ -222,7 +222,7 @@ export default function ResumePage() {
     </div>
   <div className="w3-center w3-padding-large w3-padding-32 text-white shadow" style={{backgroundColor:'#FF385C'}}>
     <h5 className="w3-text-white w3-margin-bottom"><b className="w3-margin-left">Resume Download</b></h5>
-    <p style={{fontSize:'15px'}}>For a physical copy, click the "Download Resume" button below to download a PDF of my resume.</p>
+    <p style={{fontSize:'14px'}}>For a physical copy, click the "Download Resume" button below to download a PDF of my resume.</p>
     <button className="w3-button w3-black w3-padding-large w3-round-xxlarge mt-2">
                 <a
                   className="button text-white w3-hover-opacity "
@@ -243,7 +243,7 @@ export default function ResumePage() {
   </div>
 
   {/*Right Column*/}
-  <div className="w3-twothird flex-column justify-content-center">
+  <div className="w3-twothird flex-column justify-content-center align-items-center">
     
 <div className="w3-content w3-light-gray w3-padding-large">
       <h2 className="w3-padding-16  text-black">
@@ -441,15 +441,15 @@ export default function ResumePage() {
 {/*} End Grid*/}
 </div>
  
- </div>
+ 
 
-      <div className="w3-white w3-padding-48
+      <div className="w3-black
       ">
-      <div className="w3-container"> 
+      <div className="w3-container w3-padding-48"> 
       <div className="row d-flex justify-content-center align-items-end ">
       <div className="w3-col m12 flex-column">
         <div className="w3-container w3-padding-16 text-center">
-     <h2 className="text-black"> " <span style={{color:'#FF385C'}}>SERVICE TO OTHERS</span> consistently holds a central place in my
+     <h4>Service to others has consistently held a central place in my
             household. Beyond its apparent merits, I personally consider
             community service to be the single most powerful platform for my
             personal growth, skill development, and most important exposure through the
@@ -457,7 +457,7 @@ export default function ResumePage() {
             encountered otherwise. Listed below are some of the programs I have been involved in."
           
        
-       </h2><br />
+       </h4><br />
         
           </div>
         </div>
@@ -508,7 +508,7 @@ export default function ResumePage() {
 
 </div>
 </div>
-                
+</div>          
 
   <div className="w3-container w3-content text-center w3-padding-48 w3-margin-top w3-margin-bottom w3-padding-small">
               <h2 className="text-black">Please view my portfolio with the understanding, lots of changes and improvements are taking place behind the scenes. Thanks in advance for your patience!

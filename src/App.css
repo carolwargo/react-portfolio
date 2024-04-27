@@ -1,7 +1,7 @@
 * {
   font-family: 'Proxima Nova', sans-serif;
 }
-
+@import url("https://use.typekit.net/tce5mmy.css");
 @import '~@fortawesome/fontawesome-free/css/all.css';
 @import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 

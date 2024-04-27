@@ -33,7 +33,7 @@ function HomePage() {
 
             />
           </div>
-          <div className="col-lg-6 align-items-center">
+          <div className="col-lg-6 align-items-center justify-content-center">
             <div className="w3-container text-center" >
               <h1 className="w3-jumbo text-black">
                 <b>Carol Wargo</b>
@@ -56,7 +56,7 @@ function HomePage() {
               <div className="text-center w3-padding-16 w3-padding-large">
               <h4 className="text-black">Follow the link to learn more about me professionally.           
         </h4>
-              <button className="w3-button w3-text-light-grey w3-padding w3-margin-right w3-round-xxlarge mt-2" 
+              <button className="w3-button w3-text-light-grey w3-padding  w3-round-xxlarge mt-2" 
               style={{backgroundColor:'#FF385C'}}>
               <Link to="/about#about"
                   className="button text-white"
