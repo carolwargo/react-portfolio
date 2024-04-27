@@ -117,7 +117,7 @@ export default function App() {
               Huntingtown, MD
             </p>
             <p style={{fontSize:'14px'}}  className='text-center'>
-              <MDBIcon icon="envelope" className="me-2" />
+           
               <a href='mailto:carolwargo.dev@gmail.com' 
               className='text-reset'>
               Email
@@ -125,7 +125,7 @@ export default function App() {
             </p>
             <p style={{fontSize:'14px'}}  className='text-center'>
             <a href='tel:+4437711726'className='text-reset'>
-              <MDBIcon icon="phone" className="me-2" /> Call
+              Call
 </a>
             </p>
             <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2" 
