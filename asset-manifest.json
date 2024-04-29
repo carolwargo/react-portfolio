@@ -1,12 +1,14 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.55c8fc68.css",
-    "main.js": "/react-portfolio/static/js/main.15fe8bd5.js",
+    "main.js": "/react-portfolio/static/js/main.cedfa093.js",
     "static/media/RealEstate.png": "/react-portfolio/static/media/RealEstate.ba0b8a8bd8b9df38e276.png",
     "static/media/PortfolioBG.png": "/react-portfolio/static/media/PortfolioBG.a99b67f82d616c439192.png",
     "static/media/ResumeDownload.pdf": "/react-portfolio/static/media/ResumeDownload.71d452106ce673e52434.pdf",
+    "static/media/WebComponents.jpeg": "/react-portfolio/static/media/WebComponents.173e3729db9e6bbd66a0.jpeg",
     "static/media/Album.png": "/react-portfolio/static/media/Album.624f5f271608ee54bae6.png",
     "static/media/LoginImage.png": "/react-portfolio/static/media/LoginImage.a7742c36080e9860e034.png",
+    "static/media/LoginBW.png": "/react-portfolio/static/media/LoginBW.8456b009ec424fd44136.png",
     "static/media/BlogShot.png": "/react-portfolio/static/media/BlogShot.266187bd8e0092efbf48.png",
     "static/media/Lake.png": "/react-portfolio/static/media/Lake.8fe8de6b95a642ddf090.png",
     "static/media/SunRay.png": "/react-portfolio/static/media/SunRay.98ccdc3e052b1889291c.png",
@@ -41,10 +43,10 @@
     "static/media/fa-v4compatibility.woff2": "/react-portfolio/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/react-portfolio/index.html",
     "main.55c8fc68.css.map": "/react-portfolio/static/css/main.55c8fc68.css.map",
-    "main.15fe8bd5.js.map": "/react-portfolio/static/js/main.15fe8bd5.js.map"
+    "main.cedfa093.js.map": "/react-portfolio/static/js/main.cedfa093.js.map"
   },
   "entrypoints": [
     "static/css/main.55c8fc68.css",
-    "static/js/main.15fe8bd5.js"
+    "static/js/main.cedfa093.js"
   ]
 }
