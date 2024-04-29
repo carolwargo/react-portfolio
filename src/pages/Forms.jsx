@@ -10,13 +10,19 @@ import {
   MDBCheckbox
 } from "mdb-react-ui-kit";
 import Card from 'react-bootstrap/Card';
-
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Login  from '../components/Portfolio/Forms/Login.jsx';
 import SignUp  from '../components/Portfolio/Forms/Signup.jsx';
 import LoginBW from '../assets/images/Portfolio/LoginBW.png'
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 
 
 
@@ -65,7 +71,7 @@ function Forms() {
 id='forms'
     style={{fontFamily:'proxima-nova'}}
     >
-    <div className='sidenav w3-padding-top-48' id='sidenav'>
+    <div className='forms w3-padding-top-48' id='forms'>
       {/* Side Navigation */}
       <nav className={`w3-sidebar w3-bar-block w3-card w3-animate-top w3-center w3-padding-64 ${isOpen ? 'w3-show' : 'w3-hide'}`} style={{ zIndex: '999', width: '100%', position: 'fixed', top: '0' }}>
         <h1 className="w3-xxxlarge ">Web Forms</h1>
@@ -278,10 +284,29 @@ Personalized subject lines increase open rates by 50% (Yes Marketing). </Card.Te
 </div>
 </div>
 </div>
+
       </MDBContainer>
-      
+      <div className='text-center w3-padding-24'>
+      <h5 className='text-center w3-padding-24' ><i>more to come... Thanks for your patience!</i></h5>
+    
+      <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2" 
+              style={{backgroundColor:'black'}}>
+              <Link to="/portfolio#portfolio"
+                  className="button text-white"
+                  onClick={scrollToTop}
+                >
+               Back To Portfolio
+                </Link>
+              </button>
+              </div>
     </MDBFooter>
-    <h5 className='text-center w3-padding-24' ><i>more to come... Thanks for your patience!</i></h5>
+  <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
+          <div className="container">
+            <p className="float-end mb-1">
+              <a href="#forms" style={{color:'#FF385C'}}>Back to top</a>
+            </p>
+          </div>
+        </footer>
     <br />
 <br />
 

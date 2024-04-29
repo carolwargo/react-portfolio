@@ -5,9 +5,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const TableBasic = () => {
   return (
    <div className="tables" id="tables">
-      <div className="container">
-        <h5 className="fw-light w3-margin-top text-info"><b>Basic</b></h5>
-        <div className="row justify-content-center">
+
+        <div className="row justify-content-center align-items-center">
+        <div className="card shadow w3-white">
+        <h5 className="fw-light w3-margin-top text-info text-center"><b>Basic Table</b></h5>
                   <Table striped bordered hover className="w3-padding-small">
                       <thead>
                           <tr>
@@ -39,7 +40,7 @@ const TableBasic = () => {
                   </Table>
               </div>
 
-
+              <div className="card shadow w3-white w3-margin">   
               <h5 className="fw-light w3-margin-top text-info"><b>Light Striped with Hover</b></h5>
         <div className="row justify-content-center">
           <Table striped bordered hover variant="light">
@@ -72,7 +73,9 @@ const TableBasic = () => {
                       </tbody>
                   </Table>
               </div>
-    <h5 className="fw-light w3-margin-top text-info"><b>Dark Striped with Hover</b></h5>
+              </div>
+              <div className="card shadow w3-dark-gray">
+   <h5 className="fw-light w3-margin-top text-info"><b>Dark Striped with Hover</b></h5>
         <div className="row justify-content-center">
           <Table striped bordered hover variant="dark">
                       <thead>
@@ -103,6 +106,7 @@ const TableBasic = () => {
                           </tr>
                       </tbody>
                   </Table>
+              </div>
               </div>
           </div>
       </div>

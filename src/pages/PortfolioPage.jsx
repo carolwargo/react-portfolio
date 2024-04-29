@@ -13,8 +13,6 @@ import Desk from "../assets/images/Portfolio/Desk.png";
 import SVG from "../assets/images/Portfolio/SVG.png";
 import Notes from "../assets/images/Portfolio/Notes.png";
 import README from "../assets/images/Portfolio/README.png";
-import Login from "../components/Portfolio/Forms/Login";
-import Signup from "../components/Portfolio/Forms/Signup";
 import Graphics from "../components/Portfolio/Graphics/Graphics";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPinterest } from "@fortawesome/free-brands-svg-icons";
@@ -35,7 +33,7 @@ function Portfolio() {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       exit={{ y: 20, opacity: 0 }}
-      className="home"
+   
     >
       <div className="portfolio" id="portfolio">
         <header
@@ -548,37 +546,7 @@ function Portfolio() {
                     </p>
                     </div>
                     </div>
-                    <div className="w3-card  w3-margin-top">
-                <div className="container w3-padding-large w3-padding-24">
-                  <h4 className="w3-margin-top" id="forms">
-                    <b className="fw-bolder w3-text-black">FORM</b>
-                    <span className="fw-lighter text-muted">COMPONENTS.</span>
-                  </h4>
-                  <hr />
-                  <p className="w3-text-black">
-                    Digital components in web development are used to enhancing
-                    user interaction, organizing content, and improving the
-                    overall user experience of a website.
-                  </p>
-                  <p className="w3-text-black">
-                    Forms are for collecting and submitting user data on a
-                    website. They consist of input fields such as text boxes,
-                    dropdown menus, checkboxes, and buttons, allowing users to
-                    interact with the website and provide information.
-                  </p>
-
-                  <br />
-
-                  <Login />
-                  <br />
-                  <br />
-                  <Signup />
-
-                  <br />
-                  <br />
-                  {/**end forms */}
-</div>
-</div>
+   
 
 
 <div className="w3-card  w3-margin-top" >
@@ -950,7 +918,6 @@ function Portfolio() {
                 </Link>
               </button>
               </div> 
-          
           </div>
           <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
