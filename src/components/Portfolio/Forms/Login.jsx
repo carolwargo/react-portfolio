@@ -42,9 +42,8 @@ function Login() {
 
     return (
     
-                    <div className="w3-container bg-white shadow">
-                            <div className="w3-padding-24">
-                            <div><h6 className='text-muted w3-padding-16 w3-center'>LOGIN TO ACCOUNT</h6></div>
+                    <div className="w3-container bg-white shadow w3-round-xxlarge">
+                            <div className="w3-padding-48">
                                 <form onSubmit={handleLogin}> {/* Wrap input fields with a form */}
                                     <div className="form-outline mb-4">
                                         <input 
@@ -84,13 +83,13 @@ function Login() {
                                             </div>
                                         </div>
                                         <div className="col-sm-12 col-md-5 col-lg-5">
-                                            <a href="#!" style={{fontSize:'11px'}}>Forgot password?</a>
+                                            <a href="#!" style={{fontSize:'11px', color:'black'}}>Forgot password?</a>
                                         </div>
                                     </div>
                                     <div>
                                         <button 
                                             type="submit" 
-                                            className="btn btn-primary btn-block  px-5 shadow w3-round-xlarge"
+                                            className="btn btn-black btn-block  px-5 shadow w3-round-xxlarge"
                                         >
                                             Sign in
                                         </button>

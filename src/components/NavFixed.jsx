@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-//import NavDropdown from "react-bootstrap/NavDropdown";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -48,22 +48,23 @@ function BasicExample() {
             <Nav className="me-auto">
               <Link to="/about#about" className="nav-link" onClick={handleNavLinkClick}>ABOUT</Link>
               <Link to="/resume#resume" className="nav-link" onClick={handleNavLinkClick}>RESUME</Link>
-              <Link to="/portfolio#portfolio" className="nav-link" onClick={handleNavLinkClick}>PORTFOLIO</Link>
-             {/**  <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+         <NavDropdown title="PORTFOLIO" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/portfolio#server">
+              Server-Side Apps</NavDropdown.Item>
+              <NavDropdown.Item href="/portfolio#components">
+              Web Components
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item href="/forms#forms">
+               Form Components
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/page-samples">Sample Sites</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+              <NavDropdown.Item href="/portfolio#graphics">
+             Graphics</NavDropdown.Item>
+            
             </NavDropdown>
-            */}
               <Link to="/contact#contact" className="nav-link" onClick={handleNavLinkClick}>CONTACT</Link>
-              <Link to='/page-samples' className="nav-link" onClick={handleNavLinkClick}>SAMPLES</Link>
-            </Nav>
+           </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>

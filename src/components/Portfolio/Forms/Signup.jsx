@@ -8,7 +8,7 @@ function Signup() {
     const [lastName, setLastName] = useState('Doe');
     const [email, setEmail] = useState('john.doe@example.com');
     const [password, setPassword] = useState('password123');
-    const [newsletterChecked, setNewsletterChecked] = useState(true);
+    //const [newsletterChecked, setNewsletterChecked] = useState(true);
 
     const [firstNameError, setFirstNameError] = useState('');
     const [lastNameError, setLastNameError] = useState('');
@@ -55,17 +55,16 @@ function Signup() {
             console.log('Last Name:', lastName);
             console.log('Email:', email);
             console.log('Password:', password);
-            console.log('Subscribe to newsletter:', newsletterChecked ? 'Yes' : 'No');
+            /*console.log('Subscribe to newsletter:', newsletterChecked ? 'Yes' : 'No');*/
         }
     };
 
     return (
 
                 <div className="signup" id='signup'>
-                    <div className="w3-container bg-white shadow ">
+                    <div className="w3-container bg-white shadow w3-round-xxlarge">
                  
                         <div className="w3-padding-16 border-dark">
-                        <div><h6 className='text-muted w3-margin-top w3-center'>SIGNUP & REGISTER</h6></div>
                             <form onSubmit={handleSubmit} autoComplete="on" >
                                 <div className="row my-4">
                                     <div className="col">
@@ -124,9 +123,9 @@ function Signup() {
                                     <div className="invalid-feedback">{passwordError}</div>
                                 </div>
 
-                                <div className="form-check d-flex justify-content-center mb-4">
+                              {/**   <div className="form-check d-flex justify-content-center mb-4">
                                     <input 
-                                        className="form-check-input me-2" 
+                                        className="form-check-input me-2 w3-black border-black" 
                                         type="checkbox" 
                                         id="newsletterCheck"  
                                         checked={newsletterChecked}
@@ -136,40 +135,40 @@ function Signup() {
                                         Subscribe to our newsletter
                                     </label>
                                 </div>
-
+*/}
                                 <button 
                                     type="submit" 
-                                    className="btn btn-primary btn-block mb-4 px-5 shadow w3-round-xxxlarge"
+                                    className="btn btn-black btn-block mb-4 px-5 shadow w3-round-xxxlarge"
                                 >
                                     Sign up
                                 </button>
 
-                                <div className="text-center w3-margin-bottom">
+                                <div className="text-center text-black w3-margin-bottom">
                                     <p>or sign up with:</p>
                                     <button 
                                         type="button" 
-                                        className="btn btn-secondary btn-floating mx-1 shadow"
+                                        className="btn btn-dark btn-floating mx-1 shadow"
                                     >
                                         <i className="fab fa-facebook-f"></i>
                                     </button>
 
                                     <button 
                                         type="button" 
-                                        className="btn btn-secondary btn-floating mx-1 shadow"
+                                        className="btn btn-dark btn-floating mx-1 shadow"
                                     >
                                         <i className="fab fa-google"></i>
                                     </button>
 
                                     <button  
                                         type="button" 
-                                        className="btn btn-secondary btn-floating mx-1 shadow"
+                                        className="btn btn-dark btn-floating mx-1 shadow"
                                     >
                                         <i className="fab fa-twitter"></i>
                                     </button>
 
                                     <button 
                                         type="button" 
-                                        className="btn btn-secondary btn-floating mx-1 shadow"
+                                        className="btn btn-dark btn-floating mx-1 shadow"
                                     >
                                         <i className="fab fa-github"></i>
                                     </button>

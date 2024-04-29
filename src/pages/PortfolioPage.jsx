@@ -528,7 +528,8 @@ function Portfolio() {
 
             {/*Start col-8*/}
 
-            <div className="w3-col l8">
+            <div className="w3-col l8"
+            id="components">
               <div className="w3-content">
                 <div className="w3-white align-items-center justify-content-center"></div>
                 <div className="w3-card w3-light-gray" style={{paddingTop:'0px'}}>

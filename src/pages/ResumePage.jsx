@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 import ResumeDownload from "../assets/ResumeDownload.pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
-//import { BorderColor } from "@mui/icons-material";
 
 export default function ResumePage() {
 
