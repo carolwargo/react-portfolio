@@ -48,9 +48,9 @@ function BasicExample() {
             <Nav className="me-auto">
               <Link to="/about#about" className="nav-link" onClick={handleNavLinkClick}>ABOUT</Link>
               <Link to="/resume#resume" className="nav-link" onClick={handleNavLinkClick}>RESUME</Link>
-         <NavDropdown title="PORTFOLIO" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/portfolio#server">
-              Server-Side Apps</NavDropdown.Item>
+              <Link to="/portfolio#portfolio" className="nav-link" onClick={handleNavLinkClick}>PORTFOLIO</Link>
+              <Link to="/page-samples#page-samples" className="nav-link" onClick={handleNavLinkClick}>1-PAGE SAMPLES</Link>
+         <NavDropdown title="WEB COMPONENTS" id="basic-nav-dropdown">
               <NavDropdown.Item href="/portfolio#components">
               Web Components
               </NavDropdown.Item>
@@ -59,6 +59,8 @@ function BasicExample() {
               </NavDropdown.Item>
               <NavDropdown.Item href="/page-samples">Sample Sites</NavDropdown.Item>
               <NavDropdown.Divider />
+              <NavDropdown.Item href="/portfolio#server">
+              Server-Side Apps</NavDropdown.Item>
               <NavDropdown.Item href="/portfolio#graphics">
              Graphics</NavDropdown.Item>
             

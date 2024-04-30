@@ -1,24 +1,13 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
 import Alert from "react-bootstrap/Alert";
-import Button from "react-bootstrap/Button";
-import Badge from "react-bootstrap/Badge";
-import CloseButton from "react-bootstrap/CloseButton";
-import PortfolioBG from "../assets/images/Portfolio/PortfolioBG.png";
+import Accordion from "react-bootstrap/Accordion";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import TableBasic from "../components/Portfolio/Tables/TableBasic";
-import JATE from "../assets/images/Portfolio/JATE.png";
-import Horizen from "../assets/images/Portfolio/Horizen.png";
-import Desk from "../assets/images/Portfolio/Desk.png";
-import SVG from "../assets/images/Portfolio/SVG.png";
-import Notes from "../assets/images/Portfolio/Notes.png";
-import README from "../assets/images/Portfolio/README.png";
-import Graphics from "../components/Portfolio/Graphics/Graphics";
+import TableBasic from "../components/Portfolio/Tables/TableBasic.jsx";
+import { Button, Badge, CloseButton } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPinterest } from "@fortawesome/free-brands-svg-icons";
-
-import "bootstrap/dist/css/bootstrap.min.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import WebComponentsTrans from "../assets/images/WebComponentsTrans.png";
 
 function Portfolio() {
   const scrollToTop = () => {
@@ -28,907 +17,755 @@ function Portfolio() {
     });
   };
 
+  // State to manage accordion expansion
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
+  // Function to handle accordion toggle
+  const handleAccordionToggle = (index) => {
+    if (expandedIndex === index) {
+      setExpandedIndex(null);
+    } else {
+      setExpandedIndex(index);
+    }
+  };
+
+  const faqs = [
+    {
+      question: "Alert Components",
+      answer: 
+        "Web alerts are visual components used to convey important messages, notifications, or warnings to users. ",
+      link: "/portfolio#alerts",
+    },
+
+ 
+ /*   {
+      question: "Why are graphics elements valuable?",
+      answer:
+        "Graphics elements are valuable in web design and development for enhancing visual appeal, conveying information effectively, and improving user engagement. They include images, icons, illustrations, charts, graphs, and other visual elements that help in illustrating concepts, guiding users, and making the user interface more engaging and intuitive.",
+      link: "/portfolio#graphics",
+    },
+    */
+    {
+      question: "Buttons Components",
+      answer:
+        "Button provide visual cues to indicate clickable areas and help users navigate through a website or complete tasks",
+      link: "/portfolio#buttons",
+    },
+    {
+      question: "Table Components",
+      answer:
+        "Web tables are used for presenting data such as financial reports, product listings, and comparison charts on websites.",
+      link: "/portfolio#tables",
+    },
+    {
+      question: "Form Components",
+      answer:
+        "Web forms are used for collecting user information, submitting data to servers, and performing various actions based on user input.",
+      link: "/forms#forms",
+    },
+  
+    {
+      question: "Server-Side Apps",
+      answer:
+        "Web forms are used for collecting user information, submitting data to servers, and performing various actions based on user input.",
+      link: "/server#server",
+    },
+  ];
+
   return (
     <motion.div
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       exit={{ y: 20, opacity: 0 }}
-   
+      className="portfolio"
+      id="portfolio"
     >
-      <div className="portfolio" id="portfolio">
-        <header
-          style={{
-            backgroundImage: `url(${PortfolioBG})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            minHeight: "300px", // Default minimum height
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            position: "relative",
-          }}
-        >
-          <div
-            className="mask"
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              backgroundColor: "rgba(255, 255, 255, 0.5)",
-              pointerEvents: "none",
-            }}
-          ></div>
-          <div
-            className="w3-container align-items-center w3-margin-top w3-padding-48 w3-padding-large justify-content-between text-center"
-            style={{
-              position: "relative",
-              zIndex: 1,
-            }}
-          >
-      
-            <h1 className="mt-5"
-              style={{
-                fontSize: "3rem",
-              }}
-            >
-              <span className="fw-light">PORTFOLIO.</span>
-            </h1>
-          
-            <h3 className="text-danger">
-              <i><b>'Thank you in advance for your patience as I add to and improve my site.' </b></i></h3>
-       
-            <h5>Portfolio includes server side functions, web components, forms, and sample sites, and more...</h5>
-          </div>
-        </header>
-        {/**body start */}
-
-        <div className="w3-main container w3-padding-top-32">
-          <div className="row d-flex w3-justify">
-            <div className="w3-col l4 pb-5">
-                {/*start card-container server code*/}
-                <div className="w3-card w3-light-gray" id="server">
-                  {/*start card-body for bio*/}
-                  <div className="w3-container justify-content-center">
-                    <br></br>
-                    <h4
-                      className=""
-                      style={{ fontFamily: "sans-serif" }}
-                      id="#server"
-                    >
-                      <b>SERVER-SIDE APPS</b>
-                    </h4>
-<hr />
-                    <p
-                      className="mb-3 fw-light w3-margin-top"
-                      style={{ fontSize: "14px" }}
-                    >
-                      Server-side functions handle request processing, data
-                      management, security, and business logic in web apps. They
-                      are vital for building scalable and secure applications.
-                    </p>
-
-                    <div
-                      className="card-footer w3-padding-24"
-                      style={{ fontSize: "12px" }}
-                    >
-                      Below you will find examples of some widely employed
-                      server-side applications. Click the link to review the
-                      repository and code.
-                    </div>
-                  </div>
-
-                  {/*start card-body for bio*/}
-                </div>
-                <br />
-
-                {/*START SERVER SIDE CARDS 1-6*/}
-                {/*1. start card-image for JATE*/}
-                <div className="w3-card w3-grayscale-min w3-opacity w3-hover-opacity-off" id="text-editor">
-                  <img
-                    src={JATE}
-                    alt="blog-profile"
-                    style={{ width: "100%" }}
-                    className="rounded-top w3-opacity w3-hover-opacity-off"
-                  ></img>
-                  {/*end card-image for bio*/}
-                  {/*start card-body for bio*/}
-                  <div className="w3-container w3-white justify-content-center w3-center">
-                    <br></br>
-                    <h5
-                      className=""
-                      style={{ fontFamily: "sans-serif" }}
-                      id="#server"
-                    >
-                      <b>Text_Editor</b>
-                    </h5>
-                    <p style={{ fontSize: "14px", fontWeight: "lighter" }}>
-                      <i>
-                        Text_Editor is a browser-based text editor that allows
-                        Users to create and edit text documents seamlessly.
-                      </i>
-                    </p>
-                    <div className="card-footer w3-center w3-margin-bottom">
-                      <p
-                        className="w3-opacity text-center pt-2"
-                        style={{ fontSize: "12px" }}
-                      >
-                        click to view repository
-                      </p>
-                      <button
-                        href="https://github.com/carolwargo/Text_Editor-in-Chief"
-                        className="w3-button w3-black shadow-lg w3-block"
-                      >
-                        Github
-                      </button>
-                    </div>
-                  </div>
-                  {/*end card-body for JATE*/}
-                </div>
-                <br />
-                {/*2. start card-image for Notes*/}
-                <div className="w3-card w3-grayscale-min w3-opacity w3-hover-opacity-off" id="notes">
-                  <img
-                    src={Notes}
-                    alt="blog-profile"
-                    style={{ width: "100%" }}
-                    className="rounded-top w3-opacity w3-hover-opacity-off"
-                  ></img>
-                  {/*end card-image for bio*/}
-                  {/*start card-body for note-taker*/}
-                  <div className="w3-container w3-white justify-content-center w3-center">
-                    <br></br>
-                    <h5
-                      className=""
-                      style={{ fontFamily: "sans-serif" }}
-                      id="#server"
-                    >
-                      <b>Note-Taker Application</b>
-                    </h5>
-                    <p style={{ fontSize: "14px", fontWeight: "lighter" }}>
-                      <i>
-                        A note taking application used to WRITE, SAVE and DELETE
-                        tasks we can't afford to forget.
-                      </i>
-                    </p>
-                    <div className="card-footer w3-center w3-margin-bottom">
-                      <p
-                        className="w3-opacity text-center pt-2"
-                        style={{ fontSize: "12px" }}
-                      >
-                        click to view repository
-                      </p>
-                      <button
-                        href="https://github.com/carolwargo/forget-me-NOTES"
-                        className="w3-button w3-black shadow-lg w3-block"
-                      >
-                        Github
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                {/*3. start card-image for SVG*/}
-                <div className="w3-card w3-grayscale-min w3-opacity w3-hover-opacity-off" id="svg">
-                  <img
-                    src={SVG}
-                    alt="blog-profile"
-                    style={{ width: "100%" }}
-                  ></img>
-                  {/*end card-image for note-taker*/}
-                  {/*start card-body for SVG*/}
-                  <div className="w3-container w3-white justify-content-center w3-center">
-                    <br></br>
-                    <h5
-                      className=""
-                      style={{ fontFamily: "sans-serif" }}
-                      id="#server"
-                    >
-                      <b>SVG Generator App</b>
-                    </h5>
-                    <p style={{ fontSize: "14px", fontWeight: "lighter" }}>
-                      <i>
-                        A Node.js CLI that takes in user input, such as color,
-                        shape & text to generate a logo & save it as an SVG
-                        file.
-                      </i>
-                    </p>
-                    <div className="card-footer w3-center w3-margin-bottom">
-                      <p
-                        className="w3-opacity text-center pt-2"
-                        style={{ fontSize: "12px" }}
-                      >
-                        click to view repository
-                      </p>
-                      <button
-                        href="https://github.com/carolwargo/forgetSVG"
-                        className="w3-button w3-black shadow-lg w3-block"
-                      >
-                        Github
-                      </button>
-                    </div>
-                  </div>
-                  {/*end card-body for SVG*/}
-                </div>
-                <br />
-                {/*4. start card for dayplanner*/}
-                <div className="w3-card w3-grayscale-min w3-opacity w3-hover-opacity-off" id="dayplanner">
-                  <img
-                    src={Desk}
-                    alt="blog-profile"
-                    style={{ width: "100%" }}
-                    className="rounded-top w3-opacity w3-hover-opacity-off"
-                  ></img>
-                  <div className="w3-container w3-white justify-content-center w3-center">
-                    <br></br>
-                    <h5
-                      className=""
-                      style={{ fontFamily: "sans-serif" }}
-                      id="#server"
-                    >
-                      <b>Day Planner App</b>
-                    </h5>
-                    <p style={{ fontSize: "14px", fontWeight: "lighter" }}>
-                      <i>
-                        A calendar application that allows a User to save
-                        events, for each hour of the work day.
-                      </i>
-                    </p>
-                    <div className="card-footer w3-center w3-margin-bottom">
-                      <p
-                        className="w3-opacity text-center pt-2"
-                        style={{ fontSize: "12px" }}
-                      >
-                        click to view repository
-                      </p>
-                      <button
-                        href="https://carolwargo.github.io/Desk_Jockey-dayplanner/"
-                        className="w3-button w3-black shadow-lg w3-block"
-                      >
-                        Github
-                      </button>
-                    </div>
-                  </div>
-                  {/*4. end card-body for dayplanner*/}
-                </div>
-                <br />
-                {/*5. start card for README*/}
-                <div className="w3-card w3-grayscale-min w3-opacity w3-hover-opacity-off" id="readme">
-                  <img
-                    src={README}
-                    alt="blog-profile"
-                    style={{ width: "100%" }}
-                    className="rounded-top w3-opacity w3-hover-opacity-off"
-                  ></img>
-                  <div className="w3-container w3-white justify-content-center w3-center">
-                    <br></br>
-                    <h5
-                      className=""
-                      style={{ fontFamily: "sans-serif" }}
-                      id="#server"
-                    >
-                      <b>README Generator</b>
-                    </h5>
-                    <p style={{ fontSize: "14px", fontWeight: "lighter" }}>
-                      <i>
-                        README Generator takes in User input to generate a
-                        well-structured README.md file saving time for
-                        developers.
-                      </i>
-                    </p>
-                    <div className="card-footer w3-center w3-margin-bottom">
-                      <p
-                        className="w3-opacity text-center pt-2"
-                        style={{ fontSize: "12px" }}
-                      >
-                        click to view repository
-                      </p>
-                      <button
-                        href="https://github.com/carolwargo/forget-me-NOTES"
-                        className="w3-button w3-black shadow-lg w3-block"
-                      >
-                        Github
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                {/*6. start card-image for REFACTOR*/}
-                <div className="w3-card" id="refactor">
-                  <img
-                    src={Horizen}
-                    alt="blog-profile"
-                    style={{ width: "100%" }}
-                    className="rounded-top w3-opacity w3-hover-opacity-off"
-                  ></img>
-                  <div className="w3-container w3-white justify-content-center w3-center">
-                    <br></br>
-                    <h5
-                      className=""
-                      style={{ fontFamily: "sans-serif" }}
-                      id="#server"
-                    >
-                      <b>Code Refactor</b>
-                    </h5>
-                    <p style={{ fontSize: "14px", fontWeight: "lighter" }}>
-                      <i>
-                        Implemented to follow WCAG standards, optimize search
-                        engines & limit liability. .
-                      </i>
-                    </p>
-                    <div className="card-footer w3-center w3-margin-bottom">
-                      <p
-                        className="w3-opacity text-center pt-2"
-                        style={{ fontSize: "12px" }}
-                      >
-                        click to view repository
-                      </p>
-                      <button
-                        href="https://github.com/carolwargo/Code-Refactor-Horisen"
-                        className="w3-button w3-black shadow-lg w3-block"
-                      >
-                        Github
-                      </button>
-                    </div>
-                  </div>
-                  {/*6. end card-body for refactor*/}
-                </div>
-                <br />
-                {/*************************************************************************/}
-
-                <div className="w3-card" id="text-editor">
-                  <div className="container w3-padding w3-padding-32">
-                    <h4
-                      className=""
-                      style={{ fontFamily: "sans-serif" }}
-                      id="#button"
-                    >
-                      BUTTONS
-                    </h4>
-                    <hr />
-
-                    <div className="row d-flex justify-content-center align-items-center w3-margin-top">
-                      <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
-                        <div className="container text-center">
-                          <p className="mb-2">
-                            <i className="fa fa-info-circle  w3-large text-info"></i>
-                            <b> Button variations displayed include:</b> <br />
-                            size, color, outline, solid, shape, icon elements
-                            and shadowing to give the appearance the element is
-                            floating.{" "}
-                          </p>
-                          <br />
-                          <Button
-                            variant="secondary"
-                            size="lg"
-                            className="mb-2"
-                          >
-                            Large button
-                          </Button>
-                          <Button
-                            variant="outline-secondary"
-                            size="lg"
-                            className="mb-2 shadow"
-                            style={{ width: "100%" }}
-                          >
-                            Large button
-                          </Button>{" "}
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="row d-flex justify-content-center align-items-center w3-margin-top">
-                      <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
-                        <div className="container text-center">
-                          <Button
-                            variant="primary"
-                            size="sm"
-                            className="w3-margin-right"
-                          >
-                            Small button
-                          </Button>
-
-                          <Button
-                            variant="secondary"
-                            size="sm"
-                            className="shadow"
-                          >
-                            Small button
-                          </Button>
-                        </div>
-                      </div>
-                    </div>
-                    <br />
-                    <hr />
-                    <div className="row d-flex justify-content-center align-items-center w3-margin-top w3-padding-16">
-                      <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
-                        <div className="container text-center">
-                          <p>
-                            {" "}
-                            <i className="fa fa-info-circle  w3-large text-info"></i>{" "}
-                            Buttons can serve as notifiers such as: close
-                            "this", or badges notifications to look at "that".
-                          </p>
-                          <CloseButton className="w3-margin-right w3-padding-large shadow border border-black border-2" />
-                          <Button variant="primary" style={{ padding: "12px" }}>
-                            Profile <Badge bg="secondary">9</Badge>
-                            <span className="visually-hidden">
-                              unread messages
-                            </span>
-                          </Button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <hr />
-
-                    <div className="row d-flex  justify-content-center align-items-center w3-margin-top w3-padding-16">
-                      <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
-                        <div className="container text-center">
-                          <p>
-                            <i className="fa fa-info-circle w3-large text-info"></i>{" "}
-                            Buttons can be linked to functions such as:
-                            downloads, video play and even social media
-                            profiles.
-                          </p>
-                          <Button
-                            variant="secondary"
-                            size="sm"
-                            className="rounded-circle shadow w3-margin-right"
-                            style={{
-                              width: "50px",
-                              height: "50px",
-                              borderRadius: "50%",
-                            }}
-                          >
-                            <i className="fa fa-download w3-large"></i>
-                          </Button>
-
-                          <Button
-                            variant="success"
-                            size="sm"
-                            className="w3-opacity w3-hover-opacity-off rounded-circle w3-margin-right"
-                            style={{
-                              width: "50px",
-                              height: "50px",
-                              borderRadius: "50%",
-                            }}
-                          >
-                            <i className="fa fa-play w3-large"></i>
-                          </Button>
-                          <Button
-                            variant="danger"
-                            size="sm"
-                            className=" rounded-circle"
-                            style={{
-                              width: "50px",
-                              height: "50px",
-                              borderRadius: "50%",
-                            }}
-                          >
-                            <FontAwesomeIcon
-                              icon={faPinterest}
-                              className="w3-large"
-                            />
-                          </Button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div></div>
-            
+      <div>
+           {/**Start INTRO Web Components */}
+        <div className="container w3-padding-top-64 mb-4">
+          <div className="row d-flex justify-content-center align-items-center w3-padding-large">
+          <div className="col-sm-12 col-md-6 col-lg-6 flex-column my-1">
+          <h1>Web Components</h1>
+              <p>
+           
+Web components enable the creation of custom elements for web pages and apps. Offering benefits like code reuse, encapsulation, and interoperability.
+              </p>
+              <img src={WebComponentsTrans} alt="web-components" style={{width:'100%'}} ></img>
             </div>
-            {/*End col-4*/}
-
-            {/*Start col-8*/}
-
-            <div className="w3-col l8"
-            id="components">
-              <div className="w3-content">
-                <div className="w3-white align-items-center justify-content-center"></div>
-                <div className="w3-card w3-light-gray" style={{paddingTop:'0px'}}>
-                <div className="container w3-padding-large w3-padding-24">
-                  <h3 className="">
-                      <b className="fw-bold text-black">WEB</b>
-                      <span className="text-muted fw-light">COMPONENTS</span>
-                    </h3>
-                    <hr />
-                    <p style={{fontSize:'18px'}}>
-                      Web components are a set of standardized technologies that
-                      enable the creation of custom elements for web
-                      applications. Promote code reusability, maintainability,
-                      and interoperability across different web frameworks and
-                      libraries.
-                    </p>
-                    </div>
-                    </div>
-   
-
-
-<div className="w3-card  w3-margin-top" >
-                <div className="container w3-padding-large w3-padding-24">
-                 
-                  <h4 id="alerts" className="w3-margin-top">
-                    <b className="fw-bold text-black">ALERT</b>
-                    <span className="fw-light text-muted">COMPONENTS.</span>
-                  </h4>
-                  <p>
-                    Alert color options are strategically chosen to convey
-                    different meanings and priorities. Color options and
-                    designed use are as follows:{" "}
-                  </p>
-                  <hr />
-
-                  <Alert variant="info">
-                    <Alert.Heading>
-                      {" "}
-                      <h4 id="alerts">THIS IS AN ALERT.</h4>{" "}
-                    </Alert.Heading>
-                    <hr />
-                    <p className="mb-0 w3-hover-opacity w3-margin-bottom">
-                      Alerts are designed to be attention-grabbing, often with
-                      prominent colors, icons, and text formatting to ensure
-                      users notice them.
-                    </p>
-
-                    <hr />
-                    <p>Color indicates info alert.</p>
-                  </Alert>
-
-                  <div className="container">
-                    <h5 className="w3-margin-bottom w3-margin-top">
-                      ALERT BOX COLOR OPTIONS & USE:
-                    </h5>
-                    <div className="row justify-content-center align-items-center ">
-                      <div className="flex-column col-sm-12 col-md-6 col-lg-6">
-                        <p style={{ fontSize: "14px" }}>
-                          {" "}
-                          Blue, light gray, white, and black are often used to
-                          establish a messaging hierarchy, with 'primary' being
-                          the most prominent color, indicating the primary
-                          action or information.
-                        </p>
-                      </div>
-
-                      <div className="col-sm-12 col-md-6 col-lg-6">
-                        <div
-                          style={{ display: "flex", gap: "10px" }}
-                          className=" justify-content-center"
-                        >
-                          <div
-                            style={{
-                              display: "flex",
-                              flexDirection: "column",
-                              alignItems: "center",
-                            }}
-                          >
-                            <div
-                              style={{
-                                width: "35px",
-                                height: "35px",
-                                borderRadius: "50%",
-                                backgroundColor: "#b8daff",
-                              }}
-                              className="shadow"
-                            ></div>
-                            <p style={{ marginTop: "5px", fontSize: "12px" }}>
-                              Primary
-                            </p>
-                          </div>
-                          <div
-                            style={{
-                              display: "flex",
-                              flexDirection: "column",
-                              alignItems: "center",
-                            }}
-                          >
-                            <div
-                              style={{
-                                width: "35px",
-                                height: "35px",
-                                borderRadius: "50%",
-                                backgroundColor: "#d6d8db",
-                              }}
-                              className="shadow"
-                            ></div>
-                            <p style={{ marginTop: "5px", fontSize: "12px" }}>
-                              Secondary
-                            </p>
-                          </div>
-
-                          <div
-                            style={{
-                              display: "flex",
-                              flexDirection: "column",
-                              alignItems: "center",
-                            }}
-                          >
-                            <div
-                              style={{
-                                width: "35px",
-                                height: "35px",
-                                borderRadius: "50%",
-                                backgroundColor: "white",
-                              }}
-                              className="shadow"
-                            ></div>
-                            <p style={{ marginTop: "5px", fontSize: "12px" }}>
-                              White
-                            </p>
-                          </div>
-
-                          <div
-                            style={{
-                              display: "flex",
-                              flexDirection: "column",
-                              alignItems: "center",
-                            }}
-                          >
-                            <div
-                              style={{
-                                width: "35px",
-                                height: "35px",
-                                borderRadius: "50%",
-                                backgroundColor: "black",
-                              }}
-                              className="shadow"
-                            ></div>
-                            <p style={{ marginTop: "5px", fontSize: "12px" }}>
-                              Black
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <br />
-
-                    <div className="row justify-content-center align-items-center ">
-                      <div className="col-sm-12 col-md-6 col-lg-6">
-                        <p style={{ fontSize: "14px" }}>
-                          {" "}
-                          Green, red, and yellow are commonly associated with
-                          actions or statuses.
-                        </p>
-                      </div>
-                      <div className="col-sm-12 col-md-6 col-lg-6">
-                        <div
-                          style={{ display: "flex", gap: "10px" }}
-                          className="justify-content-center align-items-center "
-                        >
-                          <div
-                            style={{
-                              display: "flex",
-                              flexDirection: "column",
-                              alignItems: "center",
-                            }}
-                          >
-                            <div
-                              style={{
-                                width: "35px",
-                                height: "35px",
-                                borderRadius: "50%",
-                                backgroundColor: "#c3e6cb",
-                              }}
-                              className="shadow"
-                            ></div>
-                            <p style={{ marginTop: "5px", fontSize: "12px" }}>
-                              Success
-                            </p>
-                          </div>
-                          <div
-                            style={{
-                              display: "flex",
-                              flexDirection: "column",
-                              alignItems: "center",
-                            }}
-                          >
-                            <div
-                              style={{
-                                width: "35px",
-                                height: "35px",
-                                borderRadius: "50%",
-                                backgroundColor: " #f5c6cb",
-                              }}
-                              className="shadow"
-                            ></div>
-                            <p style={{ marginTop: "5px", fontSize: "12px" }}>
-                              Danger
-                            </p>
-                          </div>
-                          <div
-                            style={{
-                              display: "flex",
-                              flexDirection: "column",
-                              alignItems: "center",
-                            }}
-                          >
-                            <div
-                              style={{
-                                width: "35px",
-                                height: "35px",
-                                borderRadius: "50%",
-                                backgroundColor: "#ffeeba",
-                              }}
-                              className="shadow"
-                            ></div>
-                            <p style={{ marginTop: "5px", fontSize: "12px" }}>
-                              Warning
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <br />
-                    <div className="row justify-content-center align-items-center ">
-                      <div className="col-sm-12 col-md-6 col-lg-6">
-                        <p style={{ fontSize: "14px" }}>
-                          {" "}
-                          Lighter shades such as light and teal are frequently
-                          employed to inform, direct, or notify users without
-                          necessarily signaling urgency or importance.
-                        </p>
-                      </div>
-                      <div className="col-sm-12 col-md-6 col-lg-6">
-                        <div
-                          style={{ display: "flex", gap: "10px" }}
-                          className="justify-content-center align-items-center "
-                        >
-                          <div
-                            style={{
-                              display: "flex",
-                              flexDirection: "column",
-                              alignItems: "center",
-                            }}
-                          >
-                            <div
-                              style={{
-                                width: "35px",
-                                height: "35px",
-                                borderRadius: "50%",
-                                backgroundColor: "#bee5eb",
-                              }}
-                              className="shadow"
-                            ></div>
-                            <p style={{ marginTop: "5px", fontSize: "12px" }}>
-                              Info
-                            </p>
-                          </div>
-                          <div
-                            style={{
-                              display: "flex",
-                              flexDirection: "column",
-                              alignItems: "center",
-                            }}
-                          >
-                            <div
-                              style={{
-                                width: "35px",
-                                height: "35px",
-                                borderRadius: "50%",
-                                backgroundColor: "#f8f9fa",
-                              }}
-                              className="shadow"
-                            ></div>
-                            <p style={{ marginTop: "5px", fontSize: "12px" }}>
-                              Light
-                            </p>
-                          </div>
-                          <div
-                            style={{
-                              display: "flex",
-                              flexDirection: "column",
-                              alignItems: "center",
-                            }}
-                          >
-                            <div
-                              style={{
-                                width: "35px",
-                                height: "35px",
-                                borderRadius: "50%",
-                                backgroundColor: "#495057",
-                              }}
-                              className="shadow"
-                            ></div>
-                            <p style={{ marginTop: "5px", fontSize: "12px" }}>
-                              Dark
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                  </div>
-                  <br />
-                  <br />
-                  <h4 className="text-black w3-margin-top" id="tables">
-                    <b className="fw-bold text-black">TABLE</b>
-                    <span className="fw-light text-muted">COMPONENTS.</span>
-                  </h4>
-                  <hr />
-                  <div className="container">
-                    <p className="w3-text-black">
-                      Tables are structured grids used to present data in rows
-                      and columns. They're commonly used for displaying tabular
-                      data, such as product listings, pricing tables, or data
-                      summaries.
-                    </p>
-                    <div className="container  w3-padding">
-                      <TableBasic />
-                    </div>
-                    <br />
-                    <h4
-                      className="w3-text-black w3-margin-top"
-                      id="page-samples"
-                    >
-                      <b className="fw-bold text-black">GRAPHIC</b>
-                      <span className="fw-light text-muted"> ELEMENTS.</span>
-                    </h4>
-                    <hr className="w3-opacity" />
-                    <p className="w3-text-black">
-                      Graphics play a key role in communication, whether it's in
-                      advertising, branding, web design, or multimedia content.
-                      They serve as visual elements that enhance the
-                      presentation of information and ideas, making them more
-                      engaging, memorable, and effective.
-                    </p>
-                    <br />
-                    <br />
-                    <Graphics />
-                    {/**end graphics */}
-                  </div>
-                  {/**end col-8 container*/}
+            <div className="col-sm-12 col-md-6 col-lg-6 flex-column w3-padding-large my-1">
+       
               
-                {/**end col-8*/}
+              <style>
+                {`
+      .accordion-item {
+        border: none; /* Remove outside border */
+        border-bottom: 1px solid #dee2e6; /* Add bottom border */
+      }
+      .question.py-2 {
+        font-size: 2rem !important; /* Adjust font size */
+        font-weight: bold;
+      }
+  
+    `}
+              </style>
+              <Accordion defaultActiveKey="0" className="components-accordian">
+                {faqs.map((faq, index) => (
+                  <Accordion.Item
+                    key={index}
+                    eventKey={index.toString()}
+                    className="accordion-item"
+                  >
+                    <Accordion.Header
+                      className="question py-1 w3-xlarge"
+                      onClick={() => handleAccordionToggle(index)}
+                      style={{ fontSize: "2rem" }}
+                    >
+                      {faq.question}
+                    </Accordion.Header>
+                    <Accordion.Body className="answer">
+                      {faq.answer}
+                      <div>
+                        <Link to={faq.link}>
+                          <button className="link w3-button w3-black w3-round-xxlarge mt-2">
+                           Learn More
+                          </button>
+                        </Link>
+                      </div>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                ))}
+              </Accordion>
+            </div>
+          
+          </div>
+        </div>
+          {/**End INTRO Web Components */}
+        {/**Start Alerts */}
+        <div className="w3-light-gray">
+        <div className="container w3-padding-32 text-black" id="alerts">
+          <div className="row d-flex justify-content-center align-items-center w3-margin-top">
+            <div className="col-sm-12 col-md-6 col-lg-6 flex-column">
+              <div className="container ">
+                <h1>Alert Components</h1>
+                <p>
+                  Alert color options are strategically chosen to convey
+                  different meanings and priorities.
+                </p>
+
+                <Alert variant="danger" className="w3-round-xxlarge text-center shadow" style={{color:'#FF385C'}}>
+                  <Alert.Heading>
+                    {" "}
+                    <h4 >THIS IS AN ALERT.</h4>{" "}
+                  </Alert.Heading>
+                  <hr />
+                  <p className="mb-0 w3-hover-opacity w3-margin-bottom">
+                    Alerts are designed to be attention-grabbing, often with
+                    prominent colors, icons, and text formatting to ensure users
+                    notice them.
+                  </p>
+
+                  <hr />
+                  <p>Color indicates info <b>DANGER</b>.</p>
+                </Alert>
               </div>
             </div>
-            {/**end row */}
-            {/**start sample pages section*/}
+            <div className="col-sm-12 col-md-6 col-lg-6 flex-column">
+              <div className="container w3-padding-large">
+                <div className="row justify-content-center align-items-center ">
+                  <div className="flex-column col-sm-12 col-md-6 col-lg-6">
+                    <p style={{ fontSize: "14px" }}>
+                      {" "}
+                      Blue, light gray, white, and black are often used to
+                      establish a messaging hierarchy, with 'primary' being the
+                      most prominent color, indicating the primary action or
+                      information.
+                    </p>
+                  </div>
 
-              <div className="w3-container w3-content text-center w3-padding-48 w3-margin-top w3-margin-bottom w3-padding-small">
-              <h2 className="w3-text-black w3-margin-top" id="page-samples">
-                <b className="fw-bold text-black">PAGE</b>
-                <span className="fw-light text-reset" >SAMPLES.</span>
+                  <div className="col-sm-12 col-md-6 col-lg-6">
+                    <div
+                      style={{ display: "flex", gap: "10px" }}
+                      className=" justify-content-center"
+                    >
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: "#b8daff",
+                          }}
+                          className="shadow"
+                        ></div>
+                        <p className='text-primary' style={{ marginTop: "5px", fontSize: "12px" }}>
+                          Primary
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: "#d6d8db",
+                          }}
+                          className="shadow"
+                        ></div>
+                       <p className='text-secondary' style={{ marginTop: "5px", fontSize: "12px" }}>
+                          Secondary
+                        </p>
+                      </div>
+
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: "white",
+                          }}
+                          className="shadow"
+                        ></div>
+                        <p style={{ marginTop: "5px", fontSize: "12px" }}>
+                          White
+                        </p>
+                      </div>
+
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: "black",
+                          }}
+                          className="shadow"
+                        ></div>
+                        <p style={{ marginTop: "5px", fontSize: "12px" }}>
+                          Black
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br />
+
+                <div className="row justify-content-center align-items-center ">
+                  <div className="col-sm-12 col-md-6 col-lg-6">
+                    <p style={{ fontSize: "14px" }}>
+                      {" "}
+                      Green, red, and yellow are commonly associated with
+                      actions or statuses.
+                    </p>
+                  </div>
+                  <div className="col-sm-12 col-md-6 col-lg-6">
+                    <div
+                      style={{ display: "flex", gap: "10px" }}
+                      className="justify-content-center align-items-center "
+                    >
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: "#c3e6cb",
+                          }}
+                          className="shadow"
+                        ></div>
+                     <p className='text-success' style={{ marginTop: "5px", fontSize: "12px" }}>
+                          Success
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: " #f5c6cb",
+                          }}
+                          className="shadow"
+                        ></div>
+                       <p className='text-danger' style={{ marginTop: "5px", fontSize: "12px" }}>
+                          Danger
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: "#ffeeba",
+                          }}
+                          className="shadow"
+                        ></div>
+                       <p className='text-warning' style={{ marginTop: "5px", fontSize: "12px" }}>
+                          Warning
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div className="row justify-content-center align-items-center ">
+                  <div className="col-sm-12 col-md-6 col-lg-6">
+                    <p style={{ fontSize: "14px" }}>
+                      {" "}
+                      Lighter shades such as light and teal are frequently
+                      employed to inform, direct, or notify users without
+                      necessarily signaling urgency or importance.
+                    </p>
+                  </div>
+                  <div className="col-sm-12 col-md-6 col-lg-6">
+                    <div
+                      style={{ display: "flex", gap: "10px" }}
+                      className="justify-content-center align-items-center "
+                    >
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: "#bee5eb",
+                          }}
+                          className="shadow"
+                        ></div>
+                       <p className='text-info' style={{ marginTop: "5px", fontSize: "12px" }}>
+                          Info
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: "#f8f9fa",
+                          }}
+                          className="shadow"
+                        ></div>
+                        <p style={{ marginTop: "5px", fontSize: "12px" }}>
+                          Light
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                            borderRadius: "50%",
+                            backgroundColor: "#495057",
+                          }}
+                          className="shadow"
+                        ></div>
+                       <p className='text-dark' style={{ marginTop: "5px", fontSize: "12px" }}>
+                          Dark
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        {/**End Alerts */}
+
+
+        {/**Start Buttons section*/}
+        <div className="">
+        <div className="w3-container w3-padding-48 " id="buttons">
+          <h1 className="text-center w3-margin-bottom">Button Components</h1>
+          <h3 className="text-center">
+          Well-designed web buttons boost engagement, streamline navigation,
+           and prompt user actions, creating a more intuitive and compelling 
+           user experience.
+          </h3>
+          <p className="mb-2 text-center">
+            <b> Button variations displayed include:</b> <br />
+            size, color, outline, solid, shape, icon elements and shadowing to
+            give the appearance the element is floating.{" "}
+          </p>
+       </div>
+        </div>
+
+        <div className="w3-content ">
+     {/**Start buttons row*/}
+         <div className="row d-flex justify-content-center align-items-center ">
+           {/**Start Intro to buttons col*/}
+          <div className="w3-col l6 flex-column justify-content-center align-items-center">
+          <div className="w3-card w3-padding-32 w3-padding-large border mb-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "white", color:'#FF385C', height:'20rem' }}>
+                <div className="text-center" >
+              <h3>Are buttons important?</h3>
+              <p>"Explore these statistics, which suggest that buttons are not only integral to web development but also play a pivotal role in driving business growth."</p>
+            {/** 
+            <p>     Buttons can serve as notifiers such as: close "this", or
+                    badges notifications to look at "that".</p>
+                    <p>Buttons vary in size, color, outline, solid, shape, icon elements and shadowing to give the appearance the element is floating.</p>
+*/}
+                    </div>
+            </div>
+            </div>
+              {/**end Intro to buttons */}
+             {/**start form submission buttons */}
+            <div className="w3-col l6 flex-column justify-content-center align-items-center">  
+            <div className="w3-card w3-padding-32 w3-padding-large border mb-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "#FF385C", color:'white', height:'20rem' }}>
+                <div className="text-center">
+                <h4>Submission Buttons</h4>
+Data from Formstack indicates that optimizing form design, including the placement and design of submission buttons, can increase form completion rates by up to 120%.
+<div className="w3-padding-8 mt-3">
+<Button
+                    variant="black"
+                    size="sm"
+                    className="rounded-circle shadow w3-margin-right"
+                    style={{
+                      width: "50px",
+                      height: "50px",
+                      borderRadius: "50%",
+                    }}
+                  >
+                    <i className="fa fa-download w3-large text-white"></i>
+                  </Button>
+                  <Button
+                 
+                    size="sm"
+                    className="btn-black w3-hover-opacity-off rounded-circle w3-margin-right w3-gray"
+                    style={{
+                      width: "50px",
+                      height: "50px",
+                      borderRadius: "50%",
+                    }}
+                  >
+                    <i className="fa fa-paper-plane w3-large"></i>
+                  </Button>
+                  <Button
+                    variant="white"
+                    size="sm"
+                    className=" rounded-circle"
+                    style={{
+                      width: "50px",
+                      height: "50px",
+                      borderRadius: "50%",
+                      backgroundColor: "white"
+                    }}
+                  >
+                     <i className="fa fa-upload w3-large"></i>
+                  </Button>
+                </div>
+                 
+                  </div>
+                  </div>
+                    {/**end form submission buttons */}
+            </div>         
+            </div>
+
+       <div className="row d-flex justify-content-center align-items-center ">
+        {/**start cta */}
+            <div className="w3-col l6 flex-column justify-content-center align-items-center">
+            <div className="w3-card w3-padding-32 w3-padding-large border mb-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "#FF385C", color:'white', height:'20rem' }}>
+                <div className="text-center" >
+                <h4 className="text-center mb-3">Call-To-Action</h4>
+                According to a study by HubSpot, websites with clear and compelling CTAs have a 47% higher conversion rate than those without.
+SmallBizGenius found that personalized CTAs increases conversion rates by up to 202%.
+<div className="w3-padding-8 mt-3">
+ <Button
+                    variant="outline-dark"
+                    size="lg"
+                    className="mb-2 mx-1 shadow"
+                    style={{ width: "50%", borderRadius: '50px', backgroundColor:'white' }}
+                  >
+                   Learn More
+                  </Button>{" "}          
+ </div>
+ <div>
+ <Button
+                    variant="dark"
+                    size="sm"
+                    className="my-2 mx-1 shadow"
+                    style={{borderRadius: '50px'}}
+                  >
+                    Start Now
+                  </Button>
+ </div>
+                  </div>
+                  
+                  </div>
+                 
+            </div>
+               {/**end cta */}
+                  {/**start nav buttons */}
+            <div className="w3-col l6 flex-column justify-content-center align-items-center">
+            <div className="w3-card w3-padding-32 w3-padding-large border mb-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "#FF385C", color:'white', height:'20rem' }}>
+                <div className="text-center">
+                <h4 className="text-center mb-3">Navigation Buttons</h4>
+NN Group suggests clear and consistent navigation can boost usability by up to 50%.
+A study by Forrester revealed that improving website navigation can lead to a 10% increase in website conversions.
+<div className="w3-padding-8 mt-3">
+<Button
+                    variant="black"
+                    size="sm"
+                    className="rounded-circle shadow w3-margin-right"
+                    style={{
+                      width: "50px",
+                      height: "50px",
+                      borderRadius: "50%",
+                    }}
+                  >
+                    <i className="fa fa-home w3-large text-white"></i>
+                  </Button>
+                  <Button
+                   
+                    size="sm"
+                    className="w3-hover-opacity-off rounded-circle w3-margin-right w3-gray"
+                    style={{
+                      width: "50px",
+                      height: "50px",
+                      borderRadius: "50%",
+                    }}
+                  >
+                    <i className="fa fa-user w3-large"></i>
+                  </Button>
+                  <Button
+                    variant="white"
+                    size="sm"
+                    className="w3-hover-opacity-off rounded-circle w3-margin-right"
+                    style={{
+                      width: "50px",
+                      height: "50px",
+                      borderRadius: "50%",
+                    }}
+                  >
+                    <i className="fa fa-lock w3-large"></i>
+                  </Button>
+                  <div>
+                    
+                  </div>
+              
+                  <Button
+                    variant="dark"
+                    size="lg"
+                    className="mb-2 mx-1 shadow my-3"
+                    style={{borderRadius: '5px'}}
+                  >
+                     <i className="fa fa-shopping-cart"></i> Checkout
+                  </Button>
+                </div>
+                 
+                 
+                  </div>
+                  </div>
+            </div>
+             {/**end nav buttons */}
+            </div>
+            </div>
+
+            <div className="w3-content">
+          <div className="row d-flex justify-content-center align-items-center w3-margin-top">
+            <div className="w3-col l12">
+              <div className="w3-card w3-white py-3 border mb-1">
+                <div className="container text-center w3-padding-large">
+                  <p className="text-reset">
+                    <i className="fa fa-info-circle w3-large text-black"></i>{" "}
+                  Collection of additional Web Buttons.
+                  </p>
+                  <Button
+                    variant="black"
+                    size="sm"
+                    className="rounded shadow mx-1"
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "40%",
+                    }}
+                  >
+                    <i className="fa fa-square text-white"></i>
+                  </Button>
+
+                  <Button
+                    variant="white"
+                    size="sm"
+                    className="btn-outline-black w3-hover-opacity-off rounded-circle mx-1 w3-margin-right"
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "40%",
+                    }}
+                  >
+                    <i className="fa fa-play"></i>
+                  </Button>
+                  <Button
+                    variant="danger"
+                    size="sm"
+                    className=" rounded-circle mx-1"
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "40%",
+                      backgroundColor: "#FF385C"
+                    }}
+                  >
+                    <FontAwesomeIcon icon={faPinterest}/>
+                  </Button>
+
+                  <CloseButton className="mx-1 w3-padding-large shadow border border-black border-2" style={{ padding: "12px" }} />
+                  <Button variant="black" className="mx-1" style={{ padding: "12px" }}>
+                    Profile <Badge bg="white text-black" > 9</Badge>
+                    <span className="visually-hidden">unread messages</span>
+                  </Button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <br />
+            <br />
+          </div>
+        {/**End Buttons */}
+
+
+        {/**Start Tables*/}
+        <div className="w3-light-gray w3-padding-32">
+        <div className="w3-container w3-padding-32"  id="tables">
+          <h1 className="text-center w3-margin-bottom">Table Components</h1>
+                <h3 className="text-center">
+                  Tables are structured grids used to present data in rows and
+                  columns. They're commonly used for displaying tabular data,
+                  such as product listings, pricing tables, or data summaries.
+                </h3>
+        </div>
+       
+        <div
+          className="w3-container w3-content w3-padding-16 text-black"
+          id="tables"
+        >
+                  <TableBasic />
+           <br />
+           <br />
+            </div>
+            </div>
+        {/**End Tables*/}
+
+
+
+
+
+        {/**Start Samples */}
+        <div className="w3-container w3-padding-48">
+        <div className="row d-flex justify-content-center align-items-center">
+      
+          <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
+            <div className="container w3-white text-center w3-padding-large w3-padding-small">
+            <h2 className="w3-text-black w3-margin-top" id="page-samples">
+                <b className="fw-bold text-black">Page Samples</b>
+               
               </h2>
               <hr className="w3-opacity" />
-             
-             
-              <h2 className="text-black">
-              Each type of website serves a unique purpose and requires
+
+              <h4 className="text-black">
+                Each type of website serves a unique purpose and requires
                 specific features and functionalities to effectively achieve its
                 objectives and meet the needs of its target audience.{" "}
-        </h2><br />
-        <p> <i>
+              </h4>
+              <br />
+              <p>
+                {" "}
+                <i>
                   <b> NOTE:</b> "Sample pages are under construction. View with
                   the understanding it's a work in progress. Thanks for your
                   patience."
-                </i></p>
-              <button className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom" 
-              style={{backgroundColor:'#FF385C'}}>
-              <Link to="/page-samples#page-samples"
+                </i>
+              </p>
+              <button
+                className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom"
+                style={{ backgroundColor: "#FF385C" }}
+              >
+                <Link
+                  to="/page-samples#page-samples"
                   className="button text-white"
                   onClick={scrollToTop}
                 >
-               Sample Sites
+                 View 1-Page Samples
                 </Link>
               </button>
-              </div> 
+            </div>
           </div>
-          <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
+        </div>
+        </div>
+        {/**End Samples */}
+
+        <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">
-              <a href="#portfolio" style={{color:'#FF385C'}}>Back to top</a>
+              <a href="#portfolio" style={{ color: "#FF385C" }}>
+                Back to top
+              </a>
             </p>
           </div>
         </footer>
-        </div>
-        {/**^^^end main container*/}
-        {/**end portfolio container wholepage */}
       </div>
     </motion.div>
   );

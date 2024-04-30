@@ -347,6 +347,46 @@ function PageSamples() {
                 </div>
               </div>
             </div>
+
+              {/**Start Samples */}
+        <div className="w3-container w3-padding-48 w3-margin-top">
+        <div className="row d-flex justify-content-center align-items-center">
+      
+          <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
+            <div className="container w3-white text-center w3-padding-large w3-padding-small">
+            <h2 className="w3-text-black w3-margin-top" id="server">
+                <b className="fw-bold text-black">Utility Apps</b>
+               
+              </h2>
+              <hr className="w3-opacity" />
+
+              <h4 className="text-black">
+                
+              Unlike applications that emphasize visual appeal, utility applications prioritize seamless functionality, catering to users' practical requirements. By offering practical solutions and streamlined workflows, these applications empower users to accomplish tasks swiftly and efficiently, placing functionality at the forefront of their design."</h4>
+              <br />
+              <p>
+              
+                <i>
+                  <b> NOTE:</b> "I am in the process of adding more utility functions. Please be forgiving of the layout, as it is temporary. Thanks in advance for your patience!"
+                </i>
+              </p>
+              <button
+                className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom"
+                style={{ backgroundColor: "#FF385C" }}
+              >
+                <Link
+                  to="/server#server"
+                  className="button text-white"
+                  onClick={scrollToTop}
+                >
+                 View Utility Apps
+                </Link>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+        {/**End Samples */}
           </div>
           <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
