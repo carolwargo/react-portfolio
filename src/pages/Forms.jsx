@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from "emailjs-com";
 import {
-  MDBFooter,
   MDBContainer,
   MDBCol,
   MDBRow,
@@ -180,20 +179,17 @@ id='authorization'>
 {/**End container*/}
 
 
-  {/**Start  Subscription No container*/}
- <MDBFooter  className="w3-padding-64 text-black text-lg-left">
- <MDBContainer className="p-4">
 
-  <MDBContainer className="p-4">
+
  <MDBRow className="d-flex justify-content-center align-items-center">
- <MDBCol md="6" size="6" className="mb-4 mb-md-0">
+ <MDBCol md="6" size="12" className="mb-4 mb-md-0 w3-padding-large">
  <h2>Subscription forms are used to capture a user's contact information. </h2>
   <p> By submitting the form, users consent to receive communications from the website or service. A way 
   to build and maintain a mailing list of interested users or customers.</p>
   </MDBCol>
           <MDBCol md="6" size="12" className="mb-4 mb-md-0">
-            <MDBContainer className="w3-card w3-padding-large w3-padding-24 w3-black w3-round-xxlarge" >
-         
+            <MDBContainer >
+         <div className="w3-card w3-padding-large w3-padding-24 w3-black w3-round-large">
             <form onSubmit={handleSubmit}>
               <MDBRow className="d-flex justify-content-center ">
                 <div className="w3-margin-bottom">
@@ -230,22 +226,22 @@ id='authorization'>
                 </MDBCol>
               </MDBRow>
             </form>
+            </div>
             </MDBContainer>
           </MDBCol>
         
         </MDBRow>
-   </ MDBContainer>
-        <div className='container'>
-    
-      <div className="row d-flex w3-padding-36 justify-content-center w3-padding-top-64 w3-margin-top"
+
+   
+      <div className="row d-flex w3-padding-36 justify-content-center align-items-center w3-margin-top"
 id='subscription'>   
-   <div className='text-center w3-padding-large mb-5'>
+   <div className='text-center w3-padding-large mb-3'>
           <h3>The benefit of regularly engaging with subscribers through targeted email campaigns 
   can yield tangible benefits across multiple areas of your business.</h3>
           </div>
 
      <div className='col-sm-12 col-md-3 col-lg-3 flex-column justify-content-center text-black w3-padding-large'>
-     <Card style={{ width: '18rem', backgroundColor:'#FF385C', color:'white' }} >
+     <Card style={{ width: '23rem', backgroundColor:'#FF385C', color:'white' }} >
       <Card.Body>
         <Card.Text>
         B2B marketers report that email is the most effective channel for generating leads (HubSpot).
@@ -255,7 +251,7 @@ According to OptinMonster, welcome emails have an average open rate of 82%.
     </Card>
      </div>
    <div className='col-sm-12 col-md-3 col-lg-3 flex-column justify-content-center text-black w3-padding-large'>
-   <Card style={{ width: '18rem', backgroundColor:'#FF385C', color:'white' }} >
+   <Card style={{ width: '23rem', backgroundColor:'#FF385C', color:'white' }} >
       <Card.Body>
         <Card.Text>
         "80% of retail professionals cite email marketing as their top driver of customer retention. Loyal customers can be worth up to 10 times their initial purchase, as per Invesp."
@@ -264,7 +260,7 @@ According to OptinMonster, welcome emails have an average open rate of 82%.
     </Card>
    </div>
       <div className='col-sm-12 col-md-3 col-lg-3 flex-column justify-content-center text-black w3-padding-large'>
-      <Card style={{ width: '18rem', backgroundColor:'#FF385C', color:'white' }} >
+      <Card style={{ width: '23rem', backgroundColor:'#FF385C', color:'white' }} >
       <Card.Body>
         <Card.Text>
         Email marketing has a high (ROI), averaging around $42 for every dollar spent (DMA).
@@ -274,7 +270,7 @@ Automated email campaigns generate 320% more revenue than non-automated ones.
     </Card>
  </div>
     <div className='col-sm-12 col-md-3 col-lg-3 flex-column justify-content-center text-black w3-padding-large'>
-    <Card style={{ width: '18rem', backgroundColor:'#FF385C', color:'white' }} >
+    <Card style={{ width: '23rem', backgroundColor:'#FF385C', color:'white' }} >
       <Card.Body>
         <Card.Text>
         Segmented email campaigns drive a 760% increase in revenue (Campaign Monitor).
@@ -283,9 +279,55 @@ Personalized subject lines increase open rates by 50% (Yes Marketing). </Card.Te
     </Card>
 </div>
 </div>
-</div>
 
-      </MDBContainer>
+
+ 
+
+        {/**Start Samples */}
+        <div className="w3-container w3-padding-48">
+        <div className="row d-flex justify-content-center align-items-center">
+      
+          <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
+            <div className="container w3-white text-center w3-padding-large w3-padding-small">
+            <h2 className="w3-text-black w3-margin-top" id="page-samples">
+                <b className="fw-bold text-black">Page Samples</b>
+               
+              </h2>
+              <hr className="w3-opacity" />
+
+              <h4 className="text-black">
+                Each type of website serves a unique purpose and requires
+                specific features and functionalities to effectively achieve its
+                objectives and meet the needs of its target audience.{" "}
+              </h4>
+              <br />
+              <p>
+                {" "}
+                <i>
+                  <b> NOTE:</b> "Sample pages are under construction. View with
+                  the understanding it's a work in progress. Thanks for your
+                  patience."
+                </i>
+              </p>
+              <button
+                className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom"
+                style={{ backgroundColor: "#FF385C" }}
+              >
+                <Link
+                  to="/page-samples#page-samples"
+                  className="button text-white"
+                  onClick={scrollToTop}
+                >
+                 View 1-Page Samples
+                </Link>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+        {/**End Samples */}
+
+
       <div className='text-center w3-padding-24'>
       <h5 className='text-center w3-padding-24' ><i>more to come... Thanks for your patience!</i></h5>
     
@@ -299,7 +341,7 @@ Personalized subject lines increase open rates by 50% (Yes Marketing). </Card.Te
                 </Link>
               </button>
               </div>
-    </MDBFooter>
+ 
   <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">

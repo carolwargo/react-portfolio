@@ -57,19 +57,7 @@ function Portfolio() {
         "Web tables are used for presenting data such as financial reports, product listings, and comparison charts on websites.",
       link: "/portfolio#tables",
     },
-    {
-      question: "Form Components",
-      answer:
-        "Web forms are used for collecting user information, submitting data to servers, and performing various actions based on user input.",
-      link: "/forms#forms",
-    },
   
-    {
-      question: "Server-Side Apps",
-      answer:
-        "Web forms are used for collecting user information, submitting data to servers, and performing various actions based on user input.",
-      link: "/server#server",
-    },
   ];
 
   return (
@@ -459,7 +447,7 @@ Web components enable the creation of custom elements for web pages and apps. Of
          <div className="row d-flex justify-content-center align-items-center ">
            {/**Start Intro to buttons col*/}
           <div className="w3-col l6 flex-column justify-content-center align-items-center">
-          <div className="w3-card w3-padding-32 w3-padding-large border mb-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "white", color:'#FF385C', height:'20rem' }}>
+          <div className="w3-card w3-padding-32 w3-padding-large border mb-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "white", color:'#FF385C', height:'22rem' }}>
                 <div className="text-center" >
               <h3>Are buttons important?</h3>
               <p>"Explore these statistics, which suggest that buttons are not only integral to web development but also play a pivotal role in driving business growth."</p>
@@ -474,7 +462,7 @@ Web components enable the creation of custom elements for web pages and apps. Of
               {/**end Intro to buttons */}
              {/**start form submission buttons */}
             <div className="w3-col l6 flex-column justify-content-center align-items-center">  
-            <div className="w3-card w3-padding-32 w3-padding-large border mb-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "#FF385C", color:'white', height:'20rem' }}>
+            <div className="w3-card w3-padding-32 w3-padding-large border mb-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "#FF385C", color:'white', height:'22rem' }}>
                 <div className="text-center">
                 <h4>Submission Buttons</h4>
 Data from Formstack indicates that optimizing form design, including the placement and design of submission buttons, can increase form completion rates by up to 120%.
@@ -527,7 +515,7 @@ Data from Formstack indicates that optimizing form design, including the placeme
        <div className="row d-flex justify-content-center align-items-center ">
         {/**start cta */}
             <div className="w3-col l6 flex-column justify-content-center align-items-center">
-            <div className="w3-card w3-padding-32 w3-padding-large border mb-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "#FF385C", color:'white', height:'20rem' }}>
+            <div className="w3-card w3-padding-32 w3-padding-large border mb-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "#FF385C", color:'white', height:'22rem' }}>
                 <div className="text-center" >
                 <h4 className="text-center mb-3">Call-To-Action</h4>
                 According to a study by HubSpot, websites with clear and compelling CTAs have a 47% higher conversion rate than those without.
@@ -560,7 +548,7 @@ SmallBizGenius found that personalized CTAs increases conversion rates by up to 
                {/**end cta */}
                   {/**start nav buttons */}
             <div className="w3-col l6 flex-column justify-content-center align-items-center">
-            <div className="w3-card w3-padding-32 w3-padding-large border mb-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "#FF385C", color:'white', height:'20rem' }}>
+            <div className="w3-card w3-padding-32 w3-padding-large border mb-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "#FF385C", color:'white', height:'22rem' }}>
                 <div className="text-center">
                 <h4 className="text-center mb-3">Navigation Buttons</h4>
 NN Group suggests clear and consistent navigation can boost usability by up to 50%.
@@ -719,8 +707,8 @@ A study by Forrester revealed that improving website navigation can lead to a 10
       
           <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
             <div className="container w3-white text-center w3-padding-large w3-padding-small">
-            <h2 className="w3-text-black w3-margin-top" id="page-samples">
-                <b className="fw-bold text-black">Page Samples</b>
+            <h2 className="w3-text-black w3-margin-top" id="forms">
+                <b className="fw-bold text-black">Form Components</b>
                
               </h2>
               <hr className="w3-opacity" />
@@ -744,11 +732,11 @@ A study by Forrester revealed that improving website navigation can lead to a 10
                 style={{ backgroundColor: "#FF385C" }}
               >
                 <Link
-                  to="/page-samples#page-samples"
+                  to="/forms#forms"
                   className="button text-white"
                   onClick={scrollToTop}
                 >
-                 View 1-Page Samples
+                View Form Components
                 </Link>
               </button>
             </div>
