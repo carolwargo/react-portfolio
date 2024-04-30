@@ -93,8 +93,9 @@ id='forms'
     </div>
 
 <div className='w3-content w3-container'>
-<div className='w3-padding-48'>
-  <h2 className='text-center text-black'>Web forms offer a powerful way to engage with your audience, collect data, and enhance user experience on your website.</h2>
+<div className='w3-padding-top-48 text-center text-black'>
+  <h1>WEB FORMS</h1>
+  <h3>Web forms offer a powerful way to engage with your audience, collect data, and enhance user experience on your website.</h3>
   </div>
   {/**Start webforms intro*/}
 <div className="row d-flex w3-padding-32 justify-content-center align-items-center"
@@ -125,13 +126,25 @@ workflows.
  {/**Start authentication*/}
  <div className='w3-light-gray'>
   <div className='w3-content w3-container w3-padding-48 justify-content-center align-items-center'>
-  <h2 className='w3-margin-top' >The gatekeepers that verify the identity of users and determine what actions or resources they are allowed to access within a system. </h2>
-  <div className="row d-flex justify-content-center align-items-center w3-padding-48"
+  <div className="container text-center w3-padding-large ">
+    <h3 style={{color:'#FF385C'}}><b>Access Control Forms</b></h3>
+    <hr />
+  <h4 className='w3-margin-top'>
+   
+"The gatekeepers, responsible for verifying the identity of users and regulating their access to 
+actions or resources based on permissions and privileges. 
+Examples include Login or Sign Up forms. How are they different?"
+    </h4>
+    Continue reading for a brief overview. 
+  </div>
+  <div className="row d-flex justify-content-center align-items-center w3-padding-16"
 id='authentication'>
-
-<div className='col-sm-12 col-md-6 col-lg-6 flex-column justify-content-center text-black w3-padding-large'>
-<h4 className='w3-margin-bottom'>AUTHENTICATION</h4>
-
+<div className='col-sm-12 col-md-6 col-lg-6 flex-column justify-content-center align-items-center text-black w3-padding-large'>
+<div className="container w3-padding-large ">
+<h3 className=" w3-margin-top">
+                <b className="fw-bold" style={{color:'#FF385C'}}>Authentication</b> {'(Signup)'}
+              </h3>
+<hr />
 <p className='text-black'>Authentication is the process of verifying the identity of a user, system, or application.</p>
 <p>Methods of authentication:</p>
 <ul>
@@ -140,10 +153,10 @@ id='authentication'>
 <li>Certificate-Based Authentication</li>
 <li>Token-Based Authentication</li>
 </ul> 
-
-<h6><i>An example of an authentication form is a sign up form.</i></h6>
+</div>
 </div>
 <div className='col-sm-12 col-md-6 col-lg-6 w3-padding-small justify-content-center'>
+
 <SignUp/>
 </div>
 </div>
@@ -152,10 +165,15 @@ id='authentication'>
 
   {/**Start authorization */}
 
-<div className="row d-flex justify-content-center align-items-center w3-padding-48"
+<div className="row d-flex justify-content-center align-items-center w3-padding-16"
 id='authorization'>
 <div className='col-sm-12 col-md-6 col-lg-6 flex-column justify-content-center align-items-center text-black w3-padding-large'>
-    <h4 className='w3-margin-bottom'>AUTHORIZATION</h4>
+<div className="container w3-padding-large ">
+            <h3 className=" w3-margin-top">
+                <b className="fw-bold" style={{color:'#FF385C'}}>Authorization</b> {'(Login)'}
+              </h3>
+              <hr className="w3-opacity" /> 
+              
     <p className='text-black'>Authorization defines permissions and privileges granted to users after successful authentication, ensuring that users can only access the resources they are allowed to use.</p>
  <p>Key components of authorization:</p>
   <ul>
@@ -165,9 +183,10 @@ id='authorization'>
     <li>Attribute-Based Access Control Authorization</li>
 </ul> 
 
-<h6><i>An example of an authorization form is a login form.</i></h6>
+</div>
 </div>
 <div className='col-sm-12 col-md-6 col-lg-6 w3-padding-small justify-content-center align-items-center'>
+
 <Login/>
 </div>
 </div>
@@ -180,14 +199,23 @@ id='authorization'>
 
 
 
+<div className='w3-container w3-padding-large mb-3 w3-padding-48'>
+<div className="container w3-white text-center w3-padding-large w3-padding-small">
+            <h2 className="w3-text-black w3-margin-top">
+                <b className="fw-bold text-black">Subscription Forms</b>
+              </h2>
+              <hr className="w3-opacity" />
+              <h4 className="text-black">
+              Subscription forms are used to capture a User's contact information. 
+ By submitting the form, users consent to receive communications from the website or service. A way 
+  to build and maintain a mailing list of interested users or customers.{" "}
+              </h4>
+              <br />
+  
+ <MDBRow className="d-flex justify-content-center align-items-center w3-padding-large">
+ <MDBCol md="3" size="3" className="mb-4 mb-md-0"></MDBCol>
+ <MDBCol md="6" size="6" className="mb-4 mb-md-0 justify-content-center">
 
- <MDBRow className="d-flex justify-content-center align-items-center">
- <MDBCol md="6" size="12" className="mb-4 mb-md-0 w3-padding-large">
- <h2>Subscription forms are used to capture a user's contact information. </h2>
-  <p> By submitting the form, users consent to receive communications from the website or service. A way 
-  to build and maintain a mailing list of interested users or customers.</p>
-  </MDBCol>
-          <MDBCol md="6" size="12" className="mb-4 mb-md-0">
             <MDBContainer >
          <div className="w3-card w3-padding-large w3-padding-24 w3-black w3-round-large">
             <form onSubmit={handleSubmit}>
@@ -229,58 +257,57 @@ id='authorization'>
             </div>
             </MDBContainer>
           </MDBCol>
-        
+          <MDBCol md="3" size="3" className="mb-4 mb-md-0 w3-padding-large"></MDBCol>
         </MDBRow>
-
-   
-      <div className="row d-flex w3-padding-36 justify-content-center align-items-center w3-margin-top"
-id='subscription'>   
-   <div className='text-center w3-padding-large mb-3'>
-          <h3>The benefit of regularly engaging with subscribers through targeted email campaigns 
-  can yield tangible benefits across multiple areas of your business.</h3>
-          </div>
-
-     <div className='col-sm-12 col-md-3 col-lg-3 flex-column justify-content-center text-black w3-padding-large'>
-     <Card style={{ width: '23rem', backgroundColor:'#FF385C', color:'white' }} >
+       
+        <div className="row d-flex justify-content-center align-items-center text-center w3-padding-32" id='subscription'>
+<div className='container w3-padding-large w3-margin-bottom'>
+    <h5>The <span style={{color:'#FF385C'}}><b>BENEFITS OF REGULARLY ENGAGING WITH SUBSCRIBERS </b></span> through targeted email campaigns can yield tangible benefits across multiple areas of your business.</h5>
+    <p>Stats that support the importance of capturing an email...</p>
+    </div>
+  
+  <div className='col-sm-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center text-black g-1'>
+    <Card style={{ width: '18rem', backgroundColor:'#FF385C', color:'white' }} >
       <Card.Body>
         <Card.Text>
-        B2B marketers report that email is the most effective channel for generating leads (HubSpot).
-According to OptinMonster, welcome emails have an average open rate of 82%.
- </Card.Text>
-      </Card.Body>
-    </Card>
-     </div>
-   <div className='col-sm-12 col-md-3 col-lg-3 flex-column justify-content-center text-black w3-padding-large'>
-   <Card style={{ width: '23rem', backgroundColor:'#FF385C', color:'white' }} >
-      <Card.Body>
-        <Card.Text>
-        "80% of retail professionals cite email marketing as their top driver of customer retention. Loyal customers can be worth up to 10 times their initial purchase, as per Invesp."
-</Card.Text>
-      </Card.Body>
-    </Card>
-   </div>
-      <div className='col-sm-12 col-md-3 col-lg-3 flex-column justify-content-center text-black w3-padding-large'>
-      <Card style={{ width: '23rem', backgroundColor:'#FF385C', color:'white' }} >
-      <Card.Body>
-        <Card.Text>
-        Email marketing has a high (ROI), averaging around $42 for every dollar spent (DMA).
-Automated email campaigns generate 320% more revenue than non-automated ones. 
+          B2B marketers report that email is the most effective channel for generating leads (HubSpot). According to OptinMonster, welcome emails have an average open rate of 82%.
         </Card.Text>
       </Card.Body>
     </Card>
- </div>
-    <div className='col-sm-12 col-md-3 col-lg-3 flex-column justify-content-center text-black w3-padding-large'>
-    <Card style={{ width: '23rem', backgroundColor:'#FF385C', color:'white' }} >
+  </div>
+  
+  <div className='col-sm-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center text-black g-1'>
+    <Card style={{ width: '18rem', backgroundColor:'#FF385C', color:'white' }} >
       <Card.Body>
         <Card.Text>
-        Segmented email campaigns drive a 760% increase in revenue (Campaign Monitor).
-Personalized subject lines increase open rates by 50% (Yes Marketing). </Card.Text>
+          "80% of retail professionals cite email marketing as their top driver of customer retention. Loyal customers can be worth up to 10 times their initial purchase, as per Invesp."
+        </Card.Text>
       </Card.Body>
     </Card>
+  </div>
+  
+  <div className='col-sm-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center text-black g-1'>
+    <Card style={{ width: '18rem', backgroundColor:'#FF385C', color:'white' }} >
+      <Card.Body>
+        <Card.Text>
+          Email marketing has a high (ROI), averaging around $42 for every dollar spent (DMA). Automated email campaigns generate 320% more revenue than non-automated ones. 
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  </div>
+  
+  <div className='col-sm-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center text-black g-1'>
+    <Card style={{ width: '18rem', backgroundColor:'#FF385C', color:'white' }} >
+      <Card.Body>
+        <Card.Text>
+          Segmented email campaigns drive a 760% increase in revenue (Campaign Monitor). Personalized subject lines increase open rates by 50% (Yes Marketing).
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  </div>
 </div>
 </div>
-
-
+</div>
  
 
         {/**Start Samples */}
@@ -289,7 +316,9 @@ Personalized subject lines increase open rates by 50% (Yes Marketing). </Card.Te
       
           <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
             <div className="container w3-white text-center w3-padding-large w3-padding-small">
-            <h2 className="w3-text-black w3-margin-top" id="page-samples">
+           
+            <h2 className="w3-text-black w3-margin-top">
+
                 <b className="fw-bold text-black">Page Samples</b>
                
               </h2>
@@ -327,21 +356,6 @@ Personalized subject lines increase open rates by 50% (Yes Marketing). </Card.Te
         </div>
         {/**End Samples */}
 
-
-      <div className='text-center w3-padding-24'>
-      <h5 className='text-center w3-padding-24' ><i>more to come... Thanks for your patience!</i></h5>
-    
-      <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2" 
-              style={{backgroundColor:'black'}}>
-              <Link to="/portfolio#portfolio"
-                  className="button text-white"
-                  onClick={scrollToTop}
-                >
-               Back To Portfolio
-                </Link>
-              </button>
-              </div>
- 
   <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">
