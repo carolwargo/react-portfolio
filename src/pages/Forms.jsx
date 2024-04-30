@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import emailjs from "emailjs-com";
 import {
-  MDBContainer,
-  MDBCol,
   MDBRow,
   MDBInput,
   MDBBtn,
-  MDBCheckbox
+  MDBCheckbox,
 } from "mdb-react-ui-kit";
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
@@ -91,18 +89,20 @@ id='forms'
       </div>
     </header>
     </div>
-
+ {/**Start webforms intro*/}
 <div className='w3-content w3-container'>
-<div className='w3-padding-top-48 text-center text-black'>
+<div className='w3-padding-top-32 text-center text-black'>
   <h1>WEB FORMS</h1>
   <h3>Web forms offer a powerful way to engage with your audience, collect data, and enhance user experience on your website.</h3>
   </div>
-  {/**Start webforms intro*/}
+  {/**Start webforms rows*/}
 <div className="row d-flex w3-padding-32 justify-content-center align-items-center"
 id='web-components'>
-<div className='col-sm-12 col-md-6 col-lg-6 flex-column justify-content-center text-black px-2'>
-<img src={LoginBW} alt='login-form' style={{width:'100%',border: '2px solid #FF385C' }} className='shadow  w3-round-xxlarge'></img>
+   {/**Start webforms image col*/}
+<div className='col-sm-12 col-md-6 col-lg-6 flex-column justify-content-center text-black w3-padding-large'>
+<img src={LoginBW} alt='login-form' style={{width:'100%',border: '2px solid #FF385C' }} className='shadow  w3-round-large'></img>
 </div>
+{/**Start webforms content col*/}
 <div className='col-sm-12 col-md-6 col-lg-6 flex-column justify-content-center align-items-center text-black w3-padding-large'>
 <h4>BENEFITS OF WEB FORMS</h4>
 <ol style={{fontSize:'14px'}}>
@@ -120,14 +120,16 @@ workflows.
 </div>
 </div>
 </div>
-<br />
  {/**End webforms intro*/}
 
+
+
+
  {/**Start authentication*/}
- <div className='w3-light-gray'>
-  <div className='w3-content w3-container w3-padding-48 justify-content-center align-items-center'>
-  <div className="container text-center w3-padding-large ">
-    <h3 style={{color:'#FF385C'}}><b>Access Control Forms</b></h3>
+
+  <div className='w3-container w3-content w3-padding-32'>
+  <div className="container text-center ">
+    <h3><b>ACCESS CONTROL FORMS</b></h3>
     <hr />
   <h4 className='w3-margin-top'>
    
@@ -135,40 +137,40 @@ workflows.
 actions or resources based on permissions and privileges. 
 Examples include Login or Sign Up forms. How are they different?"
     </h4>
-    Continue reading for a brief overview. 
   </div>
-  <div className="row d-flex justify-content-center align-items-center w3-padding-16"
-id='authentication'>
-<div className='col-sm-12 col-md-6 col-lg-6 flex-column justify-content-center align-items-center text-black w3-padding-large'>
-<div className="container w3-padding-large ">
-<h3 className=" w3-margin-top">
-                <b className="fw-bold" style={{color:'#FF385C'}}>Authentication</b> {'(Signup)'}
-              </h3>
-<hr />
-<p className='text-black'>Authentication is the process of verifying the identity of a user, system, or application.</p>
-<p>Methods of authentication:</p>
-<ul>
-<li>Password-Based Authentication</li> 
-<li>Multi-Factor Authentication (MFA)</li>
-<li>Certificate-Based Authentication</li>
-<li>Token-Based Authentication</li>
-</ul> 
+  <div className="row d-flex justify-content-center align-items-center w3-padding-top-32 w3-margin-top" id='authentication'>
+  <div className='col-sm-12 col-md-6 col-lg-6 flex-column justify-content-center align-items-center text-black w3-padding-16'>
+    <div className='container w3-margin-left'>
+      <h3>
+        <b className="fw-bold" style={{color:'#FF385C'}}>Authentication</b> {'(Signup)'}
+      </h3>
+      <hr />
+      <p className='text-black'>Authentication is the process of verifying the identity of a user, system, or application.</p>
+      <p>Methods of authentication:</p>
+      <ul>
+        <li>Password-Based Authentication</li> 
+        <li>Multi-Factor Authentication (MFA)</li>
+        <li>Certificate-Based Authentication</li>
+        <li>Token-Based Authentication</li>
+      </ul> 
+    </div>
+  </div>
+  <div className='col-sm-12 col-md-6 col-lg-6 justify-content-center'>
+    <div className="container">
+      <SignUp/>
+    </div>
+  </div>
 </div>
-</div>
-<div className='col-sm-12 col-md-6 col-lg-6 w3-padding-small justify-content-center'>
 
-<SignUp/>
-</div>
-</div>
 <br />
  {/**End authentication*/}
 
   {/**Start authorization */}
 
-<div className="row d-flex justify-content-center align-items-center w3-padding-16"
-id='authorization'>
-<div className='col-sm-12 col-md-6 col-lg-6 flex-column justify-content-center align-items-center text-black w3-padding-large'>
-<div className="container w3-padding-large ">
+  <div className="row d-flex justify-content-center align-items-center w3-padding-top-32 w3-margin-top" id='authentication'>
+  <div className='col-sm-12 col-md-6 col-lg-6 flex-column justify-content-center align-items-center text-black w3-padding-16'>
+    <div className='container w3-margin-left'>
+      
             <h3 className=" w3-margin-top">
                 <b className="fw-bold" style={{color:'#FF385C'}}>Authorization</b> {'(Login)'}
               </h3>
@@ -186,84 +188,90 @@ id='authorization'>
 </div>
 </div>
 <div className='col-sm-12 col-md-6 col-lg-6 w3-padding-small justify-content-center align-items-center'>
-
+<div className="container">
 <Login/>
 </div>
 </div>
 </div>
 </div>
-<br />
+
+
 {/**End authorization*/}
-
-{/**End container*/}
-
+{/**End web forms container*/}
 
 
-<div className='w3-container w3-padding-large mb-3 w3-padding-48'>
-<div className="container w3-white text-center w3-padding-large w3-padding-small">
-            <h2 className="w3-text-black w3-margin-top">
-                <b className="fw-bold text-black">Subscription Forms</b>
-              </h2>
+
+
+      <div className="w3-container w3-content w3-padding-48">
+        <div className="row d-flex justify-content-center ">
+          <div className="flex-column col-sm-12 col-md-6 col-lg-6 justify-content-center ">
+            <div className="container w3-white w3-padding-large ">
+            <h3 className="">
+                <b className="fw-bold" style={{color:'#FF385C'}}>Subscription</b> Form
+              </h3>
               <hr className="w3-opacity" />
-              <h4 className="text-black">
+              <p className="text-black">
               Subscription forms are used to capture a User's contact information. 
  By submitting the form, users consent to receive communications from the website or service. A way 
   to build and maintain a mailing list of interested users or customers.{" "}
-              </h4>
+             {" "}
+              </p>
               <br />
+            </div>
+          </div>
+     
+       
+         <div className="flex-column col-sm-12 col-md-6 col-lg-6 justify-content-center ">
   
- <MDBRow className="d-flex justify-content-center align-items-center w3-padding-large">
- <MDBCol md="3" size="3" className="mb-4 mb-md-0"></MDBCol>
- <MDBCol md="6" size="6" className="mb-4 mb-md-0 justify-content-center">
-
-            <MDBContainer >
-         <div className="w3-card w3-padding-large w3-padding-24 w3-black w3-round-large">
+        {/**End subscribe content */}
+        <div className='w3-container w3-padding-large'>
+         <div className="w3-card w3-padding w3-padding-24 w3-light-gray w3-round-large">
+       
             <form onSubmit={handleSubmit}>
               <MDBRow className="d-flex justify-content-center ">
-                <div className="w3-margin-bottom">
-              <h5 className='text-white'>SUBSCRIBE</h5>
-              </div>
-                <MDBCol md="8" size="12" >
+                <div md="8" size="12" >
                   <MDBInput
                     type="email"
                     id="user_email"
+                    className='bg-white border border-black border-3 '
                     label="Email address"
                     contrast
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
+                    labelStyle={{ fontSize: '13px', color:'black' }} 
                   />
-                  <MDBCheckbox className='w3-white border-white'
-        wrapperClass='d-flex w3-margin-top link-offset-1-hover mt-4'
+                  <MDBCheckbox className='w3-white border-black'
+        wrapperClass='d-flex w3-margin-top link-offset-1-hover mt-2'
         id='form5Example3'
         label={
-          <span>
-            I agree to the <a href="/terms-and-conditions" className="text-decoration-underline text-light">terms & conditions</a>.
+          <span >
+            I agree to the <a href="/terms-and-conditions" className="text-decoration-underline text-black">terms & conditions</a>.
           </span>
         }
         defaultChecked
         required
-        labelStyle={{ fontSize: '13px', color:'white' }} 
+        labelStyle={{ fontSize: '13px', color:'black' }} 
       />
     
-                </MDBCol>
-                <MDBCol md="4" size="12" >
-                  <MDBBtn color="light" type="submit">
+                </div>
+                <div md="4" size="12" >
+                  <MDBBtn color="dark" type="submit" className='mt-2'>
                     Subscribe
                   </MDBBtn>
-                </MDBCol>
+                </div>
               </MDBRow>
             </form>
             </div>
-            </MDBContainer>
-          </MDBCol>
-          <MDBCol md="3" size="3" className="mb-4 mb-md-0 w3-padding-large"></MDBCol>
-        </MDBRow>
-       
-        <div className="row d-flex justify-content-center align-items-center text-center w3-padding-32" id='subscription'>
-<div className='container w3-padding-large w3-margin-bottom'>
-    <h5>The <span style={{color:'#FF385C'}}><b>BENEFITS OF REGULARLY ENGAGING WITH SUBSCRIBERS </b></span> through targeted email campaigns can yield tangible benefits across multiple areas of your business.</h5>
-    <p>Stats that support the importance of capturing an email...</p>
+            </div>
+            </div>  
+            </div>
+            <div className="container w3-white text-center w3-padding-large ">
+        
+              <br />
+        <div className="row d-flex justify-content-center align-items-center text-center " id='subscription'>
+<div className='container w3-padding-8'>
+   <p><span style={{color:'#FF385C'}}><b>THE BENEFITS.</b></span> Stats that support the importance of capturing an email...</p>
     </div>
   
   <div className='col-sm-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center text-black g-1'>
@@ -308,16 +316,43 @@ id='authorization'>
 </div>
 </div>
 </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 
         {/**Start Samples */}
-        <div className="w3-container w3-padding-48">
+        <div className="w3-container w3-padding-32">
         <div className="row d-flex justify-content-center align-items-center">
       
           <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
             <div className="container w3-white text-center w3-padding-large w3-padding-small">
            
-            <h2 className="w3-text-black w3-margin-top">
+            <h2 className="w3-text-black">
 
                 <b className="fw-bold text-black">Page Samples</b>
                
