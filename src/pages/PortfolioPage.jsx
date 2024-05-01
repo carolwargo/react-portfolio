@@ -74,7 +74,8 @@ function Portfolio() {
           <div className="row d-flex justify-content-center align-items-center w3-padding-large">
           <div className="col-sm-12 col-md-6 col-lg-6 flex-column">
           <h1>My Work</h1>
-          <p>"My Work, My Portfolio consists of multiple sample pages of a wide range of elements, images, apps, functions and more." </p>
+          <p>"My Work, My Portfolio consists of multiple sample pages of a wide range of elements, images, apps, functions and more. 
+Follow the path to witness my level of understanding in both function and design."</p>
               <img src={WebComponentsTrans} alt="web-components" style={{width:'100%'}} ></img>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-6 flex-column w3-padding-large my-1">
@@ -448,7 +449,8 @@ function Portfolio() {
          <div className="row d-flex justify-content-center align-items-center ">
            {/**Start Intro to buttons col*/}
           <div className="w3-col l6 flex-column justify-content-center align-items-center">
-          <div className="w3-card w3-padding-32 w3-padding-large border mb-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "white", color:'#FF385C', height:'22rem' }}>
+          <div className="w3-card w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
+          style={{ backgroundColor: "white", color:'#FF385C', height:'22rem' }}>
                 <div className="text-center" >
               <h3>Are buttons important?</h3>
               <p>"Explore these statistics, which suggest that buttons are not only integral to web development but also play a pivotal role in driving business growth."</p>
@@ -463,7 +465,8 @@ function Portfolio() {
               {/**end Intro to buttons */}
              {/**start form submission buttons */}
             <div className="w3-col l6 flex-column justify-content-center align-items-center">  
-            <div className="w3-card w3-padding-32 w3-padding-large border mb-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "#FF385C", color:'white', height:'22rem' }}>
+            <div className="w3-card w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
+            style={{ height:'22rem' }}>
                 <div className="text-center">
                 <h4>Submission Buttons</h4>
 Data from Formstack indicates that optimizing form design, including the placement and design of submission buttons, can increase form completion rates by up to 120%.
@@ -516,7 +519,8 @@ Data from Formstack indicates that optimizing form design, including the placeme
        <div className="row d-flex justify-content-center align-items-center ">
         {/**start cta */}
             <div className="w3-col l6 flex-column justify-content-center align-items-center">
-            <div className="w3-card w3-padding-32 w3-padding-large border mb-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "#FF385C", color:'white', height:'22rem' }}>
+            <div className="w3-card w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
+            style={{height:'22rem' }}>
                 <div className="text-center" >
                 <h4 className="text-center mb-3">Call-To-Action</h4>
                 According to a study by HubSpot, websites with clear and compelling CTAs have a 47% higher conversion rate than those without.
@@ -549,7 +553,8 @@ SmallBizGenius found that personalized CTAs increases conversion rates by up to 
                {/**end cta */}
                   {/**start nav buttons */}
             <div className="w3-col l6 flex-column justify-content-center align-items-center">
-            <div className="w3-card w3-padding-32 w3-padding-large border mb-1 d-flex justify-content-center align-items-center" style={{ backgroundColor: "#FF385C", color:'white', height:'22rem' }}>
+            <div className="w3-card w3-light-gray w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
+            style={{ height:'22rem' }}>
                 <div className="text-center">
                 <h4 className="text-center mb-3">Navigation Buttons</h4>
 NN Group suggests clear and consistent navigation can boost usability by up to 50%.
@@ -616,7 +621,7 @@ A study by Forrester revealed that improving website navigation can lead to a 10
             <div className="w3-content">
           <div className="row d-flex justify-content-center align-items-center w3-margin-top">
             <div className="w3-col l12">
-              <div className="w3-card w3-white py-3 border mb-1">
+              <div className="w3-card bg-danger-subtle py-3 border mb-1">
                 <div className="container text-center w3-padding-large">
                   <p className="text-reset">
                     <i className="fa fa-info-circle w3-large text-black"></i>{" "}
@@ -638,7 +643,7 @@ A study by Forrester revealed that improving website navigation can lead to a 10
                   <Button
                     variant="white"
                     size="sm"
-                    className="btn-outline-black w3-hover-opacity-off rounded-circle mx-1 w3-margin-right"
+                    className="btn-outline-black bg-white w3-hover-opacity-off rounded-circle mx-1 w3-margin-right"
                     style={{
                       width: "40px",
                       height: "40px",
@@ -661,7 +666,7 @@ A study by Forrester revealed that improving website navigation can lead to a 10
                     <FontAwesomeIcon icon={faPinterest}/>
                   </Button>
 
-                  <CloseButton className="mx-1 w3-padding-large shadow border border-black border-2" style={{ padding: "12px" }} />
+                  <CloseButton className="mx-1 w3-padding-large bg-white shadow border border-black border-2" style={{ padding: "12px" }} />
                   <Button variant="black" className="mx-1" style={{ padding: "12px" }}>
                     Profile <Badge bg="white text-black" > 9</Badge>
                     <span className="visually-hidden">unread messages</span>
@@ -715,7 +720,7 @@ A study by Forrester revealed that improving website navigation can lead to a 10
               <hr className="w3-opacity" />
 
               <h4 className="text-black">
-              Digital forms streamline data collection processes, enhance user engagement, and facilitate seamless communication between users and organizations. With their adaptability and efficiency, forms serve as indispensable assets in modern digital environments, catering to a wide range of needs and requirements.
+      With their adaptability and efficiency, forms serve as indispensable assets in modern digital environments, catering to a wide range of needs and requirements.
               </h4>
               <br />
               <p>

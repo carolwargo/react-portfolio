@@ -36,19 +36,22 @@ function PageSamples() {
               zIndex: 1,
             }}
           >
-            <div className="w3-container w3-content w3-padding-small">
           
-            <h2 className="text-center text-black"><b>The following sample sites are meant to showcase the possibilities.</b>
-            
-            <span className='text-black' >
+            <h2 className="text-center text-black"><b>Sample Website Layouts</b></h2>
+            <hr className="w3-opacity" />
+          <h5>Discover some of the many possibilities when crafting online 
+            experiences. From sleek and functional designs to blog sites,  
+            portfolio showcases, or e-commerce platforms, the options are 
+            limitless.</h5>
+            <span className='text-black' style={{fontSize:'16px'}}>
               <b><em>'Each sample site below started as a full, 
                 multi-page website, now showcased here as one-page 
-                snippets.'</em></b></span></h2>
+                snippets.'</em></b></span>
 
- </div>
+
 </div>
         </header>
-      </div>
+    
 
 
 {/**Start Real Estate */}
@@ -492,6 +495,7 @@ function PageSamples() {
                 </div>
             </div>
 */}
+  </div>
     </div>
     </motion.div>
   );

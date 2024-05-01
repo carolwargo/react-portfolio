@@ -71,7 +71,7 @@ id='forms'
     <div className='forms w3-padding-top-48' id='forms'>
       {/* Side Navigation */}
       <nav className={`w3-sidebar w3-bar-block w3-card w3-animate-top w3-center w3-padding-64 ${isOpen ? 'w3-show' : 'w3-hide'}`} style={{ zIndex: '999', width: '100%', position: 'fixed', top: '0' }}>
-        <h1 className="w3-xxxlarge ">Web Forms</h1>
+        <p className="w3-xxxlarge ">Web Forms</p>
         <button className="w3-bar-item w3-button w3-large" onClick={toggleSidebar}>Close <i className="fa fa-remove w3-large"></i></button>
         <a href="#common" className="w3-bar-item w3-button w3-xxlarge">Commonly Used Forms</a>
         <a href="#authentication" className="w3-bar-item w3-button w3-xxlarge">Authentication</a>
@@ -84,7 +84,7 @@ id='forms'
       <div className="w3-center" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
        
         <div className="w3-padding-64">
-          <button className="w3-btn w3-xlarge w3-hover-light-grey shadow w3-round-xxlarge"  onClick={toggleSidebar} style={{ fontWeight: "900", backgroundColor:'#FF385C', color:'white' }}> <i className="fa fa-bars w3-xlarge w3-margin-right" ></i>Web Forms</button>
+          <button className="w3-btn w3-large w3-hover-light-grey shadow w3-round-xxlarge"  onClick={toggleSidebar} style={{ fontWeight: "400", backgroundColor:'#FF385C', color:'white' }}> <i className="fa fa-bars w3-large w3-margin-right" ></i>Web Forms</button>
         </div>
       </div>
     </header>
