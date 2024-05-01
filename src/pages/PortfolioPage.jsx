@@ -72,16 +72,17 @@ function Portfolio() {
            {/**Start INTRO Web Components */}
         <div className="container w3-padding-top-64 mb-4" id="web-components">
           <div className="row d-flex justify-content-center align-items-center w3-padding-large">
-          <div className="col-sm-12 col-md-6 col-lg-6 flex-column my-1">
-          <h1>Web Components</h1>
-              <p>
-           
-Web components enable the creation of custom elements for web pages and apps. Offering benefits like code reuse, encapsulation, and interoperability.
-              </p>
+          <div className="col-sm-12 col-md-6 col-lg-6 flex-column">
+          <h1>My Work</h1>
+          <p>"My Work, My Portfolio consists of multiple sample pages of a wide range of elements, images, apps, functions and more." </p>
               <img src={WebComponentsTrans} alt="web-components" style={{width:'100%'}} ></img>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-6 flex-column w3-padding-large my-1">
-       
+            <h1>Web Components</h1>
+            <p>
+           
+           Web components enable the creation of custom elements for web pages and apps. Offering benefits like code reuse, encapsulation, and interoperability.
+                         </p>
               
               <style>
                 {`
@@ -714,16 +715,14 @@ A study by Forrester revealed that improving website navigation can lead to a 10
               <hr className="w3-opacity" />
 
               <h4 className="text-black">
-                Each type of website serves a unique purpose and requires
-                specific features and functionalities to effectively achieve its
-                objectives and meet the needs of its target audience.{" "}
+              Digital forms streamline data collection processes, enhance user engagement, and facilitate seamless communication between users and organizations. With their adaptability and efficiency, forms serve as indispensable assets in modern digital environments, catering to a wide range of needs and requirements.
               </h4>
               <br />
               <p>
                 {" "}
                 <i>
-                  <b> NOTE:</b> "Sample pages are under construction. View with
-                  the understanding it's a work in progress. Thanks for your
+                  "Sample forms are under construction. View with
+                  the understanding they a work in progress. Thanks for your
                   patience."
                 </i>
               </p>
