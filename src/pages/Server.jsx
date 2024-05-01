@@ -14,10 +14,10 @@ const Server = () => {
 
     return (
       
-        <div className="w3-container w3-content w3-padding-48">
+        <div className="w3-container w3-content w3-padding-48"  id="server">
         <div className="row d-flex justify-content-center align-items-center">
         <div className="w3-container w3-padding-32">
-        <h2 className="w3-text-black text-center" id="server">
+        <h2 className="w3-text-black text-center">
                 <b className="fw-bold text-black">Server-side Apps</b>     
               </h2>
               <hr className="w3-opacity" />

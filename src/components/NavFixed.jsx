@@ -17,7 +17,7 @@ function BasicExample() {
       behavior: "smooth"
     });
   };
-
+  const [isHovered, setIsHovered] = useState(false);
   const closeNav = () => setExpanded(false);
 
   const [expanded, setExpanded] = useState(false);
@@ -28,6 +28,18 @@ function BasicExample() {
     scrollToTop();
     closeNav();
   };
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+    // Add your logic here when the dropdown is hovered
+    console.log('Dropdown is hovered!');
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+    // Add your logic here when the mouse leaves the dropdown
+    console.log('Mouse left the dropdown!');
+  };
+
 
   return (
     <motion.div
@@ -48,23 +60,40 @@ function BasicExample() {
             <Nav className="me-auto">
               <Link to="/about#about" className="nav-link" onClick={handleNavLinkClick}>ABOUT</Link>
               <Link to="/resume#resume" className="nav-link" onClick={handleNavLinkClick}>RESUME</Link>
-              <Link to="/portfolio#portfolio" className="nav-link" onClick={handleNavLinkClick}>PORTFOLIO</Link>
-              <Link to="/page-samples#page-samples" className="nav-link" onClick={handleNavLinkClick}>1-PAGE SAMPLES</Link>
-         <NavDropdown title="WEB COMPONENTS" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/portfolio#components">
-              Web Components
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/forms#forms">
-               Form Components
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/page-samples">Sample Sites</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="/portfolio#server">
-              Server-Side Apps</NavDropdown.Item>
-              <NavDropdown.Item href="/portfolio#graphics">
-             Graphics</NavDropdown.Item>
+             <Link to="/page-samples#page-samples" className="nav-link" onClick={handleNavLinkClick}>SAMPLES</Link>
+         <NavDropdown title="MY WORK" id="basic-nav-dropdown"
+           
+             onMouseEnter={handleMouseEnter}
+             onMouseLeave={handleMouseLeave}
+             show={isHovered} 
+             >
+          <div style={{border:'3px solid', borderRadius:'10px'}}>
+         <NavDropdown.Item>
+         <Link to="/portfolio#portfolio" className="text-black">
+              PORTFOLIO</Link>
+</NavDropdown.Item>
+<NavDropdown.Item>
+  <Link to="/portfolio#web-components" className="text-black">COMPONENT SAMPLES</Link>
+</NavDropdown.Item>
+        
+              <NavDropdown.Item>
+  <Link to="/forms#forms" className="text-black">FORM SAMPLES</Link>
+</NavDropdown.Item>
+<NavDropdown.Item>
+  <Link to="/page-samples" className="text-black">PAGE SAMPLES</Link>
+</NavDropdown.Item>
+
+<NavDropdown.Item>
+  <Link to="/server#server" className="text-black">UTILITY APPS</Link>
+</NavDropdown.Item>
+<NavDropdown.Divider />
+
+<NavDropdown.Item>
+  <Link to="/graphics#graphics" className="text-black">COMING SOON! <br />Graphics Page</Link>
+</NavDropdown.Item>
+</div>
             
-            </NavDropdown>
+</NavDropdown>
               <Link to="/contact#contact" className="nav-link" onClick={handleNavLinkClick}>CONTACT</Link>
            </Nav>
           </Navbar.Collapse>
