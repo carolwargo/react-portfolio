@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.cf2f3200.css",
-    "main.js": "/react-portfolio/static/js/main.10f5341b.js",
+    "main.js": "/react-portfolio/static/js/main.70a9d3c1.js",
     "static/media/RealEstate.png": "/react-portfolio/static/media/RealEstate.ba0b8a8bd8b9df38e276.png",
     "static/media/ResumeDownload.pdf": "/react-portfolio/static/media/ResumeDownload.71d452106ce673e52434.pdf",
     "static/media/Album.png": "/react-portfolio/static/media/Album.624f5f271608ee54bae6.png",
@@ -15,8 +15,8 @@
     "static/media/Waterfall.png": "/react-portfolio/static/media/Waterfall.06f77bc70053675fa4b4.png",
     "static/media/YellowFlowers.png": "/react-portfolio/static/media/YellowFlowers.a16b1d292f2015a4c6cf.png",
     "static/media/YogaSet.png": "/react-portfolio/static/media/YogaSet.5b7bef601b298c2fce5f.png",
+    "static/media/WebComponentsTrans.png": "/react-portfolio/static/media/WebComponentsTrans.63309f315b4c00a48cac.png",
     "static/media/Business.png": "/react-portfolio/static/media/Business.2feb0411115e2f21fb28.png",
-    "static/media/WebComponentsTrans.png": "/react-portfolio/static/media/WebComponentsTrans.388d2e1720afbf2b863e.png",
     "static/media/fa-solid-900.ttf": "/react-portfolio/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
     "static/media/WomanReading.jpg": "/react-portfolio/static/media/WomanReading.9f7b768c7f3a87220bcc.jpg",
     "static/media/Horizen.png": "/react-portfolio/static/media/Horizen.e8e32ffff3b81362893a.png",
@@ -39,10 +39,10 @@
     "static/media/fa-v4compatibility.woff2": "/react-portfolio/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/react-portfolio/index.html",
     "main.cf2f3200.css.map": "/react-portfolio/static/css/main.cf2f3200.css.map",
-    "main.10f5341b.js.map": "/react-portfolio/static/js/main.10f5341b.js.map"
+    "main.70a9d3c1.js.map": "/react-portfolio/static/js/main.70a9d3c1.js.map"
   },
   "entrypoints": [
     "static/css/main.cf2f3200.css",
-    "static/js/main.10f5341b.js"
+    "static/js/main.70a9d3c1.js"
   ]
 }
