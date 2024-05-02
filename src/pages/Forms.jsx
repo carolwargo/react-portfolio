@@ -127,7 +127,7 @@ workflows.
 
  {/**Start authentication*/}
 
-  <div className='w3-container w3-content w3-padding-32'>
+  <div className='w3-container w3-content w3-padding-24'>
   <div className="container text-center ">
     <h3><b>ACCESS CONTROL FORMS</b></h3>
     <hr />
@@ -138,7 +138,7 @@ actions or resources based on permissions and privileges.
 Examples include Login or Sign Up forms. How are they different?"
     </h4>
   </div>
-  <div className="row d-flex justify-content-center align-items-center w3-padding-top-32 w3-margin-top" id='authentication'>
+  <div className="row d-flex justify-content-center align-items-center w3-padding-top-24 w3-margin-top" id='authentication'>
   <div className='col-sm-12 col-md-6 col-lg-6 flex-column justify-content-center align-items-center text-black w3-padding-16'>
     <div className='container w3-margin-left'>
       <h3>
@@ -167,7 +167,7 @@ Examples include Login or Sign Up forms. How are they different?"
 
   {/**Start authorization */}
 
-  <div className="row d-flex justify-content-center align-items-center w3-padding-top-32 w3-margin-top" id='authentication'>
+  <div className="row d-flex justify-content-center align-items-center w3-padding-top-24 w3-margin-top" id='authentication'>
   <div className='col-sm-12 col-md-6 col-lg-6 flex-column justify-content-center align-items-center text-black w3-padding-16'>
     <div className='container w3-margin-left'>
       
@@ -346,7 +346,7 @@ Examples include Login or Sign Up forms. How are they different?"
  
 
         {/**Start Samples */}
-        <div className="w3-container w3-padding-32">
+        <div className="w3-container w3-padding-16">
         <div className="row d-flex justify-content-center align-items-center">
       
           <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
@@ -373,18 +373,18 @@ Examples include Login or Sign Up forms. How are they different?"
                   patience."
                 </i>
               </p>
-              <button
-                className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom"
-                style={{ backgroundColor: "#FF385C" }}
-              >
-                <Link
+              <Link
                   to="/page-samples#page-samples"
                   className="button text-white"
                   onClick={scrollToTop}
                 >
+              <button
+                className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom"
+                style={{ backgroundColor: "#FF385C" }}
+              >
                  View 1-Page Samples
-                </Link>
               </button>
+              </Link>
             </div>
           </div>
         </div>

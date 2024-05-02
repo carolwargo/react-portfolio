@@ -56,7 +56,7 @@ function HomePage() {
               <div className="text-center w3-padding-16 w3-padding-large" style={{color:'#FF385C'}}>
               <p>NOTICE: I am adding and reconfiguring portfolio page and items... Thanks in advance for your patience. </p>
               <br />
-              <h4 className="text-black">Follow the link to learn more about me professionally.           
+              <h4 className="text-black">Click to learn more about me professionally.           
         </h4>
               <button className="w3-button w3-text-light-grey w3-padding  w3-round-xxlarge mt-2" 
               style={{backgroundColor:'#FF385C'}}>

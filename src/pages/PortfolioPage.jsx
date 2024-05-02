@@ -30,6 +30,12 @@ function Portfolio() {
   };
 
   const faqs = [
+     
+  {
+    question: "What is a web component?",
+    answer:
+      "Web components enable the creation of custom elements for web pages and apps. Offering benefits like code reuse, encapsulation, and interoperability.", 
+  },
     {
       question: "Alert Components",
       answer: 
@@ -38,13 +44,6 @@ function Portfolio() {
     },
 
  
- /*   {
-      question: "Why are graphics elements valuable?",
-      answer:
-        "Graphics elements are valuable in web design and development for enhancing visual appeal, conveying information effectively, and improving user engagement. They include images, icons, illustrations, charts, graphs, and other visual elements that help in illustrating concepts, guiding users, and making the user interface more engaging and intuitive.",
-      link: "/portfolio#graphics",
-    },
-    */
     {
       question: "Buttons Components",
       answer:
@@ -70,21 +69,29 @@ function Portfolio() {
     >
       <div>
            {/**Start INTRO Web Components */}
+           <div className="w3-container w3-content text-center w3-padding-top-48 text-black mt-4" id="web-components">
+          <div className="row d-flex justify-content-center align-items-center w3-padding-large">
+          <div className="col-sm-12 col-md-12 col-lg-12 flex-column">
+          <h1>My Work</h1>
+          <hr className="w3-opacity" />
+          <h4>"My Work, My Portfolio consists of multiple sample pages of a wide range of elements, images, apps, functions and more. 
+Follow the path to witness my level of understanding in both function and design."</h4>
+           </div>
+         
+            </div>
+
+
+
+
         <div className="container w3-padding-top-64 mb-4" id="web-components">
           <div className="row d-flex justify-content-center align-items-center w3-padding-large">
           <div className="col-sm-12 col-md-6 col-lg-6 flex-column">
-          <h1>My Work</h1>
-          <p>"My Work, My Portfolio consists of multiple sample pages of a wide range of elements, images, apps, functions and more. 
-Follow the path to witness my level of understanding in both function and design."</p>
-              <img src={WebComponentsTrans} alt="web-components" style={{width:'100%'}} ></img>
-            </div>
-            <div className="col-sm-12 col-md-6 col-lg-6 flex-column w3-padding-large my-1">
-            <h1>Web Components</h1>
-            <p>
+                       <img src={WebComponentsTrans} alt="web-components" style={{width:'100%'}} ></img>
            
-           Web components enable the creation of custom elements for web pages and apps. Offering benefits like code reuse, encapsulation, and interoperability.
-                         </p>
-              
+          </div>
+            <div className="col-sm-12 col-md-6 col-lg-6 flex-column w3-padding-large my-1">
+            <h3>Web Component Menu</h3>
+              <hr className="w3-opacity" />
               <style>
                 {`
       .accordion-item {
@@ -98,7 +105,7 @@ Follow the path to witness my level of understanding in both function and design
   
     `}
               </style>
-              <Accordion defaultActiveKey="0" className="components-accordian">
+              <Accordion defaultActiveKey="-1" className="components-accordian">
                 {faqs.map((faq, index) => (
                   <Accordion.Item
                     key={index}
@@ -126,9 +133,9 @@ Follow the path to witness my level of understanding in both function and design
                 ))}
               </Accordion>
             </div>
-          
+            </div>
           </div>
-        </div>
+       
           {/**End INTRO Web Components */}
         {/**Start Alerts */}
         <div className="w3-light-gray">
@@ -450,7 +457,7 @@ Follow the path to witness my level of understanding in both function and design
            {/**Start Intro to buttons col*/}
           <div className="w3-col l6 flex-column justify-content-center align-items-center">
           <div className="w3-card w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
-          style={{ backgroundColor: "white", color:'#FF385C', height:'22rem' }}>
+          style={{ backgroundColor: "white", color:'#FF385C', height:'20rem' }}>
                 <div className="text-center" >
               <h3>Are buttons important?</h3>
               <p>"Explore these statistics, which suggest that buttons are not only integral to web development but also play a pivotal role in driving business growth."</p>
@@ -466,7 +473,7 @@ Follow the path to witness my level of understanding in both function and design
              {/**start form submission buttons */}
             <div className="w3-col l6 flex-column justify-content-center align-items-center">  
             <div className="w3-card w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
-            style={{ height:'22rem' }}>
+            style={{ height:'20rem' }}>
                 <div className="text-center">
                 <h4>Submission Buttons</h4>
 Data from Formstack indicates that optimizing form design, including the placement and design of submission buttons, can increase form completion rates by up to 120%.
@@ -520,11 +527,11 @@ Data from Formstack indicates that optimizing form design, including the placeme
         {/**start cta */}
             <div className="w3-col l6 flex-column justify-content-center align-items-center">
             <div className="w3-card w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
-            style={{height:'22rem' }}>
+            style={{height:'20rem' }}>
                 <div className="text-center" >
                 <h4 className="text-center mb-3">Call-To-Action</h4>
-                According to a study by HubSpot, websites with clear and compelling CTAs have a 47% higher conversion rate than those without.
-SmallBizGenius found that personalized CTAs increases conversion rates by up to 202%.
+                According to HubSpot, websites with clear and compelling CTAs have a 47% higher conversion rate than those without.
+SmallBizGenius states personalized CTAs increase conversion rates up to 202%.
 <div className="w3-padding-8 mt-3">
  <Button
                     variant="outline-dark"
@@ -554,7 +561,7 @@ SmallBizGenius found that personalized CTAs increases conversion rates by up to 
                   {/**start nav buttons */}
             <div className="w3-col l6 flex-column justify-content-center align-items-center">
             <div className="w3-card w3-light-gray w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
-            style={{ height:'22rem' }}>
+            style={{ height:'20rem' }}>
                 <div className="text-center">
                 <h4 className="text-center mb-3">Navigation Buttons</h4>
 NN Group suggests clear and consistent navigation can boost usability by up to 50%.
@@ -602,7 +609,7 @@ A study by Forrester revealed that improving website navigation can lead to a 10
               
                   <Button
                     variant="dark"
-                    size="lg"
+                    size="sm"
                     className="mb-2 mx-1 shadow my-3"
                     style={{borderRadius: '5px'}}
                   >
@@ -641,18 +648,6 @@ A study by Forrester revealed that improving website navigation can lead to a 10
                   </Button>
 
                   <Button
-                    variant="white"
-                    size="sm"
-                    className="btn-outline-black bg-white w3-hover-opacity-off rounded-circle mx-1 w3-margin-right"
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      borderRadius: "40%",
-                    }}
-                  >
-                    <i className="fa fa-play"></i>
-                  </Button>
-                  <Button
                     variant="danger"
                     size="sm"
                     className=" rounded-circle mx-1"
@@ -679,7 +674,7 @@ A study by Forrester revealed that improving website navigation can lead to a 10
             <br />
           </div>
         {/**End Buttons */}
-
+        </div>
 
         {/**Start Tables*/}
         <div className="w3-light-gray w3-padding-32">
@@ -748,7 +743,7 @@ A study by Forrester revealed that improving website navigation can lead to a 10
         </div>
         </div>
         {/**End Samples */}
-
+      
         <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">

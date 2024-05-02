@@ -28,11 +28,11 @@ export default function ResumePage() {
     
     >
     
-      <div className="w3-margin-top w3-padding-32 " style={{maxWidth:"1400px"}}>
+      <div className="w3-margin-top w3-padding-top-32" style={{maxWidth:"1400px"}}>
       <div className="w3-display-container w3-padding w3-white">
   
       <div className="w3-row d-flex justify-content-center" >
-    <div className="w3-col m8 flex-column w3-padding-48 w3-center">
+    <div className="w3-col m8 flex-column w3-padding-24 w3-center">
         <h1 className='w3-text-black'>DIGITAL RESUME</h1>
 <h4>View my skills, work experience, volunteer background, or download a physical copy of my resume.</h4>
 </div>
@@ -46,7 +46,7 @@ export default function ResumePage() {
   {/*Left Column*/}
   <div className="w3-third flex-column justify-content-center align-items-center">
   
-    <div className="w3-text-grey w3-margin-bottom">
+    <div className="w3-text-grey">
       <div className="w3-display-container">
       <img src={MeWhite} style={{ width: "100%", border: '4px solid #FF385C' }} alt="me" className="w3-hover-opacity-off" />
  <div className="w3-display-bottomleft w3-container w3-text-white">
@@ -442,21 +442,17 @@ export default function ResumePage() {
  
  
 
-      <div className="w3-black
+      <div className="w3-light-gray w3-margin-top
       ">
-      <div className="w3-container w3-padding-48"> 
+      <div className="w3-container w3-padding-64"> 
       <div className="row d-flex justify-content-center align-items-end ">
       <div className="w3-col m12 flex-column">
-        <div className="w3-container w3-padding-16 text-center">
-     <h4>Service to others has consistently held a central place in my
-            household. Beyond its apparent merits, I personally consider
-            community service to be the single most powerful platform for my
-            personal growth, skill development, and most important exposure through the
-            opportunity to explore aspects of life that I may not have
-            encountered otherwise. Listed below are some of the programs I have been involved in."
-          
-       
-       </h4><br />
+        <div className="w3-container w3-content text-center">
+     <h2>SERVICE TO OTHERS</h2>
+     <hr className="w3-opacity" />
+     <h4>Community service has been my catalyst for personal growth, skill development, and exposure to new experiences. It offers me the chance to explore facets of life I wouldn't have encountered otherwise.</h4>
+
+       <p>Listed below are some of the programs I have been involved in.</p>
         
           </div>
         </div>
@@ -510,16 +506,19 @@ export default function ResumePage() {
 </div>          
 
   <div className="w3-container w3-content text-center w3-padding-48 w3-margin-top w3-margin-bottom w3-padding-small">
-              <h2 className="text-black">Please view my portfolio with the understanding, lots of changes and improvements are taking place behind the scenes. Thanks in advance for your patience!
+    <h2  className="text-black">My Work</h2>
+    <hr className="w3-opacity" />
+   <h4 className="text-black">Take a peek at "My Work"! There's a whole world of changes and improvements happening behind the scenes. Thanks in advance for your patience!
        
-        </h2><br />
+        </h4>
+        <br />
               <button className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom" 
               style={{backgroundColor:'#FF385C'}}>
               <Link to="/portfolio#portfolio"
                   className="button text-white"
                   onClick={scrollToTop}
                 >
-                Portfolio
+               View My Work
                 </Link>
               </button>
               </div> 
