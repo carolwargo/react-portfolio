@@ -691,16 +691,13 @@ A study by Forrester revealed that improving website navigation can lead to a 10
 
         {/**Start forms */}
         <div className="w3-container w3-padding-32">
-        <div className="row d-flex justify-content-center align-items-center">
-      
+        <div className="row d-flex justify-content-center align-items-center">   
           <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
             <div className="container w3-white text-center w3-padding-large w3-padding-small">
             <h2 className="w3-text-black w3-margin-top">
-                <b className="fw-bold text-black">FORM COMPONENTS</b>
-               
+                <b className="fw-bold text-black">FORM COMPONENTS</b>          
               </h2>
               <hr className="w3-opacity" />
-
               <h4 className="text-black">
       With their adaptability and efficiency, forms serve as indispensable assets in modern digital environments, catering to a wide range of needs and requirements.
               </h4>
