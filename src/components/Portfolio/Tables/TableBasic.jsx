@@ -7,8 +7,8 @@ const TableBasic = () => {
    <div className="tables" id="tables">
 
         <div className="row justify-content-center align-items-center">
-        <div className="card shadow w3-white">
-        <h5 className="fw-light w3-margin-top  text-center" style={{color:'#FF385C'}}><b>Basic Table</b></h5>
+ 
+        <h5 className="fw-light text-center" style={{color:'#FF385C'}}><b>Basic Table</b></h5>
                   <Table striped bordered hover className="w3-padding-small">
                       <thead>
                           <tr>
@@ -38,9 +38,9 @@ const TableBasic = () => {
                           </tr>
                       </tbody>
                   </Table>
-              </div>
+           
 
-              <div className="card shadow w3-white w3-margin">   
+           
               <h5 className="fw-light w3-margin-top text-center" style={{color:'#FF385C'}}><b>Light Striped with Hover</b></h5>
         <div className="row justify-content-center">
           <Table striped bordered hover variant="light">
@@ -73,8 +73,8 @@ const TableBasic = () => {
                       </tbody>
                   </Table>
               </div>
-              </div>
-              <div className="card shadow w3-dark-gray">
+             
+           
    <h5 className="fw-light w3-margin-top text-center" style={{color:'#FF385C'}}><b>Dark Striped with Hover</b></h5>
         <div className="row justify-content-center">
           <Table striped bordered hover variant="dark">
@@ -107,7 +107,7 @@ const TableBasic = () => {
                       </tbody>
                   </Table>
               </div>
-              </div>
+         
           </div>
       </div>
   );

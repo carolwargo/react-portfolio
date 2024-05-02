@@ -5,8 +5,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import TableBasic from "../components/Portfolio/Tables/TableBasic.jsx";
 import { Button, Badge, CloseButton } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPinterest } from "@fortawesome/free-brands-svg-icons";
 import WebComponentsTrans from "../assets/images/WebComponentsTrans.png";
 
 function Portfolio() {
@@ -69,21 +67,21 @@ function Portfolio() {
     >
       <div>
            {/**Start INTRO Web Components */}
-           <div className="w3-container w3-content text-center w3-padding-top-48 text-black mt-4" id="web-components">
+           <div className="w3-container text-center w3-padding-top-48 text-black mt-4" id="web-components">
           <div className="row d-flex justify-content-center align-items-center w3-padding-large">
           <div className="col-sm-12 col-md-12 col-lg-12 flex-column">
+          <div className="container">
           <h1>My Work</h1>
-          <hr className="w3-opacity" />
-          <h4>"My Work, My Portfolio consists of multiple sample pages of a wide range of elements, images, apps, functions and more. 
+          <h4 className="fw-regular">"My Work, My Portfolio consists of multiple sample pages of a wide range of elements, images, apps, functions and more. 
 Follow the path to witness my level of understanding in both function and design."</h4>
            </div>
-         
+           </div>
             </div>
 
 
 
 
-        <div className="container w3-padding-top-64 mb-4" id="web-components">
+        <div className="container w3-padding-top-48 mb-4" id="web-components">
           <div className="row d-flex justify-content-center align-items-center w3-padding-large">
           <div className="col-sm-12 col-md-6 col-lg-6 flex-column">
                        <img src={WebComponentsTrans} alt="web-components" style={{width:'100%'}} ></img>
@@ -135,16 +133,20 @@ Follow the path to witness my level of understanding in both function and design
             </div>
             </div>
           </div>
-       
+       </div>
+
           {/**End INTRO Web Components */}
         {/**Start Alerts */}
         <div className="w3-light-gray">
-        <div className="container w3-padding-32 text-black" id="alerts">
-          <div className="row d-flex justify-content-center align-items-center w3-margin-top">
-            <div className="col-sm-12 col-md-6 col-lg-6 flex-column">
-              <div className="container ">
-                <h1>Alert Components</h1>
-                <p>
+        <div className="w3-container  text-center w3-padding-top-48 text-black mt-4" id="alerts">
+        <div className="w3-content w3-padding-32 text-black" >
+          <div className="row d-flex justify-content-center align-items-center w3-margin-top mb-3">
+            <div className="col-sm-12 col-md-5 col-lg-5 flex-column">
+            
+                <h2>Alert Components</h2>
+                <hr />
+                
+                <p className="mb-4">
                   Alert color options are strategically chosen to convey
                   different meanings and priorities.
                 </p>
@@ -164,9 +166,9 @@ Follow the path to witness my level of understanding in both function and design
                   <hr />
                   <p>Color indicates info <b>DANGER</b>.</p>
                 </Alert>
-              </div>
+            
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-6 flex-column">
+            <div className="col-sm-12 col-md-7 col-lg-7 flex-column">
               <div className="container w3-padding-large">
                 <div className="row justify-content-center align-items-center ">
                   <div className="flex-column col-sm-12 col-md-6 col-lg-6">
@@ -429,38 +431,43 @@ Follow the path to witness my level of understanding in both function and design
               </div>
             </div>
           </div>
+
+        </div>
         </div>
         </div>
         {/**End Alerts */}
 
 
         {/**Start Buttons section*/}
-        <div className="">
-        <div className="w3-container w3-padding-48 " id="buttons">
+        <div className="w3-padding-large">
+        <div className="w3-container w3-content text-center w3-padding-top-48 text-black mt-4" id="buttons">
           <h1 className="text-center w3-margin-bottom">Button Components</h1>
-          <h3 className="text-center">
+          <hr />
+          
+          <h3 className="text-center fw-lighter">
           Well-designed web buttons boost engagement, streamline navigation,
            and prompt user actions, creating a more intuitive and compelling 
            user experience.
           </h3>
-          <p className="mb-2 text-center">
+          
+          <p className="mb-2 text-center fw-lighter">
             <b> Button variations displayed include:</b> <br />
             size, color, outline, solid, shape, icon elements and shadowing to
             give the appearance the element is floating.{" "}
           </p>
        </div>
-        </div>
+       </div>
 
-        <div className="w3-content ">
+      <div className="w3-container w3-content text-center  text-black mt-4">
      {/**Start buttons row*/}
          <div className="row d-flex justify-content-center align-items-center ">
            {/**Start Intro to buttons col*/}
-          <div className="w3-col l6 flex-column justify-content-center align-items-center">
+          <div className="w3-col l6 my-2 flex-column justify-content-center align-items-center">
           <div className="w3-card w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
           style={{ backgroundColor: "white", color:'#FF385C', height:'20rem' }}>
                 <div className="text-center" >
               <h3>Are buttons important?</h3>
-              <p>"Explore these statistics, which suggest that buttons are not only integral to web development but also play a pivotal role in driving business growth."</p>
+              <p style={{fontSize:'14px'}}>"Explore these statistics, which suggest that buttons are not only integral to web development but also play a pivotal role in driving business growth."</p>
             {/** 
             <p>     Buttons can serve as notifiers such as: close "this", or
                     badges notifications to look at "that".</p>
@@ -471,12 +478,13 @@ Follow the path to witness my level of understanding in both function and design
             </div>
               {/**end Intro to buttons */}
              {/**start form submission buttons */}
-            <div className="w3-col l6 flex-column justify-content-center align-items-center">  
+            <div className="w3-col l6 my-2 flex-column justify-content-center align-items-center">  
             <div className="w3-card w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
             style={{ height:'20rem' }}>
                 <div className="text-center">
-                <h4>Submission Buttons</h4>
-Data from Formstack indicates that optimizing form design, including the placement and design of submission buttons, can increase form completion rates by up to 120%.
+                <h4>SUBMISSION BUTTONS</h4>
+                <hr />
+                <p style={{fontSize:'14px'}}>Data from Formstack indicates that optimizing form design, including the placement and design of submission buttons, can increase form completion rates by up to 120%.</p>
 <div className="w3-padding-8 mt-3">
 <Button
                     variant="black"
@@ -525,13 +533,14 @@ Data from Formstack indicates that optimizing form design, including the placeme
 
        <div className="row d-flex justify-content-center align-items-center ">
         {/**start cta */}
-            <div className="w3-col l6 flex-column justify-content-center align-items-center">
+            <div className="w3-col l6 my-2 flex-column justify-content-center align-items-center">
             <div className="w3-card w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
             style={{height:'20rem' }}>
                 <div className="text-center" >
-                <h4 className="text-center mb-3">Call-To-Action</h4>
-                According to HubSpot, websites with clear and compelling CTAs have a 47% higher conversion rate than those without.
-SmallBizGenius states personalized CTAs increase conversion rates up to 202%.
+                <h4 className="text-center mb-3">CALL-TO-ACTION</h4>
+                <hr />
+                <p style={{fontSize:'14px'}}>  According to HubSpot, websites with clear and compelling CTAs have a 47% higher conversion rate than those without.
+SmallBizGenius states personalized CTAs increase conversion rates up to 202%.</p>
 <div className="w3-padding-8 mt-3">
  <Button
                     variant="outline-dark"
@@ -559,13 +568,14 @@ SmallBizGenius states personalized CTAs increase conversion rates up to 202%.
             </div>
                {/**end cta */}
                   {/**start nav buttons */}
-            <div className="w3-col l6 flex-column justify-content-center align-items-center">
+            <div className="w3-col l6 my-2 flex-column justify-content-center align-items-center">
             <div className="w3-card w3-light-gray w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
             style={{ height:'20rem' }}>
-                <div className="text-center">
-                <h4 className="text-center mb-3">Navigation Buttons</h4>
-NN Group suggests clear and consistent navigation can boost usability by up to 50%.
-A study by Forrester revealed that improving website navigation can lead to a 10% increase in website conversions.
+                <div className="text-center w3-padding-small">
+                <h4 className="text-center mb-3">NAVIGATION BUTTONS</h4>
+                <hr />
+<p style={{fontSize:'14px'}}>NN Group suggests clear and consistent navigation can boost usability by up to 50%.
+A study by Forrester revealed that improving website navigation can lead to a 10% increase in website conversions.</p>
 <div className="w3-padding-8 mt-3">
 <Button
                     variant="black"
@@ -591,6 +601,7 @@ A study by Forrester revealed that improving website navigation can lead to a 10
                   >
                     <i className="fa fa-user w3-large"></i>
                   </Button>
+                  
                   <Button
                     variant="white"
                     size="sm"
@@ -601,20 +612,11 @@ A study by Forrester revealed that improving website navigation can lead to a 10
                       borderRadius: "50%",
                     }}
                   >
-                    <i className="fa fa-lock w3-large"></i>
+                   <i className="fa fa-shopping-cart w3-large"></i>
                   </Button>
                   <div>
                     
                   </div>
-              
-                  <Button
-                    variant="dark"
-                    size="sm"
-                    className="mb-2 mx-1 shadow my-3"
-                    style={{borderRadius: '5px'}}
-                  >
-                     <i className="fa fa-shopping-cart"></i> Checkout
-                  </Button>
                 </div>
                  
                  
@@ -623,16 +625,15 @@ A study by Forrester revealed that improving website navigation can lead to a 10
             </div>
              {/**end nav buttons */}
             </div>
-            </div>
+          
 
-            <div className="w3-content">
           <div className="row d-flex justify-content-center align-items-center w3-margin-top">
             <div className="w3-col l12">
               <div className="w3-card bg-danger-subtle py-3 border mb-1">
                 <div className="container text-center w3-padding-large">
                   <p className="text-reset">
                     <i className="fa fa-info-circle w3-large text-black"></i>{" "}
-                  Collection of additional Web Buttons.
+                 Additional Web Buttons.
                   </p>
                   <Button
                     variant="black"
@@ -645,20 +646,6 @@ A study by Forrester revealed that improving website navigation can lead to a 10
                     }}
                   >
                     <i className="fa fa-square text-white"></i>
-                  </Button>
-
-                  <Button
-                    variant="danger"
-                    size="sm"
-                    className=" rounded-circle mx-1"
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      borderRadius: "40%",
-                      backgroundColor: "#FF385C"
-                    }}
-                  >
-                    <FontAwesomeIcon icon={faPinterest}/>
                   </Button>
 
                   <CloseButton className="mx-1 w3-padding-large bg-white shadow border border-black border-2" style={{ padding: "12px" }} />
@@ -674,36 +661,38 @@ A study by Forrester revealed that improving website navigation can lead to a 10
             <br />
           </div>
         {/**End Buttons */}
-        </div>
+     
 
         {/**Start Tables*/}
-        <div className="w3-light-gray w3-padding-32">
-        <div className="w3-container w3-padding-32"  id="tables">
+        <div className="w3-padding-large">
+        <div className=" w3-padding-32">
+        <div className="w3-container w3-padding-16"  id="tables">
           <h1 className="text-center w3-margin-bottom">Table Components</h1>
-                <h3 className="text-center">
+          <hr />
+                <p className="text-center">
                   Tables are structured grids used to present data in rows and
                   columns. They're commonly used for displaying tabular data,
                   such as product listings, pricing tables, or data summaries.
-                </h3>
+                </p>
+        </div>
         </div>
        
         <div
-          className="w3-container w3-content w3-padding-16 text-black"
-          id="tables"
+          className="w3-container w3-padding-top-16 text-black"
         >
                   <TableBasic />
            <br />
-           <br />
             </div>
             </div>
+           
         {/**End Tables*/}
 
 
 
 
 
-        {/**Start Samples */}
-        <div className="w3-container w3-padding-48">
+        {/**Start forms */}
+        <div className="w3-container w3-padding-32">
         <div className="row d-flex justify-content-center align-items-center">
       
           <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
