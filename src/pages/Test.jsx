@@ -38,7 +38,7 @@ const Server = () => {
           question: "Alert Components",
           answer: 
             "Web alerts are visual components used to convey important messages, notifications, or warnings to users. ",
-          link: "/portfolio#alerts",
+          link: "/",
         },
     
      
@@ -53,13 +53,13 @@ const Server = () => {
           question: "Buttons Components",
           answer:
             "Button provide visual cues to indicate clickable areas and help users navigate through a website or complete tasks",
-          link: "/portfolio#buttons",
+          link: "",
         },
         {
           question: "Table Components",
           answer:
             "Web tables are used for presenting data such as financial reports, product listings, and comparison charts on websites.",
-          link: "/portfolio#tables",
+          link: "/",
         },
       
       ];

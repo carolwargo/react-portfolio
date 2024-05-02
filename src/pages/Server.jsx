@@ -459,7 +459,7 @@ const Server = () => {
                   className="button text-white"
                   onClick={scrollToTop}
                 >
-                View Graphics Page
+                VIEW GRAPHICS PAGE
                 </Link>
               </button>
             </div>

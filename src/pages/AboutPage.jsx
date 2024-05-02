@@ -139,7 +139,7 @@ className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#F
                   className="button text-white"
                   onClick={scrollToTop}
                 >
-                View Resume
+                VIEW MY RESUME
                 </Link>
               </button>
               </div> 

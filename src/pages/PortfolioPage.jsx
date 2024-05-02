@@ -28,17 +28,12 @@ function Portfolio() {
   };
 
   const faqs = [
-     
-  {
-    question: "What is a web component?",
-    answer:
-      "Web components enable the creation of custom elements for web pages and apps. Offering benefits like code reuse, encapsulation, and interoperability.", 
-  },
+ 
     {
       question: "Alert Components",
       answer: 
         "Web alerts are visual components used to convey important messages, notifications, or warnings to users. ",
-      link: "/portfolio#alerts",
+      link: "#alerts",
     },
 
  
@@ -46,13 +41,13 @@ function Portfolio() {
       question: "Buttons Components",
       answer:
         "Button provide visual cues to indicate clickable areas and help users navigate through a website or complete tasks",
-      link: "/portfolio#buttons",
+      link: "#buttons",
     },
     {
       question: "Table Components",
       answer:
         "Web tables are used for presenting data such as financial reports, product listings, and comparison charts on websites.",
-      link: "/portfolio#tables",
+      link: "#tables",
     },
   
   ];
@@ -103,6 +98,8 @@ Follow the path to witness my level of understanding in both function and design
   
     `}
               </style>
+              Web components enable the creation of custom elements for web pages and apps. Offering benefits like code reuse, encapsulation, and interoperability.
+              <hr className="w3-opacity" />
               <Accordion defaultActiveKey="-1" className="components-accordian">
                 {faqs.map((faq, index) => (
                   <Accordion.Item
@@ -119,13 +116,14 @@ Follow the path to witness my level of understanding in both function and design
                     </Accordion.Header>
                     <Accordion.Body className="answer">
                       {faq.answer}
-                      <div>
+                   {/**  <div>
                         <Link to={faq.link}>
                           <button className="link w3-button w3-black w3-round-xxlarge mt-2">
                            Learn More
                           </button>
                         </Link>
                       </div>
+                      */}  
                     </Accordion.Body>
                   </Accordion.Item>
                 ))}
@@ -137,8 +135,8 @@ Follow the path to witness my level of understanding in both function and design
 
           {/**End INTRO Web Components */}
         {/**Start Alerts */}
-        <div className="w3-light-gray">
-        <div className="w3-container  text-center w3-padding-top-48 text-black mt-4" id="alerts">
+        <div className="w3-light-gray" id="alerts">
+        <div className="w3-container  text-center w3-padding-top-48 text-black mt-4" >
         <div className="w3-content w3-padding-32 text-black" >
           <div className="row d-flex justify-content-center align-items-center w3-margin-top mb-3">
             <div className="col-sm-12 col-md-5 col-lg-5 flex-column">
@@ -462,7 +460,7 @@ Follow the path to witness my level of understanding in both function and design
      {/**Start buttons row*/}
          <div className="row d-flex justify-content-center align-items-center ">
            {/**Start Intro to buttons col*/}
-          <div className="w3-col l6 my-2 flex-column justify-content-center align-items-center">
+          <div className="w3-col l6 w3-padding-large flex-column justify-content-center align-items-center">
           <div className="w3-card w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
           style={{ backgroundColor: "white", color:'#FF385C', height:'20rem' }}>
                 <div className="text-center" >
@@ -478,7 +476,7 @@ Follow the path to witness my level of understanding in both function and design
             </div>
               {/**end Intro to buttons */}
              {/**start form submission buttons */}
-            <div className="w3-col l6 my-2 flex-column justify-content-center align-items-center">  
+            <div className="w3-col l6 w3-padding-large flex-column justify-content-center align-items-center">  
             <div className="w3-card w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
             style={{ height:'20rem' }}>
                 <div className="text-center">
@@ -533,7 +531,7 @@ Follow the path to witness my level of understanding in both function and design
 
        <div className="row d-flex justify-content-center align-items-center ">
         {/**start cta */}
-            <div className="w3-col l6 my-2 flex-column justify-content-center align-items-center">
+            <div className="w3-col l6 w3-padding-large flex-column justify-content-center align-items-center">
             <div className="w3-card w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
             style={{height:'20rem' }}>
                 <div className="text-center" >
@@ -568,7 +566,7 @@ SmallBizGenius states personalized CTAs increase conversion rates up to 202%.</p
             </div>
                {/**end cta */}
                   {/**start nav buttons */}
-            <div className="w3-col l6 my-2 flex-column justify-content-center align-items-center">
+            <div className="w3-col l6 w3-padding-large flex-column justify-content-center align-items-center">
             <div className="w3-card w3-light-gray w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
             style={{ height:'20rem' }}>
                 <div className="text-center w3-padding-small">
@@ -664,9 +662,9 @@ A study by Forrester revealed that improving website navigation can lead to a 10
      
 
         {/**Start Tables*/}
-        <div className="w3-padding-large">
+        <div className="w3-padding-large"  id="tables">
         <div className=" w3-padding-32">
-        <div className="w3-container w3-padding-16"  id="tables">
+        <div className="w3-container w3-padding-16" >
           <h1 className="text-center w3-margin-bottom">Table Components</h1>
           <hr />
                 <p className="text-center">
@@ -697,8 +695,8 @@ A study by Forrester revealed that improving website navigation can lead to a 10
       
           <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
             <div className="container w3-white text-center w3-padding-large w3-padding-small">
-            <h2 className="w3-text-black w3-margin-top" id="forms">
-                <b className="fw-bold text-black">Form Components</b>
+            <h2 className="w3-text-black w3-margin-top">
+                <b className="fw-bold text-black">FORM COMPONENTS</b>
                
               </h2>
               <hr className="w3-opacity" />

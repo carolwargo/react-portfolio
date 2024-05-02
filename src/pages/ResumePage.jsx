@@ -506,7 +506,7 @@ export default function ResumePage() {
 </div>          
 
   <div className="w3-container w3-content text-center w3-padding-48 w3-margin-top w3-margin-bottom w3-padding-small">
-    <h2  className="text-black">My Work</h2>
+    <h2  className="text-black">VIEW MY WORK</h2>
     <hr className="w3-opacity" />
    <h4 className="text-black">Take a peek at "My Work"! There's a whole world of changes and improvements happening behind the scenes. Thanks in advance for your patience!
        
