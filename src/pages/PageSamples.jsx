@@ -2,11 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import BlogShot from "../assets/images/FullPage/BlogShot.png";
 import RealEstate from "../assets/images/FullPage/RealEstate.png";
+import YogaBlog from "../assets/images/FullPage/YogaBlog.png";
 import { Link } from "react-router-dom";
-//import Login from "../components/Portfolio/Forms/Login";
-//import Signup from "../components/Portfolio/Forms/Signup";
 import Album from "../assets/images/FullPage/Album.png";
-//import ScrollSpy from "../components/Portfolio/SpyScroll/SpyScrollComponent";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function PageSamples() {
@@ -57,8 +55,9 @@ function PageSamples() {
               <div className="row d-flex  justify-content-center align-items-center">
                 <div className="col-md-5  w3-padding-16">
                   <div className=" justify-content-center">
-                    <h4 className="text-black"> REAL ESTATE SAMPLE.</h4>
-                    <p style={{ fontSize: "14px" }}>
+                    <h3 className="text-black">SERVICE BASED SAMPLE.</h3>
+                    <hr className="w3-opacity" />
+                    <p>
                       A real estate website serves as a valuable tool for both
                       real estate professionals and consumers by offering a
                       centralized platform for property listings, market
@@ -67,28 +66,10 @@ function PageSamples() {
                       seamless user experience, making it an essential component
                       of modern real estate marketing and operations.
                     </p>
-                    <hr className="w3-opacity" />
+                  
                   </div>
                   <div className="row px-2 justify-content-center">
-                    <div className="col-sm-12 col-md-6 col-lg-6">
-                      <h6 style={{fontSize:'14px'}}>Customer Benefits:</h6>
-                      <ul style={{ fontSize: "12px" }} className="fw-lighter">
-                      <li>Detailed Property Information</li>
-                        <li>Convenience</li>
-                        <li>Educational Resources</li>
-                        <li>Interactive Features</li>
-                      </ul>
-                    </div>
-
-                    <div className="col-sm-12 col-md-6 col-lg-6">
-                      <h6 style={{fontSize:'14px'}}>Professional Benefits:</h6>
-                      <ul style={{ fontSize: "12px" }} className="fw-lighter">
-                      <li>Lead Generation</li>
-                        <li>Controlled Platform</li>
-                        <li>Increased Visibility</li>
-                     <li>Transaction Management</li>
-                      </ul>
-                    </div>
+                    
                     <div className="w3-margin-top ">
                       <a href="https://carolwargo.github.io/realestate/">
                       <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
@@ -122,17 +103,18 @@ function PageSamples() {
 {/**End Real Estate */}
     
 
-
+    
 {/** Start Blog*/}
       <div className="w3-container w3-content text-black mt-5">
-        <div className="blog-page  w3-padding-16" id="blog-page">
+        <div className="blog-page-2  w3-padding-16" id="blog-page-2">
             <div className="justify-content-center">
               <div className="row d-flex justify-content-center align-items-center">          
                 <div className="col-md-5 w3-padding-16">
                   <div className="row px-2 justify-content-center">
                     <div className="justify-content-center ">
-                      <h4>BLOG PAGE SAMPLE.</h4>
-                      <p style={{fontSize:'14px'}}>
+                      <h3>BLOG SAMPLE 1.</h3>
+                      <hr className="w3-opacity" />
+                      <p>
                        Blog-style websites offer an interactive
                         and engaging platform for individual bloggers and businesses to
                         connect with their audience. Whether you're looking to
@@ -140,29 +122,6 @@ function PageSamples() {
                         valuable insights, a blog-style website can be a highly
                         effective and versatile tool for achieving your goals.
                       </p>
-                      <hr className="w3-opacity" />
-                    </div>
-                    <div className="col-sm-12 col-md-6 col-lg-6">
-                      <h6 style={{fontSize:'14px'}}> Blogger Benefits:</h6>
-
-                      <ul style={{ fontSize: "12px" }} className="fw-lighter">
-                        <li>Ease of Use</li>
-                        <li>Community Building</li>
-
-                        <li>Cost-Effective</li>
-                        <li>Personal Branding</li>
-                      </ul>
-                    </div>
-
-                    <div className="col-sm-12 col-md-6 col-lg-6">
-                      <h6 style={{fontSize:'14px'}}>Business Benefits:</h6>
-
-                      <ul style={{ fontSize: "12px" }} className="fw-lighter">
-                        <li>Content Marketing</li>
-                        <li>Authority and Credibility</li>
-                        <li>SEO Benefits</li>
-                        <li>Flexibility</li>
-                      </ul>
                     </div>
 
                     <Link to="/blog" className="w3-margin-top">
@@ -194,6 +153,55 @@ function PageSamples() {
         </div>
       </div>
       {/** End Blog*/}
+
+
+      {/**Start Blog Yoga*/}
+<div className="w3-container w3-content text-black">
+        <div className="realestate-page w3-padding-24" id="realestate-page">
+          <div className=" text-black justify-content-center">
+            <div className="justify-content-center">
+              <div className="row d-flex  justify-content-center align-items-center">
+                <div className="col-md-5  w3-padding-16">
+                  <div className=" justify-content-center">
+                    <h3 className="text-black"> BLOG SAMPLE 2.</h3>
+                    <hr className="w3-opacity" />
+                    <p>
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus accusamus maiores, vero cum quam saepe pariatur iure at sunt dicta. Illum optio reiciendis odit iusto accusantium nihil ipsum. In, vitae!Lorem
+                    </p>
+                  </div>
+                  <div className="row px-2 justify-content-center">
+                 
+                    <div className="w3-margin-top ">
+                      <a href="https://carolwargo.github.io/blog">
+                      <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
+              style={{backgroundColor:'#FF385C'}}>
+               VIEW SAMPLE
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-7 d-flex justify-content-center  w3-padding-16">
+                  <div
+                    className="shadow rounded bg-white"
+                    style={{ height: "400px", overflowY: "auto" }}
+                  >
+                    <div to="/blog#blog" onClick={scrollToTop}>
+                      <img
+                        src={YogaBlog}
+                        alt="yoga-blog"
+                        className="shadow mx-auto p-2"
+                        style={{ width: "100%" }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+{/**End Blog Yoga */}
       
 {/**Start Album */}
 <div className="w3-container w3-content  text-black mt-5">
@@ -204,8 +212,8 @@ function PageSamples() {
                     <div className="row px-2 justify-content-center">
                     <div className="justify-content-center w3-margin-top">
               <h3>ALBUM PAGE SAMPLE.</h3>
-            
-              <p style={{fontSize:'14px'}}>
+              <hr className="w3-opacity" />
+              <p>
                 A photo album website offers a platform for
                 individuals, photographers, and businesses to organize,
                 showcase, and share photos effectively. It enhances personal
@@ -214,31 +222,8 @@ function PageSamples() {
                 for anyone looking to manage and monetize their visual content
                 online.
               </p>
-              <hr className="w3-opacity" />
             </div>
-
-                      <div className="col-sm-12 col-md-6 col-lg-6">
-                        <h6 style={{fontSize:'14px'}}>Consumer Benefits:</h6>
-                        <ul style={{ fontSize: "12px" }} className="fw-lighter">
-                          <li>Easy Sharing</li>
-                          <li>Privacy Controls</li>
-                          <li>Personalized Photo Storage</li>
-                        </ul>
-                      </div>
-                   
-
-         
-                      <div className="col-sm-12 col-md-6 col-lg-6">
-                        <h6 style={{fontSize:'14px'}}>Bussiness Benefits:</h6>
-
-                        <ul style={{ fontSize: "12px" }} className="fw-lighter">
-                        
-                          <li>Portfolio Showcase</li>
-                          <li>E-commerce Integration</li>
-                        </ul>
-                      </div>
-                      
-                      <Link to="/blog" className="w3-margin-top">
+                      <Link to="/blog#blog" className="w3-margin-top">
                       <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
               style={{backgroundColor:'#FF385C'}}>VIEW SAMPLE</button>
                       </Link>
@@ -311,6 +296,10 @@ function PageSamples() {
         </div>
       </div>
 {/**End Album */}
+
+
+
+
 
   </div>
     </div>

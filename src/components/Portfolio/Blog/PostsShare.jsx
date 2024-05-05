@@ -1,7 +1,6 @@
 import React from "react";
-import moment from "moment"; // Don't forget to import moment library
+import moment from "moment";
 import YogaSet from "../../../assets/images/YogaStory/YogaSet.png";
-//import { Button } from "react-bootstrap";
 import { FaTwitter, FaFacebook, FaPinterest, FaGithub } from "react-icons/fa";
 import {
   TwitterShareButton,
@@ -11,7 +10,6 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Posts = () => {
-  // Ensure correct structure for posts array
   const blogPosts = [
     {
       id: '1',
