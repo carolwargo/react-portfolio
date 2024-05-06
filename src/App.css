@@ -6,10 +6,6 @@
 @import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
 
-
-
-
-
 .about {
   @media (max-width: 576px) {
     .row {
