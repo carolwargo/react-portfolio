@@ -1,45 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css"; // Import the CSS file where you define custom styles
 
+
 function BasicExample() {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  };
-  const [isHovered, setIsHovered] = useState(false);
-  const closeNav = () => setExpanded(false);
-
-  const [expanded, setExpanded] = useState(false);
-
-  const handleToggle = () => setExpanded(!expanded);
-
-  const handleNavLinkClick = () => {
-    scrollToTop();
-    closeNav();
-  };
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-    // Add your logic here when the dropdown is hovered
-    console.log('Dropdown is hovered!');
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-    // Add your logic here when the mouse leaves the dropdown
-    console.log('Mouse left the dropdown!');
-  };
-
 
   return (
     <motion.div
@@ -49,56 +22,42 @@ function BasicExample() {
     className="home"
     
     >
-      <Navbar expand="lg" className="bg-body-tertiary shadow-sm fixed-top" expanded={expanded}>
-        <Container fluid>
-          <Link to="/" className="navbar-brand" onClick={closeNav}><b>CW</b>HOME</Link>
-          {/* Use Font Awesome icon instead of the default toggle icon */}
-          <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle}>
-            <FontAwesomeIcon icon={faBars} style={{ color: "black" }} />
+        <Navbar expand="lg" className="bg-body-tertiary">
+          
+      <Container>
+        <Link to='/' className="nav-link">
+        <Navbar.Brand><b>CW</b>HOME</Navbar.Brand>
+        </Link>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" >
+          <FontAwesomeIcon icon={faBars} color="black" />
           </Navbar.Toggle>
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Link to="/about#about" className="nav-link" onClick={handleNavLinkClick}>ABOUT</Link>
-              <Link to="/resume#resume" className="nav-link" onClick={handleNavLinkClick}>RESUME</Link>
-             <Link to="/page-samples#page-samples" className="nav-link" onClick={handleNavLinkClick}>SAMPLES</Link>
-         <NavDropdown title="MY WORK" id="basic-nav-dropdown"
+      
+        <Navbar.Collapse id='navbar-collapse'>
+          <Nav className="me-auto">
+            <Link to="/about#about" className="nav-link">ABOUT</Link>
+            <Link to="/resume#resume" className="nav-link">RESUME</Link>
+            <Link to="/page-samples#page-samples" className="nav-link">PAGE SAMPLES</Link>
+            <NavDropdown title="MY WORK" id="basic-nav-dropdown" className="me-auto bg-white ">
+            <div className='w3-padding-small bg-white' style={{border:'3px solid', borderRadius:'10px', zIndex:'-5'}}>
+     
+              <Link to="/portfolio#portfolio" className="nav-link">PORTFOLIO</Link>
+      
+          
+              <Link to="/forms#forms" className="nav-link">
+              FORMS
+              </Link>
+             <Link to="/server#server" className="nav-link">UTILITY APPS</Link>
+             <Link to="/graphics#graphics" className="nav-link">GRAPHICS</Link>
            
-             onMouseEnter={handleMouseEnter}
-             onMouseLeave={handleMouseLeave}
-             show={isHovered} 
-             >
-          <div style={{border:'3px solid', borderRadius:'10px'}}>
-         <NavDropdown.Item>
-         <Link to="/portfolio#portfolio" className="text-black">
-              PORTFOLIO</Link>
-</NavDropdown.Item>
-<NavDropdown.Item>
-  <Link to="/portfolio#web-components" className="text-black">COMPONENT SAMPLES</Link>
-</NavDropdown.Item>
-        
-              <NavDropdown.Item>
-  <Link to="/forms#forms" className="text-black">FORM SAMPLES</Link>
-</NavDropdown.Item>
-<NavDropdown.Item>
-  <Link to="/page-samples" className="text-black">PAGE SAMPLES</Link>
-</NavDropdown.Item>
-
-<NavDropdown.Item>
-  <Link to="/server#server" className="text-black">UTILITY APPS</Link>
-</NavDropdown.Item>
-<NavDropdown.Divider />
-
-<NavDropdown.Item>
-  <Link to="/graphics#graphics" className="text-black">COMING SOON! <br />Graphics Page</Link>
-</NavDropdown.Item>
-</div>
-            
-</NavDropdown>
-              <Link to="/contact#contact" className="nav-link" onClick={handleNavLinkClick}>CONTACT</Link>
-           </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+           
+            </div>
+            </NavDropdown>
+           
+            <Link to="/contact#contact" className="nav-link" >CONTACT</Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
     </motion.div>
   );
 }

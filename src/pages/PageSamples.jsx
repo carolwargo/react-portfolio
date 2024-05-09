@@ -24,7 +24,7 @@ function PageSamples() {
     
     >
     <div className="page-samples" id="page-samples">
-      <div className="w3-padding-top-48 w3-padding-large mt-5 ">
+      <div className="w3-padding-top-48 w3-padding-large ">
           <div
             className="w3-content w3-container w3-padding-16 w3-margin-top justify-content-center"
             style={{

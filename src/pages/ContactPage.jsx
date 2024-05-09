@@ -61,7 +61,7 @@ const ContactPage = () => {
 
         {/* CONTENT START */}
         <div
-          className="w3-content w3-padding-64"
+          className="w3-content w3-padding-16"
           style={{
             position: "relative", // Ensure the content div has relative positioning
             zIndex: 1, // Set zIndex to 1 to position it above the white mask

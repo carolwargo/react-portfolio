@@ -74,7 +74,6 @@ export default function ResumePage() {
               <div className="col-md-6">
               <a href="mail:carolwargo.dev@gmail.com" className="w3-text-black">
               <i className="fa fa-envelope  w3-margin-right w3-text-black"></i>
-              
              Email
              </a>
              <br/>
