@@ -68,14 +68,16 @@ const ContactPage = () => {
             zIndex: 1, // Set zIndex to 1 to position it above the white mask
           }}
         >
-          <div className="container-fluid w3-margin-top">
+          <div className="container-fluid">
             <div
-              className="text-black bg-white "
+              className="text-black"
               style={{ borderRadius: "5px" }}
             >
-              <div className="row justify-content-center align-items-center">
+              <div className="row justify-content-center align-items-center w3-white">
                
-                <div className="col-lg-7">
+                <div className="col-lg-6 p-0">
+                <div style={{ display: "flex", alignItems: "center" }}>
+   
                
                   <img
                     src={MeWhite}
@@ -84,9 +86,10 @@ const ContactPage = () => {
                     className=""
                   />
                 </div>
-                <div className="px-3 text-center col-lg-5 justify-content-center align-items-center">
-  <div className="w3-display-container margin-top" style={{ display: "flex", alignItems: "center" }}>
-    <div className="w3-container w3-padding-large">
+                </div>
+                <div className=" text-center col-lg-6 w3-white justify-content-center align-items-center w3-round-xxlarge">
+  <div className="w3-container w3-padding-small" style={{ display: "flex", alignItems: "center" }}>
+    <div className="w3-container mt-4">
       <h5>THANKS FOR VISITING!</h5>
       <p >
         <em>
@@ -94,7 +97,7 @@ const ContactPage = () => {
         </em>
       </p>
     
-      <div className="justify-content-center" style={{ display: "flex" }}>
+      <div className="justify-content-center align-items-center" style={{ display: "flex" }}>
         <p  className="text-center">
           <a href="mailto:carolwargo.dev@gmail.com" alt="me" style={{ color: 'black' }}>
             <FontAwesomeIcon
@@ -127,12 +130,11 @@ const ContactPage = () => {
             />
           </a>
         </p>
+        
       </div>
-    </div>
-  </div>
-<br />
-                  <div className="bg-white w3-display-container">
-                    <div className="w3-content w3-padding-large w3-justify align-items-center">
+      
+      <div className="w3-content w3-justify align-items-center mt-4">
+    
                       <form ref={form} onSubmit={sendEmail}>
                         <div className="form-group">
                           <label style={{ fontSize: "14px" }}>Name</label>
@@ -172,7 +174,10 @@ const ContactPage = () => {
                         </div>
                       </form>
                     </div>
-                  </div>
+    </div>
+  </div>
+<br />
+                  
                 </div>
               </div>
             </div>
