@@ -17,11 +17,13 @@ import NavFixed from "./components/NavFixed.jsx";
 import Album from "./pages/Album.jsx";
 import Forms from "./pages/Forms.jsx";
 import "./App.css";
+import ErrorBoundary from "./components/ErrorBoundary.jsx";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter basename="/react-portfolio">
+        <ErrorBoundary>
         <NavFixed />
         <Routes>
           <Route path="/" element={<HomePage/>} />
@@ -40,8 +42,8 @@ function App() {
           {/* Add a catch-all route for handling errors */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-
         <Footer />
+        </ErrorBoundary>
       </BrowserRouter>
     </div>
   );
