@@ -1,31 +1,34 @@
+/* Global CSS */
 * {
   font-family: 'Proxima Nova', sans-serif;
 }
+
+/* Importing external stylesheets */
 @import url("https://use.typekit.net/tce5mmy.css");
 @import '~@fortawesome/fontawesome-free/css/all.css';
 @import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-
+/* Meriecomponent-specific styles */
 .about {
   @media (max-width: 576px) {
     .row {
       flex-direction: column;
     }
   }
-  
+}
+/* CSS variables for grid breakpoints */
+:root {
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
 }
 
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-);
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-
+/* Media query for responsive navigation header */
 @media (max-width: 768px) {
   .nav-header {
     flex-direction: column;

@@ -61,15 +61,16 @@ const ContactPage = () => {
 
         {/* CONTENT START */}
         <div
-          className="w3-content w3-padding-16"
+          className="mt-3 mb-3 w3-content w3-container w3-padding-48"
           style={{
+            minHeight: "80vh",
             position: "relative", // Ensure the content div has relative positioning
             zIndex: 1, // Set zIndex to 1 to position it above the white mask
           }}
         >
           <div className="container-fluid w3-margin-top">
             <div
-              className=" bg-white text-black"
+              className="text-black bg-white "
               style={{ borderRadius: "5px" }}
             >
               <div className="row justify-content-center align-items-center">
@@ -83,9 +84,9 @@ const ContactPage = () => {
                     className=""
                   />
                 </div>
-                <div className="col-lg-5 text-center justify-content-center align-items-center px-3">
+                <div className="px-3 text-center col-lg-5 justify-content-center align-items-center">
   <div className="w3-display-container margin-top" style={{ display: "flex", alignItems: "center" }}>
-    <div className="w3-container  w3-padding-large">
+    <div className="w3-container w3-padding-large">
       <h5>THANKS FOR VISITING!</h5>
       <p >
         <em>
@@ -98,7 +99,7 @@ const ContactPage = () => {
           <a href="mailto:carolwargo.dev@gmail.com" alt="me" style={{ color: 'black' }}>
             <FontAwesomeIcon
               icon={faEnvelope}
-              className="fa-fw w3-large mx-1"
+              className="mx-1 fa-fw w3-large"
             />
           </a>
         </p>
@@ -106,7 +107,7 @@ const ContactPage = () => {
           <a href="tel:+4437711726" style={{ color: 'black' }}>
             <FontAwesomeIcon
               icon={faPhone}
-              className="fa-fw w3-large mx-1"
+              className="mx-1 fa-fw w3-large"
             />
           </a>
         </p>
@@ -114,7 +115,7 @@ const ContactPage = () => {
           <a href="https://github.com/carolwargo" style={{ color: 'black' }}>
             <FontAwesomeIcon
               icon={faGithub}
-              className="fa-fw w3-large mx-1"
+              className="mx-1 fa-fw w3-large"
             />
           </a>
         </p>
@@ -122,7 +123,7 @@ const ContactPage = () => {
           <a href="https://www.linkedin.com/in/carol-wargo-35021baa/" style={{ color: 'black' }}>
             <FontAwesomeIcon
               icon={faLinkedin}
-              className="fa-fw w3-large mx-1"
+              className="mx-1 fa-fw w3-large"
             />
           </a>
         </p>
@@ -130,7 +131,7 @@ const ContactPage = () => {
     </div>
   </div>
 <br />
-                  <div className="w3-display-container bg-white">
+                  <div className="bg-white w3-display-container">
                     <div className="w3-content w3-padding-large w3-justify align-items-center">
                       <form ref={form} onSubmit={sendEmail}>
                         <div className="form-group">
@@ -165,7 +166,7 @@ const ContactPage = () => {
                           <input
                             type="submit"
                             value="Send"
-                            className="w3-button px-4 w3-round-xxlarge text-white"
+                            className="px-4 text-white w3-button w3-round-xxlarge"
                             style={{backgroundColor:'#FF385C'}}
                           />
                         </div>

@@ -30,10 +30,10 @@ export default function App() {
     
 
    
-    <section className='text-center w3-padding-top-16 w3-padding-24'>
+    <section className='text-center w3-padding-24'>
       <MDBContainer className='mt-5 text-center text-md-start'>
         <MDBRow className='mt-3'>
-          <MDBCol md="4" lg="4" xl="4" className='mx-auto mb-4 me-2'>
+          <MDBCol md="4" lg="4" xl="4" className='mx-auto mb-5 me-2 w3-padding-large'>
             <h6 className='mb-4 text-uppercase fw-bold'>
          
               <b>Carol</b> Wargo
@@ -57,9 +57,9 @@ export default function App() {
               </button>
           </MDBCol>
           
-          <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
+          <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4 w3-padding-large'>
           
-        <h6 className='w3-margin-bottom'>PAGES</h6>
+        <h6 className='w3-margin-bottom fw-bold'>PAGES</h6>
           
               <Link to='/' className='text-reset fw-light' onClick={scrollToTop} >
               <p style={{fontSize:'14px'}}>
@@ -90,8 +90,8 @@ export default function App() {
            
           </MDBCol>
 
-          <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4 justify-content-center'>
-          <h6 className='w3-margin-bottom'>SAMPLES</h6>
+          <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4 justify-content-center w3-padding-large'>
+          <h6 className='w3-margin-bottom fw-bold'>SAMPLES</h6>
             <p style={{fontSize:'14px'}}>
               <Link to='/blog' className='text-reset' onClick={scrollToTop} >
                Blog
@@ -116,8 +116,8 @@ export default function App() {
           </MDBCol>
 
 
-          <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4 mb-md-0 flex-column justify-content-center'>
-           <h6>CONTACT</h6>
+          <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4 mb-md-0 flex-column justify-content-center w3-padding-large'>
+           <h6 className='fw-bold'>CONTACT</h6>
            
             <p style={{fontSize:'14px'}}>
               <MDBIcon icon="home" className="me-2" />
@@ -151,13 +151,13 @@ export default function App() {
       </MDBContainer>
     </section>
     <hr />
-    <section className='text-center d-flex justify-content-center justify-content-lg-between w3-padding-large border-bottom'>
-      <div className='me-5 d-none d-lg-block' >
+    <section className='text-center d-flex justify-content-center w3-padding-large border-bottom'>
+      <div className='me-auto d-none d-lg-block' >
       <p style={{fontSize:'12px', fontWeight:'light'}}> © 2023 Copyright:    <a className='text-white' href='https:carolwargo.github.io/react-portfolio' style={{fontSize:'12px'}}> <b> C</b>WARGO
         </a></p>
       </div>
 
-      <div>
+      <div className='mx-auto justify-content-center w3-margin-left'>
       
           
       <a href='tel:+4437711726' className='me-4 text-reset'>
