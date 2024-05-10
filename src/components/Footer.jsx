@@ -31,19 +31,23 @@ export default function App() {
 
    
     <section className='text-center w3-padding-top-16 w3-padding-24'>
-      <MDBContainer className='text-center text-md-start mt-5'>
+      <MDBContainer className='mt-5 text-center text-md-start'>
         <MDBRow className='mt-3'>
           <MDBCol md="4" lg="4" xl="4" className='mx-auto mb-4 me-2'>
-            <h6 className='text-uppercase fw-bold mb-4'>
+            <h6 className='mb-4 text-uppercase fw-bold'>
          
               <b>Carol</b> Wargo
             </h6>
-            <p style={{fontSize:'14px'}}>
+            <p className='fw-light' style={{fontSize:'14px'}}>
             Thank you for visiting my site. I hope you found what you were looking for and enjoyed your time here. Feel free to reach out if you have any questions or feedback!
             </p>
-            <button className="w3-button w3-light-grey w3-padding w3-round-xxlarge " >
+            <button className="w3-button w3-round-xxlarge " 
+                style={{backgroundColor:'#FF385C', fontSize:'14px'}}
+            >
                 <a
-                  className="button text-black"
+                
+                  className="p-2 text-white button"
+                  style={{backgroundColor:'#FF385C', fontSize:'14px'}}
                   id="download"
                   download 
                   href={ResumeDownload}
@@ -55,30 +59,30 @@ export default function App() {
           
           <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
           
-        
+        <h6 className='w3-margin-bottom'>PAGES</h6>
           
-              <Link to='/' className='text-reset' onClick={scrollToTop} >
+              <Link to='/' className='text-reset fw-light' onClick={scrollToTop} >
               <p style={{fontSize:'14px'}}>
               Home
               </p>
               </Link>
           
            
-              <Link to='/about' className='text-reset' onClick={scrollToTop} >
+              <Link to='/about' className='text-reset fw-light' onClick={scrollToTop} >
               <p style={{fontSize:'14px'}}>
                 About
                 </p>
               </Link>
            
            
-              <Link to='/resume' className='text-reset' onClick={scrollToTop} >
+              <Link to='/resume' className='text-reset fw-light' onClick={scrollToTop} >
               <p style={{fontSize:'14px'}}>
                 Digital Resume
                 </p>
               </Link>
           
             
-              <Link to='/portfolio' className='text-reset' onClick={scrollToTop} >
+              <Link to='/portfolio' className='text-reset fw-light' onClick={scrollToTop} >
               <p style={{fontSize:'14px'}}>
                Portfolio
                </p>
@@ -87,6 +91,7 @@ export default function App() {
           </MDBCol>
 
           <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4 justify-content-center'>
+          <h6 className='w3-margin-bottom'>SAMPLES</h6>
             <p style={{fontSize:'14px'}}>
               <Link to='/blog' className='text-reset' onClick={scrollToTop} >
                Blog
@@ -111,30 +116,34 @@ export default function App() {
           </MDBCol>
 
 
-          <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-md-0 mb-4 flex-column justify-content-center text-center'>
-            <p style={{fontSize:'14px'}} className='text-center'>
+          <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4 mb-md-0 flex-column justify-content-center'>
+           <h6>CONTACT</h6>
+           
+            <p style={{fontSize:'14px'}}>
               <MDBIcon icon="home" className="me-2" />
               Huntingtown, MD
             </p>
-            <p style={{fontSize:'14px'}}  className='text-center'>
+            <p style={{fontSize:'14px'}} >
            
               <a href='mailto:carolwargo.dev@gmail.com' 
               className='text-reset'>
+                     <MDBIcon icon="envelope" className="me-2" />
               Email
               </a>
             </p>
-            <p style={{fontSize:'14px'}}  className='text-center'>
+            <p style={{fontSize:'14px'}} >
             <a href='tel:+4437711726'className='text-reset'>
+            <MDBIcon icon="phone-alt" className="me-2" />
               Call
 </a>
             </p>
-            <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2" 
-              style={{backgroundColor:'#FF385C'}}>
+            <button className="mt-2 w3-button w3-text-light-grey w3-padding w3-round-xxlarge" 
+              style={{backgroundColor:'#FF385C', fontSize:'14px'}}>
               <Link to="/contact#contact"
-                  className="button text-white"
+                  className="text-white button"
                   onClick={scrollToTop}
                 >
-                Contact Me
+                Contact
                 </Link>
               </button>
           </MDBCol>
@@ -142,7 +151,7 @@ export default function App() {
       </MDBContainer>
     </section>
     <hr />
-    <section className='d-flex justify-content-center text-center justify-content-lg-between w3-padding-large border-bottom'>
+    <section className='text-center d-flex justify-content-center justify-content-lg-between w3-padding-large border-bottom'>
       <div className='me-5 d-none d-lg-block' >
       <p style={{fontSize:'12px', fontWeight:'light'}}> © 2023 Copyright:    <a className='text-white' href='https:carolwargo.github.io/react-portfolio' style={{fontSize:'12px'}}> <b> C</b>WARGO
         </a></p>
