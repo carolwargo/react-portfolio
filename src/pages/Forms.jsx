@@ -275,7 +275,7 @@ Examples include Login or Sign Up forms. How are they different?"
     </div>
   
   <div className='col-sm-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center text-black g-1'>
-    <Card style={{ width: '18rem', backgroundColor:'#FF385C', color:'white' }} >
+    <Card style={{ height: '18rem', backgroundColor:'#FF385C', color:'white' }} >
       <Card.Body>
         <Card.Text>
           B2B marketers report that email is the most effective channel for generating leads (HubSpot). According to OptinMonster, welcome emails have an average open rate of 82%.
@@ -285,7 +285,7 @@ Examples include Login or Sign Up forms. How are they different?"
   </div>
   
   <div className='col-sm-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center text-black g-1'>
-    <Card style={{ width: '18rem', backgroundColor:'#FF385C', color:'white' }} >
+    <Card style={{ height: '18rem', backgroundColor:'#FF385C', color:'white' }} >
       <Card.Body>
         <Card.Text>
           "80% of retail professionals cite email marketing as their top driver of customer retention. Loyal customers can be worth up to 10 times their initial purchase, as per Invesp."
@@ -295,7 +295,7 @@ Examples include Login or Sign Up forms. How are they different?"
   </div>
   
   <div className='col-sm-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center text-black g-1'>
-    <Card style={{ width: '18rem', backgroundColor:'#FF385C', color:'white' }} >
+    <Card style={{ height: '18rem', backgroundColor:'#FF385C', color:'white' }} >
       <Card.Body>
         <Card.Text>
           Email marketing has a high (ROI), averaging around $42 for every dollar spent (DMA). Automated email campaigns generate 320% more revenue than non-automated ones. 
@@ -305,7 +305,7 @@ Examples include Login or Sign Up forms. How are they different?"
   </div>
   
   <div className='col-sm-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center text-black g-1'>
-    <Card style={{ width: '18rem', backgroundColor:'#FF385C', color:'white' }} >
+    <Card style={{ height: '18rem', backgroundColor:'#FF385C', color:'white' }} >
       <Card.Body>
         <Card.Text>
           Segmented email campaigns drive a 760% increase in revenue (Campaign Monitor). Personalized subject lines increase open rates by 50% (Yes Marketing).

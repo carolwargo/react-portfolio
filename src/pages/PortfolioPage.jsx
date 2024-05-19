@@ -82,9 +82,8 @@ Follow the path to witness my level of understanding in both function and design
                        <img src={WebComponentsTrans} alt="web-components" style={{width:'100%'}} ></img>
            
           </div>
-            <div className="col-sm-12 col-md-6 col-lg-6 flex-column w3-padding-large my-1">
+            <div className="col-sm-12 col-md-6 col-lg-6 flex-column w3-padding-large w3-padding-24 w3-light-gray my-1">
             <h3>Web Component Menu</h3>
-              <hr className="w3-opacity" />
               <style>
                 {`
       .accordion-item {
@@ -98,8 +97,9 @@ Follow the path to witness my level of understanding in both function and design
   
     `}
               </style>
-              Web components enable the creation of custom elements for web pages and apps. Offering benefits like code reuse, encapsulation, and interoperability.
-              <hr className="w3-opacity" />
+              <p>     Web components enable the creation of custom elements for web pages and apps. Offering benefits like code reuse, encapsulation, and interoperability.
+          </p>
+         
               <Accordion defaultActiveKey="-1" className="components-accordian">
                 {faqs.map((faq, index) => (
                   <Accordion.Item
@@ -116,14 +116,14 @@ Follow the path to witness my level of understanding in both function and design
                     </Accordion.Header>
                     <Accordion.Body className="answer">
                       {faq.answer}
-                   {/**  <div>
-                        <Link to={faq.link}>
+                   <div>
+                        <a href={faq.link}>
                           <button className="link w3-button w3-black w3-round-xxlarge mt-2">
                            Learn More
                           </button>
-                        </Link>
+                        </a>
                       </div>
-                      */}  
+                   
                     </Accordion.Body>
                   </Accordion.Item>
                 ))}
@@ -139,7 +139,7 @@ Follow the path to witness my level of understanding in both function and design
         <div className="w3-container  text-center w3-padding-top-48 text-black mt-4" >
         <div className="w3-content w3-padding-32 text-black" >
           <div className="row d-flex justify-content-center align-items-center w3-margin-top mb-3">
-            <div className="col-sm-12 col-md-5 col-lg-5 flex-column">
+            <div className="col-sm-12 col-md-5 col-lg-5 flex-column w3-padding-large">
             
                 <h2>Alert Components</h2>
                 <hr />
@@ -149,7 +149,7 @@ Follow the path to witness my level of understanding in both function and design
                   different meanings and priorities.
                 </p>
 
-                <Alert variant="danger" className="w3-round-xxlarge text-center shadow" style={{color:'#FF385C'}}>
+                <Alert variant="danger" className="w3-round-xxlarge text-center  shadow" style={{color:'#FF385C'}}>
                   <Alert.Heading>
                     {" "}
                     <h4 >THIS IS AN ALERT.</h4>{" "}
@@ -429,7 +429,6 @@ Follow the path to witness my level of understanding in both function and design
               </div>
             </div>
           </div>
-
         </div>
         </div>
         </div>
@@ -464,8 +463,8 @@ Follow the path to witness my level of understanding in both function and design
           <div className="w3-card w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
           style={{ backgroundColor: "white", color:'#FF385C', height:'20rem' }}>
                 <div className="text-center" >
-              <h3>Are buttons important?</h3>
-              <p style={{fontSize:'14px'}}>"Explore these statistics, which suggest that buttons are not only integral to web development but also play a pivotal role in driving business growth."</p>
+              <h3><b>ARE BUTTONS IMPORTANT?</b></h3>
+              <p style={{fontSize:'18px'}}>"Explore these statistics, which suggest that buttons are not only integral to web development but also play a pivotal role in driving business growth."</p>
             {/** 
             <p>     Buttons can serve as notifiers such as: close "this", or
                     badges notifications to look at "that".</p>
@@ -480,9 +479,9 @@ Follow the path to witness my level of understanding in both function and design
             <div className="w3-card w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
             style={{ height:'20rem' }}>
                 <div className="text-center">
-                <h4>SUBMISSION BUTTONS</h4>
+                <h4 style={{color:'#FF385C',fontWeight:'bold'}}>SUBMISSION BUTTONS</h4>
                 <hr />
-                <p style={{fontSize:'14px'}}>Data from Formstack indicates that optimizing form design, including the placement and design of submission buttons, can increase form completion rates by up to 120%.</p>
+                <p style={{fontSize:'13.5px'}}>Data from Formstack indicates that optimizing form design, including the placement and design of submission buttons, can increase form completion rates by up to 120%.</p>
 <div className="w3-padding-8 mt-3">
 <Button
                     variant="black"
@@ -531,20 +530,20 @@ Follow the path to witness my level of understanding in both function and design
 
        <div className="row d-flex justify-content-center align-items-center ">
         {/**start cta */}
-            <div className="w3-col l6 w3-padding-large flex-column justify-content-center align-items-center">
+        <div className="w3-col l6 w3-padding-large flex-column justify-content-center align-items-center">  
             <div className="w3-card w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
-            style={{height:'20rem' }}>
-                <div className="text-center" >
-                <h4 className="text-center mb-3">CALL-TO-ACTION</h4>
+            style={{ height:'20rem' }}>
+                <div className="text-center">
+                <h4  style={{color:'#FF385C',fontWeight:'bold'}}>CALL-TO-ACTION</h4>
                 <hr />
-                <p style={{fontSize:'14px'}}>  According to HubSpot, websites with clear and compelling CTAs have a 47% higher conversion rate than those without.
+                <p style={{fontSize:'13px'}}>  According to HubSpot, sites with clear and compelling CTAs have a 47% higher conversion rate than those without.
 SmallBizGenius states personalized CTAs increase conversion rates up to 202%.</p>
 <div className="w3-padding-8 mt-3">
  <Button
                     variant="outline-dark"
                     size="lg"
                     className="mb-2 mx-1 shadow"
-                    style={{ width: "50%", borderRadius: '50px', backgroundColor:'white' }}
+                    style={{ width: "100%", borderRadius: '50px', backgroundColor:'white' }}
                   >
                    Learn More
                   </Button>{" "}          
@@ -553,7 +552,7 @@ SmallBizGenius states personalized CTAs increase conversion rates up to 202%.</p
  <Button
                     variant="dark"
                     size="sm"
-                    className="my-2 mx-1 shadow"
+                    className="my-1 mx-1 shadow"
                     style={{borderRadius: '50px'}}
                   >
                     Start Now
@@ -570,9 +569,9 @@ SmallBizGenius states personalized CTAs increase conversion rates up to 202%.</p
             <div className="w3-card w3-light-gray w3-padding-32 w3-padding-large bg-danger-subtle border mb-1 d-flex justify-content-center align-items-center" 
             style={{ height:'20rem' }}>
                 <div className="text-center w3-padding-small">
-                <h4 className="text-center mb-3">NAVIGATION BUTTONS</h4>
+                <h4 className="text-center mb-3"  style={{color:'#FF385C',fontWeight:'bold'}}>NAVIGATION BUTTONS</h4>
                 <hr />
-<p style={{fontSize:'14px'}}>NN Group suggests clear and consistent navigation can boost usability by up to 50%.
+<p style={{fontSize:'13.5px'}}>NN Group suggests clear and consistent navigation can boost usability by up to 50%.
 A study by Forrester revealed that improving website navigation can lead to a 10% increase in website conversions.</p>
 <div className="w3-padding-8 mt-3">
 <Button
@@ -625,18 +624,18 @@ A study by Forrester revealed that improving website navigation can lead to a 10
             </div>
           
 
-          <div className="row d-flex justify-content-center align-items-center w3-margin-top">
-            <div className="w3-col l12">
+          <div className="row d-flex justify-content-center align-items-center ">
+            <div className="w3-col l12 w3-padding-large flex-column justify-content-center align-items-center">
               <div className="w3-card bg-danger-subtle py-3 border mb-1">
-                <div className="container text-center w3-padding-large">
-                  <p className="text-reset">
+                <div className="container text-center w3-padding-large align-items-center">
+                  <p  style={{color:'#FF385C',fontWeight:'bold'}}>
                     <i className="fa fa-info-circle w3-large text-black"></i>{" "}
                  Additional Web Buttons.
                   </p>
                   <Button
                     variant="black"
                     size="sm"
-                    className="rounded shadow mx-1"
+                    className="rounded shadow"
                     style={{
                       width: "40px",
                       height: "40px",
@@ -646,8 +645,8 @@ A study by Forrester revealed that improving website navigation can lead to a 10
                     <i className="fa fa-square text-white"></i>
                   </Button>
 
-                  <CloseButton className="mx-1 w3-padding-large bg-white shadow border border-black border-2" style={{ padding: "12px" }} />
-                  <Button variant="black" className="mx-1" style={{ padding: "12px" }}>
+                  <CloseButton className="mx-1 w3-padding-large bg-white shadow border border-black " />
+                  <Button variant="black" className="w3-padding-large">
                     Profile <Badge bg="white text-black" > 9</Badge>
                     <span className="visually-hidden">unread messages</span>
                   </Button>

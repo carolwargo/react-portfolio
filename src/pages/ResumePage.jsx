@@ -248,6 +248,32 @@ export default function ResumePage() {
         <i className="fa fa-suitcase fa-fw  w3-xlarge w3-text-black">
           </i> WORK EXPERIENCE</h2>
 
+
+          <h5><b>Freelance Design & Development</b></h5>
+        <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> June 2021 - <span className="w3-tag w3-black w3-round">Current</span></h6>
+        <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
+       
+        <ul>
+          <li>Refactor and maintain sites to ensure a user-friendly UI.</li>
+          <li>Develop and integrate e-commerce platforms.</li>
+          <li>Implement design changes to improve user experience.</li>
+          <li>Conduct audits to identify and fix any technical issues or broken links.</li>
+          <li>Implement SEO strategies.</li>
+ 
+          <li>Create engaging content.</li>
+          <li>Monitor site security for threats & vulnerabilities.</li>
+          <li>Collaborate with clients and cross-functional teams.</li>
+          <li>Respond to client to address user inquiries and feedback.</li>
+          <li>Develop digital surveys.</li>
+          <li>Develop digital marketing strategies and social media management systems.</li>
+</ul>
+       
+     
+
+          <hr/>
+      <br />
+
+
         <h5 className=" w3-text-black"><b>Real Estate Agent / Investor</b></h5>
         <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> June 2003 - <span className="w3-tag w3-black w3-round">Current</span></h6>
         <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw "></i><b> Duties</b></p>
@@ -277,29 +303,7 @@ export default function ResumePage() {
       <hr/>
       <br />
     
-        <h5><b>Freelance Design & Development</b></h5>
-        <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> June 2021 - <span className="w3-tag w3-black w3-round">Current</span></h6>
-        <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
-       
-        <ul>
-          <li>Refactor and maintain sites to ensure a user-friendly UI.</li>
-          <li>Develop and integrate e-commerce platforms.</li>
-          <li>Implement design changes to improve user experience.</li>
-          <li>Conduct audits to identify and fix any technical issues or broken links.</li>
-          <li>Implement SEO strategies.</li>
- 
-          <li>Create engaging content.</li>
-          <li>Monitor site security for threats & vulnerabilities.</li>
-          <li>Collaborate with clients and cross-functional teams.</li>
-          <li>Respond to client to address user inquiries and feedback.</li>
-          <li>Develop digital surveys.</li>
-          <li>Develop digital marketing strategies and social media management systems.</li>
-</ul>
-       
-     
-      <hr/>
-      <br />
-  
+
         <h5><b>Media Manager & Webmaster</b></h5>
         <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> Jun 2010 - Mar 2012</h6>
         <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>

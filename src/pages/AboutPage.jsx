@@ -31,9 +31,9 @@ export default function AboutPage() {
     >
     <div className="about" id="about">
      
-    <div className="w3-content w3-container w3-padding-64">
-        <div className="w3-content w3-container">
-          <div className="row justify-content-center align-items-center  w3-margin-top">
+    <div className="w3-content w3-container w3-padding-64 w3-margin-top">
+        <div className="w3-content w3-container ">
+          <div className="row d-flex justify-content-center align-items-center  w3-margin-top">
             <div className="col-lg-6 ">
               <h1 className=" fw-light"><b>ABOUT ME.</b></h1>
               <h5 className=" fw-light">"I'm Carol Wargo, and welcome to my corner of the internet!"</h5>

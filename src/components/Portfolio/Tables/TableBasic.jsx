@@ -5,10 +5,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const TableBasic = () => {
   return (
    <div className="tables" id="tables">
-
-        <div className="row justify-content-center align-items-center">
- 
-        <h5 className="fw-light text-center" style={{color:'#FF385C'}}><b>Basic Table</b></h5>
+   <div className="container">
+        <div className="row justify-content-center align-items-center mb-5">
+        <h5 className="fw-bold text-center" style={{color:'#FF385C'}}><b>BASIC TABLE</b></h5>
                   <Table striped bordered hover className="w3-padding-small">
                       <thead>
                           <tr>
@@ -38,11 +37,12 @@ const TableBasic = () => {
                           </tr>
                       </tbody>
                   </Table>
-           
+                  </div>
+                  </div>
+           <div className="container">
+              <h5 className="fw-bold w3-margin-top text-center" style={{color:'#FF385C'}}><b>LIGHT STRIPED TABLE WITH HOVER</b></h5>
 
-           
-              <h5 className="fw-light w3-margin-top text-center" style={{color:'#FF385C'}}><b>Light Striped with Hover</b></h5>
-        <div className="row justify-content-center">
+              <div className="row justify-content-center align-items-center mb-5">
           <Table striped bordered hover variant="light">
                       <thead>
                           <tr>
@@ -73,10 +73,11 @@ const TableBasic = () => {
                       </tbody>
                   </Table>
               </div>
-             
-           
-   <h5 className="fw-light w3-margin-top text-center" style={{color:'#FF385C'}}><b>Dark Striped with Hover</b></h5>
-        <div className="row justify-content-center">
+              </div>
+              <div className="container">
+   <h5 className="fw-bold w3-margin-top text-center" style={{color:'#FF385C'}}><b>DARK STRIPED TABLE WITH HOVER</b></h5>
+      
+   <div className="row justify-content-center align-items-center ">
           <Table striped bordered hover variant="dark">
                       <thead>
                           <tr>
@@ -107,8 +108,7 @@ const TableBasic = () => {
                       </tbody>
                   </Table>
               </div>
-         
-          </div>
+              </div>
       </div>
   );
 };
