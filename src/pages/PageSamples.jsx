@@ -112,7 +112,7 @@ function PageSamples() {
                 <div className="col-md-5 w3-padding-16">
                   <div className="row px-2 justify-content-center">
                     <div className="justify-content-center ">
-                      <h3>BLOG SAMPLE 1.</h3>
+                      <h3>BASIC BLOG SAMPLE</h3>
                       <hr className="w3-opacity" />
                       <p>
                        Blog-style websites offer an interactive
@@ -163,11 +163,10 @@ function PageSamples() {
               <div className="row d-flex  justify-content-center align-items-center">
                 <div className="col-md-5  w3-padding-16">
                   <div className=" justify-content-center">
-                    <h3 className="text-black"> BLOG SAMPLE 2.</h3>
+                    <h3 className="text-black"> BLOG SAMPLE WITH EXTRAS</h3>
                     <hr className="w3-opacity" />
                     <p>
-                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus accusamus maiores, vero cum quam saepe pariatur iure at sunt dicta. Illum optio reiciendis odit iusto accusantium nihil ipsum. In, vitae!Lorem
-                    </p>
+                "Blog sample with extras" includes the addition of 4 elements; custom header with CTA, subscription form, custom multi-column footer and e-book journal download.</p>
                   </div>
                   <div className="row px-2 justify-content-center">
                  

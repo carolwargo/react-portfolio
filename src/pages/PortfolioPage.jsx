@@ -3,9 +3,12 @@ import Alert from "react-bootstrap/Alert";
 import Accordion from "react-bootstrap/Accordion";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import TableBasic from "../components/Portfolio/Tables/TableBasic.jsx";
-import { Button, Badge, CloseButton } from "react-bootstrap";
+import { Button, Badge, CloseButton} from "react-bootstrap";
 import WebComponentsTrans from "../assets/images/WebComponentsTrans.png";
+import ImageList from "../components/Portfolio/ImageList/ImageList.jsx";
+import NutritionTable from "../components/Portfolio/Tables/NutritionTable.jsx";
+import DataTable from "../components/Portfolio/Tables/DataTable.jsx";
+import PaginationTable from "../components/Portfolio/Tables/PaginationTable.jsx";
 
 function Portfolio() {
   const scrollToTop = () => {
@@ -656,36 +659,60 @@ A study by Forrester revealed that improving website navigation can lead to a 10
             </div>
             <br />
             <br />
+            <br />
+            <br />
           </div>
         {/**End Buttons */}
      
+        {/**Start Image lists*/}
+        <div className="w3-light-gray">
+        <div className="w3-container w3-padding-16" id="image-list" >
+        <div className="row w3-padding-large"  >
+          <div className="w3-padding-large">
+        <h1 className="text-center w3-margin-bottom">Image Lists</h1>
+          <hr />
+          </div>
+            <ImageList />  
+        </div>
+        </div>
+        </div>
+{/**End Image lists*/}
+
 
         {/**Start Tables*/}
-        <div className="w3-padding-large"  id="tables">
-        <div className=" w3-padding-32">
-        <div className="w3-container w3-padding-16" >
-          <h1 className="text-center w3-margin-bottom">Table Components</h1>
-          <hr />
-                <p className="text-center">
+{/**Start responsive tables*/}
+  
+        <div className="w3-container w3-content w3-padding-top-32 mt-3" id="tables" >
+          <div className="mb-5"> 
+        <h1 className="text-center text-black w3-margin-bottom">Tables</h1>
+        <p className="text-center">
                   Tables are structured grids used to present data in rows and
                   columns. They're commonly used for displaying tabular data,
                   such as product listings, pricing tables, or data summaries.
-                </p>
+                </p>  
+                </div>
+            <NutritionTable />       
+     <DataTable />
+        <PaginationTable />
         </div>
-        </div>
-       
-        <div
-          className="w3-container w3-padding-top-16 text-black"
-        >
-                  <TableBasic />
-           <br />
-            </div>
-            </div>
-           
+      
+        {/**End responsive tables*/}
         {/**End Tables*/}
 
 
-
+        {/**Start AppBar component
+<div className="w3-container w3-content w3-padding-top-32 mt-3" id="tables" >
+          <div className="mb-5"> 
+        <h1 className="text-center text-black w3-margin-bottom">Tables</h1>
+        <p className="text-center">
+                  Tables are structured grids used to present data in rows and
+                  columns. They're commonly used for displaying tabular data,
+                  such as product listings, pricing tables, or data summaries.
+                </p>  
+                </div>
+                <AppBar/>
+                </div>
+End AppBar component*/}
 
 
         {/**Start forms */}
@@ -709,18 +736,20 @@ A study by Forrester revealed that improving website navigation can lead to a 10
                   patience."
                 </i>
               </p>
-              <button
-                className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom"
-                style={{ backgroundColor: "#FF385C" }}
-              >
-                <Link
+              
+              <Link
                   to="/forms#forms"
                   className="button text-white"
                   onClick={scrollToTop}
                 >
+              <button
+                className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom"
+                style={{ backgroundColor: "#FF385C" }}
+              >
                 View Form Components
-                </Link>
+              
               </button>
+              </Link>
             </div>
           </div>
         </div>

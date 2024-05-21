@@ -10,6 +10,7 @@ import README from "../assets/images/Portfolio/README.png";
 import Horizen from "../assets/images/Portfolio/Horizen.png";
 import WeatherBig from "../assets/images/Portfolio/WeatherBig.png";
 import Password from "../assets/images/Portfolio/Password.png";
+import LightDark from '../components/Portfolio/Toggle/LightDark';
 //import WebComponentsTrans from "../assets/images/WebComponentsTrans.png";
 
 
@@ -31,8 +32,14 @@ const Server = () => {
           className="portfolio"
           id="portfolio"
         >
+          <LightDark />
+
+
                {/**Start INTRO Web Components */}
             <div className="container w3-padding-top-64 mb-4" id="server"> 
+
+
+
             <div className="row d-flex justify-content-center align-items-center w3-padding-large">
               <div className="col-sm-12 col-md-12 col-lg-12 flex-column my-1">
               <h1 className='text-center'>Utility Apps</h1>
