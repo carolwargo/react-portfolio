@@ -266,55 +266,56 @@ Examples include Login or Sign Up forms. How are they different?"
             </div>
             </div>  
             </div>
-            <div className="container w3-white text-center w3-padding-large ">
-        
-              <br />
-        <div className="row d-flex justify-content-center align-items-center text-center " id='subscription'>
-<div className='container w3-padding-8'>
-   <p><span style={{color:'#FF385C'}}><b>THE BENEFITS.</b></span> Stats that support the importance of capturing an email...</p>
+            </div>
+<div className='w3-black vw-100 w3-padding-48'>
+<div className="container w3-content d-flex justify-content-center">
+  <br />
+  <div className="row d-flex text-center justify-content-center align-items-center w3-padding-large">
+    <div>
+      <h3><span style={{color:'#FF385C'}}><b>THE BENEFITS.</b><br /></span> Stats that support the importance of capturing an email...</h3>
     </div>
-  
-  <div className='col-sm-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center text-black g-1'>
-    <Card style={{ height: '18rem', backgroundColor:'#FF385C', color:'white' }} >
-      <Card.Body>
-        <Card.Text>
-          B2B marketers report that email is the most effective channel for generating leads (HubSpot). According to OptinMonster, welcome emails have an average open rate of 82%.
-        </Card.Text>
-      </Card.Body>
-    </Card>
-  </div>
-  
-  <div className='col-sm-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center text-black g-1'>
-    <Card style={{ height: '18rem', backgroundColor:'#FF385C', color:'white' }} >
-      <Card.Body>
-        <Card.Text>
-          "80% of retail professionals cite email marketing as their top driver of customer retention. Loyal customers can be worth up to 10 times their initial purchase, as per Invesp."
-        </Card.Text>
-      </Card.Body>
-    </Card>
-  </div>
-  
-  <div className='col-sm-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center text-black g-1'>
-    <Card style={{ height: '18rem', backgroundColor:'#FF385C', color:'white' }} >
-      <Card.Body>
-        <Card.Text>
-          Email marketing has a high (ROI), averaging around $42 for every dollar spent (DMA). Automated email campaigns generate 320% more revenue than non-automated ones. 
-        </Card.Text>
-      </Card.Body>
-    </Card>
-  </div>
-  
-  <div className='col-sm-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center text-black g-1'>
-    <Card style={{ height: '18rem', backgroundColor:'#FF385C', color:'white' }} >
-      <Card.Body>
-        <Card.Text>
-          Segmented email campaigns drive a 760% increase in revenue (Campaign Monitor). Personalized subject lines increase open rates by 50% (Yes Marketing).
-        </Card.Text>
-      </Card.Body>
-    </Card>
+    <div className='col-sm-12 col-md-3 col-lg-3 d-flex flex-column align-items-center justify-content-center text-black g-3'>
+      <Card style={{ height: '14rem', backgroundColor:'#FF385C', color:'white' }} >
+        <Card.Body className="d-flex align-items-center justify-content-center">
+          <Card.Text>
+            B2B marketers report that email is the most effective channel for generating leads (HubSpot). According to OptinMonster, welcome emails have an average open rate of 82%.
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </div>
+    
+    <div className='col-sm-12 col-md-3 col-lg-3 d-flex flex-column align-items-center justify-content-center text-black g-3'>
+      <Card style={{ height: '14rem', backgroundColor:'#FF385C', color:'white' }} >
+        <Card.Body className="d-flex align-items-center justify-content-center">
+          <Card.Text>
+            "80% of retail professionals cite email marketing as their top driver of customer retention. Loyal customers can be worth up to 10 times their initial purchase, as per Invesp."
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </div>
+    
+    <div className='col-sm-12 col-md-3 col-lg-3 d-flex flex-column align-items-center justify-content-center text-black g-3'>
+      <Card style={{ height: '14rem', backgroundColor:'#FF385C', color:'white' }} >
+        <Card.Body className="d-flex align-items-center justify-content-center">
+          <Card.Text>
+            Email marketing has a high (ROI), averaging around $42 for every dollar spent (DMA). Automated email campaigns generate 320% more revenue than non-automated ones. 
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </div>
+    
+    <div className='col-sm-12 col-md-3 col-lg-3 d-flex flex-column align-items-center justify-content-center text-black g-3'>
+      <Card style={{ height: '14rem', backgroundColor:'#FF385C', color:'white' }} >
+        <Card.Body className="d-flex align-items-center justify-content-center">
+          <Card.Text>
+            Segmented email campaigns drive a 760% increase in revenue (Campaign Monitor). Personalized subject lines increase open rates by 50% (Yes Marketing).
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </div>
   </div>
 </div>
-</div>
+
 </div>
 
 
@@ -346,8 +347,8 @@ Examples include Login or Sign Up forms. How are they different?"
  
 
         {/**Start Samples */}
-        <div className="w3-container w3-padding-16">
-        <div className="row d-flex justify-content-center align-items-center">
+        <div className="w3-container w3-padding-16 mt-4">
+        <div className="row d-flex w3-padding-large justify-content-center align-items-center">
       
           <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
             <div className="container w3-white text-center w3-padding-large w3-padding-small">

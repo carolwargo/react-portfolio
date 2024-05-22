@@ -133,21 +133,21 @@ className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#F
               <div className="w3-container w3-content text-center w3-padding-48 w3-margin-bottom w3-padding-large">
               <h2 className="text-black">View my digital resume to learn more about my professional experience and qualifications.        
         </h2><br />
-              <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
-              style={{backgroundColor:'#FF385C'}}>
+           
               <Link to="/resume#resume"
                   className="button text-white"
                   onClick={scrollToTop}
                 >
-                VIEW MY RESUME
+                     <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
+              style={{backgroundColor:'#FF385C'}}> VIEW MY RESUME</button>
+              
                 </Link>
-              </button>
               </div> 
              
           <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">
-              <a href="#about" style={{color:'#FF385C'}}>Back to top</a>
+              <Link to="#about" style={{color:'#FF385C'}}>Back to top</Link>
             </p>
           </div>
         </footer>
