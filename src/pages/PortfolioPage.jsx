@@ -664,50 +664,50 @@ A study by Forrester revealed that improving website navigation can lead to a 10
             <br />
           </div>
         {/**End Buttons */}
-     
-        {/**Start Image lists*/}
-        <div className="w3-light-gray">
-        <div className="w3-container w3-padding-16" id="image-list" >
+     {/**Start Image lists*/}
+<div className="w3-light-gray">
+  <div className="w3-container w3-padding-16" id="image-list">
+    <div className="w3-padding-small">
+      <h1 className="text-center w3-margin-bottom">Image Lists</h1>
+      <hr />
+    </div>
+    <div className="row d-flex justify-content-center align-items-center w3-padding-large">
+      <div className="col-sm-12 col-md-7 col-lg-7 d-flex flex-column justify-content-center align-items-center">
+        <ImageList />
+      </div>
+      <div className="col-sm-12 col-md-5 col-lg-5 d-flex flex-column justify-content-center align-items-center">
         <div className="w3-padding-small">
-        <h1 className="text-center w3-margin-bottom">Image Lists</h1>
+          <h1 className="text-center w3-margin-bottom">Image Lists</h1>
           <hr />
-          </div>
-          <div className="row d-flex justify-content-center align-items-center w3-padding-large"  >
-     <div className="col-sm-12 col-md-7 col-lg-7 flex-column justify-content-center">
-     <ImageList />
-     </div>
-     <div className="col-sm-12 col-md-5 col-lg-5 flex-column justify-content-center">
-     <div className="w3-padding-small">
-        <h1 className="text-center w3-margin-bottom">Image Lists</h1>
-        <hr />
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi eos odio consequatur explicabo nostrum vel consectetur quos quas, magnam esse unde! Nulla consequuntur recusandae et perferendis numquam minus ipsum?</p>
-          </div>
-      </div>   
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi eos odio consequatur explicabo nostrum vel consectetur quos quas, magnam esse unde! Nulla consequuntur recusandae et perferendis numquam minus ipsum?</p>
         </div>
-        </div>
-        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {/**End Image lists*/}
-
-
-        {/**Start Image lists*/}
-        <div className="w3-light-gray">
-        <div className="w3-container w3-padding-16" id="image-list" >
-          <div className="row d-flex justify-content-center align-items-center w3-padding-large" > 
-     <div className="col-sm-12 col-md-6 col-lg-5 flex-column">
-     <div className="w3-padding-small">
-        <h1 className="text-center w3-margin-bottom">Image Lists</h1>
-        <hr />
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi eos odio consequatur explicabo nostrum vel consectetur quos quas, magnam esse unde! Nulla consequuntur recusandae et perferendis numquam minus ipsum?</p>
-          </div>
-      </div> 
-      <div className="col-sm-12 col-md-7 col-lg-7 flex-column">
-        <ImageTitles />  
-     </div>
+     {/**Start Image lists*/}
+     <div className="w3-light-gray">
+  <div className="w3-container w3-padding-16" id="image-list">
+    <div className="w3-padding-small">
+      <h1 className="text-center w3-margin-bottom">Image Lists</h1>
+      <hr />
+    </div>
+    <div className="row d-flex justify-content-center align-items-center w3-padding-large">
+      <div className="col-sm-12 col-md-7 col-lg-7 d-flex flex-column justify-content-center align-items-center">
+        <ImageTitles/>
+      </div>
+      <div className="col-sm-12 col-md-5 col-lg-5 d-flex flex-column justify-content-center align-items-center">
+        <div className="w3-padding-small">
+          <h1 className="text-center w3-margin-bottom">Image Lists</h1>
+          <hr />
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi eos odio consequatur explicabo nostrum vel consectetur quos quas, magnam esse unde! Nulla consequuntur recusandae et perferendis numquam minus ipsum?</p>
         </div>
-        </div>
-        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {/**End Image lists*/}
-
 
 
         {/**Start Tables*/}
