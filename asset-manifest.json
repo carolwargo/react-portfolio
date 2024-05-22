@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.733d611f.css",
-    "main.js": "/react-portfolio/static/js/main.2035b2b5.js",
+    "main.js": "/react-portfolio/static/js/main.ba0148d9.js",
     "static/media/RealEstate.png": "/react-portfolio/static/media/RealEstate.ba0b8a8bd8b9df38e276.png",
     "static/media/ResumeDownload.pdf": "/react-portfolio/static/media/ResumeDownload.71d452106ce673e52434.pdf",
     "static/media/Album.png": "/react-portfolio/static/media/Album.624f5f271608ee54bae6.png",
     "static/media/LoginImage.png": "/react-portfolio/static/media/LoginImage.a7742c36080e9860e034.png",
+    "static/media/WeatherNew.png": "/react-portfolio/static/media/WeatherNew.ed1e611ded22ae4fed6e.png",
     "static/media/LoginBW.png": "/react-portfolio/static/media/LoginBW.8456b009ec424fd44136.png",
     "static/media/BlogShot.png": "/react-portfolio/static/media/BlogShot.266187bd8e0092efbf48.png",
     "static/media/Lake.png": "/react-portfolio/static/media/Lake.8fe8de6b95a642ddf090.png",
@@ -18,24 +19,29 @@
     "static/media/YogaSet.png": "/react-portfolio/static/media/YogaSet.5b7bef601b298c2fce5f.png",
     "static/media/WebComponentsTrans.png": "/react-portfolio/static/media/WebComponentsTrans.63309f315b4c00a48cac.png",
     "static/media/Business.png": "/react-portfolio/static/media/Business.2feb0411115e2f21fb28.png",
+    "static/media/Mac2.jpeg": "/react-portfolio/static/media/Mac2.6958bb849e45ff6118f7.jpeg",
     "static/media/fa-solid-900.ttf": "/react-portfolio/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
     "static/media/WomanReading.jpg": "/react-portfolio/static/media/WomanReading.9f7b768c7f3a87220bcc.jpg",
+    "static/media/WeatherMobile.png": "/react-portfolio/static/media/WeatherMobile.83074d1ae142f8d42eea.png",
+    "static/media/Swing.png": "/react-portfolio/static/media/Swing.5f6d5f81354ea8582128.png",
     "static/media/Horizen.png": "/react-portfolio/static/media/Horizen.e8e32ffff3b81362893a.png",
+    "static/media/SurfGuy.png": "/react-portfolio/static/media/SurfGuy.e1f0c4e4158bf2658e6b.png",
     "static/media/White.png": "/react-portfolio/static/media/White.9737bcae314bf1c8bb8f.png",
+    "static/media/Concert.png": "/react-portfolio/static/media/Concert.35bd549b498c53eb68d3.png",
+    "static/media/Street.png": "/react-portfolio/static/media/Street.6e1867e42ffbb2402d8b.png",
     "static/media/LocationView.png": "/react-portfolio/static/media/LocationView.36a68abdb11a1a79a97d.png",
-    "static/media/Turtle.png": "/react-portfolio/static/media/Turtle.cc459bbd77509006f791.png",
     "static/media/MeWhite.png": "/react-portfolio/static/media/MeWhite.4524c5451cc14595b196.png",
+    "static/media/Bed.png": "/react-portfolio/static/media/Bed.06e37b67eb0ea708681d.png",
     "static/media/fa-brands-400.ttf": "/react-portfolio/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
     "static/media/Surf.png": "/react-portfolio/static/media/Surf.52a13f827df0376abe5a.png",
+    "static/media/GirlBoat.png": "/react-portfolio/static/media/GirlBoat.13cb09d7b40315d0f264.png",
     "static/media/Sunset.png": "/react-portfolio/static/media/Sunset.ce8b0e6b422e10c6e2ad.png",
-    "static/media/WeatherBig.png": "/react-portfolio/static/media/WeatherBig.9f5094e987ef5ecf5edf.png",
     "static/media/fa-solid-900.woff2": "/react-portfolio/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
     "static/media/SVG.png": "/react-portfolio/static/media/SVG.b9ea1c1f618697eb61d6.png",
     "static/media/README.png": "/react-portfolio/static/media/README.8dd2709ef8f9bdbbbe13.png",
     "static/media/CarBW.png": "/react-portfolio/static/media/CarBW.cf718e2c3d0dd89396f8.png",
     "static/media/Notes.png": "/react-portfolio/static/media/Notes.d0604534cd10448cfd42.png",
     "static/media/Password.png": "/react-portfolio/static/media/Password.125cb94a73a0e61605c3.png",
-    "static/media/GirlBW.png": "/react-portfolio/static/media/GirlBW.8edac051cf1e62ab32fc.png",
     "static/media/JATE.png": "/react-portfolio/static/media/JATE.4c48f8e64a74d8015ffb.png",
     "static/media/Desk.png": "/react-portfolio/static/media/Desk.313ee3833bb138d423f5.png",
     "static/media/fa-brands-400.woff2": "/react-portfolio/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
@@ -45,10 +51,10 @@
     "static/media/fa-v4compatibility.woff2": "/react-portfolio/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/react-portfolio/index.html",
     "main.733d611f.css.map": "/react-portfolio/static/css/main.733d611f.css.map",
-    "main.2035b2b5.js.map": "/react-portfolio/static/js/main.2035b2b5.js.map"
+    "main.ba0148d9.js.map": "/react-portfolio/static/js/main.ba0148d9.js.map"
   },
   "entrypoints": [
     "static/css/main.733d611f.css",
-    "static/js/main.2035b2b5.js"
+    "static/js/main.ba0148d9.js"
   ]
 }
