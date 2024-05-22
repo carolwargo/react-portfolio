@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Button, Badge, CloseButton} from "react-bootstrap";
 import WebComponentsTrans from "../assets/images/WebComponentsTrans.png";
 import ImageList from "../components/Portfolio/ImageList/ImageList.jsx";
+import ImageTitles from "../components/Portfolio/ImageList/ImageTitles.jsx";
 import NutritionTable from "../components/Portfolio/Tables/NutritionTable.jsx";
 import DataTable from "../components/Portfolio/Tables/DataTable.jsx";
 import PaginationTable from "../components/Portfolio/Tables/PaginationTable.jsx";
@@ -69,8 +70,8 @@ function Portfolio() {
           <div className="row d-flex justify-content-center align-items-center w3-padding-large">
           <div className="col-sm-12 col-md-12 col-lg-12 flex-column">
           <div className="container">
-          <h1>My Work</h1>
-          <h4 className="fw-regular">"My Work, My Portfolio consists of multiple sample pages of a wide range of elements, images, apps, functions and more. 
+          <h1>My Portfolio</h1>
+          <h4 className="fw-regular">"My Portfolio consists of a wide range of sample elements, images, apps and more. 
 Follow the path to witness my level of understanding in both function and design."</h4>
            </div>
            </div>
@@ -667,16 +668,46 @@ A study by Forrester revealed that improving website navigation can lead to a 10
         {/**Start Image lists*/}
         <div className="w3-light-gray">
         <div className="w3-container w3-padding-16" id="image-list" >
-        <div className="row w3-padding-large"  >
-          <div className="w3-padding-large">
+        <div className="w3-padding-small">
         <h1 className="text-center w3-margin-bottom">Image Lists</h1>
           <hr />
           </div>
-            <ImageList />  
+          <div className="row d-flex justify-content-center align-items-center w3-padding-large"  >
+     <div className="col-sm-12 col-md-7 col-lg-7 flex-column justify-content-center">
+     <ImageList />
+     </div>
+     <div className="col-sm-12 col-md-5 col-lg-5 flex-column justify-content-center">
+     <div className="w3-padding-small">
+        <h1 className="text-center w3-margin-bottom">Image Lists</h1>
+        <hr />
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi eos odio consequatur explicabo nostrum vel consectetur quos quas, magnam esse unde! Nulla consequuntur recusandae et perferendis numquam minus ipsum?</p>
+          </div>
+      </div>   
         </div>
         </div>
         </div>
 {/**End Image lists*/}
+
+
+        {/**Start Image lists*/}
+        <div className="w3-light-gray">
+        <div className="w3-container w3-padding-16" id="image-list" >
+          <div className="row d-flex justify-content-center align-items-center w3-padding-large" > 
+     <div className="col-sm-12 col-md-6 col-lg-5 flex-column">
+     <div className="w3-padding-small">
+        <h1 className="text-center w3-margin-bottom">Image Lists</h1>
+        <hr />
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi eos odio consequatur explicabo nostrum vel consectetur quos quas, magnam esse unde! Nulla consequuntur recusandae et perferendis numquam minus ipsum?</p>
+          </div>
+      </div> 
+      <div className="col-sm-12 col-md-7 col-lg-7 flex-column">
+        <ImageTitles />  
+     </div>
+        </div>
+        </div>
+        </div>
+{/**End Image lists*/}
+
 
 
         {/**Start Tables*/}

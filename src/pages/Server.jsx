@@ -7,10 +7,10 @@ import Notes from "../assets/images/Portfolio/Notes.png";
 import SVG from "../assets/images/Portfolio/SVG.png";
 import Desk from "../assets/images/Portfolio/Desk.png";
 import README from "../assets/images/Portfolio/README.png";
+import WeatherNew from "../assets/images/WeatherNew.png";
+import WeatherMobile from "../assets/images/WeatherMobile.png";
 import Horizen from "../assets/images/Portfolio/Horizen.png";
-import WeatherBig from "../assets/images/Portfolio/WeatherBig.png";
 import Password from "../assets/images/Portfolio/Password.png";
-import LightDark from '../components/Portfolio/Toggle/LightDark';
 //import WebComponentsTrans from "../assets/images/WebComponentsTrans.png";
 
 
@@ -32,15 +32,82 @@ const Server = () => {
           className="portfolio"
           id="portfolio"
         >
-          <LightDark />
 
 
                {/**Start INTRO Web Components */}
             <div className="container w3-padding-top-64 mb-4" id="server"> 
+        <div className="w3-container w3-content">
+          <div className='row  w3-padding-32 w3-margin-top d-flex justify-content-center align-items-center w3-padding-24-top'>
+            
+            {/*2. start weather app*/}
+           <div className="flex-column col-sm-12 col-md-8 col-lg-8 justify-content-center align-items-center">
+                  
+        <div className="w3-container ">
+        <h3 className="w3-text-black text-center">
+                <b className="fw-bold text-black">Mobile & Desktop</b>     
+              </h3>
+              <hr className="w3-opacity" />
 
-
-
-            <div className="row d-flex justify-content-center align-items-center w3-padding-large">
+              <p className="text-black text-center">
+              Experience the convenience and reliability of the Open Weather App, your go-to weather resource for both mobile and desktop. Stay informed, stay prepared, and stay connected to the weather conditions that impact your life. </p>
+              </div>
+              <br />
+                <div className="w3-card w3-opacity w3-hover-opacity-off"id="refactor">
+                  <img
+                    src={WeatherNew}
+                    alt="blog-profile"
+                    style={{ width: "100%" }}
+                    className="rounded-top w3-opacity w3-hover-opacity-off"
+                  ></img>
+                  <div className="w3-container w3-white justify-content-center w3-center">
+                    <br></br>
+                    <h5>
+                      <b>Weather App</b>
+                    </h5>
+                    <p style={{ fontSize: "14px", fontWeight: "lighter" }}>
+                      <i>
+                      Open Weather API: With this tool, you can search for any city to view detailed weather information for today, including temperature, humidity, wind speed, and atmospheric conditions. </i>
+                    </p>
+                    <div className="card-footer w3-center w3-margin-bottom">
+                      <p
+                        className="w3-opacity text-center pt-2"
+                        style={{ fontSize: "12px" }}
+                      >
+                        click to view repository
+                      </p>
+                      <a href="https://carolwargo.github.io/weather/">
+                      <button        
+                        className="w3-button w3-black shadow-lg w3-block"
+                      >
+                        Github
+                      </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <br />
+              </div>
+                {/*2. end weather app*/}
+                
+            {/*2. start weather app*/}
+           <div className="flex-column col-sm-12 col-md-4 col-lg-4 justify-content-center align-items-center">
+                <div className="w3-card w3-opacity w3-hover-opacity-off"id="refactor">
+                  <img
+                    src={WeatherMobile}
+                    alt="blog-profile"
+                    style={{ width: "100%" }}
+                    className="rounded-top w3-opacity w3-hover-opacity-off"
+                  ></img>
+             
+                </div>
+                <br />
+              </div>
+                {/*2. end weather app*/}
+       </div>
+       <br />
+        <br />
+        <div className="w3-container w3-padding-32">
+        <div className="row d-flex justify-content-center align-items-center w3-padding-large">
               <div className="col-sm-12 col-md-12 col-lg-12 flex-column my-1">
               <h1 className='text-center'>Utility Apps</h1>
               <hr className="w3-opacity" />
@@ -53,29 +120,12 @@ const Server = () => {
                   the understanding it's a work in progress. Thanks for your
                   patience."
                 </i>
+               
               </p>
                </div>
                 </div>
-            </div>
-
- 
-        <div className="w3-container w3-content w3-padding-32">
+    </div>
         <div className="row d-flex justify-content-center align-items-center">
-       {/** 
-       
-        <div className="w3-container w3-padding-32">
-        <h4 className="w3-text-black text-center">
-                <b className="fw-bold text-black">Server-side Apps</b>     
-              </h4>
-              <hr className="w3-opacity" />
-
-              <p className="text-black text-center">
-                      Server-side functions handle request processing, data
-                      management, security, and business logic in web apps. They
-                      are vital for building scalable and secure applications. </p>
-              </div>
-              <br />
-              */}
           <div className="flex-column col-sm-12 col-md-4 col-lg-4 justify-content-center align-items-center">
           <div className="w3-card w3-opacity w3-hover-opacity-off" id="text-editor">
                   <img
@@ -123,45 +173,6 @@ const Server = () => {
            </div>
 
 
-            {/*2. start weather app*/}
-           <div className="flex-column col-sm-12 col-md-4 col-lg-4 justify-content-center align-items-center">
-                <div className="w3-card w3-opacity w3-hover-opacity-off"id="refactor">
-                  <img
-                    src={WeatherBig}
-                    alt="blog-profile"
-                    style={{ width: "100%" }}
-                    className="rounded-top w3-opacity w3-hover-opacity-off"
-                  ></img>
-                  <div className="w3-container w3-white justify-content-center w3-center">
-                    <br></br>
-                    <h5>
-                      <b>Weather App</b>
-                    </h5>
-                    <p style={{ fontSize: "14px", fontWeight: "lighter" }}>
-                      <i>
-                        Weather API, search by city- Current day, 5-day forecase and, save your top 5 cities for convenience.
-                      </i>
-                    </p>
-                    <div className="card-footer w3-center w3-margin-bottom">
-                      <p
-                        className="w3-opacity text-center pt-2"
-                        style={{ fontSize: "12px" }}
-                      >
-                        click to view repository
-                      </p>
-                      <a href="https://carolwargo.github.io/weather/">
-                      <button        
-                        className="w3-button w3-black shadow-lg w3-block"
-                      >
-                        Github
-                      </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <br />
-              </div>
-                {/*2. end weather app*/}
 
 
 
@@ -483,6 +494,7 @@ const Server = () => {
             </p>
           </div>
         </footer>
+</div>
 </div>
 </motion.div>
 

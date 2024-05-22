@@ -1,13 +1,19 @@
 import React from "react";
-import YogaSet from "../assets/YogaStory/YogaSet.png";
-
+import YogaSet from "../assets/images/YogaStory/YogaSet.png";
 const Graphics = () => {
     return (
-        <div>
-        <h1>Graphics</h1>
+        <div className="w3-padding-top-64">
+      
              
       <div className="container py-2 mt-3" style={{fontFamily:'sans-serif'}}>
-        <div className="row d-flex justify-content-center align-items-center">
+      <div className='w3-padding-32 text-center text-black'>
+      <h1 className="text-center">Graphic Elements</h1>
+      <h4 className="text-center"><i>The Graphic Elements page is currently under development and will be completed shortly. Thank you in advance for your patience.</i></h4>
+  <hr />
+        </  div>
+      
+        <br  />
+     <div className="row d-flex justify-content-center align-items-center">
           <div className="col d-flex justify-content-center align-bottom px-4"
           id="what-we-do">
             <div className="story-essentials-body justify-content-center align-bottom">

@@ -3,8 +3,7 @@ import {motion} from 'framer-motion';
 import { Link } from "react-router-dom";
 import { Accordion } from "react-bootstrap";
 import WebComponentsTrans from '../assets/images/WebComponentsTrans.png';
-
-
+import AppBar from '../components/Portfolio/AppBar/AppBar';
 
 
 const Server = () => {
@@ -60,6 +59,11 @@ const Server = () => {
           className="portfolio"
           id="portfolio"
         >
+ <div className="container mb-4 w3-padding-top-64">
+ <AppBar/>
+ </div>
+         
+          
                {/**Start INTRO Web Components */}
             <div className="container mb-4 w3-padding-top-64" id="server">
                 

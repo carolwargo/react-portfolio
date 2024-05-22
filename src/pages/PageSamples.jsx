@@ -20,8 +20,6 @@ function PageSamples() {
     initial={{ y: -20, opacity: 0}}
     animate={{y: 0, opacity: 1}}
     exit={{y: 20, opacity: 0}}
-    className="home"
-    
     >
     <div className="page-samples" id="page-samples">
       <div className="w3-padding-top-48 w3-padding-large ">

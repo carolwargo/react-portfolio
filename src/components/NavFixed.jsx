@@ -19,6 +19,13 @@ function BasicExample() {
     setExpanded(!expanded);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   const closeNavbar = (e) => {
     try {
       e.stopPropagation();
@@ -28,6 +35,15 @@ function BasicExample() {
     }
   };
 
+  const handleNavLinkClick = () => {
+    scrollToTop();
+  };
+
+  const handleNavLinkClickAndCloseNavbar = (e) => {
+    handleNavLinkClick();
+    closeNavbar(e);
+  };
+
   return (
     <motion.div
       initial={{ y: -20, opacity: 0 }}
@@ -35,9 +51,9 @@ function BasicExample() {
       exit={{ y: 20, opacity: 0 }}
       className="home"
     >
-      <Navbar expand="lg" className="shadow-sm bg-body-tertiary fixed-top">
+      <Navbar expand="lg" className="shadow-sm bg-body-tertiary fixed-top" expanded={expanded}>
         <Container fluid>
-          <Navbar.Brand as={Link} to="/">
+          <Navbar.Brand as={Link} to="/" style={{ fontSize: '14px' }} onClick={handleNavLinkClickAndCloseNavbar} >
             <b>CW</b>HOME
           </Navbar.Brand>
           <Navbar.Toggle
@@ -46,49 +62,42 @@ function BasicExample() {
           >
             <FontAwesomeIcon icon={faBars} color="black" />
           </Navbar.Toggle>
-          <Navbar.Collapse id="navbar-collapse" onClick={closeNavbar}>
+          <Navbar.Collapse id="navbar-collapse">
             <Nav className="me-auto">
-              <Nav.Link as={Link} to="/about#about" onClick={closeNavbar}>
-                ABOUT
+              <Nav.Link as={Link} to="/about#about" onClick={handleNavLinkClickAndCloseNavbar} style={{ fontSize: '14px' }}>
+                About
               </Nav.Link>
-              <Nav.Link as={Link} to="/resume#resume" onClick={closeNavbar}>
-                RESUME
+              <Nav.Link as={Link} to="/resume#resume" onClick={handleNavLinkClickAndCloseNavbar} style={{ fontSize: '14px' }}>
+                Resume
               </Nav.Link>
               <Nav.Link
                 as={Link}
                 to="/page-samples#page-samples"
-                onClick={closeNavbar}
+                style={{ fontSize: '14px' }}
+                onClick={handleNavLinkClickAndCloseNavbar}
               >
-                PAGE SAMPLES
+                Page Samples
               </Nav.Link>
-              <NavDropdown title="MY WORK" id="basic-nav-dropdown">
-                <div style={{ border: "3px solid", borderRadius: "10px" }}>
+              <NavDropdown title="Portfolio" id="basic-nav-dropdown" style={{ fontSize: '14px' }}>
+                <div className='shadow' style={{ border: "1px solid", borderRadius: "5px", fontSize:'14px' }}>
                   <NavDropdown.Item
                     as={Link}
                     to="/portfolio#web-components"
+                    onClick={handleNavLinkClickAndCloseNavbar}
                   >
-                    COMPONENT SAMPLES
+                    Portfolio Samples
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/forms#forms">
-                    FORM SAMPLES
+                  <NavDropdown.Item as={Link} to="/page-samples" onClick={handleNavLinkClickAndCloseNavbar}>
+                    Page Samples
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/page-samples">
-                    SITE SAMPLES
+                  <NavDropdown.Item as={Link} to="/server#server" onClick={handleNavLinkClickAndCloseNavbar}>
+                    App Samples
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/server#server">
-                    UTILITY APPS
-                  </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/graphics#graphics">
-                    COMING SOON! <br /> GRAPHIC ELEMENTS
+                  <NavDropdown.Item as={Link} to="/graphics#graphics" onClick={handleNavLinkClickAndCloseNavbar}>
+                    Graphic Elements
                   </NavDropdown.Item>
                 </div>
               </NavDropdown>
-            </Nav>
-            {/* Move the CONTACT link to the right margin */}
-            <Nav className="ml-auto">
-              <Nav.Link as={Link} to="/contact#contact" onClick={closeNavbar}>
-                CONTACT
-              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -98,3 +107,4 @@ function BasicExample() {
 }
 
 export default BasicExample;
+

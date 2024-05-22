@@ -16,6 +16,8 @@ import Server from './pages/Server.jsx';
 import NavFixed from "./components/NavFixed.jsx"; 
 import Album from "./pages/Album.jsx";
 import Forms from "./pages/Forms.jsx";
+import Cards from "./pages/CardsPage.jsx";
+import Graphics from "./pages/Graphics.jsx";
 import "./App.css";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
 
@@ -37,6 +39,8 @@ function App() {
           <Route path="/page-samples" element={<PageSamples />} />  
           <Route path="/album" element={<Album />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/cards" element={<Cards />} />
+<Route path="/graphics" element={<Graphics />} />
           <Route path="/scroll-spy" element={<ScrollSpy />} />
           <Route path="/forms" element={<Forms />} />
           {/* Add a catch-all route for handling errors */}

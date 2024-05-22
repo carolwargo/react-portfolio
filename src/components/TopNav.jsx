@@ -61,13 +61,14 @@ function BasicExample() {
               <Link to="/about#about" className="nav-link" onClick={handleNavLinkClick}>ABOUT</Link>
               <Link to="/resume#resume" className="nav-link" onClick={handleNavLinkClick}>RESUME</Link>
              <Link to="/page-samples#page-samples" className="nav-link" onClick={handleNavLinkClick}>SAMPLES</Link>
+             <Link to="/page-samples#page-samples" className="nav-link" onClick={handleNavLinkClick}>SAMPLES</Link>
          <NavDropdown title="MY WORK" id="basic-nav-dropdown"
            
              onMouseEnter={handleMouseEnter}
              onMouseLeave={handleMouseLeave}
              show={isHovered} 
              >
-          <div style={{border:'3px solid', borderRadius:'10px'}}>
+          <div style={{border:'1px solid', borderRadius:'10px'}} className="shadow">
          <NavDropdown.Item>
          <Link to="/portfolio#portfolio" className="text-black">
               PORTFOLIO</Link>

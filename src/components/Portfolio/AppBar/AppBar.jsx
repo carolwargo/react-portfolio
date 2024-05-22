@@ -16,8 +16,11 @@ import ListSubheader from '@mui/material/ListSubheader';
 import Avatar from '@mui/material/Avatar';
 import MenuIcon from '@mui/icons-material/Menu';
 import AddIcon from '@mui/icons-material/Add';
-import SearchIcon from '@mui/icons-material/Search';
-import MoreIcon from '@mui/icons-material/MoreVert';
+import MailIcon from '@mui/icons-material/Mail';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import AccountCircle from '@mui/icons-material/AccountCircle';
+import Badge from '@mui/material/Badge';
+
 
 const messages = [
   {
@@ -71,15 +74,53 @@ const messages = [
 const StyledFab = styled(Fab)({
   position: 'absolute',
   zIndex: 1,
-  top: -30,
+  top: 75,
   left: 0,
-  right: 0,
+  right: -1000,
   margin: '0 auto',
 });
 
 export default function BottomAppBar() {
   return (
     <div className='container'>
+              <AppBar position="fixed" color="primary" sx={{ bottom: 'auto', top: 0 }}>
+        <Toolbar>
+          <IconButton color="inherit" aria-label="open drawer">
+            <MenuIcon />
+          </IconButton>
+          <StyledFab color="secondary" aria-label="add">
+            <AddIcon />
+          </StyledFab>
+          <Box sx={{ flexGrow: 1 }} />
+          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+              <Badge badgeContent={4} color="error">
+                <MailIcon />
+              </Badge>
+            </IconButton>
+            <IconButton
+              size="large"
+              aria-label="show 17 new notifications"
+              color="inherit"
+            >
+              <Badge badgeContent={17} color="error">
+                <NotificationsIcon />
+              </Badge>
+            </IconButton>
+            <IconButton
+              size="large"
+              edge="end"
+              aria-label="account of current user"
+              /*aria-controls={menuId}*/
+              aria-haspopup="true"
+              /*onClick={handleProfileMenuOpen}*/
+              color="inherit"
+            >
+              <AccountCircle />
+            </IconButton>
+          </Box>
+        </Toolbar>
+      </AppBar>
     <React.Fragment>
       <CssBaseline />
       <Paper square sx={{ pb: '50px' }}>
@@ -111,23 +152,7 @@ export default function BottomAppBar() {
           ))}
         </List>
       </Paper>
-      <AppBar position="fixed" color="primary" sx={{ top: 'auto', bottom: 0 }}>
-        <Toolbar>
-          <IconButton color="inherit" aria-label="open drawer">
-            <MenuIcon />
-          </IconButton>
-          <StyledFab color="secondary" aria-label="add">
-            <AddIcon />
-          </StyledFab>
-          <Box sx={{ flexGrow: 1 }} />
-          <IconButton color="inherit">
-            <SearchIcon />
-          </IconButton>
-          <IconButton color="inherit">
-            <MoreIcon />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
+
     </React.Fragment>
     </div>
   );
