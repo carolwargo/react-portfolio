@@ -401,9 +401,6 @@ Examples include Login or Sign Up forms. How are they different?"
         </footer>
     <br />
 <br />
-
-
-
     </motion.div>
   );
 }
