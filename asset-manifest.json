@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.733d611f.css",
-    "main.js": "/react-portfolio/static/js/main.acab0433.js",
+    "main.js": "/react-portfolio/static/js/main.4f11e680.js",
     "static/media/RealEstate.png": "/react-portfolio/static/media/RealEstate.ba0b8a8bd8b9df38e276.png",
     "static/media/ResumeDownload.pdf": "/react-portfolio/static/media/ResumeDownload.71d452106ce673e52434.pdf",
     "static/media/Album.png": "/react-portfolio/static/media/Album.624f5f271608ee54bae6.png",
@@ -14,13 +14,17 @@
     "static/media/SunRay.png": "/react-portfolio/static/media/SunRay.98ccdc3e052b1889291c.png",
     "static/media/Purple.png": "/react-portfolio/static/media/Purple.8f258e3042e64d3086b1.png",
     "static/media/Colors.png": "/react-portfolio/static/media/Colors.2bc7cb0d1691e0531014.png",
+    "static/media/Center.png": "/react-portfolio/static/media/Center.472c18e0a951f1d12c7f.png",
     "static/media/Waterfall.png": "/react-portfolio/static/media/Waterfall.06f77bc70053675fa4b4.png",
     "static/media/YogaBlog.png": "/react-portfolio/static/media/YogaBlog.d4f9f4977770385e69fb.png",
     "static/media/YellowFlowers.png": "/react-portfolio/static/media/YellowFlowers.a16b1d292f2015a4c6cf.png",
+    "static/media/CardsMain2.png": "/react-portfolio/static/media/CardsMain2.f0cc1b980fd70f588f47.png",
+    "static/media/Left.png": "/react-portfolio/static/media/Left.35541435b45c220fff4c.png",
     "static/media/YogaSet.png": "/react-portfolio/static/media/YogaSet.5b7bef601b298c2fce5f.png",
+    "static/media/Right.png": "/react-portfolio/static/media/Right.eabd94d072f1d85b2790.png",
     "static/media/WebComponentsTrans.png": "/react-portfolio/static/media/WebComponentsTrans.63309f315b4c00a48cac.png",
     "static/media/Business.png": "/react-portfolio/static/media/Business.2feb0411115e2f21fb28.png",
-    "static/media/Mac2.jpeg": "/react-portfolio/static/media/Mac2.6958bb849e45ff6118f7.jpeg",
+    "static/media/GirlCamera.png": "/react-portfolio/static/media/GirlCamera.8f48a81fde5a24c9c60b.png",
     "static/media/fa-solid-900.ttf": "/react-portfolio/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
     "static/media/WomanReading.jpg": "/react-portfolio/static/media/WomanReading.9f7b768c7f3a87220bcc.jpg",
     "static/media/WeatherMobile.png": "/react-portfolio/static/media/WeatherMobile.83074d1ae142f8d42eea.png",
@@ -52,10 +56,10 @@
     "static/media/fa-v4compatibility.woff2": "/react-portfolio/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/react-portfolio/index.html",
     "main.733d611f.css.map": "/react-portfolio/static/css/main.733d611f.css.map",
-    "main.acab0433.js.map": "/react-portfolio/static/js/main.acab0433.js.map"
+    "main.4f11e680.js.map": "/react-portfolio/static/js/main.4f11e680.js.map"
   },
   "entrypoints": [
     "static/css/main.733d611f.css",
-    "static/js/main.acab0433.js"
+    "static/js/main.4f11e680.js"
   ]
 }
