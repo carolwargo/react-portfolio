@@ -34,7 +34,7 @@ const Cards = () => {
          
           
                {/**Start INTRO Web Components */}
-            <div className="container mb-4 w3-padding-24" id="cards">              
+            <div className="container mb-4 w3-padding-32" id="cards">              
             <div className="row d-flex justify-content-center align-items-center w3-padding-large">
             <div className="my-1 col-sm-12 col-md-5 col-lg-5 flex-column mb-4">
               <img src={CardsMain2} alt="cards-main" style={{width:'100%'}} 
