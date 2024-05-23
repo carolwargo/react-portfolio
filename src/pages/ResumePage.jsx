@@ -27,10 +27,10 @@ export default function ResumePage() {
     id="resume"
     
     >
-    
+    {/** Start Main container */}
       <div className="w3-margin-top w3-padding-top-32" style={{maxWidth:"1400px"}}>
+       {/** Start intro*/}
       <div className="w3-display-container w3-padding w3-white">
-  
       <div className="w3-row d-flex justify-content-center" >
     <div className="w3-col m8 flex-column w3-padding-24 w3-center">
         <h1 className='w3-text-black'>DIGITAL RESUME</h1>
@@ -39,11 +39,17 @@ export default function ResumePage() {
 </div>
 
 </div>
+ {/** End intro*/}
+
+
+
+
+
 <div className="w3-text-black w3-margin-top" >
-{/*} The Grid*/}
+{/*} Start Main row*/}
 <div className="w3-row-padding justify-content-center w3-white align-items-center ">
 
-  {/*Left Column*/}
+  {/*Start Left Column*/}
   <div className="w3-third flex-column justify-content-center align-items-center">
   
     <div className="w3-text-grey">
@@ -214,7 +220,7 @@ export default function ResumePage() {
        
         <p className="">Mobile App Frameworks</p>
         
-<hr className="my-3"/>
+<hr className="my-5"/>
 
       <h5 className="w3-text-black ">
         <i className="fas fa-desktop  w3-text-black"></i>
@@ -265,10 +271,10 @@ export default function ResumePage() {
 <br />
   {/*End Left Column*/}
   </div>
+    {/*End Left Column*/}
 
-  {/*Right Column*/}
+  {/*Start Right Column*/}
   <div className="w3-twothird flex-column justify-content-center align-items-center">
-    
 <div className="w3-content w3-light-gray w3-padding-large">
       <h2 className="w3-padding-16  text-black">
         <i className="fa fa-suitcase fa-fw  w3-xlarge w3-text-black">
@@ -289,8 +295,31 @@ export default function ResumePage() {
           <li>Respond to clients to address user inquiries and feedback.</li>
           <li>Develop digital marketing strategies; to include surveys and social media content and management system.</li>
 </ul>
-          <hr/>
-      <br />
+          <hr className="my-5"/>
+
+
+
+
+
+      
+<h5>PRINCE GEORGES COMMUNITY FEDERAL CREDIT UNION<br/><b>Corporate Event Manager & Employee Engagement Specialist</b></h5>        
+        <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> Contract Oct 2020 - Feb 2022 <span className="w3-tag w3-black w3-round" style={{fontSize:'12px'}}>date approximates</span></h6>
+        <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
+       
+        <ul>
+        <li><b>PRIMARY FOCUS: </b>Strategize, coordinate, and execute corporate events and organization-wide celebrations aimed at fostering morale and enhancing employee/management relations amidst the challenges posed by the pandemic.</li>
+          <li>Collaborate with internal stakeholders to identify event goals, themes, and desired outcomes.</li>
+          <li>Serve as a point of contact for event-related inquiries and provide exceptional customer service to internal and external stakeholders.</li>
+          <li>Build and maintain relationships with external vendors, sponsors, and partners to support event objectives and secure resources.</li>
+          <li>Stay updated on industry trends and best practices in corporate event management and employee engagement strategies.</li>
+          <li>Design and implement creative engagement initiatives to boost employee morale and strengthen team cohesion.</li>
+          <li>Manage event budgets, negotiate contracts with vendors, and ensure cost-effective solutions without compromising quality.</li>
+       
+</ul>
+<hr className="my-5"/>
+
+
+
 
       <h5>INDEPENDENT CONTRACTOR<br/><b>Real Estate Agent / Investor</b></h5>
         <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> June 2003 - <span className="w3-tag w3-black w3-round">Current</span></h6>
@@ -304,9 +333,8 @@ export default function ResumePage() {
                       Facilitate inspections, appraisals & legal matters.
                     </li>
                     <li>Oversee home staging and architectural Design.</li>
-                  </ul>    
-      <hr/>
-      <br />
+                  </ul> 
+                  <hr className="my-5"/>
     
       <h5>HUNTINGTOWN YOUTH CLUB<br/><b>Media Manager, Webmaster, and Community Affairs Lead</b></h5>
         <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> Jun 2010 - Mar 2012</h6>
@@ -322,8 +350,7 @@ export default function ResumePage() {
   <li>Monitor site security for threats and vulnerabilities.</li>
   <li>Address user inquiries and respond to feedback.</li>
 </ul> 
-<hr/>
-      <br />
+<hr className="my-5"/>
 
 <h5>JOSTENS<br/><b>Territory Sales Manager</b></h5>        
         <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> Mar 2001 - Aug 2003 <span className="w3-tag w3-black w3-round" style={{fontSize:'12px'}}>date approximates</span></h6>
@@ -341,8 +368,7 @@ export default function ResumePage() {
           <li>Conduct monthly staff meetings to establish goals, address needs, resolve conflicts, and clarify any confusion.</li>
          
 </ul>
-<hr/>
-      <br />
+<hr className="my-5"/>
 
       <h5>CALVIN KLEIN COSMETICS<br/><b>Regional Sales Manager</b></h5> 
         <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> Aug 1999 - Mar 2001</h6>
@@ -358,93 +384,8 @@ export default function ResumePage() {
          <li>Conduct staff training to promote awareness of clients' ethnicities, cultural differences, and customs.</li>
 <li>Interview and vet event staff to ensure credibility and emphasize the importance of discretion in client interactions.</li>
 </ul>
-
-
-
-
     </div>
-
-
-    <div className="w3-container w3-black w3-padding-32 w3-padding-large">
    
-      <h3>
-       PRACTICES FOLLOWED
-          </h3>
-          <br />
-        <h5 className="w3-margin-left"><b>Development Practices.</b></h5>
-       
-        <ul>
-              <li>
-                Effectively communicates to engage stakeholders throughout the
-                development process.
-              </li>
-              <li>
-                Articulates ideas, recommendations, and findings clearly and
-                inclusively.
-              </li>
-              <li>Promotes and welcomes feedback from all stakeholders.</li>
-              <li>
-                Embraces continuous improvement through post-implementation
-                evaluations and knowledge sharing.
-              </li>
-              <li>
-                Adapts positively to change and proactively embraces new
-                challenges.
-              </li>
-              <li>
-                Applies critical thinking to analyze problems and propose
-                innovative solutions.
-              </li>
-              <li>
-                Inspires and motivates team members to achieve common goals.
-              </li>
-              <li>
-                Negotiates and mediates to resolve conflicts and reach
-                consensus.
-              </li>
-              <li>
-                Delivers functional software focusing on meeting user needs and
-                exceeding expectations.
-              </li>
-            </ul> 
-            <br />
-            <h5 className="w3-margin-left"><b>Interpersonal Practices.</b></h5>
-        
-        <ul>
-                <li>
-                  Foster customer and stakeholder engagement through effective
-                  communication.
-                </li>
-                <li>
-                  Articulate ideas, recommendations, and findings clearly and
-                  inclusively.
-                </li>
-                <li>
-                  Welcome feedback from stakeholders and promote an inclusive
-                  feedback culture.
-                </li>
-                <li>
-                  Embrace continuous improvement through post-implementation
-                  evaluations and knowledge sharing.
-                </li>
-                <li>
-                  Adapt positively to change and proactively tackle challenges.
-                </li>
-                <li>
-                  Demonstrate critical thinking skills to analyze and solve
-                  complex problems.
-                </li>
-                <li>Inspire and motivate team members towards common goals.</li>
-                <li>
-                  Proficient in negotiation and conflict resolution among
-                  stakeholders.
-                </li>
-                <li>
-                  Deliver functional software focused on meeting user needs and
-                  exceeding expectations.
-                </li>
-              </ul>
-      </div>
      
   {/*End Right Column*/}
   
@@ -452,9 +393,70 @@ export default function ResumePage() {
   
 {/*} End Grid*/}
 </div>
- 
+ {/*}End Main row*/}
  
 
+ {/*Start Practices
+ <div className="w3-black w3-margin-top">
+
+ <div className="w3-container w3-content w3-black w3-padding-32 w3-padding-large">
+   <div className="container text-center">
+      <h2>
+       PRACTICES FOLLOWED
+          </h2>
+          </div>
+      
+        <div className="w3-row d-flex justify-content-center w3-padding-top-24 w3-margin-top" >
+    <div className="w3-col m6 flex-column  w3-padding-16">
+    <h5 className="w3-margin-left"><b>DEVELOPMENT PRACTICES.</b></h5>
+        <ul>
+              <li>
+              Effectively communicates with stakeholders throughout the development process.
+              </li>
+              <li>
+              Embraces continuous improvement through post-implementation evaluations and knowledge sharing.
+              </li>
+              <li>Applies critical thinking to analyze problems and propose innovative solutions.
+</li>
+<li>Delivers functional software focusing on meeting user needs and exceeding expectations.</li>
+             
+            </ul> 
+            <br />
+            </div>
+            <div className="w3-col m6 flex-column w3-padding-16">
+            <h5 className="w3-margin-left"><b>INTERPERSONAL PRACTICES.</b></h5>
+        
+        <ul>
+                <li>
+                Articulates ideas, recommendations, and findings clearly and inclusively.
+                </li>
+                <li>
+                Promotes and welcomes feedback from all stakeholders.
+                </li>
+                <li>
+                Adapts positively to change and proactively embraces new challenges.
+                </li>
+                <li>
+                Inspires and motivates team members to achieve common goals.
+                </li>
+                <li>
+                Negotiates and mediaties to resolve conflicts and reach consensus.
+                </li>
+               
+              </ul>
+              </div>
+      </div>
+</div>
+</div>
+End Practices*/}
+
+
+
+
+
+
+
+ {/*Start Volunteer*/}
       <div className="w3-light-gray w3-margin-top
       ">
       <div className="w3-container w3-padding-64"> 
@@ -516,6 +518,7 @@ export default function ResumePage() {
 
 </div>
 </div>
+{/*End Volunteer*/}
 </div>          
 
   <div className="w3-container w3-content text-center w3-padding-48 w3-margin-top w3-margin-bottom w3-padding-small">

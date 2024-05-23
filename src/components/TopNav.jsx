@@ -68,7 +68,7 @@ function BasicExample() {
              onMouseLeave={handleMouseLeave}
              show={isHovered} 
              >
-          <div style={{border:'1px solid', borderRadius:'10px'}} className="shadow">
+          <div style={{ borderRadius:'5px'}} className="shadow">
          <NavDropdown.Item>
          <Link to="/portfolio#portfolio" className="text-black">
               PORTFOLIO</Link>
