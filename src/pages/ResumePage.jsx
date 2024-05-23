@@ -336,7 +336,7 @@ export default function ResumePage() {
                   </ul> 
                   <hr className="my-5"/>
     
-      <h5>HUNTINGTOWN YOUTH CLUB<br/><b>Media Manager, Webmaster, and Community Affairs Lead</b></h5>
+      <h5>HUNTINGTOWN YOUTH CLUB<br/><b>Head of Media Management & Director of Community Affairs</b></h5>
         <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> Jun 2010 - Mar 2012</h6>
         <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
         <ul>
