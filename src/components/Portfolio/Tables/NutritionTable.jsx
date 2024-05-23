@@ -25,9 +25,8 @@ export default function DenseTable() {
           <div className="w3-padding-large">
         <h1 className="text-center w3-margin-bottom">Nutrition Facts</h1>
         <p className="text-center">
-                  Tables are structured grids used to present data in rows and
-                  columns. They're commonly used for displaying tabular data,
-                  such as product listings, pricing tables, or data summaries.
+                 Basic Table  used to present factual data in rows and
+                  columns. This example features a dense table with a caption.
                 </p>
           <hr />
         </div>

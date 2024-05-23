@@ -87,9 +87,13 @@ function BasicExample() {
                   >
                     Portfolio Samples
                   </NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/cards" onClick={handleNavLinkClickAndCloseNavbar}>
+                    Card Samples
+                  </NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/page-samples" onClick={handleNavLinkClickAndCloseNavbar}>
                     Page Samples
                   </NavDropdown.Item>
+
                   <NavDropdown.Item as={Link} to="/server#server" onClick={handleNavLinkClickAndCloseNavbar}>
                     App Samples
                   </NavDropdown.Item>

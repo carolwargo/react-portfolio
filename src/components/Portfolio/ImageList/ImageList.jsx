@@ -24,7 +24,9 @@ import Swing from '../../../assets/images/Hybiscus450/Swing.png';
 export default function TitlebarBelowMasonryImageList() {
   return (
     <Box sx={{ width: 600, height: 500, overflowY: 'scroll' }} className='shadow border'>
-    <ImageList variant="masonry" cols={3} gap={8} className='w3-padding-small w3-padding-16'>
+    <ImageList variant="masonry" 
+    cols={3} gap={8} 
+    className='w3-padding-small w3-padding-16'>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img

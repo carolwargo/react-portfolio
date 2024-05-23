@@ -221,23 +221,51 @@ const Cards = () => {
 
 
 
+        {/**Start Page Samples */}
+        <div className="w3-container w3-padding-16 mt-4">
+        <div className="row d-flex w3-padding-large justify-content-center align-items-center">
+      
+          <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
+            <div className="container w3-white text-center w3-padding-large w3-padding-small">
+           
+            <h2 className="w3-text-black">
 
+                <b className="fw-bold text-black">Page Samples</b>
+               
+              </h2>
+              <hr className="w3-opacity" />
 
- 
-            <div className="w3-container w3-content text-center w3-padding-48 w3-margin-bottom w3-padding-large">
-              <h2 className="text-black">Much more to come... Stay tuned! Feedback is welcome and encouraged. Feel free to contact me to share your thoughts.
-        </h2><br />
-              <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
-              style={{backgroundColor:'#FF385C'}}>
-              <Link to="/resume#resume"
+              <h4 className="text-black">
+              Incorporating media-rich images and cards into a website's design significantly enhances its visual appeal and usability. These elements contribute to an intuitive user experience by providing clear, engaging, and easily navigable content.{" "}
+              </h4>
+              <br />
+              <p>
+                {" "}
+                <i>
+                  <b> NOTE:</b> "Sample pages are under construction. View with
+                  the understanding it's a work in progress. Thanks for your
+                  patience."
+                </i>
+              </p>
+              <Link
+                  to="/page-samples#page-samples"
                   className="button text-white"
                   onClick={scrollToTop}
                 >
-               CONTACT ME
-                </Link>
+              <button
+                className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom"
+                style={{ backgroundColor: "#FF385C" }}
+              >
+                 View 1-Page Samples
               </button>
-              </div> 
-             
+              </Link>
+            </div>
+          </div>
+        </div>
+        </div>
+        {/**End Page Samples */}
+
+
           <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">

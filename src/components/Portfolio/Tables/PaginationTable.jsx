@@ -74,7 +74,7 @@ export default function ColumnGroupingTable() {
     <Paper sx={{ width: '100%' }} className='shadow border border-black my-4'>
           
           <div className="w3-padding-large w3-padding-16">
-        <h1 className="text-center w3-margin-bottom">Tables</h1>
+        <h1 className="text-center w3-margin-bottom">Sticky Header Data Table</h1>
         <p className="text-center">
         The following table example features a sticky header that remains 
         in place during vertical scrolling and a horizontal scroll bar for 

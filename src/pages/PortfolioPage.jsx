@@ -47,6 +47,14 @@ function Portfolio() {
         "Button provide visual cues to indicate clickable areas and help users navigate through a website or complete tasks",
       link: "#buttons",
     },
+
+    {
+      question: "Image List Components",
+      answer:
+        "Image lists, are gallery grids used to display multiple images in an organized and visually appealing manner.",
+      link: "#image-lists",
+    },
+
     {
       question: "Table Components",
       answer:
@@ -71,8 +79,8 @@ function Portfolio() {
           <div className="col-sm-12 col-md-12 col-lg-12 flex-column">
           <div className="container">
           <h1>My Portfolio</h1>
-          <h4 className="fw-regular">"My Portfolio consists of a wide range of sample elements, images, apps and more. 
-Follow the path to witness my level of understanding in both function and design."</h4>
+          <h4 className="fw-regular">'My Portfolio consists of a wide range of sample elements, images, apps and more. 
+Follow the path to witness my level of understanding in both function and design.'</h4>
            </div>
            </div>
             </div>
@@ -665,43 +673,39 @@ A study by Forrester revealed that improving website navigation can lead to a 10
           </div>
         {/**End Buttons */}
      {/**Start Image lists*/}
-<div className="w3-light-gray">
-  <div className="w3-container w3-padding-16" id="image-list">
-    <div className="w3-padding-small">
+<div className="w3-light-gray ">
+  <div className="w3-container w3-padding-32" id="image-list">
+    <div className="w3-container w3-padding-large text-center">
       <h1 className="text-center w3-margin-bottom">Image Lists</h1>
       <hr />
+      <h4>Image lists, also known as galleries or grids, are a collection of images arranged in a structured format on a webpage. Image lists can be presented in various layouts, such as grids, masonry, or carousel styles. </h4>
+     <p>Check out the following examples displayed for greater understanding!</p>
     </div>
-    <div className="row d-flex justify-content-center align-items-center w3-padding-large">
+    <div className="row d-flex justify-content-center align-items-center w3-padding-large my-3">
       <div className="col-sm-12 col-md-7 col-lg-7 d-flex flex-column justify-content-center align-items-center">
         <ImageList />
       </div>
       <div className="col-sm-12 col-md-5 col-lg-5 d-flex flex-column justify-content-center align-items-center">
-        <div className="w3-padding-small">
-          <h1 className="text-center w3-margin-bottom">Image Lists</h1>
+        <div className="w3-padding-small text-center">
+          <h2 className=" w3-margin-bottom">Masonry Image Grid</h2>
           <hr />
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi eos odio consequatur explicabo nostrum vel consectetur quos quas, magnam esse unde! Nulla consequuntur recusandae et perferendis numquam minus ipsum?</p>
+          <p>Layout provides versatility for image sizes. Perfect for showcasing portfolios, 
+            photo galleries, and other visual content that doesn't conform to 'one-size fits all'. Images display a simple heading and can be clickable to increase in size or navigate to a defined section of choice.</p>
         </div>
       </div>
     </div>
-  </div>
-</div>
-{/**End Image lists*/}
-     {/**Start Image lists*/}
-     <div className="w3-light-gray">
-  <div className="w3-container w3-padding-16" id="image-list">
-    <div className="w3-padding-small">
-      <h1 className="text-center w3-margin-bottom">Image Lists</h1>
-      <hr />
-    </div>
-    <div className="row d-flex justify-content-center align-items-center w3-padding-large">
+
+    <div className="row d-flex justify-content-center align-items-center w3-padding-large my-3">
       <div className="col-sm-12 col-md-7 col-lg-7 d-flex flex-column justify-content-center align-items-center">
         <ImageTitles/>
       </div>
       <div className="col-sm-12 col-md-5 col-lg-5 d-flex flex-column justify-content-center align-items-center">
-        <div className="w3-padding-small">
-          <h1 className="text-center w3-margin-bottom">Image Lists</h1>
+        <div className="w3-padding-small text-center ">
+          <h2 className="w3-margin-bottom">Image List with Overlay</h2>
           <hr />
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi eos odio consequatur explicabo nostrum vel consectetur quos quas, magnam esse unde! Nulla consequuntur recusandae et perferendis numquam minus ipsum?</p>
+          <p>Each image has accompanying text, with title and artist handle. 
+           Interactions can be provided by clicking the info icon to display a description or allow actions like zooming, linking to other pages, or triggering 
+            animations. </p>
         </div>
       </div>
     </div>

@@ -1,7 +1,28 @@
 import React from "react";
 import YogaSet from "../assets/images/YogaStory/YogaSet.png";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
+
 const Graphics = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
     return (
+      
+  <motion.div
+  initial={{ y: -20, opacity: 0}}
+  animate={{y: 0, opacity: 1}}
+  exit={{y: 20, opacity: 0}}
+  className="graphics"
+  id="graphics"
+  
+  >
+
         <div className="w3-padding-top-64">
       
              
@@ -61,8 +82,32 @@ const Graphics = () => {
         </div>
       </div>
     
+ 
+      <div className="w3-container w3-content text-center w3-padding-48 w3-margin-bottom w3-padding-large">
+              <h2 className="text-black">Much more to come... Stay tuned! Feedback is welcome and encouraged. Feel free to contact me to share your thoughts.
+        </h2><br />
+              <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
+              style={{backgroundColor:'#FF385C'}}>
+              <Link to="/resume#resume"
+                  className="button text-white"
+                  onClick={scrollToTop}
+                >
+               CONTACT ME
+                </Link>
+              </button>
+              </div> 
+              <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
+          <div className="container">
+            <p className="float-end mb-1">
+              <a href="#forms" style={{color:'#FF385C'}}>Back to top</a>
+            </p>
+          </div>
+        </footer>
+    <br />
+<br />
 
         </div>
+        </motion.div>
     );
     }
 export default Graphics;

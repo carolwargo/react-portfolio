@@ -2,6 +2,7 @@ import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
+import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
 import Grid from '@mui/material/Grid';
@@ -17,9 +18,9 @@ import White from '../../../assets/images/LandScape/White.png';
 export default function TitlebarImageList() {
   return (
     <Grid container justifyContent="center" style={{ height: '80vh', overflow: 'hidden' }}>
+       <Box sx={{ width: 600, height: 500, overflowY: 'scroll' }} className='shadow border'>
       <ImageList
-        sx={{ width: '100%', height: '100%', overflowY: 'auto' }}
-        cols={2}
+      cols={2}
         gap={8}
         className='shadow border'
       >
@@ -46,6 +47,7 @@ export default function TitlebarImageList() {
           </ImageListItem>
         ))}
       </ImageList>
+      </Box>
     </Grid>
   );
 }

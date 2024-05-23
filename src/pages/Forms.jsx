@@ -346,7 +346,7 @@ Examples include Login or Sign Up forms. How are they different?"
 
  
 
-        {/**Start Samples */}
+        {/**Start Card Samples */}
         <div className="w3-container w3-padding-16 mt-4">
         <div className="row d-flex w3-padding-large justify-content-center align-items-center">
       
@@ -355,7 +355,7 @@ Examples include Login or Sign Up forms. How are they different?"
            
             <h2 className="w3-text-black">
 
-                <b className="fw-bold text-black">Page Samples</b>
+                <b className="fw-bold text-black">Card & Image Samples</b>
                
               </h2>
               <hr className="w3-opacity" />
@@ -369,13 +369,13 @@ Examples include Login or Sign Up forms. How are they different?"
               <p>
                 {" "}
                 <i>
-                  <b> NOTE:</b> "Sample pages are under construction. View with
+                  <b> NOTE:</b> "Cards & Images are under development. View with
                   the understanding it's a work in progress. Thanks for your
                   patience."
                 </i>
               </p>
               <Link
-                  to="/page-samples#page-samples"
+                  to="/cards#cards"
                   className="button text-white"
                   onClick={scrollToTop}
                 >
@@ -383,14 +383,16 @@ Examples include Login or Sign Up forms. How are they different?"
                 className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom"
                 style={{ backgroundColor: "#FF385C" }}
               >
-                 View 1-Page Samples
+                 View Card & Image Samples
               </button>
               </Link>
             </div>
           </div>
         </div>
         </div>
-        {/**End Samples */}
+        {/**End Page Samples */}
+
+
 
   <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
