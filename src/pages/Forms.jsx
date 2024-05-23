@@ -361,9 +361,9 @@ Examples include Login or Sign Up forms. How are they different?"
               <hr className="w3-opacity" />
 
               <h4 className="text-black">
-                Each type of website serves a unique purpose and requires
-                specific features and functionalities to effectively achieve its
-                objectives and meet the needs of its target audience.{" "}
+                
+                Incorporating media-rich images and cards into a website's design significantly enhances its visual appeal and usability. These elements contribute to an intuitive user experience by providing clear, engaging, and easily navigable content.
+                {" "}
               </h4>
               <br />
               <p>

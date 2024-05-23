@@ -25,8 +25,8 @@ const Cards = () => {
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 20, opacity: 0 }}
-          className="portfolio"
-          id="portfolio"
+          className="cards"
+          id="cards"
         >
  <div className="container mb-4 w3-padding-top-32">
 
@@ -236,8 +236,9 @@ const Cards = () => {
               <hr className="w3-opacity" />
 
               <h4 className="text-black">
-              Incorporating media-rich images and cards into a website's design significantly enhances its visual appeal and usability. These elements contribute to an intuitive user experience by providing clear, engaging, and easily navigable content.{" "}
-              </h4>
+              Each type of website serves a unique purpose and requires
+                specific features and functionalities to effectively achieve its
+                objectives and meet the needs of its target audience. </h4>
               <br />
               <p>
                 {" "}
