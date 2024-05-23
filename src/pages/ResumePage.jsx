@@ -99,20 +99,38 @@ export default function ResumePage() {
                </div>
                 </div>   
                </div>
-        <hr/>
+               <br />
+    <div className="w3-container w3-black w3-padding-16">
+    <div className="w3-container">
+      <h4 className=" w3-padding-16">
+        <i className="fa fa-certificate w3-xlarge "></i> Education
+          </h4>
+          </div>
+          <div className="w3-container">
+        <h6><b>George Washington University</b></h6>
+        <h6><i className="fa fa-calendar "></i> Jan. 2023- Aug. 2023</h6>
+        <p>Full Stack Developer | UX Design Certificate</p>
+      </div>
+     
+      <div className="w3-container">
+        <h6><b>Real Estate License</b></h6>
+        <h6>   <i className="fa fa-calendar "></i> June 2003</h6>
+        <p>State of Maryland</p>
+      </div>
+    </div>
+
+     <br />
         <p className="w3-text-black w3-margin-top w3-padding-small" style={{fontSize:'14px'}}>
-          <b><i>
-                  “I am a Full-Stack Software Developer and Graphic
-                  Designer with a solid foundation in both frontend & backend
-                  technologies, and a 20-year background in Business Analysis &
-                  Project Management. I excel in leading and collaborating with
-                  cross-functional teams, leveraging the latest tools and
-                  frameworks to bring innovative ideas to life. From crafting
-                  interactive User interfaces to designing efficient and secure
-                  server-side solutions, I am dedicated to delivering a seamless
-                  User experience while optimizing performance.”
+          <b><i>'I am a Full-Stack Software Developer proficient in both
+            frontend and backend technologies, specializing in User 
+            Experience. Accompanied by 20 years of experience in Business Analysis & 
+            Project Management. I excel in a 
+            collaborative environment, exploring the latest processes, tools and frameworks 
+            to create innovative solutions. Fully committed to delivering a seamless user experience, 
+            optimizing performance, and developing meaningful connections 
+            to foster goodwill and trust.'
                 </i></b></p>
-                <hr/>
+                <br/>
        {/**Start Tech Skills*/}
         <h6 className="w3-large w3-margin-top w3-text-black">
           <i className="fa fa-asterisk fa-fw w3-margin-right">
@@ -145,11 +163,13 @@ export default function ResumePage() {
           <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"75%"}}>75%</div>
         </div>
         <p>E-Commerce</p>
-     
+  
  {/**End Tech Skills */}      
-<hr className="w3-margin-top w3-margin-bottom"/>
+ <hr className="my-4"/>
       {/**Start Programming Languages */}
-        <h6 className="w3-large w3-margin-top w3-text-theme w3-text-black"><i className="fa fa-globe fa-fw w3-margin-right w3-text-black"></i><b>Programming Languages</b></h6>
+  
+        <h6 className="w3-large w3-margin-top w3-text-theme w3-text-black"><i className="fa fa-globe fa-fw w3-margin-right w3-text-black"></i>
+        <b>Programming Languages</b></h6>
         <br/>
         <div className="w3-light-grey w3-round-xlarge w3-small">
           <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"95%"}}>95%</div>
@@ -162,13 +182,16 @@ export default function ResumePage() {
         <p>CSS</p>
       
         <div className="w3-light-grey w3-round-xlarge w3-small">
-          <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"75%"}}>75%</div>
+          <div className="w3-container w3-center w3-round-xlarge w3-black" 
+          style={{width:"75%"}}>75%</div>
         </div>
         <p>JavaScript</p>
      {/**End Programming Languages */}
-     <hr className="w3-margin-top w3-margin-bottom"/>
+     <hr className="my-4"/>
          {/**Start Frameworks */}
-        <h6 className="w3-large w3-margin-top w3-text-theme w3-text-black"><i className="fa fa-globe fa-fw w3-margin-right w3-text-black"></i><b>Frameworks</b></h6>
+    
+        <h6 className="w3-large w3-text-theme w3-text-black"><i className="fa fa-globe fa-fw w3-margin-right w3-text-black"></i>
+        <b>Frameworks</b></h6>
         <br/>
         <div className="w3-light-grey w3-round-xlarge w3-small">
           <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"85%"}}>85%</div>
@@ -188,11 +211,14 @@ export default function ResumePage() {
         <div className="w3-light-grey w3-round-xlarge w3-small">
           <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"70%"}}>70%</div>
         </div>
-        <p className="w3-margin-bottom">Mobile App Frameworks</p>
+       
+        <p className="">Mobile App Frameworks</p>
+        
+<hr className="my-3"/>
 
-<hr className="w3-margin-top w3-margin-bottom"/>
-
-      <h5 className="w3-text-black w3-margin-top w3-margin-bottom "><i className="fas fa-desktop  w3-text-black"></i><b className="w3-margin-left"> Software Proficiencies</b></h5>
+      <h5 className="w3-text-black ">
+        <i className="fas fa-desktop  w3-text-black"></i>
+        <b className="w3-margin-left"> Software Proficiencies</b></h5>
  <h6 className="w3-text-black w3-margin-left">
                   <FaGoogle className="fa-fw w3-margin-left w3-text-black" /> Google Workspace
                 </h6>
@@ -248,33 +274,25 @@ export default function ResumePage() {
         <i className="fa fa-suitcase fa-fw  w3-xlarge w3-text-black">
           </i> WORK EXPERIENCE</h2>
 
-
-          <h5><b>Freelance Design & Development</b></h5>
+          <h5>FREELANCE<br/><b>Digital Design & Development</b></h5>
         <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> June 2021 - <span className="w3-tag w3-black w3-round">Current</span></h6>
         <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
        
         <ul>
-          <li>Refactor and maintain sites to ensure a user-friendly UI.</li>
+          <li>Implement design changes & maintain sites to ensure a user-friendly UI.</li>
           <li>Develop and integrate e-commerce platforms.</li>
-          <li>Implement design changes to improve user experience.</li>
           <li>Conduct audits to identify and fix any technical issues or broken links.</li>
-          <li>Implement SEO strategies.</li>
- 
-          <li>Create engaging content.</li>
           <li>Monitor site security for threats & vulnerabilities.</li>
+          <li>Implement SEO strategies.</li>
+          <li>Create engaging content.</li>
           <li>Collaborate with clients and cross-functional teams.</li>
-          <li>Respond to client to address user inquiries and feedback.</li>
-          <li>Develop digital surveys.</li>
-          <li>Develop digital marketing strategies and social media management systems.</li>
+          <li>Respond to clients to address user inquiries and feedback.</li>
+          <li>Develop digital marketing strategies; to include surveys and social media content and management system.</li>
 </ul>
-       
-     
-
           <hr/>
       <br />
 
-
-        <h5 className=" w3-text-black"><b>Real Estate Agent / Investor</b></h5>
+      <h5>INDEPENDENT CONTRACTOR<br/><b>Real Estate Agent / Investor</b></h5>
         <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> June 2003 - <span className="w3-tag w3-black w3-round">Current</span></h6>
         <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw "></i><b> Duties</b></p>
       
@@ -286,78 +304,70 @@ export default function ResumePage() {
                       Facilitate inspections, appraisals & legal matters.
                     </li>
                     <li>Oversee home staging and architectural Design.</li>
-                  </ul>
-      
-     
-        <ul>
-        <li>Employ marketing strategies</li>
-                      <li>Analyze current & past market trends</li>
-        <li>Write, edit & negotiate contracts.</li>
-                      <li>
-                        Facilitate inspections, appraisals & legal matters.
-                      </li>
-                      <li>Oversee home staging and architectural Design.</li>
-                    </ul>
-    
-    
+                  </ul>    
       <hr/>
       <br />
     
-
-        <h5><b>Media Manager & Webmaster</b></h5>
+      <h5>HUNTINGTOWN YOUTH CLUB<br/><b>Media Manager, Webmaster, and Community Affairs Lead</b></h5>
         <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> Jun 2010 - Mar 2012</h6>
         <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
         <ul>
-                      <li>Maintain site to ensure a user-friendly UI.</li>
-                      <li>
-                        Develop, refactor and Maintain e-commerce platforms.
-                      </li>
-                      <li>
-                        Implement design changes to improve user experience.
-                      </li>
-                      <li>Create engaging content.</li>
-      
+  <li>Rebrand club image, collaborate on logo design, develop new product line, and integrate e-commerce platforms.</li>
+  <li>Collaborate with board members, stakeholders, and lawmakers.</li>
+  <li>Rebuild trust by fostering transparency and engaging club members through community-based events.</li>
+  <li>Implement website design changes to ensure a user-friendly UI.</li>
+  <li>Create engaging content on social media.</li>
+  <li>Conduct audits to identify and fix any technical issues or broken links.</li>
+  <li>Implement SEO strategies.</li>
+  <li>Monitor site security for threats and vulnerabilities.</li>
+  <li>Address user inquiries and respond to feedback.</li>
+</ul> 
+<hr/>
+      <br />
 
-<li>
-                        Conduct audits to identify and fix any technical issues
-                        or broken links.
-                      </li>
-                      <li>Implement SEO strategies.</li>
-                      <li>
-                        Monitor site security for threats & vulnerabilities.
-                      </li>
-                      <li>
-                        Respond to client to address user inquiries and
-                        feedback.
-                      </li>
-                      <li>Collaborate with board members, stakeholders and lawmakers</li>
-                      <li>Address user inquiries and feedback.</li>
-                    </ul>
+<h5>JOSTENS<br/><b>Territory Sales Manager</b></h5>        
+        <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> Mar 2001 - Aug 2003 <span className="w3-tag w3-black w3-round" style={{fontSize:'12px'}}>date approximates</span></h6>
+        <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
+       
+        <ul>
+          <li>Prioritize daily workload efficiently and effectively communicate the delegation of tasks.</li>
+          <li>Develop & Maintain customer relationships.</li>
+          <li>Devise sales strategies based on data analysis.</li>
+          <li>Demonstrate comprehensive knowledge of products and procedures.</li>
+          <li>Identify and capitalize on sales opportunities.</li>
+          <li>Provide training to sales representatives.</li>
+          <li>Manage territory office and staff.</li>
+          <li>Coordinate and oversee events, travel, product distribution, and staffing.</li>
+          <li>Conduct monthly staff meetings to establish goals, address needs, resolve conflicts, and clarify any confusion.</li>
+         
+</ul>
+<hr/>
+      <br />
+
+      <h5>CALVIN KLEIN COSMETICS<br/><b>Regional Sales Manager</b></h5> 
+        <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> Aug 1999 - Mar 2001</h6>
+        <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
+       
+        <ul>
+          <li>Oversee merchandising execution.</li>
+          <li>Develop and maintain relationships with high-profile clientele.</li>
+          <li>Coordinate staffing, client itineraries, outside vendors, concierge services, entertainment, and ambiance for exclusive events.</li>
+          <li>Demonstrate comprehensive knowledge of existing product-line.</li>
+          <li>Showcase in-depth knowledge of new products to offer "sneak peeks" and samples.</li>
+          <li>Exhibit thorough understanding of current events, cultural differences, and customs.</li>
+         <li>Conduct staff training to promote awareness of clients' ethnicities, cultural differences, and customs.</li>
+<li>Interview and vet event staff to ensure credibility and emphasize the importance of discretion in client interactions.</li>
+</ul>
+
+
+
+
     </div>
+
+
+    <div className="w3-container w3-black w3-padding-32 w3-padding-large">
    
-<br />
-    <div className="w3-container w3-black w3-padding-16">
-    <div className="w3-container">
-      <h4 className=" w3-padding-16">
-        <i className="fa fa-certificate w3-xlarge "></i> Education
-          </h4>
-          </div>
-          <div className="w3-container">
-        <h6><b>George Washington University</b></h6>
-        <h6><i className="fa fa-calendar "></i> Jan. 2023- Aug. 2023</h6>
-        <p>Full Stack Developer | UX Design Certificate</p>
-      </div>
-     
-      <div className="w3-container">
-        <h6><b>Real Estate License</b></h6>
-        <h6>   <i className="fa fa-calendar "></i> June 2003</h6>
-        <p>State of Maryland</p>
-      </div>
-    </div>
-<br />
-    <div className="w3-container w3-light-gray w3-padding-32">
-   
-      <h3 className="w3-text-black w3-margin-top">
+      <h3>
        PRACTICES FOLLOWED
           </h3>
           <br />

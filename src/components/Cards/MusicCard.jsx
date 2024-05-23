@@ -1,48 +1,49 @@
 import * as React from 'react';
-import { useTheme } from '@mui/material/styles';
+import { styled} from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import SkipNextIcon from '@mui/icons-material/SkipNext';
-import Mac2 from '../../assets/images/Mac2.jpeg';
 
-export default function MediaControlCard() {
-  const theme = useTheme();
+const WallPaper = styled('div')({
+  position: 'absolute',
+  zIndex: -1,
+  width: '100%',
+  height: '100%',
+  top: 0,
+  left: 0,
+  overflow: 'hidden',
+  background: 'linear-gradient(rgb(255, 38, 142) 0%, rgb(255, 105, 79) 100%)',
+  transition: 'all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s',
+  '&::before': {
+    content: '""',
+    width: '140%',
+    height: '140%',
+    position: 'absolute',
+    top: '-40%',
+    right: '-50%',
+    background:
+      'radial-gradient(at center center, rgb(62, 79, 249) 0%, rgba(62, 79, 249, 0) 64%)',
+  },
+  '&::after': {
+    content: '""',
+    width: '140%',
+    height: '140%',
+    position: 'absolute',
+    bottom: '-50%',
+    left: '-30%',
+    background:
+      'radial-gradient(at center center, rgb(247, 237, 225) 0%, rgba(247, 237, 225, 0) 70%)',
+    transform: 'rotate(30deg)',
+  },
+});
 
-  return (
-    <Card sx={{ display: 'flex' }}>
-      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-        <CardContent sx={{ flex: '1 0 auto', px: 4 }}>
-          <Typography component="div" variant="h4">
-            Live From Space
-          </Typography>
-          <Typography variant="subtitle1" color="text.secondary" component="div">
-            Mac Miller
-          </Typography>
-        </CardContent>
-        <Box sx={{ display: 'flex', alignItems: 'center', pl: 4, pb: 2 }}>
-          <IconButton aria-label="previous">
-            {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-          </IconButton>
-          <IconButton aria-label="play/pause">
-            <PlayArrowIcon sx={{ height: 38, width: 38 }} />
-          </IconButton>
-          <IconButton aria-label="next">
-            {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-          </IconButton>
-        </Box>
-      </Box>
-      <CardMedia
-        component="img"
-        sx={{ width: 200 }}
-        image={Mac2}
-        alt="Live from space album cover"
-      />
-    </Card>
+
+export default function MusicPlayerSlider() {
+
+ 
+ return (
+    <div className='w3-padding-48'>
+    <Box sx={{ width: '100%', overflow: 'hidden' }}>
+      <WallPaper />
+    </Box>
+    </div> 
   );
 }

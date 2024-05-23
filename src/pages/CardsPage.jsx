@@ -10,6 +10,7 @@ import { TbArrowBigRightLines } from "react-icons/tb";
 import { TbArrowBigUpLines } from "react-icons/tb";
 import { TbArrowBigDownLines } from "react-icons/tb";
 import CardsMain2 from '../assets/images/Cards/CardsMain2.png';
+//import MusicCard from '../components/Cards/MusicCard';
 
 const Cards = () => {
 
