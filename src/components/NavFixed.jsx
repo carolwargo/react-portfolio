@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 import { Link } from "react-router-dom";
 
@@ -111,55 +110,29 @@ function BasicExample() {
               >
                 Page Samples
               </Nav.Link>
-              <NavDropdown
-                title="Portfolio"
-                id="basic-nav-dropdown"
-                className="nav-dropdown"
+              <Nav.Link
+                as={Link}
+                to="/portfolio#portfolio"
                 style={{ fontSize: "14px" }}
+                onClick={handleNavLinkClickAndCloseNavbar}
               >
-                <div
-                  className="shadow"
-                  style={{ borderRadius: "5px", fontSize: "14px" }}
-                >
-                  <NavDropdown.Item
-                    as={Link}
-                    to="/portfolio#web-components"
-                    onClick={handleNavLinkClickAndCloseNavbar}
-                  >
-                    Portfolio Samples
-                  </NavDropdown.Item>
-                  <NavDropdown.Item
-                    as={Link}
-                    to="/cards"
-                    onClick={handleNavLinkClickAndCloseNavbar}
-                  >
-                    Card Samples
-                  </NavDropdown.Item>
-                  <NavDropdown.Item
-                    as={Link}
-                    to="/page-samples"
-                    onClick={handleNavLinkClickAndCloseNavbar}
-                  >
-                    Page Samples
-                  </NavDropdown.Item>
-
-                  <NavDropdown.Item
-                    as={Link}
-                    to="/server#server"
-                    onClick={handleNavLinkClickAndCloseNavbar}
-                  >
-                    App Samples
-                  </NavDropdown.Item>
-                  <NavDropdown.Item
-                    as={Link}
-                    to="/graphics#graphics"
-                    onClick={handleNavLinkClickAndCloseNavbar}
-                  >
-                    Graphic Elements
-                  </NavDropdown.Item>
-                </div>
-              </NavDropdown>
+                My Work
+              </Nav.Link>
             </Nav>
+            <Nav>
+             
+                <Link
+                  to="/contact#contact"
+                  className="button text-grey mr-3"
+                  style={{ fontSize: "14px" }}
+                  onClick={handleNavLinkClickAndCloseNavbar}
+                >
+              <button className="btn-outline-white w3-button btn-sm w3-round-xxlarge px-3 shadow" >
+              <i className="far fa-user-circle"></i> contact
+              </button>
+                </Link>
+              
+              </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>

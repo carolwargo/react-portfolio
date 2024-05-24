@@ -448,8 +448,8 @@ Follow the path to witness my level of understanding in both function and design
 
 
         {/**Start Buttons section*/}
-        <div className="w3-padding-large">
-        <div className="w3-container w3-content text-center w3-padding-top-48 text-black mt-4" id="buttons">
+        <div className="w3-padding-large" id="buttons">
+        <div className="w3-container w3-content text-center w3-padding-top-48 text-black mt-4">
           <h1 className="text-center w3-margin-bottom">Button Components</h1>
           <hr />
           
@@ -673,8 +673,8 @@ A study by Forrester revealed that improving website navigation can lead to a 10
           </div>
         {/**End Buttons */}
      {/**Start Image lists*/}
-<div className="w3-light-gray ">
-  <div className="w3-container w3-padding-32" id="image-list">
+<div className="w3-light-gray" id="image-lists">
+  <div className="w3-container w3-padding-32">
     <div className="w3-container w3-padding-large text-center">
       <h1 className="text-center w3-margin-bottom">Image Lists</h1>
       <hr />
