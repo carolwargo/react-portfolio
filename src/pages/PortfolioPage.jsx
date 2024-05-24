@@ -88,19 +88,19 @@ Follow the path to witness my level of understanding in both function and design
 
 
 
-        <div className="container w3-padding-top-48 mb-4" id="web-components">
-          <div className="row d-flex justify-content-center align-items-center w3-padding-large">
-          <div className="col-sm-12 col-md-6 col-lg-6 flex-column">
+        <div className="container w3-padding-32 mb-4" id="web-components">
+          <div className="row d-flex justify-content-center align-items-center ">
+          <div className="col-sm-12 col-md-6 col-lg-6 flex-column w3-padding-32 w3-padding-large px-5">
                        <img src={WebComponentsTrans} alt="web-components" style={{width:'100%'}} ></img>
            
           </div>
-            <div className="col-sm-12 col-md-6 col-lg-6 flex-column w3-padding-large w3-padding-24 w3-light-gray my-1">
+            <div className="col-sm-12 col-md-6 col-lg-6 flex-column w3-padding-large w3-padding-32 shadow border w3-round-large ">
             <h3>Web Component Menu</h3>
-              <style>
+            <style>
                 {`
       .accordion-item {
-        border: none; /* Remove outside border */
-        border-bottom: 1px solid #dee2e6; /* Add bottom border */
+        border:  1px solid #000000; /* Remove outside border */
+        border-bottom: 1px solid #000000; /* Add bottom border */
       }
       .question.py-2 {
         font-size: 2rem !important; /* Adjust font size */
@@ -109,8 +109,8 @@ Follow the path to witness my level of understanding in both function and design
   
     `}
               </style>
-              <p>     Web components enable the creation of custom elements for web pages and apps. Offering benefits like code reuse, encapsulation, and interoperability.
-          </p>
+
+              <p>Web components enable the creation of custom elements for web pages and apps. Offering benefits like code reuse, encapsulation, and interoperability.</p>
          
               <Accordion defaultActiveKey="-1" className="components-accordian">
                 {faqs.map((faq, index) => (
@@ -148,9 +148,9 @@ Follow the path to witness my level of understanding in both function and design
           {/**End INTRO Web Components */}
         {/**Start Alerts */}
         <div className="w3-light-gray" id="alerts">
-        <div className="w3-container  text-center w3-padding-top-48 text-black mt-4" >
+        <div className="w3-container  text-center w3-padding-top-32 text-black " >
         <div className="w3-content w3-padding-32 text-black" >
-          <div className="row d-flex justify-content-center align-items-center w3-margin-top mb-3">
+          <div className="row d-flex justify-content-center align-items-center mb-3">
             <div className="col-sm-12 col-md-5 col-lg-5 flex-column w3-padding-large">
             
                 <h2>Alert Components</h2>
@@ -667,8 +667,7 @@ A study by Forrester revealed that improving website navigation can lead to a 10
             </div>
             </div>
             <br />
-            <br />
-            <br />
+           
             <br />
           </div>
         {/**End Buttons */}
