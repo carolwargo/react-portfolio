@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.733d611f.css",
-    "main.js": "/react-portfolio/static/js/main.243736cb.js",
+    "main.js": "/react-portfolio/static/js/main.b715d1c1.js",
     "static/media/RealEstate.png": "/react-portfolio/static/media/RealEstate.ba0b8a8bd8b9df38e276.png",
     "static/media/Album.png": "/react-portfolio/static/media/Album.624f5f271608ee54bae6.png",
     "static/media/LoginImage.png": "/react-portfolio/static/media/LoginImage.a7742c36080e9860e034.png",
@@ -21,7 +21,7 @@
     "static/media/Left.png": "/react-portfolio/static/media/Left.35541435b45c220fff4c.png",
     "static/media/YogaSet.png": "/react-portfolio/static/media/YogaSet.5b7bef601b298c2fce5f.png",
     "static/media/Right.png": "/react-portfolio/static/media/Right.eabd94d072f1d85b2790.png",
-    "static/media/ResumeDownload.pdf": "/react-portfolio/static/media/ResumeDownload.dc8b72aff5b7d5e66340.pdf",
+    "static/media/ResumeDownload.pdf": "/react-portfolio/static/media/ResumeDownload.e4e027eb6c57f42af423.pdf",
     "static/media/WebComponentsTrans.png": "/react-portfolio/static/media/WebComponentsTrans.63309f315b4c00a48cac.png",
     "static/media/Business.png": "/react-portfolio/static/media/Business.2feb0411115e2f21fb28.png",
     "static/media/GirlCamera.png": "/react-portfolio/static/media/GirlCamera.8f48a81fde5a24c9c60b.png",
@@ -56,10 +56,10 @@
     "static/media/fa-v4compatibility.woff2": "/react-portfolio/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/react-portfolio/index.html",
     "main.733d611f.css.map": "/react-portfolio/static/css/main.733d611f.css.map",
-    "main.243736cb.js.map": "/react-portfolio/static/js/main.243736cb.js.map"
+    "main.b715d1c1.js.map": "/react-portfolio/static/js/main.b715d1c1.js.map"
   },
   "entrypoints": [
     "static/css/main.733d611f.css",
-    "static/js/main.243736cb.js"
+    "static/js/main.b715d1c1.js"
   ]
 }
