@@ -285,15 +285,15 @@ export default function ResumePage() {
         <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
        
         <ul>
-          <li>Implement design changes & maintain sites to ensure a user-friendly UI.</li>
-          <li>Develop and integrate e-commerce platforms.</li>
-          <li>Conduct audits to identify and fix any technical issues or broken links.</li>
-          <li>Monitor site security for threats & vulnerabilities.</li>
-          <li>Implement SEO strategies.</li>
-          <li>Create engaging content.</li>
-          <li>Collaborate with clients and cross-functional teams.</li>
-          <li>Respond to clients to address user inquiries and feedback.</li>
-          <li>Develop digital marketing strategies; to include surveys and social media content and management system.</li>
+  <li>Develop marketing strategies through analysis and client engagement.</li>
+  <li>Manage website design, development, and maintenance.</li>
+  <li>Create and implement graphic design and branding initiatives.</li>
+  <li>Produce content and manage social media platforms.</li>
+  <li>Oversee projects, including resource planning, risk management, and stakeholder collaboration.</li>
+  <li>Integrate and manage e-commerce platforms.</li>
+  <li>Conduct audits to identify and resolve technical issues and monitor site security.</li>
+  <li>Implement SEO strategies to enhance online visibility.</li>
+  <li>Address user inquiries and feedback to improve client satisfaction.</li>
 </ul>
           <hr className="my-5"/>
 
@@ -306,15 +306,15 @@ export default function ResumePage() {
         <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> Contract Oct 2020 - Feb 2022 <span className="w3-tag w3-black w3-round" style={{fontSize:'12px'}}>date approximates</span></h6>
         <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
        
+      
         <ul>
-        <li><b>PRIMARY FOCUS: </b>Strategize, coordinate, and execute corporate events and organization-wide celebrations aimed at fostering morale and enhancing employee/management relations amidst the challenges posed by the pandemic.</li>
-          <li>Collaborate with internal stakeholders to identify event goals, themes, and desired outcomes.</li>
-          <li>Serve as a point of contact for event-related inquiries and provide exceptional customer service to internal and external stakeholders.</li>
-          <li>Build and maintain relationships with external vendors, sponsors, and partners to support event objectives and secure resources.</li>
-          <li>Stay updated on industry trends and best practices in corporate event management and employee engagement strategies.</li>
-          <li>Design and implement creative engagement initiatives to boost employee morale and strengthen team cohesion.</li>
-          <li>Manage event budgets, negotiate contracts with vendors, and ensure cost-effective solutions without compromising quality.</li>
-       
+  <li><strong>Primary Focus:</strong> Strategize, coordinate, and execute corporate events and organization-wide celebrations to foster morale and enhance employee/management relations during the pandemic.</li>
+  <li>Collaborate with internal stakeholders to identify event goals, themes, and desired outcomes.</li>
+  <li>Serve as the primary contact for event-related inquiries, providing exceptional customer service to both internal and external stakeholders.</li>
+  <li>Build and maintain relationships with external vendors, sponsors, and partners to support event objectives and secure necessary resources.</li>
+  <li>Stay updated on industry trends and best practices in corporate event management and employee engagement strategies.</li>
+  <li>Design and implement creative engagement initiatives to boost employee morale and strengthen team cohesion.</li>
+  <li>Manage event budgets, negotiate contracts with vendors, and ensure cost-effective solutions without compromising quality.</li>   
 </ul>
 <hr className="my-5"/>
 
