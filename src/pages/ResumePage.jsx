@@ -127,14 +127,7 @@ export default function ResumePage() {
 
      <br />
         <p className="w3-text-black w3-margin-top w3-padding-small" style={{fontSize:'14px'}}>
-          <b><i>'I am a Full-Stack Software Developer proficient in both
-            frontend and backend technologies, specializing in User 
-            Experience. Accompanied by 20 years of experience in Business Analysis & 
-            Project Management. I excel in a 
-            collaborative environment, exploring the latest processes, tools and frameworks 
-            to create innovative solutions. Fully committed to delivering a seamless user experience, 
-            optimizing performance, and developing meaningful connections 
-            to foster goodwill and trust.'
+          <b><i>'I am a Full-Stack Software Developer, specializing in User Experience. My drive stems from a desire to assist others, and my enthusiasm lies in utilizing creative design to drive innovative solutions through technology- With over 20 years of experience in business management & strategic development, I bring a wealth of knowledge and expertise to every project I undertake.'
                 </i></b></p>
                 <br/>
        {/**Start Tech Skills*/}
@@ -247,7 +240,7 @@ export default function ResumePage() {
           <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
         </div>
         <p className="w3-text-black">Design Software</p>  
-  
+  <br />
     </div>
     </div>
   <div className="w3-center w3-padding-large w3-padding-32 text-white shadow" style={{backgroundColor:'#FF385C'}}>
@@ -326,13 +319,14 @@ export default function ResumePage() {
         <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw "></i><b> Duties</b></p>
       
       <ul>
+        <li>Identify distressed properties and prepare detailed cost analysis reports for the investment group.
+</li>
       <li>Employ marketing strategies</li>
-                    <li>Analyze current & past market trends</li>
       <li>Write, edit & negotiate contracts.</li>
                     <li>
                       Facilitate inspections, appraisals & legal matters.
                     </li>
-                    <li>Oversee home staging and architectural Design.</li>
+                    <li>Oversee home staging, architectural Design and contractors.</li>
                   </ul> 
                   <hr className="my-5"/>
     
