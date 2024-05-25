@@ -2,7 +2,6 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
 //import GirlBW from '../../../assets/images/Hawaii/GirlBW.png';
 import CarBW from '../../../assets/images/Hawaii/CarBW.png';
 import Sunset from '../../../assets/images/Hawaii/Sunset.png';
@@ -18,25 +17,40 @@ import GirlBoat from '../../../assets/images/Hybiscus450/GirlBoat.png';
 //import Cabana from '../../../assets/images/Hybiscus450/Cabana.png';
 //import Highway from '../../../assets/images/Hybiscus450/Highway.png';
 import Swing from '../../../assets/images/Hybiscus450/Swing.png';
-
-
+import { useMediaQuery, useTheme } from '@mui/material';
 
 export default function TitlebarBelowMasonryImageList() {
+  const theme = useTheme();
+  const isXs = useMediaQuery(theme.breakpoints.down('xs'));
+  const isSm = useMediaQuery(theme.breakpoints.between('sm', 'md'));
+  const isMd = useMediaQuery(theme.breakpoints.between('md', 'lg'));
+  const isLg = useMediaQuery(theme.breakpoints.up('lg'));
+
+  const getCols = () => {
+    if (isXs) return 3;
+    if (isSm) return 3;
+    if (isMd) return 3;
+    if (isLg) return 3;
+    return 3;
+  };
+
   return (
-    <Box sx={{ width: 600, height: 500, overflowY: 'scroll' }} className='shadow border'>
-    <ImageList variant="masonry" 
-    cols={3} gap={8} 
-    className='w3-padding-small w3-padding-16'>
+    <Box sx={{ width: '100%', height: 250, overflowY: 'scroll' }} className='shadow border align-items-center justify-content-center'>
+      <ImageList
+        variant="masonry"
+        cols={getCols()}
+        gap={8} 
+    className='w3-padding-small'>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img
             srcSet={`${item.img}`}
             src={item.img}
             alt={item.title}
+            style={{fontSize: '10px'}}
             loading="lazy"
           />
-          <ImageListItemBar position="below" title={item.author} className='fw-bold'/>
-        </ImageListItem>
+     </ImageListItem>
       ))}
     </ImageList>
   </Box>

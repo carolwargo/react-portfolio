@@ -166,11 +166,10 @@ Examples include Login or Sign Up forms. How are they different?"
  {/**End authentication*/}
 
   {/**Start authorization */}
-
+  <div className="container">
   <div className="row d-flex justify-content-center align-items-center w3-padding-top-24 w3-margin-top" id='authentication'>
-  <div className='col-sm-12 col-md-6 col-lg-6 flex-column justify-content-center align-items-center text-black w3-padding-16'>
-    <div className='container w3-margin-left'>
-      
+  <div className='col-sm-12 col-md-6 col-lg-6 justify-content-center align-items-center text-black w3-padding-16'>
+  <div className='container w3-margin-left'>
             <h3 className=" w3-margin-top">
                 <b className="fw-bold" style={{color:'#FF385C'}}>Authorization</b> {'(Login)'}
               </h3>
@@ -184,11 +183,9 @@ Examples include Login or Sign Up forms. How are they different?"
     <li>Policy-Based Authorization</li>
     <li>Attribute-Based Access Control Authorization</li>
 </ul> 
-
 </div>
 </div>
-<div className='col-sm-12 col-md-6 col-lg-6 w3-padding-small justify-content-center align-items-center'>
-<div className="container">
+<div className='col-sm-12 col-md-6 col-lg-6  justify-content-center align-items-center'>
 <Login/>
 </div>
 </div>
@@ -202,11 +199,11 @@ Examples include Login or Sign Up forms. How are they different?"
 
 
 
-      <div className="w3-container w3-content w3-padding-48">
-        <div className="row d-flex justify-content-center ">
+      <div className="w3-container w3-content w3-padding-48 w3-padding-large" id='subscribe'>
+        <div className="row d-flex justify-content-center align-items-center">
           <div className="flex-column col-sm-12 col-md-6 col-lg-6 justify-content-center ">
-            <div className="container w3-white w3-padding-large ">
-            <h3 className="">
+            <div className="container w3-white">
+            <h3 >
                 <b className="fw-bold" style={{color:'#FF385C'}}>Subscription</b> Form
               </h3>
               <hr className="w3-opacity" />
@@ -221,10 +218,10 @@ Examples include Login or Sign Up forms. How are they different?"
           </div>
      
        
-         <div className="flex-column col-sm-12 col-md-6 col-lg-6 justify-content-center ">
+         <div className="flex-column col-sm-12 col-md-6 col-lg-6 justify-content-center align-items-center">
   
         {/**End subscribe content */}
-        <div className='w3-container w3-padding-large'>
+        <div className='w3-container '>
          <div className="w3-card w3-padding w3-padding-24 w3-light-gray w3-round-large">
        
             <form onSubmit={handleSubmit}>

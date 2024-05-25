@@ -74,9 +74,9 @@ function Portfolio() {
     >
       <div>
            {/**Start INTRO Web Components */}
-           <div className="w3-container text-center w3-padding-top-48 text-black mt-4" id="web-components">
-          <div className="row d-flex justify-content-center align-items-center w3-padding-large">
-          <div className="col-sm-12 col-md-12 col-lg-12 flex-column">
+           <div className="w3-container text-center w3-padding-top-48 text-black mt-2" id="web-components">
+          <div className="row d-flex justify-content-center align-items-center w3-padding-32 w3-padding-large">
+          <div className="col-sm-12 col-md-12 col-lg-12 flex-column mb-3">
           <div className="container">
           <h1>My Portfolio</h1>
           <h4 className="fw-regular">'My Portfolio consists of a wide range of sample elements, images, apps and more. 
@@ -144,8 +144,9 @@ Follow the path to witness my level of understanding in both function and design
             </div>
           </div>
        </div>
-
           {/**End INTRO Web Components */}
+
+
         {/**Start Alerts */}
         <div className="w3-light-gray" id="alerts">
         <div className="w3-container  text-center w3-padding-top-32 text-black " >
@@ -453,13 +454,13 @@ Follow the path to witness my level of understanding in both function and design
           <h1 className="text-center w3-margin-bottom">Button Components</h1>
           <hr />
           
-          <h3 className="text-center fw-lighter">
+          <h4 className="text-center fw-lighter mb-4">
           Well-designed web buttons boost engagement, streamline navigation,
            and prompt user actions, creating a more intuitive and compelling 
            user experience.
-          </h3>
+          </h4>
           
-          <p className="mb-2 text-center fw-lighter">
+          <p className="mt-3 text-center fw-lighter">
             <b> Button variations displayed include:</b> <br />
             size, color, outline, solid, shape, icon elements and shadowing to
             give the appearance the element is floating.{" "}
@@ -671,6 +672,8 @@ A study by Forrester revealed that improving website navigation can lead to a 10
             <br />
           </div>
         {/**End Buttons */}
+
+
      {/**Start Image lists*/}
 <div className="w3-light-gray" id="image-lists">
   <div className="w3-container w3-padding-32">
@@ -685,16 +688,17 @@ A study by Forrester revealed that improving website navigation can lead to a 10
         <ImageList />
       </div>
       <div className="col-sm-12 col-md-5 col-lg-5 d-flex flex-column justify-content-center align-items-center">
-        <div className="w3-padding-small text-center">
-          <h2 className=" w3-margin-bottom">Masonry Image Grid</h2>
+        <div className="w3-padding-small text-center ">
+          <h4 className=" w3-margin-bottom mt-4">MASONRY GRID</h4>
           <hr />
           <p>Layout provides versatility for image sizes. Perfect for showcasing portfolios, 
             photo galleries, and other visual content that doesn't conform to 'one-size fits all'. Images display a simple heading and can be clickable to increase in size or navigate to a defined section of choice.</p>
         </div>
+     
       </div>
     </div>
 
-    <div className="row d-flex justify-content-center align-items-center w3-padding-large my-3">
+    <div className="row d-flex justify-content-center align-items-center w3-padding-large my-2">
       <div className="col-sm-12 col-md-7 col-lg-7 d-flex flex-column justify-content-center align-items-center">
         <ImageTitles/>
       </div>
