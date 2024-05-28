@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { Link } from "react-router-dom";
 
@@ -102,22 +103,71 @@ function BasicExample() {
               >
                 Resume
               </Nav.Link>
+
+             
+              <NavDropdown title="My Work" id="basic-nav-dropdown"  style={{ fontSize: "14px" }}>
               <Nav.Link
-                as={Link}
-                to="/page-samples#page-samples"
-                style={{ fontSize: "14px" }}
-                onClick={handleNavLinkClickAndCloseNavbar}
-              >
-                Page Samples
-              </Nav.Link>
-              <Nav.Link
+              className="dropdown-item w3-padding"
                 as={Link}
                 to="/portfolio#portfolio"
                 style={{ fontSize: "14px" }}
                 onClick={handleNavLinkClickAndCloseNavbar}
               >
-                My Work
+               Web Components
               </Nav.Link>
+
+              <Nav.Link
+                 className="dropdown-item w3-padding"
+                as={Link}
+                to="/page-samples#page-samples"
+                style={{ fontSize: "14px" }}
+                onClick={handleNavLinkClickAndCloseNavbar}
+              >
+                Landing Pages
+              </Nav.Link>
+
+              <Nav.Link
+                 className="dropdown-item w3-padding"
+                as={Link}
+                to="/forms#forms"
+                style={{ fontSize: "14px" }}
+                onClick={handleNavLinkClickAndCloseNavbar}
+              >
+                Forms
+              </Nav.Link>
+
+              <Nav.Link
+                 className="dropdown-item w3-padding"
+                as={Link}
+                to="/cards#cards"
+                style={{ fontSize: "14px" }}
+                onClick={handleNavLinkClickAndCloseNavbar}
+              >
+               Cards & Images
+              </Nav.Link>
+
+              <Nav.Link
+                 className="dropdown-item w3-padding"
+                as={Link}
+                to="/server#server"
+                style={{ fontSize: "14px" }}
+                onClick={handleNavLinkClickAndCloseNavbar}
+              >
+              Utility Apps
+              </Nav.Link>
+            
+              <Nav.Link
+                 className="dropdown-item w3-padding"
+                as={Link}
+                to="/graphics#graphics"
+                style={{ fontSize: "14px" }}
+                onClick={handleNavLinkClickAndCloseNavbar}
+              >
+               Graphics
+              </Nav.Link>
+            
+            
+            </NavDropdown>
             </Nav>
             <Nav>
              

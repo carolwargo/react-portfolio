@@ -74,7 +74,7 @@ function Portfolio() {
     >
       <div>
            {/**Start INTRO Web Components */}
-           <div className="w3-container text-center w3-padding-top-48 text-black mt-2" id="web-components">
+           <div className="w3-container  text-center w3-padding-large w3-padding-top-48 text-black mt-2" id="web-components">
           <div className="row d-flex justify-content-center align-items-center w3-padding-32 w3-padding-large">
           <div className="col-sm-12 col-md-12 col-lg-12 flex-column mb-3">
           <div className="container">
