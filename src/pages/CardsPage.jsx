@@ -230,7 +230,7 @@ const Cards = () => {
            
             <h2 className="w3-text-black">
 
-                <b className="fw-bold text-black">Page Samples</b>
+                <b className="fw-bold text-black">Landing Pages</b>
                
               </h2>
               <hr className="w3-opacity" />
@@ -257,7 +257,7 @@ const Cards = () => {
                 className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom"
                 style={{ backgroundColor: "#FF385C" }}
               >
-                 View 1-Page Samples
+                 View Landing Pages
               </button>
               </Link>
             </div>
