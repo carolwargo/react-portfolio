@@ -25,12 +25,9 @@ export default function AboutPage() {
     <motion.div
     initial={{ y: -20, opacity: 0}}
     animate={{y: 0, opacity: 1}}
-    exit={{y: 20, opacity: 0}}
-    className="home"
-    
+    exit={{y: 20, opacity: 0}}   
     >
     <div className="about" id="about">
-     
     <div className="w3-content w3-container w3-padding-64 w3-margin-top">
         <div className="w3-content w3-container ">
           <div className="row d-flex justify-content-center align-items-center  w3-margin-top">
@@ -38,7 +35,12 @@ export default function AboutPage() {
               <h1 className=" fw-light"><b>ABOUT ME.</b></h1>
               <h5 className=" fw-light">"I'm Carol Wargo, and welcome to my corner of the internet!"</h5>
               <br />
-              <p className=" fw-light"><em>"My passion lies in utilizing creative design to drive innovative solutions through technology. With a distinctive blend of skills and experience, I am a seasoned full-stack software developer and UX designer deeply committed to collaboration, bringing together diverse perspectives to tackle challenges effectively. With over 20 years of experience in business management & strategic development, I bring a wealth of knowledge and expertise to every project I undertake."</em></p>
+              <p className=" fw-light"><em>"My passion lies in utilizing creative design to drive 
+                innovative solutions through technology. With a distinctive blend of skills and 
+                experience, I am a full-stack software developer & UX Designer that specializes in customer servicing & support, deeply committed to collaboration, bringing 
+                together diverse perspectives to tackle challenges effectively. With over 20 years of experience in business management & 
+                strategic development, I bring a wealth of knowledge and expertise to every project 
+                I undertake."</em></p>
             </div>
             <div className="col-lg-6 ">
               <img src={MeWhite} className="w3-round w3-image w3-opacity w3-hover-opacity-off mx-auto d-block" alt="Me" width="500" height="333" />
