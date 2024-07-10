@@ -30,16 +30,16 @@ const GraphicsPage = () => {
 
   return (
     <div className="graphics-components" id="graphics-components">
-      <div className="w3-padding-32 w3-margin-top">
-    <div className="w3-padding-32">
+      <div className="w3-padding-32">
       <div className="text-center">
         <h3>Social Media Campaign</h3>
         <hr />
         <br />
       </div>
-<img src={YogaSet} alt="yoga" style={{width:'100%'}} className="shadow w3-round-xlarge"/>
-</div>
-<div className="container text-center w3-padding-top-32">
+<img src={YogaSet} alt="yoga" style={{width:'100%'}} className="shadow"/>
+
+<div className="container text-center w3-padding-top-48 w3-margin-top">
+<br />
   <h3>Sports Media</h3>
   <hr />
   <br />
@@ -66,7 +66,7 @@ const GraphicsPage = () => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="mb-2 border border-black clickable-image w3-round-xlarge"
+                  className="mb-2 border border-black clickable-image"
                   style={{
                     width: "100%",
                     height: "auto",

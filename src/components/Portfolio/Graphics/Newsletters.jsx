@@ -42,7 +42,7 @@ const Newsletters = () => {
    
         </div>
    
-    <div className="w3-padding-32">
+    <div className="w3-padding-48 w3-margin-top">
     <div className="row d-flex justify-content-center align-items-center">
     <div className="graphics-carousel-title text-center text-black">
     <br />
