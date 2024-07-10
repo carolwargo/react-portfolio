@@ -29,8 +29,21 @@ const GraphicsPage = () => {
   };
 
   return (
-    <div className="graphics" id="graphics">
-    <div  className="w3-content">
+    <div className="graphics-components" id="graphics-components">
+      <div className="w3-padding-32 w3-margin-top">
+    <div className="w3-padding-32">
+      <div className="text-center">
+        <h3>Social Media Campaign</h3>
+        <hr />
+        <br />
+      </div>
+<img src={YogaSet} alt="yoga" style={{width:'100%'}} className="shadow w3-round-xlarge"/>
+</div>
+<div className="container text-center w3-padding-top-32">
+  <h3>Sports Media</h3>
+  <hr />
+  <br />
+</div>
       <div className="row">
         {[
           { image: S1, title: "Large Format" },
@@ -38,7 +51,8 @@ const GraphicsPage = () => {
           { image: CuttersFlyers, title: "Special Event" },
           { image: Catching, title: "Services and Branding" },
           { image: Canceled, title: "Team Notifications" },
-          { image: YogaSet, title: "Campaign" },
+          { image: S4, title: "FundRaiser" },
+        
         ].map((item, index) => (
           <div
             key={index}
@@ -77,11 +91,9 @@ const GraphicsPage = () => {
         altText="Enlarged Image"
         title="close"
       />
-      <div className="w3-padding-32 ">
-<img src={S4} alt="directive" style={{width:'100%'}} className="shadow w3-round-xlarge"/>
-</div>
-    </div>
+
     
+    </div>
     </div>
   );
 };

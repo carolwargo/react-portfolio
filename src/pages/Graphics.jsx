@@ -19,24 +19,20 @@ const Graphics = () => {
   initial={{ y: -20, opacity: 0}}
   animate={{y: 0, opacity: 1}}
   exit={{y: 20, opacity: 0}}
-  className="graphics"
+  className="graphics w3-light-gray"
   id="graphics"
   
   >
 
-        <div className="w3-padding-top-64 w3-padding-large">
-      
-             
-      <div className="w3-container w3-padding-large py-2 my-4" >
+        <div className="w3-padding-top-64">
+      <div className="w3-container w3-content w3-padding-large" >
       <div className='w3-padding-32 text-center text-black'>
       <h1 className="text-center m-2">GRAPHIC ELEMENTS</h1>
       <hr />
-      <h3 className="text-center">Crafting visually captivating content not only enhances a brand's online presence but also serves as a powerful tool to draw users in and encourage engagement.</h3>
+      <h4 className="text-center">Crafting visually captivating content not only enhances a brand's online presence but also serves as a powerful tool to draw users in and encourage engagement.</h4>
  <br />
  <p style={{fontSize:'14px'}}><i>    'The Graphic Elements page is currently under development and will be completed shortly. Thank you in advance for your patience.'</i></p>
-      <br />
-      
-     
+   
         </  div>
 
 
@@ -45,7 +41,7 @@ const Graphics = () => {
        <div className="row d-flex justify-content-center align-items-center">
    <Newsletters/>
    </div>
-     {/*recruit YOGA COMPLETE start */}
+     {/*recruit YOGA COMPLETE start 
      <div className='w3-padding-48 text-center text-black'>
         <div className="row">
           <div className="col"><h1>Logos | Branding</h1>
@@ -54,24 +50,9 @@ const Graphics = () => {
           <div className="col"><h1>Presentations </h1> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus nostrum nisi quaerat quibusdam tempore corrupti quidem enim repellendus maiores provident necessitatibus exercitationem dolor asperiores voluptas molestias placeat dignissimos, et nihil.</p></div>   
         </div>
        </div>
+       */}
         {/*End Business*/}
   
-        <br  />
-        <br  />
-     <div className="row d-flex justify-content-center align-items-center">
-     
-          <div className="col d-flex justify-content-center align-bottom px-2">
-            <div className="story-essentials-body justify-content-center align-bottom">
-              <div className="story-essentials-title text-center text-black">
-                <h1>Sports</h1>
-                  <br />
-             <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nam molestias, laudantium numquam eaque distinctio molestiae. Incidunt odit expedita ipsa alias nihil blanditiis suscipit, libero excepturi odio nesciunt, iste illum.</h4>
-              <br />
-              <br />
-            </div>
-          </div>
-          </div>
-        </div>
        <GraphicComponents/>
   
 
