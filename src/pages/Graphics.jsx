@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import GraphicComponents from "../components/Portfolio/Graphics/GraphicsComponents";
+import Newsletters from "../components/Portfolio/Graphics/Newsletters";
 //import S4 from "../assets/images/Sports/S4.png";
 
 const Graphics = () => {
@@ -42,17 +43,8 @@ const Graphics = () => {
 
           {/*Start Business*/}
        <div className="row d-flex justify-content-center align-items-center">
-     <div className="col d-flex justify-content-center align-bottom px-2">
-       <div className="story-essentials-body justify-content-center align-bottom">
-         <div className="story-essentials-title text-center text-black">
-           <h1>Business</h1>
-             <br />
-        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nam molestias, laudantium numquam eaque distinctio molestiae. Incidunt odit expedita ipsa alias nihil blanditiis suscipit, libero excepturi odio nesciunt, iste illum.</h4>
-         <br />
-         <br />
-       </div>
-     </div>
-     </div>
+   <Newsletters/>
+   </div>
      {/*recruit YOGA COMPLETE start */}
      <div className='w3-padding-48 text-center text-black'>
         <div className="row">
@@ -63,7 +55,7 @@ const Graphics = () => {
         </div>
        </div>
         {/*End Business*/}
-   </div>
+  
         <br  />
         <br  />
      <div className="row d-flex justify-content-center align-items-center">
