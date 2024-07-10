@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.733d611f.css",
-    "main.js": "/react-portfolio/static/js/main.8c2f733b.js",
+    "main.js": "/react-portfolio/static/js/main.653b3244.js",
     "static/media/RealEstate.png": "/react-portfolio/static/media/RealEstate.ba0b8a8bd8b9df38e276.png",
     "static/media/Album.png": "/react-portfolio/static/media/Album.624f5f271608ee54bae6.png",
     "static/media/LoginImage.png": "/react-portfolio/static/media/LoginImage.a7742c36080e9860e034.png",
     "static/media/WeatherNew.png": "/react-portfolio/static/media/WeatherNew.ed1e611ded22ae4fed6e.png",
     "static/media/LoginBW.png": "/react-portfolio/static/media/LoginBW.8456b009ec424fd44136.png",
     "static/media/BlogShot.png": "/react-portfolio/static/media/BlogShot.266187bd8e0092efbf48.png",
+    "static/media/Newsletter3.png": "/react-portfolio/static/media/Newsletter3.c4a07c15516334793dc5.png",
     "static/media/Lake.png": "/react-portfolio/static/media/Lake.8fe8de6b95a642ddf090.png",
     "static/media/LargeLake.png": "/react-portfolio/static/media/LargeLake.ef35781061b5305f9bf8.png",
     "static/media/SunRay.png": "/react-portfolio/static/media/SunRay.98ccdc3e052b1889291c.png",
@@ -28,13 +29,26 @@
     "static/media/Catching.png": "/react-portfolio/static/media/Catching.60acc9b2f05add627a04.png",
     "static/media/S1.png": "/react-portfolio/static/media/S1.bb02006e9a999f7f6523.png",
     "static/media/ResumeDownload.pdf": "/react-portfolio/static/media/ResumeDownload.cd0eab5bd2e1e70a9dfb.pdf",
+    "static/media/Business1.png": "/react-portfolio/static/media/Business1.33e4db9bdebffe5428ed.png",
+    "static/media/Fitness3.png": "/react-portfolio/static/media/Fitness3.6ae0a88f8eb4121578e2.png",
     "static/media/WebComponentsTrans.png": "/react-portfolio/static/media/WebComponentsTrans.63309f315b4c00a48cac.png",
+    "static/media/BusinessStart.png": "/react-portfolio/static/media/BusinessStart.7e73b7a03b49458dfbc9.png",
+    "static/media/Furniture1.png": "/react-portfolio/static/media/Furniture1.16eb32d4e1ccfff55e3d.png",
     "static/media/Business.png": "/react-portfolio/static/media/Business.2feb0411115e2f21fb28.png",
     "static/media/GirlCamera.png": "/react-portfolio/static/media/GirlCamera.8f48a81fde5a24c9c60b.png",
+    "static/media/Fitness2.png": "/react-portfolio/static/media/Fitness2.3589f4a9faa6c75c433c.png",
+    "static/media/Business2.png": "/react-portfolio/static/media/Business2.2ad3d0a4d1678e582d52.png",
+    "static/media/Business5.png": "/react-portfolio/static/media/Business5.b80e124b435cb7195732.png",
+    "static/media/Business7.png": "/react-portfolio/static/media/Business7.879930b1e50b6ac077ef.png",
+    "static/media/Furniture3.png": "/react-portfolio/static/media/Furniture3.41404a61ae771e78fea5.png",
+    "static/media/Business3.png": "/react-portfolio/static/media/Business3.7c7bb90324f8603276e4.png",
     "static/media/fa-solid-900.ttf": "/react-portfolio/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
+    "static/media/Business6.png": "/react-portfolio/static/media/Business6.c6f4457df4de5de93c00.png",
     "static/media/WomanReading.jpg": "/react-portfolio/static/media/WomanReading.9f7b768c7f3a87220bcc.jpg",
     "static/media/WeatherMobile.png": "/react-portfolio/static/media/WeatherMobile.83074d1ae142f8d42eea.png",
     "static/media/Swing.png": "/react-portfolio/static/media/Swing.5f6d5f81354ea8582128.png",
+    "static/media/Business4.png": "/react-portfolio/static/media/Business4.a79101f048da4c4904ae.png",
+    "static/media/Furniture2.png": "/react-portfolio/static/media/Furniture2.d71c576200fe4b7ed15d.png",
     "static/media/Horizen.png": "/react-portfolio/static/media/Horizen.e8e32ffff3b81362893a.png",
     "static/media/SurfGuy.png": "/react-portfolio/static/media/SurfGuy.e1f0c4e4158bf2658e6b.png",
     "static/media/White.png": "/react-portfolio/static/media/White.9737bcae314bf1c8bb8f.png",
@@ -46,6 +60,7 @@
     "static/media/fa-brands-400.ttf": "/react-portfolio/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
     "static/media/Surf.png": "/react-portfolio/static/media/Surf.52a13f827df0376abe5a.png",
     "static/media/GirlBoat.png": "/react-portfolio/static/media/GirlBoat.13cb09d7b40315d0f264.png",
+    "static/media/Fitness4.png": "/react-portfolio/static/media/Fitness4.ee12479081be8f767e44.png",
     "static/media/Sunset.png": "/react-portfolio/static/media/Sunset.ce8b0e6b422e10c6e2ad.png",
     "static/media/fa-solid-900.woff2": "/react-portfolio/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
     "static/media/SVG.png": "/react-portfolio/static/media/SVG.b9ea1c1f618697eb61d6.png",
@@ -62,10 +77,10 @@
     "static/media/fa-v4compatibility.woff2": "/react-portfolio/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/react-portfolio/index.html",
     "main.733d611f.css.map": "/react-portfolio/static/css/main.733d611f.css.map",
-    "main.8c2f733b.js.map": "/react-portfolio/static/js/main.8c2f733b.js.map"
+    "main.653b3244.js.map": "/react-portfolio/static/js/main.653b3244.js.map"
   },
   "entrypoints": [
     "static/css/main.733d611f.css",
-    "static/js/main.8c2f733b.js"
+    "static/js/main.653b3244.js"
   ]
 }
