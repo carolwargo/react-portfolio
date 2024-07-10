@@ -63,8 +63,8 @@ const Graphics = () => {
     <br />
       <hr />
       <div className="w3-container w3-padding-large mt-5 text-center w3-padding-48 my-3">
-              <h2 className="text-black">Much more to come... Stay tuned! Feedback is welcome and encouraged. Feel free to contact me to share your thoughts.
-        </h2><br />
+              <h3 className="text-black">Much more to come... Stay tuned! Feedback is welcome and encouraged. Feel free to contact me to share your thoughts.
+        </h3><br />
               <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
               style={{backgroundColor:'#FF385C'}}>
               <Link to="/contact#contact"
