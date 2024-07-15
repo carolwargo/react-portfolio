@@ -52,12 +52,12 @@ const Server = () => {
               Experience the convenience and reliability of the Open Weather App, your go-to weather resource for both mobile and desktop. Stay informed, stay prepared, and stay connected to the weather conditions that impact your life. </p>
               </div>
               <br />
-                <div className="w3-card w3-opacity w3-hover-opacity-off"id="refactor">
+                <div className="w3-card"id="refactor">
                   <img
                     src={WeatherNew}
                     alt="blog-profile"
                     style={{ width: "100%" }}
-                    className="rounded-top w3-opacity w3-hover-opacity-off"
+                    className="rounded-top"
                   ></img>
                   <div className="w3-container w3-white justify-content-center w3-center">
                     <br></br>
@@ -91,12 +91,12 @@ const Server = () => {
                 
             {/*2. start weather app*/}
            <div className="flex-column col-sm-12 col-md-4 col-lg-4 justify-content-center align-items-center">
-                <div className="w3-card w3-opacity w3-hover-opacity-off"id="refactor">
+                <div className="w3-card"id="refactor">
                   <img
                     src={WeatherMobile}
                     alt="blog-profile"
                     style={{ width: "100%" }}
-                    className="rounded-top w3-opacity w3-hover-opacity-off"
+                    className="rounded-top"
                   ></img>
              
                 </div>

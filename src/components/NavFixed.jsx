@@ -4,9 +4,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
 import { Link } from "react-router-dom";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -26,22 +24,13 @@ function BasicExample() {
     });
   };
 
-  const closeNavbar = (e) => {
-    try {
-      e.stopPropagation();
-      setExpanded(false);
-    } catch (error) {
-      console.error("Error closing navbar:", error);
-    }
+  const closeNavbar = () => {
+    setExpanded(false);
   };
 
   const handleNavLinkClick = () => {
     scrollToTop();
-  };
-
-  const handleNavLinkClickAndCloseNavbar = (e) => {
-    handleNavLinkClick();
-    closeNavbar(e);
+    closeNavbar();
   };
 
   useEffect(() => {
@@ -75,7 +64,7 @@ function BasicExample() {
             as={Link}
             to="/"
             style={{ fontSize: "14px" }}
-            onClick={handleNavLinkClickAndCloseNavbar}
+            onClick={handleNavLinkClick}
           >
             <b>CW</b>HOME
           </Navbar.Brand>
@@ -90,7 +79,7 @@ function BasicExample() {
               <Nav.Link
                 as={Link}
                 to="/about#about"
-                onClick={handleNavLinkClickAndCloseNavbar}
+                onClick={handleNavLinkClick}
                 style={{ fontSize: "14px" }}
               >
                 About
@@ -98,91 +87,74 @@ function BasicExample() {
               <Nav.Link
                 as={Link}
                 to="/resume#resume"
-                onClick={handleNavLinkClickAndCloseNavbar}
+                onClick={handleNavLinkClick}
                 style={{ fontSize: "14px" }}
               >
                 Resume
               </Nav.Link>
-
              
-              <NavDropdown title="My Work" id="basic-nav-dropdown"  style={{ fontSize: "14px" }}>
-              <Nav.Link
-              className="dropdown-item w3-padding"
-                as={Link}
-                to="/portfolio#portfolio"
-                style={{ fontSize: "14px" }}
-                onClick={handleNavLinkClickAndCloseNavbar}
+              <NavDropdown 
+                title="My Work" 
+                id="basic-nav-dropdown" 
+                style={{ fontSize: "14px" }} 
+                onSelect={handleNavLinkClick}
               >
-               Web Components
-              </Nav.Link>
-
-              <Nav.Link
-                 className="dropdown-item w3-padding"
-                as={Link}
-                to="/page-samples#page-samples"
-                style={{ fontSize: "14px" }}
-                onClick={handleNavLinkClickAndCloseNavbar}
-              >
-                Landing Pages
-              </Nav.Link>
-
-              <Nav.Link
-                 className="dropdown-item w3-padding"
-                as={Link}
-                to="/forms#forms"
-                style={{ fontSize: "14px" }}
-                onClick={handleNavLinkClickAndCloseNavbar}
-              >
-                Forms
-              </Nav.Link>
-
-              <Nav.Link
-                 className="dropdown-item w3-padding"
-                as={Link}
-                to="/cards#cards"
-                style={{ fontSize: "14px" }}
-                onClick={handleNavLinkClickAndCloseNavbar}
-              >
-               Cards & Images
-              </Nav.Link>
-
-              <Nav.Link
-                 className="dropdown-item w3-padding"
-                as={Link}
-                to="/server#server"
-                style={{ fontSize: "14px" }}
-                onClick={handleNavLinkClickAndCloseNavbar}
-              >
-              Utility Apps
-              </Nav.Link>
-            
-              <Nav.Link
-                 className="dropdown-item w3-padding"
-                as={Link}
-                to="/graphics#graphics"
-                style={{ fontSize: "14px" }}
-                onClick={handleNavLinkClickAndCloseNavbar}
-              >
-               Graphics
-              </Nav.Link>
-            
-            
-            </NavDropdown>
+                <NavDropdown.Item 
+                  as={Link}
+                  to="/portfolio#portfolio"
+                  style={{ fontSize: "14px" }}
+                >
+                  Web Components
+                </NavDropdown.Item>
+                <NavDropdown.Item 
+                  as={Link}
+                  to="/page-samples#page-samples"
+                  style={{ fontSize: "14px" }}
+                >
+                  Landing Pages
+                </NavDropdown.Item>
+                <NavDropdown.Item 
+                  as={Link}
+                  to="/forms#forms"
+                  style={{ fontSize: "14px" }}
+                >
+                  Forms
+                </NavDropdown.Item>
+                <NavDropdown.Item 
+                  as={Link}
+                  to="/cards#cards"
+                  style={{ fontSize: "14px" }}
+                >
+                  Cards & Images
+                </NavDropdown.Item>
+                <NavDropdown.Item 
+                  as={Link}
+                  to="/server#server"
+                  style={{ fontSize: "14px" }}
+                >
+                  Utility Apps
+                </NavDropdown.Item>
+                <NavDropdown.Item 
+                  as={Link}
+                  to="/graphics#graphics"
+                  style={{ fontSize: "14px" }}
+                >
+                  Graphics
+                </NavDropdown.Item>
+              </NavDropdown>
             </Nav>
             <Nav>
-             
-                <Link
-                  to="/contact#contact"
-                  className="button text-grey mr-3"
-                  style={{ fontSize: "14px" }}
-                  onClick={handleNavLinkClickAndCloseNavbar}
-                >
-              <button className="btn-outline-white w3-button btn-sm w3-round-xxlarge px-3 shadow" >
-              <i className="far fa-user-circle"></i> contact
-              </button>
-                </Link>
-              
-              </Nav>
+              <Link
+                to="/contact#contact"
+                className="button text-grey mr-3"
+                style={{ fontSize: "14px" }}
+                onClick={handleNavLinkClick}
+              >
+                <button className="btn-outline-white w3-button btn-sm w3-round-xxlarge px-3 shadow">
+                  <i className="far fa-user-circle"></i> contact
+                </button>
+              </Link>
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>

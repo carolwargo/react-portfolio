@@ -73,8 +73,7 @@ id='forms'
       <nav className={`w3-sidebar w3-bar-block w3-card w3-animate-top w3-center w3-padding-64 ${isOpen ? 'w3-show' : 'w3-hide'}`} style={{ zIndex: '999', width: '100%', position: 'fixed', top: '0' }}>
         <p className="w3-xxxlarge ">Web Forms</p>
         <button className="w3-bar-item w3-button w3-large" onClick={toggleSidebar}>Close <i className="fa fa-remove w3-large"></i></button>
-        <a href="#common" className="w3-bar-item w3-button w3-xxlarge">Commonly Used Forms</a>
-        <a href="#authentication" className="w3-bar-item w3-button w3-xxlarge">Authentication</a>
+     <a href="#authentication" className="w3-bar-item w3-button w3-xxlarge">Authentication</a>
         <a href="#authorization" className="w3-bar-item w3-button w3-xxlarge">Authorization</a>
         <a href="#subscribe" className="w3-bar-item w3-button w3-xxlarge"><i>Subscription</i></a>
       </nav>
