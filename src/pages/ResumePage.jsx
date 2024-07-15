@@ -127,7 +127,7 @@ export default function ResumePage() {
 
      <br />
         <p className="w3-text-black w3-margin-top w3-padding-small" style={{fontSize:'14px'}}>
-          <b><i>'I am a Full-Stack Software Developer, specializing in User Experience. My drive stems from a desire to assist others, and my enthusiasm lies in utilizing creative design to drive innovative solutions through technology- With over 20 years of experience in business management & strategic development, I bring a wealth of knowledge and expertise to every project I undertake.'
+          <b><i>'I am a Full-Stack Software Developer with a focus on User Experience. My passion is helping others and using creative design to develop innovative technological solutions. With over 20 years of experience in business management and strategic development, I bring extensive knowledge and expertise to every project I undertake.'
                 </i></b></p>
                 <br/>
        {/**Start Tech Skills*/}
@@ -277,10 +277,12 @@ export default function ResumePage() {
         <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> June 2021 - <span className="w3-tag w3-black w3-round">Current</span></h6>
         <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
        
-        <ul>
+        <ul style={{fontSize:'14.25px'}}>
   <li>Develop marketing strategies through analysis and client engagement.</li>
-  <li>Manage website design, development, and maintenance.</li>
-  <li>Create and implement graphic design and branding initiatives.</li>
+  <li>Design, develop, monitor, and maintain CMS and custom websites.</li>
+  <li>Design custom, interchangeable, and reusable components.</li>
+  <li>Edit video and images.</li>
+  <li>Create and implement graphic design elements and branding initiatives.</li>
   <li>Produce content and manage social media platforms.</li>
   <li>Oversee projects, including resource planning, risk management, and stakeholder collaboration.</li>
   <li>Integrate and manage e-commerce platforms.</li>
@@ -300,13 +302,13 @@ export default function ResumePage() {
         <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
        
       
-        <ul>
+        <ul style={{fontSize:'14.25px'}}>
   <li><strong>Primary Focus:</strong> Strategize, coordinate, and execute corporate events and organization-wide celebrations to foster morale and enhance employee/management relations during the pandemic.</li>
   <li>Collaborate with internal stakeholders to identify event goals, themes, and desired outcomes.</li>
   <li>Serve as the primary contact for event-related inquiries, providing exceptional customer service to both internal and external stakeholders.</li>
   <li>Build and maintain relationships with external vendors, sponsors, and partners to support event objectives and secure necessary resources.</li>
   <li>Stay updated on industry trends and best practices in corporate event management and employee engagement strategies.</li>
-  <li>•	Design and implement creative engagement initiatives to boost employee morale and strengthen team cohesion.</li>
+  <li>Design and implement creative engagement initiatives to boost employee morale and strengthen team cohesion.</li>
   <li>Manage event budgets, negotiate contracts with vendors, and ensure cost-effective solutions without compromising quality.</li>   
 </ul>
 <hr className="my-5"/>
@@ -318,22 +320,24 @@ export default function ResumePage() {
         <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> June 2003 - <span className="w3-tag w3-black w3-round">Current</span></h6>
         <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw "></i><b> Duties</b></p>
       
-      <ul>
-        <li>Identify distressed properties and prepare detailed cost analysis reports for the investment group.
-</li>
-      <li>Employ marketing strategies</li>
+      <ul style={{fontSize:'14.25px'}}>
+        <li>Prepare budgets and financial reports, ensuring adherence to fiscal policies.</li>
+ <li>Develop and execute marketing strategies to attract new tenants and retain existing ones.</li>
+      <li>tablish and implement procedures for property accountability and control, ensuring compliance with regulations and safeguarding assets.</li>
+      <li>Conduct market research to identify investment opportunities.</li>
       <li>Write, edit & negotiate contracts.</li>
+      <li>Implement property management software to streamline operations and improve efficiency.</li>
                     <li>
                       Facilitate inspections, appraisals & legal matters.
                     </li>
-                    <li>Oversee home staging, architectural Design and contractors.</li>
+                    <li>•	Oversee home staging, architectural design, and contractor management to ensure project completion.</li>
                   </ul> 
                   <hr className="my-5"/>
     
-      <h5>HUNTINGTOWN YOUTH CLUB<br/><b>Media Management & Director of Community Affairs</b></h5>
+      <h5>CALVERT YOUTH RECREATION<br/><b>Media Management & Director of Community Affairs</b></h5>
         <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> Jun 2016 - Mar 2019</h6>
         <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
-        <ul>
+        <ul style={{fontSize:'14.25px'}}>
     <li>Developed a new product line to expand offerings and attract new customers.</li>
   <li>Integrated e-commerce platforms to streamline sales and improve customer experience.</li>
   <li>Collaborate with board members, stakeholders, and lawmakers.</li>
@@ -350,7 +354,7 @@ export default function ResumePage() {
         <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> Mar 2001 - Aug 2003 <span className="w3-tag w3-black w3-round" style={{fontSize:'12px'}}>date approximates</span></h6>
         <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
        
-        <ul>
+        <ul style={{fontSize:'14.25px'}}>
           <li>Develop & Maintain customer relationships.</li>
           <li>Devise sales strategies based on data analysis.</li>
           <li>Demonstrate comprehensive knowledge of products and procedures.</li>
@@ -367,7 +371,7 @@ export default function ResumePage() {
         <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> Aug 1999 - Mar 2001</h6>
         <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
        
-        <ul>
+        <ul style={{fontSize:'14.25px'}}>
           <li>Maintain detailed and organized documentation of events and timelines.</li>
           <li>et, schedule, and coordinate staffing, vendors, security, travel itineraries, and entertainment for exclusive events.</li>
         <li>Demonstrate comprehensive knowledge of products, inventory, and procedures to effectively showcase progress and provide comparisons.</li>
