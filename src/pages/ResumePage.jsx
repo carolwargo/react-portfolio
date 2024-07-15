@@ -330,13 +330,13 @@ export default function ResumePage() {
                   </ul> 
                   <hr className="my-5"/>
     
-      <h5>HUNTINGTOWN YOUTH CLUB<br/><b>Head of Media Management & Director of Community Affairs</b></h5>
+      <h5>HUNTINGTOWN YOUTH CLUB<br/><b>Media Management & Director of Community Affairs</b></h5>
         <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> Jun 2016 - Mar 2019</h6>
         <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
         <ul>
-  <li>Rebrand club image, collaborate on logo design, develop new product line, and integrate e-commerce platforms.</li>
+    <li>Developed a new product line to expand offerings and attract new customers.</li>
+  <li>Integrated e-commerce platforms to streamline sales and improve customer experience.</li>
   <li>Collaborate with board members, stakeholders, and lawmakers.</li>
-  <li>Rebuild trust by fostering transparency and engaging club members through community-based events.</li>
   <li>Implement website design changes to ensure a user-friendly UI.</li>
   <li>Create engaging content on social media.</li>
   <li>Conduct audits to identify and fix any technical issues or broken links.</li>
@@ -369,14 +369,12 @@ export default function ResumePage() {
         <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
        
         <ul>
-          <li>Oversee merchandising execution.</li>
-          <li>Develop and maintain relationships with high-profile clientele.</li>
-          <li>Coordinate staffing, client itineraries, outside vendors, concierge services, entertainment, and ambiance for exclusive events.</li>
-          <li>Demonstrate comprehensive knowledge of existing product-line.</li>
-          <li>Showcase in-depth knowledge of new products to offer "sneak peeks" and samples.</li>
-          <li>Exhibit thorough understanding of current events, cultural differences, and customs.</li>
+          <li>Maintain detailed and organized documentation of events and timelines.</li>
+          <li>et, schedule, and coordinate staffing, vendors, security, travel itineraries, and entertainment for exclusive events.</li>
+        <li>Demonstrate comprehensive knowledge of products, inventory, and procedures to effectively showcase progress and provide comparisons.</li>
          <li>Conduct staff training to promote awareness of clients' ethnicities, cultural differences, and customs.</li>
-<li>Interview and vet event staff to ensure credibility and emphasize the importance of discretion in client interactions.</li>
+<li>Conduct onboarding sessions to train event staff on the importance of discretion, cultural differences, and awareness of current events.</li>
+<li>Develop clear process guidelines for staff to follow.</li>
 </ul>
     </div>
    
