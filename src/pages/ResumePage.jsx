@@ -306,7 +306,7 @@ export default function ResumePage() {
   <li>Serve as the primary contact for event-related inquiries, providing exceptional customer service to both internal and external stakeholders.</li>
   <li>Build and maintain relationships with external vendors, sponsors, and partners to support event objectives and secure necessary resources.</li>
   <li>Stay updated on industry trends and best practices in corporate event management and employee engagement strategies.</li>
-  <li>Design and implement creative engagement initiatives to boost employee morale and strengthen team cohesion.</li>
+  <li>•	Design and implement creative engagement initiatives to boost employee morale and strengthen team cohesion.</li>
   <li>Manage event budgets, negotiate contracts with vendors, and ensure cost-effective solutions without compromising quality.</li>   
 </ul>
 <hr className="my-5"/>
@@ -351,16 +351,15 @@ export default function ResumePage() {
         <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
        
         <ul>
-          <li>Prioritize daily workload efficiently and effectively communicate the delegation of tasks.</li>
           <li>Develop & Maintain customer relationships.</li>
           <li>Devise sales strategies based on data analysis.</li>
           <li>Demonstrate comprehensive knowledge of products and procedures.</li>
           <li>Identify and capitalize on sales opportunities.</li>
-          <li>Provide training to sales representatives.</li>
-          <li>Manage territory office and staff.</li>
+          <li>Conduct routine follow-ups to gather feedback and identify areas for improvement.</li>
+          <li>•	Manage sales accounts, address customer service inquiries, and resolve IT issues promptly.</li>
           <li>Coordinate and oversee events, travel, product distribution, and staffing.</li>
-          <li>Conduct monthly staff meetings to establish goals, address needs, resolve conflicts, and clarify any confusion.</li>
-         
+          <li>Lead monthly staff meetings to set goals, address needs, resolve conflicts, and provide clarity.</li>
+         <li>Conduct onboarding sessions and train new sales representatives.</li>
 </ul>
 <hr className="my-5"/>
 
