@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { HiArrowLongRight } from "react-icons/hi2";
 import GraphicComponents from "../components/Portfolio/Graphics/GraphicsComponents";
-import Newsletters from "../components/Portfolio/Graphics/Newsletters";
+import Newsletter3 from "../assets/images/NewsLetterImages/Newsletter3.png";
+import InstagramComponent from "../components/Portfolio/Graphics/InstagramComponent";
+import Header from "../components/Header/Header";
 //import S4 from "../assets/images/Sports/S4.png";
 
 const Graphics = () => {
@@ -23,46 +26,42 @@ const Graphics = () => {
   id="graphics"
   
   >
-
-        <div className="w3-padding-top-64">
-      <div className="w3-container w3-content w3-padding-large" >
-      <div className='w3-padding-32 text-center text-black'>
-      <h1 className="text-center m-2">GRAPHIC ELEMENTS</h1>
-      <hr />
-      <h4 className="text-center">Crafting visually captivating content not only enhances a brand's online presence but also serves as a powerful tool to draw users in and encourage engagement.</h4>
- <br />
- <p style={{fontSize:'14px'}}><i>    'The Graphic Elements page is currently under development and will be completed shortly. Thank you in advance for your patience.'</i></p>
-   
-        </  div>
-
-
-
-          {/*Start Business*/}
-       <div className="row d-flex justify-content-center align-items-center">
-   <Newsletters/>
-   </div>
-     {/*recruit YOGA COMPLETE start 
-     <div className='w3-padding-48 text-center text-black'>
-        <div className="row">
-          <div className="col"><h1>Logos | Branding</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus nostrum nisi quaerat quibusdam tempore corrupti quidem enim repellendus maiores provident necessitatibus exercitationem dolor asperiores voluptas molestias placeat dignissimos, et nihil.</p></div>
-          <div className="col"><h1>Forms|Interactive </h1> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus nostrum nisi quaerat quibusdam tempore corrupti quidem enim repellendus maiores provident necessitatibus exercitationem dolor asperiores voluptas molestias placeat dignissimos, et nihil.</p></div>
-          <div className="col"><h1>Presentations </h1> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus nostrum nisi quaerat quibusdam tempore corrupti quidem enim repellendus maiores provident necessitatibus exercitationem dolor asperiores voluptas molestias placeat dignissimos, et nihil.</p></div>   
-        </div>
-       </div>
-       */}
-        {/*End Business*/}
-  
-       <GraphicComponents/>
-  
-
-  
-      </div>
-
+    <Header/>
+      <div className="w3-container w3-content w3-padding-large w3-padding-64" >
     
+
+        <div className="row d-flex justify-content-center align-items-center">
+              <div className="col-sm-12 col-md-5 col-lg-5 justify-content-center align-bottom w3-padding-large">
+              <div className="graphics-carousel-body justify-content-center align-bottom">
+         <div className="graphics-carousel-title text-black">
+           <h2 className="fw-bold">EMAIL MARKETING</h2>   
+        <h5 className="w3-margin-top">Key elements that engage readers, convey important information, and promote brand identity.</h5>
+        
+      <p className="w3-margin-top w3-margin-bottom" style={{fontSize:'14px'}}>These elements include a captivating subject line, a clear and concise header, engaging content with well-structured sections, visually appealing images, and compelling calls to action.</p>
+       </div>
+       <div>
+        <Link to= '#email-samples' className="w3-margin-top">
+       <p>view campaign samples < HiArrowLongRight/></p>
+       </Link>
+       </div>
+        
+       </div>
+     </div>
+     <div className="col-sm-12 col-md-7 col-lg-7 justify-content-center align-bottom w3-padding-large">
+        <img src={Newsletter3} alt="newsletter3" className='w-100 shadow' />
+        </div>
+   
+        </div>
+
+  <div id="email-samples">
+  <InstagramComponent/>
+  </div>
+
+       <GraphicComponents/>
+      </div>   
     <br />
       <hr />
-      <div className="w3-container w3-padding-large mt-5 text-center w3-padding-48 my-3">
+      <div className="w3-container w3-padding-large text-center w3-padding-48">
               <h3 className="text-black">Much more to come... Stay tuned! Feedback is welcome and encouraged. Feel free to contact me to share your thoughts.
         </h3><br />
               <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
@@ -75,17 +74,14 @@ const Graphics = () => {
                 </Link>
               </button>
               </div> 
-              <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
+              <footer className="text-muted padding-32 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">
               <a href="#forms" style={{color:'#FF385C'}}>Back to top</a>
             </p>
           </div>
         </footer>
-    <br />
-<br />
-
-        </div>
+    
         </motion.div>
     );
     }

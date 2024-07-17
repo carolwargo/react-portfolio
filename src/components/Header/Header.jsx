@@ -1,15 +1,15 @@
 import React from "react";
 import HomeBig from "../../assets/images/Home/HomeBig.png";
-import { Link } from "react-router-dom";
-import Navbar from "../Nav/NavBlack.jsx";
+//import { Link } from "react-router-dom";
+
 
 const Header = () => {
   return (
-    <header style={{fontFamily:'Raleway'}}>
-     <Navbar />
+    <header  className="w3-padding-top-48" style={{fontFamily:'Raleway'}}>
+   
       <div
         id="intro-example"
-        className="p-4 bg-image position-relative"
+        className="w3-padding-large w3-padding-48 bg-image position-relative"
         style={{
           backgroundImage: `url(${HomeBig})`,
           backgroundSize: "cover", 
@@ -26,67 +26,69 @@ const Header = () => {
         <div className="row d-flex h-100 px-3 text-center position-relative">
        <div className="col-sm-12 col-md-3 col-lg-3"></div>
           <div className="col-sm-12 col-md-6 col-lg-6 text-white p-3 position-relative z-index-1">
-          <h1 style={{
-                  fontSize: "3.5rem",
-                  fontFamily:'Raleway'
-                }}>CAROL <span style={{ fontSize: "3.5rem", }}>WARGO</span></h1>
-              
-               
+         
                <p
               className="mt-2 mb-2"
               style={{
                 textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
                 fontFamily:'Raleway',
-                lineHeight: "1.25",
+                lineHeight: "1.5",
               }}
             >
               <span
                 style={{
                   textShadow: "2px 2px 4px #F63DB0",
                   color: "white",
-                  fontSize: "1.5rem",
+                  fontSize: "2.5rem",
                   fontFamily:'Raleway'
                 }}
               > 
                 <b>
                   {" "}
-                UX | UI DESIGNER{" "}
+               GRAPHIC{" "}
                 </b>
               </span>
-              -
+              
               <span
                    style={{
                     color: "#00FFFF",
-                    fontSize: "1.5rem",
+                    fontSize: "2.5rem",
                     fontFamily:'Raleway'
                   }}
               >
                 <b>
-                  {" "}FULL STACK DEVELOPER{" "}
+                  {" "}ELEMENTS{" "}
                 </b>
               </span>
               </p>
-
-              <p> DIGITAL MARKETING-DATA ANALYSIS-PROJECT MANAGEMENT"</p>
-           
-            <br></br>
+              <hr />
+             <div className='text-center'>
+             <p className="fw-light"><i> DIGITAL MARKETING - DATA ANALYSIS - CONTENT MANAGEMENT</i></p>
+             
+      <h5 className="fw-light">Crafting visually captivating content not only enhances a brand's online presence but also serves as a powerful tool to draw users in and encourage engagement.</h5>
+ <br />
+ <p className='text-muted' style={{fontSize:'14px'}}><i>    'The Graphic Elements page is currently under development and will be completed shortly. Thank you in advance for your patience.'</i></p>
+   
+        </  div>
+          
             <div className="p-2">
+                 {/** 
               <Link to="/contact">
-              <button type="button" className="btn btn-light mx-2 my-2 w3-round-xlarge">
-                  <b>Contact Me</b>
+              <button type="button" className="btn btn-light mx-2 w3-round-xlarge">
+                  <b  style={{ textShadow: "2px 2px 4px #F63DB0",}}>Contact Me</b>
                 </button>
               </Link>
-              <Link to="/#what-we-do">
+          <Link to="">
               <button type="button" className="btn btn-light mx-2 w3-round-xlarge">
                   <b style={{ textShadow: "2px 2px 4px #F63DB0",}}>Learn More</b>
                 </button>
               </Link>
+              */} 
             </div>
            
           </div>
           <div className="col-sm-12 col-md-3 col-lg-3"></div>
-          <p style={{fontSize:'12px', color:'white'}}>DISCLAIMER: "SITE IS UNDER COSTRUCTION- THANKS FOR YOUR PATIENCE!"</p>
-     
+      
         </div>
    </div>
     </header>

@@ -30,7 +30,7 @@ const Newsletters = () => {
            <h2>Newsletters</h2>
            
              <br />
-        <h4>Key elements that engage readers, convey important information, and promote brand identity.</h4>
+        <h5>Key elements that engage readers, convey important information, and promote brand identity.</h5>
         
       <p>These elements include a captivating subject line, a clear and concise header, engaging content with well-structured sections, visually appealing images, and compelling calls to action.</p>
        </div>
@@ -50,8 +50,9 @@ const Newsletters = () => {
            <hr />
            <br />
             </div>
+            
      <div className="col-sm-12 col-md-4 col-lg-4 py-3 justify-content-center align-bottom px-2">
-     <MDBCarousel showControls className='shadow border-black'>
+     <MDBCarousel showControls className='shadow border-black border-5'>
           <MDBCarouselItem itemId={1}>
             <img src={BusinessStart} className='d-block w-100' alt='...' />
           </MDBCarouselItem>
@@ -79,7 +80,7 @@ const Newsletters = () => {
         </MDBCarousel>
         </div>
     <div className="col-sm-12 col-md-4 col-lg-4 py-3 justify-content-center align-bottom px-2">
-     <MDBCarousel showControls className='shadow border-black'>
+     <MDBCarousel showControls className='shadow border-black border-5'>
           <MDBCarouselItem itemId={1}>
             <img src={Fitness2} className='d-block w-100' alt='...' />
           </MDBCarouselItem>
@@ -93,7 +94,7 @@ const Newsletters = () => {
         </MDBCarousel>
         </div>
        <div className="col-sm-12 col-md-4 col-lg-4 py-1 justify-content-center align-bottom px-2">
-     <MDBCarousel showControls className='shadow border-black'>
+       <MDBCarousel showControls className='shadow border-black border-5'>
           <MDBCarouselItem itemId={1}>
             <img src={Furniture1} className='d-block w-100' alt='...' />
           </MDBCarouselItem>
