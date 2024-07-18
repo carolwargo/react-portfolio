@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.733d611f.css",
-    "main.js": "/react-portfolio/static/js/main.e9b1fa9b.js",
+    "main.js": "/react-portfolio/static/js/main.1a944e04.js",
     "static/media/RealEstate.png": "/react-portfolio/static/media/RealEstate.ba0b8a8bd8b9df38e276.png",
     "static/media/Album.png": "/react-portfolio/static/media/Album.624f5f271608ee54bae6.png",
     "static/media/LoginImage.png": "/react-portfolio/static/media/LoginImage.a7742c36080e9860e034.png",
@@ -17,6 +17,7 @@
     "static/media/Center.png": "/react-portfolio/static/media/Center.472c18e0a951f1d12c7f.png",
     "static/media/Waterfall.png": "/react-portfolio/static/media/Waterfall.06f77bc70053675fa4b4.png",
     "static/media/YogaBlog.png": "/react-portfolio/static/media/YogaBlog.d4f9f4977770385e69fb.png",
+    "static/media/HomeBig.png": "/react-portfolio/static/media/HomeBig.17c40e984c464bf433b8.png",
     "static/media/Canceled.png": "/react-portfolio/static/media/Canceled.369172013c6d8e28ce8c.png",
     "static/media/YellowFlowers.png": "/react-portfolio/static/media/YellowFlowers.a16b1d292f2015a4c6cf.png",
     "static/media/CardsMain2.png": "/react-portfolio/static/media/CardsMain2.f0cc1b980fd70f588f47.png",
@@ -28,20 +29,28 @@
     "static/media/S2.png": "/react-portfolio/static/media/S2.69aee3f7653e6dc774ec.png",
     "static/media/Catching.png": "/react-portfolio/static/media/Catching.60acc9b2f05add627a04.png",
     "static/media/S1.png": "/react-portfolio/static/media/S1.bb02006e9a999f7f6523.png",
+    "static/media/Agency1.png": "/react-portfolio/static/media/Agency1.54f4249aebd205f2cbf0.png",
     "static/media/ResumeDownload.pdf": "/react-portfolio/static/media/ResumeDownload.cd0eab5bd2e1e70a9dfb.pdf",
     "static/media/Business1.png": "/react-portfolio/static/media/Business1.33e4db9bdebffe5428ed.png",
+    "static/media/Water1.png": "/react-portfolio/static/media/Water1.3cfb2ec6b2a0048ee0fb.png",
+    "static/media/Agency2.png": "/react-portfolio/static/media/Agency2.e1dfa17b502f28b56ac9.png",
     "static/media/Fitness3.png": "/react-portfolio/static/media/Fitness3.6ae0a88f8eb4121578e2.png",
     "static/media/WebComponentsTrans.png": "/react-portfolio/static/media/WebComponentsTrans.63309f315b4c00a48cac.png",
     "static/media/BusinessStart.png": "/react-portfolio/static/media/BusinessStart.7e73b7a03b49458dfbc9.png",
+    "static/media/Water2.png": "/react-portfolio/static/media/Water2.dbc6eb2ca757fb9e4594.png",
     "static/media/Furniture1.png": "/react-portfolio/static/media/Furniture1.16eb32d4e1ccfff55e3d.png",
     "static/media/Business.png": "/react-portfolio/static/media/Business.2feb0411115e2f21fb28.png",
     "static/media/GirlCamera.png": "/react-portfolio/static/media/GirlCamera.8f48a81fde5a24c9c60b.png",
     "static/media/Fitness2.png": "/react-portfolio/static/media/Fitness2.3589f4a9faa6c75c433c.png",
     "static/media/Business2.png": "/react-portfolio/static/media/Business2.2ad3d0a4d1678e582d52.png",
+    "static/media/Design1.png": "/react-portfolio/static/media/Design1.55f5814286862ab1659e.png",
     "static/media/Business5.png": "/react-portfolio/static/media/Business5.b80e124b435cb7195732.png",
     "static/media/Business7.png": "/react-portfolio/static/media/Business7.879930b1e50b6ac077ef.png",
     "static/media/Furniture3.png": "/react-portfolio/static/media/Furniture3.41404a61ae771e78fea5.png",
     "static/media/Business3.png": "/react-portfolio/static/media/Business3.7c7bb90324f8603276e4.png",
+    "static/media/Agency3.png": "/react-portfolio/static/media/Agency3.01049950ac4d3eb017b1.png",
+    "static/media/Photo1.png": "/react-portfolio/static/media/Photo1.b3dba5a0b0f70985369b.png",
+    "static/media/Design2.png": "/react-portfolio/static/media/Design2.8a6e1f23b42cc0fb8e4a.png",
     "static/media/fa-solid-900.ttf": "/react-portfolio/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
     "static/media/Business6.png": "/react-portfolio/static/media/Business6.c6f4457df4de5de93c00.png",
     "static/media/WomanReading.jpg": "/react-portfolio/static/media/WomanReading.9f7b768c7f3a87220bcc.jpg",
@@ -57,6 +66,7 @@
     "static/media/LocationView.png": "/react-portfolio/static/media/LocationView.36a68abdb11a1a79a97d.png",
     "static/media/MeWhite.png": "/react-portfolio/static/media/MeWhite.4524c5451cc14595b196.png",
     "static/media/Bed.png": "/react-portfolio/static/media/Bed.06e37b67eb0ea708681d.png",
+    "static/media/Photo2.png": "/react-portfolio/static/media/Photo2.5bf091440506667b0a7b.png",
     "static/media/fa-brands-400.ttf": "/react-portfolio/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
     "static/media/Surf.png": "/react-portfolio/static/media/Surf.52a13f827df0376abe5a.png",
     "static/media/GirlBoat.png": "/react-portfolio/static/media/GirlBoat.13cb09d7b40315d0f264.png",
@@ -77,10 +87,10 @@
     "static/media/fa-v4compatibility.woff2": "/react-portfolio/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/react-portfolio/index.html",
     "main.733d611f.css.map": "/react-portfolio/static/css/main.733d611f.css.map",
-    "main.e9b1fa9b.js.map": "/react-portfolio/static/js/main.e9b1fa9b.js.map"
+    "main.1a944e04.js.map": "/react-portfolio/static/js/main.1a944e04.js.map"
   },
   "entrypoints": [
     "static/css/main.733d611f.css",
-    "static/js/main.e9b1fa9b.js"
+    "static/js/main.1a944e04.js"
   ]
 }
