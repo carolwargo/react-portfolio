@@ -1,6 +1,7 @@
 import React from "react";
 import HomeBig from "../../assets/images/Home/HomeBig.png";
-//import { Link } from "react-router-dom";
+import { Link as ScrollLink } from 'react-scroll';
+
 
 
 const Header = () => {
@@ -24,8 +25,8 @@ const Header = () => {
         ></div>
 
         <div className="row d-flex h-100 px-3 text-center position-relative">
-       <div className="col-sm-12 col-md-3 col-lg-3"></div>
-          <div className="col-sm-12 col-md-6 col-lg-6 text-white p-3 position-relative z-index-1">
+       <div className="col-sm-12 col-md-4 col-lg-4"></div>
+          <div className="col-sm-12 col-md-7 col-lg-7 text-white p-3 position-relative z-index-1">
          
                <p
               className="mt-2 mb-2"
@@ -39,7 +40,7 @@ const Header = () => {
                 style={{
                   textShadow: "2px 2px 4px #F63DB0",
                   color: "white",
-                  fontSize: "2.5rem",
+                  fontSize: "3.5rem",
                   fontFamily:'Raleway'
                 }}
               > 
@@ -52,7 +53,7 @@ const Header = () => {
               <span
                    style={{
                     color: "#00FFFF",
-                    fontSize: "2.5rem",
+                    fontSize: "3.5rem",
                     fontFamily:'Raleway'
                   }}
               >
@@ -65,31 +66,35 @@ const Header = () => {
              <div className='text-center'>
              <p className="fw-light"><i> DIGITAL MARKETING - DATA ANALYSIS - CONTENT MANAGEMENT</i></p>
              
-      <h5 className="fw-light">Crafting visually captivating content not only enhances a brand's online presence but also serves as a powerful tool to draw users in and encourage engagement.</h5>
- <br />
- <p className='text-muted' style={{fontSize:'14px'}}><i>    'The Graphic Elements page is currently under development and will be completed shortly. Thank you in advance for your patience.'</i></p>
+             <h4 className="fw-light">
+  Crafting visually captivating content serves as a powerful tool to draw users in, convey concepts, and encourage engagement.
+</h4>
+<div className="p-2">
+                 
+<ScrollLink to="email-graphics" smooth={true} duration={500}>
+    <button type="button" className="btn btn-light mx-2 w3-round-xlarge">
+        <b style={{ textShadow: "2px 2px 4px #F63DB0",}}>View Graphics</b>
+    </button>
+</ScrollLink>
+                 {/** 
+             <Link to="">
+                 <button type="button" className="btn btn-light mx-2 w3-round-xlarge">
+                     <b style={{ textShadow: "2px 2px 4px #F63DB0",}}>Learn More</b>
+                   </button>
+                 </Link>
+                 */} 
+               </div>
+              
+<br />
+ <p className='text-muted' style={{fontSize:'12px'}}><i>    'The Graphic Elements page is currently under development and will be completed shortly. Thank you in advance for your patience.'</i></p>
    
         </  div>
           
-            <div className="p-2">
-                 {/** 
-              <Link to="/contact">
-              <button type="button" className="btn btn-light mx-2 w3-round-xlarge">
-                  <b  style={{ textShadow: "2px 2px 4px #F63DB0",}}>Contact Me</b>
-                </button>
-              </Link>
-          <Link to="">
-              <button type="button" className="btn btn-light mx-2 w3-round-xlarge">
-                  <b style={{ textShadow: "2px 2px 4px #F63DB0",}}>Learn More</b>
-                </button>
-              </Link>
-              */} 
-            </div>
-           
+         
           </div>
-          <div className="col-sm-12 col-md-3 col-lg-3"></div>
-      
-        </div>
+          <div className="col-sm-12 col-md-1 col-lg-1"></div>
+          
+      </div>
    </div>
     </header>
   );

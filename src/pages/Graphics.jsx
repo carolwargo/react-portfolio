@@ -27,10 +27,10 @@ const Graphics = () => {
   
   >
     <Header/>
-      <div className="w3-container w3-content w3-padding-large w3-padding-64" >
+      <div className="w3-container w3-content w3-padding-large w3-padding-64" id="email-graphics">
     
 
-        <div className="row d-flex justify-content-center align-items-center">
+        <div className="row d-flex justify-content-center align-items-center" >
               <div className="col-sm-12 col-md-5 col-lg-5 justify-content-center align-bottom w3-padding-large">
               <div className="graphics-carousel-body justify-content-center align-bottom">
          <div className="graphics-carousel-title text-black">
