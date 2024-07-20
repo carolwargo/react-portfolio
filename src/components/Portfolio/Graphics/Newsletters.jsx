@@ -23,6 +23,8 @@ const Newsletters = () => {
       return (
     
         <div className='w3-padding-32' id='#newsletter'>
+             <p className='fw-bold  text-bg-primary p-3'><i>EMAIL MARKETING CAMPAIGN SAMPLES</i></p> 
+         
               <div className="row d-flex justify-content-center align-items-center">
               <div className="col-sm-12 col-md-4 col-lg-4 justify-content-center align-bottom px-2">
               <div className="graphics-carousel-body justify-content-center align-bottom">

@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import Box from '@mui/joy/Box';
+import Card from '@mui/joy/Card';
+import CardContent from '@mui/joy/CardContent';
 import ImageModal from "../../Modal/ImageModal";
 import { HiMagnifyingGlassPlus } from "react-icons/hi2";
 
@@ -11,12 +14,20 @@ import S1 from "../../../assets/images/Sports/S1.png";
 import S2 from "../../../assets/images/Sports/S2.png";
 import S4 from "../../../assets/images/Sports/S4.png";
 import YogaSet from "../../../assets/images/YogaStory/YogaSet.png";
+import Duke1 from "../../../assets/images/WallPaper/Duke1.png";
+import Duke2 from "../../../assets/images/WallPaper/Duke2.png";
+import Duke3 from "../../../assets/images/WallPaper/Duke3.png";
+
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
+const dukeImages = [
+  Duke1, Duke2, Duke3
+  ];
 const GraphicsPage = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [currentDukeIndex, setCurrentDukeIndex] = useState(0);
 
   const handleModalOpen = (image) => {
     setSelectedImage(image);
@@ -28,21 +39,19 @@ const GraphicsPage = () => {
     setShowModal(false);
   };
 
+  const handleDukeImageClick = (index) => {
+    setCurrentDukeIndex(index);
+    }
+
   return (
     <div className="graphics-components" id="graphics-components">
       <div className="w3-padding-32">
-      <div className="text-center">
-        <h3>Social Media Campaign</h3>
-        <hr />
-        <br />
-      </div>
+      <p className='fw-bold  text-bg-primary p-3'><i>SOCIAL MEDIA CAMPAIGN SAMPLES</i></p>        
 <img src={YogaSet} alt="yoga" style={{width:'100%'}} className="shadow"/>
-
-<div className="container text-center w3-padding-top-48 w3-margin-top">
+</div>
+<div className="w3-padding-top-48 w3-margin-top">
+<p className='fw-bold  text-bg-primary p-3'><i>SPORTS MEDIA SAMPLES</i></p>         
 <br />
-  <h3>Sports Media</h3>
-  <hr />
-  <br />
 </div>
       <div className="row">
         {[
@@ -91,9 +100,50 @@ const GraphicsPage = () => {
         altText="Enlarged Image"
         title="close"
       />
+<div>
 
-    
+  <div className="row">
+    <div className="col">
+           <Card
+            className="shadow mx-1"
+      variant="outlined"
+      sx={{
+        minWidth: 225,
+        '--Card-radius': (theme) => theme.vars.radius.xs,
+      }}
+    >
+      <img src={dukeImages[currentDukeIndex]} className='w-100' alt='' loading="lazy" />
+
+      <CardContent orientation="horizontal" 
+      sx={{ alignItems: 'center', mx: -1 }}>
+        <Box sx={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: 0.5, 
+            mx: 'auto' }}>
+          {dukeImages.map((_, index) => (
+            <Box
+            className="shadow my-4"
+              key={index}
+              onClick={() => handleDukeImageClick(index)}
+              sx={{
+                borderRadius: '50%',
+                width: '10px',
+                height: '10px',
+                cursor: 'pointer',
+                bgcolor: index === currentDukeIndex ? 'primary.solidBg' : 'background.level3',
+              }}
+            />
+          ))}
+        </Box>
+      </CardContent>
+    </Card>
     </div>
+   <div className="col">
+    
+   </div>
+    </div>
+</div>
     </div>
   );
 };

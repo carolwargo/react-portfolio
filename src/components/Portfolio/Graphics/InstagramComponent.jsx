@@ -110,7 +110,7 @@ const handleFinanceImageClick = (index) => {
         <div className="container w3-padding-48">
         <div className="row d-flex justify-content-center align-items-center">
 
-    <p className='fw-bold rotate-left text-bg-primary p-3'><i>CAMPAIGN SAMPLES</i></p> 
+    <p className='fw-bold  text-bg-primary p-3'><i>EMAIL MARKETING CAMPAIGN SAMPLES</i></p> 
            <div className="col-sm-6 col-md-3 col-lg-3 w3-padding-small ">
             <Card
             className="shadow mx-1"
