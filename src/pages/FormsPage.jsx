@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Login  from '../components/Portfolio/Forms/Login.jsx';
 import SignUp  from '../components/Portfolio/Forms/Signup.jsx';
-import LoginBW from '../assets/images/Portfolio/LoginBW.png'
+import LoginBW from '../assets/images/Server/LoginBW.png'
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 const scrollToTop = () => {

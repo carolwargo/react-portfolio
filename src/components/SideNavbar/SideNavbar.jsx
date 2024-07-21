@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Login  from '../../components/Portfolio/Forms/Login.jsx';
 import SignUp  from '../../components/Portfolio/Forms/Signup.jsx';
-import LoginImage from '../../assets/images/Portfolio/LoginImage.png'
+import LoginImage from '../../assets/images/Server/LoginImage.png'
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
