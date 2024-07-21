@@ -14,7 +14,7 @@ import Fitness4 from '../../../assets/images/FITNESS/Fitness4.png';
 import Furniture1 from '../../../assets/images/FURNITURE/Furniture1.png';
 import Furiture2 from '../../../assets/images/FURNITURE/Furniture2.png';
 import Furiture3 from '../../../assets/images/FURNITURE/Furniture3.png'; 
-import Newsletter3 from '../../../assets/images/NewsLetterImages/Diagrams/Newsletter3.png';
+import 
 //import NewsLetter4 from '../../../assets/images/NewsLetterImages/Newsletter4.png';
 
 
