@@ -1,5 +1,5 @@
 import React from "react";
-import HomeBig from "../../assets/images/Home/HomeBig.png";
+import HomeBig from "../../assets/images/HeaderImages/HomeBig.png";
 import { Link as ScrollLink } from 'react-scroll';
 
 

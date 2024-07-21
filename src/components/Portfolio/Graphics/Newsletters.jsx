@@ -14,7 +14,7 @@ import Fitness4 from '../../../assets/images/FITNESS/Fitness4.png';
 import Furniture1 from '../../../assets/images/FURNITURE/Furniture1.png';
 import Furiture2 from '../../../assets/images/FURNITURE/Furniture2.png';
 import Furiture3 from '../../../assets/images/FURNITURE/Furniture3.png'; 
-import 
+//import Newsletter3 from '../../../assets/images/NewsLetterImages/DIAGRAMS/Newsletter3.png';
 //import NewsLetter4 from '../../../assets/images/NewsLetterImages/Newsletter4.png';
 
 
@@ -39,8 +39,8 @@ const Newsletters = () => {
        </div>
      </div>
      <div className="col-sm-12 col-md-8 col-lg-8 py-3 justify-content-center align-bottom px-2">
-        <img src={Newsletter3} alt="newsletter3" className='w-100 shadow' />
-        </div>
+       {/** <img src={Newsletter3} alt="newsletter3" className='w-100 shadow' />
+        */} </div>
    
         </div>
    
