@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { HiArrowLongRight } from "react-icons/hi2";
 import GraphicComponents from "../components/Portfolio/Graphics/GraphicsComponents";
-import Newsletter3 from "../assets/images/NewsLetterImages/DIAGRAMS/Newsletter3.png";
+import Newsletter3 from "../assets/images/Newsletters/DIAGRAMS/Newsletter3.png";
 import InstagramComponent from "../components/Portfolio/Graphics/InstagramComponent";
 //import S4 from "../assets/images/Sports/S4.png";
 

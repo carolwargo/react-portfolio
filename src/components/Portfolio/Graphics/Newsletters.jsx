@@ -1,19 +1,19 @@
 import React from 'react';
 import { MDBCarousel, MDBCarouselItem } from 'mdb-react-ui-kit';
-import Business1 from '../../../assets/images/BUSINESS/Business1.png';
-import Business2 from '../../../assets/images/BUSINESS/Business2.png';
-import Business3 from '../../../assets/images/BUSINESS/Business3.png';
-import Business4 from '../../../assets/images/BUSINESS/Business4.png';
-import Business5 from '../../../assets/images/BUSINESS/Business5.png';
-import Business6 from '../../../assets/images/BUSINESS/Business6.png';
-import Business7 from '../../../assets/images/BUSINESS/Business7.png';  
-import BusinessStart from '../../../assets/images/BUSINESS/BusinessStart.png';
-import Fitness2 from '../../../assets/images/FITNESS/Fitness2.png';  
-import Fitness3 from '../../../assets/images/FITNESS/Fitness3.png';  
-import Fitness4 from '../../../assets/images/FITNESS/Fitness4.png'; 
-import Furniture1 from '../../../assets/images/FURNITURE/Furniture1.png';
-import Furiture2 from '../../../assets/images/FURNITURE/Furniture2.png';
-import Furiture3 from '../../../assets/images/FURNITURE/Furniture3.png'; 
+import Business1 from '../../../assets/images/Newsletters/BUSINESS/Business1.png';
+import Business2 from '../../../assets/images/Newsletters/BUSINESS/Business2.png';
+import Business3 from '../../../assets/images/Newsletters/BUSINESS/Business3.png';
+import Business4 from '../../../assets/images/Newsletters/BUSINESS/Business4.png';
+import Business5 from '../../../assets/images/Newsletters/BUSINESS/Business5.png';
+import Business6 from '../../../assets/images/Newsletters/BUSINESS/Business6.png';
+import Business7 from '../../../assets/images/Newsletters/BUSINESS/Business7.png';
+import BusinessStart from '../../../assets/images/Newsletters/BUSINESS/BusinessStart.png';
+import Fitness2 from '../../../assets/images/Newsletters/FITNESS/Fitness2.png';  
+import Fitness3 from '../../../assets/images/Newsletters/FITNESS/Fitness3.png';  
+import Fitness4 from '../../../assets/images/Newsletters/FITNESS/Fitness4.png'; 
+import Furniture1 from '../../../assets/images/Newsletters/FURNITURE/Furniture1.png';
+import Furniture2 from '../../../assets/images/Newsletters/FURNITURE/Furniture2.png';
+import Furniture3 from '../../../assets/images/Newsletters/FURNITURE/Furniture3.png'; 
 //import Newsletter3 from '../../../assets/images/NewsLetterImages/DIAGRAMS/Newsletter3.png';
 //import NewsLetter4 from '../../../assets/images/NewsLetterImages/Newsletter4.png';
 
@@ -101,10 +101,10 @@ const Newsletters = () => {
             <img src={Furniture1} className='d-block w-100' alt='...' />
           </MDBCarouselItem>
           <MDBCarouselItem itemId={2}>
-            <img src={Furiture2} className='d-block w-100' alt='...' />
+            <img src={Furniture2} className='d-block w-100' alt='...' />
           </MDBCarouselItem>
           <MDBCarouselItem itemId={3}>
-            <img src={Furiture3} className='d-block w-100' alt='...' />
+            <img src={Furniture3} className='d-block w-100' alt='...' />
           </MDBCarouselItem>
         </MDBCarousel>
         </div>
