@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Box from '@mui/joy/Box';
 import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
-import ImageModal from "../../Modal/ImageModal";
+import ImageModal from "../../Modals/ImageModal";
 import { HiMagnifyingGlassPlus } from "react-icons/hi2";
 
 

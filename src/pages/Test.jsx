@@ -3,7 +3,7 @@ import {motion} from 'framer-motion';
 import { Link } from "react-router-dom";
 import { Accordion } from "react-bootstrap";
 import WebComponentsTrans from '../assets/images/WebComponentsTrans.png';
-import SideNavBar from '../components/SideNavbar/SideNavbar.jsx';
+import SideNavBar from '../components/Navs/SideNavbar.jsx';
 
 
 const Server = () => {

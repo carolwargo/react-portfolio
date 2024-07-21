@@ -1,17 +1,15 @@
 import React from 'react';
 import {motion} from 'framer-motion';
 import { Link } from "react-router-dom";
-//import Accordion from "react-bootstrap/Accordion";
 import JATE from "../assets/images/Server/JATE.png";
 import Notes from "../assets/images/Server/Notes.png";
 import SVG from "../assets/images/Server/SVG.png";
 import Desk from "../assets/images/Server/Desk.png";
 import README from "../assets/images/Server/README.png";
-import WeatherNew from "../assets/images/WeatherNew.png";
-import WeatherMobile from "../assets/images/WeatherMobile.png";
+import WeatherNew from "../assets/images/Server/WeatherNew.png";
+import WeatherMobile from "../assets/images/Server/WeatherMobile.png";
 import Horizen from "../assets/images/Server/Horizen.png";
 import Password from "../assets/images/Server/Password.png";
-//import WebComponentsTrans from "../assets/images/WebComponentsTrans.png";
 
 
 const Server = () => {

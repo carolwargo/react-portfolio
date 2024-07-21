@@ -20,7 +20,7 @@ import Test from "./pages/Test.jsx";
 
 /**Components */
 import Footer from "./components/Footer.jsx";
-import NavFixed from "./components/NavFixed.jsx";
+import NavFixed from "./components/Navs/NavFixed.jsx";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
 /**Layouts */
 import GraphicsLayout from './components/Layouts/GraphicsLayout'; 

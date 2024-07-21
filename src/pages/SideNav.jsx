@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import SideNavBar from '../components/SideNavbar/SideNavbar.jsx';
+import SideNavBar from '../components/Navs/SideNavbar.jsx';
 
 const SideNav = () => {
 
