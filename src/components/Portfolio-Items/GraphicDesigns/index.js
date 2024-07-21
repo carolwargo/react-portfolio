@@ -1,7 +1,4 @@
 import React from "react";
-
-
-
 import Sports from "../../Carousel/Sports";
 import LogoBrand from "../../Carousel/LogoBrand/LogoBrand";
 import { Row, Col } from "react-bootstrap";

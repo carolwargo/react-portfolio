@@ -1,25 +1,32 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+/*Pages*/
 import HomePage from "./pages/HomePage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import PortfolioPage from "./pages/PortfolioPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import ResumePage from "./pages/ResumePage.jsx";
-import PageSamples from "./pages/PageSamples.jsx";
-import BlogPage from "./pages/Blog.jsx";
+import AlbumPage from "./pages/AlbumPage.jsx";
+import FormsPage from "./pages/FormsPage.jsx";
+import CardsPage from "./pages/CardsPage.jsx";
+import GraphicsPage from "./pages/GraphicsPage.jsx";
+import SamplesPage from "./pages/SamplesPage.jsx";
+import ServerPage from "./pages/ServerPage.jsx";
+import BlogPage from "./pages/BlogPage.jsx";
 import ScrollSpy from "./pages/ScrollSpy.jsx";
+
+/**Tests */
 import Test from "./pages/Test.jsx";
-import SideNav from "./pages/SideNav.jsx";
+
+/**Components */
 import Footer from "./components/Footer.jsx";
-import Server from "./pages/Server.jsx";
 import NavFixed from "./components/NavFixed.jsx";
-import Album from "./pages/Album.jsx";
-import Forms from "./pages/Forms.jsx";
-import Cards from "./pages/CardsPage.jsx";
-import Graphics from "./pages/Graphics.jsx";
-import "./App.css";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
+/**Layouts */
+import GraphicsLayout from './components/Layouts/GraphicsLayout'; 
+/**App Style */
+import "./App.css";
+
 
 function App() {
   return (
@@ -32,17 +39,20 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/resume" element={<ResumePage />} />
-            <Route path="/server" element={<Server />} />
+            <Route path="/resumePage" element={<ResumePage />} />
+            <Route path="/serverPage" element={<ServerPage />} />
             <Route path="/test" element={<Test />} />
-            <Route path="/sidenav" element={<SideNav />} />
-            <Route path="/page-samples" element={<PageSamples />} />
-            <Route path="/album" element={<Album />} />
+            <Route path="/samples" element={<SamplesPage />} />
+            <Route path="/album" element={<AlbumPage/>} />
             <Route path="/blog" element={<BlogPage />} />
-            <Route path="/cards" element={<Cards />} />
-            <Route path="/graphics" element={<Graphics />} />
+            <Route path="/cards" element={<CardsPage/>} />
             <Route path="/scroll-spy" element={<ScrollSpy />} />
-            <Route path="/forms" element={<Forms />} />
+            <Route path="/forms" element={<FormsPage/>} />
+
+                    {/* Graphics Layout */}
+                    <Route element={<GraphicsLayout />} >
+          <Route path="/graphics" element={<GraphicsPage/>} />
+          </Route>
             {/* Add a catch-all route for handling errors */}
             <Route path="*" element={<NotFound />} />
           </Routes>

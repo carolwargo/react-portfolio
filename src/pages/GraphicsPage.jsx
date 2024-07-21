@@ -5,7 +5,6 @@ import { HiArrowLongRight } from "react-icons/hi2";
 import GraphicComponents from "../components/Portfolio/Graphics/GraphicsComponents";
 import Newsletter3 from "../assets/images/NewsLetterImages/Newsletter3.png";
 import InstagramComponent from "../components/Portfolio/Graphics/InstagramComponent";
-import Header from "../components/Header/Header";
 //import S4 from "../assets/images/Sports/S4.png";
 
 const Graphics = () => {
@@ -26,9 +25,22 @@ const Graphics = () => {
   id="graphics"
   
   >
-    <Header/>
       <div className="w3-container w3-content w3-padding-large w3-padding-64" id="email-graphics">
-    
+      <h4
+      style={{fontFamily:'sans-serif'}}
+      >
+        <strong>EXPLORE...</strong>
+      </h4>
+      <p
+        className="graphic-design "
+        style={{ color: "white", fontFamily: "bellota text" }}
+      >
+        Explore some of my 'original' Graphic Design pieces for a glimpse
+        into my creative world. From web design to branding, each project
+        completed is a testament to my dedication and passion for the
+        craft. Take a moment to immerse yourself in the details and
+        discover the stories behind each creation."
+      </p>
 
         <div className="row d-flex justify-content-center align-items-center" >
               <div className="col-sm-12 col-md-5 col-lg-5 justify-content-center align-bottom w3-padding-large">
