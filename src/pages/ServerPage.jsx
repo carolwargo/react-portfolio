@@ -54,7 +54,7 @@ const Server = () => {
               Experience the convenience and reliability of the Open Weather App, your go-to weather resource for both mobile and desktop. Stay informed, stay prepared, and stay connected to the weather conditions that impact your life. </p>
               </div>
               <br />
-                <div className="w3-card"id="refactor">
+                <div className="w3-weather"id="weather">
                   <img
                     src={WeatherNew}
                     alt="blog-profile"
@@ -84,6 +84,10 @@ const Server = () => {
                         Github
                       </button>
                       </a>
+                      <div className="card-footer">
+                      
+                      <p className='text-secondary' style={{fontSize:'13px'}}>Mobile version</p>
+             </div>
                     </div>
                   </div>
                 </div>
@@ -93,14 +97,16 @@ const Server = () => {
                 
             {/*2. start weather app*/}
            <div className="flex-column col-sm-12 col-md-4 col-lg-4 justify-content-center align-items-center">
-                <div className="w3-card"id="refactor">
+                <div className="w3-weather-card"id="weather-card">
                   <img
                     src={WeatherMobile}
                     alt="blog-profile"
                     style={{ width: "100%" }}
                     className="rounded-top"
                   ></img>
-             
+             <div className="card-footer">
+                      <p className='text-secondary text-center' style={{fontSize:'13px'}}>Desktop version</p>
+             </div>
                 </div>
                 <br />
               </div>
