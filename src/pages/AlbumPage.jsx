@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -22,7 +24,20 @@ function AlbumExample() {
     YellowFlowers,
   ];
 
+ 
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Animation triggers only once
+    threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
+  });
+  
   return (
+    <motion.div
+    ref={ref}
+    initial={{ y: -20, opacity: 0.5}}
+    animate={inView ? { y: 0, opacity: 1 } : {}}
+    exit={{ y: 20, opacity: 0.5 }}
+    transition={{ duration: 0.8 }}    
+    >
     <div className="album" id="album">
       <br />
       <style>
@@ -296,6 +311,7 @@ function AlbumExample() {
         </footer>
       </div>
     </div>
+    </motion.div>
   );
 }
 

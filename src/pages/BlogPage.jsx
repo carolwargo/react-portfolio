@@ -1,4 +1,6 @@
 import React, {useState}from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import emailjs from "emailjs-com";
 import { Alert } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -50,7 +52,18 @@ const BlogPage = () => {
   };
 
 
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Animation triggers only once
+    threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
+  });
     return (
+      <motion.div
+    ref={ref}
+    initial={{ y: -20, opacity: 0.5}}
+    animate={inView ? { y: 0, opacity: 1 } : {}}
+    exit={{ y: 20, opacity: 0.5 }}
+    transition={{ duration: 0.8 }}    
+    >
         <div className="blog" id="blog">
             <Alert variant="light" className="container-fluid shadow w3-margin-top">
             <div className="container-fluid w3-padding-64">
@@ -380,7 +393,7 @@ const BlogPage = () => {
     </MDBFooter>
 
         </div>
-        
+        </motion.div>
     );
 }
 

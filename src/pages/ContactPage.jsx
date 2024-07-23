@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -27,12 +28,17 @@ const ContactPage = () => {
       );
   };
 
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Animation triggers only once
+    threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
+  });
   return (
     <motion.div
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      exit={{ y: 20, opacity: 0 }}
-      className="home"
+    ref={ref}
+    initial={{ y: -20, opacity: 0.5}}
+    animate={inView ? { y: 0, opacity: 1 } : {}}
+    exit={{ y: 20, opacity: 0.5 }}
+    transition={{ duration: 0.8 }}    
     >
       <div
         className="contact"

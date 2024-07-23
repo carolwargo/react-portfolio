@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { HiArrowLongRight } from "react-icons/hi2";
 import GraphicComponents from "../components/Portfolio/Graphics/GraphicsComponents";
 import Newsletter3 from "../assets/images/Newsletters/DIAGRAMS/Newsletter3.png";
@@ -14,16 +15,19 @@ const Graphics = () => {
       behavior: "smooth"
     });
   };
-
-    return (
-      
-  <motion.div
-  initial={{ y: -20, opacity: 0}}
-  animate={{y: 0, opacity: 1}}
-  exit={{y: 20, opacity: 0}}
-  className="graphics w3-light-gray"
-  id="graphics"
-  
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Animation triggers only once
+    threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
+  });
+  return (
+    <motion.div
+    ref={ref}
+    initial={{ y: -20, opacity: 0.5}}
+    animate={inView ? { y: 0, opacity: 1 } : {}}
+    exit={{ y: 20, opacity: 0.5 }}
+    transition={{ duration: 0.8 }}    
+    className="graphics w3-light-gray"
+    id="graphics"  
   >
       <div className="w3-container w3-content w3-padding-large w3-padding-64" id="email-graphics">
       <h4

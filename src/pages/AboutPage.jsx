@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { FaLaptopCode } from "react-icons/fa";
 import { HiOutlinePuzzlePiece } from "react-icons/hi2";
 import { AiFillDatabase } from "react-icons/ai";
@@ -20,13 +21,19 @@ export default function AboutPage() {
       behavior: "smooth"
     });
   };
-
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Animation triggers only once
+    threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
+  });
   return (
     <motion.div
-    initial={{ y: -20, opacity: 0}}
-    animate={{y: 0, opacity: 1}}
-    exit={{y: 20, opacity: 0}}   
+    ref={ref}
+    initial={{ y: -20, opacity: 0.5}}
+    animate={inView ? { y: 0, opacity: 1 } : {}}
+    exit={{ y: 20, opacity: 0.5 }}
+    transition={{ duration: 0.8 }}    
     >
+     
     <div className="about" id="about">
     <div className="w3-content w3-container w3-padding-64 w3-margin-top">
         <div className="w3-content w3-container ">

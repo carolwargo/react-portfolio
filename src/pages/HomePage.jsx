@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import MeWhite from "../assets/images/MeWhite.png";
 import ResumeDownload from "../assets/ResumeDownload.pdf";
 
@@ -11,15 +12,18 @@ function HomePage() {
       behavior: "smooth"
     });
   };
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Animation triggers only once
+    threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
+  });
   return (
-
     <motion.div
-    initial={{ y: -20, opacity: 0}}
-    animate={{y: 0, opacity: 1}}
-    exit={{y: 20, opacity: 0}}
-    className="home"
-    id="home"
-    
+    ref={ref}
+    initial={{ y: -20, opacity: 0.5}}
+    animate={inView ? { y: 0, opacity: 1 } : {}}
+    exit={{ y: 20, opacity: 0.5 }}
+    transition={{ duration: 0.8 }}    
+     className='home' id="home"
     >
     <div>
       <header>

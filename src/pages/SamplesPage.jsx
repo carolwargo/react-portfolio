@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import BlogShot from "../assets/images/FullPage/BlogShot.png";
 import RealEstate from "../assets/images/FullPage/RealEstate.png";
 import YogaBlog from "../assets/images/FullPage/YogaBlog.png";
@@ -11,15 +12,20 @@ function PageSamples() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: "smooth"
     });
   };
-
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Animation triggers only once
+    threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
+  });
   return (
     <motion.div
-    initial={{ y: -20, opacity: 0}}
-    animate={{y: 0, opacity: 1}}
-    exit={{y: 20, opacity: 0}}
+    ref={ref}
+    initial={{ y: -20, opacity: 0.5}}
+    animate={inView ? { y: 0, opacity: 1 } : {}}
+    exit={{ y: 20, opacity: 0.5 }}
+    transition={{ duration: 0.8 }}    
     >
     <div className="page-samples" id="page-samples">
       <div className="w3-padding-top-48 w3-padding-large ">

@@ -1,33 +1,38 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import MeWhite from "../assets/images/MeWhite.png";
 import { FaGoogle } from "react-icons/fa";
 import { SiMicrosoftoffice } from "react-icons/si";
 import { SiAdobecreativecloud } from "react-icons/si";
-import { motion } from "framer-motion";
 import ResumeDownload from "../assets/ResumeDownload.pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 
 export default function ResumePage() {
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth"
     });
   };
-
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Animation triggers only once
+    threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
+  });
   return (
     <motion.div
-    initial={{ y: -20, opacity: 0}}
-    animate={{y: 0, opacity: 1}}
-    exit={{y: 20, opacity: 0}}
-    className="resume "
-    id="resume"
-    
+    ref={ref}
+    initial={{ y: -20, opacity: 0.5}}
+    animate={inView ? { y: 0, opacity: 1 } : {}}
+    exit={{ y: 20, opacity: 0.5 }}
+    transition={{ duration: 0.8 }}      
     >
+
     {/** Start Main container */}
+    <div   className="resume "
+    id="resume">
       <div className="w3-margin-top w3-padding-top-32" style={{maxWidth:"1400px"}}>
        {/** Start intro*/}
       <div className="w3-display-container w3-padding w3-white">
@@ -544,6 +549,7 @@ End Practices*/}
           </div>
      
   </div>
+  </div> 
   </motion.div>
   );
 }

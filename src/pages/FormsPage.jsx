@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import emailjs from "emailjs-com";
 import {
   MDBRow,
@@ -8,19 +10,11 @@ import {
 } from "mdb-react-ui-kit";
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import Login  from '../components/Portfolio/Forms/Login.jsx';
 import SignUp  from '../components/Portfolio/Forms/Signup.jsx';
 import LoginBW from '../assets/images/Server/LoginBW.png'
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
-
 
 
 function Forms() {
@@ -59,13 +53,25 @@ function Forms() {
   };
   
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Animation triggers only once
+    threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
+  });
   return (
     <motion.div
-    initial={{ y: -20, opacity: 0}}
-    animate={{y: 0, opacity: 1}}
-    exit={{y: 20, opacity: 0}}
+    ref={ref}
+    initial={{ y: -20, opacity: 0.5}}
+    animate={inView ? { y: 0, opacity: 1 } : {}}
+    exit={{ y: 20, opacity: 0.5 }}
+    transition={{ duration: 0.8 }}    
     className="forms"
-id='forms'
+    id='forms'
     style={{fontFamily:'proxima-nova'}}
     >
     <div className='forms w3-padding-top-48' id='forms'>

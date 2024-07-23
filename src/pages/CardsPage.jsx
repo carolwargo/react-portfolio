@@ -1,5 +1,6 @@
 import React from 'react';
-import {motion} from 'framer-motion';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import GirlCamera from '../assets/images/GirlCamera.png';
 import Left from '../assets/images/Cards/Left.png';
@@ -13,26 +14,27 @@ import CardsMain2 from '../assets/images/Cards/CardsMain2.png';
 
 const Cards = () => {
 
-    const scrollToTop = () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        });
-      };
- 
-      return (
-        <motion.div
-          initial={{ y: -20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: 20, opacity: 0 }}
-          className="cards"
-          id="cards"
-        >
- <div className="container mb-4 w3-padding-top-32">
-
- </div>
-         
-          
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Animation triggers only once
+    threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
+  });
+  return (
+    <motion.div
+    ref={ref}
+    initial={{ y: -20, opacity: 0.5}}
+    animate={inView ? { y: 0, opacity: 1 } : {}}
+    exit={{ y: 20, opacity: 0.5 }}
+    transition={{ duration: 0.8 }}  
+    className='cards' 
+    id='cards'
+    >
+   
                {/**Start INTRO Web Components */}
             <div className="container mb-4 w3-padding-32" id="cards">              
             <div className="row d-flex justify-content-center align-items-center w3-padding-large">

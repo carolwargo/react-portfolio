@@ -1,5 +1,6 @@
 import React from 'react';
-import {motion} from 'framer-motion';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import JATE from "../assets/images/Server/JATE.png";
 import Notes from "../assets/images/Server/Notes.png";
@@ -13,20 +14,23 @@ import Password from "../assets/images/Server/Password.png";
 
 
 const Server = () => {
-    const scrollToTop = () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      };
-    
-     
-     
-      return (
-        <motion.div
-          initial={{ y: -20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: 20, opacity: 0 }}
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Animation triggers only once
+    threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
+  });
+  return (
+    <motion.div
+    ref={ref}
+    initial={{ y: -20, opacity: 0.5}}
+    animate={inView ? { y: 0, opacity: 1 } : {}}
+    exit={{ y: 20, opacity: 0.5 }}
+    transition={{ duration: 0.8 }}    
           className="portfolio"
           id="portfolio"
         >

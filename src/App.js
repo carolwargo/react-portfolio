@@ -39,8 +39,8 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/resumePage" element={<ResumePage />} />
-            <Route path="/serverPage" element={<ServerPage />} />
+            <Route path="/resume" element={<ResumePage />} />
+            <Route path="/server" element={<ServerPage />} />
             <Route path="/test" element={<Test />} />
             <Route path="/samples" element={<SamplesPage />} />
             <Route path="/album" element={<AlbumPage/>} />
