@@ -72,15 +72,19 @@ const [currentOpenIndex, setCurrentOpenIndex] = React.useState(0);
 
   return (
     <div className='social' id="social">
-           <div className="w3-padding-32">
-      <p className='fw-bold  text-bg-primary p-3'><i>SOCIAL MEDIA CAMPAIGN SAMPLES</i></p>        
-<img src={YogaSet} alt="yoga" style={{width:'100%'}} className="shadow"/>
+         <div className="container w3-padding-small">
+           
+           <h4 className='fw-bold text-bg-primary p-3 text-center'><i className='fw-bold'>SOCIAL MEDIA CAMPAIGN SAMPLES</i></h4> 
+          
+<img src={YogaSet} alt="yoga" style={{width:'100%'}} className="shadow mt-2"/>
 </div>
-        <div className="container w3-padding-48">
+              
+ 
+        <div className="container w3-padding-24">
         <div className="row d-flex justify-content-center align-items-center">
 <div className="col-sm-6 col-md-3 col-lg-3 w3-padding-small ">
             <Card
-            className="shadow mx-1"
+            className="shadow my-1"
       variant="outlined"
       sx={{
         minWidth: 225,
@@ -118,7 +122,7 @@ const [currentOpenIndex, setCurrentOpenIndex] = React.useState(0);
  
             <div className="col-sm-6 col-md-3 col-lg-3 w3-padding-small ">
             <Card
-                 className="shadow mx-1"
+                 className="shadow my-1"
       variant="outlined"
       sx={{
         minWidth: 225,
@@ -156,7 +160,7 @@ const [currentOpenIndex, setCurrentOpenIndex] = React.useState(0);
 
             <div className="col-sm-6 col-md-3 col-lg-3 w3-padding-small ">
             <Card
-                 className="shadow mx-1"
+                 className="shadow my-1"
       variant="outlined"
       sx={{
         minWidth: 225,
@@ -194,7 +198,7 @@ const [currentOpenIndex, setCurrentOpenIndex] = React.useState(0);
        
            <div className="col-sm-6 col-md-3 col-lg-3 w3-padding-small ">
             <Card
-                 className="shadow mx-1"
+                 className="shadow my-1"
       variant="outlined"
       sx={{
         minWidth: 225,

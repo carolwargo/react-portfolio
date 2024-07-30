@@ -20,17 +20,8 @@ const Graphics = () => {
     threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
   });
   return (
-    <motion.div
-    ref={ref}
-    initial={{ y: -20, opacity: 0.5}}
-    animate={inView ? { y: 0, opacity: 1 } : {}}
-    exit={{ y: 20, opacity: 0.5 }}
-    transition={{ duration: 0.8 }}    
-    className="graphics w3-light-gray"
-    id="graphics"  
-  >
-   
-      <div className="w3-container w3-content w3-padding-large w3-padding-64" id="email-graphics">
+   <div className="graphics w3-light-gray" id="graphics">
+      <div className="w3-container w3-content w3-padding-large w3-padding-48 w3-margin-top" id="email-graphics">
       {/** 
       <h4
       style={{fontFamily:'sans-serif'}}
@@ -48,6 +39,16 @@ const Graphics = () => {
         discover the stories behind each creation."
       </p>
   */}
+   <motion.div
+    ref={ref}
+    initial={{ y: -15, opacity: 0.25}}
+    animate={inView ? { y: 0, opacity: 1 } : {}}
+    exit={{ y: 15, opacity: 0.25 }}
+    transition={{ duration: 0.8 }}    
+    className="graphics"
+    id="graphics"  
+     
+  >
         <div className="row d-flex justify-content-center align-items-center" >
               <div className="col-sm-12 col-md-5 col-lg-5 justify-content-center align-bottom w3-padding-large">
               <div className="graphics-carousel-body justify-content-center align-bottom">
@@ -70,8 +71,8 @@ const Graphics = () => {
         </div>
    
         </div>
-
-  <div id="email-samples">
+        </motion.div>
+  <div id="email-samples" >
   <EmailComponent/>
   </div>
   <div id="email-samples">
@@ -81,11 +82,12 @@ const Graphics = () => {
   <GraphicComponents/>
   </div>
       
-      </div>   
-    <br />
+      </div> 
+   
+ 
       <hr />
     
-      <div className="w3-container w3-padding-large text-center w3-padding-48">
+      <div className="w3-container w3-padding-large text-center ">
               <h3 className="text-black">Much more to come... Stay tuned! Feedback is welcome and encouraged. Feel free to contact me to share your thoughts.
         </h3><br />
               <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
@@ -106,7 +108,7 @@ const Graphics = () => {
           </div>
         </footer>
     
-        </motion.div>
+        </div>
     );
     }
 export default Graphics;

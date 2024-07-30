@@ -31,10 +31,21 @@ const Server = () => {
     animate={inView ? { y: 0, opacity: 1 } : {}}
     exit={{ y: 20, opacity: 0.5 }}
     transition={{ duration: 0.8 }}    
-          className="portfolio"
-          id="portfolio"
+          className="server"
+          id="server"
         >
+<style>
+  {`
 
+  .card-custom-height {
+  height: 250px; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  `}
+
+</style>
 
                {/**Start INTRO Web Components */}
             <div className="container w3-padding-top-64 mb-4" id="server"> 
@@ -135,7 +146,7 @@ const Server = () => {
     </div>
         <div className="row d-flex justify-content-center align-items-center">
           <div className="flex-column col-sm-12 col-md-4 col-lg-4 justify-content-center align-items-center">
-          <div className="w3-card w3-opacity w3-hover-opacity-off" id="text-editor">
+          <div className="w3-card w3-opacity w3-hover-opacity-off " id="text-editor">
                   <img
                     src={JATE}
                     alt="blog-profile"
@@ -145,9 +156,8 @@ const Server = () => {
                      <div className="position-absolute top-0 start-0 translate-middle w-50 bg-white py-1 px-2">
       <span className="text-dark">New</span>
     </div>
-                  {/*end card-image for bio*/}
-                  {/*start card-body for bio*/}
-                  <div className="w3-container w3-white justify-content-center w3-center">
+               
+                  <div className="w3-container w3-white  w3-center card-custom-height">
                     <br></br>
                     <h5
 >
@@ -194,7 +204,7 @@ const Server = () => {
                     style={{ width: "100%" }}
                     className="rounded-top w3-opacity w3-hover-opacity-off shadow"
                   ></img>
-                  <div className="w3-container w3-white justify-content-center w3-center">
+                  <div className="w3-container w3-white justify-content-center w3-center card-custom-height">
                     <br></br>
                     <h5
 
@@ -244,7 +254,7 @@ const Server = () => {
                   ></img>
                   {/*end card-image for bio*/}
                   {/*start card-body for note-taker*/}
-                  <div className="w3-container w3-white justify-content-center w3-center">
+                  <div className="w3-container w3-white justify-content-center w3-center card-custom-height">
                     <br></br>
                     <h5
 
@@ -278,6 +288,7 @@ const Server = () => {
                 <br />
             </div>
 
+
             <div className="flex-column col-sm-12 col-md-4 col-lg-4 justify-content-center align-items-center">
               {/*3. start card-image for SVG*/}
               <div className="w3-card w3-opacity w3-hover-opacity-off" id="svg">
@@ -288,7 +299,7 @@ const Server = () => {
                   ></img>
                   {/*end card-image for note-taker*/}
                   {/*start card-body for SVG*/}
-                  <div className="w3-container w3-white justify-content-center w3-center">
+                  <div className="w3-container w3-white justify-content-center w3-center card-custom-height">
                     <br></br>
                     <h5
 
@@ -334,7 +345,7 @@ const Server = () => {
                     style={{ width: "100%" }}
                     className="rounded-top w3-opacity w3-hover-opacity-off shadow"
                   ></img>
-                  <div className="w3-container w3-white justify-content-center w3-center">
+                  <div className="w3-container w3-white justify-content-center w3-center card-custom-height">
                     <br></br>
                     <h5
 
@@ -377,7 +388,7 @@ const Server = () => {
                     style={{ width: "100%" }}
                     className="rounded-top w3-opacity w3-hover-opacity-off shadow"
                   ></img>
-                  <div className="w3-container w3-white justify-content-center w3-center">
+                  <div className="w3-container w3-white justify-content-center w3-center card-custom-height">
                     <br></br>
                     <h5
 
@@ -392,7 +403,7 @@ const Server = () => {
                     </p>
                     <div className="card-footer w3-center w3-margin-bottom">
                       <p
-                        className="w3-opacity text-center pt-2"
+                        className="w3-opacity text-center pt-3"
                         style={{ fontSize: "12px" }}
                       >
                         click to view repository
@@ -418,7 +429,7 @@ const Server = () => {
                     style={{ width: "100%" }}
                     className="rounded-top w3-opacity w3-hover-opacity-off shadow"
                   ></img>
-                  <div className="w3-container w3-white justify-content-center w3-center">
+                  <div className="w3-container w3-white justify-content-center w3-center card-custom-height">
                     <br></br>
                     <h5
 
@@ -433,7 +444,7 @@ const Server = () => {
                     </p>
                     <div className="card-footer w3-center w3-margin-bottom">
                       <p
-                        className="w3-opacity text-center pt-2"
+                        className="w3-opacity text-center pt-3"
                         style={{ fontSize: "12px" }}
                       >
                         click to view repository
