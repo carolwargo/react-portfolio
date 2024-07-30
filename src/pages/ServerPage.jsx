@@ -59,7 +59,7 @@ const Server = () => {
                     src={WeatherNew}
                     alt="blog-profile"
                     style={{ width: "100%" }}
-                    className="rounded-top"
+                    className="rounded-top shadow"
                   ></img>
                   <div className="w3-container w3-white justify-content-center w3-center">
                     <br></br>
@@ -102,7 +102,7 @@ const Server = () => {
                     src={WeatherMobile}
                     alt="blog-profile"
                     style={{ width: "100%" }}
-                    className="rounded-top"
+                    className="rounded-top shadow"
                   ></img>
              <div className="card-footer">
                       <p className='text-secondary text-center' style={{fontSize:'13px'}}>Desktop version</p>
@@ -140,7 +140,7 @@ const Server = () => {
                     src={JATE}
                     alt="blog-profile"
                     style={{ width: "100%" }}
-                    className="rounded-top w3-opacity w3-hover-opacity-off"
+                    className="rounded-top w3-opacity w3-hover-opacity-off shadow"
                   ></img>
                      <div className="position-absolute top-0 start-0 translate-middle w-50 bg-white py-1 px-2">
       <span className="text-dark">New</span>
@@ -192,7 +192,7 @@ const Server = () => {
                     src={Password}
                     alt="blog-profile"
                     style={{ width: "100%" }}
-                    className="rounded-top w3-opacity w3-hover-opacity-off"
+                    className="rounded-top w3-opacity w3-hover-opacity-off shadow"
                   ></img>
                   <div className="w3-container w3-white justify-content-center w3-center">
                     <br></br>
@@ -240,7 +240,7 @@ const Server = () => {
                     src={Notes}
                     alt="blog-profile"
                     style={{ width: "100%" }}
-                    className="rounded-top w3-opacity w3-hover-opacity-off"
+                    className="rounded-top w3-opacity w3-hover-opacity-off shadow"
                   ></img>
                   {/*end card-image for bio*/}
                   {/*start card-body for note-taker*/}
@@ -332,7 +332,7 @@ const Server = () => {
                     src={Desk}
                     alt="blog-profile"
                     style={{ width: "100%" }}
-                    className="rounded-top w3-opacity w3-hover-opacity-off"
+                    className="rounded-top w3-opacity w3-hover-opacity-off shadow"
                   ></img>
                   <div className="w3-container w3-white justify-content-center w3-center">
                     <br></br>
@@ -375,7 +375,7 @@ const Server = () => {
                     src={README}
                     alt="blog-profile"
                     style={{ width: "100%" }}
-                    className="rounded-top w3-opacity w3-hover-opacity-off"
+                    className="rounded-top w3-opacity w3-hover-opacity-off shadow"
                   ></img>
                   <div className="w3-container w3-white justify-content-center w3-center">
                     <br></br>
@@ -416,7 +416,7 @@ const Server = () => {
                    src={Horizen}
                     alt="blog-profile"
                     style={{ width: "100%" }}
-                    className="rounded-top w3-opacity w3-hover-opacity-off"
+                    className="rounded-top w3-opacity w3-hover-opacity-off shadow"
                   ></img>
                   <div className="w3-container w3-white justify-content-center w3-center">
                     <br></br>

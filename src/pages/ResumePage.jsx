@@ -236,13 +236,14 @@ export default function ResumePage() {
                 <br/>
 
                 <div className="w3-light-grey w3-round-xlarge w3-small">
-          <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"80%"}}>
-            <div className="w3-center w3-text-black">80%</div>
-          </div>
+                <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
+       
         </div>
         <p className="w3-text-black">Collaborative Software</p>
+
                 <div className="w3-light-grey w3-round-xlarge w3-small">
           <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
+       
         </div>
         <p className="w3-text-black">Design Software</p>  
   <br />
@@ -277,11 +278,9 @@ export default function ResumePage() {
       <h2 className="w3-padding-16  text-black">
         <i className="fa fa-suitcase fa-fw  w3-xlarge w3-text-black">
           </i> WORK EXPERIENCE</h2>
-
           <h5>FREELANCE<br/><b>Digital Design & Development</b></h5>
-        <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> June 2021 - <span className="w3-tag w3-black w3-round">Current</span></h6>
-        <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>
-       
+        <h6 className="w3-text-black"><i className="fa fa-calendar fa-fw"></i> June 2016 - <span className="w3-tag w3-black w3-round">Current</span></h6>
+        <p className="w3-text-black w3-margin-top"><i className="far fa-sticky-note fa-fw"></i><b> Duties</b></p>   
         <ul style={{fontSize:'14.25px'}}>
   <li>Develop marketing strategies through analysis and client engagement.</li>
   <li>Design, develop, monitor, and maintain CMS and custom websites.</li>
@@ -328,14 +327,14 @@ export default function ResumePage() {
       <ul style={{fontSize:'14.25px'}}>
         <li>Prepare budgets and financial reports, ensuring adherence to fiscal policies.</li>
  <li>Develop and execute marketing strategies to attract new tenants and retain existing ones.</li>
-      <li>tablish and implement procedures for property accountability and control, ensuring compliance with regulations and safeguarding assets.</li>
+      <li>Etablish and implement procedures for property accountability and control, ensuring compliance with regulations and safeguarding assets.</li>
       <li>Conduct market research to identify investment opportunities.</li>
       <li>Write, edit & negotiate contracts.</li>
       <li>Implement property management software to streamline operations and improve efficiency.</li>
                     <li>
                       Facilitate inspections, appraisals & legal matters.
                     </li>
-                    <li>•	Oversee home staging, architectural design, and contractor management to ensure project completion.</li>
+                    <li>Oversee home staging, architectural design, and contractor management to ensure project completion.</li>
                   </ul> 
                   <hr className="my-5"/>
     
@@ -378,7 +377,7 @@ export default function ResumePage() {
        
         <ul style={{fontSize:'14.25px'}}>
           <li>Maintain detailed and organized documentation of events and timelines.</li>
-          <li>et, schedule, and coordinate staffing, vendors, security, travel itineraries, and entertainment for exclusive events.</li>
+          <li>Vet, schedule, and coordinate staffing, vendors, security, travel itineraries, and entertainment for exclusive events.</li>
         <li>Demonstrate comprehensive knowledge of products, inventory, and procedures to effectively showcase progress and provide comparisons.</li>
          <li>Conduct staff training to promote awareness of clients' ethnicities, cultural differences, and customs.</li>
 <li>Conduct onboarding sessions to train event staff on the importance of discretion, cultural differences, and awareness of current events.</li>

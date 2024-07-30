@@ -5,8 +5,8 @@ import { useInView } from "react-intersection-observer";
 import { HiArrowLongRight } from "react-icons/hi2";
 import GraphicComponents from "../components/Portfolio/Graphics/GraphicsComponents";
 import Newsletter3 from "../assets/images/Newsletters/DIAGRAMS/Newsletter3.png";
-import InstagramComponent from "../components/Portfolio/Graphics/InstagramComponent";
-//import S4 from "../assets/images/Sports/S4.png";
+import EmailComponent from "../components/Portfolio/Graphics/EmailComponent";
+import SocialComponent from "../components/Portfolio/Graphics/SocialComponent";
 
 const Graphics = () => {
   const scrollToTop = () => {
@@ -29,7 +29,9 @@ const Graphics = () => {
     className="graphics w3-light-gray"
     id="graphics"  
   >
+   
       <div className="w3-container w3-content w3-padding-large w3-padding-64" id="email-graphics">
+      {/** 
       <h4
       style={{fontFamily:'sans-serif'}}
       >
@@ -37,7 +39,7 @@ const Graphics = () => {
       </h4>
       <p
         className="graphic-design "
-        style={{ color: "white", fontFamily: "bellota text" }}
+        style={{fontFamily: "bellota text" }}
       >
         Explore some of my 'original' Graphic Design pieces for a glimpse
         into my creative world. From web design to branding, each project
@@ -45,7 +47,7 @@ const Graphics = () => {
         craft. Take a moment to immerse yourself in the details and
         discover the stories behind each creation."
       </p>
-
+  */}
         <div className="row d-flex justify-content-center align-items-center" >
               <div className="col-sm-12 col-md-5 col-lg-5 justify-content-center align-bottom w3-padding-large">
               <div className="graphics-carousel-body justify-content-center align-bottom">
@@ -70,13 +72,19 @@ const Graphics = () => {
         </div>
 
   <div id="email-samples">
-  <InstagramComponent/>
+  <EmailComponent/>
   </div>
-
-       <GraphicComponents/>
+  <div id="email-samples">
+  <SocialComponent/>
+  </div>
+  <div id="email-samples">
+  <GraphicComponents/>
+  </div>
+      
       </div>   
     <br />
       <hr />
+    
       <div className="w3-container w3-padding-large text-center w3-padding-48">
               <h3 className="text-black">Much more to come... Stay tuned! Feedback is welcome and encouraged. Feel free to contact me to share your thoughts.
         </h3><br />

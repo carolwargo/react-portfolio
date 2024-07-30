@@ -190,7 +190,7 @@ const BlogPage = () => {
                 <div className="w3-container w3-white">
                   {" "}
                   {/*container start for tags*/}
-                  <p>
+                  <p className="w3-margin-top">
                     <span className="w3-tag w3-black w3-margin-bottom">
                       Travel
                     </span>

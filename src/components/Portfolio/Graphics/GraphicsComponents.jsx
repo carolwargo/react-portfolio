@@ -4,16 +4,12 @@ import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
 import ImageModal from "../../Modals/ImageModal";
 import { HiMagnifyingGlassPlus } from "react-icons/hi2";
-
-
-//import ProductCampaign from "../../../assets/images/Graphics/ProductCampaign.png";
 import Catching from "../../../assets/images/Graphics/Catching.png";
 import Canceled from "../../../assets/images/Graphics/Canceled.png";
 import CuttersFlyers from "../../../assets/images/Graphics/CuttersFlyers.png";
 import S1 from "../../../assets/images/Sports/S1.png";
 import S2 from "../../../assets/images/Sports/S2.png";
 import S4 from "../../../assets/images/Sports/S4.png";
-import YogaSet from "../../../assets/images/YogaStory/YogaSet.png";
 import Duke1 from "../../../assets/images/WallPaper/Duke1.png";
 import Duke2 from "../../../assets/images/WallPaper/Duke2.png";
 import Duke3 from "../../../assets/images/WallPaper/Duke3.png";
@@ -45,10 +41,7 @@ const GraphicsPage = () => {
 
   return (
     <div className="graphics-components" id="graphics-components">
-      <div className="w3-padding-32">
-      <p className='fw-bold  text-bg-primary p-3'><i>SOCIAL MEDIA CAMPAIGN SAMPLES</i></p>        
-<img src={YogaSet} alt="yoga" style={{width:'100%'}} className="shadow"/>
-</div>
+ 
 <div className="w3-padding-top-48 w3-margin-top">
 <p className='fw-bold  text-bg-primary p-3'><i>SPORTS MEDIA SAMPLES</i></p>         
 <br />
@@ -102,8 +95,20 @@ const GraphicsPage = () => {
       />
 <div>
 
-  <div className="row">
-    <div className="col">
+  <div className="row w3-padding-24 text-primary ft-bold justify-content-center align-items-center">
+  <div className="col-sm-12 col-md-5 col-lg-5">
+    <h2>Thought through detail</h2>
+    <p>Element is clear and concise,  visually appealing,  with a truly custom aesthetic.
+    </p>
+
+    <p><b>Graphic Details:</b></p>
+<ul>
+  <li>Words- mascot, motto, location, #'s used.</li>
+  <li>Blue jean- used throughout Duke athletics #bluecolar</li>
+  <li>Logos- pitchford and Duke 'D'</li>
+</ul>
+    </div>
+    <div className="col-sm-12 col-md-7 col-lg-7">
            <Card
             className="shadow mx-1"
       variant="outlined"
@@ -139,9 +144,7 @@ const GraphicsPage = () => {
       </CardContent>
     </Card>
     </div>
-   <div className="col">
-    
-   </div>
+
     </div>
 </div>
     </div>

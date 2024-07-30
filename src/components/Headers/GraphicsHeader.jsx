@@ -6,7 +6,7 @@ import { Link as ScrollLink } from 'react-scroll';
 
 const Header = () => {
   return (
-    <header  className="w3-padding-top-48" style={{fontFamily:'Raleway'}}>
+    <header  className="w3-padding-48" style={{fontFamily:'Raleway'}}>
    
       <div
         id="intro-example"
