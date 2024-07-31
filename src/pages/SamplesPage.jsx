@@ -159,15 +159,15 @@ function PageSamples() {
       {/** End Blog*/}
 
 
-      {/**Start Blog Yoga*/}
+      {/**Start Restaurant*/}
 <div className="w3-container w3-content text-black">
-        <div className="realestate-page w3-padding-24" id="realestate-page">
+        <div className="restaurant-page w3-padding-24" id="restaurant-page">
           <div className=" text-black justify-content-center">
             <div className="justify-content-center">
               <div className="row d-flex  justify-content-center align-items-center">
                 <div className="col-md-5  w3-padding-16">
                   <div className=" justify-content-center">
-                    <h3 className="text-black"> BLOG SAMPLE WITH EXTRAS</h3>
+                    <h3 className="text-black"> MENU SAMPLE</h3>
                     <hr className="w3-opacity" />
                     <p>
                 "Blog sample with extras" includes the addition of 4 elements; custom header with CTA, subscription form, custom multi-column footer and e-book journal download.</p>
@@ -250,7 +250,52 @@ function PageSamples() {
                 </div>
               </div>
             </div>
-
+      {/**Start Blog Yoga*/}
+      <div className="w3-container w3-content text-black">
+        <div className="realestate-page w3-padding-24" id="realestate-page">
+          <div className=" text-black justify-content-center">
+            <div className="justify-content-center">
+              <div className="row d-flex  justify-content-center align-items-center">
+                <div className="col-md-5  w3-padding-16">
+                  <div className=" justify-content-center">
+                    <h3 className="text-black"> BLOG SAMPLE WITH EXTRAS</h3>
+                    <hr className="w3-opacity" />
+                    <p>
+                "Blog sample with extras" includes the addition of 4 elements; custom header with CTA, subscription form, custom multi-column footer and e-book journal download.</p>
+                  </div>
+                  <div className="row px-2 justify-content-center">
+                 
+                    <div className="w3-margin-top ">
+                      <a href="https://carolwargo.github.io/blog">
+                      <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
+              style={{backgroundColor:'#FF385C'}}>
+               VIEW SAMPLE
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-7 d-flex justify-content-center  w3-padding-16">
+                  <div
+                    className="shadow rounded bg-white"
+                    style={{ height: "400px", overflowY: "auto" }}
+                  >
+                    <div to="/blog#blog" onClick={scrollToTop}>
+                      <img
+                        src={YogaBlog}
+                        alt="yoga-blog"
+                        className="shadow mx-auto p-2"
+                        style={{ width: "100%" }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+{/**End Restaurant */}
               {/**Start Utility app button */}
         <div className="w3-container w3-padding-16 mt-5">
         <div className="row d-flex justify-content-center align-items-center">
