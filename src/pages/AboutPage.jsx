@@ -143,7 +143,7 @@ className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#F
               <h2 className="text-black">View my digital resume to learn more about my professional experience and qualifications.        
         </h2><br />
            
-              <Link to="/resume#resume"
+              <Link to="/resume"
                   className="button text-white"
                   onClick={scrollToTop}
                 >

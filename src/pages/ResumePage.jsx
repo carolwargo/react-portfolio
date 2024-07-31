@@ -529,7 +529,7 @@ End Practices*/}
         <br />
               <button className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom" 
               style={{backgroundColor:'#FF385C'}}>
-              <Link to="/portfolio#portfolio"
+              <Link to="/portfolio"
                   className="button text-white"
                   onClick={scrollToTop}
                 >

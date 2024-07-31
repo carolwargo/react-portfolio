@@ -492,7 +492,7 @@ const Server = () => {
                 style={{ backgroundColor: "#FF385C" }}
               >
                 <Link
-                  to="/graphics#graphics"
+                  to="/graphics"
                   className="button text-white"
                   onClick={scrollToTop}
                 >

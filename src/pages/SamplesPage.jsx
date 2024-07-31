@@ -50,7 +50,6 @@ function PageSamples() {
                 snippets.'</em></p>
 </div>
 <br />
-<br />
 
 {/**Start Real Estate */}
       <div className="w3-container w3-content text-black">
@@ -332,7 +331,7 @@ function PageSamples() {
                 style={{ backgroundColor: "#FF385C" }}
               >
                 <Link
-                  to="/server#server"
+                  to="/server"
                   className="button text-white"
                   onClick={scrollToTop}
                 >

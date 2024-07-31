@@ -293,7 +293,7 @@ function AlbumExample() {
             </div>
           </div>
           <div className="text-center w3-padding-bottom">
-          <Link to="/page-samples">
+          <Link to="/samples">
             <p><i 
           className="fa fa-arrow-left  w3-hover-opacity" ></i>
            <span className=""><b> Return </b></span>

@@ -64,7 +64,7 @@ function HomePage() {
         </h4>
               <button className="w3-button w3-text-light-grey w3-padding  w3-round-xxlarge mt-2" 
               style={{backgroundColor:'#FF385C'}}>
-              <Link to="/about#about"
+              <Link to="/about"
                   className="button text-white"
                   onClick={scrollToTop}
                 >

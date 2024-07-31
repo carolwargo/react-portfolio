@@ -776,7 +776,7 @@ End AppBar component*/}
               </p>
               
               <Link
-                  to="/forms#forms"
+                  to="/forms"
                   className="button text-white"
                   onClick={scrollToTop}
                 >

@@ -378,7 +378,7 @@ Examples include Login or Sign Up forms. How are they different?"
               </p>
               
               <Link
-                  to="/cards#cards"
+                  to="/cards"
                   className="button text-white"
                   onClick={scrollToTop}
                 >

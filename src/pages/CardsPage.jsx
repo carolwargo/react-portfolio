@@ -251,7 +251,7 @@ const Cards = () => {
                 </i>
               </p>
               <Link
-                  to="/samples#page-samples"
+                  to="/samples"
                   className="button text-white"
                   onClick={scrollToTop}
                 >

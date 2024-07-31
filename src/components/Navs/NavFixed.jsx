@@ -78,7 +78,7 @@ function BasicExample() {
             <Nav className="me-auto">
               <Nav.Link
                 as={Link}
-                to="/about#about"
+                to="/about"
                 onClick={handleNavLinkClick}
                 style={{ fontSize: "14px" }}
               >
@@ -86,7 +86,7 @@ function BasicExample() {
               </Nav.Link>
               <Nav.Link
                 as={Link}
-                to="/resume#resume"
+                to="/resume"
                 onClick={handleNavLinkClick}
                 style={{ fontSize: "14px" }}
               >
@@ -101,42 +101,42 @@ function BasicExample() {
               >
                 <NavDropdown.Item 
                   as={Link}
-                  to="/portfolio#portfolio"
+                  to="/portfolio"
                   style={{ fontSize: "14px" }}
                 >
                   Web Components
                 </NavDropdown.Item>
                 <NavDropdown.Item 
                   as={Link}
-                  to="/samples#samples"
+                  to="/samples"
                   style={{ fontSize: "14px" }}
                 >
                   Landing Pages
                 </NavDropdown.Item>
                 <NavDropdown.Item 
                   as={Link}
-                  to="/forms#forms"
+                  to="/forms"
                   style={{ fontSize: "14px" }}
                 >
                   Forms
                 </NavDropdown.Item>
                 <NavDropdown.Item 
                   as={Link}
-                  to="/cards#cards"
+                  to="/cards"
                   style={{ fontSize: "14px" }}
                 >
                   Cards & Images
                 </NavDropdown.Item>
                 <NavDropdown.Item 
                   as={Link}
-                  to="/server#server"
+                  to="/server"
                   style={{ fontSize: "14px" }}
                 >
                   Utility Apps
                 </NavDropdown.Item>
                 <NavDropdown.Item 
                   as={Link}
-                  to="/graphics#graphics"
+                  to="/graphics"
                   style={{ fontSize: "14px" }}
                 >
                   Graphics
@@ -145,7 +145,7 @@ function BasicExample() {
             </Nav>
             <Nav>
               <Link
-                to="/contact#contact"
+                to="/contact"
                 className="button text-grey mr-3"
                 style={{ fontSize: "14px" }}
                 onClick={handleNavLinkClick}
