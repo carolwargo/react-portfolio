@@ -1,15 +1,17 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.61fb6775.css",
-    "main.js": "/react-portfolio/static/js/main.6a06f5c2.js",
+    "main.js": "/react-portfolio/static/js/main.808bcc27.js",
     "static/media/RealEstate.png": "/react-portfolio/static/media/RealEstate.ba0b8a8bd8b9df38e276.png",
     "static/media/Fruits2.png": "/react-portfolio/static/media/Fruits2.1176c228ac73a6dbc93b.png",
+    "static/media/Store.png": "/react-portfolio/static/media/Store.c6b8741a999a7bdad65c.png",
     "static/media/Album.png": "/react-portfolio/static/media/Album.624f5f271608ee54bae6.png",
     "static/media/GreenFood1.png": "/react-portfolio/static/media/GreenFood1.2039a9249c5101969445.png",
     "static/media/Open3.png": "/react-portfolio/static/media/Open3.42c77ac092349515f97c.png",
     "static/media/Travel2.png": "/react-portfolio/static/media/Travel2.c74c6a61b8a18e7679f7.png",
     "static/media/LoginImage.png": "/react-portfolio/static/media/LoginImage.a7742c36080e9860e034.png",
     "static/media/Travel4.png": "/react-portfolio/static/media/Travel4.8d330725ef56861f6aed.png",
+    "static/media/REDashboard.png": "/react-portfolio/static/media/REDashboard.910e479cf2b8771d80e6.png",
     "static/media/Open2.png": "/react-portfolio/static/media/Open2.cfa77287b024782a9873.png",
     "static/media/Fruits1.png": "/react-portfolio/static/media/Fruits1.c5aeced96a4f8cd44e7c.png",
     "static/media/GreenFood2.png": "/react-portfolio/static/media/GreenFood2.248320e083e755df1c7c.png",
@@ -130,10 +132,10 @@
     "static/media/slick.woff": "/react-portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/react-portfolio/index.html",
     "main.61fb6775.css.map": "/react-portfolio/static/css/main.61fb6775.css.map",
-    "main.6a06f5c2.js.map": "/react-portfolio/static/js/main.6a06f5c2.js.map"
+    "main.808bcc27.js.map": "/react-portfolio/static/js/main.808bcc27.js.map"
   },
   "entrypoints": [
     "static/css/main.61fb6775.css",
-    "static/js/main.6a06f5c2.js"
+    "static/js/main.808bcc27.js"
   ]
 }
