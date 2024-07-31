@@ -6,6 +6,9 @@ import RealEstate from "../assets/images/FullPage/RealEstate.png";
 import YogaBlog from "../assets/images/FullPage/YogaBlog.png";
 import { Link } from "react-router-dom";
 import Album from "../assets/images/FullPage/Album.png";
+//import Restaurant from "../assets/images/FullPage/Restaurant.png";
+import REDashboard from "../assets/images/FullPage/REDashboard.png";
+import Store from "../assets/images/FullPage/Store.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function PageSamples() {
@@ -29,13 +32,11 @@ function PageSamples() {
     >
     <div className="page-samples" id="page-samples">
       <div className="w3-padding-top-48 w3-padding-large ">
-          <div
-            className="w3-content w3-container w3-padding-16 w3-margin-top justify-content-center"
+          <div className="w3-content w3-container w3-padding-16 w3-margin-top justify-content-center"
             style={{
               position: "relative",
               zIndex: 1,
-            }}
-          >
+            }}>
           
             <h1 className="text-center text-black"><b>Sample Website Layouts</b></h1>
             <hr className="w3-opacity" />
@@ -109,7 +110,7 @@ function PageSamples() {
 
     
 {/** Start Blog*/}
-      <div className="w3-container w3-content text-black mt-5">
+      <div className="w3-container w3-content text-black">
         <div className="blog-page-2  w3-padding-16" id="blog-page-2">
             <div className="justify-content-center">
               <div className="row d-flex justify-content-center align-items-center">          
@@ -207,7 +208,7 @@ function PageSamples() {
 {/**End Blog Yoga */}
       
 {/**Start Album */}
-<div className="w3-container w3-content  text-black mt-5">
+<div className="w3-container w3-content  text-black">
         <div className="album-page  w3-padding-16" id="album-page">
             <div className="justify-content-center">
               <div className="row d-flex justify-content-center align-items-center">
@@ -250,54 +251,64 @@ function PageSamples() {
                 </div>
               </div>
             </div>
-      {/**Start Blog Yoga*/}
-      <div className="w3-container w3-content text-black">
-        <div className="realestate-page w3-padding-24" id="realestate-page">
-          <div className=" text-black justify-content-center">
-            <div className="justify-content-center">
+        </div>
+        </div>
+   
+        <div className="w3-container w3-content text-black">
+          <div className=" text-black justify-content-center w3-padding-24">
               <div className="row d-flex  justify-content-center align-items-center">
-                <div className="col-md-5  w3-padding-16">
-                  <div className=" justify-content-center">
-                    <h3 className="text-black"> BLOG SAMPLE WITH EXTRAS</h3>
-                    <hr className="w3-opacity" />
-                    <p>
-                "Blog sample with extras" includes the addition of 4 elements; custom header with CTA, subscription form, custom multi-column footer and e-book journal download.</p>
-                  </div>
-                  <div className="row px-2 justify-content-center">
-                 
-                    <div className="w3-margin-top ">
-                      <a href="https://carolwargo.github.io/blog">
-                      <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
-              style={{backgroundColor:'#FF385C'}}>
-               VIEW SAMPLE
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-7 d-flex justify-content-center  w3-padding-16">
-                  <div
-                    className="shadow rounded bg-white"
+             
+
+                    <div className="col-md-6  w3-padding-16">
+                  <div className="card shadow border">
+                  <h5 className="card-title text-center pt-3">RENTAL DASHBOARD</h5>
+                
+                      <div
+                    className="rounded bg-white"
                     style={{ height: "400px", overflowY: "auto" }}
                   >
-                    <div to="/blog#blog" onClick={scrollToTop}>
+                    <div to="/" onClick={scrollToTop}>
                       <img
-                        src={YogaBlog}
-                        alt="yoga-blog"
-                        className="shadow mx-auto p-2"
+                        src={REDashboard}
+                        alt="reo dashboard"
+                        className="mx-auto p-2"
                         style={{ width: "100%" }}
                       />
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-{/**End Restaurant */}
+                      <div className="card-body">
+                    
+                    </div>
+                    </div>
+                    </div>
+                    <div className="col-md-6  w3-padding-16">
+                  <div className="card shadow border">
+                  <h5 className="card-title text-center pt-3">ECOMMERCE</h5>
+               
+                         <div
+                    className="rounded bg-white"
+                    style={{ height: "400px", overflowY: "auto" }}
+                  >
+                    <div to="/" onClick={scrollToTop}>
+                      <img
+                        src={Store}
+                        alt="store"
+                        className="mx-auto p-2"
+                        style={{ width: "100%" }}
+                      />
+                    </div>
+                  </div>
+                      <div className="card-body">
+                 
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+
               {/**Start Utility app button */}
-        <div className="w3-container w3-padding-16 mt-5">
+        <div className="w3-container w3-padding-16">
         <div className="row d-flex justify-content-center align-items-center">
           <div className="flex-column col-sm-12 col-md-12 col-lg-12 w3-white text-center justify-content-center align-items-center">
             <h2 className="w3-text-black" id="server">
@@ -344,13 +355,6 @@ function PageSamples() {
         </div>
       </div>
 {/**End Album */}
-
-
-
-
-
-  </div>
-    </div>
     </motion.div>
   );
 }
