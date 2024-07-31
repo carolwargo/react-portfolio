@@ -107,7 +107,7 @@ const GraphicsComponent = () => {
    <div className="row">
    <div className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-items-center w3-padding-large">
           <Card
-            className="shadow w3-padding-large rounded"
+            className="shadow rounded"
             variant="outlined"
             style={{backgroundColor:'#00009c'}}
             sx={{ minWidth: 300, '--Card-radius': (theme) => theme.vars.radius.xs }}
@@ -139,7 +139,7 @@ const GraphicsComponent = () => {
    
       <div className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-items-center w3-padding-large">
           <Card
-            className="shadow w3-padding-large rounded"
+            className="shadow rounded"
             variant="outlined"
             style={{backgroundColor:'black'}}
             sx={{ minWidth: 300, '--Card-radius': (theme) => theme.vars.radius.xs }}
