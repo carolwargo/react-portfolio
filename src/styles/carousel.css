@@ -1,0 +1,7 @@
+.carousel-slide img {
+  transition: transform 0.5s ease;
+}
+
+.slick-center .carousel-slide img {
+  transform: scale(1.2); /* Adjust the scale as needed */
+}

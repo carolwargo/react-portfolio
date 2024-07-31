@@ -106,13 +106,15 @@ const handleFinanceImageClick = (index) => {
 
 
   return (
-    <div className='email-samples' id="email-samples">
-        <div className="container w3-padding-48">
+    <div className='email-samples bg-primary-subtle w3-padding-48' id="email-samples">
+     <div className="w3-container w3-container w3-padding-large text-center ">
+    <h1 className='fw-bold text-primary'>
+      <i className='fw-bold'>EMAIL CAMPAIGN SAMPLES</i></h1> 
+      <h4> Unified Graphics-Maximize your brand’s visibility with multi-platform marketing graphics, ensuring consistent and captivating visuals across all your marketing channels.</h4>
+      </div>
+        <div className="container w3-padding-32">
         <div className="row d-flex justify-content-center align-items-center">
-        <div className="container w3-padding-small ">
-           
-    <h4 className='fw-bold text-bg-primary p-3 text-center'><i className='fw-bold'>EMAIL MARKETING CAMPAIGN SAMPLES</i></h4> 
-           </div>
+    
            <div className="col-sm-6 col-md-3 col-lg-3 w3-padding-small ">
             <Card
             className="shadow my-1"

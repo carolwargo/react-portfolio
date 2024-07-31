@@ -4,11 +4,11 @@ import GraphicsHeader from '../Headers/GraphicsHeader';
 
 const GraphicsLayout = () => {
   return (
-    <div className="web-layout">
-      <main>
+    <div className="web-layout w3-light-gray">
+      <div>
         <GraphicsHeader />
         <Outlet />
-      </main>
+      </div>
     </div>
   );
 };

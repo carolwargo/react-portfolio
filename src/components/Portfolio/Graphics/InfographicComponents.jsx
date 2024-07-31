@@ -1,401 +1,146 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import * as React from 'react';
-import Box from '@mui/joy/Box';
-import Card from '@mui/joy/Card';
-import CardContent from '@mui/joy/CardContent';
-import Fitness2 from '../../../assets/images/Newsletters/FITNESS/Fitness2.png';  
-import Fitness3 from '../../../assets/images/Newsletters/FITNESS/Fitness3.png';  
-import Fitness4 from '../../../assets/images/Newsletters/FITNESS/Fitness4.png'; 
-import Furniture1 from '../../../assets/images/Newsletters/FURNITURE/Furniture1.png';
-import Furniture2 from '../../../assets/images/Newsletters/FURNITURE/Furniture2.png';
-import Furniture3 from '../../../assets/images/Newsletters/FURNITURE/Furniture3.png'; 
-import Business1 from '../../../assets/images/Newsletters/BUSINESS/Business1.png';
-import Business2 from '../../../assets/images/Newsletters/BUSINESS/Business2.png';
-import Business3 from '../../../assets/images/Newsletters/BUSINESS/Business3.png';
-import Business4 from '../../../assets/images/Newsletters/BUSINESS/Business4.png';
-import Business5 from '../../../assets/images/Newsletters/BUSINESS/Business5.png';
-import Business6 from '../../../assets/images/Newsletters/BUSINESS/Business6.png';
-import Business7 from '../../../assets/images/Newsletters/BUSINESS/Business7.png';
-import BusinessStart from '../../../assets/images/Newsletters/BUSINESS/BusinessStart.png';
-import Agency1 from '../../../assets/images/Newsletters/AGENCY/Agency1.png';
-import Agency2 from '../../../assets/images/Newsletters/AGENCY/Agency2.png';
-import Agency3 from '../../../assets/images/Newsletters/AGENCY/Agency3.png';
-import Design1 from '../../../assets/images/Newsletters/DESIGN/Design1.png';
-import Design2 from '../../../assets/images/Newsletters/DESIGN/Design2.png';
-import Water1 from '../../../assets/images/Newsletters/ISLAND/Water1.png';
-import Water2 from '../../../assets/images/Newsletters/ISLAND/Water2.png';
-import Photo1 from '../../../assets/images/Newsletters/PHOTO/Photo1.png';
-import Photo2 from '../../../assets/images/Newsletters/PHOTO/Photo2.png';
+import React from "react";
+import Slider from "react-slick";
+import Typo1 from '../../../assets/images/Typo/Typo1.png';  
+import Typo2 from '../../../assets/images/Typo/Typo2.png';  
+import Typo3 from '../../../assets/images/Typo/Typo3.png';  
+import Typo4 from '../../../assets/images/Typo/Typo4.png';
+import Info2 from '../../../assets/images/Infographics/Info2.png';
 
-const businessImages = [
-BusinessStart, Business1, Business2
-];
+import Info3 from '../../../assets/images/Infographics/Info3.png';
+import Info4 from '../../../assets/images/Infographics/Info4.png';
+import Info5 from '../../../assets/images/Infographics/Info5.png';
+import Info6 from '../../../assets/images/Infographics/Info6.png';
+import Info7 from '../../../assets/images/Infographics/Info7.png';
 
-const photoImages = [   
-    Photo2, Photo1
-];
-
-const financeImages = [
-    Business3, Business4, Business5, Business6, Business7,
-    ];
-
-const fitnessImages = [
-    Fitness2, Fitness3, Fitness4,
-  ];
-
-  const furnitureImages = [
-    Furniture1, Furniture2, Furniture3,
-  ];
+import Info8 from '../../../assets/images/Infographics/Info8.png';
+import Info9 from '../../../assets/images/Infographics/Info9.png';
+import Info10 from '../../../assets/images/Infographics/Info10.png';
+import Info11 from '../../../assets/images/Infographics/Info11.png';
+import Info12 from '../../../assets/images/Infographics/Info12.png';
 
 
-const agencyImages = [
-    Agency1, Agency2, Agency3
-];
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const designImages = [
-    Design1, Design2
-];
+function Responsive() {
+  var settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
 
-const islandImages = [
-    Water1, Water2
-];
-
-
-export default function InstagramPost() {
-  const [currentBusinessIndex, setCurrentBusinessIndex] = React.useState(0);
-  const [currentFitnessIndex, setCurrentFitnessIndex] = React.useState(0);
- const [currentFurnitureIndex, setCurrentFurnitureIndex] = React.useState(0);
-const [currentAgencyIndex, setCurrentAgencyIndex] = React.useState(0);
-const [currentFinanceIndex, setCurrentFinanceIndex] = React.useState(0);
-const [currentDesignIndex, setCurrentDesignIndex] = React.useState(0);
-const [currentIslandIndex, setCurrentIslandIndex] = React.useState(0);
-const [currentPhotoIndex, setCurrentPhotoIndex] = React.useState(0);
-
-  const handleBusinessImageClick = (index) => {
-    setCurrentBusinessIndex(index);
-  };
-  const handleFitnessImageClick = (index) => {
-    setCurrentFitnessIndex(index);
-  };
-
-  const handleFurnitureImageClick = (index) => {
-    setCurrentFurnitureIndex(index);
-  }
-
-
-    const handleAgencyImageClick = (index) => {
-    setCurrentAgencyIndex(index);
-    }
-
-const handleFinanceImageClick = (index) => {
-    setCurrentFinanceIndex(index);
-    };
-
-    const handleDesignImageClick = (index) => {
-    setCurrentDesignIndex(index);
-    }
-
-    const handleIslandImageClick = (index) => {
-    setCurrentIslandIndex(index);
-    }
-
-    const handlePhotoImageClick = (index) => {
-    setCurrentPhotoIndex(index);
-    }
-
-
-
+    ]
+  }; 
   return (
-    <div className='email-samples' id="email-samples">
-        <div className="container w3-padding-48">
-        <div className="row d-flex justify-content-center align-items-center">
-        <div className="container w3-padding-small ">
-           
-    <h4 className='fw-bold text-bg-primary p-3 text-center'><i className='fw-bold'>EMAIL MARKETING CAMPAIGN SAMPLES</i></h4> 
-           </div>
-           <div className="col-sm-6 col-md-3 col-lg-3 w3-padding-small ">
-            <Card
-            className="shadow my-1"
-      variant="outlined"
-      sx={{
-        minWidth: 225,
-        '--Card-radius': (theme) => theme.vars.radius.xs,
-      }}
-    >
-      <img src={businessImages[currentBusinessIndex]} className='w-100' alt='' loading="lazy" />
+    <div className='infos w3-padding-48 w3-border-pale-red' id="infos">
+      <style>
+        {`
+        /* Custom styles for the Slick slider arrows */
+.slick-prev, .slick-next {
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
 
-      <CardContent orientation="horizontal" 
-      sx={{ alignItems: 'center', mx: -1 }}>
-        <Box sx={{ 
-            display: 'flex', 
-            alignItems: 'center', 
-            gap: 0.5, 
-            mx: 'auto' }}>
-          {businessImages.map((_, index) => (
-            <Box
-            className="shadow my-4"
-              key={index}
-              onClick={() => handleBusinessImageClick(index)}
-              sx={{
-                borderRadius: '50%',
-                width: '10px',
-                height: '10px',
-                cursor: 'pointer',
-                bgcolor: index === currentBusinessIndex ? 'primary.solidBg' : 'background.level3',
-              }}
-            />
-          ))}
-        </Box>
-      </CardContent>
-    </Card>
-            </div>
+.slick-prev::before, .slick-next::before {
+  font-size: 30px; /* Adjust the size of the arrows */
+  color: #000000; /* Change this to your desired color */
+  shadow: 0 0 10px #000; /* Add a subtle shadow to the arrows */
+}
 
- 
-            <div className="col-sm-6 col-md-3 col-lg-3 w3-padding-small ">
-            <Card
-                 className="shadow my-1"
-      variant="outlined"
-      sx={{
-        minWidth: 225,
-        '--Card-radius': (theme) => theme.vars.radius.xs,
-      }}
-    >
-      <img src={financeImages[currentFinanceIndex]} className='w-100' alt='' loading="lazy" />
+.slick-prev:hover::before, .slick-next:hover::before {
+  color: #00ff00; /* Change this to your desired hover color */
+}
+  `}
+      </style>
+      <div className="w3-container w3-container w3-padding-large text-center ">
+    <h1 className='fw-bold text-primary'>
+      <i className='fw-bold'>INFOGRAPHICS</i></h1> 
+      <h4> Visual Insights that Illuminate- Dive into our meticulously crafted infographics that transform complex data into compelling visual narratives, making information both engaging and easy to understand.</h4>
+      </div>
 
-      <CardContent orientation="horizontal" 
-      sx={{ alignItems: 'center', mx: -1 }}>
-        <Box sx={{ 
-            display: 'flex', 
-            alignItems: 'center', 
-            gap: 0.5, 
-            mx: 'auto' }}>
-          {financeImages.map((_, index) => (
-            <Box
-            className="shadow my-4"
-              key={index}
-              onClick={() => handleFinanceImageClick(index)}
-              sx={{
-                borderRadius: '50%',
-                width: '10px',
-                height: '10px',
-                cursor: 'pointer',
-                bgcolor: index === currentFinanceIndex ? 'primary.solidBg' : 'background.level3',
-              }}
-            />
-          ))}
-        </Box>
-      </CardContent>
-    </Card>
-            </div>
-
-
-            <div className="col-sm-6 col-md-3 col-lg-3 w3-padding-small ">
-            <Card
-                 className="shadow my-1"
-      variant="outlined"
-      sx={{
-        minWidth: 225,
-        '--Card-radius': (theme) => theme.vars.radius.xs,
-      }}
-    >
-      <img src={designImages[currentDesignIndex]} className='w-100' alt='' loading="lazy" />
-
-      <CardContent orientation="horizontal" 
-      sx={{ alignItems: 'center', mx: -1 }}>
-        <Box sx={{ 
-            display: 'flex', 
-            alignItems: 'center', 
-            gap: 0.5, 
-            mx: 'auto' }}>
-          {designImages.map((_, index) => (
-            <Box
-            className="shadow my-4"
-              key={index}
-              onClick={() => handleDesignImageClick(index)}
-              sx={{
-                borderRadius: '50%',
-                width: '10px',
-                height: '10px',
-                cursor: 'pointer',
-                bgcolor: index === currentDesignIndex ? 'primary.solidBg' : 'background.level3',
-              }}
-            />
-          ))}
-        </Box>
-      </CardContent>
-    </Card>
-            </div>
-
-            <div className="col-sm-6 col-md-3 col-lg-3 w3-padding-small ">
-            <Card
-                 className="shadow my-1"
-      variant="outlined"
-      sx={{
-        minWidth: 225,
-        '--Card-radius': (theme) => theme.vars.radius.xs,
-      }}
-    >
-      <img src={islandImages[currentIslandIndex]} className='w-100' alt='' loading="lazy" />
-
-      <CardContent orientation="horizontal" 
-      sx={{ alignItems: 'center', mx: -1 }}>
-        <Box sx={{ 
-            display: 'flex', 
-            alignItems: 'center', 
-            gap: 0.5, 
-            mx: 'auto' }}>
-          {islandImages.map((_, index) => (
-            <Box
-            className="shadow my-4"
-              key={index}
-              onClick={() => handleIslandImageClick(index)}
-              sx={{
-                borderRadius: '50%',
-                width: '10px',
-                height: '10px',
-                cursor: 'pointer',
-                bgcolor: index === currentIslandIndex ? 'primary.solidBg' : 'background.level3',
-              }}
-            />
-          ))}
-        </Box>
-      </CardContent>
-    </Card>
-            </div>
-
-            <div className="col-sm-6 col-md-3 col-lg-3 w3-padding-small ">
-            <Card
-                 className="shadow my-1"
-      variant="outlined"
-      sx={{
-        minWidth: 225,
-        '--Card-radius': (theme) => theme.vars.radius.xs,
-      }}
-    >
-      <img src={photoImages[currentPhotoIndex]} className='w-100' alt='' loading="lazy" />
-
-      <CardContent orientation="horizontal" 
-      sx={{ alignItems: 'center', mx: -1 }}>
-        <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5, mx: 'auto' }}>
-          {photoImages.map((_, index) => (
-            <Box
-            className="shadow my-4"
-              key={index}
-              onClick={() => handlePhotoImageClick(index)}
-              sx={{
-                borderRadius: '50%',
-                width: '10px',
-                height: '10px',
-                cursor: 'pointer',
-                bgcolor: index === currentPhotoIndex ? 'primary.solidBg' : 'background.level3',
-              }}
-            />
-          ))}
-        </Box>
-      </CardContent>
-    </Card>
-            </div>
-
-
-           <div className="col-sm-6 col-md-3 col-lg-3 w3-padding-small ">
-            <Card
-                 className="shadow my-1"
-      variant="outlined"
-      sx={{
-        minWidth: 225,
-        '--Card-radius': (theme) => theme.vars.radius.xs,
-      }}
-    >
-      <img src={fitnessImages[currentFitnessIndex]} className='w-100' alt='' loading="lazy" />
-
-      <CardContent orientation="horizontal" sx={{ alignItems: 'center', mx: -1 }}>
-        <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5, mx: 'auto' }}>
-          {fitnessImages.map((_, index) => (
-            <Box
-            className="shadow my-4"
-              key={index}
-              onClick={() => handleFitnessImageClick(index)}
-              sx={{
-                borderRadius: '50%',
-                width: '10px',
-                height: '10px',
-                cursor: 'pointer',
-                bgcolor: index === currentFitnessIndex ? 'primary.solidBg' : 'background.level3',
-              }}
-            />
-          ))}
-        </Box>
-      </CardContent>
-    </Card>
-            </div>
-         
-            <div className="col-sm-6 col-md-3 col-lg-3 w3-padding-small ">
-            <Card
-                 className="shadow my-1"
-      variant="outlined"
-      sx={{
-        minWidth: 225,
-        '--Card-radius': (theme) => theme.vars.radius.xs,
-      }}
-    >
-      <img src={furnitureImages[currentFurnitureIndex]} className='w-100' alt='' loading="lazy" />
-
-      <CardContent orientation="horizontal" sx={{ alignItems: 'center', mx: -1 }}>
-        <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5, mx: 'auto' }}>
-          {furnitureImages.map((_, index) => (
-            <Box
-            className="shadow my-4"
-              key={index}
-              onClick={() => handleFurnitureImageClick(index)}
-              sx={{
-                borderRadius: '50%',
-                width: '10px',
-                height: '10px',
-                cursor: 'pointer',
-                bgcolor: index === currentFurnitureIndex ? 'primary.solidBg' : 'background.level3',
-              }}
-            />
-          ))}
-        </Box>
-      </CardContent>
-    </Card>
-            </div>
-
-
-           <div className="col-sm-6 col-md-3 col-lg-3 w3-padding-small ">
-            <Card
-                 className="shadow my-1"
-      variant="outlined"
-      sx={{
-        minWidth: 225,
-        '--Card-radius': (theme) => theme.vars.radius.xs,
-      }}
-    >
-      <img src={agencyImages[currentAgencyIndex]} className='w-100' alt='' loading="lazy" />
-
-      <CardContent orientation="horizontal" sx={{ alignItems: 'center', mx: -1 }}>
-        <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5, mx: 'auto' }}>
-          {agencyImages.map((_, index) => (
-            <Box
-            className="shadow my-4"
-              key={index}
-              onClick={() => handleAgencyImageClick(index)}
-              sx={{
-                borderRadius: '50%',
-                width: '10px',
-                height: '10px',
-                cursor: 'pointer',
-                bgcolor: index === currentAgencyIndex ? 'primary.solidBg' : 'background.level3',
-              }}
-            />
-          ))}
-        </Box>
-      </CardContent>
-    </Card>
-            </div>
-                </div>
-                </div>
+        <div className="w3-container w3-content w3-padding-large mt-2"> 
+      <Slider {...settings}>
+        <div className="px-1"> 
+          <img src={Typo1} alt="info1" className="w-100 rounded-2"></img>
+        </div>
+        <div className="px-1"> 
+          <img src={Typo2} alt="info1" className="w-100 rounded-2"></img>
+        </div>
+        <div className="px-1"> 
+          <img src={Typo3} alt="info1" className="w-100 rounded-2"></img>
+        </div>
+        <div className="px-1"> 
+          <img src={Typo4} alt="info1" className="w-100 rounded-2"></img>
+        </div>
+        <div className="px-1"> 
+        <img src={Info2} alt="info2" className="w-100 rounded-2"></img>
+        </div>
+        <div className="px-1"> 
+        <img src={Info3} alt="info3" className="w-100 rounded-2"></img>
+        </div>
+        <div className="px-1"> 
+        <img src={Info4} alt="info4" className="w-100 rounded-2"></img>
+        </div>
+        <div className="px-1"> 
+        <img src={Info5} alt="info5" className="w-100 rounded-2"></img>
+        </div>
+        <div className="px-1"> 
+        <img src={Info6} alt="info7" className="w-100 rounded-2"></img>
+        </div>
+        <div className="px-1"> 
+          <img src={Info7} alt="info7" className="w-100 rounded-2"></img>
+        </div>
+        <div className="px-1"> 
+        <img src={Info8} alt="info8" className="w-100 rounded-2"></img>
+        </div>
+        <div className="px-1"> 
+        <img src={Info9} alt="info9" className="w-100 rounded-2"></img>
+        </div>
+        <div className="px-1"> 
+        <img src={Info10} alt="info10" className="w-100 rounded-2"></img>
+        </div>
+        <div className="px-1"> 
+        <img src={Info11} alt="info" className="w-100 rounded-2"></img>
+        </div>
+        <div className="px-1"> 
+        <img src={Info12} alt="info12" className="w-100 rounded-2"></img>
+        </div>
+        <div className="px-1 "> 
+          <img src={Typo4} alt="info1" className="w-100 rounded-2"></img>
+        </div>
+    
+      </Slider>
     </div>
-
+    </div>
   );
 }
+
+export default Responsive;

@@ -40,18 +40,22 @@ const GraphicsComponent = () => {
   };
 
   return (
-    <div className="graphics-components" id="graphics-components">
-      <div className="container w3-padding-small">
-        <h4 className='fw-bold text-bg-primary p-3 text-center'><i className='fw-bold'>SPORTS MEDIA SAMPLES</i></h4>
+    <div className='graphics-components bg-primary-subtle w3-padding-top-32' id="graphics-components">
+      <div className="w3-container w3-container w3-padding-large text-center ">
+    <h1 className='fw-bold text-primary'>
+      <i className='fw-bold'>SPORT GRAPHICS & BRANDING</i></h1> 
+      <h4> Unified Graphics-Maximize your brand’s visibility with multi-platform marketing graphics, ensuring consistent and captivating visuals across all your marketing channels.</h4>
       </div>
+        <div className="container w3-padding-32">
+      
       <div className="row">
         {[
-          { image: S1, title: "Large Format" },
-          { image: S2, title: "Large Format" },
-          { image: CuttersFlyers, title: "Special Event" },
-          { image: Catching, title: "Services and Branding" },
-          { image: Canceled, title: "Team Notifications" },
-          { image: S4, title: "FundRaiser" },
+          { image: S1},
+          { image: S2},
+          { image: CuttersFlyers },
+          { image: Catching},
+          { image: Canceled},
+          { image: S4},
         ].map((item, index) => (
           <div
             key={index}
@@ -80,7 +84,7 @@ const GraphicsComponent = () => {
           </div>
         ))}
       </div>
-
+   
       {/* ImageModal */}
       <ImageModal
         showModal={showModal}
@@ -88,24 +92,24 @@ const GraphicsComponent = () => {
         imageSrc={selectedImage}
       />
 
-      <div className="row w3-padding-24 text-primary ft-bold justify-content-center align-items-center">
-        <div className="col-sm-12 col-md-5 col-lg-5">
-          <h2>Thought through detail</h2>
-          <p>Element is clear and concise, visually appealing, with a truly custom aesthetic.</p>
-          <p><b>Graphic Details:</b></p>
-          <ul>
-            <li>Words- mascot, motto, location, #'s used.</li>
-            <li>Blue jean- used throughout Duke athletics #bluecolar</li>
-            <li>Logos- pitchford and Duke 'D'</li>
-          </ul>
-        </div>
-        <div className="col-sm-12 col-md-7 col-lg-7">
+    
           <Card
-            className="shadow mx-1"
+            className="shadow mx-1 w3-padding-large w3-padding-32 rounded-4"
             variant="outlined"
             sx={{ minWidth: 400, '--Card-radius': (theme) => theme.vars.radius.xs }}
           >
-            <img src={dukeImages[currentDukeIndex]} className='w-100' alt='' loading="lazy" />
+            
+         <div className="w3-container w3-content text-center w3-padding-16">
+          
+          <h2 className="fw-bold  w3-margin-bottom">"Great things are not done by impulse, but by a series of small things brought together."  <span style={{fontSize:'14px'}}> — Vincent Van Gogh</span></h2>
+           <p className=" w3-margin-top"><b>GRAPHIC DETAILS</b>     
+           <span style={{color:'black'}}> Element is clear and concise, visually appealing, with a truly custom aesthetic.</span>
+           Words- mascot, motto, location, #'s used, 
+            Blue jean- used throughout Duke athletics #bluecolar, 
+            Logos- pitchford and Duke 'D'.
+           </p>
+         </div>
+            <img src={dukeImages[currentDukeIndex]} className='w-100 w3-padding-large' alt='' loading="lazy" />
             <CardContent orientation="horizontal" sx={{ alignItems: 'center', mx: -1 }}>
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5, mx: 'auto' }}>
                 {dukeImages.map((_, index) => (
@@ -124,9 +128,8 @@ const GraphicsComponent = () => {
               </Box>
             </CardContent>
           </Card>
-        </div>
+          </div>
       </div>
-    </div>
   );
 };
 
