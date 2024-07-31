@@ -62,17 +62,17 @@ const Graphics = () => {
         </motion.div>
         </div> 
      
-  <div id="email-samples" >
+  <div className="w3-container w3-container" id="email-samples" >
   <EmailComponent/>
   </div>
-  <div id="social-samples">
+  <div className="w3-container w3-container" id="social-samples">
   <SocialComponent/>
   </div>
-  <div id="sport-samples">
+  <div className="w3-container w3-container" id="sport-samples">
   <GraphicComponents/>
   </div>
 
-<div id="info-samples bg-success-subtle ">
+<div className="w3-container w3-container" id="info-samples bg-success-subtle ">
   <InfographicsComponents/>
   </div>
      

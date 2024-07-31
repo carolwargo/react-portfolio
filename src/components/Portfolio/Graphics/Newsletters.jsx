@@ -22,14 +22,15 @@ const Newsletters = () => {
 
       return (
     
-        <div className='email-samples bg-primary-subtle w3-padding-top-48' id="email-samples">
+        <div className='email-samples bg-primary-subtle w3-padding-top-32' id="email-samples">
+        
         <h1 className='fw-bold text-center'>
           <i className='fw-bold'>EMAIL CAMPAIGN SAMPLES</i></h1> 
             <div className="container w3-padding-48">
      
               <div className="row d-flex justify-content-center align-items-center">
-              <div className="col-sm-12 col-md-4 col-lg-4 justify-content-center align-bottom px-2">
-              <div className="graphics-carousel-body justify-content-center align-bottom">
+              <div className="col-sm-12 col-md-4 col-lg-4 justify-content-center align-items-center ">
+              <div className="graphics-carousel-body justify-content-center align-items-center">
          <div className="graphics-carousel-title text-black">
            <h2>Newsletters</h2>
            
@@ -40,22 +41,17 @@ const Newsletters = () => {
        </div>
        </div>
      </div>
-     <div className="col-sm-12 col-md-8 col-lg-8 py-3 justify-content-center align-bottom px-2">
-       {/** <img src={Newsletter3} alt="newsletter3" className='w-100 shadow' />
-        */} </div>
-   
         </div>
    
-    <div className="w3-padding-48 w3-margin-top">
-    <div className="row d-flex justify-content-center align-items-center">
-    <div className="graphics-carousel-title text-center text-black">
-    <br />
-           <h3>Newsletter Campaigns</h3>
-           <hr />
-           <br />
-            </div>
-            
-     <div className="col-sm-12 col-md-4 col-lg-4 py-3 justify-content-center align-bottom px-2">
+        <div className="w3-padding-large text-center ">
+    <h1 className='fw-bold text-primary'>
+      <i className='fw-bold'>Newsletters</i></h1> 
+    </div>
+        <div className="container w3-padding-large">      
+       
+        <div className="row d-flex justify-content-center align-items-center">
+<div className="col-sm-6 col-md-3 col-lg-3 w3-padding-small">
+           
      <MDBCarousel showControls className='shadow border-black border-5'>
           <MDBCarouselItem itemId={1}>
             <img src={BusinessStart} className='d-block w-100' alt='...' />
@@ -83,7 +79,7 @@ const Newsletters = () => {
           </MDBCarouselItem>
         </MDBCarousel>
         </div>
-    <div className="col-sm-12 col-md-4 col-lg-4 py-3 justify-content-center align-bottom px-2">
+<div className="col-sm-6 col-md-3 col-lg-3 w3-padding-small">
      <MDBCarousel showControls className='shadow border-black border-5'>
           <MDBCarouselItem itemId={1}>
             <img src={Fitness2} className='d-block w-100' alt='...' />
@@ -97,7 +93,7 @@ const Newsletters = () => {
         
         </MDBCarousel>
         </div>
-       <div className="col-sm-12 col-md-4 col-lg-4 py-1 justify-content-center align-bottom px-2">
+        <div className="col-sm-6 col-md-3 col-lg-3 w3-padding-small">
        <MDBCarousel showControls className='shadow border-black border-5'>
           <MDBCarouselItem itemId={1}>
             <img src={Furniture1} className='d-block w-100' alt='...' />
@@ -109,6 +105,7 @@ const Newsletters = () => {
             <img src={Furniture3} className='d-block w-100' alt='...' />
           </MDBCarouselItem>
         </MDBCarousel>
+        </div>
         </div>
         </div>
         </div>
@@ -124,7 +121,6 @@ const Newsletters = () => {
        */}
         {/*End Business*/}
    </div>
-    </div>  
         
     );
 

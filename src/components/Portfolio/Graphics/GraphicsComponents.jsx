@@ -50,15 +50,15 @@ const GraphicsComponent = () => {
   };
 
   return (
-    <div className='graphics-components  w3-padding-top-32' id="graphics-components">
-      <div className="w3-container w3-container w3-padding-large text-center ">
+    <div className='graphics-components w3-padding-top-32' id="graphics-components">
+      <div className="w3-padding-large text-center ">
     <h1 className='fw-bold text-primary'>
       <i className='fw-bold'>SPORT GRAPHICS & BRANDING</i></h1> 
       <h4> Unified Graphics-Maximize your brand’s visibility with multi-platform marketing graphics, ensuring consistent and captivating visuals across all your marketing channels.</h4>
       </div>
-        <div className="container w3-padding-32">
+        <div className="container large">
       
-      <div className="row">
+        <div className="row d-flex justify-content-center align-items-center">
         {[
           { image: S1},
           { image: S2},
@@ -72,17 +72,17 @@ const GraphicsComponent = () => {
             key={index}
             className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-bottom  w3-padding-large"
           >
-            <div className="card graphics-body justify-content-center align-bottom shadow">
+            <div className="graphics-body justify-content-center align-bottom">
               <div className="graphics-title">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="mb-2  clickable-image  w3-padding-large"
+                  className="clickable-image shadow"
                   style={{
                     width: "100%",
                     height: "auto",
-                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)",
                     cursor: "pointer"
+                    
                   }}
                   onClick={() => handleModalOpen(item.image)}
                 />
@@ -101,85 +101,20 @@ const GraphicsComponent = () => {
         handleModalClose={handleModalClose}
         imageSrc={selectedImage}
       />
-   <div className="container w3-padding-32">
-      <div className="row">
-      <div className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-bottom  w3-padding-large">
-          <Card
-            className="shadow mx-1 w3-padding-large w3-padding-32 rounded-4"
-            variant="outlined"
-            style={{backgroundColor:'#019bb2'}}
-            sx={{ minWidth: 400, '--Card-radius': (theme) => theme.vars.radius.xs }}
-          >
-            
-         <div className="w3-container w3-content text-center w3-padding-16" style={{color:'white'}}>
-          
-          <h2 className="fw-bold  w3-margin-bottom">Cross Promotional Sponsorship- Both brands leverage the other’s audience and resources to increase visibility, drive engagement, and achieve mutual marketing goals. </h2>
 
-           <p style={{fontSize:'13px'}}>flip through images for a better visual.   <i className="fa fa-long-arrow-right w3-margin-left"></i></p>
-         </div>
-          </Card>
-          </div>
-      <div className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-bottom  w3-padding-large">
+
+<div className="w3-container w3-content">
+   <div className="row">
+   <div className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-items-center w3-padding-large">
           <Card
-            className="shadow mx-1 w3-padding-large w3-padding-32 rounded-4"
-            variant="outlined"
-            style={{backgroundColor:'gold'}}
-            sx={{ minWidth: 400, '--Card-radius': (theme) => theme.vars.radius.xs }}
-          >
-            <img src={CCUImages[currentCCUIndex]} className='w-100 ' alt='' loading="lazy" />
-            <CardContent orientation="horizontal" sx={{ alignItems: 'center', mx: -1 }}>
-              <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5, mx: 'auto' }}>
-                {CCUImages.map((_, index) => (
-                  <Box
-                    className="shadow my-4"
-                    key={index}
-                    onClick={() => handleCCUImageClick(index)}
-                    sx={{
-                      width: '10px',
-                      height: '10px',
-                      cursor: 'pointer',
-                      bgcolor: index === currentDukeIndex ? 'primary.solidBg' : 'background.level3',
-                    }}
-                  />
-                ))}
-              </Box>
-            </CardContent>
-          </Card>
-          </div>
-    
-          </div>
-          </div>
-          <div className="container w3-padding-32">
-      <div className="row">
-      <div className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-bottom  w3-padding-large">
-          <Card
-            className="shadow mx-1 w3-padding-large w3-padding-32 rounded-4"
+            className="shadow w3-padding-large rounded"
             variant="outlined"
             style={{backgroundColor:'#00009c'}}
-            sx={{ minWidth: 400, '--Card-radius': (theme) => theme.vars.radius.xs }}
+            sx={{ minWidth: 300, '--Card-radius': (theme) => theme.vars.radius.xs }}
           >
-            
-         <div className="w3-container w3-content text-center w3-padding-16" style={{color:'white'}}>
-          
-          <h2 className="fw-bold  w3-margin-bottom">"Great things are not done by impulse, but by a series of small things brought together."  <span style={{fontSize:'14px'}}> — Vincent Van Gogh</span></h2>
-           <p className=" w3-margin-top"><b>GRAPHIC DETAILS</b>     
-           <span style={{color:'white'}}> Element is clear and concise, visually appealing, with a truly custom aesthetic.</span>
-           Words- mascot, motto, location, #'s used, 
-            Blue jean- used throughout Duke athletics #bluecolar, 
-            Logos- pitchford and Duke 'D'.
-           </p>
-           <p style={{fontSize:'13px'}}>flip through images for a better visual.   <i className="fa fa-long-arrow-right w3-margin-left"></i></p>
-         </div>
-      
-          </Card>
-          </div>
-         <div className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-bottom  w3-padding-large">
-          <Card
-            className="shadow mx-1 w3-padding-large w3-padding-32 rounded-4"
-            variant="outlined"
-            sx={{ minWidth: 400, '--Card-radius': (theme) => theme.vars.radius.xs }}
-          >
-     
+        <div className="w3-container w3-content text-center" style={{color:'white'}}>
+         <h5 className='text-center'>Custom Design Example</h5>
+       </div>
             <img src={dukeImages[currentDukeIndex]} className='w-100' alt='' loading="lazy" />
             <CardContent orientation="horizontal" sx={{ alignItems: 'center', mx: -1 }}>
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5, mx: 'auto' }}>
@@ -197,10 +132,43 @@ const GraphicsComponent = () => {
                   />
                 ))}
               </Box>
-            
             </CardContent>
+    
           </Card>
           </div>
+   
+      <div className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-items-center w3-padding-large">
+          <Card
+            className="shadow w3-padding-large rounded"
+            variant="outlined"
+            style={{backgroundColor:'black'}}
+            sx={{ minWidth: 300, '--Card-radius': (theme) => theme.vars.radius.xs }}
+          >
+               <div className="w3-container w3-content text-center" style={{color:'white'}}>
+         <h5 className='text-center'>Cross Promotional Sponsorship</h5>
+   </div>
+            <img src={CCUImages[currentCCUIndex]} className='w-100 ' alt='' loading="lazy" />
+            <CardContent orientation="horizontal" sx={{ alignItems: 'center', mx: -1 }}>
+              <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5, mx: 'auto' }}>
+                {CCUImages.map((_, index) => (
+                  <Box
+                    className="shadow my-4"
+                    key={index}
+                    onClick={() => handleCCUImageClick(index)}
+                    sx={{
+                      width: '10px',
+                      height: '10px',
+                      cursor: 'pointer',
+                      bgcolor: index === currentCCUIndex ? 'primary.solidBg' : 'background.level3',
+                    }}
+                  />
+                ))}
+              </Box>
+            </CardContent>
+                    
+          </Card>
+          </div>
+    
           </div>
           </div>
           </div>

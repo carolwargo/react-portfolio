@@ -71,17 +71,15 @@ const [currentOpenIndex, setCurrentOpenIndex] = React.useState(0);
 
 
   return (
-    <div className='social bg-danger-subtle w3-padding-top-48' id="social">
-        <div className="w3-container w3-container w3-padding-large text-center ">
+    <div className='social bg-danger-subtle w3-padding-top-32' id="social">
+        <div className="w3-padding-large text-center ">
     <h1 className='fw-bold text-primary'>
       <i className='fw-bold'>SOCIAL MEDIA CAMPAIGN SAMPLES</i></h1> 
       <h4> Enhance your social media presence with our vibrant and impactful graphics, tailored to catch the eye and engage your followers across all platforms.</h4>
       </div>
-        <div className="container w3-padding-48 w3-padding-small">                 
-<img src={YogaSet} alt="yoga" style={{width:'100%'}} className="shadow mt-2"/>
+        <div className="container w3-padding-large">      
+        <img src={YogaSet} alt="yoga" style={{width:'100%'}} className="shadow mt-2"/>
        
- 
-        <div className="container w3-padding-24">
         <div className="row d-flex justify-content-center align-items-center">
 <div className="col-sm-6 col-md-3 col-lg-3 w3-padding-small ">
             <Card
@@ -230,8 +228,6 @@ const [currentOpenIndex, setCurrentOpenIndex] = React.useState(0);
             </div>
        </div>
        </div>
-
-                </div>
                 </div>
 
   );

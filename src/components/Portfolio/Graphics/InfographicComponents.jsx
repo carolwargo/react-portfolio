@@ -58,7 +58,7 @@ function Responsive() {
     ]
   }; 
   return (
-    <div className='infos w3-padding-48 w3-border-pale-red' id="infos">
+    <div className='infos w3-padding-32 w3-border-pale-red' id="infos">
       <style>
         {`
         /* Custom styles for the Slick slider arrows */
@@ -80,7 +80,7 @@ function Responsive() {
 }
   `}
       </style>
-      <div className="w3-container w3-container w3-padding-large text-center ">
+      <div className="w3-padding-large text-center ">
     <h1 className='fw-bold text-primary'>
       <i className='fw-bold'>INFOGRAPHICS</i></h1> 
       <h4> Visual Insights that Illuminate- Dive into our meticulously crafted infographics that transform complex data into compelling visual narratives, making information both engaging and easy to understand.</h4>

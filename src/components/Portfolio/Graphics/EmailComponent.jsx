@@ -107,7 +107,7 @@ const handleFinanceImageClick = (index) => {
 
   return (
     <div className='email-samples bg-primary-subtle w3-padding-48' id="email-samples">
-     <div className="w3-container w3-container w3-padding-large text-center ">
+     <div className="w3-padding-large text-center ">
     <h1 className='fw-bold text-primary'>
       <i className='fw-bold'>EMAIL CAMPAIGN SAMPLES</i></h1> 
       <h4> Unified Graphics-Maximize your brand’s visibility with multi-platform marketing graphics, ensuring consistent and captivating visuals across all your marketing channels.</h4>
