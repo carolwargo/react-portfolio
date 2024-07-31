@@ -376,6 +376,7 @@ Examples include Login or Sign Up forms. How are they different?"
                   patience."
                 </i>
               </p>
+              
               <Link
                   to="/cards#cards"
                   className="button text-white"

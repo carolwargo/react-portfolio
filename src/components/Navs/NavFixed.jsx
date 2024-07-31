@@ -108,7 +108,7 @@ function BasicExample() {
                 </NavDropdown.Item>
                 <NavDropdown.Item 
                   as={Link}
-                  to="/page-samples#page-samples"
+                  to="/samples#samples"
                   style={{ fontSize: "14px" }}
                 >
                   Landing Pages
