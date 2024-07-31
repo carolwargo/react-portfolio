@@ -70,9 +70,9 @@ const GraphicsComponent = () => {
         ].map((item, index) => (
           <div
             key={index}
-            className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-bottom  w3-padding-large"
+            className="col-sm-12 col-md-6 col-lg-6 mb-2 d-flex justify-content-center align-items-center "
           >
-            <div className="graphics-body justify-content-center align-bottom">
+            <div className="graphics-body justify-content-center align-items-center">
               <div className="graphics-title">
                 <img
                   src={item.image}
