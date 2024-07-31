@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.61fb6775.css",
-    "main.js": "/react-portfolio/static/js/main.c4cabcc5.js",
+    "main.js": "/react-portfolio/static/js/main.213d0af5.js",
     "static/media/RealEstate.png": "/react-portfolio/static/media/RealEstate.ba0b8a8bd8b9df38e276.png",
     "static/media/Fruits2.png": "/react-portfolio/static/media/Fruits2.1176c228ac73a6dbc93b.png",
     "static/media/Album.png": "/react-portfolio/static/media/Album.624f5f271608ee54bae6.png",
@@ -34,6 +34,7 @@
     "static/media/Center.png": "/react-portfolio/static/media/Center.472c18e0a951f1d12c7f.png",
     "static/media/Waterfall.png": "/react-portfolio/static/media/Waterfall.06f77bc70053675fa4b4.png",
     "static/media/YogaBlog.png": "/react-portfolio/static/media/YogaBlog.d4f9f4977770385e69fb.png",
+    "static/media/CCU1.png": "/react-portfolio/static/media/CCU1.1c956052aed149e44386.png",
     "static/media/HomeBig.png": "/react-portfolio/static/media/HomeBig.17c40e984c464bf433b8.png",
     "static/media/Canceled.png": "/react-portfolio/static/media/Canceled.369172013c6d8e28ce8c.png",
     "static/media/YellowFlowers.png": "/react-portfolio/static/media/YellowFlowers.a16b1d292f2015a4c6cf.png",
@@ -49,6 +50,7 @@
     "static/media/Catching.png": "/react-portfolio/static/media/Catching.60acc9b2f05add627a04.png",
     "static/media/S1.png": "/react-portfolio/static/media/S1.bb02006e9a999f7f6523.png",
     "static/media/Agency1.png": "/react-portfolio/static/media/Agency1.54f4249aebd205f2cbf0.png",
+    "static/media/CCU2.png": "/react-portfolio/static/media/CCU2.4d3caaa0a1fee1054bac.png",
     "static/media/Food4.png": "/react-portfolio/static/media/Food4.a00e6a5c1177484db294.png",
     "static/media/Travel3.png": "/react-portfolio/static/media/Travel3.0148f73fae4226cfe50f.png",
     "static/media/Info2.png": "/react-portfolio/static/media/Info2.f12c53bd11018040d4c3.png",
@@ -128,10 +130,10 @@
     "static/media/slick.woff": "/react-portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/react-portfolio/index.html",
     "main.61fb6775.css.map": "/react-portfolio/static/css/main.61fb6775.css.map",
-    "main.c4cabcc5.js.map": "/react-portfolio/static/js/main.c4cabcc5.js.map"
+    "main.213d0af5.js.map": "/react-portfolio/static/js/main.213d0af5.js.map"
   },
   "entrypoints": [
     "static/css/main.61fb6775.css",
-    "static/js/main.c4cabcc5.js"
+    "static/js/main.213d0af5.js"
   ]
 }
