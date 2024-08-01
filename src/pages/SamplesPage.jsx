@@ -307,7 +307,7 @@ function PageSamples() {
                     </div>
 
               {/**Start Utility app button */}
-        <div className="w3-container w3-padding-16">
+        <div className="w3-container w3-padding-32">
         <div className="row d-flex justify-content-center align-items-center">
           <div className="flex-column col-sm-12 col-md-12 col-lg-12 w3-white text-center justify-content-center align-items-center">
             <h2 className="w3-text-black" id="server">

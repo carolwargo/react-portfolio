@@ -6,11 +6,14 @@ import GirlCamera from '../assets/images/GirlCamera.png';
 import Left from '../assets/images/Cards/Left.png';
 import Right from '../assets/images/Cards/Right.png';
 import Center   from '../assets/images/Cards/Center.png';
+import { GiTrafficCone } from "react-icons/gi";
 import { TbArrowBigLeftLines } from "react-icons/tb";
 import { TbArrowBigRightLines } from "react-icons/tb";
 import { TbArrowBigUpLines } from "react-icons/tb";
 import { TbArrowBigDownLines } from "react-icons/tb";
 import CardsMain2 from '../assets/images/Cards/CardsMain2.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Cards = () => {
 
@@ -232,7 +235,7 @@ const Cards = () => {
            
             <h2 className="w3-text-black">
 
-                <b className="fw-bold text-black">Landing Pages (coming soon) & Sample Sites</b>
+                <b className="fw-bold text-black">Landing Pages & Sample Sites</b>
                
               </h2>
               <hr className="w3-opacity" />
@@ -242,7 +245,7 @@ const Cards = () => {
                 specific features and functionalities to effectively achieve its
                 objectives and meet the needs of its target audience. </h4>
               <br />
-              <p>
+              <p> <GiTrafficCone style={{fontSize:'3rem'}}/>
                 {" "}
                 <i>
                   <b> NOTE:</b> "Sample pages are under construction. View with
