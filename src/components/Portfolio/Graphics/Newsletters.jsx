@@ -22,11 +22,11 @@ const Newsletters = () => {
 
       return (
     
-        <div className='email-samples bg-primary-subtle w3-padding-top-32' id="email-samples">
-        
+        <div className='email-samples bg-primary-subtle w3-padding-24' id="email-samples">
+        <div className="w3-padding-large text-center ">
         <h1 className='fw-bold text-center'>
           <i className='fw-bold'>EMAIL CAMPAIGN SAMPLES</i></h1> 
-            <div className="container w3-padding-48">
+            <div className="container  w3-padding-48">
      
               <div className="row d-flex justify-content-center align-items-center">
               <div className="col-sm-12 col-md-4 col-lg-4 justify-content-center align-items-center ">
@@ -121,7 +121,7 @@ const Newsletters = () => {
        */}
         {/*End Business*/}
    </div>
-        
+        </div>
     );
 
 }

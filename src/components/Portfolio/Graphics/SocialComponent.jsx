@@ -71,7 +71,7 @@ const [currentOpenIndex, setCurrentOpenIndex] = React.useState(0);
 
 
   return (
-    <div className='social bg-danger-subtle w3-padding-top-32' id="social">
+    <div className='social bg-danger-subtle w3-padding-24' id="social">
         <div className="w3-padding-large text-center ">
     <h1 className='fw-bold text-primary'>
       <i className='fw-bold'>SOCIAL MEDIA CAMPAIGN SAMPLES</i></h1> 

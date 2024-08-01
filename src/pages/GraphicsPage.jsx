@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { HiArrowLongRight } from "react-icons/hi2";
-import GraphicComponents from "../components/Portfolio/Graphics/GraphicsComponents";
+import SportsComponent from "../components/Portfolio/Graphics/SportComponent";
 import Newsletter3 from "../assets/images/Newsletters/DIAGRAMS/Newsletter3.png";
 import EmailComponent from "../components/Portfolio/Graphics/EmailComponent";
 import SocialComponent from "../components/Portfolio/Graphics/SocialComponent";
@@ -44,7 +44,7 @@ const Graphics = () => {
         <h4 className="w3-margin-top">Key elements that engage readers, convey important information, and promote brand identity.</h4>
         
       <p className="w3-margin-top w3-margin-bottom" style={{fontSize:'14px'}}>These elements include a captivating subject line, a clear and concise header, engaging content with well-structured sections, visually appealing images, and compelling calls to action.</p>
-      
+      <br />
        <div>
         <Link to= '#email-samples' className="w3-margin-top">
        <p>view campaign samples < HiArrowLongRight/></p>
@@ -69,14 +69,15 @@ const Graphics = () => {
   <SocialComponent/>
   </div>
   <div className="w3-container w3-container" id="sport-samples">
-  <GraphicComponents/>
+  <SportsComponent/>
   </div>
 
 <div className="w3-container w3-container" id="info-samples bg-success-subtle ">
   <InfographicsComponents/>
   </div>
      
-      <div className="w3-container w3-container w3-padding-large w3-padding-48 text-center ">
+      <div className="w3-container w3-container w3-padding-large w3-padding-64 text-center ">
+              
               <h3 className="text-black">Much more to come... Stay tuned! Feedback is welcome and encouraged. Feel free to contact me to share your thoughts.
         </h3><br />
               <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 

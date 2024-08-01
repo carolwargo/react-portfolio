@@ -58,7 +58,7 @@ function Responsive() {
     ]
   }; 
   return (
-    <div className='infos w3-padding-32 w3-border-pale-red' id="infos">
+    <div className='infos w3-padding-24 w3-border-pale-red' id="infos">
       <style>
         {`
         /* Custom styles for the Slick slider arrows */
