@@ -35,11 +35,11 @@ const ContactPage = () => {
   return (
     <motion.div
     ref={ref}
-    initial={{ y: -20, opacity: 0.5}}
-    animate={inView ? { y: 0, opacity: 1 } : {}}
+    initial={{ y: -20, opacity: 0.5 }}
+    animate={inView ? { y: 0, opacity: 1} : {}}
     exit={{ y: 20, opacity: 0.5 }}
-    transition={{ duration: 0.8 }}    
-    >
+    transition={{ duration: 0.8 }}
+  >
       <div
         className="contact"
         id="contact"

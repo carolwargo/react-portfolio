@@ -62,12 +62,13 @@ const BlogPage = () => {
     threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
   });
     return (
+  
       <motion.div
-    ref={ref}
-    initial={{ y: -20, opacity: 0.5}}
-    animate={inView ? { y: 0, opacity: 1 } : {}}
-    exit={{ y: 20, opacity: 0.5 }}
-    transition={{ duration: 0.8 }}    
+      ref={ref}
+      initial={{ y: -20, opacity: 0.5 }}
+      animate={inView ? { y: 0, opacity: 1} : {}}
+      exit={{ y: 20, opacity: 0.5 }}
+      transition={{ duration: 0.8 }}
     >
         <div className="blog" id="blog">
             <Alert variant="light" className="container-fluid shadow w3-margin-top">

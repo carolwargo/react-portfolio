@@ -71,8 +71,7 @@ export default function ColumnGroupingTable() {
   };
 
   return (
-    <Paper sx={{ width: '100%' }} className='shadow border border-black my-4'>
-          
+    <Paper sx={{ width: '100%' }} className='shadow border border-black my-4'>     
           <div className="w3-padding-large w3-padding-16">
         <h1 className="text-center w3-margin-bottom">Sticky Header Data Table</h1>
         <p className="text-center">

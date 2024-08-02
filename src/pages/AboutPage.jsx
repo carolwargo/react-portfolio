@@ -26,15 +26,15 @@ export default function AboutPage() {
     threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
   });
   return (
-    <motion.div
-    ref={ref}
-    initial={{ y: -20, opacity: 0.5}}
-    animate={inView ? { y: 0, opacity: 1 } : {}}
-    exit={{ y: 20, opacity: 0.5 }}
-    transition={{ duration: 0.8 }}    
-    >
-     
+
     <div className="about" id="about">
+      <motion.div
+        ref={ref}
+        initial={{ y: -20, opacity: 0.5 }}
+        animate={inView ? { y: 0, opacity: 1} : {}}
+        exit={{ y: 20, opacity: 0.5 }}
+        transition={{ duration: 0.8 }}
+      >
     <div className="w3-content w3-container w3-padding-top-32">
         <div className="w3-content w3-container w3-padding-32">
           <div className="row d-flex justify-content-center align-items-center">
@@ -60,7 +60,7 @@ export default function AboutPage() {
         {/* Technical Proficiencies */}
         <div className="row">
           
-        <div className="w3-content w3-container w3-padding-32">
+        <div className="w3-content w3-container w3-padding-32 mb-3">
           <p>TECHNOLOGICAL PROFICIENCIES</p>
           <h2 className=""><strong>WHAT I DO BEST.</strong></h2>
           <br />
@@ -136,7 +136,9 @@ className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#F
           </div>
           <div>
               </div>
-              <div className="w3-container w3-content text-center w3-padding-48 w3-margin-bottom w3-padding-large">
+              </motion.div>
+              <hr />
+              <div className="w3-container w3-content text-center w3-padding-32 w3-margin-bottom w3-padding-large">
               <h2 className="text-black">View my digital resume to learn more about my professional experience and qualifications.        
         </h2><br />
            
@@ -148,16 +150,16 @@ className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#F
               style={{backgroundColor:'#FF385C'}}> VIEW MY RESUME</button>
               
                 </Link>
-              </div> 
-             
-          <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
+        <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">
-              <Link to="#about" style={{color:'#FF385C'}}>Back to top</Link>
+              <a href="#about" style={{ color: "#FF385C" }}>
+                Back to top
+              </a>
             </p>
           </div>
         </footer>
+      </div>
     </div>
-    </motion.div>
   );
 }

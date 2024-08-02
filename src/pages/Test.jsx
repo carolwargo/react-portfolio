@@ -1,5 +1,6 @@
 import React, { useState }from 'react';
 import {motion} from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import { Link } from "react-router-dom";
 import { Accordion } from "react-bootstrap";
 import WebComponentsTrans from '../assets/images/WebComponentsTrans.png';
@@ -8,6 +9,11 @@ import SideNavBar from '../components/Navs/SideNavbar.jsx';
 
 const Server = () => {
 
+    const { ref, inView } = useInView({
+        triggerOnce: false, // Animation triggers only once
+        threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
+        });
+        
       // State to manage accordion expansion
       const [expandedIndex, setExpandedIndex] = useState(null);
     
@@ -53,18 +59,18 @@ const Server = () => {
     
       return (
         <motion.div
-          initial={{ y: -20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: 20, opacity: 0 }}
-          className="portfolio"
-          id="portfolio"
-        >
+        ref={ref}
+        initial={{ y: -20, opacity: 0.5 }}
+        animate={inView ? { y: 0, opacity: 1} : {}}
+        exit={{ y: 20, opacity: 0.5 }}
+        transition={{ duration: 0.8 }}
+      >
           <SideNavBar/>
  
          
           
                {/**Start INTRO Web Components */}
-            <div className="container mb-4 w3-padding-top-64" id="server">
+            <div className="container mb-4 w3-padding-top-64">
                 
             <div className="row d-flex justify-content-center align-items-center w3-padding-large">
               <div className="my-1 col-sm-12 col-md-12 col-lg-12 flex-column">

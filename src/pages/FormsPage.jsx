@@ -64,18 +64,17 @@ function Forms() {
     threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
   });
   return (
-    <div>
-    <motion.div
-    ref={ref}
-    initial={{ y: -20, opacity: 0.5}}
-    animate={inView ? { y: 0, opacity: 1 } : {}}
-    exit={{ y: 20, opacity: 0.5 }}
-    transition={{ duration: 0.8 }}    
-    className="forms"
-    id='forms'
+    <div className="forms" id="forms">
+      <motion.div
+        ref={ref}
+        initial={{ y: -20, opacity: 0.5 }}
+        animate={inView ? { y: 0, opacity: 1} : {}}
+        exit={{ y: 20, opacity: 0.5 }}
+        transition={{ duration: 0.8 }}
     style={{fontFamily:'proxima-nova'}}
     >
-    <div className='forms w3-padding-top-48' id='forms'>
+      
+    <div className='w3-padding-top-48'>
       {/* Side Navigation */}
       <nav className={`w3-sidebar w3-bar-block w3-card w3-animate-top w3-center w3-padding-64 ${isOpen ? 'w3-show' : 'w3-hide'}`} style={{ zIndex: '999', width: '100%', position: 'fixed', top: '0' }}>
         <p className="w3-xxxlarge ">Web Forms</p>
@@ -322,7 +321,7 @@ Examples include Login or Sign Up forms. How are they different?"
 </div>
 
 </motion.div>
-        {/**Start Card Samples */}
+        {/**Start FooterS*/}
         <div className="w3-container w3-padding-16 mt-4">
         <div className="row d-flex w3-padding-large justify-content-center align-items-center">
       
@@ -366,8 +365,6 @@ Examples include Login or Sign Up forms. How are they different?"
             </div>
           </div>
         </div>
-        </div>
-        {/**End Page Samples */}
 
   <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
@@ -376,7 +373,8 @@ Examples include Login or Sign Up forms. How are they different?"
             </p>
           </div>
         </footer>
- 
+        </div>
+   {/**Start FooterS*/}
   
     </div>
   );

@@ -22,11 +22,11 @@ export default function ResumePage() {
     threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
   });
   return (
-    <div className="resume " id="resume">
+    <div className="resume" id="resume">
       <motion.div
         ref={ref}
         initial={{ y: -20, opacity: 0.5 }}
-        animate={inView ? { y: 0, opacity: 1 } : {}}
+        animate={inView ? { y: 0, opacity: 1} : {}}
         exit={{ y: 20, opacity: 0.5 }}
         transition={{ duration: 0.8 }}
       >
@@ -775,7 +775,7 @@ End Practices*/}
 
               {/*Start Volunteer*/}
               <div className="w3-light-gray w3-margin-top">
-                <div className="w3-container w3-padding-24">
+                <div className="w3-container w3-padding-large w3-padding-32">
                   <div className="row d-flex justify-content-center align-items-end ">
                     <div className="w3-col m12 flex-column">
                       <div className="w3-container w3-content text-center">
@@ -873,7 +873,7 @@ End Practices*/}
           </div>
         
       </motion.div>
-      <div className="w3-container w3-content text-center w3-padding-48 w3-margin-top w3-margin-bottom w3-padding-small">
+      <div className="w3-container w3-content text-center w3-padding-48 w3-margin-bottom w3-padding-small">
         <h2 className="text-black">VIEW MY WORK</h2>
         <hr className="w3-opacity" />
         <h4 className="text-black">
@@ -893,8 +893,6 @@ End Practices*/}
             View My Work
           </Link>
         </button>
-      </div>
-      <div className="container w3-margin-top">
         <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">

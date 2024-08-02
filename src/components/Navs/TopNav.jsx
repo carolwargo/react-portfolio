@@ -58,12 +58,10 @@ function BasicExample() {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Link to="/about#about" className="nav-link" onClick={handleNavLinkClick}>ABOUT</Link>
-              <Link to="/resume#resume" className="nav-link" onClick={handleNavLinkClick}>RESUME</Link>
-             <Link to="/page-samples#page-samples" className="nav-link" onClick={handleNavLinkClick}>SAMPLES</Link>
-             <Link to="/page-samples#page-samples" className="nav-link" onClick={handleNavLinkClick}>SAMPLES</Link>
-         <NavDropdown title="MY WORK" id="basic-nav-dropdown"
-           
+              <Link to="/about" className="nav-link" onClick={handleNavLinkClick}>ABOUT</Link>
+              <Link to="/resume" className="nav-link" onClick={handleNavLinkClick}>RESUME</Link>
+             <Link to="/samples" className="nav-link" onClick={handleNavLinkClick}>SAMPLES</Link>
+       <NavDropdown title="MY WORK" id="basic-nav-dropdown"
              onMouseEnter={handleMouseEnter}
              onMouseLeave={handleMouseLeave}
              show={isHovered} 
