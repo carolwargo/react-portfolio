@@ -90,7 +90,7 @@ function BasicExample() {
 <NavDropdown.Divider />
 
 <NavDropdown.Item>
-  <Link to="/graphics#graphics" className="text-black">COMING SOON! <br />Graphics Page</Link>
+  <Link to="/graphics" className="text-black">COMING SOON! <br />Graphics Page</Link>
 </NavDropdown.Item>
 </div>
             

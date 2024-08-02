@@ -50,7 +50,12 @@ const BlogPage = () => {
     // Reset form
     setEmail("");
   };
-
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
 
   const { ref, inView } = useInView({
     triggerOnce: false, // Animation triggers only once
@@ -315,7 +320,11 @@ const BlogPage = () => {
     </ul>
   </Alert>
   <div className="text-center w3-padding-bottom">
-  <Link to="/samples">
+  <Link 
+  to="/samples"
+  onClick={scrollToTop}
+  >
+    
             <p><i 
           className="fa fa-arrow-left  w3-hover-opacity" ></i>
            <span className=""><b> Return </b></span>

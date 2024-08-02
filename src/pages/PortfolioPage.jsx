@@ -65,18 +65,16 @@ function Portfolio() {
   ];
 
   return (
-    <motion.div
+      <div  className="portfolio" id="portfolio">
+      <motion.div
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       exit={{ y: 20, opacity: 0 }}
-      className="portfolio"
-      id="portfolio"
     >
-      <div>
            {/**Start INTRO Web Components */}
-           <div className="w3-container  text-center w3-padding-large w3-padding-top-48 text-black mt-2" id="web-components">
-          <div className="row d-flex justify-content-center align-items-center w3-padding-32 w3-padding-large">
-          <div className="col-sm-12 col-md-12 col-lg-12 flex-column mb-3">
+           <div className="w3-container  text-center w3-padding-large w3-padding-32 w3-margin-top text-black" id="web-components">
+          <div className="row d-flex justify-content-center align-items-center w3-padding-large">
+          <div className="col-sm-12 col-md-12 col-lg-12 flex-column mb-2">
           <div className="container">
           <h1>My Portfolio</h1>
           <h4 className="fw-regular">'My Portfolio consists of a wide range of sample elements, images, apps and more. 
@@ -88,13 +86,13 @@ Follow the path to witness my level of understanding in both function and design
 
 
 
-        <div className="container w3-padding-32 mb-4" id="web-components">
+        <div className="container w3-padding-32 mb-2" id="web-components">
           <div className="row d-flex justify-content-center align-items-center ">
-          <div className="col-sm-12 col-md-6 col-lg-6 flex-column w3-padding-32 w3-padding-large px-5">
+          <div className="col-sm-12 col-md-6 col-lg-6 flex-column w3-padding-large">
                        <img src={WebComponentsTrans} alt="web-components" style={{width:'100%'}} ></img>
            
           </div>
-            <div className="col-sm-12 col-md-6 col-lg-6 flex-column w3-padding-large w3-padding-32 shadow border w3-round-large ">
+            <div className="col-sm-12 col-md-6 col-lg-6 flex-column w3-padding-large shadow border w3-round-large ">
             <h3>Web Component Menu</h3>
             <style>
                 {`
@@ -450,8 +448,8 @@ Follow the path to witness my level of understanding in both function and design
 
         {/**Start Buttons section*/}
         <div className="w3-padding-large" id="buttons">
-        <div className="w3-container w3-content text-center w3-padding-top-48 text-black mt-4">
-          <h1 className="text-center w3-margin-bottom">Button Components</h1>
+        <div className="w3-container w3-content text-center w3-padding-32 text-black">
+          <h1 className="text-center">Button Components</h1>
           <hr />
           
           <h4 className="text-center fw-lighter mb-4">
@@ -468,7 +466,7 @@ Follow the path to witness my level of understanding in both function and design
        </div>
        </div>
 
-      <div className="w3-container w3-content text-center  text-black mt-4">
+      <div className="w3-container w3-content text-center">
      {/**Start buttons row*/}
          <div className="row d-flex justify-content-center align-items-center ">
            {/**Start Intro to buttons col*/}
@@ -477,12 +475,7 @@ Follow the path to witness my level of understanding in both function and design
           style={{ backgroundColor: "white", color:'#FF385C', height:'20rem' }}>
                 <div className="text-center" >
               <h3><b>ARE BUTTONS IMPORTANT?</b></h3>
-              <p style={{fontSize:'18px'}}>"Explore these statistics, which suggest that buttons are not only integral to web development but also play a pivotal role in driving business growth."</p>
-            {/** 
-            <p>     Buttons can serve as notifiers such as: close "this", or
-                    badges notifications to look at "that".</p>
-                    <p>Buttons vary in size, color, outline, solid, shape, icon elements and shadowing to give the appearance the element is floating.</p>
-*/}
+              <p style={{fontSize:'18px'}}>'Explore these statistics, which suggest that buttons are not only integral to web development but also play a pivotal role in driving business growth.'</p>
                     </div>
             </div>
             </div>
@@ -704,7 +697,7 @@ A study by Forrester revealed that improving website navigation can lead to a 10
       </div>
       <div className="col-sm-12 col-md-5 col-lg-5 d-flex flex-column justify-content-center align-items-center">
         <div className="w3-padding-small text-center ">
-          <h2 className="w3-margin-bottom">Image List with Overlay</h2>
+          <h2 className="">Image List with Overlay</h2>
           <hr />
           <p>Each image has accompanying text, with title and artist handle. 
            Interactions can be provided by clicking the info icon to display a description or allow actions like zooming, linking to other pages, or triggering 
@@ -737,28 +730,13 @@ A study by Forrester revealed that improving website navigation can lead to a 10
         {/**End responsive tables*/}
         {/**End Tables*/}
 
-
-        {/**Start AppBar component
-<div className="w3-container w3-content w3-padding-top-32 mt-3" id="tables" >
-          <div className="mb-5"> 
-        <h1 className="text-center text-black w3-margin-bottom">Tables</h1>
-        <p className="text-center">
-                  Tables are structured grids used to present data in rows and
-                  columns. They're commonly used for displaying tabular data,
-                  such as product listings, pricing tables, or data summaries.
-                </p>  
-                </div>
-                <AppBar/>
-                </div>
-End AppBar component*/}
-
-
+</motion.div>
         {/**Start forms */}
         <div className="w3-container w3-padding-32">
         <div className="row d-flex justify-content-center align-items-center">   
           <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
             <div className="container w3-white text-center w3-padding-large w3-padding-small">
-            <h2 className="w3-text-black w3-margin-top">
+            <h2 className="w3-text-black">
                 <b className="fw-bold text-black">FORM COMPONENTS</b>          
               </h2>
               <hr className="w3-opacity" />
@@ -794,7 +772,7 @@ End AppBar component*/}
         </div>
         {/**End Samples */}
       
-        <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
+        <footer className="text-muted position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">
               <a href="#portfolio" style={{ color: "#FF385C" }}>
@@ -804,7 +782,6 @@ End AppBar component*/}
           </div>
         </footer>
       </div>
-    </motion.div>
   );
 }
 

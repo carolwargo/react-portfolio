@@ -64,6 +64,7 @@ function Forms() {
     threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
   });
   return (
+    <div>
     <motion.div
     ref={ref}
     initial={{ y: -20, opacity: 0.5}}
@@ -320,34 +321,7 @@ Examples include Login or Sign Up forms. How are they different?"
 
 </div>
 
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
+</motion.div>
         {/**Start Card Samples */}
         <div className="w3-container w3-padding-16 mt-4">
         <div className="row d-flex w3-padding-large justify-content-center align-items-center">
@@ -395,8 +369,6 @@ Examples include Login or Sign Up forms. How are they different?"
         </div>
         {/**End Page Samples */}
 
-
-
   <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">
@@ -404,9 +376,9 @@ Examples include Login or Sign Up forms. How are they different?"
             </p>
           </div>
         </footer>
-    <br />
-<br />
-    </motion.div>
+ 
+  
+    </div>
   );
 }
 

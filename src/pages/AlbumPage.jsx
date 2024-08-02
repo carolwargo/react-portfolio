@@ -24,7 +24,13 @@ function AlbumExample() {
     YellowFlowers,
   ];
 
- 
+ const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   const { ref, inView } = useInView({
     triggerOnce: false, // Animation triggers only once
     threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
@@ -294,6 +300,7 @@ function AlbumExample() {
           </div>
           <div className="text-center w3-padding-bottom">
           <Link to="/samples">
+          onClick={scrollToTop}
             <p><i 
           className="fa fa-arrow-left  w3-hover-opacity" ></i>
            <span className=""><b> Return </b></span>

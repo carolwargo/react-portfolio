@@ -28,25 +28,25 @@ const Cards = () => {
     threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
   });
   return (
+    <div className='cards' 
+    id='cards'>
     <motion.div
     ref={ref}
     initial={{ y: -20, opacity: 0.5}}
     animate={inView ? { y: 0, opacity: 1 } : {}}
     exit={{ y: 20, opacity: 0.5 }}
     transition={{ duration: 0.8 }}  
-    className='cards' 
-    id='cards'
     >
    
                {/**Start INTRO Web Components */}
-            <div className="container mb-4 w3-padding-32" id="cards">              
-            <div className="row d-flex justify-content-center align-items-center w3-padding-large">
-            <div className="my-1 col-sm-12 col-md-5 col-lg-5 flex-column mb-4">
+            <div className="container mb-2 w3-padding-top-64" id="cards">              
+            <div className="row d-flex justify-content-center align-items-center w3-padding-large w3-padding-32">
+            <div className="col-sm-12 col-md-5 col-lg-5 flex-column">
               <img src={CardsMain2} alt="cards-main" style={{width:'100%'}} 
               className='w3-opacity w3-hover-opacity-off shadow w3-round-xlarge'/>
               <p className='text-center text-secondary mt-2' style={{fontSize:'12px'}}><i>'Image styling includes light shadowing, initial state of decreased opacity that renders max opacity when hovered.'</i></p>
               </div>
-              <div className="my-1 col-sm-12 col-md-7 col-lg-7 flex-column mb-4">
+              <div className="col-sm-12 col-md-7 col-lg-7 flex-column">
               <h1 className='text-center w3-text-pink'>CARDS & IMAGES</h1>
               <h4 className='text-center'>Integrate stunning aesthetics without sacrificing functionality to enhance the intuitive experience of your website with cards and images.</h4>
               <br  />
@@ -118,7 +118,7 @@ const Cards = () => {
   </div>
 </div>
 
-<div className='container w3-padding-top-64 text-center mb-2'>
+<div className='container w3-padding-top-48 text-center'>
   <h2 className='text-center w3-text-pink'><b>THINK OF THE POSSIBILITIES!</b></h2>
   <h3>Responsive image styling examples that enhance visual appeal without complicating or compromising function.</h3>
   </  div>
@@ -168,7 +168,7 @@ const Cards = () => {
 
 
 <div className="row d-flex justify-content-center align-items-center w3-padding-large">
-  <div className='container  text-center w3-padding-48 mt-3'>  
+  <div className='container  text-center w3-padding-32'>  
   <h2 className='text-center w3-text-pink mb-3'><b>CONSIDERATION FOR ALL USERS!</b></h2>
   <h4>Responsive and accessible design should always take 
                   precedence. Images and cards are styled to maintain functionality and 
@@ -225,9 +225,9 @@ const Cards = () => {
             </div>
 
 
-
+            </motion.div>
         {/**Start Page Samples */}
-        <div className="w3-container w3-padding-16 mt-4">
+        <div className="w3-container w3-padding-24">
         <div className="row d-flex w3-padding-large justify-content-center align-items-center">
       
           <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
@@ -259,7 +259,7 @@ const Cards = () => {
                   onClick={scrollToTop}
                 >
               <button
-                className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom"
+                className="w3-button w3-text-light-grey w3-margin-right w3-round-xxlarge w3-margin-bottom"
                 style={{ backgroundColor: "#FF385C" }}
               >
                  View Samples
@@ -272,7 +272,7 @@ const Cards = () => {
         {/**End Page Samples */}
 
 
-          <footer className="text-muted py-5 position-fixed bottom-0 start-0 w-100">
+          <footer className="text-muted position-fixed bottom-0 start-0 w-100">
           <div className="container">
             <p className="float-end mb-1">
               <a href="#cards" style={{color:'#FF385C'}}>Back to top</a>
@@ -281,7 +281,8 @@ const Cards = () => {
         </footer>
 
  
-    </motion.div>
+  
+    </div> 
 
     );
     }

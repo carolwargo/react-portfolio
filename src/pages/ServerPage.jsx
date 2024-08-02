@@ -25,14 +25,13 @@ const Server = () => {
     threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
   });
   return (
+    <div className="server" id="server">
     <motion.div
     ref={ref}
     initial={{ y: -20, opacity: 0.5}}
     animate={inView ? { y: 0, opacity: 1 } : {}}
     exit={{ y: 20, opacity: 0.5 }}
     transition={{ duration: 0.8 }}    
-          className="server"
-          id="server"
         >
 <style>
   {`
@@ -124,7 +123,6 @@ const Server = () => {
                 {/*2. end weather app*/}
        </div>
        <br />
-        <br />
         <div className="w3-container w3-padding-32">
         <div className="row d-flex justify-content-center align-items-center w3-padding-large">
               <div className="col-sm-12 col-md-12 col-lg-12 flex-column my-1">
@@ -462,8 +460,11 @@ const Server = () => {
                 <br />
               </div>
                 </div>
-              {/**Start Graphics LinkSamples */}
-        <div className="w3-container w3-padding-48 w3-margin-top">
+</div>
+</div>
+</motion.div>
+             {/**Start Graphics LinkSamples */}
+             <div className="w3-container w3-padding-48 w3-margin-top">
         <div className="row d-flex justify-content-center align-items-center">
       
           <div className="flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center align-items-center">
@@ -514,9 +515,6 @@ const Server = () => {
           </div>
         </footer>
 </div>
-</div>
-</motion.div>
-
     );
     }
 

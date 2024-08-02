@@ -35,9 +35,9 @@ export default function AboutPage() {
     >
      
     <div className="about" id="about">
-    <div className="w3-content w3-container w3-padding-64 w3-margin-top">
-        <div className="w3-content w3-container ">
-          <div className="row d-flex justify-content-center align-items-center  w3-margin-top">
+    <div className="w3-content w3-container w3-padding-top-32">
+        <div className="w3-content w3-container w3-padding-32">
+          <div className="row d-flex justify-content-center align-items-center">
             <div className="col-lg-6 ">
               <h1 className=" fw-light"><b>ABOUT ME.</b></h1>
               <h5 className=" fw-light">"I'm Carol Wargo, and welcome to my corner of the internet!"</h5>
@@ -54,13 +54,13 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-<br />
+
 <hr />
-<br />
+
         {/* Technical Proficiencies */}
         <div className="row">
           
-        <div className="w3-content w3-container ">
+        <div className="w3-content w3-container w3-padding-32">
           <p>TECHNOLOGICAL PROFICIENCIES</p>
           <h2 className=""><strong>WHAT I DO BEST.</strong></h2>
           <br />
@@ -94,10 +94,7 @@ export default function AboutPage() {
               {/**Start skills 
  
   */}
-  <br />
- <br />
 </div>
-<br />
 </div>
 {/**End technical proficiencies */}
 
@@ -126,7 +123,7 @@ className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#F
       
 
         {/* Location */}
-        <div className="w3-content w3-container w3-padding-64 w3-margin-top">
+        <div className="w3-content w3-container w3-padding-32 ">
           <div className="row justify-content-center align-items-center">
             <div className="col-lg-4">
               <h1  className='text-center'>WHERE I'M LOCATED</h1>

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -48,12 +47,7 @@ function BasicExample() {
   }, []);
 
   return (
-    <motion.div
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      exit={{ y: 20, opacity: 0 }}
-      className="home"
-    >
+
       <Navbar
         expand="lg"
         className="shadow-sm bg-body-tertiary fixed-top"
@@ -158,7 +152,7 @@ function BasicExample() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </motion.div>
+  
   );
 }
 

@@ -54,11 +54,9 @@ function HomePage() {
                 </a>
               </button>
               <br />
-              <br />
-              <br />
                  
               <div className="text-center w3-padding-16 w3-padding-large" style={{color:'#FF385C'}}>
-              <p>NOTICE: I am adding to, and reconfiguring <b><i>My Work</i></b> in a big way... Lots of new stuff to come. Thanks in advance for your patience. </p>
+              <p>NOTICE: I am adding to, and reconfiguring <b><i>'My Work'</i></b> in a big way... Lots of new stuff to come. Thanks in advance for your patience. </p>
               <br />
               <h4 className="text-black">Click to learn more about me professionally.           
         </h4>
