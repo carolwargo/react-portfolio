@@ -14,16 +14,19 @@ import SamplesPage from "./pages/SamplesPage.jsx";
 import ServerPage from "./pages/ServerPage.jsx";
 import BlogPage from "./pages/BlogPage.jsx";
 import ScrollSpy from "./pages/ScrollSpy.jsx";
+import IndexPage from "./pages/IndexPage.jsx";
 
 /**Tests */
 import Test from "./pages/Test.jsx";
 
 /**Components */
-import Footer from "./components/Footer.jsx";
 import NavFixed from "./components/Navs/NavFixed.jsx";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
 /**Layouts */
 import GraphicsLayout from './components/Layouts/GraphicsLayout'; 
+import IndexLayout from './components/Index/IndexLayout';
+import Layout from './components/Layouts/Layout';
+
 /**App Style */
 import "./App.css";
 
@@ -35,6 +38,7 @@ function App() {
         <ErrorBoundary>
           <NavFixed />
           <Routes>
+          <Route element={<Layout />} >
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
@@ -48,15 +52,20 @@ function App() {
             <Route path="/cards" element={<CardsPage/>} />
             <Route path="/scroll-spy" element={<ScrollSpy />} />
             <Route path="/forms" element={<FormsPage/>} />
-
+</Route>
                     {/* Graphics Layout */}
-                    <Route element={<GraphicsLayout />} >
+          <Route element={<GraphicsLayout />} > 
           <Route path="/graphics" element={<GraphicsPage/>} />
           </Route>
+
+          <Route element={<IndexLayout />} >
+          <Route path="/index" element={<IndexPage/>} />
+          </Route>
+      
             {/* Add a catch-all route for handling errors */}
             <Route path="*" element={<NotFound />} />
+                             {/*Index Layout */}
           </Routes>
-          <Footer />
         </ErrorBoundary>
       </BrowserRouter>
     </div>

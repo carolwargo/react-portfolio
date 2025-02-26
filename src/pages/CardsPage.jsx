@@ -168,7 +168,7 @@ const Cards = () => {
           </div>
 
           <div className="row d-flex justify-content-center align-items-center w3-padding-large w3-padding-24">
-            <div className=" col-sm-12 col-md-4 col-lg-4 flex-column position-relative p-0">
+          <div className=" col-sm-12 col-md-4 col-lg-4 flex-column position-relative p-0">
               {/* Image Container */}
               <div className="position-relative">
                 <img
