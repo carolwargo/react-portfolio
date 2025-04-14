@@ -13,18 +13,18 @@ const CV = () => {
   return (
     <div className="w3-content w3-padding-64" style={{ maxWidth: "1400px" }}>
       <div className="w3-third">
-        <div className="w3-white w3-text-grey w3-card-4">
+        <div className="p-2">
+        <div className="card w3-text-grey">
           <div className="w3-display-container">
             <img src={MeWhite} alt="me" style={{ maxWidth: "100%" }} />
           </div>
-          <div className="container w3-padding-16">
-            <div className="w3-container">
+          <div className="container px-5 py-4"> 
+            <div className="w3-margin-top">
             <h2>
               <i className="fa-fw  w3-xxlarge w3-text-black"></i>{" "}
               CAROL WARGO
             </h2>
-            </div>
-            <div className="w3-container">
+            
               <p>
                 <i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-black"></i>
                 Software Developer and Web Designer
@@ -46,22 +46,10 @@ const CV = () => {
                 </a>
               </p>
             </div>
-            <hr />
-            <p className="w3-margin-left">
-                <i>
-                  “I am Full-Stack Software Developer and Graphic
-                  Designer with a solid foundation in both frontend & backend
-                  technologies, and a 20-year background in Business Analysis &
-                  Project Management.”{" "}
-                </i>
-              </p>
-              <hr />
-            
-          </div>
-          </div>
-          {/**Start statement*/}
-          <div className="w3-card-4 bg-info-subtle w3-padding-24 w3-margin-top">
-            <div className="w3-container">
+            </div>
+                  {/**Start statement*/}
+                  <div className=" bg-info-subtle">
+            <div className="container px-5 py-4">
             <h3 className="w3-text-grey">
               <i className="fa fa-user fa-fw w3-xlarge w3-text-black"></i>{" "}
               Profile 
@@ -82,14 +70,8 @@ const CV = () => {
           </div>
           </div>
           {/**End statement*/}
-          {/**Start skills */}
-
-          {/**end skills */}
-
-          {/**End software */}
-          {/**Start education */}
-          <div className="w3-card-4  w3-white w3-padding-24 w3-margin-top">
-            <h5 className="w3-text-grey w3-margin-left">
+          <div className="w3-container">
+          <h5 className="w3-text-grey w3-margin-left">
               <i className="fa fa-graduation-cap fa-fw w3-margin-right w3-xlarge w3-text-black"></i>
               Education
             </h5>
@@ -114,127 +96,20 @@ const CV = () => {
               </h6>
               <p>State of Maryland</p>
             </div>
+            </div>
           </div>
-        
-          {/**End education */}
-     
-        {/*End Left Column */}
-        <br />
+          </div>
       </div>
-      {/*************************************************************************/}
-      <div className="w3-third">
-        <div className="w3-white w3-text-grey w3-card-4">
-          <div className="w3-display-container">
-            <img src={MeWhite} alt="me" style={{ maxWidth: "100%" }} />
-          </div>
-          <div className="container w3-padding-16">
-            <h2>
-              <i className="fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>{" "}
-              CAROL WARGO
-            </h2>
-            <div className="w3-container">
-              <p>
-                <i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-black"></i>
-                Software Developer and Web Designer
-              </p>
-              <p>
-                <i className="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i>
-                Huntingtown, MD
-              </p>
-              <p>
-                <a href="mail:carolwargo.dev@gmail.com">
-                  <i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i>
-                  Email
-                </a>
-              </p>
-              <p>
-                <a href="tel:+14437711726">
-                  <i className="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i>
-                  443-771-1726
-                </a>
-              </p>
-            </div>
-          </div>
-          {/**Start statement*/}
-          <div className="w3-container w3-white w3-padding-16 bg-info-subtle">
-          <div className="w3-container ">
-            <h3 className="w3-text-grey w3-margin-left">
-              <i className="fa fa-user fa-fw w3-xlarge w3-text-black"></i>{" "}
-              Professional Statement
-            </h3>
-         
-              <p>
-                <i>
-                  “I am a passionate Full-Stack Software Developer and Graphic
-                  Designer with a solid foundation in both frontend & backend
-                  technologies, and a 20-year background in Business Analysis &
-                  Project Management. I excel in leading and collaborating with
-                  cross-functional teams, leveraging the latest tools and
-                  frameworks to bring innovative ideas to life. From crafting
-                  interactive User interfaces to designing efficient and secure
-                  server-side solutions, I am dedicated to delivering a seamless
-                  User experience while optimizing performance.”
-                </i>
-              </p>
-            </div>
-          </div>
-          {/**End statement*/}
-          {/**Start skills */}
 
-          {/**end skills */}
-
-          {/**End software */}
-          {/**Start education */}
-          <div className="w3-container w3-white w3-padding-8 w3-margin-top">
-            <h3 className="w3-text-grey w3-margin-left">
-              <i className="fa fa-graduation-cap fa-fw w3-margin-right w3-xlarge w3-text-black"></i>
-              Education
-            </h3>
-            <div className="w3-container ">
-              <h5 className="w3-opacity">
-                <b>George Washington University</b>
-              </h5>
-              <h6 className="w3-text-black">
-                <i className="fa fa-calendar fa-fw w3-margin-right"></i>July,
-                2023
-              </h6>
-              <p>Full Stack Development | UX Design Certificate</p>
-              <hr />
-            </div>
-            <div className="w3-container mb-2">
-              <h5 className="w3-opacity">
-                <b>Real Estate License</b>
-              </h5>
-              <h6 className="w3-text-black">
-                <i className="fa fa-calendar fa-fw w3-margin-right"></i>June,
-                2003
-              </h6>
-              <p>State of Maryland</p>
-            </div>
-          </div>
-          {/**End education */}
-        </div>
-        {/*End Left Column */}
-        <br />
-      </div>
 
       {/*Start Right Column */}
       <div className="w3-twothird">
+      <div className="p-2">
         <div className="w3-container w3-card w3-white">
-          <h1
-            className="text-center"
-            style={{ textShadow: "0px 0px 14px #00ffff" }}
-          >
-            <b>CW</b>
-            <span className="fw-light">RESUME</span>
-          </h1>
-          <h5 className="fw-light text-center">
-            Welcome to my digital resume.
-          </h5>
 
           {/**Start practices*/}
           <div className="w3-container w3-white ">
-            <h3 className="w3-text-grey  w3-margin-left">
+            <h3 className="w3-text-grey w3-margin-left">
        
               <i className="fas fa-lightbulb fa-fw w3-xlarge w3-text-black"></i>
               <span>Development Practices</span>
@@ -276,8 +151,58 @@ const CV = () => {
             </ul>
             <hr />
           </div>
-
           {/**End practices*/}
+
+
+          {/**Start interpersonal*/}
+          <div className="w3-container w3-white w3-padding-8 ">
+            <h3 className="w3-text-grey w3-margin-left">
+              {" "}
+              <i className="fas fa-handshake fa-fw w3-xlarge w3-text-black"></i>{" "}
+              <span>Interpersonal Skills</span>{" "}
+            </h3>
+            <div className="w3-container">
+              <ul>
+                <li>
+                  Foster customer and stakeholder engagement through effective
+                  communication.
+                </li>
+                <li>
+                  Articulate ideas, recommendations, and findings clearly and
+                  inclusively.
+                </li>
+                <li>
+                  Welcome feedback from stakeholders and promote an inclusive
+                  feedback culture.
+                </li>
+                <li>
+                  Embrace continuous improvement through post-implementation
+                  evaluations and knowledge sharing.
+                </li>
+                <li>
+                  Adapt positively to change and proactively tackle challenges.
+                </li>
+                <li>
+                  Demonstrate critical thinking skills to analyze and solve
+                  complex problems.
+                </li>
+                <li>Inspire and motivate team members towards common goals.</li>
+                <li>
+                  Proficient in negotiation and conflict resolution among
+                  stakeholders.
+                </li>
+                <li>
+                  Deliver functional software focused on meeting user needs and
+                  exceeding expectations.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+
+
+
 
           <div className="w3-container w3-white w3-padding-8 ">
             <h3 className="w3-text-grey w3-margin-left">
@@ -415,52 +340,8 @@ const CV = () => {
           </div>
           <hr />
 
-          {/**Start interpersonal*/}
-          <div className="w3-container w3-white w3-padding-8 ">
-            <h3 className="w3-text-grey w3-margin-left">
-              {" "}
-              <i className="fas fa-handshake fa-fw w3-xlarge w3-text-black"></i>{" "}
-              <span>Interpersonal Skills</span>{" "}
-            </h3>
-            <div className="w3-container">
-              <ul>
-                <li>
-                  Foster customer and stakeholder engagement through effective
-                  communication.
-                </li>
-                <li>
-                  Articulate ideas, recommendations, and findings clearly and
-                  inclusively.
-                </li>
-                <li>
-                  Welcome feedback from stakeholders and promote an inclusive
-                  feedback culture.
-                </li>
-                <li>
-                  Embrace continuous improvement through post-implementation
-                  evaluations and knowledge sharing.
-                </li>
-                <li>
-                  Adapt positively to change and proactively tackle challenges.
-                </li>
-                <li>
-                  Demonstrate critical thinking skills to analyze and solve
-                  complex problems.
-                </li>
-                <li>Inspire and motivate team members towards common goals.</li>
-                <li>
-                  Proficient in negotiation and conflict resolution among
-                  stakeholders.
-                </li>
-                <li>
-                  Deliver functional software focused on meeting user needs and
-                  exceeding expectations.
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-
+</div>
         {/*End Right Column */}
         <br />
       </div>

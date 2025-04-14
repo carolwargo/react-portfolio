@@ -1,12 +1,12 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import MeWhite from "../assets/images/MeWhite.png";
 import { FaGoogle } from "react-icons/fa";
 import { SiMicrosoftoffice } from "react-icons/si";
 import { SiAdobecreativecloud } from "react-icons/si";
 import ResumeDownload from "../assets/ResumeDownload.pdf";
+import CV from '../components/Resume/CV.jsx'; 
+import ResumeProfile from "../components/Resume/ResumeProfile.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 
@@ -17,41 +17,32 @@ export default function ResumePage() {
       behavior: "smooth",
     });
   };
-  const { ref, inView } = useInView({
-    triggerOnce: false, // Animation triggers only once
-    threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
-  });
+
   return (
     <div className="resume" id="resume">
-      <motion.div
-        ref={ref}
-        initial={{ y: -20, opacity: 0.5 }}
-        animate={inView ? { y: 0, opacity: 1} : {}}
-        exit={{ y: 20, opacity: 0.5 }}
-        transition={{ duration: 0.8 }}
-      >
+      <ResumeProfile />
+ <CV />
         {/** Start Main container */}
           <div
             className="w3-margin-top w3-padding-top-32"
-            style={{ maxWidth: "1400px" }}
-          >
-            {/** Start intro*/}
-            <div className="w3-display-container w3-padding w3-white">
-              <div className="w3-row d-flex justify-content-center">
-                <div className="w3-col m8 flex-column w3-padding-24 w3-center">
-                  <h1 className="w3-text-black">DIGITAL RESUME</h1>
-                  <h4>
-                    View my skills, work experience, volunteer background, or
-                    download a physical copy of my resume.
-                  </h4>
-                </div>
+          >     
+          <div className="w3-container w3-padding">
+                <h1 className="w3-text-black">DIGITAL RESUME</h1>
+                <h4>
+                  View my skills, work experience, volunteer background, or
+                  download a physical copy of my resume.
+                </h4>
               </div>
-            </div>
+            {/** Start intro*/}
+            <div className="w3-container d-flex justify-content-center align-items-center w3-padding-16 w3-light-gray"> 
+           
+    
+        
             {/** End intro*/}
 
             <div className="w3-text-black w3-margin-top">
               {/*} Start Main row*/}
-              <div className="w3-row-padding justify-content-center w3-white align-items-center ">
+              <div className="w3-row-padding justify-content-center align-items-center ">
                 {/*Start Left Column*/}
                 <div className="w3-third flex-column justify-content-center align-items-center">
                   <div className="w3-text-grey">
@@ -871,9 +862,11 @@ End Practices*/}
               {/*End Volunteer*/}
             </div>
           </div>
-        
-      </motion.div>
-      <div className="w3-container w3-content text-center w3-padding-48 w3-margin-bottom w3-padding-small">
+          </div>
+   
+
+
+      <div className="w3-content text-center w3-padding-48 w3-margin-bottom w3-padding-small">
         <h2 className="text-black">VIEW MY WORK</h2>
         <hr className="w3-opacity" />
         <h4 className="text-black">
