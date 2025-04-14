@@ -6,32 +6,22 @@ import { FaGoogle } from "react-icons/fa";
 import { FaMicrosoft } from "react-icons/fa"; // Font Awesome
 import { SiAdobecreativecloud } from "react-icons/si"; // Font Awesome
 import Accordion from "react-bootstrap/Accordion";
-import Badge from 'react-bootstrap/Badge';
-
-import { GiLargePaintBrush } from "react-icons/gi";
-import { FaHandHoldingDroplet } from "react-icons/fa6";
-import { TbRazorElectric } from "react-icons/tb";
-import { TbMassage } from "react-icons/tb";
-import { RiSyringeFill } from "react-icons/ri";
-import { BsSunglasses } from "react-icons/bs";
-import { GiSyringe } from "react-icons/gi";
-import { FaSwimmingPool } from "react-icons/fa";
-import { GiFootprint } from "react-icons/gi";
+import ResumeBadges from "./ResumeBadges";
 import { MdOutlineBoy } from "react-icons/md";
 import { MdOutlineGirl } from "react-icons/md";
 import Nav from 'react-bootstrap/Nav';
 
 import "bootstrap/dist/css/bootstrap.min.css";
-//import "./DashboardProfile.css"; // Import CSS for styling
+import "./ResumePage.css"; // Import CSS for styling
 
 export default function ResumePage() {
   return (
     <div className="profile" id="profile">
       {/** Start Main container */}
       <div className="w3-margin-top w3-padding-top-32">
-        <div className="w3-text-black w3-margin-top">
+        <div className="container">
           {/*} Start Main row*/}
-          <div className="w3-row-padding justify-content-center w3-white align-items-center">
+          <div className="row justify-content-center w3-white align-items-center">
             {/*Start Left Column*/}
             <div className="w3-quarter flex-column justify-content-center align-items-center  ">
               {/*Start Left Column*/}
@@ -65,188 +55,7 @@ export default function ResumePage() {
                       </div>
                       <div className="pt-2  pb-3">
                       <div className="container">
-                      <Badge
-  className="bg-danger-subtle border border-danger border-2"
-  style={{
-    marginRight: '3px',
-    minWidth: '68px',
-    display: 'inline-block', // ensures width takes effect
-    textAlign: 'center'      // optional: centers the text
-  }}
->
-                      <span>
-                           < TbRazorElectric className="text-danger fw-bold" style={{fontSize: "10px"}}/> 
-                      </span>
-                       <span style={{ fontSize: "9px", fontFamily:'Roboto', marginLeft:'3px' }} className="text-danger fw-bold">  
-                       Barber
-                      </span>
-                      </Badge>
-
-                      <Badge className="bg-info-subtle border border-info border-2" 
-                       style={{
-                        marginRight: '3px',
-                        minWidth: '68px',
-                        display: 'inline-block', // ensures width takes effect
-                        textAlign: 'center'      // optional: centers the text
-                      }}
-                      >
-             
-                       <span style={{ fontSize: "9px", fontFamily:'Roboto', marginLeft:'3px' }} className="text-info fw-bold">  
-                        Stylist
-                      </span>
-                      </Badge>
-                      
-                      <Badge className="bg-warning-subtle border border-warning border-2" 
-                        style={{
-                          marginRight: '3px',
-                          minWidth: '68px',
-                          display: 'inline-block', // ensures width takes effect
-                          textAlign: 'center'      // optional: centers the text
-                        }}
-                      >
-                      <span>
-                           <FaHandHoldingDroplet className="text-warning fw-bold" style={{fontSize: "10px"}}/> 
-                      </span>
-                       <span style={{ fontSize: "9px", fontFamily:'Roboto', marginLeft:'3px' }} className="text-warning fw-bold">  
-                     Manicure
-                      </span>
-                      </Badge>
-
-                      <Badge className="bg-primary-subtle border border-primary border-2" 
-                               style={{
-                                marginRight: '3px',
-                                minWidth: '68px',
-                                display: 'inline-block', // ensures width takes effect
-                                textAlign: 'center'      // optional: centers the text
-                              }}
-                      >
-                      <span>
-                           <GiLargePaintBrush className="text-primary fw-bold" style={{fontSize: "10px"}}/> 
-                      </span>
-                       <span style={{ fontSize: "9px", fontFamily:'Roboto', marginLeft:'3px' }} className="text-primary fw-bold">  
-                       Color
-                      </span>
-                      </Badge>
-
-                      <Badge className="bg-secondary-subtle border border-secondary border-2" 
-                               style={{
-                                marginRight: '3px',
-                                minWidth: '68px',
-                                display: 'inline-block', // ensures width takes effect
-                                textAlign: 'center'      // optional: centers the text
-                              }}
-                              >
-                      <span>
-                           <TbMassage className="text-secondary fw-bold" style={{fontSize: "10px"}}/> 
-                      </span>
-                       <span style={{ fontSize: "9px", fontFamily:'Roboto', marginLeft:'3px' }} className="text-secondary fw-bold">  
-                     Massage
-                      </span>
-                      </Badge>
-
-                      <Badge className="bg-success-subtle bg border border-success border-2"
-                               style={{
-                                marginRight: '3px',
-                                minWidth: '68px',
-                                display: 'inline-block', // ensures width takes effect
-                                textAlign: 'center'      // optional: centers the text
-                              }}
-                              >
-                      <span>
-                           <GiFootprint className="text-success fw-bold" style={{fontSize: "10px"}}/> 
-                      </span>
-                       <span style={{ fontSize: "9px", fontFamily:'Roboto', marginLeft:'3px' }} className="text-success fw-bold">  
-                      Pedicure
-                      </span>
-                      </Badge>
-                      <Badge className="bg-light bg border border-black border-2"          
-                      style={{
-                          marginRight: '3px',
-                          minWidth: '68px',
-                          display: 'inline-block', // ensures width takes effect
-                          textAlign: 'center'      // optional: centers the text
-                        }}>
-                      <span> 
-                           <FaSwimmingPool className="text-black fw-bold" style={{fontSize: "10px"}}/> 
-                      </span>
-                       <span style={{ fontSize: "9px", fontFamily:'Roboto', marginLeft:'3px' }} className="text-black fw-bold">  
-                    Spa Tech
-                      </span>
-                      </Badge>
-
-                      
-                      <Badge className="badge-purple-light"          
-                      style={{
-                          marginRight: '3px',
-                          minWidth: '68px',
-                          display: 'inline-block', // ensures width takes effect
-                          textAlign: 'center'      // optional: centers the text
-                        }}>
-<style>
-  {`
-  .badge-purple-light {
-  background-color: #f1d8fc !important;
-  border: 2px solid #8e44ad;
-  color: #8e44ad;
-}
-`}
-</style>
-                      <span>
-                           <BsSunglasses className="fw-bold" style={{fontSize: "11px", color:' #8e44ad'}}/> 
-                      </span>
-                       <span style={{ fontSize: "9px",  color:' #8e44ad' , fontFamily:'Roboto', marginLeft:'3px' }} className=" fw-bold">  
-                      Laser
-                      </span>
-                      </Badge>
-
-                      <Badge className="badge-orange-light"          
-                      style={{
-                          marginRight: '3px',
-                          minWidth: '68px',
-                          display: 'inline-block', // ensures width takes effect
-                          textAlign: 'center'      // optional: centers the text
-                        }}>
-<style>
-  {`
-  .badge-orange-light {
-  background-color:#fbcec0 !important;
-  border: 2px solid #f83a00;
-  color:rgb(255, 226, 218) ;
-}
-`}
-</style>
-                      <span>
-                           <RiSyringeFill className=" fw-bold" style={{fontSize: "10px", color:' #f83a00'}}/> 
-                      </span>
-                       <span style={{ fontSize: "9px",  color:' #f83a00' , fontFamily:'Roboto', marginLeft:'3px' }} className=" fw-bold">  
-                    Fillers
-                      </span>
-                      </Badge>
-
-                      <Badge className="badge-pink-light" 
-                               style={{
-                                marginRight: '3px',
-                                minWidth: '68px',
-                                display: 'inline-block', // ensures width takes effect
-                                textAlign: 'center'      // optional: centers the text
-                              }}
-                      >
-<style>
-  {`
-  .badge-pink-light {
-  background-color:#fbcec0 !important;
-  border: 2px solid #ff0080;
-  color:rgb(253, 180, 229) ;
-}
-`}
-</style>
-                      <span>
-                           <GiSyringe className=" fw-bold" style={{fontSize: "9px", color:' #ff0080'}}/> 
-                      </span>
-                       <span style={{ fontSize: "9px",  color:' #ff0080' , fontFamily:'Roboto', marginLeft:'3px' }} className=" fw-bold">  
-                       Botox
-                      </span>
-                      </Badge>
+         <ResumeBadges/>
                   </div>
                 </div>
                       <div className="w3-container my-2">
@@ -312,7 +121,7 @@ export default function ResumePage() {
                   </div>
 
                   {/**start  certs */}
-                  <div className="container w3-black">
+                  <div className="container bg-black">
                     <div className="container py-2">
                       <div className="w3-container">
                         <h4 className="w3-large w3-text-theme my-3 text-uppercase">
@@ -346,7 +155,7 @@ export default function ResumePage() {
 
                         <div className="w3-grey w3-round-xlarge w3-small mt-4">
                           <div
-                            className="w3-container w3-center w3-round-xlarge w3-black"
+                            className="w3-container w3-center w3-round-xlarge bg-black"
                             style={{ width: "90%" }}
                           >
                             99%
@@ -356,7 +165,7 @@ export default function ResumePage() {
 
                         <div className="w3-grey w3-round-xlarge w3-small">
                           <div
-                            className="w3-container w3-center w3-round-xlarge w3-black"
+                            className="w3-container w3-center w3-round-xlarge bg-black"
                             style={{ width: "75%" }}
                           >
                             95%
@@ -366,7 +175,7 @@ export default function ResumePage() {
 
                         <div className="w3-grey w3-round-xlarge w3-small">
                           <div
-                            className="w3-container w3-center w3-round-xlarge w3-black"
+                            className="w3-container w3-center w3-round-xlarge bg-black"
                             style={{ width: "85%" }}
                           >
                             99%
@@ -388,7 +197,7 @@ export default function ResumePage() {
 
                         <div className="w3-grey w3-round-xlarge w3-small">
                           <div
-                            className="w3-container w3-center w3-round-xlarge w3-black small"
+                            className="w3-container w3-center w3-round-xlarge bg-black small"
                             style={{ width: "50%" }}
                           >
                             50%
@@ -398,7 +207,7 @@ export default function ResumePage() {
 
                         <div className="w3-grey w3-round-xlarge w3-small">
                           <div
-                            className="w3-container w3-center w3-round-xlarge w3-black small"
+                            className="w3-container w3-center w3-round-xlarge bg-black small"
                             style={{ width: "90%" }}
                           >
                             95%
@@ -418,7 +227,7 @@ export default function ResumePage() {
 
                         <div className="w3-grey w3-round-xlarge w3-small">
                           <div
-                            className="w3-container w3-center w3-round-xlarge w3-black small"
+                            className="w3-container w3-center w3-round-xlarge bg-black small"
                             style={{ width: "85%" }}
                           >
                             85%
@@ -440,7 +249,7 @@ export default function ResumePage() {
 
                         <div className="w3-grey w3-round-xlarge w3-small">
                           <div
-                            className="w3-container w3-center w3-round-xlarge w3-black small"
+                            className="w3-container w3-center w3-round-xlarge bg-black small"
                             style={{ width: "75%" }}
                           >
                             75%
@@ -450,7 +259,7 @@ export default function ResumePage() {
 
                         <div className="w3-grey w3-round-xlarge w3-small">
                           <div
-                            className="w3-container w3-center w3-round-xlarge w3-black small"
+                            className="w3-container w3-center w3-round-xlarge bg-black small"
                             style={{ width: "70%" }}
                           >
                             70%
@@ -485,7 +294,7 @@ export default function ResumePage() {
                         </h6>
                         <div className="w3-grey w3-round-xlarge w3-small mt-4">
                           <div
-                            className="w3-container w3-center w3-round-xlarge w3-black small"
+                            className="w3-container w3-center w3-round-xlarge bg-black small"
                             style={{ width: "90%" }}
                           >
                             90%
@@ -497,7 +306,7 @@ export default function ResumePage() {
 
                         <div className="w3-grey w3-round-xlarge w3-small">
                           <div
-                            className="w3-container w3-center w3-round-xlarge w3-black small"
+                            className="w3-container w3-center w3-round-xlarge bg-black small"
                             style={{ width: "90%" }}
                           >
                             90%
@@ -530,7 +339,7 @@ export default function ResumePage() {
                         download
                         href={ResumeDownload}
                       >
-                        <button className=" btn w3-black w-100 w3-hover-opacity">
+                        <button className=" btn bg-black w-100 w3-hover-opacity">
                           Download Resume
                         </button>
                       </a>
@@ -542,7 +351,7 @@ export default function ResumePage() {
                         download
                         href={ResumeDownload}
                       >
-                        <button className=" btn w3-black w-100 w3-hover-opacity">
+                        <button className=" btn bg-black w-100 w3-hover-opacity">
                           Download References
                         </button>
                       </a>
@@ -738,7 +547,7 @@ export default function ResumePage() {
                       <h6 className="w3-text-black small">
                         <i className="fa fa-calendar fa-fw small mt-3"></i> June
                         2016 -{" "}
-                        <span className="w3-tag w3-black w3-round small py-1">
+                        <span className="w3-tag bg-black w3-round small py-1">
                           timestamp
                         </span>
                       </h6>
@@ -758,7 +567,7 @@ export default function ResumePage() {
                           download
                           href={ResumeDownload}
                         >
-                          <button className=" btn w3-black w-100 w3-hover-opacity">
+                          <button className=" btn bg-black w-100 w3-hover-opacity">
                             Message
                           </button>
                         </a>
@@ -778,7 +587,7 @@ export default function ResumePage() {
                       <h6 className="w3-text-black small">
                         <i className="fa fa-calendar fa-fw small mt-3"></i> June
                         2016 -{" "}
-                        <span className="w3-tag w3-black w3-round small py-1">
+                        <span className="w3-tag bg-black w3-round small py-1">
                           timestamp
                         </span>
                       </h6>
@@ -798,7 +607,7 @@ export default function ResumePage() {
                           download
                           href={ResumeDownload}
                         >
-                          <button className=" btn w3-black w-100 w3-hover-opacity">
+                          <button className=" btn bg-black w-100 w3-hover-opacity">
                             Message
                           </button>
                         </a>

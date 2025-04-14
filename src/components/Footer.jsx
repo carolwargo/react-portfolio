@@ -24,15 +24,15 @@ export default function App() {
       exit={{ y: 20, opacity: 0 }}
     >
       <div className="footer" id="footer" style={{ fontFamily: "Raleway" }}>
-        <MDBFooter className=" w3-black">
-          <section className="text-center w3-padding-24">
+        <MDBFooter className=" bg-black">
+          <section className="text-center p-3-24">
             <MDBContainer className="mt-5 text-center text-md-start">
               <MDBRow className="mt-3">
                 <MDBCol
                   md="4"
                   lg="4"
                   xl="4"
-                  className="mx-auto mb-5 me-2 w3-padding-large"
+                  className="mx-auto mb-5 me-2 p-3-large"
                 >
                   <h6 className="mb-4 text-uppercase fw-bold">
                     <b>Carol</b> Wargo
@@ -62,7 +62,7 @@ export default function App() {
                   md="2"
                   lg="2"
                   xl="2"
-                  className="mx-auto mb-4 w3-padding-large"
+                  className="mx-auto mb-4 p-3-large"
                 >
                   <h6 className="w3-margin-bottom fw-bold">PAGES</h6>
 
@@ -103,7 +103,7 @@ export default function App() {
                   md="2"
                   lg="2"
                   xl="2"
-                  className="mx-auto mb-4 justify-content-center w3-padding-large"
+                  className="mx-auto mb-4 justify-content-center p-3-large"
                 >
                   <h6 className="w3-margin-bottom fw-bold">SAMPLES</h6>
                   <p style={{ fontSize: "14px" }}>
@@ -148,7 +148,7 @@ export default function App() {
                   md="2"
                   lg="2"
                   xl="2"
-                  className="mx-auto mb-4 mb-md-0 flex-column justify-content-center w3-padding-large"
+                  className="mx-auto mb-4 mb-md-0 flex-column justify-content-center p-3-large"
                 >
                   <h6 className="fw-bold">CONTACT</h6>
 
@@ -172,7 +172,7 @@ export default function App() {
                     </a>
                   </p>
                   <button
-                    className="mt-2 w3-button w3-text-light-grey w3-padding w3-round-xxlarge"
+                    className="mt-2 w3-button w3-text-light-grey p-3 w3-round-xxlarge"
                     style={{ backgroundColor: "#FF385C", fontSize: "14px" }}
                   >
                     <Link
@@ -188,7 +188,7 @@ export default function App() {
             </MDBContainer>
           </section>
           <hr />
-          <section className="text-center d-flex justify-content-center w3-padding-large border-bottom">
+          <section className="text-center d-flex justify-content-center p-3-large border-bottom">
             <div className="me-auto d-none d-lg-block">
               <p style={{ fontSize: "12px", fontWeight: "light" }}>
                 {" "}
