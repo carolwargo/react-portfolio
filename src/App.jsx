@@ -23,9 +23,9 @@ import Test from "./pages/Test.jsx";
 import NavFixed from "./components/Navs/NavFixed.jsx";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
 /**Layouts */
-import GraphicsLayout from './components/Layouts/GraphicsLayout'; 
-import IndexLayout from './components/Index/IndexLayout';
-import Layout from './components/Layouts/Layout';
+import GraphicsLayout from './components/Layouts/GraphicsLayout.jsx'; 
+import IndexLayout from './components/Index/IndexLayout.jsx';
+import Layout from './components/Layouts/Layout.jsx';
 
 /**App Style */
 import "./App.css";
@@ -34,7 +34,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/react-portfolio">
+      <BrowserRouter basename="/react-portfolio/">
         <ErrorBoundary>
           <NavFixed />
           <Routes>
