@@ -24,8 +24,8 @@ export default function App() {
       exit={{ y: 20, opacity: 0 }}
     >
       <div className="footer" id="footer" style={{ fontFamily: "Raleway" }}>
-        <MDBFooter className=" bg-black">
-          <section className="text-center p-3-24">
+        <MDBFooter className="bg-black">
+          <section className="text-center p-3">
             <MDBContainer className="mt-5 text-center text-md-start">
               <MDBRow className="mt-3">
                 <MDBCol
@@ -43,7 +43,7 @@ export default function App() {
                     reach out if you have any questions or feedback!
                   </p>
                   <button
-                    className="w3-button w3-round-xxlarge "
+                    className="w3-button rounded "
                     style={{ backgroundColor: "#FF385C", fontSize: "14px" }}
                   >
                     <a
@@ -172,7 +172,7 @@ export default function App() {
                     </a>
                   </p>
                   <button
-                    className="mt-2 w3-button w3-text-light-grey p-3 w3-round-xxlarge"
+                    className="mt-2 w3-button w3-text-light-grey p-3 rounded"
                     style={{ backgroundColor: "#FF385C", fontSize: "14px" }}
                   >
                     <Link
