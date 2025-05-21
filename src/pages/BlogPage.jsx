@@ -197,7 +197,7 @@ const BlogPage = () => {
                   {" "}
                   {/*container start for tags*/}
                   <p className="w3-margin-top">
-                    <span className="w3-tag w3-black w3-margin-bottom">
+                    <span className="w3-tag bg-black w3-margin-bottom">
                       Travel
                     </span>
                     <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
@@ -257,7 +257,7 @@ const BlogPage = () => {
   <br />
 
   {/**End About Section */}
-<div className="w3-container w3-padding-48 w3-black" id="contact">
+<div className="w3-container w3-padding-48 bg-black" id="contact">
   <div className="row justify-content-center align-items-center">
   <div className="col-sm-12 col-md-2 col-lg-2" ></div>
     <div className="col-sm-12 col-md-5 col-lg-5" >

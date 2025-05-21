@@ -37,7 +37,7 @@ export default function SpyScrollComponent() {
           >
             <MDBScrollspy
               container={collapseContainerRef}
-              className=" w3-padding-large "
+              className=" p-4 "
             >
               <MDBScrollspyLink
                 targetRef={collapseSection1}
@@ -142,7 +142,7 @@ export default function SpyScrollComponent() {
                 borderLeft: "5px solid lightGray",
               }}
             >
-              <div className="container w3-padding-large">
+              <div className="container p-4">
                 <section ref={collapseSection1} id="section-collapse-1 ">
                   <h3>01.Intro</h3>
                   <h3 style={{ fontFamily: "belotta text" }}>

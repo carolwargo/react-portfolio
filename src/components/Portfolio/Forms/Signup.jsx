@@ -62,7 +62,7 @@ function Signup() {
     return (
 
                 <div className="signup" id='signup'>
-                    <div className="w3-container bg-white shadow w3-round-xxlarge">
+                    <div className="w3-container bg-white shadow rounded">
                  
                         <div className="w3-padding-16 border-dark">
                             <form onSubmit={handleSubmit} autoComplete="on" >
@@ -125,7 +125,7 @@ function Signup() {
 
                               {/**   <div className="form-check d-flex justify-content-center mb-4">
                                     <input 
-                                        className="form-check-input me-2 w3-black border-black" 
+                                        className="form-check-input me-2 bg-black border-black" 
                                         type="checkbox" 
                                         id="newsletterCheck"  
                                         checked={newsletterChecked}

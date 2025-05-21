@@ -92,7 +92,7 @@ const Server = () => {
                         click to view repository
                       </p>
                       <a href="https://carolwargo.github.io/weather/">
-                        <button className="w3-button w3-black shadow-lg w3-block">
+                        <button className="w3-button bg-black shadow-lg w3-block">
                           Github
                         </button>
                       </a>
@@ -193,7 +193,7 @@ const Server = () => {
                         click to view repository
                       </p>
                       <a href="https://github.com/carolwargo/Text_Editor-in-Chief">
-                        <button className="w3-button w3-black shadow-lg w3-block">
+                        <button className="w3-button bg-black shadow-lg w3-block">
                           Github
                         </button>
                       </a>
@@ -237,7 +237,7 @@ const Server = () => {
                         click to view repository
                       </p>
                       <a href="https://carolwargo.github.io/JS-Password-Generator/">
-                        <button className="w3-button w3-black shadow-lg w3-block">
+                        <button className="w3-button bg-black shadow-lg w3-block">
                           Github
                         </button>
                       </a>
@@ -281,7 +281,7 @@ const Server = () => {
                         click to view repository
                       </p>
                       <a href="https://github.com/carolwargo/forget-me-NOTES">
-                        <button className="w3-button w3-black shadow-lg w3-block">
+                        <button className="w3-button bg-black shadow-lg w3-block">
                           Github
                         </button>
                       </a>
@@ -325,7 +325,7 @@ const Server = () => {
                       </p>
 
                       <a href="https://github.com/carolwargo/forgetSVG">
-                        <button className="w3-button w3-black shadow-lg w3-block">
+                        <button className="w3-button bg-black shadow-lg w3-block">
                           Github
                         </button>
                       </a>
@@ -367,7 +367,7 @@ const Server = () => {
                         click to view repository
                       </p>
                       <a href="https://carolwargo.github.io/Desk_Jockey-dayplanner/">
-                        <button className="w3-button w3-black shadow-lg w3-block">
+                        <button className="w3-button bg-black shadow-lg w3-block">
                           Github
                         </button>
                       </a>
@@ -409,7 +409,7 @@ const Server = () => {
                         click to view repository
                       </p>
                       <a href="https://github.com/carolwargo/forget-me-NOTES">
-                        <button className="w3-button w3-black shadow-lg w3-block">
+                        <button className="w3-button bg-black shadow-lg w3-block">
                           Github
                         </button>
                       </a>
@@ -449,7 +449,7 @@ const Server = () => {
                         click to view repository
                       </p>
                       <a href="https://github.com/carolwargo/Code-Refactor-Horisen">
-                        <button className="w3-button w3-black shadow-lg w3-block">
+                        <button className="w3-button bg-black shadow-lg w3-block">
                           Github
                         </button>
                       </a>
@@ -485,7 +485,7 @@ const Server = () => {
                 </i>
               </p>
               <button
-                className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom"
+                className="w3-button w3-text-light-grey  w3-margin-right rounded mt-2 w3-margin-bottom"
                 style={{ backgroundColor: "#FF385C" }}
               >
                 <Link

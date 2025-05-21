@@ -136,7 +136,7 @@ function Portfolio() {
                         {faq.answer}
                         <div>
                           <a href={faq.link}>
-                            <button className="link w3-button w3-black w3-round-xxlarge mt-2">
+                            <button className="link w3-button bg-black rounded mt-2">
                               Learn More
                             </button>
                           </a>
@@ -168,7 +168,7 @@ function Portfolio() {
 
                   <Alert
                     variant="danger"
-                    className="w3-round-xxlarge text-center  shadow"
+                    className="rounded text-center  shadow"
                     style={{ color: "#FF385C" }}
                   >
                     <Alert.Heading>
@@ -842,7 +842,7 @@ function Portfolio() {
                 onClick={scrollToTop}
               >
                 <button
-                  className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom"
+                  className="w3-button w3-text-light-grey  w3-margin-right rounded mt-2 w3-margin-bottom"
                   style={{ backgroundColor: "#FF385C" }}
                 >
                   View Form Components

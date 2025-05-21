@@ -115,7 +115,7 @@ const FullPosts = () => {
                       {/* start entries containerontent container COL BUT*/}
                       <div className="w3-col m12 s12">
                        
-                          <button className="w3-button w3-padding-large w3-white w3-border">
+                          <button className="w3-button p-4 w3-white w3-border">
                             <b>READ MORE »</b>
                           </button>
                        

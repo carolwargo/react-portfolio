@@ -122,7 +122,7 @@ const Blog = () => {
                   {" "}
                   {/*container start for tags*/}
                   <p>
-                    <span className="w3-tag w3-black w3-margin-bottom">
+                    <span className="w3-tag bg-black w3-margin-bottom">
                       Travel
                     </span>
                     <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">

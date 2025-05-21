@@ -34,7 +34,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/react-portfolio/">
+  <BrowserRouter basename={import.meta.env.DEV ? '/' : '/react-portfolio'}>
         <ErrorBoundary>
           <NavFixed />
           <Routes>

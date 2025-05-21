@@ -32,7 +32,7 @@ const Posts = () => {
     {" "}
     {/*col start for all posts */}
     {blogPosts.map((post) => (
-      <div key={post.id} className="w3-container-4 mt-3 w3-black">
+      <div key={post.id} className="w3-container-4 mt-3 bg-black">
         <img
           src={post.imageUrl}
           alt="blog-post"

@@ -77,7 +77,7 @@ const [currentOpenIndex, setCurrentOpenIndex] = React.useState(0);
       <i className='fw-bold'>SOCIAL MEDIA CAMPAIGN SAMPLES</i></h1> 
       <h4> Enhance your social media presence with our vibrant and impactful graphics, tailored to catch the eye and engage your followers across all platforms.</h4>
       </div>
-        <div className="container w3-padding-large">      
+        <div className="container p-4">      
         <img src={YogaSet} alt="yoga" style={{width:'100%'}} className="shadow mt-2"/>
        
         <div className="row d-flex justify-content-center align-items-center">

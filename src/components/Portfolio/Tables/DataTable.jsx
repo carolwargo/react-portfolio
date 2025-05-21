@@ -297,7 +297,7 @@ export default function EnhancedTable() {
 
   return (
     <div className='shadow mb-4'>
-    <div className='container w3-padding-large w3-padding-24 w3-margin-bottom'>
+    <div className='container p-4 w3-padding-24 w3-margin-bottom'>
        <h1 className="text-center ">Select Data Table</h1>
        <p className="text-center">
        The following table example is designed to display large quantities of tabular 

@@ -85,11 +85,11 @@ function Forms() {
       </nav>
 
       {/* Header */}
-      <header className="w3-container w3-theme w3-padding w3-padding-24 w3-black" id="myHeader">
+      <header className="w3-container w3-theme w3-padding w3-padding-24 bg-black" id="myHeader">
       <div className="w3-center" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
        
         <div className="w3-padding-64">
-          <button className="w3-btn w3-large w3-hover-light-grey shadow w3-round-xxlarge"  onClick={toggleSidebar} style={{ fontWeight: "400", backgroundColor:'#FF385C', color:'white' }}> <i className="fa fa-bars w3-large w3-margin-right" ></i>Web Forms</button>
+          <button className="w3-btn w3-large w3-hover-light-grey shadow rounded"  onClick={toggleSidebar} style={{ fontWeight: "400", backgroundColor:'#FF385C', color:'white' }}> <i className="fa fa-bars w3-large w3-margin-right" ></i>Web Forms</button>
         </div>
       </div>
     </header>
@@ -269,7 +269,7 @@ Examples include Login or Sign Up forms. How are they different?"
             </div>  
             </div>
             </div>
-<div className='w3-black vw-100 w3-padding-48'>
+<div className='bg-black vw-100 w3-padding-48'>
 <div className="container w3-content d-flex justify-content-center">
   <br />
   <div className="row d-flex text-center justify-content-center align-items-center w3-padding-large">
@@ -356,7 +356,7 @@ Examples include Login or Sign Up forms. How are they different?"
                   onClick={scrollToTop}
                 >
               <button
-                className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom"
+                className="w3-button w3-text-light-grey  w3-margin-right rounded mt-2 w3-margin-bottom"
                 style={{ backgroundColor: "#FF385C" }}
               >
                  View Card & Image Samples

@@ -97,7 +97,7 @@ function SideNav() {
         
           </div>
           </nav>
-          <header className="w3-bar w3-hide-large w3-black w3-xlarge w3-margin-top">
+          <header className="w3-bar w3-hide-large bg-black w3-xlarge w3-margin-top">
             <div className="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
             <Link
               to="/"
@@ -138,7 +138,7 @@ function SideNav() {
               <p>
                 <Link
                   to="#jeans"
-                  className="w3-button w3-black w3-padding-large w3-large"
+                  className="w3-button bg-black w3-padding-large w3-large"
                 >
                   SHOP NOW
                 </Link>

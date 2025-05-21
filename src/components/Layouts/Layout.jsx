@@ -5,12 +5,11 @@ import Footer from '../Footer';
 
 const Layout = () => {
   return (
-    <div className="web-layout w3-light-gray">
       <div>
         <Outlet />
         <Footer/>
       </div>
-    </div>
+
   );
 };
 

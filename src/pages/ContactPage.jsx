@@ -93,7 +93,7 @@ const ContactPage = () => {
                   />
                 </div>
                 </div>
-                <div className=" text-center col-lg-6 w3-white justify-content-center align-items-center w3-round-xxlarge">
+                <div className=" text-center col-lg-6 w3-white justify-content-center align-items-center rounded">
   <div className="w3-container w3-padding-small" style={{ display: "flex", alignItems: "center" }}>
     <div className="w3-container mt-4">
       <h5>THANKS FOR VISITING!</h5>
@@ -174,7 +174,7 @@ const ContactPage = () => {
                           <input
                             type="submit"
                             value="Send"
-                            className="px-4 text-white w3-button w3-round-xxlarge"
+                            className="px-4 text-white w3-button rounded"
                             style={{backgroundColor:'#FF385C'}}
                           />
                         </div>

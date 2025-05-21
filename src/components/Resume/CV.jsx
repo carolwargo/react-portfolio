@@ -213,7 +213,7 @@ const CV = () => {
             <div className="w3-container">
               <div className="w3-light-grey shadow">
                 <div
-                  className="w3-container w3-black w3-center shadow"
+                  className="w3-container bg-black w3-center shadow"
                   style={{ width: "85%" }}
                 >
                   85%
@@ -231,7 +231,7 @@ const CV = () => {
               </p>
               <div className="w3-light-grey shadow">
                 <div
-                  className="w3-container w3-black w3-center"
+                  className="w3-container bg-black w3-center"
                   style={{ width: "95%" }}
                 >
                   95%
@@ -250,7 +250,7 @@ const CV = () => {
 
               <div className="w3-light-grey shadow">
                 <div
-                  className="w3-container w3-black w3-center"
+                  className="w3-container bg-black w3-center"
                   style={{ width: "80%" }}
                 >
                   80%
@@ -269,7 +269,7 @@ const CV = () => {
 
               <div className="w3-light-grey shadow">
                 <div
-                  className="w3-container  w3-black w3-center"
+                  className="w3-container  bg-black w3-center"
                   style={{ width: "75%" }}
                 >
                   75%
@@ -288,7 +288,7 @@ const CV = () => {
 
               <div className="w3-light-grey shadow">
                 <div
-                  className="w3-container w3-black w3-center"
+                  className="w3-container bg-black w3-center"
                   style={{ width: "75%" }}
                 >
                   75%
@@ -372,7 +372,7 @@ const CV = () => {
                     <h6 className="w3-text-black">
                       <i className="fa fa-calendar fa-fw w3-margin-right"></i>
                       2018 -{" "}
-                      <span className="w3-tag w3-black w3-round">2021</span>
+                      <span className="w3-tag bg-black w3-round">2021</span>
                     </h6>
                   </div>
                   <div className="col">
@@ -399,7 +399,7 @@ const CV = () => {
                     <h6 className="w3-text-black">
                       <i className="fa fa-calendar fa-fw w3-margin-right"></i>
                       2003-{" "}
-                      <span className="w3-tag w3-black w3-round">2024 </span>
+                      <span className="w3-tag bg-black w3-round">2024 </span>
                     </h6>
                   </div>
                   <div className="col">
@@ -425,7 +425,7 @@ const CV = () => {
                     <h6 className="w3-text-black">
                       <i className="fa fa-calendar fa-fw w3-margin-right"></i>
                       Jun 2021 -
-                      <span className="w3-tag w3-black w3-round">current </span>
+                      <span className="w3-tag bg-black w3-round">current </span>
                     </h6>
                   </div>
                   <div className="col">

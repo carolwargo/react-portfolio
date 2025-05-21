@@ -20,7 +20,7 @@ const Posts = () => {
   ];
 
   return (
-    <div  className="w3-card w3-black shadow" style={{fontSize:'11.5px'}}>
+    <div  className="w3-card bg-black shadow" style={{fontSize:'11.5px'}}>
     {/*col start for all posts */}
     {blogPosts.map((post) => (
       <div key={post.id} >

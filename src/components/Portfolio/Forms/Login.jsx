@@ -42,7 +42,7 @@ function Login() {
 
     return (
     
-                    <div className="w3-container bg-white shadow w3-round-xxlarge">
+                    <div className="w3-container bg-white shadow rounded">
                             <div className="w3-padding-48">
                                 <form onSubmit={handleLogin}> {/* Wrap input fields with a form */}
                                     <div className="form-outline mb-4">
@@ -89,7 +89,7 @@ function Login() {
                                     <div>
                                         <button 
                                             type="submit" 
-                                            className="btn btn-black btn-block  px-5 shadow w3-round-xxlarge"
+                                            className="btn btn-black btn-block  px-5 shadow rounded"
                                         >
                                             Sign in
                                         </button>

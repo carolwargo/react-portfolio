@@ -6,7 +6,7 @@ import { HiOutlinePuzzlePiece } from "react-icons/hi2";
 import { AiFillDatabase } from "react-icons/ai";
 import { BsDatabaseLock } from "react-icons/bs";
 import { GiGears } from "react-icons/gi";
-//import { SiAdobe } from "react-icons/si";
+
 
 import MeWhite from '../assets/images/MeWhite.png';
 import LocationView from '../assets/images/LocationView.png';
@@ -35,66 +35,54 @@ export default function AboutPage() {
         exit={{ y: 20, opacity: 0.5 }}
         transition={{ duration: 0.8 }}
       >
-    <div className="w3-content w3-container w3-padding-top-32">
-        <div className="w3-content w3-container w3-padding-32">
+        <div>
+    <div className="container p-5">
+        <div className="p-4">
           <div className="row d-flex justify-content-center align-items-center">
-            <div className="col-lg-6 ">
-              <h1 className=" fw-light"><b>ABOUT ME.</b></h1>
-              <h5 className=" fw-light">"I'm Carol Wargo, and welcome to my corner of the internet!"</h5>
-              <br />
-              <p className=" fw-light"><em>"My passion lies in utilizing creative design to drive 
-                innovative solutions through technology. With a distinctive blend of skills and 
-                experience, I am a full-stack software developer & UX Designer that specializes in customer servicing & support, deeply committed to collaboration, bringing 
-                together diverse perspectives to tackle challenges effectively. With over 20 years of experience in business management & 
-                strategic development, I bring a wealth of knowledge and expertise to every project 
-                I undertake."</em></p>
-            </div>
-            <div className="col-lg-6 ">
-              <img src={MeWhite} className="w3-round w3-image w3-opacity w3-hover-opacity-off mx-auto d-block" alt="Me" width="500" height="333" />
-            </div>
+            <div className="container p-3">
+          <h1 className=" fw-light" style={{fontSize:'3rem'}}><b>ABOUT ME.</b></h1>
+       
           </div>
-        </div>
-
-<hr />
-
-        {/* Technical Proficiencies */}
-        <div className="row">
-          
-        <div className="w3-content w3-container w3-padding-32 mb-3">
-          <p>TECHNOLOGICAL PROFICIENCIES</p>
-          <h2 className=""><strong>WHAT I DO BEST.</strong></h2>
+            <div className="col-lg-6 ">
+            
+       
+              <img src={MeWhite} className="rounded-5 shadow d-block" alt="Me" style={{ border: '4px solid #FF385C' }}
+              />
+              <h5 className=" fw-lighter mt-2">"I'm Carol Wargo, and welcome to my corner of the internet!"</h5>
+            </div>
+            <div className="col-sm-12 col-md-6 col-lg-6">
+            <div className="container p-4 mb-3">
+      
+          <h4 > <span className="fw-light">PROFICIENCIES </span><strong>WHAT I DO BEST.</strong></h4>
           <br />
           <p className="w3-wide text-black" style={{fontSize:'1rem'}}><GiGears className="justify-content-center"/> Core Technologies</p>
               <div className="w3-light-grey shadow">
-                <div className="w3-container w3-padding-small w3-black w3-center shadow" style={{width:"85%"}}>85%</div>
+                <div className="w3-container w3-padding-small bg-black w3-center shadow" style={{width:"85%"}}>85%</div>
               </div>
   <br />
   <p className="w3-wide text-black" style={{fontSize:'1rem'}}><FaLaptopCode className="justify-content-center"/> Front-End Design</p>
   <div className="w3-light-grey shadow">
-    <div className="w3-container w3-padding-small w3-black w3-center" style= {{width:"95%"}}>95%</div>
+    <div className="w3-container w3-padding-small bg-black w3-center" style= {{width:"95%"}}>95%</div>
   </div>
   <br />
   <p className="w3-wide text-black" style={{fontSize:'1rem'}}><BsDatabaseLock  className="justify-content-center"/> Server-Side Development</p>
   <div className="w3-light-grey shadow">
-    <div className="w3-container w3-padding-small w3-black w3-center" style= {{width:"80%"}}>80%</div>
+    <div className="w3-container w3-padding-small bg-black w3-center" style= {{width:"80%"}}>80%</div>
   </div>
 <br />
 <p className="w3-wide text-black" style={{fontSize:'1rem'}}><HiOutlinePuzzlePiece className="justify-content-center"/> Full-Stack Integration</p>
   <div className="w3-light-grey shadow">
-    <div className="w3-container w3-padding-small w3-black w3-center" style= {{width:"75%"}}>75%</div>
+    <div className="w3-container w3-padding-small bg-black w3-center" style= {{width:"75%"}}>75%</div>
   </div>
 <br />
   <p className="w3-wide text-black" style={{fontSize:'1rem'}}><AiFillDatabase className="justify-content-center"/> Database Implementation</p>
   <div className="w3-light-grey shadow">
-    <div className="w3-container w3-padding-small w3-black w3-center" style= {{width:"75%"}}>75%</div>
+    <div className="w3-container w3-padding-small bg-black w3-center" style= {{width:"75%"}}>75%</div>
   </div>
           </div>
-
-       
-              {/**Start skills 
- 
-  */}
-</div>
+            </div>
+          </div>
+        </div>
 </div>
 {/**End technical proficiencies */}
 
@@ -102,7 +90,7 @@ export default function AboutPage() {
 {/**start experience count */}
 
 <div 
-className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#FF385C'}}>
+className="w3-row w3-center bg-black w3-padding-32 text-white"  style={{backgroundColor:'#FF385C'}}>
   <div className="w3-quarter w3-section">
     <span className="w3-xlarge">20<span style={{fontSize:'10px'}}>yrs</span> +</span><br />
     BUSINESS EXPERIENCE
@@ -123,7 +111,7 @@ className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#F
       
 
         {/* Location */}
-        <div className="w3-content w3-container w3-padding-32 ">
+        <div className="container p-5">
           <div className="row justify-content-center align-items-center">
             <div className="col-lg-4">
               <h1  className='text-center'>WHERE I'M LOCATED</h1>
@@ -136,17 +124,19 @@ className="w3-row w3-center w3-black w3-padding-32"  style={{backgroundColor:'#F
           </div>
           <div>
               </div>
+              </div>
               </motion.div>
               <hr />
-              <div className="w3-container w3-content text-center w3-padding-32 w3-margin-bottom w3-padding-large">
-              <h2 className="text-black">View my digital resume to learn more about my professional experience and qualifications.        
-        </h2><br />
+              <div className="container p-5 text-center">
+              <h4 className="text-black">View my digital resume to learn more about my professional experience and qualifications.        
+        </h4><br />
            
               <Link to="/resume"
                   className="button text-white"
                   onClick={scrollToTop}
                 >
-                     <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
+                  
+                     <button className="btn rounded-pill px-4 py-3 my-3 text-white"
               style={{backgroundColor:'#FF385C'}}> VIEW MY RESUME</button>
               
                 </Link>

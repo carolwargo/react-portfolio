@@ -80,13 +80,13 @@ function Responsive() {
 }
   `}
       </style>
-      <div className="w3-padding-large text-center ">
+      <div className="p-4 text-center ">
     <h1 className='fw-bold text-primary'>
       <i className='fw-bold'>INFOGRAPHICS</i></h1> 
       <h4> Visual Insights that Illuminate- Dive into our meticulously crafted infographics that transform complex data into compelling visual narratives, making information both engaging and easy to understand.</h4>
       </div>
 
-        <div className="w3-container w3-content w3-padding-large mt-2"> 
+        <div className="w3-container w3-content p-4 mt-2"> 
       <Slider {...settings}>
         <div className="px-1"> 
           <img src={Typo1} alt="info1" className="w-100 rounded-2"></img>

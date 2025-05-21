@@ -19,8 +19,10 @@ export default function ResumePage() {
   };
 
   return (
+<>
+<div className="container">  <ResumeProfile /></div>
     <div className="resume" id="resume">
-      <ResumeProfile />
+    
  <CV />
         {/** Start Main container */}
           <div
@@ -120,7 +122,7 @@ export default function ResumePage() {
                         </div>
                       </div>
                       <br />
-                      <div className="w3-container w3-black w3-padding-16">
+                      <div className="w3-container bg-black w3-padding-16">
                         <div className="w3-container">
                           <h4 className=" w3-padding-16">
                             <i className="fa fa-certificate w3-xlarge "></i>{" "}
@@ -177,7 +179,7 @@ export default function ResumePage() {
 
                       <div className="w3-light-grey w3-round-xlarge w3-small">
                         <div
-                          className="w3-container w3-center w3-round-xlarge w3-black"
+                          className="w3-container w3-center w3-round-xlarge bg-black"
                           style={{ width: "90%" }}
                         >
                           90%
@@ -187,7 +189,7 @@ export default function ResumePage() {
 
                       <div className="w3-light-grey w3-round-xlarge w3-small">
                         <div
-                          className="w3-container w3-center w3-round-xlarge w3-black"
+                          className="w3-container w3-center w3-round-xlarge bg-black"
                           style={{ width: "75%" }}
                         >
                           75%
@@ -197,7 +199,7 @@ export default function ResumePage() {
 
                       <div className="w3-light-grey w3-round-xlarge w3-small">
                         <div
-                          className="w3-container w3-center w3-round-xlarge w3-black"
+                          className="w3-container w3-center w3-round-xlarge bg-black"
                           style={{ width: "85%" }}
                         >
                           85%
@@ -207,7 +209,7 @@ export default function ResumePage() {
 
                       <div className="w3-light-grey w3-round-xlarge w3-small">
                         <div
-                          className="w3-container w3-center w3-round-xlarge w3-black"
+                          className="w3-container w3-center w3-round-xlarge bg-black"
                           style={{ width: "80%" }}
                         >
                           <div className="w3-center w3-text-black">80%</div>
@@ -217,7 +219,7 @@ export default function ResumePage() {
 
                       <div className="w3-light-grey w3-round-xlarge w3-small">
                         <div
-                          className="w3-container w3-center w3-round-xlarge w3-black"
+                          className="w3-container w3-center w3-round-xlarge bg-black"
                           style={{ width: "75%" }}
                         >
                           75%
@@ -236,7 +238,7 @@ export default function ResumePage() {
                       <br />
                       <div className="w3-light-grey w3-round-xlarge w3-small">
                         <div
-                          className="w3-container w3-center w3-round-xlarge w3-black"
+                          className="w3-container w3-center w3-round-xlarge bg-black"
                           style={{ width: "95%" }}
                         >
                           95%
@@ -246,7 +248,7 @@ export default function ResumePage() {
 
                       <div className="w3-light-grey w3-round-xlarge w3-small">
                         <div
-                          className="w3-container w3-center w3-round-xlarge w3-black"
+                          className="w3-container w3-center w3-round-xlarge bg-black"
                           style={{ width: "90%" }}
                         >
                           90%
@@ -256,7 +258,7 @@ export default function ResumePage() {
 
                       <div className="w3-light-grey w3-round-xlarge w3-small">
                         <div
-                          className="w3-container w3-center w3-round-xlarge w3-black"
+                          className="w3-container w3-center w3-round-xlarge bg-black"
                           style={{ width: "75%" }}
                         >
                           75%
@@ -274,7 +276,7 @@ export default function ResumePage() {
                       <br />
                       <div className="w3-light-grey w3-round-xlarge w3-small">
                         <div
-                          className="w3-container w3-center w3-round-xlarge w3-black"
+                          className="w3-container w3-center w3-round-xlarge bg-black"
                           style={{ width: "85%" }}
                         >
                           85%
@@ -296,7 +298,7 @@ export default function ResumePage() {
 
                       <div className="w3-light-grey w3-round-xlarge w3-small">
                         <div
-                          className="w3-container w3-center w3-round-xlarge w3-black"
+                          className="w3-container w3-center w3-round-xlarge bg-black"
                           style={{ width: "75%" }}
                         >
                           75%
@@ -306,7 +308,7 @@ export default function ResumePage() {
 
                       <div className="w3-light-grey w3-round-xlarge w3-small">
                         <div
-                          className="w3-container w3-center w3-round-xlarge w3-black"
+                          className="w3-container w3-center w3-round-xlarge bg-black"
                           style={{ width: "90%" }}
                         >
                           90%
@@ -316,7 +318,7 @@ export default function ResumePage() {
 
                       <div className="w3-light-grey w3-round-xlarge w3-small">
                         <div
-                          className="w3-container w3-center w3-round-xlarge w3-black"
+                          className="w3-container w3-center w3-round-xlarge bg-black"
                           style={{ width: "70%" }}
                         >
                           70%
@@ -350,7 +352,7 @@ export default function ResumePage() {
 
                       <div className="w3-light-grey w3-round-xlarge w3-small">
                         <div
-                          className="w3-container w3-center w3-round-xlarge w3-black"
+                          className="w3-container w3-center w3-round-xlarge bg-black"
                           style={{ width: "90%" }}
                         >
                           90%
@@ -360,7 +362,7 @@ export default function ResumePage() {
 
                       <div className="w3-light-grey w3-round-xlarge w3-small">
                         <div
-                          className="w3-container w3-center w3-round-xlarge w3-black"
+                          className="w3-container w3-center w3-round-xlarge bg-black"
                           style={{ width: "90%" }}
                         >
                           90%
@@ -381,7 +383,7 @@ export default function ResumePage() {
                       For a physical copy, click the "Download Resume" button
                       below to download a PDF of my resume.
                     </p>
-                    <button className="w3-button w3-black w3-padding-large w3-round-xxlarge mt-2">
+                    <button className="w3-button bg-black w3-padding-large rounded mt-2">
                       <a
                         className="button text-white w3-hover-opacity "
                         id="download"
@@ -413,7 +415,7 @@ export default function ResumePage() {
                     </h5>
                     <h6 className="w3-text-black">
                       <i className="fa fa-calendar fa-fw"></i> June 2016 -{" "}
-                      <span className="w3-tag w3-black w3-round">Current</span>
+                      <span className="w3-tag bg-black w3-round">Current</span>
                     </h6>
                     <p className="w3-text-black w3-margin-top">
                       <i className="far fa-sticky-note fa-fw"></i>
@@ -469,7 +471,7 @@ export default function ResumePage() {
                       <i className="fa fa-calendar fa-fw"></i> Contract Oct 2020
                       - Feb 2022{" "}
                       <span
-                        className="w3-tag w3-black w3-round"
+                        className="w3-tag bg-black w3-round"
                         style={{ fontSize: "12px" }}
                       >
                         date approximates
@@ -525,7 +527,7 @@ export default function ResumePage() {
                     </h5>
                     <h6 className="w3-text-black">
                       <i className="fa fa-calendar fa-fw"></i> June 2003 -{" "}
-                      <span className="w3-tag w3-black w3-round">Current</span>
+                      <span className="w3-tag bg-black w3-round">Current</span>
                     </h6>
                     <p className="w3-text-black w3-margin-top">
                       <i className="far fa-sticky-note fa-fw "></i>
@@ -617,7 +619,7 @@ export default function ResumePage() {
                       <i className="fa fa-calendar fa-fw"></i> Mar 2001 - Aug
                       2003{" "}
                       <span
-                        className="w3-tag w3-black w3-round"
+                        className="w3-tag bg-black w3-round"
                         style={{ fontSize: "12px" }}
                       >
                         date approximates
@@ -711,9 +713,9 @@ export default function ResumePage() {
               {/*}End Main row*/}
 
               {/*Start Practices
- <div className="w3-black w3-margin-top">
+ <div className="bg-black w3-margin-top">
 
- <div className="w3-container w3-content w3-black w3-padding-32 w3-padding-large">
+ <div className="w3-container w3-content bg-black w3-padding-32 w3-padding-large">
    <div className="container text-center">
       <h2>
        PRACTICES FOLLOWED
@@ -875,7 +877,7 @@ End Practices*/}
           patience!
         </h4>
         <button
-          className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom"
+          className="w3-button w3-text-light-grey  w3-margin-right rounded mt-2 w3-margin-bottom"
           style={{ backgroundColor: "#FF385C" }}
         >
           <Link
@@ -897,5 +899,6 @@ End Practices*/}
         </footer>
       </div>
     </div>
+    </>
   );
 }

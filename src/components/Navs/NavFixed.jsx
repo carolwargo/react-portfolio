@@ -144,7 +144,7 @@ function BasicExample() {
                 style={{ fontSize: "14px" }}
                 onClick={handleNavLinkClick}
               >
-                <button className="btn-outline-white w3-button btn-sm w3-round-xxlarge px-3 shadow">
+                <button className="btn-outline-white w3-button btn-sm rounded px-3 shadow">
                   <i className="far fa-user-circle"></i> contact
                 </button>
               </Link>

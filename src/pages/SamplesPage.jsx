@@ -76,7 +76,7 @@ function PageSamples() {
                     
                     <div className="w3-margin-top ">
                       <a href="https://carolwargo.github.io/realestate/">
-                      <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
+                      <button className="w3-button w3-text-light-grey w3-padding rounded mt-2 w3-margin-bottom" 
               style={{backgroundColor:'#FF385C'}}>
                VIEW SAMPLE
                         </button>
@@ -129,7 +129,7 @@ function PageSamples() {
                     </div>
 
                     <Link to="/blog" className="w3-margin-top">
-                    <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
+                    <button className="w3-button w3-text-light-grey w3-padding rounded mt-2 w3-margin-bottom" 
               style={{backgroundColor:'#FF385C'}}>
                         VIEW SAMPLE</button>
                     </Link>
@@ -176,7 +176,7 @@ function PageSamples() {
                  
                     <div className="w3-margin-top ">
                       <a href="https://carolwargo.github.io/blog">
-                      <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
+                      <button className="w3-button w3-text-light-grey w3-padding rounded mt-2 w3-margin-bottom" 
               style={{backgroundColor:'#FF385C'}}>
                VIEW SAMPLE
                         </button>
@@ -227,7 +227,7 @@ function PageSamples() {
               </p>
             </div>
                       <Link to="/blog#blog" className="w3-margin-top">
-                      <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
+                      <button className="w3-button w3-text-light-grey w3-padding rounded mt-2 w3-margin-bottom" 
               style={{backgroundColor:'#FF385C'}}>VIEW SAMPLE</button>
                       </Link>
                    
@@ -327,7 +327,7 @@ function PageSamples() {
                 </i>
               </p>
               <button
-                className="w3-button w3-text-light-grey  w3-margin-right w3-round-xxlarge mt-2 w3-margin-bottom"
+                className="w3-button w3-text-light-grey  w3-margin-right rounded mt-2 w3-margin-bottom"
                 style={{ backgroundColor: "#FF385C" }}
               >
                 <Link

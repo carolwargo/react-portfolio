@@ -337,7 +337,7 @@ const Cards = () => {
                 onClick={scrollToTop}
               >
                 <button
-                  className="w3-button w3-text-light-grey w3-margin-right w3-round-xxlarge w3-margin-bottom"
+                  className="w3-button w3-text-light-grey w3-margin-right rounded w3-margin-bottom"
                   style={{ backgroundColor: "#FF385C" }}
                 >
                   View Samples

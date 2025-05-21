@@ -75,7 +75,7 @@ const Graphics = () => {
               
               <h3 className="text-black">Much more to come... Stay tuned! Feedback is welcome and encouraged. Feel free to contact me to share your thoughts.
         </h3><br />
-              <button className="w3-button w3-text-light-grey w3-padding w3-round-xxlarge mt-2 w3-margin-bottom" 
+              <button className="w3-button w3-text-light-grey w3-padding rounded mt-2 w3-margin-bottom" 
               style={{backgroundColor:'#FF385C'}}>
               <Link to="/contact"
                   className="button text-white"

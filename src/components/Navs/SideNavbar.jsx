@@ -62,7 +62,7 @@ function TopNav() {
           <div className="w3-padding">
             <p>Id ipsa maxime distinctio 
               atque accusantium reiciendis adipisci at saepe earum.</p>
-            <p><a className="w3-btn w3-black" href="/w3css/default.asp">LEARN EVEN MORE</a></p>
+            <p><a className="w3-btn bg-black" href="/w3css/default.asp">LEARN EVEN MORE</a></p>
           </div>
           <footer className="w3-container w3-theme-l1">
             <p>Don't forget to 'X' to return to home.</p>
@@ -72,14 +72,14 @@ function TopNav() {
       </div>
 
 
-      <div className="w3-row-padding d-flex w3-center w3-padding-32 w3-padding-large align-items-center">
+      <div className="w3-row-padding d-flex w3-center w3-padding-32 p-4 align-items-center">
   <div className="w3-half flex-column justify-content-center align-items-center">
     <div className="justify-content-center w3-hover-opacity">
     <img src={LoginImage} alt='login-form' style={{width:'100%'}} className='shadow'></img>
   </div>
 </div>
 <div className="w3-half d-flex justify-content-center align-items-center">
-<div className='w3-card w3-padding-large w3-white'>
+<div className='w3-card p-4 w3-white'>
 <h4 className='w3-text-dark-blue'> WEB FORMS</h4>
   </div>
 </div>
