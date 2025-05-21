@@ -8,7 +8,7 @@ export default function Star1() {
   }
 
   return (
-    <div className="w3-content w3-light-gray w3-container w3-padding-large" style={{fontFamily:'Raleway'}}>
+    <div className="w3-content w3-light-gray w3-container p-4" style={{fontFamily:'Raleway'}}>
         <h6 className="text-center"><i>'Technological Transformation in Business.'</i> </h6>
      
       <button 

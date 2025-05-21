@@ -126,7 +126,7 @@ const Server = () => {
                           {faq.answer}
                           <div>
                             <Link to={faq.link}>
-                              <button className="mt-2 link w3-button bg-black w3-round-xxlarge">
+                              <button className="mt-2 link w3-button bg-black rounded">
                                Learn More
                               </button>
                             </Link>
